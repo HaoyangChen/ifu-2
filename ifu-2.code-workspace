@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"vetur.format.options.tabSize": 4,
+		"vetur.format.defaultFormatter.html": "prettier",
+		"files.eol": "\n",
+		"files.insertFinalNewline": true,
+		"editor.formatOnSave": true
+	}
+}
