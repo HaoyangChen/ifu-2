@@ -32,24 +32,26 @@
                                 $t('header.totoro')
                             }}</n-link>
                             <n-link class="n-link" to="/membership">{{
-                                $t('header.isic')
+                                $t('header.membership')
                             }}</n-link>
                             <n-link class="n-link" to="/more">{{
-                                $t('header.dma')
+                                $t('header.more')
                             }}</n-link>
                         </div>
                     </div>
                 </div>
                 <div v-if="showServiceMenu" class="service-menu-mobile mobile">
                     <n-link to="/totoro">{{ $t('header.totoro') }}</n-link>
-                    <n-link to="/membership">{{ $t('header.isic') }}</n-link>
-                    <n-link to="/more">{{ $t('header.dma') }}</n-link>
+                    <n-link to="/membership">{{
+                        $t('header.membership')
+                    }}</n-link>
+                    <n-link to="/more">{{ $t('header.support') }}</n-link>
                 </div>
                 <n-link class="n-link" to="/contact">{{
                     $t('header.contact')
                 }}</n-link>
                 <n-link class="n-link" to="/support">{{
-                    $t('header.donation')
+                    $t('header.support')
                 }}</n-link>
                 <div class="desktop">
                     <span :class="activeLang('zh')" @click="changeLang('zh')"
@@ -88,8 +90,8 @@ export default {
         isServicePath() {
             return (
                 this.currentPath === '/totoro' ||
-                this.currentPath === '/isic' ||
-                this.currentPath === '/dma'
+                this.currentPath === '/membership' ||
+                this.currentPath === '/more'
             );
         },
     },

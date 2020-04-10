@@ -270,6 +270,11 @@ export default {
             ];
         },
     },
+    head() {
+        return {
+            title: this.$t('header.totoro'),
+        };
+    },
 };
 </script>
 

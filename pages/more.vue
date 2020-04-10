@@ -51,5 +51,10 @@ export default {
             this.$router.push('question');
         },
     },
+    head() {
+        return {
+            title: this.$t('header.more'),
+        };
+    },
 };
 </script>

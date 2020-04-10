@@ -55,6 +55,11 @@ export default {
             zelleImage,
         };
     },
+    head() {
+        return {
+            title: this.$t('header.support'),
+        };
+    },
 };
 </script>
 

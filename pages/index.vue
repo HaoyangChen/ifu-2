@@ -169,7 +169,6 @@ import three from '@/assets/home/3.png';
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
 export default {
-    name: 'Home',
     components: {
         Banner,
         Button,
@@ -363,6 +362,11 @@ export default {
                 },
             ];
         },
+    },
+    head() {
+        return {
+            title: this.$t('header.home'),
+        };
     },
 };
 </script>
