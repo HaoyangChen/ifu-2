@@ -19,7 +19,7 @@ import bannerImage from '@/assets/course/ai_banner.png';
 import Culture from '@/tabs/about/Culture.vue';
 import History from '@/tabs/about/History.vue';
 import Story from '@/tabs/about/Story.vue';
-import Team from '@/pages/Team.vue';
+import Team from '@/pages/team.vue';
 
 export default {
     name: 'About',
