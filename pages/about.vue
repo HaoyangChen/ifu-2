@@ -4,7 +4,8 @@
             :title="$t('about.banner.title')"
             :description="$t('about.banner.description')"
             :button-text="$t('about.banner.buttonText')"
-            external-link="https://www.wjx.top/m/42786146.aspx"
+            external
+            to="https://www.wjx.top/m/42786146.aspx"
             :background="bannerImage"
         />
         <Tab :list="tabList" />

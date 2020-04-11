@@ -5,7 +5,8 @@
             :description="$t('isic.banner.description')"
             :button-text="$t('isic.banner.buttonText')"
             :background="bannerImage"
-            external-link="https://www.wjx.top/jq/48243970.aspx"
+            external
+            to="https://www.wjx.top/jq/48243970.aspx"
         />
         <Tab :list="tabList" />
     </div>

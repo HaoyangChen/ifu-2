@@ -5,7 +5,7 @@
             :sub-title="$t('home.banner.title')"
             :description="$t('home.banner.description')"
             :button-text="$t('home.banner.buttonText')"
-            :button-on-click="() => $router.push('contact')"
+            to="/contact"
             :background="bannerImage"
         />
         <div class="wuhan-coronavirus">
@@ -19,10 +19,10 @@
                 <div class="wuhan-description">
                     <p>{{ $t('home.coronavirus.description') }}</p>
                 </div>
-                <a
-                    href="https://mp.weixin.qq.com/s/FUOLzynHbsRUq-6C4KmUwQ"
-                    target="_blank"
-                    ><Button>{{ $t('home.coronavirus.buttonText') }}</Button></a
+                <Button
+                    external
+                    to="https://mp.weixin.qq.com/s/FUOLzynHbsRUq-6C4KmUwQ"
+                    >{{ $t('home.coronavirus.buttonText') }}</Button
                 >
                 <img
                     class="mobile wuhan-mobile-image"
@@ -33,7 +33,6 @@
                 <img :src="wuhanImage" />
             </section>
         </div>
-
         <section class="container part-1">
             <h2>{{ $t('home.ourWork.title') }}</h2>
             <div class="con">
@@ -99,27 +98,25 @@
             </div>
         </section>
         <section style="background: #F1F9FF">
-            <div class="container">
-                <h2>{{ $t('home.eventList.title') }}</h2>
-                <div class="event-left">
-                    <a :href="eventLink" target="_blank">
-                        <img :src="eventImage7" alt="" />
-                        <div class="event-text">
-                            {{ $t('home.eventList.text1') }}
-                        </div>
-                    </a>
-                </div>
-                <div class="event-right">
-                    <div class="event-list">
-                        <Event
-                            v-for="(event, index) in eventList"
-                            :key="index"
-                            class="event-item"
-                            :image="event.image"
-                            :link="event.link"
-                            :text="event.text"
-                        />
+            <h2>{{ $t('home.eventList.title') }}</h2>
+            <div class="event-left">
+                <a :href="eventLink" target="_blank">
+                    <img :src="eventImage7" alt="" />
+                    <div class="event-text">
+                        {{ $t('home.eventList.text1') }}
                     </div>
+                </a>
+            </div>
+            <div class="event-right">
+                <div class="event-list">
+                    <Event
+                        v-for="(event, index) in eventList"
+                        :key="index"
+                        class="event-item"
+                        :image="event.image"
+                        :link="event.link"
+                        :text="event.text"
+                    />
                 </div>
             </div>
         </section>
@@ -405,7 +402,7 @@ export default {
 
     .wuhan-description {
         padding: 0 0 0 18px;
-        margin: 34px 0px;
+        margin-top: 35px;
         border-left: 5px solid #fe4c31;
         border-radius: 4px;
         position: relative;
@@ -417,10 +414,6 @@ export default {
     }
 }
 
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
 .container p {
     font-family: PingFang SC;
     line-height: 31px;

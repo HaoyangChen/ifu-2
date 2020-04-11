@@ -41,12 +41,11 @@
                     }}<b>{{ $t('other.legalService.legal7') }}</b
                     >{{ $t('other.legalService.legal8') }}
                 </p>
-                <a
-                    href="https://weidian.com/item.html?itemID=2880968105&wfr=c&spider_token=d187"
-                    target="_blank"
-                    ><Button id="more-info">{{
-                        $t('other.legalService.legalLearnMoreBtn')
-                    }}</Button></a
+                <Button
+                    id="more-info"
+                    external
+                    to="https://weidian.com/item.html?itemID=2880968105&wfr=c&spider_token=d187"
+                    >{{ $t('other.legalService.legalLearnMoreBtn') }}</Button
                 >
             </div>
             <div class="desktop">
@@ -67,12 +66,10 @@
                     }}<b>{{ $t('other.greTraining.training5') }}</b
                     >{{ $t('other.greTraining.training6') }}
                 </p>
-                <a
-                    href="https://mp.weixin.qq.com/s/ccDYcTP8n6IGUa3mud3JJw"
-                    target="_blank"
-                    ><Button>{{
-                        $t('other.greTraining.learnMoreBtn')
-                    }}</Button></a
+                <Button
+                    external
+                    to="https://mp.weixin.qq.com/s/ccDYcTP8n6IGUa3mud3JJw"
+                    >{{ $t('other.greTraining.learnMoreBtn') }}</Button
                 >
             </div>
         </div>

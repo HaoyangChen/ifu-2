@@ -33,10 +33,6 @@ export default {
             type: String,
             required: true,
         },
-        subTitle: {
-            type: String,
-            required: true,
-        },
         contentList: {
             type: Array,
             default: () => [],

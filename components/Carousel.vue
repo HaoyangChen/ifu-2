@@ -19,16 +19,16 @@
         </div>
         <div class="list">
             <a
-                v-for="(item, index) in list"
-                :key="index"
+                v-for="(item, i) in list"
+                :key="i"
                 :style="{
                     backgroundColor: item.backgroundColor,
-                    zIndex: list.length - index,
+                    zIndex: list.length - i,
                 }"
-                @click="changeItem(item, index)"
+                @click="changeItem(item, i)"
             >
                 <div class="list-item">
-                    <div class="num">{{ '0' + (index + 1) }}</div>
+                    <div class="num">{{ '0' + (i + 1) }}</div>
                     <div class="content">
                         <div>
                             <img :src="item.icon" alt="" />

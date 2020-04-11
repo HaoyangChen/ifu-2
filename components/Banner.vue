@@ -10,12 +10,7 @@
                 <strong>{{ item.name }}</strong
                 ><span>{{ item.text }}</span>
             </div>
-            <a v-if="externalLink" :href="externalLink" target="_blank">
-                <Button v-if="buttonText">
-                    {{ buttonText }}
-                </Button>
-            </a>
-            <Button v-else-if="buttonText" :on-click="buttonOnClick">
+            <Button v-if="to" :external="external" :to="to">
                 {{ buttonText }}
             </Button>
         </div>
@@ -50,9 +45,13 @@ export default {
             type: String,
             default: '',
         },
-        buttonOnClick: {
-            type: Function,
-            default: () => {},
+        external: {
+            type: Boolean,
+            default: false,
+        },
+        to: {
+            type: String,
+            default: null,
         },
         background: {
             type: String,
@@ -67,10 +66,6 @@ export default {
             default: '#202020',
         },
         image: {
-            type: String,
-            default: null,
-        },
-        externalLink: {
             type: String,
             default: null,
         },

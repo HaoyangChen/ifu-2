@@ -3,8 +3,11 @@
         <div class="header-inner">
             <img class="desktop" src="../assets/header/logo.png" />
             <img class="mobile" src="../assets/header/logo_mobile.png" />
-            <p class="mobile">INTERNATIONAL FAMILY UNION</p>
-            <p class="mobile">国际家长汇</p>
+            <p class="mobile title">
+                INTERNATIONAL FAMILY UNION
+                <br />
+                国际家长汇
+            </p>
             <div class="header-menu">
                 <n-link class="n-link" to="/" exact>{{
                     $t('header.home')
@@ -14,7 +17,7 @@
                 }}</n-link>
                 <div class="service">
                     <a
-                        :class="isServicePath ? 'n-link-active' : ''"
+                        :class="isServicePath ? 'nuxt-link-active' : ''"
                         @click="toggleServiceMenu"
                     >
                         {{ $t('header.service') }}
@@ -45,7 +48,7 @@
                     <n-link to="/membership">{{
                         $t('header.membership')
                     }}</n-link>
-                    <n-link to="/more">{{ $t('header.support') }}</n-link>
+                    <n-link to="/more">{{ $t('header.more') }}</n-link>
                 </div>
                 <n-link class="n-link" to="/contact">{{
                     $t('header.contact')
@@ -193,7 +196,7 @@ a {
     border-bottom: 3px solid #54bef5;
 }
 
-.n-link-active {
+.nuxt-link-active {
     color: #54bef5;
 }
 
@@ -209,6 +212,14 @@ span {
 <style scoped>
 /* Mobile style */
 @media (max-width: 1024px) {
+    header {
+        border-bottom: none;
+    }
+
+    .title {
+        text-align: center;
+    }
+
     .header-inner {
         flex-direction: column;
         padding: 0px;
@@ -262,7 +273,7 @@ span {
         transform: rotateZ(-90deg);
     }
 
-    .n-link-active {
+    .nuxt-link-active {
         color: black;
         background: #a9defa;
         border-bottom: none;

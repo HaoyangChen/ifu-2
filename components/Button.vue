@@ -1,24 +1,34 @@
 <template>
-    <button @click="onClick">
-        <slot />
-    </button>
+    <a v-if="external" :href="to" target="_blank">
+        <button>
+            <slot />
+        </button>
+    </a>
+    <nuxt-link v-else :to="to">
+        <button>
+            <slot />
+        </button>
+    </nuxt-link>
 </template>
 
 <script>
 export default {
     name: 'Button',
     props: {
-        onClick: {
-            type: Function,
-            default: () => {
-                // Empty default function
-            },
+        // If points to external link
+        external: {
+            type: Boolean,
+            default: false,
+        },
+        to: {
+            type: String,
+            required: true,
         },
     },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 button {
     width: 185px;
     height: 50px;
@@ -42,7 +52,7 @@ button:hover {
         font-size: 14px;
         width: 140px;
         height: 45px;
-        margin-bottom: 35px;
+        margin: 35px 0;
     }
 }
 </style>

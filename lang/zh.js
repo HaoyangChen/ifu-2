@@ -8,6 +8,7 @@ export default {
         membership: 'IFU 会员',
         more: 'IFU 更多服务',
         support: '支持我们',
+        team: '我们的团队',
     },
     footer: {
         subTitle1: '让留学生活更安全',

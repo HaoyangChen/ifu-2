@@ -7,9 +7,9 @@
             <h2>{{ $t('contact.emergency.contact') }}</h2>
             <p v-html="$t('contact.emergency.p1')" />
             <p v-html="$t('contact.emergency.p2')" />
-            <a href="https://a2.rabbitpre.com/m2/aUe1ZjLN6f" target="_blank"
-                ><Button>{{ $t('contact.emergency.buttonText') }}</Button></a
-            >
+            <Button external to="https://a2.rabbitpre.com/m2/aUe1ZjLN6f">{{
+                $t('contact.emergency.buttonText')
+            }}</Button>
         </section>
     </div>
 </template>

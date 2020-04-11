@@ -5,7 +5,8 @@
             :description="$t('totoro.banner.description')"
             :button-text="$t('totoro.banner.buttonText')"
             :background="bannerImage"
-            external-link="https://mp.weixin.qq.com/s?__biz=MzI4NzkxMjc4MA==&mid=2247484987&idx=2&sn=339671a503f4b01351b7c6d06bc79a18&chksm=ebc72018dcb0a90e94fdff12771ec68122a29abd998eb604bac8725ec622771a6cc121d3f66e&mpshare=1&scene=1&srcid=&sharer_sharetime=1581215608714&sharer_shareid=343f5c44deda4711a70b2840aa600e28#rd"
+            external
+            to="https://mp.weixin.qq.com/s?__biz=MzI4NzkxMjc4MA==&mid=2247484987&idx=2&sn=339671a503f4b01351b7c6d06bc79a18&chksm=ebc72018dcb0a90e94fdff12771ec68122a29abd998eb604bac8725ec622771a6cc121d3f66e&mpshare=1&scene=1&srcid=&sharer_sharetime=1581215608714&sharer_shareid=343f5c44deda4711a70b2840aa600e28#rd"
         />
         <section class="container">
             <h2>{{ $t('totoro.totoro.title') }}</h2>
@@ -23,7 +24,6 @@
                     :staff="staff"
                     :image="staff.image"
                     :title="staff.title"
-                    :sub-title="staff.subTitle"
                 />
             </div>
         </section>
@@ -31,11 +31,12 @@
             <img :src="totoroImage" alt="" />
             <div class="text">
                 <p>{{ $t('totoro.tutors.joinTutor') }}</p>
-                <a href="https://www.wjx.top/jq/40951475.aspx" target="_blank">
-                    <Button class="btn">{{
-                        $t('totoro.tutors.submitApplication')
-                    }}</Button>
-                </a>
+                <Button
+                    class="btn"
+                    external
+                    to="https://www.wjx.top/jq/40951475.aspx"
+                    >{{ $t('totoro.tutors.submitApplication') }}</Button
+                >
             </div>
         </div>
     </div>
@@ -92,7 +93,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent1'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience1'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail1'),
-                    // subTitle: '所授科目: 物理初阶，物理高阶\n\n介绍: 就读于加州大学圣塔芭芭拉分校（UCSB），机械工程专业\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: zhangtianluImage,
@@ -102,7 +102,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent2'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience2'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail2'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: liangchenweiImage,
@@ -112,7 +111,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent3'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience3'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail3'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: jiangjiaruiImage,
@@ -122,7 +120,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent4'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience4'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail4'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: linxiqiangImage,
@@ -132,7 +129,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent5'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience5'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail5'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: wangzhiweiImage,
@@ -142,7 +138,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent6'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience6'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail6'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: maweikunImage,
@@ -152,7 +147,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent7'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience7'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail7'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: ruanjinglongImage,
@@ -162,7 +156,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent8'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience8'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail8'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: yinluwaImage,
@@ -172,7 +165,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent9'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience9'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail9'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: liuchenshuImage,
@@ -182,7 +174,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent10'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience10'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail10'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: lichunlingImage,
@@ -192,7 +183,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent11'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience11'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail11'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: wangyuqingImage,
@@ -202,7 +192,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent12'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience12'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail12'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: zengjunImage,
@@ -212,7 +201,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent13'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience13'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail13'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: huangjiaqiImage,
@@ -222,7 +210,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent14'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience14'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail14'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
                 {
                     image: zhouzihaoImage,
@@ -232,7 +219,6 @@ export default {
                     subTitle3: this.$t('totoro.tutors.tutorIntroContent15'),
                     subTitle4: this.$t('totoro.tutors.tutorExperience15'),
                     subTitle5: this.$t('totoro.tutors.tutorExperienceDetail15'),
-                    // subTitle: '所授科目: 微积分\n\n介绍: UCLA加州大学洛杉矶分校准大四生，Math-econ 数学经济专业；Accounting minor 辅修会计\n\n学术经历: 所授课程满分绩点4.0',
                 },
             ],
         };

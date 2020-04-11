@@ -51,6 +51,7 @@ export default {
         > div {
             display: inline-block;
             width: 50%;
+            float: left;
         }
     }
 

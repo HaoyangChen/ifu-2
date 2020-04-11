@@ -68,9 +68,9 @@
         <section class="join-section">
             <p v-t="'about.culture.joinText1'" />
             <p v-t="'about.culture.joinText2'" />
-            <a href="https://www.wjx.top/m/42786146.aspx" target="_blank">
-                <Button v-t="'about.culture.joinButtonText'" />
-            </a>
+            <Button external to="https://www.wjx.top/m/42786146.aspx">{{
+                $t('about.culture.joinButtonText')
+            }}</Button>
         </section>
     </div>
 </template>

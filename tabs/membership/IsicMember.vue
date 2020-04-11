@@ -29,12 +29,13 @@
                         }}<b>{{ $t('isic.colhalf.overView11') }}</b
                         >{{ $t('isic.colhalf.overView12') }}
                     </p>
-                    <a
-                        href="https://weidian.com/item.html?itemID=2778597927&wfr=c&spider_token=8e9c"
-                        ><Button :style="{ margin: '24px 0px' }">{{
-                            $t('isic.colhalf.becomeMemberBtnText')
-                        }}</Button></a
+                    <Button
+                        external
+                        to="https://weidian.com/item.html?itemID=2778597927&amp;wfr=c&amp;spider_token=8e9c"
+                        :style="{ margin: '24px 0px' }"
                     >
+                        {{ $t('isic.colhalf.becomeMemberBtnText') }}
+                    </Button>
                 </div>
             </div>
         </section>
@@ -87,10 +88,9 @@
                         class="display-desktop"
                     ></p>
                     <p v-t="'isic.colhalf.becomeVipContent'"></p>
-                    <Button
-                        v-t="'isic.colhalf.buttonText'"
-                        :on-click="() => $router.push('contact')"
-                    />
+                    <Button to="/contact">{{
+                        $t('isic.colhalf.buttonText')
+                    }}</Button>
                 </div>
             </div>
         </section>

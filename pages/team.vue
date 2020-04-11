@@ -5,11 +5,15 @@
             :title="$t('team.title')"
             :button-text="$t('team.buttonText')"
             :image="teamImage"
-            external-link="https://mp.weixin.qq.com/s/f4UJoB2zt9fBTmfGFN1XCA"
+            external
+            to="https://mp.weixin.qq.com/s/f4UJoB2zt9fBTmfGFN1XCA"
         />
         <div class="banner mobile">
             <h2>{{ $t('team.title') }}</h2>
-            <Button :on-click="buttonOnClick">
+            <Button
+                external
+                to="https://mp.weixin.qq.com/s/f4UJoB2zt9fBTmfGFN1XCA"
+            >
                 {{ $t('team.buttonText') }}
             </Button>
             <div class="img">
@@ -69,12 +73,6 @@ export default {
         Banner,
         Swiper,
         Button,
-    },
-    props: {
-        buttonOnClick: {
-            type: Function,
-            default: () => {},
-        },
     },
     data() {
         return {

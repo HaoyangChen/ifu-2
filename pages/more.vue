@@ -6,7 +6,7 @@
             :description="$t('dma.banner.description')"
             :button-text="$t('dma.banner.buttonText')"
             :background="bannerImage"
-            :button-on-click="() => $router.push('contact')"
+            to="/contact"
         />
         <Tab :list="tabList" />
     </div>

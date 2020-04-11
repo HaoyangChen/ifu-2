@@ -45,10 +45,15 @@ body {
 
 section {
     margin: 0 auto;
-    /* padding: 120px 130px; */
     padding: 80px 130px;
 
+    > h1 {
+        font-size: 40px;
+        font-weight: normal;
+    }
+
     > h2 {
+        font-size: 23px;
         font-weight: normal;
     }
 }
@@ -63,7 +68,7 @@ section {
 }
 
 @media (max-width: 1024px) {
-    #app {
+    html {
         font-size: 14px;
     }
 

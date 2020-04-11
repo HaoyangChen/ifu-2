@@ -8,6 +8,7 @@ export default {
         membership: 'IFU Membership',
         more: 'IFU More Services',
         support: 'Support Us',
+        team: 'Our Team',
     },
     footer: {
         subTitle1: 'To Make Our Campus Life Safer',
