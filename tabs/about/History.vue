@@ -75,8 +75,8 @@
 </template>
 
 <script>
-import timelineImage from '@/assets/about/timeline.png';
-import timelineImageMobile from '@/assets/about/timeline-mobile.jpg';
+import timelineImage from '@/assets/about/history/timeline.png';
+import timelineImageMobile from '@/assets/about/history/timeline-mobile.jpg';
 
 export default {
     name: 'History',

@@ -246,19 +246,19 @@ import Button from '@/components/Button.vue';
 import Carousel from '@/components/Carousel.vue';
 import DmaCollapse from '@/components/DmaCollapse.vue';
 
-import bannerImage from '@/assets/dma/summer/banner.png';
-import bgImage from '@/assets/dma/bg.png';
-import selectImage from '@/assets/dma/select.png';
-import detailImage from '@/assets/dma/detail.png';
-import serviceImage from '@/assets/dma/service.png';
-import carouselImage from '@/assets/dma/carousel.png';
-import one from '@/assets/dma/1.png';
-import two from '@/assets/dma/2.png';
-import three from '@/assets/dma/3.png';
-import four from '@/assets/dma/4.png';
-import five from '@/assets/dma/5.png';
-import six from '@/assets/dma/6.png';
-import schoolImage from '@/assets/dma/school.png';
+import bannerImage from '@/assets/more/summer/banner.png';
+import bgImage from '@/assets/more/bg.png';
+import selectImage from '@/assets/more/select.png';
+import detailImage from '@/assets/more/detail.png';
+import serviceImage from '@/assets/more/service.png';
+import carouselImage from '@/assets/more/carousel.png';
+import one from '@/assets/more/1.png';
+import two from '@/assets/more/2.png';
+import three from '@/assets/more/3.png';
+import four from '@/assets/more/4.png';
+import five from '@/assets/more/5.png';
+import six from '@/assets/more/6.png';
+import schoolImage from '@/assets/more/school.png';
 
 export default {
     components: {
@@ -473,7 +473,7 @@ section {
     padding: 0;
 }
 .bg {
-    background: url('../../assets/dma/bg.png') no-repeat;
+    background: url('../../assets/more/bg.png') no-repeat;
     background-position: left 0px top 410px;
 }
 .content div {
@@ -554,7 +554,7 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
-    background: url('../../assets/dma/school.png') no-repeat;
+    background: url('../../assets/more/school.png') no-repeat;
     background-size: cover;
     padding: 70px 0 125px 0;
     h2 {
@@ -630,17 +630,17 @@ section {
     height: 521px;
 }
 .college-container:first-child {
-    background: url('../../assets/dma/col-1.png') no-repeat;
+    background: url('../../assets/more/col-1.png') no-repeat;
     border-top: 15px solid #34bbc9;
     border-bottom: 30px solid #34bbc9;
 }
 .college-container:nth-child(2) {
-    background: url('../../assets/dma/col-2.png') no-repeat;
+    background: url('../../assets/more/col-2.png') no-repeat;
     border-top: 15px solid #c9d74a;
     border-bottom: 30px solid #c9d74a;
 }
 .college-container:last-child {
-    background: url('../../assets/dma/col-3.png') no-repeat;
+    background: url('../../assets/more/col-3.png') no-repeat;
     border-top: 15px solid #f96291;
     border-bottom: 30px solid #f96291;
 }
@@ -802,7 +802,7 @@ h2 {
     .part-3 {
         background-position: center;
         position: static;
-        background: url('../../assets/dma/schoolbg.png') no-repeat;
+        background: url('../../assets/more/schoolbg.png') no-repeat;
         background-size: cover;
         padding-bottom: 0;
         padding: 0;

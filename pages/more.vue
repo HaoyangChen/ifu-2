@@ -15,8 +15,8 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Tab from '@/components/Tab.vue';
-import bannerImage from '@/assets/dma/dma_banner.png';
-import Other from '@/tabs/dma/other.vue';
+import bannerImage from '@/assets/more/banner.png';
+import Other from '@/tabs/more/other.vue';
 
 export default {
     name: 'Dma',

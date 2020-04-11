@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="header-inner">
-            <img class="desktop" src="../assets/header_title.png" />
+            <img class="desktop" src="../assets/header/logo.png" />
             <img class="mobile" src="../assets/header/logo_mobile.png" />
             <p class="mobile">INTERNATIONAL FAMILY UNION</p>
             <p class="mobile">国际家长汇</p>

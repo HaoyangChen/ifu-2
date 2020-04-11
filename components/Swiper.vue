@@ -1,26 +1,31 @@
 <template>
     <div class="wrapper">
-        <swiper ref="mySwiper" :options="swiperOption">
-            <swiper-slide v-for="(item, index) in profileList" :key="index">
-                <div class="img">
-                    <img :src="item.image" />
-                    <p>{{ item.title }}</p>
-                    <p>{{ item.subTitle }}</p>
+        <div v-swiper:mySwiper="swiperOption">
+            <div class="swiper-wrapper">
+                <div
+                    v-for="(item, index) in profileList"
+                    :key="index"
+                    class="swiper-slide"
+                >
+                    <div class="img">
+                        <img :src="item.image" />
+                        <p>{{ item.title }}</p>
+                        <p>{{ item.subTitle }}</p>
+                    </div>
                 </div>
-            </swiper-slide>
+            </div>
             <div slot="button-prev" class="swiper-button-prev"></div>
-            <div slot="pagination" class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
             <div slot="button-next" class="swiper-button-next"></div>
-        </swiper>
+        </div>
     </div>
 </template>
 <script>
 import 'swiper/css/swiper.css';
-import { swiper, swiperSlide } from 'vue-awesome-swiper';
+import { directive } from 'vue-awesome-swiper';
 export default {
-    components: {
-        swiper,
-        swiperSlide,
+    directives: {
+        swiper: directive,
     },
     props: {
         profileList: {
@@ -40,12 +45,12 @@ export default {
                     prevEl: '.swiper-button-prev',
                 },
                 paginationClickable: true,
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 1,
+                spaceBetween: 0,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 3,
+                        spaceBetween: 20,
                     },
                 },
             },
@@ -105,6 +110,10 @@ p {
         width: 0;
         height: 0;
         margin-top: -20px;
+
+        &::after {
+            content: none;
+        }
     }
     .swiper-button-prev {
         border-top: 10px solid transparent;

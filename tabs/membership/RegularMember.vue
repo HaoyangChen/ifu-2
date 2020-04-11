@@ -31,11 +31,11 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Event from '@/components/Event.vue';
-import bannerImage from '@/assets/isic/regular/banner.png';
-import eventImage1 from '@/assets/isic/regular/eventImage1.png';
-import eventImage2 from '@/assets/isic/regular/eventImage2.png';
-import eventImage3 from '@/assets/isic/regular/eventImage3.png';
-import eventImage4 from '@/assets/isic/regular/eventImage4.png';
+import bannerImage from '@/assets/membership/regular/banner.png';
+import eventImage1 from '@/assets/membership/regular/eventImage1.png';
+import eventImage2 from '@/assets/membership/regular/eventImage2.png';
+import eventImage3 from '@/assets/membership/regular/eventImage3.png';
+import eventImage4 from '@/assets/membership/regular/eventImage4.png';
 
 export default {
     name: 'RegularMember',

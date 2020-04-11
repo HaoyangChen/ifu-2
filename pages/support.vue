@@ -38,10 +38,10 @@
 
 <script>
 import Banner from '@/components/Banner.vue';
-import bannerImage from '@/assets/donation/banner.png';
-import wechatImage from '@/assets/donation/wechat.png';
-import alipayImage from '@/assets/donation/alipay.png';
-import zelleImage from '@/assets/donation/zelle.png';
+import bannerImage from '@/assets/support/banner.png';
+import wechatImage from '@/assets/support/wechat.png';
+import alipayImage from '@/assets/support/alipay.png';
+import zelleImage from '@/assets/support/zelle.png';
 
 export default {
     components: {

@@ -1,13 +1,13 @@
 <template>
     <div class="team-container">
         <Banner
-            v-if="screenWidth > 1024"
+            class="desktop"
             :title="$t('team.title')"
             :button-text="$t('team.buttonText')"
             :image="teamImage"
             external-link="https://mp.weixin.qq.com/s/f4UJoB2zt9fBTmfGFN1XCA"
         />
-        <div v-else class="banner">
+        <div class="banner mobile">
             <h2>{{ $t('team.title') }}</h2>
             <Button :on-click="buttonOnClick">
                 {{ $t('team.buttonText') }}
@@ -80,7 +80,6 @@ export default {
         return {
             teamImage,
             activeIndex: 0,
-            screenWidth: document.body.clientWidth,
             buttonText: '联系我们',
         };
     },
@@ -283,7 +282,7 @@ export default {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     /* padding: 30px; */
 }

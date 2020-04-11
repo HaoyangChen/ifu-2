@@ -13,7 +13,7 @@
                 {{ title }}
             </div>
         </div>
-        <div v-if="show" class="container desktop">
+        <div v-if="show" class="container">
             <slot class="test" />
         </div>
     </div>

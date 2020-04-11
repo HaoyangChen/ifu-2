@@ -5,43 +5,43 @@
             <h2>{{ $t('about.story.achievement') }}</h2>
             <div class="achievement-list">
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_1.png" />
+                    <img src="@/assets/about/story/achievement_1.png" />
                     <p v-html="$t('about.story.text1')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_2.png" />
+                    <img src="@/assets/about/story/achievement_2.png" />
                     <p v-html="$t('about.story.text2')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_3.png" />
+                    <img src="@/assets/about/story/achievement_3.png" />
                     <p v-html="$t('about.story.text3')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_4.png" />
+                    <img src="@/assets/about/story/achievement_4.png" />
                     <p v-html="$t('about.story.text4')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_5.png" />
+                    <img src="@/assets/about/story/achievement_5.png" />
                     <p v-html="$t('about.story.text5')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_6.png" />
+                    <img src="@/assets/about/story/achievement_6.png" />
                     <p v-html="$t('about.story.text6')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_7.png" />
+                    <img src="@/assets/about/story/achievement_7.png" />
                     <p v-html="$t('about.story.text7')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_8.png" />
+                    <img src="@/assets/about/story/achievement_8.png" />
                     <p v-html="$t('about.story.text8')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_9.png" />
+                    <img src="@/assets/about/story/achievement_9.png" />
                     <p v-html="$t('about.story.text9')" />
                 </div>
                 <div class="achievement-item">
-                    <img src="../../assets/achievement_10.png" />
+                    <img src="@/assets/about/story/achievement_10.png" />
                     <p v-html="$t('about.story.text10')" />
                 </div>
             </div>
@@ -51,15 +51,15 @@
 
 <script>
 import Book from '@/components/Book.vue';
-import story1 from '@/assets/story_1.png';
-import story2 from '@/assets/story_2.png';
-import story3 from '@/assets/story_3.jpg';
-import story4 from '@/assets/story_4.jpg';
-import story5 from '@/assets/story_5.jpg';
-import story6 from '@/assets/story_6.jpg';
-import story7 from '@/assets/story_7.jpg';
-import story8 from '@/assets/story_8.jpg';
-import story9 from '@/assets/story_9.jpg';
+import story1 from '@/assets/about/story/story_1.png';
+import story2 from '@/assets/about/story/story_2.png';
+import story3 from '@/assets/about/story/story_3.jpg';
+import story4 from '@/assets/about/story/story_4.jpg';
+import story5 from '@/assets/about/story/story_5.jpg';
+import story6 from '@/assets/about/story/story_6.jpg';
+import story7 from '@/assets/about/story/story_7.jpg';
+import story8 from '@/assets/about/story/story_8.jpg';
+import story9 from '@/assets/about/story/story_9.jpg';
 
 export default {
     name: 'Story',

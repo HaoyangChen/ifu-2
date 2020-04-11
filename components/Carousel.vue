@@ -182,7 +182,7 @@ export default {
         background-size: 100% 100%;
         width: 100%;
         padding: 50px 30px 50px 30px;
-        background-image: url('../assets/mobilebg.png') !important;
+        background-image: url('../assets/home/mobilebg.png') !important;
         background-repeat: no-repeat;
     }
 }

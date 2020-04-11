@@ -14,9 +14,9 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Tab from '@/components/Tab.vue';
-import bannerImage from '@/assets/isic/banner.png';
-import IsicMember from '@/tabs/isic/IsicMember.vue';
-import RegularMember from '@/tabs/isic/RegularMember.vue';
+import bannerImage from '@/assets/membership/banner.png';
+import IsicMember from '@/tabs/membership/IsicMember.vue';
+import RegularMember from '@/tabs/membership/RegularMember.vue';
 
 export default {
     components: {

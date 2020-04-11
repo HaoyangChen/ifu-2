@@ -15,7 +15,7 @@
     "aos": "^2.3.4",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.8.1",
-    "swiper": "^5.3.6",
+    "swiper": "^5.3.7",
     "vue-awesome-swiper": "^4.1.0"
   },
   "devDependencies": {

@@ -13,7 +13,7 @@
         <section>
             <h2 v-t="'about.culture.distributionTitle'" />
             <div class="distribution-image desktop">
-                <img src="../../assets/about/map.png" />
+                <img src="../../assets/about/culture/map.png" />
                 <div class="tips" data-aos="fade-up">
                     <div class="tips-text">
                         <p>{{ $t('about.culture.schoool1') }}</p>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="distribution-image-mobile mobile">
-                <img src="../../assets/about/map-mobile.png" />
+                <img src="../../assets/about/culture/map-mobile.png" />
             </div>
         </section>
         <section class="join-section">
@@ -78,6 +78,8 @@
 <script>
 import AOS from 'aos';
 import Button from '@/components/Button.vue';
+
+import 'aos/dist/aos.css';
 
 export default {
     name: 'Culture',

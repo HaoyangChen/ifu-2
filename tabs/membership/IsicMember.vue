@@ -100,20 +100,20 @@
 <script>
 import Button from '@/components/Button.vue';
 import Card from '@/components/Card.vue';
-import AbenityImage from '@/assets/isic/abenity.png';
-import UCSDImage from '@/assets/isic/ucsd.png';
-import waveImage from '@/assets/isic/wave-left.png';
-import nbaImage from '@/assets/isic/nba.png';
-import greImage from '@/assets/isic/gre.png';
-import studentUImage from '@/assets/isic/studentuniverse.png';
-import hooliImage from '@/assets/isic/hooli.png';
-import isicSample from '@/assets/isic/isic-sample.png';
-import amazonImage from '@/assets/isic/isic/amazon.png';
-import amcImage from '@/assets/isic/isic/amc.png';
-import avisImage from '@/assets/isic/isic/avis.png';
-import citypassImage from '@/assets/isic/isic/citypass.png';
-import lenovoImage from '@/assets/isic/isic/lenovo.png';
-import universalImage from '@/assets/isic/isic/universal.png';
+import AbenityImage from '@/assets/membership/isic/abenity.png';
+import UCSDImage from '@/assets/membership/isic/ucsd.png';
+import waveImage from '@/assets/membership/isic/wave-left.png';
+import nbaImage from '@/assets/membership/isic/nba.png';
+import greImage from '@/assets/membership/isic/gre.png';
+import studentUImage from '@/assets/membership/isic/studentuniverse.png';
+import hooliImage from '@/assets/membership/isic/hooli.png';
+import isicSample from '@/assets/membership/isic/isic-sample.png';
+import amazonImage from '@/assets/membership/isic/amazon.png';
+import amcImage from '@/assets/membership/isic/amc.png';
+import avisImage from '@/assets/membership/isic/avis.png';
+import citypassImage from '@/assets/membership/isic/citypass.png';
+import lenovoImage from '@/assets/membership/isic/lenovo.png';
+import universalImage from '@/assets/membership/isic/universal.png';
 
 export default {
     name: 'IsicMember',
@@ -220,7 +220,7 @@ export default {
 }
 
 .part-5 {
-    background: url('../../assets/isic/wave.png') no-repeat;
+    background: url('../../assets/membership/isic/wave.png') no-repeat;
     /* padding: 75px 0px; */
 }
 
@@ -303,7 +303,8 @@ export default {
 
     .part-5 {
         padding: 10%;
-        background: url('../../assets/isic/wave-mobile.png') no-repeat;
+        background: url('../../assets/membership/isic/wave-mobile.png')
+            no-repeat;
         background-position: center center;
         background-size: cover;
     }

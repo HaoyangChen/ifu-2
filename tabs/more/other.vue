@@ -81,9 +81,9 @@
 
 <script>
 import Button from '@/components/Button.vue';
-import section1Image from '@/assets/dma/other/section1.png';
-import section2Image from '@/assets/dma/other/section2.png';
-import section3Image from '@/assets/dma/other/section3.png';
+import section1Image from '@/assets/more/other/section1.png';
+import section2Image from '@/assets/more/other/section2.png';
+import section3Image from '@/assets/more/other/section3.png';
 
 export default {
     components: {

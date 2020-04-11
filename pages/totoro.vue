@@ -45,7 +45,7 @@
 import Banner from '@/components/Banner.vue';
 import Carousel from '@/components/Carousel.vue';
 import TotoroProfile from '@/components/TotoroProfile.vue';
-import bannerImage from '@/assets/totoro/totoro_banner.png';
+import bannerImage from '@/assets/totoro/banner.png';
 import carouselImage from '@/assets/totoro/carousel.png';
 
 import liuchenshuImage from '@/assets/totoro/mentor/liuchenshu.png';

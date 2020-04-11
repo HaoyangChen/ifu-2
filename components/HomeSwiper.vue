@@ -1,27 +1,32 @@
 <template>
     <div class="wrapper home-swiper">
-        <Swiper ref="mySwiper" :options="swiperOption">
-            <Swiper-slide v-for="(item, index) in list" :key="index">
-                <div class="img">
-                    <p>{{ item.title }}</p>
-                    <p>{{ item.subTitle }}</p>
-                    <div>
-                        <div class="line"></div>
-                        <p>{{ item.text }}</p>
+        <div v-swiper:mySwiper="swiperOption">
+            <div class="swiper-wrapper">
+                <div
+                    v-for="(item, index) in list"
+                    :key="index"
+                    class="swiper-slide"
+                >
+                    <div class="img">
+                        <p>{{ item.title }}</p>
+                        <p>{{ item.subTitle }}</p>
+                        <div>
+                            <div class="line"></div>
+                            <p>{{ item.text }}</p>
+                        </div>
                     </div>
                 </div>
-            </Swiper-slide>
-            <div slot="pagination" class="swiper-pagination"></div>
-        </Swiper>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </template>
 <script>
 import 'swiper/css/swiper.css';
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import { directive } from 'vue-awesome-swiper';
 export default {
-    components: {
-        Swiper,
-        SwiperSlide,
+    directives: {
+        swiper: directive,
     },
     props: {
         list: {
@@ -41,12 +46,12 @@ export default {
                     prevEl: '.swiper-button-prev',
                 },
                 paginationClickable: true,
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 1,
+                spaceBetween: 10,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
+                        slidesPerView: 3,
+                        spaceBetween: 20,
                     },
                 },
             },
@@ -92,7 +97,7 @@ export default {
     right: 44%;
 }
 .wrapper {
-    background: url('../assets/service_totoro.png') no-repeat;
+    background: url('../assets/home/service_totoro.png') no-repeat;
     border-radius: 10px;
     background-size: cover;
     padding-bottom: 30px;

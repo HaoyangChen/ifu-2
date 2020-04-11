@@ -32,15 +32,11 @@
 
 <script>
 import DmaCollapse from '@/components/DmaCollapse.vue';
-import Academic from '@/tabs/totoro/Academic.vue';
-import Cohesion from '@/tabs/totoro/Cohesion.vue';
 
 export default {
     name: 'Tab',
     components: {
         DmaCollapse,
-        Academic,
-        Cohesion,
     },
     props: {
         list: {
