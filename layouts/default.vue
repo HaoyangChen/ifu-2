@@ -47,12 +47,12 @@ section {
     margin: 0 auto;
     padding: 80px 130px;
 
-    > h1 {
+    h1 {
         font-size: 40px;
         font-weight: normal;
     }
 
-    > h2 {
+    h2 {
         font-size: 23px;
         font-weight: normal;
     }

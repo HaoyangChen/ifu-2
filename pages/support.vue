@@ -70,6 +70,7 @@ export default {
 }
 
 .support-section {
+    background-color: #f1f9ff;
     p {
         width: 60%;
     }
@@ -77,6 +78,7 @@ export default {
 
 .left-section {
     padding-right: 0;
+    flex-basis: 85%;
 }
 
 section > div {

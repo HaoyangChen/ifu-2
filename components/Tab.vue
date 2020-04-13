@@ -7,6 +7,8 @@
                 class="tab-title"
                 :style="getTabTitleStyle(index)"
                 @click="changeTab(index)"
+                @mouseenter="onHover(index)"
+                @mouseleave="onLeave"
             >
                 {{ tab.title }}
             </div>
@@ -47,6 +49,7 @@ export default {
     data() {
         return {
             activeIndex: 0,
+            hoverIndex: null,
         };
     },
     methods: {
@@ -54,17 +57,20 @@ export default {
             this.activeIndex = newIndex;
         },
         getTabTitleStyle(index) {
-            if (index === this.activeIndex) {
-                return {
-                    color: this.list[index].color,
-                    textDecoration: 'underline',
-                    textUnderlinePosition: 'under',
-                    borderBottom: `20px solid ${this.list[index].color}`,
-                };
-            }
-            return {
+            const style = {
                 borderBottom: `20px solid ${this.list[index].color}`,
             };
+            const color = this.list[index].color;
+            if (this.hoverIndex !== null && this.hoverIndex === index) {
+                style.color = color;
+                style.background = `rgba(${this.hexToRgb(color)}, 0.2)`;
+                return style;
+            }
+            if (index === this.activeIndex) {
+                style.color = color;
+                return style;
+            }
+            return style;
         },
         getTabTitleMobileStyle(index) {
             return {
@@ -73,6 +79,23 @@ export default {
                 background: this.list[index].color,
                 boxSizing: 'border-box',
             };
+        },
+        onHover(index) {
+            this.hoverIndex = index;
+        },
+        onLeave() {
+            this.hoverIndex = null;
+        },
+        hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
+                hex,
+            );
+            return result
+                ? `${parseInt(result[1], 16)}, ${parseInt(
+                      result[2],
+                      16,
+                  )}, ${parseInt(result[3], 16)}`
+                : '0, 0, 0';
         },
     },
 };

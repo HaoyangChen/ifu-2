@@ -97,11 +97,12 @@
                 }}</router-link>
             </div>
         </section>
-        <section style="background: #F1F9FF">
+        <section class="background-blue">
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
                     <img :src="eventImage7" alt="" />
+                    <img id="arrow2" :src="arrow" alt="arrow" />
                     <div class="event-text">
                         {{ $t('home.eventList.text1') }}
                     </div>
@@ -117,6 +118,45 @@
                         :link="event.link"
                         :text="event.text"
                     />
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section">
+            <div class="container half-style">
+                <div class="col-half">
+                    <h2>{{ $t('home.aboutUs.title') }}</h2>
+                    <p>{{ $t('home.aboutUs.text1') }}</p>
+                    <p class="scan-qr-margin">
+                        <b>{{ $t('home.aboutUs.text2') }}</b>
+                    </p>
+                </div>
+                <div class="col-half col-half-center">
+                    <div class="qr-image">
+                        <img
+                            :src="qrCodeFollow"
+                            alt="image in cohesion section"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section background-blue">
+            <div class="container half-style">
+                <div class="col-half col-half-left">
+                    <div class="qr-image">
+                        <img
+                            :src="qrCodeParent"
+                            alt="image in cohesion section"
+                        />
+                    </div>
+                </div>
+                <div class="col-half">
+                    <h2>{{ $t('home.parentGroup.title') }}</h2>
+                    <p>{{ $t('home.parentGroup.text1') }}</p>
+                    <p>{{ $t('home.parentGroup.text2') }}</p>
+                    <p class="scan-qr-margin">
+                        <b>{{ $t('home.parentGroup.text3') }}</b>
+                    </p>
                 </div>
             </div>
         </section>
@@ -165,6 +205,10 @@ import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
+import qrCodeFollow from '@/assets/home/qrcode-follow.png';
+import qrCodeParent from '@/assets/home/qrcode-parent.png';
+import arrow from '@/assets/home/Arrow.png';
+
 export default {
     components: {
         Banner,
@@ -205,6 +249,9 @@ export default {
                     },
                 },
             },
+            qrCodeFollow,
+            qrCodeParent,
+            arrow,
         };
     },
     computed: {
@@ -380,6 +427,26 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+.event-left:hover {
+    background: #000;
+    img {
+        opacity: 0.5;
+    }
+    #arrow2 {
+        opacity: 1;
+        position: absolute;
+        top: 37%;
+        left: 40%;
+        height: auto;
+        min-width: auto;
+        display: flex;
+    }
+}
+
+#arrow2 {
+    display: none;
+}
+
 .wuhan-coronavirus {
     background: #f1f9ff;
     display: flex;
@@ -572,9 +639,58 @@ img {
     background-color: rgba(78, 189, 247, 0.9);
     color: white;
 }
+
+.about-us-section {
+    padding-top: 60px;
+
+    .half-style {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-half {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-half-center {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .scan-qr-margin {
+        margin-top: 40px;
+    }
+
+    .col-half-left {
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.background-blue {
+    background-color: #f1f9ff;
+}
 </style>
 <style lang="scss" scoped>
 @media (max-width: 1024px) {
+    .about-us-section {
+        .half-style {
+            flex-direction: column;
+        }
+
+        .col-half {
+            max-width: 100%;
+        }
+
+        .qr-image > img {
+            width: 100%;
+            height: 90%;
+        }
+    }
+
     .wuhan-coronavirus {
         flex-direction: column;
 

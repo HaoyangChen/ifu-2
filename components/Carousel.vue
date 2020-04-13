@@ -21,11 +21,10 @@
             <a
                 v-for="(item, i) in list"
                 :key="i"
-                :style="{
-                    backgroundColor: item.backgroundColor,
-                    zIndex: list.length - i,
-                }"
+                :style="listStyle(list.length, i, item.backgroundColor)"
                 @click="changeItem(item, i)"
+                @mouseenter="onHover(i)"
+                @mouseleave="onLeave"
             >
                 <div class="list-item">
                     <div class="num">{{ '0' + (i + 1) }}</div>
@@ -60,6 +59,7 @@ export default {
             title: this.list[0].title,
             text: this.list[0].subTitle,
             index: 0,
+            hoverIndex: null,
         };
     },
     watch: {
@@ -79,6 +79,30 @@ export default {
                 document.querySelector(newItem.position).scrollIntoView(true);
             }
         },
+        onHover(index) {
+            this.hoverIndex = index;
+        },
+        onLeave() {
+            this.hoverIndex = null;
+        },
+        listStyle(length, index, backgroundColor) {
+            const style = {
+                zIndex: length - index,
+            };
+            if (index === 0) {
+                style.borderRadius = '0 10px 0 0';
+            } else if (index === length - 1) {
+                style.borderRadius = '0 0 10px 0';
+            }
+            if (this.hoverIndex !== null && this.hoverIndex === index) {
+                style.backgroundColor = 'white';
+                style.border = `1px solid ${backgroundColor}`;
+                style.color = backgroundColor;
+                return style;
+            }
+            style.backgroundColor = backgroundColor;
+            return style;
+        },
     },
 };
 </script>
@@ -95,6 +119,9 @@ export default {
     padding: 52px 30px 52px 50px;
     box-sizing: border-box;
     background-repeat: no-repeat;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
 }
 .active-item p {
     font-size: 16px;
@@ -113,11 +140,13 @@ export default {
     flex: 1;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     position: relative;
-    border-radius: 0px 10px 10px 0px;
 }
 .list-item span {
     font-size: 24px;
     display: block;
+}
+.list a:hover .num {
+    color: inherit;
 }
 .num {
     font-size: 50px;
