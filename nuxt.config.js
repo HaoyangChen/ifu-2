@@ -60,6 +60,11 @@ export default {
                     useCookie: true,
                     fallbackLocale: 'zh',
                 },
+                vueI18n: {
+                    // When no translation available,
+                    // fallback to zh-CN
+                    fallbackLocale: 'zh',
+                },
                 langDir: 'lang/',
                 locales: [
                     {
@@ -68,12 +73,12 @@ export default {
                         name: 'Chinese',
                         file: 'zh.js',
                     },
-                    {
-                        code: 'en',
-                        iso: 'en-US',
-                        name: 'English',
-                        file: 'en.js',
-                    },
+                    // {
+                    //     code: 'en',
+                    //     iso: 'en-US',
+                    //     name: 'English',
+                    //     file: 'en.js',
+                    // },
                 ],
                 strategy: 'no_prefix',
                 lazy: true,
