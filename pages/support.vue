@@ -10,6 +10,32 @@
         <section class="support-section">
             <h2>{{ $t('donation.support.title') }}</h2>
             <p>{{ $t('donation.support.description') }}</p>
+            <div class="images-row">
+                <div class="image-item">
+                    <img src="@/assets/support/support-1.png" />
+                    <p>人员工资</p>
+                </div>
+                <div class="image-item">
+                    <img src="@/assets/support/support-2.png" />
+                    <p>行政费用</p>
+                </div>
+                <div class="image-item">
+                    <img src="@/assets/support/support-3.png" />
+                    <p>校园志愿者事务报销</p>
+                </div>
+                <div class="image-item">
+                    <img src="@/assets/support/support-4.png" />
+                    <p>学术项目</p>
+                </div>
+                <div class="image-item">
+                    <img src="@/assets/support/support-5.png" />
+                    <p>团建与年会</p>
+                </div>
+                <div class="image-item">
+                    <img src="@/assets/support/support-6.png" />
+                    <p>其他</p>
+                </div>
+            </div>
         </section>
         <div class="row">
             <section class="left-section">
@@ -74,6 +100,25 @@ export default {
     p {
         width: 60%;
     }
+
+    .images-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .image-item {
+            img {
+                width: 170px;
+                height: 170px;
+            }
+
+            p {
+                width: 100%;
+                text-align: center;
+                margin: 20px auto;
+            }
+        }
+    }
 }
 
 .left-section {
@@ -100,6 +145,24 @@ section > div:first-of-type {
     .support-section {
         p {
             width: 100%;
+        }
+
+        .images-row {
+            margin-top: 20px;
+            flex-wrap: wrap;
+
+            .image-item {
+                flex-basis: 33%;
+
+                img {
+                    width: 175px;
+                    height: 175px;
+                }
+
+                p {
+                    margin: 0 auto 20px auto;
+                }
+            }
         }
     }
 

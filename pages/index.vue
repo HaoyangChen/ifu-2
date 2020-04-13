@@ -79,25 +79,7 @@
                 </div>
             </section>
         </div>
-        <section class="container">
-            <h2>{{ $t('home.ourTeam.title') }}</h2>
-            <div class="profile-list">
-                <Profile
-                    v-for="(profile, index) in profileList"
-                    :key="index"
-                    class="profile-item"
-                    :image="profile.image"
-                    :title="profile.title"
-                    :sub-title="profile.subTitle"
-                />
-            </div>
-            <div class="all-members">
-                <router-link :to="{ path: 'team' }">{{
-                    $t('home.ourTeam.allTeamMembers')
-                }}</router-link>
-            </div>
-        </section>
-        <section class="background-blue">
+        <section>
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
@@ -121,10 +103,11 @@
                 </div>
             </div>
         </section>
-        <section class="about-us-section">
+        <section class="about-us-section background-blue">
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
+                    <h3>IFU 官方公众号</h3>
                     <p>{{ $t('home.aboutUs.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.aboutUs.text2') }}</b>
@@ -140,23 +123,26 @@
                 </div>
             </div>
         </section>
-        <section class="about-us-section background-blue">
+        <section class="about-us-section">
             <div class="container half-style">
-                <div class="col-half col-half-left">
-                    <div class="qr-image">
-                        <img
-                            :src="qrCodeParent"
-                            alt="image in cohesion section"
-                        />
-                    </div>
+                <div class="col-half">
+                    <h3>{{ $t('home.studentGroup.title') }}</h3>
+                    <p>{{ $t('home.studentGroup.text1') }}</p>
+                    <p class="scan-qr-margin">
+                        <b>{{ $t('home.studentGroup.text3') }}</b>
+                    </p>
                 </div>
                 <div class="col-half">
-                    <h2>{{ $t('home.parentGroup.title') }}</h2>
-                    <p>{{ $t('home.parentGroup.text1') }}</p>
-                    <p>{{ $t('home.parentGroup.text2') }}</p>
-                    <p class="scan-qr-margin">
-                        <b>{{ $t('home.parentGroup.text3') }}</b>
-                    </p>
+                    <div class="student-group-image">
+                        <img
+                            src="@/assets/home/qrcode-student.png"
+                            alt="QR Code for Student Group"
+                        />
+                        <img
+                            src="@/assets/home/april-annoucement.png"
+                            alt="April Annoucement"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,22 +152,12 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Button from '@/components/Button.vue';
-import Profile from '@/components/Profile.vue';
 import Event from '@/components/Event.vue';
 import Carousel from '@/components/Carousel.vue';
 import bannerImage from '@/assets/home/home_banner.png';
 import workImage from '@/assets/home/works.png';
 
 import wuhanImage from '@/assets/home/wuhan.png';
-
-import tangjiawenImage from '@/assets/team/tangjiawen.png';
-import luoyanranImage from '@/assets/team/luoyanran.png';
-import jianghanqinImage from '@/assets/team/jianghanqin.png';
-import guixiaoqinImage from '@/assets/team/guixiaoqin.png';
-import xuzhiqiImage from '@/assets/team/xuzhiqi.png';
-import wangcaiweiImage from '@/assets/team/wangcaiwei.png';
-import zhuohanwenImage from '@/assets/team/zhuohanwen.png';
-import zhanzixuanImage from '@/assets/team/zhanzixuan.png';
 
 import eventImage1 from '@/assets/home/event_1.png';
 import eventImage2 from '@/assets/home/event_2.png';
@@ -213,7 +189,6 @@ export default {
     components: {
         Banner,
         Button,
-        Profile,
         Event,
         Carousel,
         HomeSwiper,
@@ -319,50 +294,6 @@ export default {
                         'home.ourServices.serviceList.DMAsubTitle',
                     ),
                     icon: three,
-                },
-            ];
-        },
-        profileList() {
-            return [
-                {
-                    image: tangjiawenImage,
-                    title: this.$t('home.ourTeam.title1'),
-                    subTitle: this.$t('home.ourTeam.name1'),
-                },
-                {
-                    image: zhuohanwenImage,
-                    title: this.$t('home.ourTeam.title2'),
-                    subTitle: this.$t('home.ourTeam.name2'),
-                },
-                {
-                    image: zhanzixuanImage,
-                    title: this.$t('home.ourTeam.title3'),
-                    subTitle: this.$t('home.ourTeam.name3'),
-                },
-                {
-                    image: jianghanqinImage,
-                    title: this.$t('home.ourTeam.title4'),
-                    subTitle: this.$t('home.ourTeam.name4'),
-                },
-                {
-                    image: luoyanranImage,
-                    title: this.$t('home.ourTeam.title5'),
-                    subTitle: this.$t('home.ourTeam.name5'),
-                },
-                {
-                    image: guixiaoqinImage,
-                    title: this.$t('home.ourTeam.title6'),
-                    subTitle: this.$t('home.ourTeam.name6'),
-                },
-                {
-                    image: xuzhiqiImage,
-                    title: this.$t('home.ourTeam.title7'),
-                    subTitle: this.$t('home.ourTeam.name7'),
-                },
-                {
-                    image: wangcaiweiImage,
-                    title: this.$t('home.ourTeam.title8'),
-                    subTitle: this.$t('home.ourTeam.name8'),
                 },
             ];
         },
@@ -643,6 +574,10 @@ img {
 .about-us-section {
     padding-top: 60px;
 
+    h3 {
+        margin-top: 0;
+    }
+
     .half-style {
         display: flex;
         flex-wrap: wrap;
@@ -673,8 +608,7 @@ img {
 .background-blue {
     background-color: #f1f9ff;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .about-us-section {
         .half-style {
@@ -688,6 +622,10 @@ img {
         .qr-image > img {
             width: 100%;
             height: 90%;
+        }
+
+        .student-group-image {
+            text-align: center;
         }
     }
 
