@@ -30,13 +30,24 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: [
+        {
+            src: '~plugins/drift.js',
+            mode: 'client',
+        },
+    ],
     /*
      ** Nuxt.js dev-modules
      */
     buildModules: [
         // Doc: https://github.com/nuxt-community/eslint-module
         '@nuxtjs/eslint-module',
+        [
+            '@nuxtjs/google-analytics',
+            {
+                id: 'G-F48WM6RK48',
+            },
+        ],
     ],
     /*
      ** Nuxt.js modules
