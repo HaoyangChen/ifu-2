@@ -117,7 +117,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
     width: 100%;
     border-bottom: 1px solid #e8e9ed;
@@ -167,10 +167,6 @@ header {
     background-color: #ddf2fd;
 }
 
-.service:hover .service-menu {
-    display: block;
-}
-
 .arrow {
     display: inline-block;
     width: 0;
@@ -181,8 +177,14 @@ header {
     transform: rotateZ(180deg);
 }
 
-.service:hover .arrow {
-    transform: rotateZ(-90deg);
+.service:hover {
+    .service-menu {
+        display: block;
+    }
+
+    .arrow {
+        transform: rotateZ(-90deg);
+    }
 }
 
 a {
@@ -207,9 +209,7 @@ a {
 span {
     cursor: pointer;
 }
-</style>
 
-<style scoped>
 /* Mobile style */
 @media (max-width: 1024px) {
     header {

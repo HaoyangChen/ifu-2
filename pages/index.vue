@@ -13,7 +13,7 @@
                 <h2>{{ $t('home.coronavirus.subTitle') }}</h2>
                 <img
                     class="mobile wuhan-mobile-image"
-                    :src="wuhanMobileImage1"
+                    src="@/assets/home/wuhan-mobile-1.png"
                 />
                 <h1>{{ $t('home.coronavirus.title') }}</h1>
                 <div class="wuhan-description">
@@ -26,11 +26,11 @@
                 >
                 <img
                     class="mobile wuhan-mobile-image"
-                    :src="wuhanMobileImage2"
+                    src="@/assets/home/wuhan-mobile-2.png"
                 />
             </section>
             <section class="desktop container">
-                <img :src="wuhanImage" />
+                <img src="@/assets/home/wuhan.png" />
             </section>
         </div>
         <section class="container part-1">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="img" :src="workImage" alt="" />
+                <img class="img" src="@/assets/home/works.png" alt="" />
                 <div class="row right">
                     <div
                         v-for="(item, index) in workRightList"
@@ -83,8 +83,12 @@
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
-                    <img :src="eventImage7" alt="" />
-                    <img id="arrow2" :src="arrow" alt="arrow" />
+                    <img src="@/assets/home/event_7.png" alt="" />
+                    <img
+                        id="arrow2"
+                        src="@/assets/home/Arrow.png"
+                        alt="arrow"
+                    />
                     <div class="event-text">
                         {{ $t('home.eventList.text1') }}
                     </div>
@@ -116,7 +120,7 @@
                 <div class="col-half col-half-center">
                     <div class="qr-image">
                         <img
-                            :src="qrCodeFollow"
+                            src="@/assets/home/qrcode-follow.png"
                             alt="image in cohesion section"
                         />
                     </div>
@@ -155,9 +159,6 @@ import Button from '@/components/Button.vue';
 import Event from '@/components/Event.vue';
 import Carousel from '@/components/Carousel.vue';
 import bannerImage from '@/assets/home/home_banner.png';
-import workImage from '@/assets/home/works.png';
-
-import wuhanImage from '@/assets/home/wuhan.png';
 
 import eventImage1 from '@/assets/home/event_1.png';
 import eventImage2 from '@/assets/home/event_2.png';
@@ -165,7 +166,6 @@ import eventImage3 from '@/assets/home/event_3.png';
 import eventImage4 from '@/assets/home/event_4.png';
 import eventImage5 from '@/assets/home/event_5.png';
 import eventImage6 from '@/assets/home/event_6.png';
-import eventImage7 from '@/assets/home/event_7.png';
 import serviceTotoroImage from '@/assets/home/service_totoro.png';
 import ifuMembershipImage from '@/assets/home/IFU_membership.png';
 import otherServiceImage from '@/assets/home/other_service.png';
@@ -174,16 +174,10 @@ import workImage2 from '@/assets/home/work_2.png';
 import workImage3 from '@/assets/home/work_3.png';
 import workImage4 from '@/assets/home/work_4.png';
 import workImage5 from '@/assets/home/work_5.png';
-import wuhanMobileImage1 from '@/assets/home/wuhan-mobile-1.png';
-import wuhanMobileImage2 from '@/assets/home/wuhan-mobile-2.png';
 import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
 import HomeSwiper from '@/components/HomeSwiper.vue';
-
-import qrCodeFollow from '@/assets/home/qrcode-follow.png';
-import qrCodeParent from '@/assets/home/qrcode-parent.png';
-import arrow from '@/assets/home/Arrow.png';
 
 export default {
     components: {
@@ -196,15 +190,9 @@ export default {
     data() {
         return {
             bannerImage,
-            wuhanImage,
-            workImage,
-            wuhanMobileImage1,
-            wuhanMobileImage2,
             isShow: true,
-            eventImage7,
             eventLink:
                 'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247498115&idx=3&sn=20a54f7f102af1e73b54598589bd49b7&chksm=fb9724bbcce0adad7c9b15d53a4ae6325574498324813dda4ee9d2a4dc241e8ef68a92ff3922&token=1217661680&lang=zh_CN#rd',
-            type: 'service',
             swiperOption: {
                 pagination: {
                     el: '.swiper-pagination',
@@ -224,9 +212,6 @@ export default {
                     },
                 },
             },
-            qrCodeFollow,
-            qrCodeParent,
-            arrow,
         };
     },
     computed: {
@@ -346,18 +331,15 @@ export default {
 };
 </script>
 
-<style>
-/* 暂时这样修改 Banner 里两个标题的行距 */
-.home .banner .subtitle-text {
+<style lang="scss" scoped>
+/deep/ .banner .subtitle-text {
     margin-bottom: 0px;
 }
 
-.home .banner .title-text {
+/deep/ .banner .title-text {
     margin-top: 0px;
 }
-</style>
 
-<style lang="scss" scoped>
 .event-left:hover {
     background: #000;
     img {
@@ -400,7 +382,7 @@ export default {
 
     .wuhan-description {
         padding: 0 0 0 18px;
-        margin-top: 35px;
+        margin: 35px 0;
         border-left: 5px solid #fe4c31;
         border-radius: 4px;
         position: relative;
@@ -656,6 +638,7 @@ img {
             .wuhan-description {
                 left: 0px;
                 border: none;
+                margin-bottom: 0;
                 padding: 0;
             }
         }

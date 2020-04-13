@@ -214,8 +214,7 @@ img {
         letter-spacing: 0.1em;
     }
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .top {
         padding: 0 20px;

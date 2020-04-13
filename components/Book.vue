@@ -134,7 +134,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .book-inner {
     width: 100%;
     height: 800px;
@@ -200,9 +200,7 @@ export default {
 .right-arrow {
     transform: rotate(180deg);
 }
-</style>
 
-<style scoped>
 /* Mobile */
 @media (max-width: 1024px) {
     .page-container {

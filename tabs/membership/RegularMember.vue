@@ -228,9 +228,7 @@ img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-</style>
 
-<style lang="scss" scoped>
 @media (max-width: 1024px) {
     .event-right {
         width: 100%;

@@ -101,7 +101,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .tab-list {
     width: 100%;
     height: 138px;
@@ -113,7 +113,6 @@ export default {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    /* line-height: 138px; */
     line-height: 40px;
     white-space: pre-line;
     text-align: center;
@@ -126,9 +125,7 @@ export default {
 .tab-content {
     overflow: hidden;
 }
-</style>
 
-<style scoped>
 /* Mobile */
 .tab-title-mobile {
     display: flex;

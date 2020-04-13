@@ -96,13 +96,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .row {
     display: flex;
-}
 
-.row > div {
-    flex-basis: 50%;
+    > div {
+        flex-basis: 50%;
+    }
 }
 
 p {
@@ -125,9 +125,7 @@ img {
 #more-info {
     margin-top: 12%;
 }
-</style>
 
-<style lang="scss" scoped>
 @media (max-width: 1024px) {
     .row > div {
         flex-basis: 100%;

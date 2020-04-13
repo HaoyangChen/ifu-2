@@ -193,7 +193,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card-list,
 .ifu-list {
     display: flex;
@@ -221,12 +221,9 @@ export default {
 
 .part-5 {
     background: url('../../assets/membership/isic/wave.png') no-repeat;
-    /* padding: 75px 0px; */
 }
 
 .col-half {
-    /* flex: 0 0 45%;
-    max-width: 45%; */
     flex-basis: 46%;
 }
 
@@ -252,7 +249,6 @@ export default {
 
 .ifu-discount-banner {
     background-color: #f1f9ff;
-    /* padding: 100px 130px;  */
 }
 
 .display-mobile {
@@ -271,9 +267,7 @@ export default {
 .card-section {
     padding: 0;
 }
-</style>
 
-<style scoped>
 @media (max-width: 1024px) {
     #waveimg {
         width: 100%;

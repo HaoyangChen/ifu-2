@@ -95,14 +95,14 @@ export default {
 };
 </script>
 
-<style scoped>
-.culture-section p {
-    width: 33%;
-    line-height: 40px;
-}
-
+<style lang="scss" scoped>
 .culture-section {
     position: relative;
+
+    p {
+        width: 33%;
+        line-height: 40px;
+    }
 }
 
 .video {
@@ -121,10 +121,10 @@ export default {
     width: 1208px;
     text-align: center;
     position: relative;
-}
 
-.distribution-image img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .tips {
@@ -244,9 +244,7 @@ export default {
     padding-top: 0;
     text-align: center;
 }
-</style>
 
-<style scoped>
 @media (max-width: 1024px) {
     .culture-section p {
         width: 100%;
@@ -262,10 +260,10 @@ export default {
 
     .distribution-image-mobile {
         width: 100%;
-    }
 
-    .distribution-image-mobile img {
-        width: 100%;
+        img {
+            width: 100%;
+        }
     }
 }
 </style>

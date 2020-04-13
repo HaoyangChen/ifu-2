@@ -735,8 +735,7 @@ h2 {
     margin: 0;
     padding: 60px 0 20px 0;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .bg {
         background-image: none;

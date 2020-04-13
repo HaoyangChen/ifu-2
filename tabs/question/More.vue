@@ -102,7 +102,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .more {
     padding: 70px 119px;
 }

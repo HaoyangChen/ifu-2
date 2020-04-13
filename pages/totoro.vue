@@ -314,9 +314,7 @@ p {
         }
     }
 }
-</style>
 
-<style lang="scss" scoped>
 @media (max-width: 1024px) {
     .profile {
         flex-basis: 100%;

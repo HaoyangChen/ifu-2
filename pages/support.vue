@@ -41,18 +41,18 @@
             <section class="left-section">
                 <h2>{{ $t('donation.payment.online') }}</h2>
                 <div>
-                    <img :src="wechatImage" />
+                    <img src="@/assets/support/wechat.png" />
                     <p>{{ $t('donation.payment.wechat') }}</p>
                 </div>
                 <div>
-                    <img :src="alipayImage" />
+                    <img src="@/assets/support/alipay.png" />
                     <p>{{ $t('donation.payment.alipay') }}</p>
                 </div>
             </section>
             <section>
                 <h2>{{ $t('donation.payment.foreign') }}</h2>
                 <div>
-                    <img :src="zelleImage" />
+                    <img src="@/assets/support/zelle.png" />
                     <p class="bottom-divide">
                         {{ $t('donation.payment.zelle') }}
                     </p>
@@ -65,9 +65,6 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import bannerImage from '@/assets/support/banner.png';
-import wechatImage from '@/assets/support/wechat.png';
-import alipayImage from '@/assets/support/alipay.png';
-import zelleImage from '@/assets/support/zelle.png';
 
 export default {
     components: {
@@ -76,9 +73,6 @@ export default {
     data() {
         return {
             bannerImage,
-            wechatImage,
-            alipayImage,
-            zelleImage,
         };
     },
     head() {

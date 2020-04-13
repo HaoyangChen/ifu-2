@@ -68,15 +68,13 @@ export default {
 };
 </script>
 
-<style>
-.about .tab-content .banner,
-.about .tab-content-mobile .banner {
-    display: none;
-}
-</style>
-
 <style lang="scss" scoped>
 .about {
     line-height: 24px;
+}
+
+/deep/ .tab-content .banner,
+/deep/ .tab-content-mobile .banner {
+    display: none;
 }
 </style>

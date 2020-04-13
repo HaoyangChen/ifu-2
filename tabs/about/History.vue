@@ -89,7 +89,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 section {
     padding: 0;
 }
@@ -250,9 +250,7 @@ section {
 .time-2019 .time {
     background: #f96291;
 }
-</style>
 
-<style scoped>
 @media (max-width: 1024px) {
     .history {
         width: 100%;

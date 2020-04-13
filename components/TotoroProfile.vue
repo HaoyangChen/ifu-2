@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .profile {
     text-align: left;
     padding-bottom: 20px;
@@ -76,8 +76,7 @@ span {
 .text {
     padding: 15px 0 15px 0;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .profile {
         flex-basis: 100%;

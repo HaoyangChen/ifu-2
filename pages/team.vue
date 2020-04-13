@@ -295,12 +295,16 @@ h2 {
     margin: 0;
     padding: 40px 0 30px 0;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
+    section {
+        &:first-of-type {
+            padding-top: 15px;
+        }
+    }
+
     .container {
         text-align: center;
-        padding: 0 50px;
     }
     .banner {
         text-align: center;
