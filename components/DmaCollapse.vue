@@ -50,7 +50,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .collapse {
     width: 100%;
 }
@@ -83,8 +83,7 @@ export default {
 .test {
     padding-top: 100px;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .collapse {
         min-height: 85px;

@@ -256,7 +256,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .course {
     padding: 70px 119px;
 }
@@ -264,9 +264,7 @@ export default {
 .collapse {
     margin-top: 40px;
 }
-</style>
 
-<style scoped>
 @media (max-width: 1024px) {
     .course {
         padding: 10%;

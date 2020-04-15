@@ -84,7 +84,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .achievement-list {
     display: flex;
     flex-wrap: wrap;
@@ -104,10 +104,12 @@ export default {
 
 .achievement-item p {
     margin: 24px;
-}
-</style>
 
-<style scoped>
+    /deep/ span {
+        color: #54bef5;
+    }
+}
+
 @media (max-width: 1024px) {
     .achievement-list {
         justify-content: center;
@@ -129,6 +131,11 @@ export default {
 
     .achievement-item p {
         margin: 32px 24px 32px 60px;
+
+        /deep/ span {
+            color: white;
+            text-decoration: underline;
+        }
     }
 
     .achievement-item:nth-child(1) {
@@ -169,20 +176,6 @@ export default {
 
     .achievement-item:nth-child(10) {
         background: #34bbc9;
-    }
-}
-</style>
-
-<style lang="scss">
-/* 因为 span 是动态加载进来的，需要非scoped的style */
-.about .achievement-item p span {
-    color: #54bef5;
-}
-
-@media (max-width: 1024px) {
-    .about .achievement-item p span {
-        color: white;
-        text-decoration: underline;
     }
 }
 </style>

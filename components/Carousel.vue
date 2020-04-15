@@ -182,8 +182,7 @@ export default {
     display: inline-block;
     position: relative;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .list {
         display: none;

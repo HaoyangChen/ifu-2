@@ -59,15 +59,13 @@ export default {
     },
 };
 </script>
-<style>
-.container
-    .home-swiper
-    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+<style lang="scss" scoped>
+/* Use /deep/ selector to penetrate Swiper component */
+/deep/ .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
     background: white;
     opacity: 0.8;
 }
-</style>
-<style lang="scss" scoped>
+
 .img {
     text-align: center;
 }

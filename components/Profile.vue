@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .profile {
     text-align: center;
     padding-bottom: 20px;
@@ -59,8 +59,7 @@ p {
 span {
     font-weight: bold;
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .profile-image-container {
         height: 260px;

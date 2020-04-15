@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .collapse {
     box-sizing: border-box;
     width: 100%;
@@ -80,9 +80,7 @@ export default {
 .arrow-down path {
     stroke: black;
 }
-</style>
 
-<style scoped>
 @media (max-width: 1024px) {
     .header {
         height: auto;

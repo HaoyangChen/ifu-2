@@ -73,7 +73,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .banner {
     width: 100%;
     height: 100%;
@@ -121,9 +121,7 @@ button {
 strong {
     margin-right: 5px;
 }
-</style>
 
-<style scoped>
 @media (max-width: 1024px) {
     .banner {
         padding: 70px 30px 35px 30px;

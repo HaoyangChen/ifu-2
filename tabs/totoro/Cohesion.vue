@@ -276,9 +276,7 @@ export default {
 .section-scan {
     padding-right: 0;
 }
-</style>
 
-<style lang="scss" scoped>
 @media (max-width: 1024px) {
     .row {
         flex-direction: column;

@@ -37,6 +37,10 @@ export default {
         width: 45%;
         line-height: 31px;
         margin-bottom: 50px;
+
+        /deep/ span {
+            color: #11a4da;
+        }
     }
     .image-container {
         position: absolute;
@@ -60,19 +64,6 @@ export default {
             position: relative;
             top: 0;
             max-width: 100%;
-        }
-    }
-}
-</style>
-
-<style lang="scss">
-/* 因为用v-html载入，需要非scoped的style */
-.contact {
-    .emergency-contact {
-        p {
-            span {
-                color: #11a4da;
-            }
         }
     }
 }

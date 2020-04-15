@@ -86,8 +86,7 @@ p {
         color: #6c7b8a;
     }
 }
-</style>
-<style lang="scss" scoped>
+
 @media (max-width: 1024px) {
     .swiper-button-prev {
         top: 38%;

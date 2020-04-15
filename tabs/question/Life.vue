@@ -172,7 +172,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .life {
     padding: 70px 119px;
 }
