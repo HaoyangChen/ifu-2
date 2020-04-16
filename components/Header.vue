@@ -56,7 +56,7 @@
                 <n-link class="n-link" to="/support">{{
                     $t('header.support')
                 }}</n-link>
-                <!-- <div class="desktop">
+                <div class="desktop">
                     <span :class="activeLang('zh')" @click="changeLang('zh')"
                         >中文</span
                     >
@@ -72,7 +72,7 @@
                     <div :class="activeLang('en')" @click="changeLang('en')">
                         EN
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </header>
