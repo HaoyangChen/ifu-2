@@ -112,7 +112,7 @@ export default {
             title: '活动回顾',
             text1: '加州沙滩体验之BONFIRE',
             text2: '全美留学生家长行前安全交流会-深圳',
-            text3: '全美留学生家长行前安全交流会-上海',
+            text3: 'IFU X Words Alive 志愿活动',
             text4: '全美留学生家长行前安全交流会-北京',
             text5: '2019年国内分享会',
             text6: '2019年北京嘉年华',

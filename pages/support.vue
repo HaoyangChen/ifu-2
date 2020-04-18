@@ -91,9 +91,6 @@ export default {
 
 .support-section {
     background-color: #f1f9ff;
-    p {
-        width: 60%;
-    }
 
     .images-row {
         width: 100%;

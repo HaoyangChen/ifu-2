@@ -22,7 +22,7 @@ export default {
             title: 'IFU',
             subTitle: 'I, Family, You',
             description:
-                'International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. Now we’ve become a registered Non-Governmental Organization in the United States, actively connecting and serving International Students and their Families. We have over 300 volunteers in 21 top universities across the United States, Canada, France, and Singapore.',
+                "Founded in July 2017, started in the student community of the University of California, San Diego, we are now a federal public welfare organization in the United States, gathered more than 300 student volunteers covering the United States, Canada, the United Kingdom, France, Singapore and other universities, committed to solving International families' overseas safety, information asymmetry and other issues convey the voices of students to their parents and connect and serve the families studying abroad.",
             buttonText: 'Contact Us',
         },
         coronavirus: {

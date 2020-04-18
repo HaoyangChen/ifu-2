@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="app">
         <Header />
         <nuxt />
         <Footer />
@@ -41,6 +41,10 @@ body {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+#app {
+    overflow: hidden;
 }
 
 section {

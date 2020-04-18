@@ -74,7 +74,7 @@ export default {
                 {
                     image: wechatImg,
                     link:
-                        'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU1MTE2MDkxOQ==&scene=124#wechat_redirect',
+                        'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=100010050&idx=2&sn=884d96ee07af997401e4e2d47d17b224&scene=19#wechat_redirect',
                 },
                 {
                     image: weiboImg,

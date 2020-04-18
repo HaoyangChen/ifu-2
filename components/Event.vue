@@ -33,6 +33,7 @@ export default {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    max-width: 500px;
 }
 
 .event:hover {
@@ -64,8 +65,8 @@ export default {
     color: white;
 }
 
-img {
-    height: 100%;
+img:not(#arrow) {
+    min-height: 100%;
     min-width: 100%;
 }
 
