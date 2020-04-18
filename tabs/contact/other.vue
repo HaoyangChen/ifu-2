@@ -68,6 +68,15 @@ export default {
             width: 100%;
         }
     }
+
+    a {
+        color: #22a5d8;
+        text-decoration: none;
+
+        :hover {
+            color: #f96291;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

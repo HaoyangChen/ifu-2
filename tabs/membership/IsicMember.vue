@@ -261,7 +261,11 @@ export default {
 
 #more-discount {
     text-decoration: none;
-    color: #3ea6d6;
+    color: #22a5d8;
+
+    &:hover {
+        color: #f96291;
+    }
 }
 
 .card-section {

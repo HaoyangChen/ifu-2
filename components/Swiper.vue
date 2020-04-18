@@ -69,6 +69,14 @@ export default {
     padding-top: 10px;
     position: static;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    &:hover {
+        color: rgba(84, 190, 245, 0.3);
+    }
+}
+
 .swiper-button-prev {
     left: 0;
 }
@@ -119,6 +127,10 @@ p {
         border-bottom: 10px solid transparent;
         border-right: 10px solid #54bef5;
         top: 38%;
+
+        &:hover {
+            border-right: 10px solid rgba(84, 190, 245, 0.3);
+        }
     }
     .swiper-button-next {
         border-top: 10px solid transparent;
@@ -126,6 +138,10 @@ p {
         border-left: 10px solid #54bef5;
         right: 0;
         top: 38%;
+
+        &:hover {
+            border-left: 10px solid rgba(84, 190, 245, 0.3);
+        }
     }
 }
 </style>

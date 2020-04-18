@@ -45,6 +45,7 @@ button:hover {
     background-color: white;
     color: #22a5d8;
     border: 1px solid #22a5d8;
+    box-shadow: 0px 10px 15px white;
 }
 
 @media (max-width: 1024px) {

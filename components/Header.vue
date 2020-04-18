@@ -142,6 +142,7 @@ header {
 
 .service {
     position: relative;
+    cursor: default;
 }
 
 .service-menu {

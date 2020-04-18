@@ -191,6 +191,11 @@ export default {
     border-top: 27px solid transparent;
     border-bottom: 27px solid transparent;
     border-right: 50px solid #f96291;
+
+    &:hover:not(.disabled) {
+        border-right: 50px solid rgba(249, 98, 145, 0.3);
+        cursor: pointer;
+    }
 }
 
 .disabled {
@@ -217,6 +222,10 @@ export default {
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
         border-right: 20px solid #f96291;
+
+        &:hover:not(.disabled) {
+            border-right: 20px solid rgba(249, 98, 145, 0.3);
+        }
     }
 
     .disabled {

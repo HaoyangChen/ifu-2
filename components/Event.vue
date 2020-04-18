@@ -2,15 +2,13 @@
     <div class="event">
         <a :href="link" target="_blank">
             <img :src="image" alt="" />
-            <img id="arrow" :src="arrow" alt="arrow" />
+            <img id="arrow" src="@/assets/home/Arrow.png" alt="arrow" />
             <div class="event-text">{{ text }}</div>
         </a>
     </div>
 </template>
 
 <script>
-import arrow from '@/assets/home/Arrow.png';
-
 export default {
     name: 'Event',
     props: {
@@ -26,11 +24,6 @@ export default {
             type: String,
             required: true,
         },
-    },
-    data() {
-        return {
-            arrow,
-        };
     },
 };
 </script>
@@ -51,7 +44,7 @@ export default {
     #arrow {
         opacity: 1;
         position: absolute;
-        top: 37%;
+        top: 25%; // 稍微上移显得更居中一些
         left: 40%;
         height: auto;
         min-width: auto;

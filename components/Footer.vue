@@ -177,6 +177,10 @@ img {
         margin: 0;
         margin-bottom: 10px;
     }
+
+    img:hover {
+        filter: brightness(120%);
+    }
 }
 .bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.26);
