@@ -91,13 +91,20 @@ export default {
 
 .support-section {
     background-color: #f1f9ff;
-
+    p {
+        line-height: 31px;
+    }
     .images-row {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
         .image-item {
+            &:not(:first-of-type) {
+                margin-left: 15px;
+            }
+
             img {
                 width: 170px;
                 height: 170px;
@@ -140,6 +147,7 @@ section > div:first-of-type {
 
         .images-row {
             margin-top: 20px;
+            justify-content: space-evenly;
             flex-wrap: wrap;
 
             .image-item {

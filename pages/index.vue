@@ -147,6 +147,7 @@
                 <div class="col-half">
                     <div class="student-group-image">
                         <img
+                            class="qr-image"
                             src="@/assets/home/qrcode-student.png"
                             alt="QR Code for Student Group"
                         />
@@ -468,13 +469,13 @@ export default {
 
 .more-events {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 30px;
 
     a {
         color: #22a5d8;
         text-decoration: none;
 
-        :hover {
+        &:hover {
             color: #f96291;
         }
     }
@@ -594,13 +595,23 @@ img {
     }
 
     .scan-qr-margin {
-        margin-top: 40px;
+        margin: 30px 0;
     }
 
     .col-half-left {
         justify-content: left;
         align-items: center;
         display: flex;
+    }
+
+    .student-group-image {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .qr-image {
+            max-width: 180px;
+            max-height: 180px;
+        }
     }
 }
 
@@ -624,7 +635,13 @@ img {
         }
 
         .student-group-image {
-            text-align: center;
+            flex-direction: column;
+
+            .qr-image {
+                max-width: 150px;
+                max-height: 150px;
+                margin: 10px;
+            }
         }
     }
 
@@ -638,18 +655,19 @@ img {
         }
 
         h2 {
-            padding: 70px 0 30px 0;
+            padding: 30px 0 0 0;
         }
 
         section {
             flex-basis: 100%;
-            padding: 0px 24px;
+            padding: 15px 30px;
             border-top: 5px solid #fe4c31;
             border-bottom: 5px solid #fe4c31;
 
             .wuhan-mobile-image {
-                width: 100%;
-                margin: 0 0 35px 0;
+                max-width: 100%;
+                max-height: calc(100vw - 100px);
+                margin: 30px auto;
             }
 
             .wuhan-description {

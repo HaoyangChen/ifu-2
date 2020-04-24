@@ -114,7 +114,7 @@ export default {
             text7: '2019 IFU College Carnival in Shanghai',
         },
     },
-    dma: {
+    more: {
         banner: {
             title: 'MORE SERVICES',
             description:
@@ -341,7 +341,7 @@ export default {
             },
         },
     },
-    isic: {
+    membership: {
         banner: {
             title: 'IFU Membership',
             description:

@@ -73,7 +73,7 @@ export default {
         color: #22a5d8;
         text-decoration: none;
 
-        :hover {
+        &:hover {
             color: #f96291;
         }
     }

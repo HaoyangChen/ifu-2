@@ -5,11 +5,12 @@
             <h1 v-if="title" class="title-text" :style="{ color: titleColor }">
                 {{ title }}
             </h1>
-            <p>{{ description }}</p>
+            <p v-if="description">{{ description }}</p>
             <div v-for="(item, index) in bannerList" :key="index" class="title">
                 <strong>{{ item.name }}</strong
                 ><span>{{ item.text }}</span>
             </div>
+            <slot />
             <Button v-if="to" :external="external" :to="to">
                 {{ buttonText }}
             </Button>

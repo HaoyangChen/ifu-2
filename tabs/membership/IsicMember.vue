@@ -6,35 +6,35 @@
                     <div class="wave-image">
                         <img
                             id="waveimg"
-                            :src="waveImage"
+                            src="@/assets/membership/isic/wave-left.png"
                             alt="image in wave"
                         />
                     </div>
                 </div>
                 <div class="col-half">
-                    <h2 v-t="'isic.colhalf.whycardTitle'"></h2>
+                    <h2 v-t="'membership.colhalf.whycardTitle'"></h2>
                     <p>
-                        {{ $t('isic.colhalf.overView1')
-                        }}<b> {{ $t('isic.colhalf.overView2') }}</b
-                        >{{ $t('isic.colhalf.overView3')
-                        }}<b>{{ $t('isic.colhalf.overView4') }}</b
-                        >{{ $t('isic.colhalf.overView5')
-                        }}<b>{{ $t('isic.colhalf.overView6') }}</b
-                        >{{ $t('isic.colhalf.overView7') }}
+                        {{ $t('membership.colhalf.overView1')
+                        }}<b> {{ $t('membership.colhalf.overView2') }}</b
+                        >{{ $t('membership.colhalf.overView3')
+                        }}<b>{{ $t('membership.colhalf.overView4') }}</b
+                        >{{ $t('membership.colhalf.overView5')
+                        }}<b>{{ $t('membership.colhalf.overView6') }}</b
+                        >{{ $t('membership.colhalf.overView7') }}
                     </p>
                     <p>
-                        {{ $t('isic.colhalf.overView8')
-                        }}<b>{{ $t('isic.colhalf.overView9') }}</b
-                        >{{ $t('isic.colhalf.overView10')
-                        }}<b>{{ $t('isic.colhalf.overView11') }}</b
-                        >{{ $t('isic.colhalf.overView12') }}
+                        {{ $t('membership.colhalf.overView8')
+                        }}<b>{{ $t('membership.colhalf.overView9') }}</b
+                        >{{ $t('membership.colhalf.overView10')
+                        }}<b>{{ $t('membership.colhalf.overView11') }}</b
+                        >{{ $t('membership.colhalf.overView12') }}
                     </p>
                     <Button
                         external
                         to="https://weidian.com/item.html?itemID=2778597927&amp;wfr=c&amp;spider_token=8e9c"
                         :style="{ margin: '24px 0px' }"
                     >
-                        {{ $t('isic.colhalf.becomeMemberBtnText') }}
+                        {{ $t('membership.colhalf.becomeMemberBtnText') }}
                     </Button>
                 </div>
             </div>
@@ -43,7 +43,7 @@
             class="ifu-discount-banner"
             :style="{ backgroundColor: 'white' }"
         >
-            <h2 v-t="'isic.colhalf.isicDiscountTitle'"></h2>
+            <h2 v-t="'membership.colhalf.isicDiscountTitle'"></h2>
             <div class="card-list">
                 <Card
                     v-for="(item, index) in cardList"
@@ -56,14 +56,14 @@
             <div class="all-discounts">
                 <a
                     id="more-discount"
-                    v-t="'isic.colhalf.moreDiscount'"
+                    v-t="'membership.colhalf.moreDiscount'"
                     href="https://www.isic.org"
                     target="_blank"
                 ></a>
             </div>
         </section>
         <section class="ifu-discount-banner">
-            <h2 v-t="'isic.colhalf.ifuDiscountTitle'"></h2>
+            <h2 v-t="'membership.colhalf.ifuDiscountTitle'"></h2>
             <div class="ifu-list">
                 <Card
                     v-for="(item, index) in ifuList"
@@ -75,21 +75,24 @@
             </div>
         </section>
         <section class="isic-sample-section">
-            <p v-t="'isic.colhalf.becomeVIP'" class="display-mobile"></p>
+            <p v-t="'membership.colhalf.becomeVIP'" class="display-mobile"></p>
             <div class="row">
                 <div class="col-half">
                     <div class="wave-image">
-                        <img :src="isicSample" alt="image in wave" />
+                        <img
+                            src="@/assets/membership/isic/isic-sample.png"
+                            alt="image in wave"
+                        />
                     </div>
                 </div>
                 <div class="col-half">
                     <p
-                        v-t="'isic.colhalf.becomeVipDesktop'"
+                        v-t="'membership.colhalf.becomeVipDesktop'"
                         class="display-desktop"
                     ></p>
-                    <p v-t="'isic.colhalf.becomeVipContent'"></p>
+                    <p v-t="'membership.colhalf.becomeVipContent'"></p>
                     <Button to="/contact">{{
-                        $t('isic.colhalf.buttonText')
+                        $t('membership.colhalf.buttonText')
                     }}</Button>
                 </div>
             </div>
@@ -102,12 +105,10 @@ import Button from '@/components/Button.vue';
 import Card from '@/components/Card.vue';
 import AbenityImage from '@/assets/membership/isic/abenity.png';
 import UCSDImage from '@/assets/membership/isic/ucsd.png';
-import waveImage from '@/assets/membership/isic/wave-left.png';
 import nbaImage from '@/assets/membership/isic/nba.png';
 import greImage from '@/assets/membership/isic/gre.png';
 import studentUImage from '@/assets/membership/isic/studentuniverse.png';
 import hooliImage from '@/assets/membership/isic/hooli.png';
-import isicSample from '@/assets/membership/isic/isic-sample.png';
 import amazonImage from '@/assets/membership/isic/amazon.png';
 import amcImage from '@/assets/membership/isic/amc.png';
 import avisImage from '@/assets/membership/isic/avis.png';
@@ -124,12 +125,10 @@ export default {
     data() {
         return {
             UCSDImage,
-            waveImage,
             nbaImage,
             greImage,
             studentUImage,
             hooliImage,
-            isicSample,
         };
     },
     computed: {
@@ -137,39 +136,39 @@ export default {
             return [
                 {
                     image: AbenityImage,
-                    description: this.$t('isic.cardList.imgDescription1'),
+                    description: this.$t('membership.cardList.imgDescription1'),
                 },
                 {
                     image: UCSDImage,
-                    description: this.$t('isic.cardList.imgDescription2'),
+                    description: this.$t('membership.cardList.imgDescription2'),
                 },
                 {
                     image: nbaImage,
-                    description: this.$t('isic.cardList.imgDescription3'),
+                    description: this.$t('membership.cardList.imgDescription3'),
                 },
                 {
                     image: avisImage,
-                    description: this.$t('isic.cardList.imgDescription4'),
+                    description: this.$t('membership.cardList.imgDescription4'),
                 },
                 {
                     image: citypassImage,
-                    description: this.$t('isic.cardList.imgDescription5'),
+                    description: this.$t('membership.cardList.imgDescription5'),
                 },
                 {
                     image: lenovoImage,
-                    description: this.$t('isic.cardList.imgDescription6'),
+                    description: this.$t('membership.cardList.imgDescription6'),
                 },
                 {
                     image: universalImage,
-                    description: this.$t('isic.cardList.imgDescription7'),
+                    description: this.$t('membership.cardList.imgDescription7'),
                 },
                 {
                     image: amcImage,
-                    description: this.$t('isic.cardList.imgDescription8'),
+                    description: this.$t('membership.cardList.imgDescription8'),
                 },
                 {
                     image: amazonImage,
-                    description: this.$t('isic.cardList.imgDescription9'),
+                    description: this.$t('membership.cardList.imgDescription9'),
                 },
             ];
         },
@@ -177,15 +176,21 @@ export default {
             return [
                 {
                     image: greImage,
-                    description: this.$t('isic.cardList.imgDescription10'),
+                    description: this.$t(
+                        'membership.cardList.imgDescription10',
+                    ),
                 },
                 {
                     image: studentUImage,
-                    description: this.$t('isic.cardList.imgDescription11'),
+                    description: this.$t(
+                        'membership.cardList.imgDescription11',
+                    ),
                 },
                 {
                     image: hooliImage,
-                    description: this.$t('isic.cardList.imgDescription12'),
+                    description: this.$t(
+                        'membership.cardList.imgDescription12',
+                    ),
                 },
             ];
         },

@@ -107,6 +107,7 @@ export default {
 
 p {
     line-height: 31px;
+    margin-bottom: 30px;
 }
 
 img {

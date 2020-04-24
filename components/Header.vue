@@ -1,8 +1,12 @@
 <template>
     <header>
         <div class="header-inner">
-            <img class="desktop" src="../assets/header/logo.png" />
-            <img class="mobile" src="../assets/header/logo_mobile.png" />
+            <nuxt-link class="desktop logo" to="/" exact>
+                <img src="../assets/header/logo.png" />
+            </nuxt-link>
+            <nuxt-link class="mobile logo-mobile" to="/" exact>
+                <img src="../assets/header/logo_mobile.png" />
+            </nuxt-link>
             <p class="mobile title">
                 INTERNATIONAL FAMILY UNION
                 <br />
@@ -121,6 +125,12 @@ export default {
 header {
     width: 100%;
     border-bottom: 1px solid #e8e9ed;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .header-inner {
@@ -217,6 +227,13 @@ span {
         border-bottom: none;
     }
 
+    .logo-mobile {
+        height: 87px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .title {
         text-align: center;
     }
@@ -274,7 +291,7 @@ span {
         transform: rotateZ(-90deg);
     }
 
-    .nuxt-link-active {
+    .nuxt-link-active:not(.logo-mobile) {
         color: black;
         background: #a9defa;
         border-bottom: none;

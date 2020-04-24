@@ -1,10 +1,10 @@
 <template>
-    <div class="dma-container">
+    <div class="more-container">
         <Banner
-            class="dma-banner"
-            :title="$t('dma.banner.title')"
-            :description="$t('dma.banner.description')"
-            :button-text="$t('dma.banner.buttonText')"
+            class="more-banner"
+            :title="$t('more.banner.title')"
+            :description="$t('more.banner.description')"
+            :button-text="$t('more.banner.buttonText')"
             :background="bannerImage"
             to="/contact"
         />
@@ -19,7 +19,6 @@ import bannerImage from '@/assets/more/banner.png';
 import Other from '@/tabs/more/other.vue';
 
 export default {
-    name: 'Dma',
     components: {
         Banner,
         Tab,
@@ -32,13 +31,8 @@ export default {
     computed: {
         tabList() {
             return [
-                // {
-                //     title: 'IFU X DMA 夏校',
-                //     content: Summer,
-                //     color: '#C9D74A',
-                // },
                 {
-                    title: this.$t('dma.banner.tabContent'),
+                    title: this.$t('more.banner.tabContent'),
                     content: Other,
                     color: '#F96291',
                     defaultShow: true,
@@ -58,3 +52,9 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+/deep/ .tab .tab-list .tab-title:hover {
+    background: none !important;
+}
+</style>

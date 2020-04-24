@@ -1,12 +1,12 @@
 <template>
-    <div class="isic">
+    <div class="membership">
         <Banner
-            :title="$t('isic.banner.title')"
-            :description="$t('isic.banner.description')"
-            :button-text="$t('isic.banner.buttonText')"
+            :title="$t('membership.banner.title')"
+            :description="$t('membership.banner.description')"
+            :button-text="$t('membership.banner.buttonText')"
             :background="bannerImage"
             external
-            to="https://www.wjx.top/jq/48243970.aspx"
+            to="https://www.wjx.cn/jq/71891803.aspx"
         />
         <Tab :list="tabList" />
     </div>
@@ -33,13 +33,13 @@ export default {
         tabList() {
             return [
                 {
-                    title: this.$t('isic.tabList.regularMember'),
+                    title: this.$t('membership.tabList.regularMember'),
                     content: RegularMember,
                     color: '#C9D74A',
                     defaultShow: true,
                 },
                 {
-                    title: this.$t('isic.tabList.ifuIsicMember'),
+                    title: this.$t('membership.tabList.ifuIsicMember'),
                     content: IsicMember,
                     color: '#F96291',
                 },

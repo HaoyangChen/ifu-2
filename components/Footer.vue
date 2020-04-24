@@ -116,8 +116,7 @@ img {
     position: relative;
 }
 .top {
-    max-width: 1180px;
-    margin: 0 auto;
+    padding: 0 130px;
     min-height: 120px;
     .logo {
         color: #fff;
