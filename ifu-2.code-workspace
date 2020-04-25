@@ -9,6 +9,9 @@
 		"vetur.format.defaultFormatter.html": "prettier",
 		"files.eol": "\n",
 		"files.insertFinalNewline": true,
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"i18n-ally.localesPaths": "lang",
+		"prettier.tabWidth": 4,
+		"prettier.trailingComma": "all"
 	}
 }

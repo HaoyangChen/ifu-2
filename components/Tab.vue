@@ -61,6 +61,14 @@ export default {
                 borderBottom: `20px solid ${this.list[index].color}`,
             };
             const color = this.list[index].color;
+            if (index === 0) {
+                style.borderTopRightRadius = '30px';
+            } else if (index === this.list.length - 1) {
+                style.borderTopLeftRadius = '30px';
+            } else {
+                style.borderTopLeftRadius = '30px';
+                style.borderTopRightRadius = '30px';
+            }
             if (this.hoverIndex !== null && this.hoverIndex === index) {
                 style.color = color;
                 style.background = `rgba(${this.hexToRgb(color)}, 0.2)`;
@@ -104,7 +112,7 @@ export default {
 <style lang="scss" scoped>
 .tab-list {
     width: 100%;
-    height: 138px;
+    height: 142px;
     display: flex;
     justify-content: space-evenly;
 }

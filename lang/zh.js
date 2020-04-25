@@ -46,7 +46,7 @@ export default {
                 serviceText:
                     '我们推荐并提供最好的申请老师、最负责、高绩点的学长学姐帮助即将、准留学生们成功迈入海外高校，稳步提升背景、GPA成绩。',
                 mediaText:
-                    '我们在国内外社交平台: Instagram、Facebook、LinkedIn、微信、微博、知乎、百度贴吧等均有注册账号，总关注者超过20000+，公众号平台保持10%+的月增长。',
+                    '我们在国内外社交平台: Instagram、Facebook、LinkedIn、微信、微博、知乎、喜马拉雅、百度贴吧等均有注册账号，总关注者超过20000+，公众号平台保持10%+的月增长。',
                 volunteer: '志愿者活动',
                 volunteerText:
                     '我们海外志愿者团队工作人员通过定期带领IFU成员、志愿者参加当地公益活动，例如：帮助特殊家庭孩子学习语言、动物保护组织募捐、食物分类等，减少国际学生海外学习、生活的压力，并锻炼自我沟通、领导能力，在帮助他人的同时提升自我，融入海外文化。',
@@ -55,7 +55,7 @@ export default {
         ourServices: {
             title: '我们的服务',
             description:
-                'International Family Union (IFU) 国际家长汇是由海外学长学姐组成的，以校园安全为核心的，服务于国际家长的非政府组织组织。IFU目前提供的服务包括ISIC & IFU国际项目“多多罗”计划，IFU & DMA STEM夏校，以及GRE，CFA，H1B, OPT, CPT等相关的服务帮助。如有更多想要了解或合作的领域，欢迎联系欢迎！',
+                'International Family Union (IFU) 国际家长汇是由海外学长学姐组成的，以校园安全为核心的，服务于国际家长的非政府组织组织。IFU目前提供的服务包括“多多罗”计划课程，IFU会员，IFU X DMA 夏校，以及GRE，CFA，H1B, OPT, CPT等相关的服务帮助。如有更多想要了解或合作的领域，欢迎联系！',
             serviceList: {
                 totoroTitle: 'TOTOROAD',
                 totoroText:
@@ -112,7 +112,7 @@ export default {
             title: '活动回顾',
             text1: '加州沙滩体验之BONFIRE',
             text2: '全美留学生家长行前安全交流会-深圳',
-            text3: '全美留学生家长行前安全交流会-上海',
+            text3: 'IFU X Words Alive 志愿活动',
             text4: '全美留学生家长行前安全交流会-北京',
             text5: '2019年国内分享会',
             text6: '2019年北京嘉年华',
@@ -133,7 +133,7 @@ export default {
             text3: '微信扫描二维码加入 IFU新生群',
         },
     },
-    dma: {
+    more: {
         banner: {
             title: 'IFU 更多服务',
             description:
@@ -351,12 +351,12 @@ export default {
             },
         },
     },
-    isic: {
+    membership: {
         banner: {
             title: 'IFU 会员',
             description:
-                '因支持IFU并欣赏IFU文化，通过简单注册操作（不需要进行面试）成为我们的会员的同伴们，IFU会以邮件形式发送每月活动及分享会资讯。同时，持有IFUxISIC国际学生卡的同学，可享有全球范围的生活、旅行、餐饮、法律、学术折扣。（具体折扣见店家）',
-            buttonText: '订阅活动月刊',
+                '因支持并欣赏IFU文化，通过简单注册操作，成为我们的普通会员享受特权福利，及时通过IFU会员月刊邮件获取每月活动及分享会资讯。另外，持有IFU X ISIC国际学生卡的同学，作为IFU X ISIC会员可享有全球范围的生活、旅行、餐饮、法律、学术等折扣。（具体折扣见店家）',
+            buttonText: '免费成为普通会员',
         },
         colhalf: {
             whycardTitle: '为什么选择 IFU X ISIC 国际学生卡?',
@@ -418,9 +418,8 @@ export default {
             memberTitle: '普通学生卡',
             memberText: '普通学生卡普通学生卡普通学生卡普通学生卡',
             memberButton: '了解普通学生卡',
-            description:
-                '2019年，IFU进行了超90场线上线下分享会，以及如：北美当地志愿活动、IFU College Carnival学长学姐嘉年华等不同形式的线下活动。所有活动信息及报名，IFU将会以每月邮件的形式通知IFU Member，Member、Volunteer及Officer有优先参与活动的福利！除此之外，Member与Volunteer不同的是，Member不需要履行Volunteer职责也不需要通过面试，且欢迎在所有国家居住的所有年龄段的华人，是全开放式面向喜欢IFU、支持IFU文化的朋友们的大家庭。',
-            becomeRegularMemberBtn: '成为 IFU 普通会员',
+            bannerTitle: '会员福利',
+            becomeRegularMemberBtn: '免费成为普通会员',
             northAmericaVolunteer: '北美志愿者动态',
             volunteer1: 'UCSD校园Tour Guide启动',
             volunteer2: 'NCSU 2020冬季化妆舞会',

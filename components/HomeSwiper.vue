@@ -61,9 +61,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 /* Use /deep/ selector to penetrate Swiper component */
-/deep/ .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-    background: white;
-    opacity: 0.8;
+/deep/ .swiper-pagination-bullet {
+    background: #fe4c31;
+
+    &:not(.swiper-pagination-bullet-active) {
+        background: white;
+        opacity: 1;
+    }
 }
 
 .img {

@@ -5,11 +5,12 @@
             <h1 v-if="title" class="title-text" :style="{ color: titleColor }">
                 {{ title }}
             </h1>
-            <p>{{ description }}</p>
+            <p v-if="description">{{ description }}</p>
             <div v-for="(item, index) in bannerList" :key="index" class="title">
                 <strong>{{ item.name }}</strong
                 ><span>{{ item.text }}</span>
             </div>
+            <slot />
             <Button v-if="to" :external="external" :to="to">
                 {{ buttonText }}
             </Button>
@@ -88,7 +89,8 @@ export default {
 h1 {
     font-size: 40px;
     color: #2c3e51;
-    /* line-height: 35px; */
+    font-weight: normal;
+    margin: 0;
 }
 
 .title-text {
@@ -97,7 +99,7 @@ h1 {
 
 p {
     max-width: 490px;
-    margin-top: 32px;
+    margin: 30px 0;
     line-height: 31px;
 }
 
@@ -130,6 +132,7 @@ strong {
 
     h1 {
         font-size: 23px;
+        margin: 0 0 20px 0;
     }
 
     button {

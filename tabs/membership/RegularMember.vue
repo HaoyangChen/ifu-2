@@ -1,15 +1,30 @@
 <template>
     <div class="regular-member">
         <Banner
-            :description="$t('isic.regularMember.description')"
-            :button-text="$t('isic.regularMember.becomeRegularMemberBtn')"
+            :title="$t('membership.regularMember.bannerTitle')"
+            :button-text="$t('membership.regularMember.becomeRegularMemberBtn')"
             :background="bannerImage"
-            external-link="https://www.wjx.top/jq/48243970.aspx"
-        />
+            external
+            to="https://www.wjx.cn/jq/71891803.aspx"
+        >
+            <p>
+                • 会员月刊邮件: 各类活动信息及报名方式
+                <br />
+                • 优先参与活动的特权
+                <br />
+                • 不需要面试
+                <br />
+                • 不需要履行志愿者职责
+                <br />
+                • 面向所有年龄段，居住在所有国家的华人开放
+                <br />
+                • 全开放式面向喜欢、支持IFU文化的朋友们
+            </p>
+        </Banner>
         <section style="background: #F1F9FF">
             <div class="container">
                 <h2 style="padding-bottom: 10px;">
-                    {{ $t('isic.regularMember.northAmericaVolunteer') }}
+                    {{ $t('membership.regularMember.northAmericaVolunteer') }}
                 </h2>
                 <div class="event-right">
                     <div class="event-list">
@@ -20,6 +35,25 @@
                             :image="event.image"
                             :link="event.link"
                             :text="event.text"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section background-blue">
+            <div class="container half-style">
+                <div class="col-half">
+                    <h2>{{ $t('home.aboutUs.title') }}</h2>
+                    <p>{{ $t('home.aboutUs.text1') }}</p>
+                    <p class="scan-qr-margin">
+                        <b>{{ $t('home.aboutUs.text2') }}</b>
+                    </p>
+                </div>
+                <div class="col-half col-half-center">
+                    <div class="qr-image">
+                        <img
+                            src="@/assets/home/qrcode-follow.png"
+                            alt="image in cohesion section"
                         />
                     </div>
                 </div>
@@ -57,22 +91,22 @@ export default {
             return [
                 {
                     image: eventImage1,
-                    text: this.$t('isic.regularMember.volunteer1'),
+                    text: this.$t('membership.regularMember.volunteer1'),
                     link: 'https://mp.weixin.qq.com/s/D2ZKmbf6mnlHYxAoNTn51A',
                 },
                 {
                     image: eventImage4,
-                    text: this.$t('isic.regularMember.volunteer2'),
+                    text: this.$t('membership.regularMember.volunteer2'),
                     link: 'https://mp.weixin.qq.com/s/hL2tRYxkTPG2lWn-RinFnw',
                 },
                 {
                     image: eventImage2,
-                    text: this.$t('isic.regularMember.volunteer3'),
+                    text: this.$t('membership.regularMember.volunteer3'),
                     link: 'https://mp.weixin.qq.com/s/q9nh0t4RxJu6wyd_dICtag',
                 },
                 {
                     image: eventImage3,
-                    text: this.$t('isic.regularMember.volunteer4'),
+                    text: this.$t('membership.regularMember.volunteer4'),
                     link: 'https://mp.weixin.qq.com/s/wAAcknQHshe5ZttW7PbxRQ',
                 },
             ];
@@ -127,14 +161,16 @@ export default {
 }
 
 .event-item {
-    width: 250px;
-    height: 401px;
-    margin: 20px;
+    margin: 15px;
+    flex: 1;
+    height: 23vw;
+    max-height: 40vh;
 }
 
 .event-right {
     display: inline-block;
     vertical-align: top;
+    width: 100%;
 }
 h2 {
     margin: 0;
@@ -229,22 +265,74 @@ img {
     border-bottom-right-radius: 10px;
 }
 
+.about-us-section {
+    .half-style {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .col-half {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-half-center {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .scan-qr-margin {
+        margin-top: 40px;
+    }
+
+    .col-half-left {
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+}
+
 @media (max-width: 1024px) {
     .event-right {
         width: 100%;
-    }
+        .event-list {
+            flex-direction: column;
+            align-items: center;
 
-    .event-item {
-        overflow: hidden;
-        border-radius: 10px;
-        margin: 20px 0;
-        width: 100%;
+            .event-item {
+                overflow: hidden;
+                border-radius: 10px;
+                margin: 20px 0;
+                width: 100%;
+                max-height: 210px;
+            }
+        }
     }
 
     .container {
         padding: 0 30px;
         p {
             font-size: 14px;
+        }
+    }
+
+    .about-us-section {
+        .half-style {
+            flex-direction: column;
+        }
+
+        .col-half {
+            max-width: 100%;
+        }
+
+        .qr-image > img {
+            width: 100%;
+            height: 90%;
         }
     }
 }

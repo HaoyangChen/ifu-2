@@ -27,7 +27,10 @@
 export default {
     name: 'Collapse',
     props: {
-        title: String,
+        title: {
+            type: String,
+            default: '',
+        },
     },
     data() {
         return {

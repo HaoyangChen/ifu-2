@@ -7,6 +7,7 @@
             :button-text="$t('home.banner.buttonText')"
             to="/contact"
             :background="bannerImage"
+            title-color="#2C3E51"
         />
         <div class="wuhan-coronavirus">
             <section class="container">
@@ -106,6 +107,13 @@
                     />
                 </div>
             </div>
+            <div class="more-events">
+                <a
+                    href="http://mp.weixin.qq.com/mp/homepage?__biz=MzU1MTE2MDkxOQ==&hid=2&sn=6787ada9887b05cdee1a4f95d6f67cc3&scene=18#wechat_redirect"
+                    target="_blank"
+                    >更多近期精彩活动 >></a
+                >
+            </div>
         </section>
         <section class="about-us-section background-blue">
             <div class="container half-style">
@@ -139,6 +147,7 @@
                 <div class="col-half">
                     <div class="student-group-image">
                         <img
+                            class="qr-image"
                             src="@/assets/home/qrcode-student.png"
                             alt="QR Code for Student Group"
                         />
@@ -293,8 +302,7 @@ export default {
                 {
                     image: eventImage2,
                     text: this.$t('home.eventList.text3'),
-                    link:
-                        'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247486105&idx=1&sn=bbbb5f0a0d63236a4e512d89fbbd976a&chksm=fb94d7a1cce35eb7139f13396debb879a34d1e0c0a06debebcf5354efe41810cc785cf929b60&token=1217661680&lang=zh_CN#rd',
+                    link: 'https://mp.weixin.qq.com/s/q9nh0t4RxJu6wyd_dICtag',
                 },
                 {
                     image: eventImage3,
@@ -431,10 +439,11 @@ export default {
 }
 
 .event-item {
-    width: 263px;
+    flex-basis: 31%; // 强制三个一排
     height: 186px;
     margin-bottom: 30px;
-    margin: 10px;
+    margin: 5px;
+    font-size: 14px;
 }
 .event-left {
     display: inline-block;
@@ -442,19 +451,36 @@ export default {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    width: 24%;
-    margin: 10px;
-    height: calc((186px + 10px) * 2);
+    width: 23%;
+    box-sizing: border-box;
+    margin: 5px 0 5px 5px;
+    height: calc((186px + 5px) * 2);
 
     img {
         min-width: 100%;
     }
 }
 .event-right {
+    box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    width: 72%;
+    width: 75%;
 }
+
+.more-events {
+    text-align: right;
+    margin-top: 30px;
+
+    a {
+        color: #22a5d8;
+        text-decoration: none;
+
+        &:hover {
+            color: #f96291;
+        }
+    }
+}
+
 h2 {
     margin: 0;
     padding: 0 0 30px 0;
@@ -533,14 +559,6 @@ img {
         padding: 20px 0;
     }
 }
-.all-members {
-    text-align: right;
-    padding-bottom: 40px;
-}
-.all-members a {
-    text-decoration: none;
-    color: #22a5d8;
-}
 .event-text {
     width: 100%;
     height: 50px;
@@ -577,13 +595,23 @@ img {
     }
 
     .scan-qr-margin {
-        margin-top: 40px;
+        margin: 30px 0;
     }
 
     .col-half-left {
         justify-content: left;
         align-items: center;
         display: flex;
+    }
+
+    .student-group-image {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .qr-image {
+            max-width: 180px;
+            max-height: 180px;
+        }
     }
 }
 
@@ -607,7 +635,13 @@ img {
         }
 
         .student-group-image {
-            text-align: center;
+            flex-direction: column;
+
+            .qr-image {
+                max-width: 150px;
+                max-height: 150px;
+                margin: 10px;
+            }
         }
     }
 
@@ -621,18 +655,19 @@ img {
         }
 
         h2 {
-            padding: 70px 0 30px 0;
+            padding: 30px 0 0 0;
         }
 
         section {
             flex-basis: 100%;
-            padding: 0px 24px;
+            padding: 15px 30px;
             border-top: 5px solid #fe4c31;
             border-bottom: 5px solid #fe4c31;
 
             .wuhan-mobile-image {
-                width: 100%;
-                margin: 0 0 35px 0;
+                max-width: 100%;
+                max-height: calc(100vw - 100px);
+                margin: 30px auto;
             }
 
             .wuhan-description {
@@ -687,17 +722,25 @@ img {
             padding-bottom: 30px;
         }
     }
-    .con .img {
-        display: none;
+
+    .con {
+        flex-direction: column;
+
+        .img {
+            display: none;
+        }
+
+        .col {
+            padding-bottom: 30px;
+            width: 100%;
+        }
     }
+
     .right {
         padding-left: 0;
         margin-top: 0px;
     }
-    .con .col {
-        padding-bottom: 30px;
-        width: 100%;
-    }
+
     .text-container {
         .service-left {
             width: 100%;
@@ -717,19 +760,15 @@ img {
         flex-basis: 100%;
     }
     .event-item {
-        width: 100%;
+        flex-basis: 100%;
+        min-height: 100%;
+        margin-bottom: 30px;
     }
     .event-left {
         display: none;
     }
     .event-right {
         width: 100%;
-    }
-}
-@media (max-width: 400px) {
-    .event-item {
-        margin: 0;
-        margin-bottom: 30px;
     }
 }
 </style>

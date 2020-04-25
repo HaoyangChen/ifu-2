@@ -278,12 +278,6 @@ export default {
 .team-container {
     padding-bottom: 30px;
 }
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    /* padding: 30px; */
-}
 section {
     padding-top: 0;
 

@@ -22,7 +22,7 @@ export default {
             title: 'IFU',
             subTitle: 'I, Family, You',
             description:
-                'International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. Now we’ve become a registered Non-Governmental Organization in the United States, actively connecting and serving International Students and their Families. We have over 300 volunteers in 21 top universities across the United States, Canada, France, and Singapore.',
+                "Founded in July 2017, started in the student community of the University of California, San Diego, we are now a federal public welfare organization in the United States, gathered more than 300 student volunteers covering the United States, Canada, the United Kingdom, France, Singapore and other universities, committed to solving International families' overseas safety, information asymmetry and other issues convey the voices of students to their parents and connect and serve the families studying abroad.",
             buttonText: 'Contact Us',
         },
         coronavirus: {
@@ -35,21 +35,21 @@ export default {
         ourWork: {
             title: 'Our Work',
             workList: {
-                infoAsymmetry: 'TRANSLATE',
-                security: 'COMMUNICATE',
-                intimateService: 'MENTORSHIP',
+                infoAsymmetry: 'INFORMATION ASYMMETRY ',
+                security: 'OVERSEAS SAFETY',
+                intimateService: 'ALL-AROUND SERVICE',
                 socialMedia: 'CONSULTING',
                 infoText:
-                    'We translate original official emergency e-mails. We provide the most professional advices and announce official information.',
+                    "We use social media to send the most authentic information about studying abroad and daily life in overseas schools to parents; We communicate regularly with schools and parents, collecting each other's opinions and giving feedback to both parties in a timely manner.",
                 securityText:
-                    "We communicate with parents and collect their suggestions. We deliver parents' feedback to universities.",
+                    'We help families find their kids who have lost contact for more than 24 hours. We provide the best legal and psychological counselors in the United States from the California Bar Association.',
                 serviceText:
-                    'To help incoming international students quickly accustom to foreign education system, we invited the outstanding senior students from various top-rated universities to offer tutoring and mentorship programs.',
+                    'We recommend and provide the best application teachers, the most responsible, high-GPA seniors to help the upcoming, prospective students successfully into overseas colleges and universities, steadily improve their background, GPA',
                 mediaText:
-                    'We provide the best legal consultants and emergency services to parents and students. We invite an experienced psychologist and seniors from top universities to help students get through cultural transition period and academic difficulties.',
-                volunteer: 'K-12 PROGRAM',
+                    'We have registered accounts on social platforms in China and abroad, including Instagram, Facebook, LinkedIn, WeChat, Weibo, Zhihu, Baidu Post Bar, etc., with a total follower of more than 20,000, and the public account platform maintains a monthly growth of more than 10%',
+                volunteer: 'VOLUNTEER ACTIVITIES',
                 volunteerText:
-                    "In order to fundamentally decrease the high rate of crime and mental health issue between international students, we unite with an educational organization which has 16-years experiences of STEAM (Science, Technology, Engineering, Arts, Mathematics) course in the United States. Starting from the children in K12 to cultivate children's ability to practice actively, to think critically, and to live independently.",
+                    'Our overseas volunteer team staff lead IFU members and volunteers to participate in local public welfare activities regularly, such as helping children with special needs to learn languages, raising money for animal protection organizations, food sorting, reducing the pressure on international students to study and live overseas, and developing self-communication and leadership skills to help others while improving themselves and integrating into overseas cultures.',
             },
         },
         ourServices: {
@@ -113,8 +113,14 @@ export default {
             text6: '2019 IFU College Carnival in Beijing',
             text7: '2019 IFU College Carnival in Shanghai',
         },
+        aboutUs: {
+            title: '关注我们',
+            text1:
+                '我们在紧急情况发生时，IFU给予留学生家长及时的帮助；通过留学生第一视角传递海外校园信息，缓解家长与孩子之间的信息代沟，建立起中外信息沟通桥梁。想要及时的获取更多留学生动态；各类实用干货，课程讲座分享等等精彩内容。',
+            text2: '微信扫描二维码关注 IFU官方公众号',
+        },
     },
-    dma: {
+    more: {
         banner: {
             title: 'MORE SERVICES',
             description:
@@ -341,7 +347,7 @@ export default {
             },
         },
     },
-    isic: {
+    membership: {
         banner: {
             title: 'IFU Membership',
             description:
