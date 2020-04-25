@@ -11,6 +11,7 @@
 		"files.insertFinalNewline": true,
 		"editor.formatOnSave": true,
 		"i18n-ally.localesPaths": "lang",
-		"prettier.tabWidth": 4
+		"prettier.tabWidth": 4,
+		"prettier.trailingComma": "all"
 	}
 }
