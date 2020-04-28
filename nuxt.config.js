@@ -101,7 +101,14 @@ export default {
                 lazy: true,
             },
         ],
+        '@nuxtjs/sitemap',
     ],
+    /**
+     * Sitemap Configuration
+     */
+    sitemap: {
+        hostname: 'https://ifu-china.com',
+    },
     /*
      ** Build configuration
      */

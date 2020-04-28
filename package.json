@@ -12,6 +12,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^2.2.1",
     "aos": "^2.3.4",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.10.1",
