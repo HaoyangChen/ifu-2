@@ -259,6 +259,19 @@ export default {
     head() {
         return {
             title: this.$t('header.totoro'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('totoro.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '辅导课, 衔接课, 新生适应留学生活, 留学生规划, 如何融入海外课堂, 留学生学术辅导, 美本学术辅导, 美本线上辅导课, 暑期辅导, gre辅导课, h1b咨询, cfa辅导课',
+                },
+            ],
         };
     },
 };

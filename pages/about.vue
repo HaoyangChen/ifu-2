@@ -63,6 +63,19 @@ export default {
     head() {
         return {
             title: this.$t('header.about'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('about.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '留学生心理健康, 留学安全, 海外援助, 留学生活分享, 留学生非政府组织, 留学生日常, 留学活动, 留学生微信公众号, 留学生公益活动, 留学生峰会, 留学生家长交流会, 美国心理辅导, 留学压力, UCSD新生群, UW新生群',
+                },
+            ],
         };
     },
 };

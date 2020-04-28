@@ -78,6 +78,19 @@ export default {
     head() {
         return {
             title: this.$t('header.support'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('donation.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '帮助留学生, 支持非政府组织, 支持留学生, 募捐, 海外募捐, 海外捐款',
+                },
+            ],
         };
     },
 };

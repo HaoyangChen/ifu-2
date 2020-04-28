@@ -334,6 +334,21 @@ export default {
     head() {
         return {
             title: this.$t('header.home'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content:
+                        '国际家长汇 International Family Union' +
+                        this.$t('home.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '留学生海外援助, 公益组织, 志愿者联盟, 美国留学安全, 美国留学建议, 美国留学注意事项, 在美国遇到困难可以求助的机构, 在美国留学遇到困难怎么办, 孩子在美国留学不放心怎么办, 留学生实时动态, 孩子一个人在国外上学',
+                },
+            ],
         };
     },
 };
