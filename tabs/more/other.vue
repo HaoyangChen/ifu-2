@@ -108,6 +108,10 @@ export default {
 p {
     line-height: 31px;
     margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 50px;
+    }
 }
 
 .img-container {
