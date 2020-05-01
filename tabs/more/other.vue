@@ -22,12 +22,12 @@
                     {{ $t('other.otherService.otherService12') }}
                 </p>
             </div>
-            <div class="desktop">
+            <div class="img-container desktop">
                 <img :src="section1Image" />
             </div>
         </div>
-        <div class="row blue-background">
-            <div class="text-container">
+        <div class="row">
+            <div class="text-container blue-background">
                 <h2>{{ $t('other.legalService.legalTitle') }}</h2>
                 <p>
                     {{ $t('other.legalService.legal1')
@@ -110,9 +110,15 @@ p {
     margin-bottom: 30px;
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .text-container {

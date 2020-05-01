@@ -69,13 +69,12 @@ export default {
                 style.borderTopLeftRadius = '30px';
                 style.borderTopRightRadius = '30px';
             }
-            if (this.hoverIndex !== null && this.hoverIndex === index) {
+            if (
+                (this.hoverIndex !== null && this.hoverIndex === index) ||
+                index === this.activeIndex
+            ) {
                 style.color = color;
                 style.background = `rgba(${this.hexToRgb(color)}, 0.2)`;
-                return style;
-            }
-            if (index === this.activeIndex) {
-                style.color = color;
                 return style;
             }
             return style;

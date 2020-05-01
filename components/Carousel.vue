@@ -7,9 +7,9 @@
                 backgroundSize: 'cover',
             }"
         >
-            <div v-if="isShow">
-                <p style="font-size: 30px; margin: 0">{{ title }}</p>
-                <p style="font-size: 18px; font-weight: 700">{{ text }}</p>
+            <div>
+                <p style="font-size: 36px; margin: 0">{{ title }}</p>
+                <p style="font-size: 20px; font-weight: 700">{{ text }}</p>
             </div>
             <div class="text-container">
                 <div class="line"></div>
@@ -32,9 +32,11 @@
                         <div>
                             <img :src="item.icon" alt="" />
                             <span style="white-space: pre-line">{{
-                                item.title
+                                useSubtitle ? item.subTitle : item.title
                             }}</span>
-                            <p class="subTitle">{{ item.subTitle }}</p>
+                            <p v-if="!useSubtitle" class="subTitle">
+                                {{ item.subTitle }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -51,7 +53,7 @@ export default {
             type: Array,
             required: true,
         },
-        isShow: Boolean,
+        useSubtitle: Boolean,
     },
     data() {
         return {
@@ -142,7 +144,7 @@ export default {
     position: relative;
 }
 .list-item span {
-    font-size: 24px;
+    font-size: 28px;
     display: block;
 }
 .list a:hover .num {
@@ -169,6 +171,7 @@ export default {
 }
 .subTitle {
     margin: 0;
+    font-size: 18px;
 }
 .line {
     display: inline-block;

@@ -106,6 +106,7 @@ export default {
     background-color: #f1f9ff;
     p {
         line-height: 31px;
+        width: 70%;
     }
     .images-row {
         width: 100%;

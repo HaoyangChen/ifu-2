@@ -73,7 +73,7 @@
                     {{ $t('home.ourServices.description') }}
                 </p>
                 <div class="desktop">
-                    <Carousel :list="serviceList" :is-show="isShow" />
+                    <Carousel :list="serviceList" />
                 </div>
                 <div class="mobile">
                     <HomeSwiper :list="serviceList" />
@@ -199,7 +199,6 @@ export default {
     data() {
         return {
             bannerImage,
-            isShow: true,
             eventLink:
                 'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247498115&idx=3&sn=20a54f7f102af1e73b54598589bd49b7&chksm=fb9724bbcce0adad7c9b15d53a4ae6325574498324813dda4ee9d2a4dc241e8ef68a92ff3922&token=1217661680&lang=zh_CN#rd',
             swiperOption: {
@@ -624,8 +623,8 @@ img {
         align-items: center;
         justify-content: space-evenly;
         .qr-image {
-            max-width: 180px;
-            max-height: 180px;
+            max-width: 300px;
+            max-height: 300px;
         }
     }
 }
@@ -653,8 +652,6 @@ img {
             flex-direction: column;
 
             .qr-image {
-                max-width: 150px;
-                max-height: 150px;
                 margin: 10px;
             }
         }
