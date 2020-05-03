@@ -56,13 +56,15 @@ export default {
 .event-text {
     width: 100%;
     height: 50px;
-    line-height: 50px;
     text-align: center;
     box-sizing: border-box;
     position: absolute;
     bottom: 0px;
     background-color: rgba(78, 189, 247, 0.9);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img:not(#arrow) {

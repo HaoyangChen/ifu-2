@@ -119,7 +119,7 @@
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
-                    <h3>IFU 官方公众号</h3>
+                    <h3>{{ $t('home.aboutUs.qrcode') }}</h3>
                     <p>{{ $t('home.aboutUs.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.aboutUs.text2') }}</b>
@@ -576,13 +576,15 @@ img {
 .event-text {
     width: 100%;
     height: 50px;
-    line-height: 50px;
     text-align: center;
     box-sizing: border-box;
     position: absolute;
     bottom: 0px;
     background-color: rgba(78, 189, 247, 0.9);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-us-section {
