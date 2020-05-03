@@ -90,12 +90,12 @@ export default {
                         name: 'Chinese',
                         file: 'zh.js',
                     },
-                    {
-                        code: 'en',
-                        iso: 'en-US',
-                        name: 'English',
-                        file: 'en.js',
-                    },
+                    // {
+                    //     code: 'en',
+                    //     iso: 'en-US',
+                    //     name: 'English',
+                    //     file: 'en.js',
+                    // },
                 ],
                 strategy: 'no_prefix',
                 lazy: true,

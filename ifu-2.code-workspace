@@ -12,6 +12,9 @@
 		"editor.formatOnSave": true,
 		"i18n-ally.localesPaths": "lang",
 		"prettier.tabWidth": 4,
-		"prettier.trailingComma": "all"
+		"prettier.trailingComma": "all",
+		"i18n-ally.enabledParsers": [
+			"js"
+		]
 	}
 }

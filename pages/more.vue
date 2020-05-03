@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .tab .tab-list .tab-title:hover {
+/deep/ .tab .tab-list .tab-title {
     background: none !important;
 }
 </style>

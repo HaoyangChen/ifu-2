@@ -111,13 +111,11 @@ export default {
     .images-row {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .image-item {
-            &:not(:first-of-type) {
-                margin-left: 15px;
-            }
+            flex-basis: 16.6%;
 
             img {
                 width: 170px;
@@ -145,6 +143,27 @@ section > div {
 
 section > div:first-of-type {
     margin: 33px 50px 0 0;
+}
+
+.row img {
+    width: 250px;
+    height: 250px;
+}
+
+@media (max-width: 1300px) {
+    // Change flex items
+    .support-section .images-row .image-item {
+        flex-basis: 33.3%;
+    }
+
+    section > div:first-of-type {
+        margin: 33px 15% 0 0;
+    }
+
+    .row img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 1024px) {

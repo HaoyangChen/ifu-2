@@ -119,7 +119,7 @@ export default {
 
 .distribution-image {
     width: 1180px;
-    margin: 0 auto;
+    margin: 130px auto 0 auto;
     text-align: center;
     position: relative;
 

@@ -1,76 +1,82 @@
 <template>
     <div class="history">
-        <div class="time-2018-background mobile" />
-        <img class="time-background desktop" :src="timelineImage" />
-        <div class="time-background-container">
-            <img class="time-background mobile" :src="timelineImageMobile" />
+        <div class="blue-background" />
+        <div class="timeline-container">
+            <div class="time-2018-background mobile" />
+            <img class="time-background desktop" :src="timelineImage" />
+            <div class="time-background-container">
+                <img
+                    class="time-background mobile"
+                    :src="timelineImageMobile"
+                />
+            </div>
+            <section class="time-2017">
+                <div class="time-item">
+                    <div v-t="'about.history.2017.july'" class="time" />
+                    <div v-t="'about.history.2017.text1'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2017.oct'" class="time" />
+                    <div v-t="'about.history.2017.text2'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2017.dec'" class="time" />
+                    <div v-t="'about.history.2017.text3'" class="text" />
+                </div>
+            </section>
+            <section class="time-2018">
+                <div class="time-item">
+                    <div v-t="'about.history.2018.march'" class="time" />
+                    <div v-t="'about.history.2018.text1'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.march'" class="time" />
+                    <div v-t="'about.history.2018.text2'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.july'" class="time" />
+                    <div v-t="'about.history.2018.text3'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.oct'" class="time" />
+                    <div v-t="'about.history.2018.text4'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.oct'" class="time" />
+                    <div v-t="'about.history.2018.text5'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.nov'" class="time" />
+                    <div v-t="'about.history.2018.text6'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.dec'" class="time" />
+                    <div v-t="'about.history.2018.text7'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.dec'" class="time" />
+                    <div v-t="'about.history.2018.text8'" class="text" />
+                </div>
+            </section>
+            <section class="time-2019">
+                <div class="time-item">
+                    <div v-t="'about.history.2019.feb'" class="time" />
+                    <div v-t="'about.history.2019.text1'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2019.june'" class="time" />
+                    <div v-t="'about.history.2019.text2'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2019.june'" class="time" />
+                    <div v-t="'about.history.2019.text3'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2019.july'" class="time" />
+                    <div v-t="'about.history.2019.text4'" class="text" />
+                </div>
+            </section>
         </div>
-        <section class="time-2017">
-            <div class="time-item">
-                <div v-t="'about.history.2017.july'" class="time" />
-                <div v-t="'about.history.2017.text1'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2017.oct'" class="time" />
-                <div v-t="'about.history.2017.text2'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2017.dec'" class="time" />
-                <div v-t="'about.history.2017.text3'" class="text" />
-            </div>
-        </section>
-        <section class="time-2018">
-            <div class="time-item">
-                <div v-t="'about.history.2018.march'" class="time" />
-                <div v-t="'about.history.2018.text1'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.march'" class="time" />
-                <div v-t="'about.history.2018.text2'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.july'" class="time" />
-                <div v-t="'about.history.2018.text3'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.oct'" class="time" />
-                <div v-t="'about.history.2018.text4'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.oct'" class="time" />
-                <div v-t="'about.history.2018.text5'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.nov'" class="time" />
-                <div v-t="'about.history.2018.text6'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.dec'" class="time" />
-                <div v-t="'about.history.2018.text7'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.dec'" class="time" />
-                <div v-t="'about.history.2018.text8'" class="text" />
-            </div>
-        </section>
-        <section class="time-2019">
-            <div class="time-item">
-                <div v-t="'about.history.2019.feb'" class="time" />
-                <div v-t="'about.history.2019.text1'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2019.june'" class="time" />
-                <div v-t="'about.history.2019.text2'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2019.june'" class="time" />
-                <div v-t="'about.history.2019.text3'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2019.july'" class="time" />
-                <div v-t="'about.history.2019.text4'" class="text" />
-            </div>
-        </section>
     </div>
 </template>
 
@@ -101,7 +107,11 @@ section {
 }
 
 .history {
-    width: 1440px;
+    position: relative;
+}
+
+.timeline-container {
+    width: 100%;
     height: 2700px;
     position: relative;
     margin: auto;
@@ -155,6 +165,10 @@ section {
         left: 570px;
         top: 495px;
     }
+}
+
+.blue-background {
+    display: none;
 }
 
 .time-2018 {
@@ -251,7 +265,7 @@ section {
 }
 
 @media (max-width: 1440px) {
-    .history {
+    .timeline-container {
         width: 1180px;
         height: 2200px;
     }
@@ -277,6 +291,16 @@ section {
             left: 460px;
             top: 400px;
         }
+    }
+
+    .blue-background {
+        display: block;
+        width: 100%;
+        height: 917px;
+        position: absolute;
+        top: 542px;
+        background: #f1f9ff;
+        z-index: -1;
     }
 
     .time-2018 {

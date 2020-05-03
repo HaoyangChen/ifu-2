@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row">
-            <div class="text-container">
+            <div class="text-container left">
                 <p>
                     {{ $t('other.otherService.otherService1')
                     }}<b>{{ $t('other.otherService.otherService2') }}</b
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="text-container blue-background">
+            <div class="text-container left blue-background">
                 <h2>{{ $t('other.legalService.legalTitle') }}</h2>
                 <p>
                     {{ $t('other.legalService.legal1')
@@ -56,7 +56,7 @@
             <div class="desktop">
                 <img :src="section3Image" />
             </div>
-            <div class="text-container">
+            <div class="text-container right">
                 <h2>{{ $t('other.greTraining.trainingTitle') }}</h2>
                 <p>
                     <b>{{ $t('other.greTraining.training1') }}</b
@@ -125,8 +125,12 @@ img {
     max-width: 100%;
 }
 
-.text-container {
-    padding: 80px 130px;
+.text-container.left {
+    padding: 80px 50px 80px 130px;
+}
+
+.text-container.right {
+    padding: 80px 130px 80px 50px;
 }
 
 .blue-background {
