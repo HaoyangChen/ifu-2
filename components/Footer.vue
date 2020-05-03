@@ -177,8 +177,22 @@ img {
         margin-bottom: 10px;
     }
 
-    img:hover {
-        filter: brightness(120%);
+    a {
+        background: white;
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        border-radius: 7px;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+                opacity: 70%;
+            }
+        }
     }
 }
 .bottom {
@@ -248,7 +262,9 @@ img {
             font-size: 16px;
             line-height: 16px;
             letter-spacing: 0.03em;
-            img {
+
+            a {
+                background: none;
                 width: 60px;
                 height: 60px;
                 margin-bottom: 20px;

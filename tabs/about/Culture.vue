@@ -118,7 +118,8 @@ export default {
 }
 
 .distribution-image {
-    width: 1208px;
+    width: 1180px;
+    margin: 130px auto 0 auto;
     text-align: center;
     position: relative;
 
@@ -143,106 +144,162 @@ export default {
 }
 
 .tips:nth-of-type(1) {
-    top: -40px;
-    left: 326px;
-}
+    top: -43px;
+    left: 317px;
 
-.tips:nth-of-type(1) .tips-text {
-    width: 116px;
-    height: 61px;
-    border: 2px solid #c9d74a;
-    color: #c9d74a;
-}
+    .tips-text {
+        width: 116px;
+        height: 70px;
+        border: 2px solid #c9d74a;
+        color: #c9d74a;
+    }
 
-.tips:nth-of-type(1) .tips-line {
-    width: 2px;
-    height: 113px;
-    background: #c9d74a;
-    left: 58px;
+    .tips-line {
+        width: 2px;
+        height: 110px;
+        background: #c9d74a;
+        left: 58px;
+    }
 }
 
 .tips:nth-of-type(2) {
     top: 0px;
-    left: 509px;
-}
+    left: 495px;
 
-.tips:nth-of-type(2) .tips-text {
-    width: 144px;
-    height: 41px;
-    border: 2px solid #f96291;
-    color: #f96291;
-}
+    .tips-text {
+        width: 144px;
+        height: 41px;
+        border: 2px solid #f96291;
+        color: #f96291;
+    }
 
-.tips:nth-of-type(2) .tips-line {
-    width: 2px;
-    height: 113px;
-    background: #f96291;
-    left: 72px;
+    .tips-line {
+        width: 2px;
+        height: 113px;
+        background: #f96291;
+        left: 72px;
+    }
 }
 
 .tips:nth-of-type(3) {
-    top: 225px;
-    left: 40px;
-}
+    top: 218px;
+    left: 32px;
 
-.tips:nth-of-type(3) .tips-text {
-    width: 171px;
-    height: 227px;
-    border: 2px solid #34bbc9;
-    color: #34bbc9;
-}
+    .tips-text {
+        width: 171px;
+        height: 227px;
+        border: 2px solid #34bbc9;
+        color: #34bbc9;
+    }
 
-.tips:nth-of-type(3) .tips-line {
-    width: 31px;
-    height: 2px;
-    background: #34bbc9;
-    top: 28px;
-    left: 173px;
+    .tips-line {
+        width: 34px;
+        height: 2px;
+        background: #34bbc9;
+        top: 28px;
+        left: 170px;
+    }
 }
 
 .tips:nth-of-type(4) {
-    top: 248px;
-    left: 405px;
-}
+    top: 241px;
+    left: 397px;
 
-.tips:nth-of-type(4) .tips-text {
-    width: 183px;
-    height: 243px;
-    border: 2px solid #34bbc9;
-    color: #34bbc9;
-}
+    .tips-text {
+        width: 183px;
+        height: 255px;
+        border: 2px solid #34bbc9;
+        color: #34bbc9;
+    }
 
-.tips:nth-of-type(4) .tips-line {
-    width: 31px;
-    height: 2px;
-    background: #34bbc9;
-    top: 28px;
-    left: -29px;
+    .tips-line {
+        width: 31px;
+        height: 2px;
+        background: #34bbc9;
+        top: 28px;
+        left: -30px;
+    }
 }
 
 .tips:nth-of-type(5) {
-    top: 502px;
-    left: 835px;
-}
+    top: 494px;
+    left: 827px;
 
-.tips:nth-of-type(5) .tips-text {
-    width: 121px;
-    height: 41px;
-    border: 2px solid #fda63b;
-    color: #fda63b;
-}
+    .tips-text {
+        width: 121px;
+        height: 41px;
+        border: 2px solid #fda63b;
+        color: #fda63b;
+    }
 
-.tips:nth-of-type(5) .tips-line {
-    width: 2px;
-    height: 98px;
-    background: #fda63b;
-    top: -96px;
-    left: 60px;
+    .tips-line {
+        width: 2px;
+        height: 98px;
+        background: #fda63b;
+        top: -96px;
+        left: 59px;
+    }
 }
 
 .join-section {
     padding-top: 0;
     text-align: center;
+}
+
+@media (max-width: 1440px) {
+    .distribution-image {
+        width: 764px;
+    }
+
+    .tips:nth-of-type(1) {
+        top: -50px;
+        left: 184px;
+
+        .tips-line {
+            height: 64px;
+        }
+    }
+
+    .tips:nth-of-type(2) {
+        top: 32px;
+        left: 295px;
+
+        .tips-line {
+            height: 25px;
+        }
+    }
+
+    .tips:nth-of-type(3) {
+        top: 146px;
+        left: -48px;
+
+        .tips-line {
+            left: 170px;
+        }
+    }
+
+    .tips:nth-of-type(4) {
+        top: 146px;
+        left: 267px;
+        p {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        .tips-text {
+            height: 215px;
+        }
+    }
+
+    .tips:nth-of-type(5) {
+        top: 294px;
+        left: 507px;
+
+        .tips-line {
+            height: 38px;
+            top: -36px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

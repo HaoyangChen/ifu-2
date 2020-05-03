@@ -147,7 +147,7 @@ header {
 .header-menu {
     width: 44%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .service {

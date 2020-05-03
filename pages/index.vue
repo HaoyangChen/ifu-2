@@ -73,7 +73,7 @@
                     {{ $t('home.ourServices.description') }}
                 </p>
                 <div class="desktop">
-                    <Carousel :list="serviceList" :is-show="isShow" />
+                    <Carousel :list="serviceList" />
                 </div>
                 <div class="mobile">
                     <HomeSwiper :list="serviceList" />
@@ -119,7 +119,7 @@
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
-                    <h3>IFU 官方公众号</h3>
+                    <h3>{{ $t('home.aboutUs.qrcode') }}</h3>
                     <p>{{ $t('home.aboutUs.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.aboutUs.text2') }}</b>
@@ -199,7 +199,6 @@ export default {
     data() {
         return {
             bannerImage,
-            isShow: true,
             eventLink:
                 'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247498115&idx=3&sn=20a54f7f102af1e73b54598589bd49b7&chksm=fb9724bbcce0adad7c9b15d53a4ae6325574498324813dda4ee9d2a4dc241e8ef68a92ff3922&token=1217661680&lang=zh_CN#rd',
             swiperOption: {
@@ -334,6 +333,21 @@ export default {
     head() {
         return {
             title: this.$t('header.home'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content:
+                        '国际家长汇 International Family Union' +
+                        this.$t('home.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '留学生海外援助, 公益组织, 志愿者联盟, 美国留学安全, 美国留学建议, 美国留学注意事项, 在美国遇到困难可以求助的机构, 在美国留学遇到困难怎么办, 孩子在美国留学不放心怎么办, 留学生实时动态, 孩子一个人在国外上学',
+                },
+            ],
         };
     },
 };
@@ -562,13 +576,15 @@ img {
 .event-text {
     width: 100%;
     height: 50px;
-    line-height: 50px;
     text-align: center;
     box-sizing: border-box;
     position: absolute;
     bottom: 0px;
     background-color: rgba(78, 189, 247, 0.9);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-us-section {
@@ -609,8 +625,8 @@ img {
         align-items: center;
         justify-content: space-evenly;
         .qr-image {
-            max-width: 180px;
-            max-height: 180px;
+            max-width: 300px;
+            max-height: 300px;
         }
     }
 }
@@ -638,8 +654,6 @@ img {
             flex-direction: column;
 
             .qr-image {
-                max-width: 150px;
-                max-height: 150px;
                 margin: 10px;
             }
         }

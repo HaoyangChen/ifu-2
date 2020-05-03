@@ -71,7 +71,6 @@ export default {
 
     a {
         color: #22a5d8;
-        text-decoration: none;
 
         &:hover {
             color: #f96291;

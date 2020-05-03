@@ -48,13 +48,26 @@ export default {
     head() {
         return {
             title: this.$t('header.more'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('more.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '法律援助, 心理辅导, opt咨询, cpt咨询, h1b咨询, 留学生规划, 如何融入海外课堂, 福利优惠, 留学生动态, 课程讲座, 海外校园信息, 最新资讯',
+                },
+            ],
         };
     },
 };
 </script>
 
 <style lang="scss" scoped>
-/deep/ .tab .tab-list .tab-title:hover {
+/deep/ .tab .tab-list .tab-title {
     background: none !important;
 }
 </style>

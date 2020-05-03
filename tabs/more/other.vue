@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row">
-            <div class="text-container">
+            <div class="text-container left">
                 <p>
                     {{ $t('other.otherService.otherService1')
                     }}<b>{{ $t('other.otherService.otherService2') }}</b
@@ -22,12 +22,12 @@
                     {{ $t('other.otherService.otherService12') }}
                 </p>
             </div>
-            <div class="desktop">
+            <div class="img-container desktop">
                 <img :src="section1Image" />
             </div>
         </div>
-        <div class="row blue-background">
-            <div class="text-container">
+        <div class="row">
+            <div class="text-container left blue-background">
                 <h2>{{ $t('other.legalService.legalTitle') }}</h2>
                 <p>
                     {{ $t('other.legalService.legal1')
@@ -56,7 +56,7 @@
             <div class="desktop">
                 <img :src="section3Image" />
             </div>
-            <div class="text-container">
+            <div class="text-container right">
                 <h2>{{ $t('other.greTraining.trainingTitle') }}</h2>
                 <p>
                     <b>{{ $t('other.greTraining.training1') }}</b
@@ -108,15 +108,29 @@ export default {
 p {
     line-height: 31px;
     margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 50px;
+    }
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.text-container {
-    padding: 80px 130px;
+.text-container.left {
+    padding: 80px 50px 80px 130px;
+}
+
+.text-container.right {
+    padding: 80px 130px 80px 50px;
 }
 
 .blue-background {

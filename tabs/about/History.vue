@@ -1,76 +1,82 @@
 <template>
     <div class="history">
-        <div class="time-2018-background mobile" />
-        <img class="time-background desktop" :src="timelineImage" />
-        <div class="time-background-container">
-            <img class="time-background mobile" :src="timelineImageMobile" />
+        <div class="blue-background" />
+        <div class="timeline-container">
+            <div class="time-2018-background mobile" />
+            <img class="time-background desktop" :src="timelineImage" />
+            <div class="time-background-container">
+                <img
+                    class="time-background mobile"
+                    :src="timelineImageMobile"
+                />
+            </div>
+            <section class="time-2017">
+                <div class="time-item">
+                    <div v-t="'about.history.2017.july'" class="time" />
+                    <div v-t="'about.history.2017.text1'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2017.oct'" class="time" />
+                    <div v-t="'about.history.2017.text2'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2017.dec'" class="time" />
+                    <div v-t="'about.history.2017.text3'" class="text" />
+                </div>
+            </section>
+            <section class="time-2018">
+                <div class="time-item">
+                    <div v-t="'about.history.2018.march'" class="time" />
+                    <div v-t="'about.history.2018.text1'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.march'" class="time" />
+                    <div v-t="'about.history.2018.text2'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.july'" class="time" />
+                    <div v-t="'about.history.2018.text3'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.oct'" class="time" />
+                    <div v-t="'about.history.2018.text4'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.oct'" class="time" />
+                    <div v-t="'about.history.2018.text5'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.nov'" class="time" />
+                    <div v-t="'about.history.2018.text6'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.dec'" class="time" />
+                    <div v-t="'about.history.2018.text7'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2018.dec'" class="time" />
+                    <div v-t="'about.history.2018.text8'" class="text" />
+                </div>
+            </section>
+            <section class="time-2019">
+                <div class="time-item">
+                    <div v-t="'about.history.2019.feb'" class="time" />
+                    <div v-t="'about.history.2019.text1'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2019.june'" class="time" />
+                    <div v-t="'about.history.2019.text2'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2019.june'" class="time" />
+                    <div v-t="'about.history.2019.text3'" class="text" />
+                </div>
+                <div class="time-item">
+                    <div v-t="'about.history.2019.july'" class="time" />
+                    <div v-t="'about.history.2019.text4'" class="text" />
+                </div>
+            </section>
         </div>
-        <section class="time-2017">
-            <div class="time-item">
-                <div v-t="'about.history.2017.july'" class="time" />
-                <div v-t="'about.history.2017.text1'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2017.oct'" class="time" />
-                <div v-t="'about.history.2017.text2'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2017.dec'" class="time" />
-                <div v-t="'about.history.2017.text3'" class="text" />
-            </div>
-        </section>
-        <section class="time-2018">
-            <div class="time-item">
-                <div v-t="'about.history.2018.march'" class="time" />
-                <div v-t="'about.history.2018.text1'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.march'" class="time" />
-                <div v-t="'about.history.2018.text2'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.july'" class="time" />
-                <div v-t="'about.history.2018.text3'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.oct'" class="time" />
-                <div v-t="'about.history.2018.text4'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.oct'" class="time" />
-                <div v-t="'about.history.2018.text5'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.nov'" class="time" />
-                <div v-t="'about.history.2018.text6'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.dec'" class="time" />
-                <div v-t="'about.history.2018.text7'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2018.dec'" class="time" />
-                <div v-t="'about.history.2018.text8'" class="text" />
-            </div>
-        </section>
-        <section class="time-2019">
-            <div class="time-item">
-                <div v-t="'about.history.2019.feb'" class="time" />
-                <div v-t="'about.history.2019.text1'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2019.june'" class="time" />
-                <div v-t="'about.history.2019.text2'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2019.june'" class="time" />
-                <div v-t="'about.history.2019.text3'" class="text" />
-            </div>
-            <div class="time-item">
-                <div v-t="'about.history.2019.july'" class="time" />
-                <div v-t="'about.history.2019.text4'" class="text" />
-            </div>
-        </section>
     </div>
 </template>
 
@@ -101,7 +107,11 @@ section {
 }
 
 .history {
-    width: 1440px;
+    position: relative;
+}
+
+.timeline-container {
+    width: 100%;
     height: 2700px;
     position: relative;
     margin: auto;
@@ -136,119 +146,244 @@ section {
 
 .time-2017 {
     height: 662px;
+
+    .time {
+        background: #c9d74a;
+    }
+
+    .time-item:nth-child(1) {
+        left: 570px;
+        top: 200px;
+    }
+
+    .time-item:nth-child(2) {
+        left: 570px;
+        top: 330px;
+    }
+
+    .time-item:nth-child(3) {
+        left: 570px;
+        top: 495px;
+    }
+}
+
+.blue-background {
+    display: none;
 }
 
 .time-2018 {
     height: 1119px;
+
+    .time {
+        background: #34bbc9;
+    }
+
+    .time-item:nth-child(1) {
+        top: 90px;
+        left: 700px;
+        text-align: right;
+
+        .time {
+            left: 100px;
+            position: relative;
+        }
+    }
+
+    .time-item:nth-child(2) {
+        top: 300px;
+        left: 685px;
+    }
+
+    .time-item:nth-child(3) {
+        top: 300px;
+        left: 435px;
+    }
+
+    .time-item:nth-child(4) {
+        top: 365px;
+        left: 90px;
+    }
+
+    .time-item:nth-child(5) {
+        top: 570px;
+        left: 435px;
+    }
+
+    .time-item:nth-child(6) {
+        top: 570px;
+        left: 685px;
+    }
+
+    .time-item:nth-child(7) {
+        top: 730px;
+        left: 700px;
+        text-align: right;
+
+        .time {
+            left: 100px;
+            position: relative;
+        }
+    }
+
+    .time-item:nth-child(8) {
+        top: 875px;
+        left: 700px;
+        text-align: right;
+        .time {
+            left: 100px;
+            position: relative;
+        }
+    }
 }
 
 .time-2019 {
     height: 919px;
+
+    .time {
+        background: #f96291;
+    }
+
+    .time-item:nth-child(1) {
+        left: 570px;
+        top: 110px;
+    }
+
+    .time-item:nth-child(2) {
+        left: 570px;
+        top: 265px;
+    }
+
+    .time-item:nth-child(3) {
+        left: 570px;
+        top: 420px;
+    }
+
+    .time-item:nth-child(4) {
+        left: 570px;
+        top: 555px;
+    }
 }
 
-.time-2017 .time {
-    background: #c9d74a;
-}
+@media (max-width: 1440px) {
+    .timeline-container {
+        width: 1180px;
+        height: 2200px;
+    }
 
-.time-2017 .time-item:nth-child(1) {
-    left: 570px;
-    top: 200px;
-}
+    .time-item .text {
+        width: 270px;
+    }
 
-.time-2017 .time-item:nth-child(2) {
-    left: 570px;
-    top: 330px;
-}
+    .time-2017 {
+        height: 542px;
 
-.time-2017 .time-item:nth-child(3) {
-    left: 570px;
-    top: 495px;
-}
+        .time-item:nth-child(1) {
+            left: 460px;
+            top: 160px;
+        }
 
-.time-2018 .time-item:nth-child(1) {
-    top: 90px;
-    left: 700px;
-    text-align: right;
-}
+        .time-item:nth-child(2) {
+            left: 460px;
+            top: 270px;
+        }
 
-.time-2018 .time-item:nth-child(1) .time {
-    left: 100px;
-    position: relative;
-}
+        .time-item:nth-child(3) {
+            left: 460px;
+            top: 400px;
+        }
+    }
 
-.time-2018 .time-item:nth-child(2) {
-    top: 300px;
-    left: 685px;
-}
+    .blue-background {
+        display: block;
+        width: 100%;
+        height: 917px;
+        position: absolute;
+        top: 542px;
+        background: #f1f9ff;
+        z-index: -1;
+    }
 
-.time-2018 .time-item:nth-child(3) {
-    top: 300px;
-    left: 435px;
-}
+    .time-2018 {
+        height: 917px;
 
-.time-2018 .time-item:nth-child(4) {
-    top: 365px;
-    left: 90px;
-}
+        .time-item:nth-child(1) {
+            top: 65px;
+            left: 470px;
+            text-align: right;
 
-.time-2018 .time-item:nth-child(5) {
-    top: 570px;
-    left: 435px;
-}
+            .time {
+                left: 150px;
+                position: relative;
+            }
+        }
 
-.time-2018 .time-item:nth-child(6) {
-    top: 570px;
-    left: 685px;
-}
+        .time-item:nth-child(2) {
+            top: 240px;
+            left: 585px;
+        }
 
-.time-2018 .time-item:nth-child(7) {
-    top: 730px;
-    left: 700px;
-    text-align: right;
-}
+        .time-item:nth-child(3) {
+            top: 240px;
+            left: 315px;
+        }
 
-.time-2018 .time-item:nth-child(7) .time {
-    left: 100px;
-    position: relative;
-}
+        .time-item:nth-child(4) {
+            top: 290px;
+            left: -10px;
+        }
 
-.time-2018 .time-item:nth-child(8) {
-    top: 875px;
-    left: 700px;
-    text-align: right;
-}
+        .time-item:nth-child(5) {
+            top: 455px;
+            left: 230px;
+        }
 
-.time-2018 .time-item:nth-child(8) .time {
-    left: 100px;
-    position: relative;
-}
+        .time-item:nth-child(6) {
+            top: 455px;
+            left: 510px;
+        }
 
-.time-2019 .time-item:nth-child(1) {
-    left: 570px;
-    top: 110px;
-}
+        .time-item:nth-child(7) {
+            top: 590px;
+            left: 485px;
 
-.time-2019 .time-item:nth-child(2) {
-    left: 570px;
-    top: 265px;
-}
+            .time {
+                left: 145px;
+            }
+        }
 
-.time-2019 .time-item:nth-child(3) {
-    left: 570px;
-    top: 420px;
-}
+        .time-item:nth-child(8) {
+            top: 720px;
+            left: 485px;
 
-.time-2019 .time-item:nth-child(4) {
-    left: 570px;
-    top: 555px;
-}
+            .time {
+                left: 145px;
+            }
+        }
+    }
 
-.time-2018 .time {
-    background: #34bbc9;
-}
+    .time-2019 {
+        height: 741px;
 
-.time-2019 .time {
-    background: #f96291;
+        .time-item:nth-child(1) {
+            left: 460px;
+            top: 60px;
+        }
+
+        .time-item:nth-child(2) {
+            left: 460px;
+            top: 195px;
+        }
+
+        .time-item:nth-child(3) {
+            left: 460px;
+            top: 330px;
+        }
+
+        .time-item:nth-child(4) {
+            left: 460px;
+            top: 450px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

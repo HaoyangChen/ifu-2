@@ -106,15 +106,18 @@ export default {
         eventList: {
             title: 'Events Recall',
             text1: 'California BONFIRE Experience',
-            text2: "2017 Parents' Conference",
+            text2:
+                'Pre-Departure Safety Orientation & Experience Sharing - Shenzhen',
             text3: "2017 Parents' Conference",
-            text4: "2017 Parents' Conference",
-            text5: '2019 Conference',
+            text4:
+                'Pre-Departure Safety Orientation & Experience Sharing - Beijing',
+            text5: '2019 Experience Sharing in China',
             text6: '2019 IFU College Carnival in Beijing',
             text7: '2019 IFU College Carnival in Shanghai',
         },
         aboutUs: {
             title: '关注我们',
+            qrcode: 'IFU Official Wechat Account',
             text1:
                 '我们在紧急情况发生时，IFU给予留学生家长及时的帮助；通过留学生第一视角传递海外校园信息，缓解家长与孩子之间的信息代沟，建立起中外信息沟通桥梁。想要及时的获取更多留学生动态；各类实用干货，课程讲座分享等等精彩内容。',
             text2: '微信扫描二维码关注 IFU官方公众号',

@@ -11,7 +11,7 @@
         <section class="container">
             <h2>{{ $t('totoro.totoro.title') }}</h2>
             <p>{{ $t('totoro.totoro.text') }}</p>
-            <Carousel :list="courseList" />
+            <Carousel :list="courseList" use-subtitle />
         </section>
         <Tab :list="tabList" />
         <section>
@@ -70,6 +70,9 @@ import Tab from '@/components/Tab.vue';
 import Academic from '@/tabs/totoro/Academic.vue';
 import Cohesion from '@/tabs/totoro/Cohesion.vue';
 import Button from '@/components/Button.vue';
+
+import icon1Image from '@/assets/totoro/icon1.png';
+import icon2Image from '@/assets/totoro/icon2.png';
 
 export default {
     name: 'Totoro',
@@ -227,16 +230,20 @@ export default {
         courseList() {
             return [
                 {
-                    title: this.$t('totoro.totoro.courseList.title1'),
+                    title: 'TOTOROAD',
+                    subTitle: this.$t('totoro.totoro.courseList.title1'),
                     backgroundColor: '#FFC2D6',
                     text: this.$t('totoro.totoro.courseList.text1'),
                     image: carouselImage,
+                    icon: icon1Image,
                 },
                 {
-                    title: this.$t('totoro.totoro.courseList.title2'),
+                    title: 'TOTOROAD',
+                    subTitle: this.$t('totoro.totoro.courseList.title2'),
                     backgroundColor: '#F96291',
                     text: this.$t('totoro.totoro.courseList.text2'),
                     image: carouselImage,
+                    icon: icon2Image,
                 },
             ];
         },
@@ -259,6 +266,19 @@ export default {
     head() {
         return {
             title: this.$t('header.totoro'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('totoro.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '辅导课, 衔接课, 新生适应留学生活, 留学生规划, 如何融入海外课堂, 留学生学术辅导, 美本学术辅导, 美本线上辅导课, 暑期辅导, gre辅导课, h1b咨询, cfa辅导课',
+                },
+            ],
         };
     },
 };
