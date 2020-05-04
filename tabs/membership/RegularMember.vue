@@ -8,17 +8,17 @@
             to="https://www.wjx.cn/jq/71891803.aspx"
         >
             <p>
-                • 会员月刊邮件: 各类活动信息及报名方式
+                {{ $t('membership.regularMember.benefit1') }}
                 <br />
-                • 优先参与活动的特权
+                {{ $t('membership.regularMember.benefit2') }}
                 <br />
-                • 不需要面试
+                {{ $t('membership.regularMember.benefit3') }}
                 <br />
-                • 不需要履行志愿者职责
+                {{ $t('membership.regularMember.benefit4') }}
                 <br />
-                • 面向所有年龄段，居住在所有国家的华人开放
+                {{ $t('membership.regularMember.benefit5') }}
                 <br />
-                • 全开放式面向喜欢、支持IFU文化的朋友们
+                {{ $t('membership.regularMember.benefit6') }}
             </p>
         </Banner>
         <section style="background: #F1F9FF">

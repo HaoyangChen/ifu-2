@@ -13,27 +13,27 @@
             <div class="images-row">
                 <div class="image-item">
                     <img src="@/assets/support/support-1.png" />
-                    <p>人员工资</p>
+                    <p>{{ $t('donation.support.image1') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-2.png" />
-                    <p>行政费用</p>
+                    <p>{{ $t('donation.support.image2') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-3.png" />
-                    <p>校园志愿者事务报销</p>
+                    <p>{{ $t('donation.support.image3') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-4.png" />
-                    <p>学术项目</p>
+                    <p>{{ $t('donation.support.image4') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-5.png" />
-                    <p>团建与年会</p>
+                    <p>{{ $t('donation.support.image5') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-6.png" />
-                    <p>其他</p>
+                    <p>{{ $t('donation.support.image6') }}</p>
                 </div>
             </div>
         </section>

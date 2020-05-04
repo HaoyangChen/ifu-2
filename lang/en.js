@@ -30,7 +30,7 @@ export default {
             title: 'Wuhan Epidemic Donation',
             description:
                 "On the New Year's Eve in 2020, after the advice of IFU volunteers, the IFU working group held an emergency meeting and decided to raise funds for the Wuhan epidemic with a target amount of 50,000 yuan. From IFU's own purchase of 10,000 yuan to purchase masks, to guides to bring masks back from Singapore, to reaching the fundraising target amount, IFU unites to help the motherland overcome difficulties. However, subsequent cases were confirmed in North America, and IFU decided to use a donation of more than 50,000 yuan to purchase masks for international students.",
-            buttonText: 'More Information of Donation',
+            buttonText: 'Read the Story',
         },
         ourWork: {
             title: 'Our Work',
@@ -38,7 +38,7 @@ export default {
                 infoAsymmetry: 'INFORMATION ASYMMETRY ',
                 security: 'OVERSEAS SAFETY',
                 intimateService: 'ALL-AROUND SERVICE',
-                socialMedia: 'CONSULTING',
+                socialMedia: 'SOCIAL MEDIA',
                 infoText:
                     "We use social media to send the most authentic information about studying abroad and daily life in overseas schools to parents; We communicate regularly with schools and parents, collecting each other's opinions and giving feedback to both parties in a timely manner.",
                 securityText:
@@ -116,11 +116,17 @@ export default {
             text7: '2019 IFU College Carnival in Shanghai',
         },
         aboutUs: {
-            title: '关注我们',
+            title: 'Follow Us',
             qrcode: 'IFU Official Wechat Account',
             text1:
-                '我们在紧急情况发生时，IFU给予留学生家长及时的帮助；通过留学生第一视角传递海外校园信息，缓解家长与孩子之间的信息代沟，建立起中外信息沟通桥梁。想要及时的获取更多留学生动态；各类实用干货，课程讲座分享等等精彩内容。',
-            text2: '微信扫描二维码关注 IFU官方公众号',
+                'When an emergency occurs, IFU provides timely assistance to the parents of international students; through the first perspective of foreign students, we pass information on overseas campuses to alleviate the information generation gap between parents and children and build a bridge of information communication between China and foreign countries. We provide news about international students, course lecture sharing and so on.',
+            text2: 'Scan the QR code on WeChat to follow us',
+        },
+        studentGroup: {
+            title: 'IFU Students Group Chat',
+            text1:
+                "As the saying goes, 'Stones from other mountains can attack jade', IFU (International Parent Union) hopes that all newcomers can get help on the road to glorious future, using the most effective Ways to inspire and guide you, so that you will no longer 'fight alone', so that you can move forward more firmly. Everyone can communicate and chat in this group, discuss study abroad, and plan a better university life.",
+            text3: 'Scan the QR code on WeChat to join IFU Students Group Chat',
         },
     },
     more: {
@@ -369,7 +375,7 @@ export default {
             becomeVipDesktop:
                 'As a member of the IFU, you can enjoy up to 10% discount on all IFU services.',
             becomeVipContent:
-                "The purchase of an International Student ID (ISIC x IFU co-branded card) with an exclusive IFU logo can also be used to enjoy exclusive discounts on IFUs other than ISIC's own discounts, such as GRE training exclusive discounts, Student Universe",
+                "The purchase of an International Student ID (ISIC x IFU co-branded card) with an exclusive IFU logo can also be used to enjoy exclusive discounts on IFUs other than ISIC's own discounts, such as GRE training exclusive discounts, Student Universe exclusive flight ticket discounts",
             buttonText: 'List Your Offer',
             overView1:
                 'The IFU x ISIC joint international student card is the only international full-time student certification document recognized by UNESCO. It can enjoy more than 150,000 student discount benefits worldwide. At the same time, many discounts are exclusive benefits of the IFUxISIC card !! Card holders can enjoy discounts at over 21,000 restaurants and entertainment venues. Many international institutions also recognize ISIC x IFU joint student IDs, such as IELTS, and can enjoy a free pre-exam practice and advice.',
@@ -419,12 +425,21 @@ export default {
             memberButton: 'Learn More',
         },
         regularMember: {
+            bannerTitle: 'Membership Benefits',
+            benefit1: '• No cost for member registration',
+            benefit2: "• Member's Monthly Mail: Various event information",
+            benefit3: '• Privilege to participate in activities',
+            benefit4: '• No interview required',
+            benefit5: '• No need to perform volunteer duties',
+            benefit6: '• Open to all ages, Chinese living in all countries',
+            benefit7:
+                '• Fully open to friends who like and support IFU culture',
             memberTitle: 'Regular Member',
             memberText: '普通学生卡普通学生卡普通学生卡普通学生卡',
             memberButton: 'Learn More',
             description:
                 'In 2019, IFU conducted more than 90 online and offline sharing sessions, as well as various offline activities such as local volunteering in North America and the Ifu College Carnival. All activity information and registration will be notified by monthly mail to Member, Volunteer and Officer of IFU! In addition, Member, unlike Volunteer, does not have to perform Volunteer duties or pass interviews, and welcomes Chinese of all ages living in all countries, it is an open family for friends who like IFU and support our culture.',
-            becomeRegularMemberBtn: 'Become IFU Member',
+            becomeRegularMemberBtn: 'Become IFU Member For Free',
             northAmericaVolunteer: 'North American Volunteers in News',
             volunteer1: 'UCSD Campus Tour Guide Start',
             volunteer2: 'IFU X Words Alive Volunteers Activity',
@@ -925,7 +940,13 @@ export default {
         support: {
             title: 'SUPPORT US',
             description:
-                "A donation from you will support the operation of IFU nonprofit Organization for one year and will help us build bridges between families studying abroad. Because of geography, jet lag, generation gap, the child's help feel helpless, anxious, do not be afraid, IFU in, there is hope.",
+                "A donation from you will support the operation of IFU nonprofit Organization for one year and will help us build bridges between families studying abroad. Because of geography, jet lag, generation gap, the child's help feel helpless, anxious, do not be afraid, IFU in, there is hope. IFU upholds the principle of transparency and openness, all of your donations will be used for campus volunteer affairs reimbursement, academic projects, IFU group construction and annual meetings, staff salaries, administrative expenses, etc.",
+            image1: 'Stuff Salary',
+            image2: 'Administrative costs',
+            image3: 'Campus Volunteer Cost',
+            image4: 'Academic Projects',
+            image5: 'Annual meeting',
+            image6: 'Others',
         },
         payment: {
             online: 'ONLINE PAYMENT',

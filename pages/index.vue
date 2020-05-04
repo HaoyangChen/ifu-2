@@ -505,7 +505,7 @@ h2 {
     width: 32%;
 }
 .left {
-    text-align: right;
+    text-align: left;
     padding-right: 30px;
 }
 .left .col:first-child {

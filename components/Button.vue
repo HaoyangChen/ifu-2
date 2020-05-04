@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 button {
-    width: 185px;
+    // width: 185px;
     height: 50px;
     background-color: #22a5d8;
     box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
@@ -38,6 +38,7 @@ button {
     border-radius: 30px;
     color: white;
     font-size: 16px;
+    padding: 0 45px;
 }
 
 button:hover {
@@ -51,9 +52,10 @@ button:hover {
 @media (max-width: 1024px) {
     button {
         font-size: 14px;
-        width: 140px;
+        // width: 140px;
         height: 45px;
         margin: 35px 0;
+        padding: 0 30px;
     }
 }
 </style>
