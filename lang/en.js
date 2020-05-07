@@ -61,47 +61,15 @@ export default {
                 totoroText:
                     'In order to help students already studying in the universities to consolidate what they have learned and to get a better score, we also offer Totoroad synchronous tutoring. Mentors with GPA at 4.0 in the corresponding course or Master/ Phd students would come to you in a one-to-one class to help you study better. Courses are personally designed according to individuals’ needs to best fit into the path and weakness of the mentee. Mentors would help students either review the knowledge or analyze the difficult part or preview as preparations to lead to toward the better overall understanding and academic success.',
                 totorosubTitle: 'Tutoring and Mentorship',
-                ISICTitle: 'MEMBERSHIP',
-                ISICText:
-                    'Because of supporting IFU and appreciating IFU culture, through simple registration operation (no need to conduct an interview) to become our members&#39; companions, IFU will send monthly events and share information by email. At the same time, students who hold IFU x ISIC international student card can enjoy life, travel, dining, law, and academic discounts worldwide. (For specific discounts, see the store)',
-                ISICsubTitle: 'IFU Member & Student Identity Card',
-                DMATitle: 'SERVICES',
-                DMAText:
-                    'Since 2019, the IFU has joined forces with Hoolilaw, an overseas legal service platform, to launch the &quot;365 study abroad family protection program&quot; and hold a weekly free legal lecture. For just $1 a day, plan 365 offers the services of a professional lawyer who can help you solve legal problems in your daily life!',
-                DMAsubTitle: 'Legal Service & Other',
+                membershipTitle: 'MEMBERSHIP',
+                membershipText:
+                    'Because of supporting IFU and appreciating IFU culture, through simple registration operation (no need to conduct an interview) to become our members! companions, IFU will send monthly events and share information by email. At the same time, students who hold IFU x ISIC international student card can enjoy life, travel, dining, law, and academic discounts worldwide. (For specific discounts, see the store)',
+                membershipsubTitle: 'IFU Member & Student Identity Card',
+                otherTitle: 'SERVICES',
+                otherText:
+                    'Since 2019, the IFU has joined forces with Hoolilaw, an overseas legal service platform, to launch the "365 study abroad family protection program" and hold a weekly free legal lecture. For just $1 a day, plan 365 offers the services of a professional lawyer who can help you solve legal problems in your daily life!',
+                othersubTitle: 'Legal Service & Other',
             },
-            ourServicelist: {
-                freeService: 'emergencyFreeService',
-                freeServiceText: 'emergencyFreeService',
-                academicService: 'academicService',
-                academicServiceText: 'academicService',
-                memberService: 'memberService',
-                memberServicesText: 'memberService',
-                psychosocialService: 'psychosocialService',
-                psychosocialServiceText: 'psychosocialService',
-                legalService: 'legalService',
-                legalServiceText: 'legalService',
-            },
-        },
-        ourTeam: {
-            title: 'Our Team',
-            allTeamMembers: 'All Team Members>>>',
-            title1: 'Founder & CEO',
-            name1: 'Jiawen (Kimmy) Tang',
-            title2: 'Volunteer Management Department Manager',
-            name2: 'Hanwen Zhuo',
-            title3: 'Volunteer Management Department Manager',
-            name3: 'Zixuan (Sylvia) Zhan',
-            title4: 'Department of Administration Manager',
-            name4: 'Hanqin Jiang',
-            title5: 'Department of Operation Manager',
-            name5: 'Yanran Luo',
-            title6: 'Department of Technology Manager',
-            name6: 'Xiaoqin (Sherry) Gui',
-            title7: 'Department of Cooperative Project Manager',
-            name7: 'Zhiqi Xu',
-            title8: 'Department of Cooperative Project Manager',
-            name8: 'Caiwei Wang',
         },
         eventList: {
             title: 'Events Recall',
@@ -114,6 +82,7 @@ export default {
             text5: '2019 Experience Sharing in China',
             text6: '2019 IFU College Carnival in Beijing',
             text7: '2019 IFU College Carnival in Shanghai',
+            more: 'View more recent events >>',
         },
         aboutUs: {
             title: 'Follow Us',
@@ -445,158 +414,6 @@ export default {
             volunteer2: 'IFU X Words Alive Volunteers Activity',
             volunteer3: 'OCC program Christmas Donation Activity',
             volunteer4: 'NCSU 2020 Winter Costume Party',
-        },
-    },
-    AI: {
-        banner: {
-            title: 'ARTIFICIAL INTELLIGENCE ACADEMY',
-            buttonText: 'ENROLL',
-            name1: 'Staff Ratio:',
-            name2: 'Hardware + Software:',
-            name3: 'Ages:',
-            name4: 'Date:',
-            name5: 'Hours:',
-            name6: 'Program:',
-            text1: '8:1',
-            text2: 'Python, Scikit-Learn, Tensoflow, Javascript',
-            text3: '12 – 18',
-            text4: '7.22 – 7.26 / 7.29 – 8.2',
-            text5: '9:00AM–4:30PM',
-            text6: 'Teen Camp (Two-week)',
-        },
-        introduce: {
-            title: 'Experience Artificial Intelligance Like Never Before',
-            text:
-                'At the beginning of the first week, students will work to understand the basics of how machine learning and AI works, affects our world, and start making their own machine learning powered projects with block-based programming. \n\nAs the course progresses, students will master the basics of programming in python, creating machine learning projects like chatbots, predictive models, and bots that learn to play games. \n\nAt the beginning of the second week, students will explore ways that AI is applied to data, tools, and how services, and how they can apply AI to their own projects. \n\nBy the end of the week, students will dive in the theory and math of machine learning, and solve data problems using those skills and strategies.',
-        },
-        info: {
-            title: 'COURSE INFORMATION',
-            leftContent: {
-                title: 'What Students Learn',
-                text1: 'Machine Learning and Neural Network fundamentals;',
-                text2:
-                    'The strengths and limitations of making AI predict outcomes;',
-                text3:
-                    'How image recognition and data science can be applied to solve problems.',
-                text4: '',
-            },
-            rightContent: {
-                title: 'What Students Create',
-                text1: 'An animated chatbot and a text-based chatbot;',
-                text2: 'A neural network for predictive analysis;',
-                text3: 'A program that can learn to play a game;',
-                text4: 'An Image classifier on a category of their choice;',
-                text5: 'An AI to let you play games with webcam video;',
-                text6: 'Visualizations and insights from interesting data.',
-                text7: '',
-            },
-        },
-        content: {
-            title: 'MORE ABOUT THIS COURSE',
-            text:
-                '** If you have any question, feel free to contact us or scan the QR code at the bottom right corner to add IFU Wechat Assistant for more help.',
-        },
-    },
-    modeling: {
-        banner: {
-            title: '3D MODELING & ANIMATION ACADEMY',
-            buttonText: 'ENROLL',
-            name1: 'Staff Ratio:',
-            name2: 'Hardware + Software:',
-            name3: 'Ages:',
-            name4: 'Date:',
-            name5: 'Hours:',
-            name6: 'Program:',
-            text1: '12:1',
-            text2: 'Autodesk Maya, Autodesk Mudbox',
-            text3: '12 – 18',
-            text4: '7.22 – 7.26 / 7.29 – 8.2',
-            text5: '9:00AM–4:30PM',
-            text6: 'Level 3 (Two-week)',
-        },
-        introduce: {
-            title: 'Model And Animate a 3D Character',
-            text:
-                'Learn all about how to create 3D models and sculpt characters as we explore complex modeling techniques and animate our characters in original short sequences. \n\nWeek 1, 3D Modeling with Maya You’ll learn valuable workflows that pros use and create and sculpt 3D models. We’ll teach you the fundamentals of character design and rigging before you create your own original 3D props, set pieces, and characters. \n\nWeek 2, Character Animation with Maya: Using Autodesk Maya, you’ll learn how to bring characters to life, using lighting, settings, and camera angles. We’ll teach you a workflow that will take pre-rigged models and animate them in an original short sequence that tells a story.',
-        },
-        info: {
-            title: 'COURSE INFORMATION',
-            leftContent: {
-                title:
-                    'How to use 3D Modeling programs such as Maya and Mudbox;',
-                text1: 'Creating 3D models, both organic and inorganic;',
-                text2: 'Lighting and Rendering a scene;',
-                text3: 'How to use Maya as a tool for animation;',
-                text4: 'Keyframes and interpolations in Maya’s Graph Editor;',
-                text5: 'Using Character Rigs;',
-            },
-            rightContent: {
-                title: 'A wide variety of 3D Objects in Maya and Mudbox;',
-                text1:
-                    'Simple models made of Polygon Primitives and advanced models using box modeling techniques;',
-                text2:
-                    'Sculptures of characters or creatures using Mudbox’s toolset;',
-                text3:
-                    'Several animations of a bouncing ball to display mastery of keyframes, weight, and timing;',
-                text4:
-                    'Images of characters in expressive poses, displaying subtle control of the complex character rigs;',
-            },
-        },
-        content: {
-            title: 'MORE ABOUT THIS COURSE',
-            text:
-                '** If you have any question, feel free to contact us or scan the QR code at the bottom right corner to add IFU Wechat Assistant for more help.',
-        },
-    },
-    robot: {
-        banner: {
-            title: 'ROBOTICS & ENGINEERING ACADEMY',
-            buttonText: 'ENROLL',
-            name1: 'Staff Ratio:',
-            name2: 'Hardware + Software:',
-            name3: 'Ages:',
-            name4: 'Date:',
-            name5: 'Hours:',
-            name6: 'Program:',
-            text1: '12:1',
-            text2: 'Python, Scikit-Learn, Tensoflow, Javascript',
-            text3: '12 – 18',
-            text4: '7.22 – 7.26 / 7.29 – 8.2',
-            text5: '9:00AM–4:30PM',
-            text6: 'Level 3 Camp (Two-week)',
-        },
-        introduce: {
-            title: 'Design, Build, And Program your Creations',
-            text:
-                'This course provides an introduction to the world of robotics and electrical engineering. We’ll move students from basic programming and electronic circuit concepts to building the robot and exploring each sensor/actuator’s capabilities by programming the RedBot Arduino platform. \n\nThe second week builds on knowledge of basic programming and circuitry to teach students to build their own unique projects using the Raspberry Pi and a variety of sensors. Students will learn the basics of Python, physical computing with the Pi, and how to use the Pi’s internet connectivity to communicate with it remotely. Students will get to take their course materials home with them!',
-        },
-        info: {
-            title: 'COURSE INFORMATION',
-            leftContent: {
-                title: 'What Students Learn',
-                text1: 'Programming in Arduino;',
-                text2: 'Signal processing and electronic circuit building;',
-                text3: 'How to troubleshoot errors and solve logical problems;',
-                text4: 'Raspberry Pi Setup & Usage;',
-                text5:
-                    'Command Line Interfaces and Python Coding Physical Computing;',
-                text6: '',
-            },
-            rightContent: {
-                title: 'What Students Create',
-                text1: 'A robot that performs autonomous tasks;',
-                text2: 'Unique code that they understand;',
-                text3: 'Designs for robot improvement and test courses;',
-                text4:
-                    'Projects that utilize the power of Python, Raspberry Pi, and the Internet;',
-                text5:
-                    'Basic code that they will be able to modify themselves for future projects;',
-            },
-        },
-        content: {
-            title: 'MORE ABOUT THIS COURSE',
-            text:
-                '** If you have any question, feel free to contact us or scan the QR code at the bottom right corner to add IFU Wechat Assistant for more help.',
         },
     },
     team: {
@@ -941,11 +758,11 @@ export default {
             title: 'SUPPORT US',
             description:
                 "A donation from you will support the operation of IFU nonprofit Organization for one year and will help us build bridges between families studying abroad. Because of geography, jet lag, generation gap, the child's help feel helpless, anxious, do not be afraid, IFU in, there is hope. IFU upholds the principle of transparency and openness, all of your donations will be used for campus volunteer affairs reimbursement, academic projects, IFU group construction and annual meetings, staff salaries, administrative expenses, etc.",
-            image1: 'Stuff Salary',
-            image2: 'Administrative costs',
-            image3: 'Campus Volunteer Cost',
+            image1: 'Staff Salary',
+            image2: 'Administrative Costs',
+            image3: 'Campus Volunteer Costs',
             image4: 'Academic Projects',
-            image5: 'Annual meeting',
+            image5: 'Annual Meetings',
             image6: 'Others',
         },
         payment: {

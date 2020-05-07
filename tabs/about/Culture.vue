@@ -1,8 +1,8 @@
 <template>
     <div>
         <section class="culture-section">
-            <h2 v-t="'about.culture.cultureTitle'" />
-            <p v-t="'about.culture.cultureText'" />
+            <h2>{{ $t('about.culture.cultureTitle') }}</h2>
+            <p>{{ $t('about.culture.cultureText') }}</p>
             <iframe
                 class="video"
                 frameborder="0"
@@ -11,7 +11,7 @@
             ></iframe>
         </section>
         <section>
-            <h2 v-t="'about.culture.distributionTitle'" />
+            <h2>{{ $t('about.culture.distributionTitle') }}</h2>
             <div class="distribution-image desktop">
                 <img src="../../assets/about/culture/map.png" />
                 <div class="tips" data-aos="fade-up">
@@ -66,8 +66,8 @@
             </div>
         </section>
         <section class="join-section">
-            <p v-t="'about.culture.joinText1'" />
-            <p v-t="'about.culture.joinText2'" />
+            <p>{{ $t('about.culture.joinText1') }}</p>
+            <p>{{ $t('about.culture.joinText2') }}</p>
             <Button external to="https://www.wjx.top/m/42786146.aspx">{{
                 $t('about.culture.joinButtonText')
             }}</Button>
@@ -130,17 +130,24 @@ export default {
 
 .tips {
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 12px;
     position: absolute;
-}
 
-.tips-text {
-    background: rgba(255, 255, 255, 0.8);
-}
+    .tips-text {
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
-.tips-line {
-    position: absolute;
+        p {
+            margin: 0;
+        }
+    }
+
+    .tips-line {
+        position: absolute;
+    }
 }
 
 .tips:nth-of-type(1) {
@@ -281,10 +288,6 @@ export default {
     .tips:nth-of-type(4) {
         top: 146px;
         left: 267px;
-        p {
-            font-size: 14px;
-            margin: 10px;
-        }
 
         .tips-text {
             height: 215px;

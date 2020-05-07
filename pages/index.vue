@@ -111,7 +111,7 @@
                 <a
                     href="http://mp.weixin.qq.com/mp/homepage?__biz=MzU1MTE2MDkxOQ==&hid=2&sn=6787ada9887b05cdee1a4f95d6f67cc3&scene=18#wechat_redirect"
                     target="_blank"
-                    >更多近期精彩活动 >></a
+                    >{{ $t('home.eventList.more') }}</a
                 >
             </div>
         </section>
@@ -152,7 +152,7 @@
                             alt="QR Code for Student Group"
                         />
                         <img
-                            src="@/assets/home/april-annoucement.png"
+                            :src="aprilAnnoucementImg[$i18n.locale]"
                             alt="April Annoucement"
                         />
                     </div>
@@ -188,6 +188,9 @@ import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
+import aprilAnnoucementImgZh from '@/assets/home/april-annoucement.png';
+import aprilAnnoucementImgEn from '@/assets/home/april-annoucement-en.png';
+
 export default {
     components: {
         Banner,
@@ -219,6 +222,10 @@ export default {
                         spaceBetween: 10,
                     },
                 },
+            },
+            aprilAnnoucementImg: {
+                zh: aprilAnnoucementImgZh,
+                en: aprilAnnoucementImgEn,
             },
         };
     },
@@ -269,22 +276,26 @@ export default {
                     icon: one,
                 },
                 {
-                    title: this.$t('home.ourServices.serviceList.ISICTitle'),
+                    title: this.$t(
+                        'home.ourServices.serviceList.membershipTitle',
+                    ),
                     backgroundColor: '#C9D74A',
-                    text: this.$t('home.ourServices.serviceList.ISICText'),
+                    text: this.$t(
+                        'home.ourServices.serviceList.membershipText',
+                    ),
                     image: ifuMembershipImage,
                     subTitle: this.$t(
-                        'home.ourServices.serviceList.ISICsubTitle',
+                        'home.ourServices.serviceList.membershipsubTitle',
                     ),
                     icon: two,
                 },
                 {
-                    title: this.$t('home.ourServices.serviceList.DMATitle'),
+                    title: this.$t('home.ourServices.serviceList.otherTitle'),
                     backgroundColor: '#F96291',
-                    text: this.$t('home.ourServices.serviceList.DMAText'),
+                    text: this.$t('home.ourServices.serviceList.otherText'),
                     image: otherServiceImage,
                     subTitle: this.$t(
-                        'home.ourServices.serviceList.DMAsubTitle',
+                        'home.ourServices.serviceList.othersubTitle',
                     ),
                     icon: three,
                 },

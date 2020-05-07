@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Book :list="storyList" />
+        <Book :list="storyList[$i18n.locale]" />
         <section>
             <h2>{{ $t('about.story.achievement') }}</h2>
             <div class="achievement-list">
@@ -61,6 +61,16 @@ import story7 from '@/assets/about/story/story_7.jpg';
 import story8 from '@/assets/about/story/story_8.jpg';
 import story9 from '@/assets/about/story/story_9.jpg';
 
+import story1En from '@/assets/about/story/en/story_1.jpg';
+import story2En from '@/assets/about/story/en/story_2.jpg';
+import story3En from '@/assets/about/story/en/story_3.jpg';
+import story4En from '@/assets/about/story/en/story_4.jpg';
+import story5En from '@/assets/about/story/en/story_5.jpg';
+import story6En from '@/assets/about/story/en/story_6.jpg';
+import story7En from '@/assets/about/story/en/story_7.jpg';
+import story8En from '@/assets/about/story/en/story_8.jpg';
+import story9En from '@/assets/about/story/en/story_9.jpg';
+
 export default {
     name: 'Story',
     components: {
@@ -68,17 +78,30 @@ export default {
     },
     data() {
         return {
-            storyList: [
-                story1,
-                story2,
-                story3,
-                story4,
-                story5,
-                story6,
-                story7,
-                story8,
-                story9,
-            ],
+            storyList: {
+                zh: [
+                    story1,
+                    story2,
+                    story3,
+                    story4,
+                    story5,
+                    story6,
+                    story7,
+                    story8,
+                    story9,
+                ],
+                en: [
+                    story1En,
+                    story2En,
+                    story3En,
+                    story4En,
+                    story5En,
+                    story6En,
+                    story7En,
+                    story8En,
+                    story9En,
+                ],
+            },
         };
     },
 };
