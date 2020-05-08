@@ -47,6 +47,14 @@
 
 `npm run dev` 会在 [localhost:3000](http://localhost:3000/) 启动 Nuxt.js 的测试服务器，所有文件更改会热更新
 
+## 开发工具
+
+建议使用 VS Code，项目配置了一些插件
+- Vetur: VS Code 支持 Vue 的插件
+- ESLint: 静态检查
+- Prettier: 自动 Format, 使用根目录下的 ifu-2.code-workspace 文件打开时，项目会自动开启 Format on Save, 保存时会自动调用 Prettier 格式化文件
+- i18n Ally: 可以集中查看翻译情况
+
 ## 用到的 NPM 包
 
 - 样式 [SCSS](https://sass-lang.com/): 主要是用嵌套来整理 CSS
