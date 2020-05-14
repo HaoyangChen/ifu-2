@@ -1,14 +1,13 @@
 export default {
     header: {
-        home: 'Home',
-        service: 'Service',
-        about: 'About Us',
-        contact: 'Contact Us',
-        totoro: 'IFU Totoroad',
-        membership: 'IFU Membership',
-        more: 'IFU More Services',
-        support: 'Support Us',
-        team: 'Our Team',
+        home: 'HOME',
+        service: 'SERVICE',
+        about: 'ABOUT',
+        contact: 'CONTACT',
+        totoro: 'TOTOROAD ACADEMY',
+        membership: 'IFU MEMBERSHIP',
+        more: 'IFU OTHER SERVICES',
+        support: 'SUPPORT',
     },
     footer: {
         subTitle1: 'To Make Our Campus Life Safer',
@@ -223,14 +222,14 @@ export default {
             team: 'TEAM',
         },
         culture: {
-            cultureTitle: 'OUR CULTURE',
+            cultureTitle: 'Our Culture',
             cultureText:
                 'Sharing, Respect, Creativity Sharing of our story and experience brings us the international students and families; Sharing of our culture, value, and creed brings us the volunteers; Respect of parents, students and volunteers helps us understand each other; Mutual understanding leads to the choice of creating new possibility!',
-            distributionTitle: 'OUR VOLUNTEERS DISTRIBUTION',
+            distributionTitle: 'Our Volunteers Distribution',
             joinText1: 'We are keeping changing and growing!',
             joinText2:
                 'We welcome the most dedicated and creative people to join with us, for spreading love and care to every corner of the world.',
-            joinButtonText: 'Join Us',
+            joinButtonText: 'Become Campus Volunteer',
             schoool1: 'University of Toroto',
             schoool2: 'Simon Fraser University',
             schoool3: 'Gernoble Ecole De Management',
@@ -254,7 +253,7 @@ export default {
             schoool21: 'National University of Singapore',
         },
         story: {
-            achievement: 'OUR ACHIEVEMENT',
+            achievement: 'Our Achievement',
             text1:
                 "We're consistently productive and productive: <span>470</span> articles and <span>282</span> original articles were published in 2018.",
             text2:
@@ -327,13 +326,13 @@ export default {
     },
     membership: {
         banner: {
-            title: 'IFU Membership',
+            title: 'IFU MEMBERSHIP',
             description:
-                'International Student Identity Card, referred to as ISIC. This is a recognized universal student certificate，which was endorsed by the United Nations Educational, Scientific and Cultural Organization (UNESCO), issued by the International Student Travel Union (ISTC). Since its inception in 1953, more than 4 million students have enjoyed various international discounts, such as airfare, shopping, etc. Currently, there are more than 122 countries in the world with specialized organizations to provide tourist information and services.',
-            buttonText: 'Sign Up for Update',
+                "Because of supporting IFU and appreciating IFU culture, through simple registration operation (no need to conduct an interview) to become our members' companions, IFU will send monthly events and share information by email. At the same time, students who hold IFU x ISIC international student card can enjoy life, travel, dining, law, and academic discounts worldwide. (For specific discounts, see the store)",
+            buttonText: 'Become IFU Member For Free',
         },
         colhalf: {
-            whycardTitle: 'IFU x ISIC MEMBERSHIP OVERVIEW',
+            whycardTitle: 'IFU x ISIC Membership Overview',
             whycardContent:
                 'The ISIC International Student ID Card is highly used in Europe and can be used to enjoy preferential treatment, such as various shopping, transportation, and discounts on visit tickets. However, it should be noted that although there are many special offers for students, most of the national student ID cards do not have any function, only ISIC can enjoy!',
             isicDiscountTitle: 'ISIC Sample Discounts',
@@ -411,9 +410,9 @@ export default {
             becomeRegularMemberBtn: 'Become IFU Member For Free',
             northAmericaVolunteer: 'North American Volunteers in News',
             volunteer1: 'UCSD Campus Tour Guide Start',
-            volunteer2: 'IFU X Words Alive Volunteers Activity',
-            volunteer3: 'OCC program Christmas Donation Activity',
-            volunteer4: 'NCSU 2020 Winter Costume Party',
+            volunteer2: 'NCSU 2020 Winter Costume Party',
+            volunteer3: 'IFU X Words Alive Volunteers Activity',
+            volunteer4: 'OCC program Christmas Donation Activity',
         },
     },
     team: {
@@ -494,7 +493,7 @@ export default {
             buttonText: 'Course Detail',
         },
         totoro: {
-            title: 'WHAT IS IFU PROJECT TOTOROAD?',
+            title: 'What Is IFU Totoroad Project?',
             text:
                 'The name “Totoroad” comes from a classic Japanese anime My Neighbor Totoro (1988) by Hayao Miyazaki. In the anime, while being invisible for most of the time, Totoro came out to support people as long as they need helps. We adopt his name but with a different character (we use 多多罗 instead of the official translation 多多洛) to imply the meaning of “Compass” (罗means compass in Chinese): like Tororo, we help the international students in need; like a compass, we direct these students and their family toward academic success.',
             courseList: {
@@ -510,7 +509,7 @@ export default {
             title2: 'TOTOROAD SYNCHRONOUS\nTUTORING',
         },
         cohesion: {
-            heading1: 'CLASS OVERVIEW',
+            heading1: 'Class Overview',
             text1:
                 'In order to help upcoming first-year undergraduates to better adapt the new lives and studies in America, which is notoriously known to be absolutely arduous and stressful, we design and offer Totoroad bridging courses. The courses combine American teaching methodology with essential undergraduate academic knowledge to help new international students prepare their next-four-year studies in advance. Mentees of Totoroad bridging courses would also develop intimate connections with outstanding mentors in upper-classes, which helps mentees build up social network as well as academic supports.',
             description2: '',
@@ -525,7 +524,7 @@ export default {
             description11: '',
             description12: '',
             description13: '',
-            subjectHeading: 'SUBJECTS COVERED',
+            subjectHeading: 'Subjects Covered',
             subject1:
                 'Totoroad bridging courses encompass subjects of Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics. Except Computer Science, which teaches basic programing language Java, all the other courses offer two different levels – basic level and upper level: the basic level courses target students without rudimentary understanding of the subject, specifically without AP/IB score, and will teach the basic knowledge of the subject; the upper level course target students with AP/IB scores and will teach subsequent college knowledge, relatively hard, in the subject, which all the student with related major would learn in the future.',
             subject2: '',
@@ -582,7 +581,7 @@ export default {
             scanqr2: '',
         },
         tutors: {
-            title: 'IFU PROJECT TOTOROAD TUTORS',
+            title: 'Totoroad Project Tutors',
             tutorName1: 'Kaiwen Hou',
             tutorCourse1: 'Subjects: Elementary Physics, Advanced Physics. ',
             tutorIntro1: 'Description: ',
@@ -710,9 +709,8 @@ export default {
                 'Study in University of Washington, Seattle, major in Biochemistry',
             tutorExperience15: 'Academic History: ',
             tutorExperienceDetail15: 'GPA：3.9/4.0',
-
             joinTutor:
-                "If your academic performance are good, you're willing to do valuable output and you're willing to trade your intellectual prowess for a part-time teaching job, welcome to join the Mentor team of IFU DORO PROJECT, this is where you can get to know a group of the nation's most academically gifted students! Fill in and submit the form carefully and wait for our knock!",
+                'Do you have a high academic performance and want to contribute to something valuable? Are you looking for a way to put the knowledge you learned into practice? If that’s you, welcome to join the IFU PROJECT TOTOROAD’s mentor team as a part-time tutor. You will meet a team with the top excellent students all across the United States! Submit your application now and wait for our knock knock!',
             submitApplication: 'Apply',
         },
     },
@@ -723,7 +721,7 @@ export default {
                 'When the stars come together, they become a bright star. Thank you for your stay for even a moment, as well as your love for us, Ifu growth along the way, without your company and encouragement. We invite you to support the operation of IFU nonprofit organization and work together to build bridges between families studying abroad. Regardless of the amount, Ifu sincerely thanks you for your confidence in us!',
         },
         emergency: {
-            title: 'Emergency Contact',
+            title: 'EMERGENCY CONTACT',
             contact:
                 'IFU Emergency Contact List for International Students’ families',
             p1:
@@ -733,7 +731,7 @@ export default {
             buttonText: 'Fill up the emergency contact list',
         },
         other: {
-            title: 'Other',
+            title: 'OTHER CONTACT INFORMATION',
             business: {
                 title: 'Business Cooperation',
                 description: 'Send email to',
@@ -749,13 +747,13 @@ export default {
     },
     donation: {
         banner: {
-            title: 'Charity Donation',
+            title: 'CHARITY DONATION',
             description:
                 '“We invite you to support our operation of IFU nonprofit organization and work together to build bridges between families studying abroad. Regardless of the size of your donation, IFU sincerely thanks you for your trust!”',
             buttonText: 'Our Story',
         },
         support: {
-            title: 'SUPPORT US',
+            title: 'Support Us',
             description:
                 "A donation from you will support the operation of IFU nonprofit Organization for one year and will help us build bridges between families studying abroad. Because of geography, jet lag, generation gap, the child's help feel helpless, anxious, do not be afraid, IFU in, there is hope. IFU upholds the principle of transparency and openness, all of your donations will be used for campus volunteer affairs reimbursement, academic projects, IFU group construction and annual meetings, staff salaries, administrative expenses, etc.",
             image1: 'Staff Salary',
@@ -766,10 +764,10 @@ export default {
             image6: 'Others',
         },
         payment: {
-            online: 'ONLINE PAYMENT',
+            online: 'Online Payment',
             wechat: 'QR Code for WeChat',
             alipay: 'QR Code for Alipay',
-            foreign: 'PAYMENT TOOL FOR FOREIGN BANK ACCOUNT: ZELLE',
+            foreign: 'Payment Tool For Foreign Bank Account: Zelle',
             zelle:
                 'Search internationalfamilyunion@gmail.com through payment tools of banks for transfer',
         },
@@ -795,7 +793,7 @@ export default {
                 '** Please scan the Qr Code in the bottom right corner of the page to add the assistant information for more information. ',
         },
         legalService: {
-            legalTitle: 'LEGAL SERVICES',
+            legalTitle: 'Legal Services',
             legal1: 'Since 2019, the IFU has joined forces with',
             legal2: ' Hoolilaw, an overseas legal service platform',
             legal3:
@@ -811,7 +809,7 @@ export default {
             legalLearnMoreBtn: 'Learn More',
         },
         greTraining: {
-            trainingTitle: 'GRADUATE ENTRANCE TRAINING',
+            trainingTitle: 'Graduate Entrance Training',
             training1: ' Shanghai Tuoyan Education',
             training2:
                 'As the leading GRE training institution in the United States, is committed to providing',

@@ -250,7 +250,7 @@ export default {
             distributionTitle: '我们的分布',
             joinText1: 'IFU正在寻找有爱的你',
             joinText2: '欢迎您的加入',
-            joinButtonText: '加入我们',
+            joinButtonText: '成为在校志愿者',
             schoool1: '多伦多大学',
             schoool2: '西蒙菲沙大学',
             schoool3: '格勒高商巴黎校区',
@@ -716,7 +716,7 @@ export default {
                 description: '请发送邮件至',
             },
             other: {
-                title: '其他国内一般事务',
+                title: '其他事务',
                 p1: '请联系在线客服',
                 p2: '或关注IFU微信公众号 ifu-china',
                 p3: '新浪微博: @IFU国际家长汇',

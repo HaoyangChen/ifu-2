@@ -6,7 +6,7 @@
             :button-text="$t('membership.banner.buttonText')"
             :background="bannerImage"
             external
-            to="https://www.wjx.cn/jq/71891803.aspx"
+            :to="becomeMemberLink[$i18n.locale]"
         />
         <Tab :list="tabList" />
     </div>
@@ -27,6 +27,10 @@ export default {
     data() {
         return {
             bannerImage,
+            becomeMemberLink: {
+                zh: 'https://www.wjx.cn/jq/71891803.aspx',
+                en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
+            },
         };
     },
     computed: {

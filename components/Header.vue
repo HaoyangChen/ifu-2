@@ -161,7 +161,7 @@ header {
 }
 
 .service-menu-separator {
-    height: 51px;
+    height: 40px;
     position: relative;
     left: -100px;
 }
@@ -202,6 +202,8 @@ a {
     height: 33px;
     text-decoration: none;
     color: #202020;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 33px;
 }
 
 .n-link:hover {
@@ -213,8 +215,13 @@ a {
     color: #54bef5;
 }
 
-.desktop .active {
-    color: #54bef5;
+.desktop {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 33px;
+
+    .active {
+        color: #54bef5;
+    }
 }
 
 span {

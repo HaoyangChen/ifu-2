@@ -5,7 +5,7 @@
             :description="$t('about.banner.description')"
             :button-text="$t('about.banner.buttonText')"
             external
-            to="https://www.wjx.top/m/42786146.aspx"
+            to="https://www.wjx.cn/jq/71891803.aspx"
             :background="bannerImage"
         />
         <Tab :list="tabList" />

@@ -130,6 +130,10 @@ export default {
     max-width: 50%;
     white-space: pre-line;
     box-sizing: border-box;
+
+    p {
+        white-space: normal;
+    }
 }
 
 .academic-image {

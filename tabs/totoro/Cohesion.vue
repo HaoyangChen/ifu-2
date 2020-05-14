@@ -31,7 +31,10 @@
             </div>
             <div class="row light-blue-row">
                 <section class="col-half larger-half">
-                    <img class="cohesion-diagram" :src="cohesionDiagramImage" />
+                    <img
+                        class="cohesion-diagram"
+                        :src="cohesionDiagram[$i18n.locale]"
+                    />
                 </section>
                 <section class="col-half smaller-half">
                     <h2>{{ $t('totoro.cohesion.subjectHeading') }}</h2>
@@ -93,6 +96,7 @@ import cohesionImage from '@/assets/totoro/cohesion.png';
 import onetooneImage from '@/assets/totoro/onetoone.png';
 import smallGroupImage from '@/assets/totoro/small-group.png';
 import cohesionDiagramImage from '@/assets/totoro/cohesion-diagram.png';
+import cohesionDiagramImageEn from '@/assets/totoro/cohesion-diagram-en.png';
 import cohesionImage3 from '@/assets/totoro/cohesion-section-3.png';
 import totoroQr from '@/assets/totoro/totoro-qr.png';
 export default {
@@ -102,7 +106,10 @@ export default {
             cohesionImage,
             onetooneImage,
             smallGroupImage,
-            cohesionDiagramImage,
+            cohesionDiagram: {
+                zh: cohesionDiagramImage,
+                en: cohesionDiagramImageEn,
+            },
             cohesionImage3,
             totoroQr,
         };

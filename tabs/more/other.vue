@@ -37,7 +37,7 @@
                 <p>
                     {{ $t('other.legalService.legal4')
                     }}<b>{{ $t('other.legalService.legal5') }}</b
-                    >。 {{ $t('other.legalService.legal6')
+                    >{{ $t('other.legalService.legal6')
                     }}<b>{{ $t('other.legalService.legal7') }}</b
                     >{{ $t('other.legalService.legal8') }}
                 </p>

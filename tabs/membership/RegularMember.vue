@@ -1,12 +1,7 @@
 <template>
     <div class="regular-member">
-        <Banner
-            :title="$t('membership.regularMember.bannerTitle')"
-            :button-text="$t('membership.regularMember.becomeRegularMemberBtn')"
-            :background="bannerImage"
-            external
-            to="https://www.wjx.cn/jq/71891803.aspx"
-        >
+        <section class="banner-section">
+            <h2>{{ $t('membership.regularMember.bannerTitle') }}</h2>
             <p>
                 {{ $t('membership.regularMember.benefit1') }}
                 <br />
@@ -20,7 +15,10 @@
                 <br />
                 {{ $t('membership.regularMember.benefit6') }}
             </p>
-        </Banner>
+            <Button external :to="becomeMemberLink[$i18n.locale]">{{
+                $t('membership.regularMember.becomeRegularMemberBtn')
+            }}</Button>
+        </section>
         <section style="background: #F1F9FF">
             <div class="container">
                 <h2 style="padding-bottom: 10px;">
@@ -63,9 +61,8 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner.vue';
+import Button from '@/components/Button.vue';
 import Event from '@/components/Event.vue';
-import bannerImage from '@/assets/membership/regular/banner.png';
 import eventImage1 from '@/assets/membership/regular/eventImage1.png';
 import eventImage2 from '@/assets/membership/regular/eventImage2.png';
 import eventImage3 from '@/assets/membership/regular/eventImage3.png';
@@ -74,16 +71,19 @@ import eventImage4 from '@/assets/membership/regular/eventImage4.png';
 export default {
     name: 'RegularMember',
     components: {
-        Banner,
+        Button,
         Event,
     },
     data() {
         return {
-            bannerImage,
             eventImage1,
             eventImage2,
             eventImage3,
             eventImage4,
+            becomeMemberLink: {
+                zh: 'https://www.wjx.cn/jq/71891803.aspx',
+                en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
+            },
         };
     },
     computed: {
@@ -116,6 +116,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.banner-section {
+    background: url('~assets/membership/regular/banner.png');
+    background-size: cover;
+
+    p {
+        line-height: 31px;
+        margin: 31px 0;
+    }
+}
+
 .row {
     display: flex;
 }
@@ -165,6 +175,7 @@ export default {
     flex: 1;
     height: 23vw;
     max-height: 40vh;
+    font-size: 14px;
 }
 
 .event-right {

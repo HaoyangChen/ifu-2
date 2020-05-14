@@ -16,6 +16,7 @@
 		"i18n-ally.enabledParsers": [
 			"js"
 		],
-		"i18n-ally.keystyle": "nested"
+		"i18n-ally.keystyle": "nested",
+		"i18n-ally.displayLanguage": "zh"
 	}
 }

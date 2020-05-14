@@ -68,7 +68,7 @@
         <section class="join-section">
             <p>{{ $t('about.culture.joinText1') }}</p>
             <p>{{ $t('about.culture.joinText2') }}</p>
-            <Button external to="https://www.wjx.top/m/42786146.aspx">{{
+            <Button external to="https://www.wjx.cn/jq/71891803.aspx">{{
                 $t('about.culture.joinButtonText')
             }}</Button>
         </section>
