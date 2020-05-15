@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div v-if="lang === 'zh'" class="top">
+        <div class="top">
             <div class="logo">
                 <div>IFU</div>
                 <div class="zh">
@@ -20,31 +20,6 @@
                     >
                         <img :src="item.image" alt="" />
                     </a>
-                </div>
-            </div>
-            <div class="code">
-                <img :src="codeImg" alt="" />
-                <p>{{ $t('footer.codeText1') }}</p>
-                <p>{{ $t('footer.codeText2') }}</p>
-            </div>
-        </div>
-        <div v-else class="top top-en" style="height: 420px, color: ">
-            <div class="logo-en">
-                <div>IFU</div>
-                <div class="en">
-                    <p>{{ $t('footer.subTitle1') }}</p>
-                    <p>{{ $t('footer.subTitle2') }}</p>
-                </div>
-            </div>
-            <div class="follow">
-                <p>{{ $t('footer.followUs') }}</p>
-                <div class="icon-container">
-                    <img
-                        v-for="(item, index) in followList"
-                        :key="index"
-                        :src="item.image"
-                        alt=""
-                    />
                 </div>
             </div>
             <div class="code">
@@ -92,7 +67,6 @@ export default {
                         'https://www.facebook.com/International-Family-Union-775710742807913/',
                 },
             ],
-            lang: this.$i18n.locale,
         };
     },
 };
@@ -190,7 +164,7 @@ img {
             height: 100%;
 
             &:hover {
-                opacity: 70%;
+                opacity: 0.7;
             }
         }
     }
