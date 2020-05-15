@@ -87,8 +87,9 @@ export default {
             title: 'Follow Us',
             qrcode: 'IFU Official Wechat Account',
             text1:
-                'When an emergency occurs, IFU provides timely assistance to the parents of international students; through the first perspective of foreign students, we pass information on overseas campuses to alleviate the information generation gap between parents and children and build a bridge of information communication between China and foreign countries. We provide news about international students, course lecture sharing and so on.',
-            text2: 'Scan the QR code on WeChat to follow us',
+                'In the event of an emergency, IFU gives parents of international students timely help. Through the first perspective of international students, IFU transmitted the information on overseas campuses to alleviate the information gap between parents and children, and build a bridge between China and foreign countries. Want to get more news about international students in a timely manner; all kinds of practical dry goods, sharing of course lectures and so on.',
+            text2:
+                'Scan the QR code on WeChat to follow the IFU Official Wechat Account',
         },
         studentGroup: {
             title: 'IFU Students Group Chat',
@@ -255,25 +256,33 @@ export default {
         story: {
             achievement: 'Our Achievement',
             text1:
-                "We're consistently productive and productive: <span>470</span> articles and <span>282</span> original articles were published in 2018.",
+                "We're consistently productive and productive: <span>646</span> original articles were published.",
             text2:
-                'We organized <span>11</span> offline events in 2018 around our culture and goals.',
+                'We organized <span>90+</span> online lectures and <span>49</span> experience sharing groups for parents in 2019 based on our culture and goals.',
             text3:
-                'We believe that a journey of a thousand miles begins with a single step: with constant efforts, we now have the attention of more than <span>6,000</span> parents, with an annual net growth of <span>5,219 +</span> , covering the whole of China.',
+                'We firmly believe that the journey of a thousand miles begins with one step. In 2019, we received <span>500</span> volunteer applications, and <span>280</span> of them were approved. Our volunteers were distributed in <span>28</span> overseas universities; Our team spanned <span>4</span> time zones: the United States, Canada, Singapore, and China; We now have more than <span>13,000</span> followers, parents account for <span>59%</span> of the total followers, net annual growth: <span>5219+</span>, followers cover all over China;',
             text4:
-                'We used the vacation time to go back China. We went to <span>Shanghai, Wuxi, Changsha, Beijing, Shenzhen, Dalian</span> and other places, and invited psychological, physical, legal professionals to provide information to parents, to reduce questions and concerns.',
+                'We host the IFU Carnival in China every July. From 2018 to 2019, our footprints covered in <span>Beijing, Shanghai, Tianjin, Hangzhou, Wuxi, Dalian, Hefei and so on</span>; We share overseas stories with more than <span>1,000</span> parents.',
             text5:
-                'We are always concerned about the safety of studying abroad: the most read article on Wechat fraud emergency notice reached <span>8,000 +</span> views.',
+                'We continue to welcome contributions from international students, and the University of Washington’s parents contribute to Seattle Travel Notes, with a total of <span>31,000+</span> views.',
             text6:
-                'We have <span>11</span> Professor Interview Video from different colleges, which has been professor interview related to a total of <span>7</span> articles.',
+                'We launched the Totoroad project in March 2019, which includes bridging courses for freshmen, academic counseling for students, and career planning. Since the opening of the course, <span>52</span> outstanding seniors and volunteers have helped <span>42</span> international students reduce academic pressures. The average grades have increased from 50 to 85, and the improvement rate is <span>97%</span>.',
             text7:
-                'We are able to respond quickly in an emergency when parents ask for help: An emergency article gets more than <span>1,000 +</span> views per article in half an hour, and a maximum total reading of <span>10,000 +</span>',
+                'According to the summary and investigation of the problem of loss of contact, we found that the fundamental problem among overseas students appears above the psychology. The psychological burden caused by <span>overseas culture, learning pressure, language barriers, social fears, and even parents high expectations</span> have caused their psychological burden. Willingness to communicate with the outside world, eventually resulting in the so-called "disconnection, disappearance" situation.',
             text8:
-                'WECHAT group senior from UCSD, UR, USC and other schools and professional teachers share once a week since September 2018. Total amount of shares reach at <span>57</span> times.',
+                'We maintained our original intentions and reached out during the crisis. When the Wuhan epidemic broke out, we organized volunteers to raise <span>RMB 50,000</span> donations within <span>3</span> days;',
             text9:
-                "In 2018, we helped four families find their missing children; <span>28</span> urgent notices were issued about the safety of the school's surroundings, alerting parents and students to possible safety hazards.",
+                'IFU has also helped parents understand their children’s real learning and life abroad through more than <span>147</span> online and offline sharing activities of outstanding seniors and elder sisters; helping prepare students to go abroad, increasing the experience of students, eliminating psychological and spiritual anxiety, and also recognizing like-minded people International students to create high-quality social circles.',
             text10:
-                'Each school set up a weekly Wechat sharing from senior students which are deeply recognized and loved by parents.',
+                'WECHAT group senior from UCSD, UR, USC and other schools and professional teachers share once a week since September 2018. Total amount of shares reach at <span>57</span> times.',
+            text11:
+                'With continuous efforts, we have not forgotten the original intention and goals of the organization. We can quickly respond to the urgent moment when parents seek help: In 2018-2019, we have helped parents deal with more than <span>30</span> child disconnections; An emergency article gets more than <span>1,000 +</span> views per article in half an hour, and a maximum total reading of <span>10,000 +</span>',
+            text12:
+                'IFU WeChat official account has more than <span>12,000</span> followers. We also has official accounts on social platforms such as Weibo, Zhihu, bilibili, and Instagram. In addition to that, each school set up a weekly Wechat sharing from senior students which are deeply recognized and loved by parents.',
+            text13:
+                'We have <span>11</span> Professor Interview Video from different colleges, which has been professor interview related to a total of <span>7</span> articles.',
+            text14:
+                'We continue to welcome contributions from international students, and the University of Washington’s parents contribute to Seattle Travel Notes, with a total of <span>31,000+</span> views.',
         },
         history: {
             '2017': {

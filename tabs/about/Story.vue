@@ -44,6 +44,22 @@
                     <img src="@/assets/about/story/achievement_10.png" />
                     <p v-html="$t('about.story.text10')" />
                 </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_11.png" />
+                    <p v-html="$t('about.story.text11')" />
+                </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_12.png" />
+                    <p v-html="$t('about.story.text12')" />
+                </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_13.png" />
+                    <p v-html="$t('about.story.text13')" />
+                </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_14.png" />
+                    <p v-html="$t('about.story.text14')" />
+                </div>
             </div>
         </section>
     </div>
