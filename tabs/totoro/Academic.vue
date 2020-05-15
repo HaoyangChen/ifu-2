@@ -36,13 +36,16 @@
                 <div class="col-half col-half-half col-flex">
                     <div class="icon-register half-to-half icon-one-to-one">
                         <img :src="onetooneImage" alt="one to one image" />
-                        <span>{{ $t('totoro.academic.oneToone') }}</span>
+                        <span>{{ $t('totoro.academic.oneToOne') }}</span>
                     </div>
                     <div
                         class="icon-register half-to-half group-top icon-one-to-more"
                     >
-                        <img :src="smallGroupImage" alt="one to one image" />
-                        <span>{{ $t('totoro.academic.smallGroup') }}</span>
+                        <img
+                            src="@/assets/totoro/onetoonephd.png"
+                            alt="one to one image"
+                        />
+                        <span>{{ $t('totoro.academic.oneToOnePhd') }}</span>
                     </div>
                 </div>
             </div>
@@ -55,7 +58,6 @@ import academicImage from '@/assets/totoro/academic-img.png';
 import syncDiagram from '@/assets/totoro/sync-diagram.png';
 import ifuLogo from '@/assets/totoro/ifu-logo.png';
 import onetooneImage from '@/assets/totoro/onetoone.png';
-import smallGroupImage from '@/assets/totoro/small-group.png';
 import totoroQr from '@/assets/totoro/totoro-qr.png';
 
 export default {
@@ -67,7 +69,6 @@ export default {
             ifuLogo,
             syncDiagram,
             onetooneImage,
-            smallGroupImage,
             totoroQr,
         };
     },
@@ -90,6 +91,10 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    img {
+        height: 100px;
+    }
 }
 
 .half-to-half {

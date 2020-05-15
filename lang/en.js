@@ -579,8 +579,8 @@ export default {
             text8:
                 'The subjects offer but not limit to right now are Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics.',
             text9: '',
-            oneToone: '1 On 1 Class',
-            smallGroup: '4-6 People Class',
+            oneToOne: '1 On 1 Class',
+            oneToOnePhd: 'Phd 1 On 1',
             text12: 'Increase Difficulty',
             text13: 'Deep understanding',
             text14:
