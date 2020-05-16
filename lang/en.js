@@ -25,8 +25,8 @@ export default {
             buttonText: 'Contact Us',
         },
         coronavirus: {
-            subTitle: 'IFU Timely Dynamic',
-            title: 'Wuhan Epidemic Donation',
+            subTitle: 'IFU IN THE NEWS',
+            title: 'COVID-19 EPIDEMIC DONATION',
             description:
                 "On the New Year's Eve in 2020, after the advice of IFU volunteers, the IFU working group held an emergency meeting and decided to raise funds for the Wuhan epidemic with a target amount of 50,000 yuan. From IFU's own purchase of 10,000 yuan to purchase masks, to guides to bring masks back from Singapore, to reaching the fundraising target amount, IFU unites to help the motherland overcome difficulties. However, subsequent cases were confirmed in North America, and IFU decided to use a donation of more than 50,000 yuan to purchase masks for international students.",
             buttonText: 'Read the Story',
