@@ -85,7 +85,7 @@ export default {
         },
         aboutUs: {
             title: 'Follow Us',
-            qrcode: 'IFU Official Wechat Account',
+            qrcode: 'IFU Official WeChat Account',
             text1:
                 'In the event of an emergency, IFU gives parents of international students timely help. Through the first perspective of international students, IFU transmitted the information on overseas campuses to alleviate the information gap between parents and children, and build a bridge between China and foreign countries. Want to get more news about international students in a timely manner; all kinds of practical dry goods, sharing of course lectures and so on.',
             text2:
@@ -214,7 +214,7 @@ export default {
             title: 'ABOUT US',
             description:
                 'International Family Union (abbr. IFU) is a non-government organization that consists of overseas students to assist international students and their families, especially based on campus security and studying abroad experiences. In order to provide assistance for parents in emergency, we set up student organizations in various universities and recruit college volunteers periodically.',
-            buttonText: 'Become Volunteer',
+            buttonText: 'Become Campus Volunteer',
         },
         tabList: {
             culture: 'CULTURE',
@@ -224,8 +224,15 @@ export default {
         },
         culture: {
             cultureTitle: 'Our Culture',
-            cultureText:
-                'Sharing, Respect, Creativity Sharing of our story and experience brings us the international students and families; Sharing of our culture, value, and creed brings us the volunteers; Respect of parents, students and volunteers helps us understand each other; Mutual understanding leads to the choice of creating new possibility!',
+            cultureText: 'Sharing, Respect, Creativity',
+            cultureText2:
+                'Sharing of our story and experience brings us the international students and families;',
+            cultureText3:
+                'Sharing of our culture, value, and creed brings us the volunteers;',
+            cultureText4:
+                'Respect of parents, students and volunteers helps us understand each other;',
+            cultureText5:
+                'Mutual understanding leads to the choice of creating new possibility!',
             distributionTitle: 'Our Volunteers Distribution',
             joinText1: 'We are keeping changing and growing!',
             joinText2:

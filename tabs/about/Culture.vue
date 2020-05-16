@@ -2,7 +2,13 @@
     <div>
         <section class="culture-section">
             <h2>{{ $t('about.culture.cultureTitle') }}</h2>
-            <p>{{ $t('about.culture.cultureText') }}</p>
+            <p>
+                <b>{{ $t('about.culture.cultureText') }}</b>
+            </p>
+            <p>{{ $t('about.culture.cultureText2') }}</p>
+            <p>{{ $t('about.culture.cultureText3') }}</p>
+            <p>{{ $t('about.culture.cultureText4') }}</p>
+            <p>{{ $t('about.culture.cultureText5') }}</p>
             <iframe
                 class="video"
                 frameborder="0"

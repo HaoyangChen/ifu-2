@@ -253,8 +253,11 @@ export default {
         },
         culture: {
             cultureTitle: '我们的文化',
-            cultureText:
-                '因分享而相遇，因尊重而相识，因相识而创造; 分享我们的留学经历、故事而遇见家长与学生; 分享IFU的历史、理念、成长而遇见志愿者;尊重家长、学生、志愿者而相互认识、了解; 因为了解选择一起创造可能！',
+            cultureText: '因分享而相遇，因尊重而相识，因相识而创造; ',
+            cultureText2: '分享我们的留学经历、故事而遇见家长与学生;',
+            cultureText3: '分享IFU的历史、理念、成长而遇见志愿者;',
+            cultureText4: '尊重家长、学生、志愿者而相互认识、了解; ',
+            cultureText5: '因为了解选择一起创造可能！',
             distributionTitle: '我们的分布',
             joinText1: 'IFU正在寻找有爱的你',
             joinText2: '欢迎您的加入',
