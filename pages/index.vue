@@ -119,7 +119,7 @@
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
-                    <h3>{{ $t('home.aboutUs.qrcode') }}</h3>
+                    <h2>{{ $t('home.aboutUs.qrcode') }}</h2>
                     <p>{{ $t('home.aboutUs.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.aboutUs.text2') }}</b>
@@ -138,7 +138,7 @@
         <section class="about-us-section">
             <div class="container half-style">
                 <div class="col-half">
-                    <h3>{{ $t('home.studentGroup.title') }}</h3>
+                    <h2>{{ $t('home.studentGroup.title') }}</h2>
                     <p>{{ $t('home.studentGroup.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.studentGroup.text3') }}</b>
@@ -446,6 +446,7 @@ export default {
     h3 {
         font-size: 18px;
         margin: 0;
+        font-weight: 400;
     }
 }
 .profile-list {
@@ -603,10 +604,6 @@ img {
 
 .about-us-section {
     padding-top: 60px;
-
-    h3 {
-        margin-top: 0;
-    }
 
     .half-style {
         display: flex;

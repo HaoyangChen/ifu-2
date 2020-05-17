@@ -54,8 +54,7 @@
                         >{{ $t('totoro.cohesion.courseSetting3')
                         }}<b>{{ $t('totoro.cohesion.courseSetting4') }}</b
                         >{{ $t('totoro.cohesion.courseSetting5')
-                        }}<b>{{ $t('totoro.cohesion.courseSetting6') }}</b
-                        >。
+                        }}<b>{{ $t('totoro.cohesion.courseSetting6') }}</b>
                     </p>
                     <p>{{ $t('totoro.cohesion.courseSetting7') }}</p>
                 </section>
