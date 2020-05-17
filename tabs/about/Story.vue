@@ -136,16 +136,28 @@ export default {
     align-items: center;
 }
 
-.achievement-item img {
-    float: left;
-    margin: 24px;
+.achievement-item {
+    img {
+        float: left;
+        margin: 24px;
+    }
+
+    &:nth-of-type(odd) {
+        img {
+            margin: 24px 24px 24px 0;
+        }
+    }
 }
 
-.achievement-item p {
-    margin: 24px;
+.achievement-item {
+    p {
+        width: 100%;
+        margin: 24px 0;
 
-    /deep/ span {
-        color: #54bef5;
+        /deep/ span {
+            color: #54bef5;
+            font-weight: bold;
+        }
     }
 }
 

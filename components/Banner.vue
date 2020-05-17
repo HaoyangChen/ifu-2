@@ -75,10 +75,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 .banner {
     width: 100%;
     height: 100%;
-    padding: 96px 129px;
+    padding: 96px $padding-horizontal;
     box-sizing: border-box;
     background-size: cover;
     display: flex;

@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/style/var.scss';
+
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -49,7 +51,7 @@ body {
 
 section {
     margin: 0 auto;
-    padding: 80px 130px;
+    padding: $padding-vertical $padding-horizontal;
 
     h1 {
         font-size: 40px;

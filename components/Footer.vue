@@ -73,6 +73,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 footer {
     width: 100%;
     text-align: center;
@@ -90,7 +92,7 @@ img {
     position: relative;
 }
 .top {
-    padding: 0 130px;
+    padding: 0 $padding-horizontal;
     min-height: 120px;
     .logo {
         color: #fff;
@@ -186,7 +188,7 @@ img {
     background-color: #fff;
     position: absolute;
     top: 0px;
-    right: 130px;
+    right: $padding-horizontal;
     text-align: center;
     color: #54bef5;
     font-size: 10px;
@@ -256,7 +258,7 @@ img {
         height: 145px;
         top: 160px;
         right: 50%;
-        margin-right: -130px;
+        margin-right: -$padding-horizontal;
         img {
             margin: 10px 0;
         }

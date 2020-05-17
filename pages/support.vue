@@ -53,9 +53,10 @@
                 <h2>{{ $t('donation.payment.foreign') }}</h2>
                 <div>
                     <img src="@/assets/support/zelle.png" />
-                    <p class="bottom-divide">
-                        {{ $t('donation.payment.zelle') }}
-                    </p>
+                    <p
+                        class="bottom-divide"
+                        v-html="$t('donation.payment.zelle')"
+                    />
                 </div>
             </section>
         </div>
@@ -115,11 +116,10 @@ export default {
         flex-wrap: wrap;
 
         .image-item {
-            flex-basis: 16.6%;
+            width: 170px;
 
             img {
-                width: 170px;
-                height: 170px;
+                width: 100%;
             }
 
             p {
@@ -153,7 +153,8 @@ section > div:first-of-type {
 @media (max-width: 1300px) {
     // Change flex items
     .support-section .images-row .image-item {
-        flex-basis: 33.3%;
+        width: 125px;
+        height: 125px;
     }
 
     section > div:first-of-type {
@@ -185,10 +186,12 @@ section > div:first-of-type {
 
             .image-item {
                 flex-basis: 33%;
+                width: 175px;
+                height: 200px;
 
                 img {
-                    width: 175px;
-                    height: 175px;
+                    width: 125px;
+                    height: 125px;
                 }
 
                 p {

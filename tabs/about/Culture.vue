@@ -102,6 +102,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 .culture-section {
     position: relative;
 
@@ -125,7 +127,7 @@ export default {
 
 .distribution-image {
     width: 1180px;
-    margin: 130px auto 0 auto;
+    margin: $padding-horizontal auto 0 auto;
     text-align: center;
     position: relative;
 

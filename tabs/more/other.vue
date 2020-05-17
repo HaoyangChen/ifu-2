@@ -97,6 +97,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 .row {
     display: flex;
 
@@ -126,11 +128,11 @@ img {
 }
 
 .text-container.left {
-    padding: 80px 50px 80px 130px;
+    padding: 80px 50px 80px $padding-horizontal;
 }
 
 .text-container.right {
-    padding: 80px 130px 80px 50px;
+    padding: 80px $padding-horizontal 80px 50px;
 }
 
 .blue-background {

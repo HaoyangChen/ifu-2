@@ -365,6 +365,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 /deep/ .banner .subtitle-text {
     margin-bottom: 0px;
 }
@@ -409,7 +411,7 @@ export default {
 
     section {
         flex-basis: 50%;
-        padding: 0 0 0 130px;
+        padding: 0 0 0 $padding-horizontal;
         line-height: 31px;
     }
 

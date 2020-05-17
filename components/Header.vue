@@ -122,11 +122,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 header {
     width: 100%;
     border-bottom: 1px solid #e8e9ed;
 
     .logo {
+        position: relative;
+        left: -12px; // 使 Logo 图对齐左 padding 线
         display: flex;
         align-items: center;
         justify-content: center;
@@ -137,7 +141,7 @@ header {
     width: 100%;
     height: 111px;
     margin: auto;
-    padding: 0px 130px;
+    padding: 0px $padding-horizontal;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -145,7 +149,7 @@ header {
 }
 
 .header-menu {
-    width: 44%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
