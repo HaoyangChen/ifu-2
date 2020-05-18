@@ -20,7 +20,7 @@
         "banner": {
             "title": "IFU",
             "subTitle": "I, Family, You",
-            "description": "We meet, we know, we share, and we are the IFU<br>To reduce the anxiety among international students and their parents<br>To build a bridge between them",
+            "description": "We meet, we know, we share, and we are the IFU;<br>To reduce the anxiety among international students and their parents;<br>To build a bridge between them.",
             "buttonText": "Our Story"
         },
         "coronavirus": {
@@ -185,7 +185,7 @@
     "about": {
         "banner": {
             "title": "ABOUT US",
-            "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. In 2018, we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. <br>We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. <br>We committed to solve International families' overseas safety issues, and information asymmetry. We aim to reduce the anxiety between international students and parents, to increase the connection between them by conveying their voices to each other.",
+            "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. In 2018, we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. <br><br>We committed to solve International families' overseas safety issues, and information asymmetry. We aim to reduce the anxiety between international students and parents, to increase the connection between them by conveying their voices to each other.",
             "buttonText": "Become On-Campus Volunteer"
         },
         "tabList": {
