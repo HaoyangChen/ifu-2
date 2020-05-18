@@ -27,9 +27,24 @@
                     </p>
                 </div>
             </section>
+            <div class="row follow-us">
+                <section class="col-half">
+                    <h2>{{ $t('totoro.cohesion.followUs.title') }}</h2>
+                    <p>
+                        {{ $t('totoro.cohesion.followUs.p1') }}
+                    </p>
+                    <p>
+                        <b>{{ $t('totoro.cohesion.followUs.p2') }}</b>
+                    </p>
+                </section>
+                <section class="col-half">
+                    <img src="@/assets/totoro/qr-with-totoro.png" />
+                </section>
+            </div>
             <div class="row group-class-row">
                 <section class="col-half col-half-center section-scan">
-                    <img class="totoro-qr" :src="totoroQr" />
+                    <img class="totoro-qr" src="@/assets/totoro/qr-1.png" />
+                    <img class="totoro-qr" src="@/assets/totoro/qr-2.png" />
                     <p>{{ $t('totoro.academic.scanqr1') }}</p>
                     <p>{{ $t('totoro.academic.scanqr2') }}</p>
                 </section>
@@ -58,7 +73,6 @@ import academicImage from '@/assets/totoro/academic-img.png';
 import syncDiagram from '@/assets/totoro/sync-diagram.png';
 import ifuLogo from '@/assets/totoro/ifu-logo.png';
 import onetooneImage from '@/assets/totoro/onetoone.png';
-import totoroQr from '@/assets/totoro/totoro-qr.png';
 
 export default {
     name: 'Academic',
@@ -69,7 +83,6 @@ export default {
             ifuLogo,
             syncDiagram,
             onetooneImage,
-            totoroQr,
         };
     },
 };
@@ -78,7 +91,7 @@ export default {
 <style lang="scss" scoped>
 .totoro-qr {
     float: left;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .group-class-row > section > p:first-of-type {
@@ -106,8 +119,7 @@ export default {
     display: flex;
 }
 
-.group-class-row {
-    background: #f1f9ff;
+.section-scan {
     font-weight: 600;
 }
 
@@ -159,10 +171,6 @@ export default {
     font-size: 16px;
     line-height: 31px;
     letter-spacing: 0.02em;
-}
-
-.col-half > img {
-    padding-left: 15%;
 }
 
 .academic-section {
@@ -217,6 +225,15 @@ export default {
 
 .section-scan {
     padding-right: 0;
+}
+
+.follow-us {
+    background: #f1f9ff;
+
+    section {
+        height: 100%;
+        background: #f1f9ff;
+    }
 }
 
 @media (max-width: 1024px) {

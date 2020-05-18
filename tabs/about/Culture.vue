@@ -109,7 +109,6 @@ export default {
 
     p {
         width: 33%;
-        line-height: 40px;
     }
 }
 
@@ -259,6 +258,10 @@ export default {
 .join-section {
     padding-top: 0;
     text-align: center;
+
+    p {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 1440px) {

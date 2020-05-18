@@ -14,7 +14,7 @@
         "subTitle2": "To Keep The Parents Assured",
         "followUs": "Follow Us",
         "codeText1": "Scan To Add Our",
-        "codeText2": "Wechat Assistant"
+        "codeText2": "WeChat Assistant"
     },
     "home": {
         "banner": {
@@ -74,7 +74,7 @@
             "title": "Follow Us",
             "qrcode": "IFU Official WeChat Account",
             "text1": "In the event of an emergency, IFU gives parents of international students timely help. Through the first perspective of international students, IFU transmitted the information on overseas campuses to alleviate the information gap between parents and children, and build a bridge between China and foreign countries. Want to get more news about international students in a timely manner; all kinds of practical dry goods, sharing of course lectures and so on.",
-            "text2": "Scan the QR code on WeChat to follow the IFU Official Wechat Account"
+            "text2": "Scan the QR code on WeChat to follow the IFU Official WeChat Account"
         },
         "studentGroup": {
             "title": "IFU Students Group Chat",
@@ -471,7 +471,7 @@
             "courseSetting6": "",
             "courseSetting7": "With the sophisticated experience and knowledge, agreeable communication abilities and responsible attitudes, starting from this summer, not only can we bring you accommodating mentors but also the great academic advantage entering the college.",
             "scanqr1": "Scan QR code",
-            "scanqr2": "for consulting or signing up",
+            "scanqr2": "for consultation or sign up",
             "courses1": "CALCULUS",
             "courses2": "PHYSICS",
             "courses3": "CHEMISTRY",
@@ -483,7 +483,12 @@
             "text4": " With the sophisticated experience and knowledge, agreeable communication abilities and responsible attitudes, starting from this summer, not only can we bring you accommodating mentors but also the great academic advantage entering the college.",
             "oneToone": "1-to-1 Class",
             "smallGroup": "4-6 People Class",
-            "buttonText": "Enroll"
+            "buttonText": "Enroll",
+            "followUs": {
+                "title": "Follow Us",
+                "p1": "Totoroad Academy, as the top academic consultation for studying abroad, helps international Chinese students to reduce anxiety in academic settings and smooth the transition to college in freshman year.",
+                "p2": "Scan the QR code on WeChat to follow Totoroad Academy Official Account"
+            }
         },
         "academic": {
             "heading1": "Class Overview",
@@ -500,9 +505,9 @@
             "oneToOnePhd": "Consolidate foundation",
             "text12": "Increase Difficulty",
             "text13": "Deep understanding",
-            "text14": "Contact IFU Wechat Assistant for \n\nconsulting or signing up",
-            "scanqr1": "Contact IFU Wechat Assistant for consulting or signing up",
-            "scanqr2": ""
+            "text14": "Contact IFU WeChat Assistant for \n\nconsulting or signing up",
+            "scanqr1": "Scan QR code",
+            "scanqr2": "for consultation or sign up"
         },
         "tutors": {
             "title": "Totoroad Project Tutors",
