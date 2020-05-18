@@ -134,7 +134,6 @@ export default {
 .cohesion-diagram {
     width: 500px;
     height: 330px;
-    border: 2px dashed #ced3d6;
 }
 
 .cohesion-image3 {

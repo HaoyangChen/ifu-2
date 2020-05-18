@@ -5,7 +5,7 @@
             :sub-title="$t('home.banner.title')"
             :description="$t('home.banner.description')"
             :button-text="$t('home.banner.buttonText')"
-            to="/contact"
+            to="/about"
             :background="bannerImage"
             title-color="#2C3E51"
         />

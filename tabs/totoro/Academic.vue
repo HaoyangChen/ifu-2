@@ -5,7 +5,7 @@
                 <div class="col-half">
                     <div class="academic-image">
                         <img
-                            :src="syncDiagram"
+                            :src="syncDiagram[$i18n.locale]"
                             alt="image in academic section"
                         />
                     </div>
@@ -70,7 +70,8 @@
 
 <script>
 import academicImage from '@/assets/totoro/academic-img.png';
-import syncDiagram from '@/assets/totoro/sync-diagram.png';
+import syncDiagramZh from '@/assets/totoro/sync-diagram.png';
+import syncDiagramEn from '@/assets/totoro/sync-diagram-en.png';
 import ifuLogo from '@/assets/totoro/ifu-logo.png';
 import onetooneImage from '@/assets/totoro/onetoone.png';
 
@@ -81,7 +82,10 @@ export default {
         return {
             academicImage,
             ifuLogo,
-            syncDiagram,
+            syncDiagram: {
+                zh: syncDiagramZh,
+                en: syncDiagramEn,
+            },
             onetooneImage,
         };
     },

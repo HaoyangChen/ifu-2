@@ -74,7 +74,7 @@
         <section class="join-section">
             <p>{{ $t('about.culture.joinText1') }}</p>
             <p>{{ $t('about.culture.joinText2') }}</p>
-            <Button external to="https://www.wjx.cn/jq/71891803.aspx">{{
+            <Button external :to="campusVolunteerLink[$i18n.locale]">{{
                 $t('about.culture.joinButtonText')
             }}</Button>
         </section>
@@ -91,6 +91,14 @@ export default {
     name: 'Culture',
     components: {
         Button,
+    },
+    data() {
+        return {
+            campusVolunteerLink: {
+                zh: 'https://www.wjx.cn/jq/71891803.aspx',
+                en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
+            },
+        };
     },
     created() {
         AOS.init({
