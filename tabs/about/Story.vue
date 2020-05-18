@@ -228,5 +228,23 @@ export default {
     .achievement-item:nth-child(10) {
         background: #34bbc9;
     }
+
+    .achievement-item {
+        &:nth-child(11) {
+            background: #cc8abd;
+        }
+
+        &:nth-child(12) {
+            background: #fda63b;
+        }
+
+        &:nth-child(13) {
+            background: #f96291;
+        }
+
+        &:nth-child(14) {
+            background: #34bbc9;
+        }
+    }
 }
 </style>
