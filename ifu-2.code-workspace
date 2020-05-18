@@ -13,8 +13,8 @@
 		"i18n-ally.localesPaths": "lang",
 		"prettier.tabWidth": 4,
 		"prettier.trailingComma": "all",
-		"i18n-ally.enabledParsers": [
-			"js"
-		]
+		"i18n-ally.keystyle": "nested",
+		"i18n-ally.displayLanguage": "zh",
+		"i18n-ally.indent": 4
 	}
 }

@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div v-if="lang === 'zh'" class="top">
+        <div class="top">
             <div class="logo">
                 <div>IFU</div>
                 <div class="zh">
@@ -20,31 +20,6 @@
                     >
                         <img :src="item.image" alt="" />
                     </a>
-                </div>
-            </div>
-            <div class="code">
-                <img :src="codeImg" alt="" />
-                <p>{{ $t('footer.codeText1') }}</p>
-                <p>{{ $t('footer.codeText2') }}</p>
-            </div>
-        </div>
-        <div v-else class="top top-en" style="height: 420px, color: ">
-            <div class="logo-en">
-                <div>IFU</div>
-                <div class="en">
-                    <p>{{ $t('footer.subTitle1') }}</p>
-                    <p>{{ $t('footer.subTitle2') }}</p>
-                </div>
-            </div>
-            <div class="follow">
-                <p>{{ $t('footer.followUs') }}</p>
-                <div class="icon-container">
-                    <img
-                        v-for="(item, index) in followList"
-                        :key="index"
-                        :src="item.image"
-                        alt=""
-                    />
                 </div>
             </div>
             <div class="code">
@@ -92,13 +67,14 @@ export default {
                         'https://www.facebook.com/International-Family-Union-775710742807913/',
                 },
             ],
-            lang: this.$i18n.locale,
         };
     },
 };
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 footer {
     width: 100%;
     text-align: center;
@@ -116,7 +92,7 @@ img {
     position: relative;
 }
 .top {
-    padding: 0 130px;
+    padding: 0 $padding-horizontal;
     min-height: 120px;
     .logo {
         color: #fff;
@@ -190,7 +166,7 @@ img {
             height: 100%;
 
             &:hover {
-                opacity: 70%;
+                opacity: 0.7;
             }
         }
     }
@@ -212,7 +188,7 @@ img {
     background-color: #fff;
     position: absolute;
     top: 0px;
-    right: 130px;
+    right: $padding-horizontal;
     text-align: center;
     color: #54bef5;
     font-size: 10px;
@@ -282,7 +258,7 @@ img {
         height: 145px;
         top: 160px;
         right: 50%;
-        margin-right: -130px;
+        margin-right: -$padding-horizontal;
         img {
             margin: 10px 0;
         }

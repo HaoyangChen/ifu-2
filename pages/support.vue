@@ -13,27 +13,27 @@
             <div class="images-row">
                 <div class="image-item">
                     <img src="@/assets/support/support-1.png" />
-                    <p>人员工资</p>
+                    <p>{{ $t('donation.support.image1') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-2.png" />
-                    <p>行政费用</p>
+                    <p>{{ $t('donation.support.image2') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-3.png" />
-                    <p>校园志愿者事务报销</p>
+                    <p>{{ $t('donation.support.image3') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-4.png" />
-                    <p>学术项目</p>
+                    <p>{{ $t('donation.support.image4') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-5.png" />
-                    <p>团建与年会</p>
+                    <p>{{ $t('donation.support.image5') }}</p>
                 </div>
                 <div class="image-item">
                     <img src="@/assets/support/support-6.png" />
-                    <p>其他</p>
+                    <p>{{ $t('donation.support.image6') }}</p>
                 </div>
             </div>
         </section>
@@ -53,9 +53,10 @@
                 <h2>{{ $t('donation.payment.foreign') }}</h2>
                 <div>
                     <img src="@/assets/support/zelle.png" />
-                    <p class="bottom-divide">
-                        {{ $t('donation.payment.zelle') }}
-                    </p>
+                    <p
+                        class="bottom-divide"
+                        v-html="$t('donation.payment.zelle')"
+                    />
                 </div>
             </section>
         </div>
@@ -115,11 +116,10 @@ export default {
         flex-wrap: wrap;
 
         .image-item {
-            flex-basis: 16.6%;
+            width: 170px;
 
             img {
-                width: 170px;
-                height: 170px;
+                width: 100%;
             }
 
             p {
@@ -153,7 +153,8 @@ section > div:first-of-type {
 @media (max-width: 1300px) {
     // Change flex items
     .support-section .images-row .image-item {
-        flex-basis: 33.3%;
+        width: 125px;
+        height: 125px;
     }
 
     section > div:first-of-type {
@@ -185,10 +186,12 @@ section > div:first-of-type {
 
             .image-item {
                 flex-basis: 33%;
+                width: 175px;
+                height: 200px;
 
                 img {
-                    width: 175px;
-                    height: 175px;
+                    width: 125px;
+                    height: 125px;
                 }
 
                 p {

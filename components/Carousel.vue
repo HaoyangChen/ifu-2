@@ -14,7 +14,6 @@
             <div class="text-container">
                 <div class="line"></div>
                 <p>{{ activeItem.text }}</p>
-                <!-- <p>{{ list[0].text }}</p> -->
             </div>
         </div>
         <div class="list">
@@ -118,18 +117,21 @@ export default {
 .active-item {
     width: 825px;
     height: 100%;
-    padding: 52px 30px 52px 50px;
+    padding: 30px 15px 30px 45px;
     box-sizing: border-box;
     background-repeat: no-repeat;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-radius: 10px 0 0 10px;
+
+    p {
+        margin: 10px 0 0 0;
+        font-size: 16px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+    }
 }
-.active-item p {
-    font-size: 16px;
-    line-height: 31px;
-    letter-spacing: 0.02em;
-}
+
 .list {
     width: 328px;
     height: 100%;

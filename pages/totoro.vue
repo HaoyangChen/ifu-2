@@ -6,7 +6,7 @@
             :button-text="$t('totoro.banner.buttonText')"
             :background="bannerImage"
             external
-            to="https://mp.weixin.qq.com/s?__biz=MzI4NzkxMjc4MA==&mid=2247484987&idx=2&sn=339671a503f4b01351b7c6d06bc79a18&chksm=ebc72018dcb0a90e94fdff12771ec68122a29abd998eb604bac8725ec622771a6cc121d3f66e&mpshare=1&scene=1&srcid=&sharer_sharetime=1581215608714&sharer_shareid=343f5c44deda4711a70b2840aa600e28#rd"
+            to="https://mp.weixin.qq.com/s/zeLEz8t2QcMEZtw_e-j8Hw"
         />
         <section class="container">
             <h2>{{ $t('totoro.totoro.title') }}</h2>
@@ -319,11 +319,12 @@ p {
         margin-left: -83px;
     }
     .text {
-        margin: 75px 80px;
-        font-size: 16px;
-        line-height: 31px;
-        letter-spacing: 0.02em;
-        text-align: center;
+        height: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         p {
             margin: 0;
             margin-bottom: 15px;

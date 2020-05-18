@@ -60,7 +60,7 @@
                 <n-link class="n-link" to="/support">{{
                     $t('header.support')
                 }}</n-link>
-                <!-- <div class="desktop">
+                <div class="desktop">
                     <span :class="activeLang('zh')" @click="changeLang('zh')"
                         >中文</span
                     >
@@ -76,7 +76,7 @@
                     <div :class="activeLang('en')" @click="changeLang('en')">
                         EN
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </header>
@@ -122,11 +122,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 header {
     width: 100%;
     border-bottom: 1px solid #e8e9ed;
 
     .logo {
+        position: relative;
+        left: -12px; // 使 Logo 图对齐左 padding 线
         display: flex;
         align-items: center;
         justify-content: center;
@@ -137,7 +141,7 @@ header {
     width: 100%;
     height: 111px;
     margin: auto;
-    padding: 0px 130px;
+    padding: 0px $padding-horizontal;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -145,7 +149,7 @@ header {
 }
 
 .header-menu {
-    width: 44%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -161,7 +165,7 @@ header {
 }
 
 .service-menu-separator {
-    height: 51px;
+    height: 40px;
     position: relative;
     left: -100px;
 }
@@ -202,6 +206,8 @@ a {
     height: 33px;
     text-decoration: none;
     color: #202020;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 33px;
 }
 
 .n-link:hover {
@@ -213,8 +219,13 @@ a {
     color: #54bef5;
 }
 
-.desktop .active {
-    color: #54bef5;
+.desktop {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 33px;
+
+    .active {
+        color: #54bef5;
+    }
 }
 
 span {

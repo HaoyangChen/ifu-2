@@ -17,7 +17,7 @@
             <component :is="list[activeIndex].content" />
         </div>
         <div class="mobile tab-mobile">
-            <DmaCollapse
+            <Collapse
                 v-for="(item, index) in list"
                 :key="index"
                 :title="item.title"
@@ -27,18 +27,18 @@
                 <div class="tab-content-mobile">
                     <component :is="item.content" />
                 </div>
-            </DmaCollapse>
+            </Collapse>
         </div>
     </div>
 </template>
 
 <script>
-import DmaCollapse from '@/components/DmaCollapse.vue';
+import Collapse from '@/components/Collapse.vue';
 
 export default {
     name: 'Tab',
     components: {
-        DmaCollapse,
+        Collapse,
     },
     props: {
         list: {

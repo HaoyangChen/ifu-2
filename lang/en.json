@@ -1,0 +1,691 @@
+{
+    "header": {
+        "home": "HOME",
+        "service": "SERVICE",
+        "about": "ABOUT",
+        "contact": "CONTACT",
+        "totoro": "TOTOROAD ACADEMY",
+        "membership": "IFU MEMBERSHIP",
+        "more": "IFU OTHER SERVICES",
+        "support": "SUPPORT"
+    },
+    "footer": {
+        "subTitle1": "To Make Our Campus Life Safer",
+        "subTitle2": "To Keep The Parents Assured",
+        "followUs": "Follow Us",
+        "codeText1": "Scan To Add Our",
+        "codeText2": "WeChat Assistant"
+    },
+    "home": {
+        "banner": {
+            "title": "IFU",
+            "subTitle": "I, Family, You",
+            "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. Now we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. We committed to solve International families' overseas safety issues, and information asymmetry. We aim to convey the voices of students to their parents, and serve the families studying abroad.",
+            "buttonText": "Our Story"
+        },
+        "coronavirus": {
+            "subTitle": "IFU In The News",
+            "title": "COVID-19 Epidemic Donation",
+            "description": "On New Year's Eve in 2020, the IFU working group held an emergency meeting and decided to raise funds for the Wuhan epidemic with a target of 50,000 yuan. To help reduce the Wuhan epidemic pressure, IFU spent 10,000 yuan purchasing face masks and then sending the face masks from Singapore to Wuhan. After that, since the covid-19 outbreak in the U.S., IFU decided to donate more than 50,000 yuan to purchase face masks for international students.",
+            "buttonText": "Read the Story"
+        },
+        "ourWork": {
+            "title": "Our Work",
+            "workList": {
+                "infoAsymmetry": "INFORMATION ASYMMETRY ",
+                "security": "OVERSEAS SAFETY",
+                "intimateService": "ALL-AROUND SERVICE",
+                "socialMedia": "SOCIAL MEDIA",
+                "infoText": "We use social media to send the most authentic information about studying abroad and international student's daily life to parents; We communicate regularly with schools and parents, collecting each other's opinions and giving feedback to both parties in a timely manner.",
+                "securityText": "We help families find their kids who have lost contact for more than 24 hours. We provide the best legal and psychological counselors in the United States from the California Bar Association.",
+                "serviceText": "We provide the best tutors, and high-GPA seniors to help international Chinese students steadily improve their GPA.",
+                "mediaText": "We have official accounts on social platforms such as Instagram, Facebook, LinkedIn, WeChat, Weibo, Zhihu, Baidu Post Bar, etc., with a total follower of more than 20,000. The official account maintains a monthly growth of 10%.",
+                "volunteer": "VOLUNTEER ACTIVITIES",
+                "volunteerText": "IFU volunteer team regularly leads IFU members and volunteers to participate in local public welfare activities. For example, we help children learn a language, fundraise for animal protection organizations, and food classification. In this way, we help international students reduce the pressure of studying and living overseas while training their self-communication and leadership skills."
+            }
+        },
+        "ourServices": {
+            "title": "Our Service",
+            "description": "International Family Union (IFU) is composed of overseas seniors. It is a non-governmental organization that focuses on campus safety and serves international parents. Our services include \"Totoroad\" program courses, IFU members, IFU X DMA summer school, and GRE, CFA, H1B, OPT, CPT, and other related assistance. Please contact us if you want to know more or cooperate in the fields!",
+            "serviceList": {
+                "totoroTitle": "TOTOROAD",
+                "totoroText": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Project Totoroad assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future.",
+                "totorosubTitle": "Tutoring and Mentorship",
+                "membershipTitle": "MEMBERSHIP",
+                "membershipText": "To support and appreciate the IFU culture, through simple registration operation (no interview required) to become our member's companions, IFU will send monthly events and share meeting information by email. At the same time, students holding the IFUxISIC International Student Card can enjoy worldwide discounts on life, travel, catering, law, and academics (see the store for specific discounts).",
+                "membershipsubTitle": "IFU Member & Student Identity Card",
+                "otherTitle": "SERVICES",
+                "otherText": "IFU and Hoolilaw, an overseas legal service platform, jointly launched the \"365 Studying Abroad Family Protection Plan\", which only requires $ 1 a day to get professional lawyers' consulting services to solve various legal problems for you! At the same time, Tuoyan Education is a training course that specializes in the US-based GRE exam in Shanghai Delay Education. In 2018, among the students with a score of 320 or more in the first test of Tuoyan, 63% of the students had a score of 325 or more and the highest score was 338.",
+                "othersubTitle": "Legal Service & Other"
+            }
+        },
+        "eventList": {
+            "title": "Events Recall",
+            "text1": "California Beach Trip - Bonfire",
+            "text2": "Pre-Departure Safety Orientation & Experience Sharing - Shenzhen",
+            "text3": "IFU X Words Alive Volunteers Activity",
+            "text4": "Pre-Departure Safety Orientation & Experience Sharing - Beijing",
+            "text5": "2019 Experience Sharing in China",
+            "text6": "2019 Carnival - Beijing",
+            "text7": "2019 Carnival - Shanghai",
+            "more": "View more recent events >>"
+        },
+        "aboutUs": {
+            "title": "Follow Us",
+            "qrcode": "IFU Official WeChat Account",
+            "text1": "In the event of an emergency, IFU gives parents of international students timely help. Through the first perspective of international students, IFU transmitted the information on overseas campuses to alleviate the information gap between parents and children, and build a bridge between China and foreign countries. Want to get more news about international students in a timely manner; all kinds of practical dry goods, sharing of course lectures and so on.",
+            "text2": "Scan the QR code on WeChat to follow the IFU Official WeChat Account"
+        },
+        "studentGroup": {
+            "title": "IFU Students Group Chat",
+            "text1": "As the saying goes, 'Stones from other mountains can attack jade', IFU (International Parent Union) hopes that all newcomers can get help on the road to glorious future, using the most effective Ways to inspire and guide you, so that you will no longer 'fight alone', so that you can move forward more firmly. Everyone can communicate and chat in this group, discuss study abroad, and plan a better university life.",
+            "text3": "Scan the QR code on WeChat to join IFU Students Group Chat"
+        }
+    },
+    "more": {
+        "banner": {
+            "title": "MORE SERVICES",
+            "description": "The IFU has cooperated with Hoolilaw, an overseas legal service platform, to launch the \"365 Study Abroad Family Protection Program\" and hold a free weekly lecture of law. With just $1 a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
+            "buttonText": "Contact Us",
+            "tabContent": "OTHER SERVICES"
+        },
+        "summerCamp": {
+            "title": "IFU X DMA SUMMER CAMP",
+            "description": "IFU is a partner with Digital Media Academy since 2019. Digital Media was originally founded in 2002 as part of Stanford University’s School of New Media."
+        },
+        "stayEnv": {
+            "title": "HOUSING ENVIRONMENT",
+            "envLeftList": {
+                "title1": "Living at Campus dormitory with\nlocal students.",
+                "title2": "Unlimited Wi-Fi\nIndependent study room",
+                "title3": "Game room\nPublic Kitchen"
+            },
+            "envRightList": {
+                "title1": "Girls and Boys are separated\nAll the dormitories include breakfast,\nlunch and dinner",
+                "title2": "Summer Camp will hold a series\nof events including Theme party,\nMovie Night and so on",
+                "title3": "Room Assistants are set\nat every floor"
+            }
+        },
+        "location": {
+            "title": "LOCATION",
+            "schoolList": {
+                "west": "WEST COAST",
+                "westList": {
+                    "name1": "Stanford University",
+                    "name2": "UC San Diego",
+                    "name3": "University of Washington"
+                },
+                "center": "CENTRAL",
+                "centerList": {
+                    "name1": "University of Chicago",
+                    "name2": "Austin, Texas"
+                },
+                "east": "EAST COAST",
+                "eastList": {
+                    "name1": "Harvard University",
+                    "name2": "New York University",
+                    "name3": "George Washington University"
+                },
+                "canada": "CANADA",
+                "canadaList": {
+                    "name1": "University of British Columbia",
+                    "name2": "University of Toronto"
+                }
+            }
+        },
+        "serviceList": {
+            "title1": "HOUSING\nENVIRONMENT",
+            "title2": "LOCATION",
+            "title3": "SPECIAL\nSESSION",
+            "title4": "WHY ARE THE\nCOURSES SPECIAL?",
+            "title5": "ADDITIONAL\nSERVICE",
+            "text": " Today, our summer camps are still the perfect place for kids, teens to explore STEM topics like coding, robotics, and music production all while experiencing college life on the Stanford campus. Our tech courses are designed with 21st-century skills in mind – with a focus on teaching creativity, collaboration, and communication to elementary, middle school, and high school students. Students will learn to work with their peers while exploring different approaches to problem-solving."
+        },
+        "courses": {
+            "title": "SPECIAL SESSION",
+            "name1": "Coding + Artificial Intelligence",
+            "name2": "3D Modeling + Design",
+            "name3": "Robotics + Engineering ",
+            "more": "More Courses"
+        },
+        "select": {
+            "title": "WHY ARE THE COURSES SPECIAL?",
+            "text1": "In 21st century, The latest teaching model is not only focusing on students' academic performance, but also their ability to knowledge application and group cooperation. With 17 years of teaching experience, DMA has come up with a unique personalized curriculum that will bring teenagers the most cutting-edge and effective learning platform in the world. \n\nAfter the inspection and the collection of students’ feedback who graduated from DMA from the officers of IFU, we found that the course can really improve students' abilities in various aspects and highlight their personal characteristics (which is also the most important factor for American universities to admit students). Therefore, we are determined to generalize it to more Chinese families. \n\nIn order to promote the students to learn the STEM courses in the greatest extent with out of the comfort zone. Each class has a maximum of 8 students and no more than 3 Chinese students per class. In fact, the most exciting part is that students can take their project achievements back to home after class and get DMA official certificates.",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "text11": "",
+            "text12": "",
+            "text13": "",
+            "text14": "",
+            "text15": "",
+            "text16": ""
+        },
+        "detail": {
+            "title": "PROGRAM DETAILS",
+            "ageTitle": "Limit Age:",
+            "ageText": "14-18",
+            "dateTitle": "Limit Session:",
+            "dateText": "22, July - 2, August",
+            "languageTitle": "Language Requirement:",
+            "languageText": "TOEFL 80+"
+        },
+        "service": {
+            "title": "ADDITIONAL SERVICES",
+            "text": "Monitor Life and Academic by Upperclassmen, besidesDMA’s instructors, include highly respected tech educators, accomplished artists, and industry professionals who have a passion for sharing their knowledge.\n\nVisa Processing\n\nPlane Ticket (Round)\n\nLocal Traffic (Airport to Camp)\n\nLocal Trip around Stanford\n\nCulture and Legal course learning\n\n** Please contact us by scanning the WeChat Code below",
+            "question": "FAQ"
+        }
+    },
+    "about": {
+        "banner": {
+            "title": "ABOUT US",
+            "description": "IFU, founded by international students across the globe, is a non-governmental organization serving the purpose of student wellbeing on campus and a communication platform connecting international students and their families.\n\nWe will help international families to solve problems promptly during an emergency. Our mission is to reduce the generational gap between international students and their parents through information sharing, whether online or in-person, thereby addressing social problems such as students’ anxiety.",
+            "buttonText": "Become On-Campus Volunteer"
+        },
+        "tabList": {
+            "culture": "CULTURE",
+            "progress": "PROGRESS",
+            "story": "STORY",
+            "team": "TEAM"
+        },
+        "culture": {
+            "cultureTitle": "Our Culture",
+            "cultureText": "Sharing, Respect, Creativity",
+            "cultureText2": "Sharing of our story and experience brings us to international students and families; ",
+            "cultureText3": "Sharing of our culture, value, and creed brings us to our volunteers; ",
+            "cultureText4": "Respect of parents, students, and volunteers helps us understand each other; ",
+            "cultureText5": "Mutual understanding leads to the choice of creating new possibilities!",
+            "distributionTitle": "Our Volunteers Distribution",
+            "joinText1": "We are keeping changing and growing!",
+            "joinText2": "We welcome the most dedicated and creative people to join with us, for spreading love and care to every corner of the world.",
+            "joinButtonText": "Become On-Campus Volunteer",
+            "schoool1": "University of Toroto",
+            "schoool2": "Simon Fraser University",
+            "schoool3": "Gernoble Ecole De Management",
+            "schoool4": "UC San Diego",
+            "schoool5": "UC Santa Babara",
+            "schoool6": "UC Los Angeles",
+            "schoool7": "UC Davis",
+            "schoool8": "UC Berkeley",
+            "schoool9": "UC Irvine",
+            "schoool10": "University of South California",
+            "schoool11": "University of Washington",
+            "schoool12": "NC State University",
+            "schoool13": "University of Rochester",
+            "schoool14": "Carneige Mellon University",
+            "schoool15": "New York University",
+            "schoool16": "George Washington University",
+            "schoool17": "Bransies University",
+            "schoool18": "Virginia Commonwealth University",
+            "schoool19": "Parsons School of Design",
+            "schoool20": "University of Wisconsin-Madison",
+            "schoool21": "National University of Singapore"
+        },
+        "story": {
+            "achievement": "Our Achievement",
+            "text1": "We always stay productive and efficient. As of March 2020, we have produced <span>646</span> high-quality original articles. ",
+            "text2": "We organized <span>49</span> sharing groups for parents, and over <span>90</span> webinars align with our social missions and culture in 2019.",
+            "text3": "We firmly believe that the journey of a thousand miles begins with one step. In 2019, IFU received a total of <span>500</span> volunteer applications. In the end, <span>280</span> volunteers at <span>28</span> different universities outside of China joined us and helped to create student organizations across all of these universities. Our staff work as a virtual team across <span>4</span> different time zones: the United States, Canada, Singapore, and China. We currently have more than <span>20,000</span> followers on social media. <span>74%</span> of the followers on WeChat are parents, with more than <span>10%</span> monthly growth. ",
+            "text4": "We host IFU students’ carnivals in July every year.  In 2018-2019, our footprint spread across China, covering cities such as <span>Beijing, Shanghai, Tianjin, Hangzhou, Wuxi, Dalian, Hefei</span>. We shared our studying abroad experiences with over <span>1000</span> parents and students throughout those sharing sessions during the time.",
+            "text5": "Contributions are always welcomed by international students and their families. A parent of a University of Washington student wrote a travel review regarding tourism in Seattle, released on our WeChat official account, and the article received a total of <span>31,000+</span> views.",
+            "text6": "We launched the Totoroad Academy in March 2019, including services such as bridge courses, academic tutoring, and career coaching for international students. Since the launch, <span>52</span> of our volunteers helped <span>42</span> international students to deal with stress caused by language barriers and academic pressure. On averages, our students have improved from F to over B+, with <span>97%</span> improvement in their performances. Not only have we helped students to achieve success in academics, but their parents will also be less concerned about their children.",
+            "text7": "According to our research on the missing student cases, we found that psychological disorders caused by <span>cultural shock, academic stress, language barrier, social phobia, and even pressures from peers and parents</span> were the main factors to this issue. Students’ psychological overburden and reluctance in communicating with others caused by those factors, ultimately lead to the case of missing and lost contact with their families.",
+            "text8": "We took initiatives and supported people in need during the COVID-19 crisis. IFU organized our volunteers and international families and managed to raise over <span>50,000 RMB</span> in three days during the early stage of the Wuhan outbreak.",
+            "text9": "We have organized more than <span>147</span> online and in-person sharing sessions to help parents learn the real insight into international students' academic and social life overseas. We also helped incoming first-year and current students to gain social experiences as well as eliminate psychological fear and anxiety by creating high-quality networks for international students to maintain long-lasting friendships with other students.",
+            "text10": "Since September in 2018, for universities such as the University of California San Diego, the University of Rochester, the University of Southern California, we had sharing webinars, on average, once per week, a total of <span>57</span> webinars by our on-campus volunteers and invited professionals.",
+            "text11": "IFU always keeps up with our goals and original intentions. We provide a prompt response to emergencies when parents seek help. Specifically, we helped over <span>30</span> missing international students' cases in 2018-2019. Emergency posts had the highest views reaching <span>10,000+</span> ,and for each post reaches <span>1,000+</span> views in half an hour.",
+            "text12": "Our volunteers in <span>California Irvine and San Diego</span> participated in local volunteer events. By collaborating with other social sectors, we helped international students to overcome language barriers, social anxiety, and smooth their transition from high schools to colleges.",
+            "text13": "In total, we have conducted <span>11</span> interviews with university professors and produced <span>7</span> related original articles.",
+            "text14": "Our WeChat official account has more than <span>13,000</span> followers, and we are on other social media platforms, including Weibo, Zhihu, Bilibili, Instagram, and Toutiao. On WeChat, We also have weekly sharing sessions in group chats for different universities that are recognized and loved by parents."
+        },
+        "history": {
+            "2017": {
+                "july": "July 2017",
+                "oct": "Oct. 2017",
+                "dec": "Dec. 2017",
+                "text1": "Established IFU student organization in UCSD",
+                "text2": "There was a missing contact with a student in University of California, San Diego. With the help of IFU – UCSD volunteers, this student was finally found.",
+                "text3": "Hold the First Chinese Parents of Overseas Students studying in California Summit in Shanghai"
+            },
+            "2018": {
+                "march": "March 2018",
+                "july": "July 2018",
+                "oct": "Oct. 2018",
+                "nov": "Nov. 2018",
+                "dec": "Dec. 2018",
+                "text1": "Formally become a registered non-government organization in the United States Hold Chinese Parents of Overseas Students studying in the U.S. Summit in Beijing",
+                "text2": "There was a missing contact with a student in University of California, Davis. With the help of IFU – UCD volunteers, this student was finally found.",
+                "text3": "Hold Security Communication Meeting in Shenzhen, Shanghai, and Beijing",
+                "text4": "IFU volunteers began to cover top universities in Canada and had covered 20 colleges",
+                "text5": "There was a missing contact with a student in University of California, Irvine. With the help of IFU – UCI volunteers, this student was finally found.",
+                "text6": "There was a missing contact with a student in University of Washington, Seattle. With the help of IFU – UW volunteers, this student was finally found.",
+                "text7": "Hold Senior Students Communication Meeting in Shanghai, Wuxi, and Dalian",
+                "text8": "There was a missing contact with a student in University of California, San Barbara. With the help of IFU – UCSB volunteers, this student was finally found."
+            },
+            "2019": {
+                "feb": "Feb. 2019",
+                "june": "June 2019",
+                "july": "July 2019",
+                "text1": "There was a missing contact with a student in University of California, Irvine. With the assistance of IFU – UCI volunteers, this student was no longer threaten by fraud and successfully connected with parents.",
+                "text2": "There was a missing contact with a student in New York University because of mental illness. With the assistance of IFU officers, this student was successfully connected with parents and was able to handle mental illness in time.",
+                "text3": "Will hold College Fair in Beijing and Shanghai. Approximately 30 colleges will participate in this fair.",
+                "text4": "Will hold College Fair in Beijing and Shanghai. Approximately 30 colleges will participate in this fair."
+            }
+        }
+    },
+    "membership": {
+        "banner": {
+            "title": "IFU MEMBERSHIP",
+            "description": "Supporting IFU and appreciating IFU culture, you can become our members through simple registration (no need to conduct an interview); IFU will send monthly events and share information by email. At the same time, students who hold IFU x ISIC international student card can enjoy travel, dining, law, and academic discounts worldwide in their daily lives. (For specific discounts, see the store)",
+            "buttonText": "Become IFU Member For Free"
+        },
+        "colhalf": {
+            "whycardTitle": "IFU x ISIC Membership Overview",
+            "whycardContent": "The ISIC International Student ID Card is highly used in Europe and can be used to enjoy preferential treatment, such as various shopping, transportation, and discounts on visit tickets. However, it should be noted that although there are many special offers for students, most of the national student ID cards do not have any function, only ISIC can enjoy!",
+            "isicDiscountTitle": "ISIC Sample Discounts",
+            "moreDiscount": "More Discounts >>",
+            "ifuDiscountTitle": "IFU Sample Discounts",
+            "becomeVIP": "As a member of the IFU, you can enjoy up to 10% discount on all IFU services.",
+            "becomeVipDesktop": "As a member of the IFU, you can enjoy up to 10% discount on all IFU services.",
+            "becomeVipContent": "The purchase of an International Student ID (IFU x ISIC co-branded card) with an exclusive IFU logo can also be used to enjoy exclusive discounts on IFU’s own discounts other than ISIC's, such as exclusive discounts of GRE training, tickets of Student Universe with exclusive flight discounts.",
+            "buttonText": "List Your Offer",
+            "overView1": "The IFU x ISIC co-branded card for international student is the only international full-time student certification document recognized by UNESCO. It enjoys more than 150,000 student discount worldwide. At the same time, many discounts are exclusive benefits of the IFUxISIC card!! Card holders can enjoy discounts at over 21,000 restaurants and entertainment venues. IFU x ISIC co-branded student IDs are also recognized by many internatoinal institutions, such as IELTS, and can enjoy a free pre-exam practice and advice.",
+            "overView2": "",
+            "overView3": "",
+            "overView4": "",
+            "overView5": "",
+            "overView6": "",
+            "overView7": "",
+            "overView8": "In addition, there is free consultation on legal services at early stage, and 20% discount on later lawyer services ; 5% off on GRE postgraduate counselling; parents of students with international student IDs automatically become IFU members, and we will provide exclusive activities for members’ parents, such as the online English classes given by Wall Street before that offers chances to learn practical spoken English for free. So don’t worry when you go abroad to visit your children!",
+            "overView9": "",
+            "overView10": "",
+            "overView11": "",
+            "overView12": "",
+            "becomeMemberBtnText": "Become IFU X ISIC Member"
+        },
+        "cardList": {
+            "imgDescription1": "50% discount on hotel reservation or private hotels nationwide",
+            "imgDescription2": "5% discount on UCSD bookstore and on-campus stores",
+            "imgDescription3": "10% discount on sports event tickets",
+            "imgDescription4": "25% discount on car rental",
+            "imgDescription5": "35% discount on cityPass across America",
+            "imgDescription6": "Up to 46% discount on electronic devices",
+            "imgDescription7": "Up to 40% discount on major theme parks in the U.S. such as Universal Studios, Disneyland, Six Flags, Sea World, etc.",
+            "imgDescription8": "24% discount at all American theatres",
+            "imgDescription9": "Exclusive offers at Amazon",
+            "imgDescription10": "Exclusive discounts for GRE training ",
+            "imgDescription11": "Tickets of Student Universe with exclusive discounts",
+            "imgDescription12": "Free legal consultancy services; 20% discount on lawyer services"
+        },
+        "tabList": {
+            "regularMember": "MEMBERSHIP",
+            "ifuIsicMember": "IFU X ISIC MEMBERSHIP"
+        },
+        "isicMember": {
+            "memberTitle": "IFU X ISIC Member",
+            "memberText": "国际学生卡（International Student Identity Card），简称ISIC。这是一张由联合国教科文组织所认可，由国际学生旅游联盟（ISIC）所发行，国际间公认的学生通用证件。自1953年发行以来,已有超过400万个学生持国际学生证享受各种各样的优惠，如机票、购物等， 目前全球有超过122个国家设有专门的组织为此提供旅游信息与服务。",
+            "memberButton": "Learn More"
+        },
+        "regularMember": {
+            "bannerTitle": "Membership Benefits",
+            "benefit1": "• No cost for member registration",
+            "benefit2": "• Member's Monthly Mail: Information of Various events",
+            "benefit3": "• Privilege to participate in activities",
+            "benefit4": "• No interview required",
+            "benefit5": "• No need to perform volunteer duties",
+            "benefit6": "• Open to Chinese of all ages living across the world",
+            "benefit7": "• Fully open to friends who like and support IFU culture",
+            "memberTitle": "Regular Member",
+            "memberText": "普通学生卡普通学生卡普通学生卡普通学生卡",
+            "memberButton": "Learn More",
+            "description": "In 2019, IFU conducted more than 90 online and offline sharing sessions, as well as various offline activities such as local volunteering in North America and the Ifu College Carnival. All activity information and registration will be notified by monthly mail to Member, Volunteer and Officer of IFU! In addition, Member, unlike Volunteer, does not have to perform Volunteer duties or pass interviews, and welcomes Chinese of all ages living in all countries, it is an open family for friends who like IFU and support our culture.",
+            "becomeRegularMemberBtn": "Become IFU Member For Free",
+            "northAmericaVolunteer": "North American Volunteers Updates",
+            "volunteer1": "UCSD Campus Tour Guide Start",
+            "volunteer2": "NCSU 2020 Winter Costume Party",
+            "volunteer3": "IFU X Words Alive Volunteers Activity",
+            "volunteer4": "OCC program Christmas Donation Activity"
+        }
+    },
+    "team": {
+        "title": "OUR TEAM",
+        "buttonText": "Contact Us",
+        "department1": "Executive Management Team",
+        "department2": "Department of Volunteer Management",
+        "department3": "Department of Administration & Finance",
+        "department4": "Department of Operation",
+        "department5": "Department of Technology",
+        "department6": "Department of Cooperative Project",
+        "title1": "CEO & Founder",
+        "name1": "Jiawen (Kimmy) Tang",
+        "title2": "US East Manager",
+        "name2": "Hanwen Zhuo",
+        "title3": "US West & Canada Manager",
+        "name3": "Zixuan (Sylvia) Zhan",
+        "title4": "US West & Canada Assistant Manager ",
+        "name4": "Yuanchu Xin",
+        "title5": "US East Assistant Manager",
+        "name5": "Kuixing Wang",
+        "title6": "Manager",
+        "name6": "Hanqing Jiang",
+        "title7": "Officer",
+        "name7": "Shiyue Zhao",
+        "title8": "Officer",
+        "name8": "Shuyi Wang",
+        "title9": "Officer",
+        "name9": "Qin Wang",
+        "title10": "Manager",
+        "name10": "Yanran Luo",
+        "title11": "Officer",
+        "name11": "Ying (Irene) Gao",
+        "title12": "Editor",
+        "name12": "Manjiang He",
+        "title13": "Editor",
+        "name13": "Chujun Wang",
+        "title14": "Editor",
+        "name14": "Zichen Shen",
+        "title15": "Editor",
+        "name15": "Jingyi Shi",
+        "title16": "Editor",
+        "name16": "Yu Yang",
+        "title17": "Officer",
+        "name17": "Sirui Hu",
+        "title18": "Officer",
+        "name18": "Yifan Xu",
+        "title19": "Officer",
+        "name19": "Kaitong Zhou",
+        "title20": "Manager",
+        "name20": "Xiaoqin (Sherry) Gui",
+        "title21": "Officer (Frontend Web Developer)",
+        "name21": "Yutao Ma",
+        "title22": "Officer (Frontend Web Developer)",
+        "name22": "Haoyang (Eric) Chen",
+        "title23": "Officer (UI/UX Designer)",
+        "name23": "Hao Li",
+        "title24": "Officer (UI/UX Designer)",
+        "name24": "Xinyi He",
+        "title25": "Officer",
+        "name25": "Wentao Huang",
+        "title26": "Manager",
+        "name26": "Zhiqi Xu",
+        "title27": "Manager",
+        "name27": "Caiwei Wang",
+        "title28": "Officer",
+        "name28": "Yixuan Fan",
+        "title29": "Officer",
+        "name29": "Xiaoqiao Sun",
+        "title30": "Officer",
+        "name30": "Xinyi Chen"
+    },
+    "totoro": {
+        "banner": {
+            "title": "IFU TOTOROAD ACADEMY",
+            "description": "Totoroad Academy is an education project established by IFU to help international students, especially upcoming freshmen, to better transit academically from their previous study lives in high schools to the distinct, brand-new study lives in universities and colleges faraway from home.",
+            "buttonText": "Course Schedule"
+        },
+        "totoro": {
+            "title": "What Is IFU Totoroad Academy?",
+            "text": "The name “Totoroad” comes from a classic Japanese anime My Neighbor Totoro (1988) by Hayao Miyazaki. In the anime, while being invisible for most of the time, Totoro came out to help people when they need helps. We adopt his name but with a different character (we use 多多罗 instead of the official translation 多多洛) to imply the meaning of “Compass” (means compass in Chinese): like Tororo, we help the international students in need; like a compass, we direct these students and their family toward academic success.",
+            "courseList": {
+                "title1": "TOTOROAD BRIDGING COURSES",
+                "text1": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Totoroad Academy assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future.\n\nWe would like ourselves to become Totoro in the anime: always backing international students and their family in need.",
+                "title2": "TOTOROAD SYNCHRONOUS TUTORING",
+                "text2": "In order to help students currently studying in universities to consolidate what they have learned and to get better grades, we also offer Totoroad synchronous tutoring. Mentors with GPA at 4.0 in the corresponding course or Master/ Phd students would come to you in a one-to-one class to help you study better. Courses are personally designed according to individuals’ needs to best fit into the path and weakness of the mentee. Mentors would help students review the knowledge, analyze the difficult part or preview as preparations leading to a better overall understanding and academic success. Right now, the subjects offered include but are not limited to Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics."
+            }
+        },
+        "tabList": {
+            "title1": "TOTOROAD BRIDGING\nCOURSES",
+            "title2": "TOTOROAD SYNCHRONOUS\nTUTORING"
+        },
+        "cohesion": {
+            "heading1": "Class Overview",
+            "text1": "In order to help upcoming freshmen to better adapt to the new lives and studies in America, which is known to be extremely arduous and stressful, we design and offer Totoroad bridging courses. The courses combine American teaching methodology with essential undergraduate academic knowledge to help new international students prepare their future four-year studies in advance. Mentees of Totoroad bridging courses would also develop intimate connections with outstanding mentors in upper-classes, which helps mentees build up social network as well as academic supports.",
+            "description2": "",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description6": "",
+            "description7": "",
+            "description8": "",
+            "description9": "",
+            "description10": "",
+            "description11": "",
+            "description12": "",
+            "description13": "",
+            "subjectHeading": "Subjects Covered",
+            "subject1": "Totoroad bridging courses encompass subjects of Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics. Except Computer Science, as Java is the basic programing language introducing to all programing languages, all the other courses offer two different levels – basic level and upper level: the basic level courses target students without rudimentary understanding of the subject, specifically without AP/IB score, and will teach the basic knowledge of the subject; the upper level courses target students with AP/IB scores and will teach subsequent college knowledge, relatively harder, in the subject, which all the students with related major would learn in the future.",
+            "subject2": "",
+            "subject3": "",
+            "courseSettingHeading": "Course setting",
+            "courseSetting1": "All the bridging courses would be offered by carefully chosen upper-class mentors, including Master students and Phd students. All the mentors are verified with a GPA of 4.0 in the corresponding courses and come from Top 50 university/college in the world/America. Mentees could choose class size of either: 4-6 student class or 1-to-1 class.",
+            "courseSetting2": "",
+            "courseSetting3": "",
+            "courseSetting4": "",
+            "courseSetting5": "",
+            "courseSetting6": "",
+            "courseSetting7": "With the sophisticated experience and knowledge, agreeable communication abilities and responsible attitudes, starting from this summer, not only can we bring you accommodating mentors but also the great academic advantage entering the college.",
+            "scanqr1": "Scan QR code",
+            "scanqr2": "for consultation or sign up",
+            "courses1": "CALCULUS",
+            "courses2": "PHYSICS",
+            "courses3": "CHEMISTRY",
+            "courses4": "MICROECONOMICS",
+            "courses5": "MACROECONOMICS",
+            "courses6": "CS-JAVA",
+            "text2": "Totoroad bridging courses encompass subjects of Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics. Except Computer Science, which teaches basic programing language Java, all the other courses offer two different levels – basic level and upper level: the basic level courses target students without rudimentary understanding of the subject, specifically without AP/IB score, and will teach the basic knowledge of the subject; the upper level course target students with AP/IB scores and will teach subsequent college knowledge, relatively hard, in the subject, which all the student with related major would learn in the future.",
+            "text3": "All the bridging courses would be offered by carefully picked upper-class mentors, including Master students and Phd students. All these mentors are verified with a GPA of 4.0 in the corresponding courses and comes from Top 50 university/college in the world/America. Two kinds of class size can be selected: 4-6 student class and one-to-one class.",
+            "text4": " With the sophisticated experience and knowledge, agreeable communication abilities and responsible attitudes, starting from this summer, not only can we bring you accommodating mentors but also the great academic advantage entering the college.",
+            "oneToone": "1-to-1 Class",
+            "smallGroup": "4-6 People Class",
+            "buttonText": "Enroll",
+            "followUs": {
+                "title": "Follow Us",
+                "p1": "Totoroad Academy, as the top academic consultation for studying abroad, helps international Chinese students to reduce anxiety in academic settings and smooth the transition to college in freshman year.",
+                "p2": "Scan the QR code on WeChat to follow Totoroad Academy Official Account"
+            }
+        },
+        "academic": {
+            "heading1": "Class Overview",
+            "text1": "In order to help students currently studying in universities to consolidate what they have learned and to get better grades, we also offer Totoroad synchronous tutoring. Mentors with GPA at 4.0 in the corresponding course or Master/ Phd students would come to you in a one-to-one class to help you study better. Courses are personally designed according to individuals’ needs to best fit into the path and weakness of the mentee. Mentors would help students review the knowledge, analyze the difficult part or preview as preparations leading to a better overall understanding and academic success.",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "Right now, the subjects offered include but are not limited to Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics.",
+            "text9": "",
+            "oneToOne": "1 On 1 Class",
+            "oneToOnePhd": "Consolidate foundation",
+            "text12": "Increase Difficulty",
+            "text13": "Deep understanding",
+            "text14": "Contact IFU WeChat Assistant for \n\nconsulting or signing up",
+            "scanqr1": "Scan QR code",
+            "scanqr2": "for consultation or sign up"
+        },
+        "tutors": {
+            "title": "Totoroad Project Tutors",
+            "tutorName1": "Kaiwen Hou",
+            "tutorCourse1": "Subjects: Elementary Physics, Advanced Physics. ",
+            "tutorIntro1": "Description: ",
+            "tutorIntroContent1": "Study in University of California, Santa Barbara (UCSB) , major in Mechanical Engineering Academic",
+            "tutorExperience1": "Academic History: ",
+            "tutorExperienceDetail1": "GPA 4.0 on Elementary Physics and Advanced Physics",
+
+            "tutorName2": "Tianlu Zhang",
+            "tutorCourse2": "Subject: Economics (Micro/Macro)",
+            "tutorIntro2": "Description: ",
+            "tutorIntroContent2": "Study in University of California, San Diego, major in Math-Economics",
+            "tutorExperience2": "Academic History: ",
+            "tutorExperienceDetail2": "GPA 4.0 on Economics(Micro/Macro)",
+
+            "tutorName3": "Chenwei Liang",
+            "tutorCourse3": "Subjects: Microeconomics, Macroeconomics, College Writing",
+            "tutorIntro3": "Description: ",
+            "tutorIntroContent3": " Study in University of California, San Diego, major in Management Science, minor in International Business",
+            "tutorExperience3": " Academic History: ",
+            "tutorExperienceDetail3": "GPA 4.0 on Microeconomics, Macroeconomics, College Writing",
+
+            "tutorName4": "Jiarui Jiang",
+            "tutorCourse4": "Subjects: Calculus",
+            "tutorIntro4": "Description: ",
+            "tutorIntroContent4": "Study in University of California, Los Angeles, major in Math-Economics, minor in Accounting",
+            "tutorExperience4": "Academic History: ",
+            "tutorExperienceDetail4": "GPA 4.0 on Calculus",
+
+            "tutorName5": "Xiqiang Lin",
+            "tutorCourse5": "Subject: Intro to Java ",
+            "tutorIntro5": "Description: ",
+            "tutorIntroContent5": "Study in University of California, San Diego, major in Computer Science Engineering",
+            "tutorExperience5": "Academic History: ",
+            "tutorExperienceDetail5": "GPA：3.8/4.0",
+
+            "tutorName6": "Zhiwei Wang",
+            "tutorCourse6": "Subject: Chemistry Engineering",
+            "tutorIntro6": " Description: ",
+            "tutorIntroContent6": "Study in University of Rochester, major in Chemistry Engineering, double major in Art History, minor in Math and anthropology",
+            "tutorExperience6": "Academic History: ",
+            "tutorExperienceDetail6": "GPA 4.0/4.0",
+
+            "tutorName7": "Weikun Ma",
+            "tutorCourse7": "Subjects: Intro to Java and Intro to Python",
+            "tutorIntro7": "Description: ",
+            "tutorIntroContent7": "Study in Duke University, Graduate student, major in Computer Science",
+            "tutorExperience7": "Academic History: ",
+            "tutorExperienceDetail7": "GPA 3.9/4.0",
+
+            "tutorName8": "Jinlong Ruan",
+            "tutorCourse8": "Subjects: Discrete mathematics, Java",
+            "tutorIntro8": " Description: ",
+            "tutorIntroContent8": " Study in University of Rochester, double major in Computer Science and Finance",
+            "tutorExperience8": "Academic History: ",
+            "tutorExperienceDetail8": "GPA 4.0 on Discrete mathematics, Java",
+
+            "tutorName9": "Luwa Yi",
+            "tutorCourse9": "Subject: Academic Writing I",
+            "tutorIntro9": "Description: ",
+            "tutorIntroContent9": "Study in Boston University, double major in Communication and Psychology",
+            "tutorExperience9": "Academic History: ",
+            "tutorExperienceDetail9": "Major GPA: 4.0/4.0",
+
+            "tutorName10": "Chenshu Liu",
+            "tutorCourse10": "Subjects: Calculus, integrals and series of multivariate variables, biological basis (Intro to cell biology)",
+            "tutorIntro10": "Description: ",
+            "tutorIntroContent10": "Study in University of Los Angeles, double major in Statistics and Neurology, minor in Bioinformation",
+            "tutorExperience10": "Academic History: ",
+            "tutorExperienceDetail10": "Major GPA：3.9/4.0",
+
+            "tutorName11": "Chunling Li",
+            "tutorCourse11": "Subjects: Intro to Statistic, Intro to College Writing",
+            "tutorIntro11": "Description: ",
+            "tutorIntroContent11": "Study in University of California, Davis, major in Management Economics",
+            "tutorExperience11": "Academic History: ",
+            "tutorExperienceDetail11": "Major GPA: 4.0/4.0",
+
+            "tutorName12": "Yuqing Wang",
+            "tutorCourse12": "Subject: Math, Economics( Micro/ Macro)",
+            "tutorIntro12": "Description: ",
+            "tutorIntroContent12": "Study in University of California, Davis, double major in Economics and Statistics",
+            "tutorExperience12": "Academic History: ",
+            "tutorExperienceDetail12": "Major GPA: 3.95/4.0",
+
+            "tutorName13": "Jun Zeng",
+            "tutorCourse13": "Subjects: Microbes, Microorganisms",
+            "tutorIntro13": "Description: ",
+            "tutorIntroContent13": "Bachelor from University of Washington, double major in Biology and Microbiology. Studying Doctor degree in Duke University, major in Molecular genetics and microbiology",
+            "tutorExperience13": "",
+            "tutorExperienceDetail13": "",
+
+            "tutorName14": "Jiaqi Huang",
+            "tutorCourse14": "Subjects: Microeconomics, Macroeconomics, Marketing, Marketing Strategies",
+            "tutorIntro14": "Description: ",
+            "tutorIntroContent14": "Study in University of Southern California, Master degree in Communication Management (This major in the top one in US)",
+            "tutorExperience14": "Academic History: ",
+            "tutorExperienceDetail14": "GPA 4.0 on Microeconomics, Macroeconomics, Marketing, Marketing Strategies",
+
+            "tutorName15": "Zihao Zhou",
+            "tutorCourse15": "Subject: Intro to Calculus, Advanced Calculus, Advanced Java",
+            "tutorIntro15": "Description: ",
+            "tutorIntroContent15": "Study in University of Washington, Seattle, major in Biochemistry",
+            "tutorExperience15": "Academic History: ",
+            "tutorExperienceDetail15": "GPA：3.9/4.0",
+            "joinTutor": "Do you have a high academic performance and want to contribute to something valuable? Are you looking for a way to put the knowledge you learned into practice? If that’s you, welcome to join the IFU PROJECT TOTOROAD’s mentor team as a part-time tutor. You will meet a team with the top excellent students all across the United States! Submit your application now and wait for our knock knock!",
+            "submitApplication": "Apply"
+        }
+    },
+    "contact": {
+        "banner": {
+            "title": "CONTACT US",
+            "description": "When the stars come together, they can be brighter than the Sun. Thank you for your stay for even a moment, as well as your love for us. IFU could hardly grow without your company and support. We invite you to support the operation of IFU nonprofit organization and work together to build bridges between families whose children are studying abroad. Regardless of the amount, IFU sincerely thanks you for your confidence in us!"
+        },
+        "emergency": {
+            "title": "EMERGENCY CONTACT",
+            "contact": "IFU Emergency Contact List for International Students’ families",
+            "p1": "In case of emergency, IFU volunteers will contact the parents according to the information in the emergency contact book to ensure the smooth communication of the family.",
+            "p2": "If a child is missing, IFU school volunteers will use the information in the emergency contact list to locate the child in the United States through school authorities, local police, social media and other channels; after ensuring the safety of the child, IFU volunteers will let the parents know immediately.",
+            "buttonText": "Fill Up The Emergency Contact List"
+        },
+        "other": {
+            "title": "OTHER CONTACT INFORMATION",
+            "business": {
+                "title": "Business Cooperation",
+                "description": "Send email to"
+            },
+            "other": {
+                "title": "Other Business",
+                "p1": "Please Contact Online Customer Service",
+                "p2": "Or Follow the IFU Official Account: ifu-china",
+                "p3": "Weibo: @IFU国际家长汇",
+                "p4": "Instagram：@ifu_i_family_u"
+            }
+        }
+    },
+    "donation": {
+        "banner": {
+            "title": "CHARITY DONATION",
+            "description": "“We invite you to support our operation of IFU nonprofit organization and work together to build bridges between families whose children are studying abroad. Regardless of the amount of your donation, IFU sincerely thanks you for your trust!”",
+            "buttonText": "Our Story"
+        },
+        "support": {
+            "title": "Support Us",
+            "description": "A donation from you will support the operation of IFU nonprofit Organization for one year and help us build bridges between families whose children are studying abroad. If you feel helpless and anxious towards children’s ask for help due to distance, jet lag and/or generation gap, do not be afraid; IFU is here to help. IFU upholds the principle of transparency and openness, all of your donations will be used for campus volunteer affairs reimbursement, academic projects, IFU group construction and annual meetings, staff salaries, administrative expenses, etc.",
+            "image1": "Staff Salary",
+            "image2": "Administrative Costs",
+            "image3": "Campus Volunteer Costs",
+            "image4": "Academic Projects",
+            "image5": "Annual Meetings",
+            "image6": "Others"
+        },
+        "payment": {
+            "online": "Online Payment",
+            "wechat": "QR Code for WeChat",
+            "alipay": "QR Code for Alipay",
+            "foreign": "Payment Tool For Foreign Bank Account: Zelle",
+            "zelle": "Search <b>internationalfamilyunion@gmail.com</b> through payment tools of banks for transfer"
+        }
+    },
+    "other": {
+        "otherService": {
+            "otherService1": "Since 2019, the IFU has cooperated with Hoolilaw, an overseas legal service platform, to launch the <b>\"365 Study Abroad Family Protection Program\"</b> and hold a free weekly lecture of law. With just <b>$1</b> a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
+            "otherService2": "At the same time, <b>Tuoyan education</b>, recommended by IFU, specializes in american-based GRE in Shanghai by providing high-quality professional training courses for students in the United States. Adhering to the concept of \"we are responsible and serious, we are responsible for letting you win\", among all the students who scored 320 or higher in the 2018 exam, 63 percent of them scored scored 325 or higher in their first exam, and 20 percent scored 330 or higher in their first exam, with <b>the highest score of 338</b>.",
+            "otherService3": "<b>** Please scan the QR Code in the bottom right corner of the page to add the assistant for more information.</b>"
+        },
+        "legalService": {
+            "legalTitle": "Legal Services",
+            "legal1": "Since 2019, the IFU has cooperated with <b>Hoolilaw</b>, an overseas <b>legal service platform</b>, to launch the \"365 Study Abroad Family Protection Program\" and hold a free weekly lecture of law. With just $1 a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
+            "legal2": "The NYIS LAWFIRM, founded in 1979, began to focus on legal advice for international students in 2013, covering more than 200,000 consultations in the US. Over the past two years, more than 65,000 legal advisory services have been completed. This includes visa related legal services, campus disputes, real estate disputes, traffic accidents, criminal cases, civil disputes, etc. The Hoolilaw legal protection program covers four services: Regulatory Training, Legal Aid, personal security, and employment protection. In case of an emergency, the <b>365 Study Abroad Family Protection Program</b> matches the child's assigned lawyer to help the child deal with the emergency on behalf of the parents. On average, with $1 a day, you can have counseling service from a senior attorney.",
+            "legalLearnMoreBtn": "Learn More"
+        },
+        "greTraining": {
+            "trainingTitle": "Graduate Entrance Training",
+            "training1": "As the leading GRE training institution in the United States, <b>Shanghai Tuoyan Education</b> is committed to providing <b>high-quality and professional GRE courses</b> for students studying in the United States. Excellent teachers and a spirit of continuous improvement have enabled Tuoyan to cultivate a group of students who earn scores that are satisfying to themselves. \"<b>Tuoyan's teachers are the most responsible GRE teachers I have ever encountered.</b> If I have any questions, I will be responded immediately if I ask on WeChat. Thank you for letting me worry no more about my grades and the possibility of not being accepted into any graduate Colleges! \"said IFU students. Thank you, Mr. Tuo Yan, for your full support during the education of IFU Charity Program. Thank you for growing up with IFU!",
+            "learnMoreBtn": "Learn More"
+        }
+    }
+}

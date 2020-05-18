@@ -1,24 +1,20 @@
 <template>
-    <div class="collapse" @click="toggle">
-        <div class="header">
-            <div class="title">{{ title }}</div>
-            <svg
-                :class="show ? 'arrow-up' : 'arrow-down'"
-                width="28"
-                height="18"
-                viewBox="0 0 28 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+    <div class="collapse">
+        <div
+            class="header"
+            :style="{ background: `${backgroundColor}` }"
+            @click="toggle"
+        >
+            <div class="arrow" :class="show ? 'arrow-up' : 'arrow-down'"></div>
+            <div
+                :class="lang === 'zh' ? 'title-zh' : 'title-en'"
+                class="title-en"
             >
-                <path
-                    d="M2 16L14.6154 4L26 16"
-                    stroke="#34BBC9"
-                    stroke-width="5"
-                />
-            </svg>
+                {{ title }}
+            </div>
         </div>
-        <div v-if="show" class="content">
-            <slot />
+        <div v-if="show" class="container">
+            <slot class="test" />
         </div>
     </div>
 </template>
@@ -29,12 +25,21 @@ export default {
     props: {
         title: {
             type: String,
-            default: '',
+            required: true,
+        },
+        backgroundColor: {
+            type: String,
+            required: true,
+        },
+        defaultShow: {
+            type: Boolean,
+            default: false,
         },
     },
     data() {
         return {
-            show: false,
+            show: this.defaultShow,
+            lang: this.$i18n.locale,
         };
     },
     methods: {
@@ -47,46 +52,56 @@ export default {
 
 <style lang="scss" scoped>
 .collapse {
-    box-sizing: border-box;
     width: 100%;
-    min-height: 80px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px 32px;
 }
-
 .header {
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-}
-
-.content {
-    width: 100%;
-    min-height: 40px;
-}
-
-.content > img {
-    width: 100%;
-}
-
-.arrow-down {
+    min-height: 85px;
     float: right;
-    transform: rotateZ(180deg);
+    font-size: 24px;
+    display: none;
+    color: #fff;
 }
-
-.arrow-down path {
-    stroke: black;
+.arrow-down {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+}
+.arrow {
+    display: inline-block;
+    margin-right: 20px;
+}
+.arrow-up {
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+.title-en {
+    display: inline-block;
+    margin-right: 30px;
+}
+.test {
+    padding-top: 100px;
 }
 
 @media (max-width: 1024px) {
+    .collapse {
+        min-height: 85px;
+    }
     .header {
-        height: auto;
+        width: 100%;
+        min-height: 85px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+        float: inherit;
+    }
+    .title-en {
+        font-size: 18px;
+        text-align: right;
+        white-space: pre-line;
     }
 }
 </style>

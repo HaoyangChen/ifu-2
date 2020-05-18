@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="col-half">
-                    <h2 v-t="'membership.colhalf.whycardTitle'"></h2>
+                    <h2>{{ $t('membership.colhalf.whycardTitle') }}</h2>
                     <p>
                         {{ $t('membership.colhalf.overView1')
                         }}<b> {{ $t('membership.colhalf.overView2') }}</b
@@ -43,7 +43,7 @@
             class="ifu-discount-banner"
             :style="{ backgroundColor: 'white' }"
         >
-            <h2 v-t="'membership.colhalf.isicDiscountTitle'"></h2>
+            <h2>{{ $t('membership.colhalf.isicDiscountTitle') }}</h2>
             <div class="card-list">
                 <Card
                     v-for="(item, index) in cardList"
@@ -56,14 +56,14 @@
             <div class="all-discounts">
                 <a
                     id="more-discount"
-                    v-t="'membership.colhalf.moreDiscount'"
                     href="https://www.isic.org"
                     target="_blank"
-                ></a>
+                    >{{ $t('membership.colhalf.moreDiscount') }}</a
+                >
             </div>
         </section>
         <section class="ifu-discount-banner">
-            <h2 v-t="'membership.colhalf.ifuDiscountTitle'"></h2>
+            <h2>{{ $t('membership.colhalf.ifuDiscountTitle') }}</h2>
             <div class="ifu-list">
                 <Card
                     v-for="(item, index) in ifuList"
@@ -75,7 +75,9 @@
             </div>
         </section>
         <section class="isic-sample-section">
-            <p v-t="'membership.colhalf.becomeVIP'" class="display-mobile"></p>
+            <p class="display-mobile">
+                {{ $t('membership.colhalf.becomeVIP') }}
+            </p>
             <div class="row">
                 <div class="col-half">
                     <div class="wave-image">
@@ -86,11 +88,10 @@
                     </div>
                 </div>
                 <div class="col-half">
-                    <p
-                        v-t="'membership.colhalf.becomeVipDesktop'"
-                        class="display-desktop"
-                    ></p>
-                    <p v-t="'membership.colhalf.becomeVipContent'"></p>
+                    <p class="display-desktop">
+                        {{ $t('membership.colhalf.becomeVipDesktop') }}
+                    </p>
+                    <p>{{ $t('membership.colhalf.becomeVipContent') }}</p>
                     <Button to="/contact">{{
                         $t('membership.colhalf.buttonText')
                     }}</Button>

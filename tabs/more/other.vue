@@ -2,25 +2,9 @@
     <div>
         <div class="row">
             <div class="text-container left">
-                <p>
-                    {{ $t('other.otherService.otherService1')
-                    }}<b>{{ $t('other.otherService.otherService2') }}</b
-                    >{{ $t('other.otherService.otherService3')
-                    }}<b>{{ $t('other.otherService.otherService4') }}</b
-                    >{{ $t('other.otherService.otherService5') }}
-                </p>
-                <p>
-                    {{ $t('other.otherService.otherService6')
-                    }}<b>{{ $t('other.otherService.otherService7') }}</b
-                    >{{ $t('other.otherService.otherService8')
-                    }}<b>{{ $t('other.otherService.otherService9') }}</b
-                    >{{ $t('other.otherService.otherService10')
-                    }}<b> {{ $t('other.otherService.otherService11') }}</b
-                    >。
-                </p>
-                <p>
-                    {{ $t('other.otherService.otherService12') }}
-                </p>
+                <p v-html="$t('other.otherService.otherService1')" />
+                <p v-html="$t('other.otherService.otherService2')" />
+                <p v-html="$t('other.otherService.otherService3')" />
             </div>
             <div class="img-container desktop">
                 <img :src="section1Image" />
@@ -29,18 +13,8 @@
         <div class="row">
             <div class="text-container left blue-background">
                 <h2>{{ $t('other.legalService.legalTitle') }}</h2>
-                <p>
-                    {{ $t('other.legalService.legal1')
-                    }}<b>{{ $t('other.legalService.legal2') }}</b
-                    >{{ $t('other.legalService.legal3') }}
-                </p>
-                <p>
-                    {{ $t('other.legalService.legal4')
-                    }}<b>{{ $t('other.legalService.legal5') }}</b
-                    >。 {{ $t('other.legalService.legal6')
-                    }}<b>{{ $t('other.legalService.legal7') }}</b
-                    >{{ $t('other.legalService.legal8') }}
-                </p>
+                <p v-html="$t('other.legalService.legal1')" />
+                <p v-html="$t('other.legalService.legal2')" />
                 <Button
                     id="more-info"
                     external
@@ -58,14 +32,7 @@
             </div>
             <div class="text-container right">
                 <h2>{{ $t('other.greTraining.trainingTitle') }}</h2>
-                <p>
-                    <b>{{ $t('other.greTraining.training1') }}</b
-                    >{{ $t('other.greTraining.training2')
-                    }}<b>{{ $t('other.greTraining.training3') }}</b
-                    >{{ $t('other.greTraining.training4')
-                    }}<b>{{ $t('other.greTraining.training5') }}</b
-                    >{{ $t('other.greTraining.training6') }}
-                </p>
+                <p v-html="$t('other.greTraining.training1')" />
                 <Button
                     external
                     to="https://mp.weixin.qq.com/s/ccDYcTP8n6IGUa3mud3JJw"
@@ -97,6 +64,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 .row {
     display: flex;
 
@@ -126,11 +95,11 @@ img {
 }
 
 .text-container.left {
-    padding: 80px 50px 80px 130px;
+    padding: 80px 50px 80px $padding-horizontal;
 }
 
 .text-container.right {
-    padding: 80px 130px 80px 50px;
+    padding: 80px $padding-horizontal 80px 50px;
 }
 
 .blue-background {

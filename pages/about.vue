@@ -5,7 +5,7 @@
             :description="$t('about.banner.description')"
             :button-text="$t('about.banner.buttonText')"
             external
-            to="https://www.wjx.top/m/42786146.aspx"
+            :to="campusVolunteerLink[$i18n.locale]"
             :background="bannerImage"
         />
         <Tab :list="tabList" />
@@ -31,6 +31,10 @@ export default {
     data() {
         return {
             bannerImage,
+            campusVolunteerLink: {
+                zh: 'https://www.wjx.cn/jq/71891803.aspx',
+                en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
+            },
         };
     },
     computed: {

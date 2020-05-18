@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Book :list="storyList" />
+        <Book :list="storyList[$i18n.locale]" />
         <section>
             <h2>{{ $t('about.story.achievement') }}</h2>
             <div class="achievement-list">
@@ -44,6 +44,22 @@
                     <img src="@/assets/about/story/achievement_10.png" />
                     <p v-html="$t('about.story.text10')" />
                 </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_11.png" />
+                    <p v-html="$t('about.story.text11')" />
+                </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_12.png" />
+                    <p v-html="$t('about.story.text12')" />
+                </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_13.png" />
+                    <p v-html="$t('about.story.text13')" />
+                </div>
+                <div class="achievement-item">
+                    <img src="@/assets/about/story/achievement_14.png" />
+                    <p v-html="$t('about.story.text14')" />
+                </div>
             </div>
         </section>
     </div>
@@ -61,6 +77,16 @@ import story7 from '@/assets/about/story/story_7.jpg';
 import story8 from '@/assets/about/story/story_8.jpg';
 import story9 from '@/assets/about/story/story_9.jpg';
 
+import story1En from '@/assets/about/story/en/story_1.jpg';
+import story2En from '@/assets/about/story/en/story_2.jpg';
+import story3En from '@/assets/about/story/en/story_3.jpg';
+import story4En from '@/assets/about/story/en/story_4.jpg';
+import story5En from '@/assets/about/story/en/story_5.jpg';
+import story6En from '@/assets/about/story/en/story_6.jpg';
+import story7En from '@/assets/about/story/en/story_7.jpg';
+import story8En from '@/assets/about/story/en/story_8.jpg';
+import story9En from '@/assets/about/story/en/story_9.jpg';
+
 export default {
     name: 'Story',
     components: {
@@ -68,17 +94,30 @@ export default {
     },
     data() {
         return {
-            storyList: [
-                story1,
-                story2,
-                story3,
-                story4,
-                story5,
-                story6,
-                story7,
-                story8,
-                story9,
-            ],
+            storyList: {
+                zh: [
+                    story1,
+                    story2,
+                    story3,
+                    story4,
+                    story5,
+                    story6,
+                    story7,
+                    story8,
+                    story9,
+                ],
+                en: [
+                    story1En,
+                    story2En,
+                    story3En,
+                    story4En,
+                    story5En,
+                    story6En,
+                    story7En,
+                    story8En,
+                    story9En,
+                ],
+            },
         };
     },
 };
@@ -97,16 +136,28 @@ export default {
     align-items: center;
 }
 
-.achievement-item img {
-    float: left;
-    margin: 24px;
+.achievement-item {
+    img {
+        float: left;
+        margin: 24px;
+    }
+
+    &:nth-of-type(odd) {
+        img {
+            margin: 24px 24px 24px 0;
+        }
+    }
 }
 
-.achievement-item p {
-    margin: 24px;
+.achievement-item {
+    p {
+        width: 100%;
+        margin: 24px 0;
 
-    /deep/ span {
-        color: #54bef5;
+        /deep/ span {
+            color: #54bef5;
+            font-weight: bold;
+        }
     }
 }
 
@@ -176,6 +227,24 @@ export default {
 
     .achievement-item:nth-child(10) {
         background: #34bbc9;
+    }
+
+    .achievement-item {
+        &:nth-child(11) {
+            background: #cc8abd;
+        }
+
+        &:nth-child(12) {
+            background: #fda63b;
+        }
+
+        &:nth-child(13) {
+            background: #f96291;
+        }
+
+        &:nth-child(14) {
+            background: #34bbc9;
+        }
     }
 }
 </style>

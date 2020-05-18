@@ -31,7 +31,10 @@
             </div>
             <div class="row light-blue-row">
                 <section class="col-half larger-half">
-                    <img class="cohesion-diagram" :src="cohesionDiagramImage" />
+                    <img
+                        class="cohesion-diagram"
+                        :src="cohesionDiagram[$i18n.locale]"
+                    />
                 </section>
                 <section class="col-half smaller-half">
                     <h2>{{ $t('totoro.cohesion.subjectHeading') }}</h2>
@@ -51,8 +54,7 @@
                         >{{ $t('totoro.cohesion.courseSetting3')
                         }}<b>{{ $t('totoro.cohesion.courseSetting4') }}</b
                         >{{ $t('totoro.cohesion.courseSetting5')
-                        }}<b>{{ $t('totoro.cohesion.courseSetting6') }}</b
-                        >。
+                        }}<b>{{ $t('totoro.cohesion.courseSetting6') }}</b>
                     </p>
                     <p>{{ $t('totoro.cohesion.courseSetting7') }}</p>
                 </section>
@@ -65,9 +67,24 @@
                     </div>
                 </div>
             </div>
+            <div class="row follow-us">
+                <section class="col-half">
+                    <h2>{{ $t('totoro.cohesion.followUs.title') }}</h2>
+                    <p>
+                        {{ $t('totoro.cohesion.followUs.p1') }}
+                    </p>
+                    <p>
+                        <b>{{ $t('totoro.cohesion.followUs.p2') }}</b>
+                    </p>
+                </section>
+                <section class="col-half">
+                    <img src="@/assets/totoro/qr-with-totoro.png" />
+                </section>
+            </div>
             <div class="row group-class-row">
                 <section class="col-half col-half-center section-scan">
-                    <img class="totoro-qr" :src="totoroQr" />
+                    <img class="totoro-qr" src="@/assets/totoro/qr-1.png" />
+                    <img class="totoro-qr" src="@/assets/totoro/qr-2.png" />
                     <p>{{ $t('totoro.cohesion.scanqr1') }}</p>
                     <p>{{ $t('totoro.cohesion.scanqr2') }}</p>
                 </section>
@@ -93,8 +110,9 @@ import cohesionImage from '@/assets/totoro/cohesion.png';
 import onetooneImage from '@/assets/totoro/onetoone.png';
 import smallGroupImage from '@/assets/totoro/small-group.png';
 import cohesionDiagramImage from '@/assets/totoro/cohesion-diagram.png';
+import cohesionDiagramImageEn from '@/assets/totoro/cohesion-diagram-en.png';
 import cohesionImage3 from '@/assets/totoro/cohesion-section-3.png';
-import totoroQr from '@/assets/totoro/totoro-qr.png';
+
 export default {
     name: 'Cohesion',
     data() {
@@ -102,9 +120,11 @@ export default {
             cohesionImage,
             onetooneImage,
             smallGroupImage,
-            cohesionDiagramImage,
+            cohesionDiagram: {
+                zh: cohesionDiagramImage,
+                en: cohesionDiagramImageEn,
+            },
             cohesionImage3,
-            totoroQr,
         };
     },
 };
@@ -123,7 +143,7 @@ export default {
 
 .totoro-qr {
     float: left;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .group-class-row > section > p:first-of-type {
@@ -180,9 +200,6 @@ export default {
 .flex-middle-right {
     display: flex;
     flex-direction: row-reverse;
-    // .color-box{
-    //     width: 315px;
-    // }
 }
 
 .color-box {
@@ -250,8 +267,7 @@ export default {
     display: flex;
 }
 
-.group-class-row {
-    background: #f1f9ff;
+.section-scan {
     font-weight: 600;
 }
 
@@ -275,6 +291,15 @@ export default {
 }
 .section-scan {
     padding-right: 0;
+}
+
+.follow-us {
+    background: #f1f9ff;
+
+    section {
+        height: 100%;
+        background: #f1f9ff;
+    }
 }
 
 @media (max-width: 1024px) {

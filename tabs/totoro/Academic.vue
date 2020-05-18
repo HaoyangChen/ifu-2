@@ -5,7 +5,7 @@
                 <div class="col-half">
                     <div class="academic-image">
                         <img
-                            :src="syncDiagram"
+                            :src="syncDiagram[$i18n.locale]"
                             alt="image in academic section"
                         />
                     </div>
@@ -27,22 +27,40 @@
                     </p>
                 </div>
             </section>
+            <div class="row follow-us">
+                <section class="col-half">
+                    <h2>{{ $t('totoro.cohesion.followUs.title') }}</h2>
+                    <p>
+                        {{ $t('totoro.cohesion.followUs.p1') }}
+                    </p>
+                    <p>
+                        <b>{{ $t('totoro.cohesion.followUs.p2') }}</b>
+                    </p>
+                </section>
+                <section class="col-half">
+                    <img src="@/assets/totoro/qr-with-totoro.png" />
+                </section>
+            </div>
             <div class="row group-class-row">
                 <section class="col-half col-half-center section-scan">
-                    <img class="totoro-qr" :src="totoroQr" />
+                    <img class="totoro-qr" src="@/assets/totoro/qr-1.png" />
+                    <img class="totoro-qr" src="@/assets/totoro/qr-2.png" />
                     <p>{{ $t('totoro.academic.scanqr1') }}</p>
                     <p>{{ $t('totoro.academic.scanqr2') }}</p>
                 </section>
                 <div class="col-half col-half-half col-flex">
                     <div class="icon-register half-to-half icon-one-to-one">
                         <img :src="onetooneImage" alt="one to one image" />
-                        <span>{{ $t('totoro.academic.oneToone') }}</span>
+                        <span>{{ $t('totoro.academic.oneToOne') }}</span>
                     </div>
                     <div
                         class="icon-register half-to-half group-top icon-one-to-more"
                     >
-                        <img :src="smallGroupImage" alt="one to one image" />
-                        <span>{{ $t('totoro.academic.smallGroup') }}</span>
+                        <img
+                            src="@/assets/totoro/onetoonephd.png"
+                            alt="one to one image"
+                        />
+                        <span>{{ $t('totoro.academic.oneToOnePhd') }}</span>
                     </div>
                 </div>
             </div>
@@ -52,11 +70,10 @@
 
 <script>
 import academicImage from '@/assets/totoro/academic-img.png';
-import syncDiagram from '@/assets/totoro/sync-diagram.png';
+import syncDiagramZh from '@/assets/totoro/sync-diagram.png';
+import syncDiagramEn from '@/assets/totoro/sync-diagram-en.png';
 import ifuLogo from '@/assets/totoro/ifu-logo.png';
 import onetooneImage from '@/assets/totoro/onetoone.png';
-import smallGroupImage from '@/assets/totoro/small-group.png';
-import totoroQr from '@/assets/totoro/totoro-qr.png';
 
 export default {
     name: 'Academic',
@@ -65,10 +82,11 @@ export default {
         return {
             academicImage,
             ifuLogo,
-            syncDiagram,
+            syncDiagram: {
+                zh: syncDiagramZh,
+                en: syncDiagramEn,
+            },
             onetooneImage,
-            smallGroupImage,
-            totoroQr,
         };
     },
 };
@@ -77,7 +95,7 @@ export default {
 <style lang="scss" scoped>
 .totoro-qr {
     float: left;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .group-class-row > section > p:first-of-type {
@@ -90,6 +108,10 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    img {
+        height: 100px;
+    }
 }
 
 .half-to-half {
@@ -101,8 +123,7 @@ export default {
     display: flex;
 }
 
-.group-class-row {
-    background: #f1f9ff;
+.section-scan {
     font-weight: 600;
 }
 
@@ -130,6 +151,10 @@ export default {
     max-width: 50%;
     white-space: pre-line;
     box-sizing: border-box;
+
+    p {
+        white-space: normal;
+    }
 }
 
 .academic-image {
@@ -150,10 +175,6 @@ export default {
     font-size: 16px;
     line-height: 31px;
     letter-spacing: 0.02em;
-}
-
-.col-half > img {
-    padding-left: 15%;
 }
 
 .academic-section {
@@ -208,6 +229,15 @@ export default {
 
 .section-scan {
     padding-right: 0;
+}
+
+.follow-us {
+    background: #f1f9ff;
+
+    section {
+        height: 100%;
+        background: #f1f9ff;
+    }
 }
 
 @media (max-width: 1024px) {

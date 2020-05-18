@@ -12,68 +12,68 @@
             </div>
             <section class="time-2017">
                 <div class="time-item">
-                    <div v-t="'about.history.2017.july'" class="time" />
-                    <div v-t="'about.history.2017.text1'" class="text" />
+                    <div class="time">{{ $t('about.history.2017.july') }}</div>
+                    <div class="text">{{ $t('about.history.2017.text1') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2017.oct'" class="time" />
-                    <div v-t="'about.history.2017.text2'" class="text" />
+                    <div class="time">{{ $t('about.history.2017.oct') }}</div>
+                    <div class="text">{{ $t('about.history.2017.text2') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2017.dec'" class="time" />
-                    <div v-t="'about.history.2017.text3'" class="text" />
+                    <div class="time">{{ $t('about.history.2017.dec') }}</div>
+                    <div class="text">{{ $t('about.history.2017.text3') }}</div>
                 </div>
             </section>
             <section class="time-2018">
                 <div class="time-item">
-                    <div v-t="'about.history.2018.march'" class="time" />
-                    <div v-t="'about.history.2018.text1'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.march') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text1') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.march'" class="time" />
-                    <div v-t="'about.history.2018.text2'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.march') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text2') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.july'" class="time" />
-                    <div v-t="'about.history.2018.text3'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.july') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text3') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.oct'" class="time" />
-                    <div v-t="'about.history.2018.text4'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.oct') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text4') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.oct'" class="time" />
-                    <div v-t="'about.history.2018.text5'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.oct') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text5') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.nov'" class="time" />
-                    <div v-t="'about.history.2018.text6'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.nov') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text6') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.dec'" class="time" />
-                    <div v-t="'about.history.2018.text7'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.dec') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text7') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2018.dec'" class="time" />
-                    <div v-t="'about.history.2018.text8'" class="text" />
+                    <div class="time">{{ $t('about.history.2018.dec') }}</div>
+                    <div class="text">{{ $t('about.history.2018.text8') }}</div>
                 </div>
             </section>
             <section class="time-2019">
                 <div class="time-item">
-                    <div v-t="'about.history.2019.feb'" class="time" />
-                    <div v-t="'about.history.2019.text1'" class="text" />
+                    <div class="time">{{ $t('about.history.2019.feb') }}</div>
+                    <div class="text">{{ $t('about.history.2019.text1') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2019.june'" class="time" />
-                    <div v-t="'about.history.2019.text2'" class="text" />
+                    <div class="time">{{ $t('about.history.2019.june') }}</div>
+                    <div class="text">{{ $t('about.history.2019.text2') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2019.june'" class="time" />
-                    <div v-t="'about.history.2019.text3'" class="text" />
+                    <div class="time">{{ $t('about.history.2019.june') }}</div>
+                    <div class="text">{{ $t('about.history.2019.text3') }}</div>
                 </div>
                 <div class="time-item">
-                    <div v-t="'about.history.2019.july'" class="time" />
-                    <div v-t="'about.history.2019.text4'" class="text" />
+                    <div class="time">{{ $t('about.history.2019.july') }}</div>
+                    <div class="text">{{ $t('about.history.2019.text4') }}</div>
                 </div>
             </section>
         </div>
@@ -122,20 +122,21 @@ section {
     padding: 28px;
     position: absolute;
     margin: auto;
-}
 
-.time-item .text {
-    margin-top: 15px;
-    width: 225px;
-}
+    .time {
+        width: 122px;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+    }
 
-.time {
-    width: 122px;
-    height: 40px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    line-height: 40px;
+    .text {
+        padding-top: 5px;
+        width: 225px;
+        font-size: 14px;
+    }
 }
 
 .time-2017,
@@ -239,8 +240,14 @@ section {
 .time-2019 {
     height: 919px;
 
-    .time {
-        background: #f96291;
+    .time-item {
+        .time {
+            background: #f96291;
+        }
+
+        .text {
+            width: 375px;
+        }
     }
 
     .time-item:nth-child(1) {
@@ -270,8 +277,12 @@ section {
         height: 2200px;
     }
 
-    .time-item .text {
-        width: 270px;
+    .time-item {
+        .text {
+            width: 270px;
+            font-size: 13px;
+            line-height: 20px;
+        }
     }
 
     .time-2017 {
@@ -387,10 +398,20 @@ section {
 }
 
 @media (max-width: 1024px) {
-    .history {
+    .blue-background {
+        display: none;
+    }
+
+    .timeline-container {
         width: 100%;
         height: 2877px;
         overflow: hidden;
+    }
+
+    .time-item {
+        .text {
+            font-size: 12px;
+        }
     }
 
     .time-background-container,
@@ -407,10 +428,54 @@ section {
 
     .time-2017 {
         height: 641px;
+
+        .time-item:nth-child(1) {
+            top: 140px;
+        }
+
+        .time-item:nth-child(2) {
+            top: 265px;
+        }
+
+        .time-item:nth-child(3) {
+            top: 435px;
+        }
     }
 
     .time-2018 {
         height: 1401px;
+
+        .time-item:nth-child(1) {
+            top: 145px;
+        }
+
+        .time-item:nth-child(2) {
+            top: 320px;
+        }
+
+        .time-item:nth-child(3) {
+            top: 490px;
+        }
+
+        .time-item:nth-child(4) {
+            top: 635px;
+        }
+
+        .time-item:nth-child(5) {
+            top: 785px;
+        }
+
+        .time-item:nth-child(6) {
+            top: 930px;
+        }
+
+        .time-item:nth-child(7) {
+            top: 1075px;
+        }
+
+        .time-item:nth-child(8) {
+            top: 1195px;
+        }
     }
 
     .time-2018-background {
@@ -425,6 +490,28 @@ section {
 
     .time-2019 {
         height: 835px;
+
+        .time-item {
+            .text {
+                width: 270px;
+            }
+        }
+
+        .time-item:nth-child(1) {
+            top: 140px;
+        }
+
+        .time-item:nth-child(2) {
+            top: 310px;
+        }
+
+        .time-item:nth-child(3) {
+            top: 480px;
+        }
+
+        .time-item:nth-child(4) {
+            top: 630px;
+        }
     }
 
     .history .time-2017 .time-item,
@@ -439,71 +526,11 @@ section {
     .history .time-2019 .time-item .time {
         left: 0px;
     }
-
-    .time-2017 .time-item:nth-child(1) {
-        top: 140px;
-    }
-
-    .time-2017 .time-item:nth-child(2) {
-        top: 265px;
-    }
-
-    .time-2017 .time-item:nth-child(3) {
-        top: 435px;
-    }
-
-    .time-2018 .time-item:nth-child(1) {
-        top: 145px;
-    }
-
-    .time-2018 .time-item:nth-child(2) {
-        top: 320px;
-    }
-
-    .time-2018 .time-item:nth-child(3) {
-        top: 490px;
-    }
-
-    .time-2018 .time-item:nth-child(4) {
-        top: 635px;
-    }
-
-    .time-2018 .time-item:nth-child(5) {
-        top: 785px;
-    }
-
-    .time-2018 .time-item:nth-child(6) {
-        top: 930px;
-    }
-
-    .time-2018 .time-item:nth-child(7) {
-        top: 1075px;
-    }
-
-    .time-2018 .time-item:nth-child(8) {
-        top: 1195px;
-    }
-
-    .time-2019 .time-item:nth-child(1) {
-        top: 140px;
-    }
-
-    .time-2019 .time-item:nth-child(2) {
-        top: 310px;
-    }
-
-    .time-2019 .time-item:nth-child(3) {
-        top: 480px;
-    }
-
-    .time-2019 .time-item:nth-child(4) {
-        top: 630px;
-    }
 }
 
 @media (max-width: 350px) {
-    .time-item .text {
-        font-size: 13px;
+    .time-item .text,
+    .time-2019 .time-item .text {
         width: 200px;
     }
 }

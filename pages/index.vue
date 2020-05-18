@@ -5,7 +5,7 @@
             :sub-title="$t('home.banner.title')"
             :description="$t('home.banner.description')"
             :button-text="$t('home.banner.buttonText')"
-            to="/contact"
+            to="/about"
             :background="bannerImage"
             title-color="#2C3E51"
         />
@@ -111,7 +111,7 @@
                 <a
                     href="http://mp.weixin.qq.com/mp/homepage?__biz=MzU1MTE2MDkxOQ==&hid=2&sn=6787ada9887b05cdee1a4f95d6f67cc3&scene=18#wechat_redirect"
                     target="_blank"
-                    >更多近期精彩活动 >></a
+                    >{{ $t('home.eventList.more') }}</a
                 >
             </div>
         </section>
@@ -119,7 +119,7 @@
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
-                    <h3>{{ $t('home.aboutUs.qrcode') }}</h3>
+                    <h2>{{ $t('home.aboutUs.qrcode') }}</h2>
                     <p>{{ $t('home.aboutUs.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.aboutUs.text2') }}</b>
@@ -138,7 +138,7 @@
         <section class="about-us-section">
             <div class="container half-style">
                 <div class="col-half">
-                    <h3>{{ $t('home.studentGroup.title') }}</h3>
+                    <h2>{{ $t('home.studentGroup.title') }}</h2>
                     <p>{{ $t('home.studentGroup.text1') }}</p>
                     <p class="scan-qr-margin">
                         <b>{{ $t('home.studentGroup.text3') }}</b>
@@ -152,7 +152,7 @@
                             alt="QR Code for Student Group"
                         />
                         <img
-                            src="@/assets/home/april-annoucement.png"
+                            :src="aprilAnnoucementImg[$i18n.locale]"
                             alt="April Annoucement"
                         />
                     </div>
@@ -188,6 +188,9 @@ import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
+import aprilAnnoucementImgZh from '@/assets/home/april-annoucement.png';
+import aprilAnnoucementImgEn from '@/assets/home/april-annoucement-en.png';
+
 export default {
     components: {
         Banner,
@@ -219,6 +222,10 @@ export default {
                         spaceBetween: 10,
                     },
                 },
+            },
+            aprilAnnoucementImg: {
+                zh: aprilAnnoucementImgZh,
+                en: aprilAnnoucementImgEn,
             },
         };
     },
@@ -269,22 +276,26 @@ export default {
                     icon: one,
                 },
                 {
-                    title: this.$t('home.ourServices.serviceList.ISICTitle'),
+                    title: this.$t(
+                        'home.ourServices.serviceList.membershipTitle',
+                    ),
                     backgroundColor: '#C9D74A',
-                    text: this.$t('home.ourServices.serviceList.ISICText'),
+                    text: this.$t(
+                        'home.ourServices.serviceList.membershipText',
+                    ),
                     image: ifuMembershipImage,
                     subTitle: this.$t(
-                        'home.ourServices.serviceList.ISICsubTitle',
+                        'home.ourServices.serviceList.membershipsubTitle',
                     ),
                     icon: two,
                 },
                 {
-                    title: this.$t('home.ourServices.serviceList.DMATitle'),
+                    title: this.$t('home.ourServices.serviceList.otherTitle'),
                     backgroundColor: '#F96291',
-                    text: this.$t('home.ourServices.serviceList.DMAText'),
+                    text: this.$t('home.ourServices.serviceList.otherText'),
                     image: otherServiceImage,
                     subTitle: this.$t(
-                        'home.ourServices.serviceList.DMAsubTitle',
+                        'home.ourServices.serviceList.othersubTitle',
                     ),
                     icon: three,
                 },
@@ -354,6 +365,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/var.scss';
+
 /deep/ .banner .subtitle-text {
     margin-bottom: 0px;
 }
@@ -398,7 +411,7 @@ export default {
 
     section {
         flex-basis: 50%;
-        padding: 0 0 0 130px;
+        padding: 0 0 0 $padding-horizontal;
         line-height: 31px;
     }
 
@@ -433,6 +446,7 @@ export default {
     h3 {
         font-size: 18px;
         margin: 0;
+        font-weight: 400;
     }
 }
 .profile-list {
@@ -505,7 +519,7 @@ h2 {
     width: 32%;
 }
 .left {
-    text-align: right;
+    text-align: left;
     padding-right: 30px;
 }
 .left .col:first-child {
@@ -585,14 +599,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
 }
 
 .about-us-section {
     padding-top: 60px;
-
-    h3 {
-        margin-top: 0;
-    }
 
     .half-style {
         display: flex;
