@@ -3,12 +3,13 @@
         <Banner
             :title="$t('home.banner.subTitle')"
             :sub-title="$t('home.banner.title')"
-            :description="$t('home.banner.description')"
             :button-text="$t('home.banner.buttonText')"
             to="/about"
             :background="bannerImage"
             title-color="#2C3E51"
-        />
+        >
+            <p v-html="$t('home.banner.description')" />
+        </Banner>
         <div class="wuhan-coronavirus">
             <section class="container">
                 <h2>{{ $t('home.coronavirus.subTitle') }}</h2>

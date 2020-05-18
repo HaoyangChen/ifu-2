@@ -2,12 +2,13 @@
     <div class="about">
         <Banner
             :title="$t('about.banner.title')"
-            :description="$t('about.banner.description')"
             :button-text="$t('about.banner.buttonText')"
             external
             :to="campusVolunteerLink[$i18n.locale]"
             :background="bannerImage"
-        />
+        >
+            <p v-html="$t('about.banner.description')" />
+        </Banner>
         <Tab :list="tabList" />
     </div>
 </template>
