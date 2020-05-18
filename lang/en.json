@@ -36,7 +36,7 @@
                 "security": "OVERSEAS SAFETY",
                 "intimateService": "ALL-AROUND SERVICE",
                 "socialMedia": "SOCIAL MEDIA",
-                "infoText": "We use social media to send the most authentic information about studying abroad and daily life in overseas schools to parents; We communicate regularly with schools and parents, collecting each other's opinions and giving feedback to both parties in a timely manner.",
+                "infoText": "We use social media to send the most authentic information about studying abroad and international student's daily life to parents; We communicate regularly with schools and parents, collecting each other's opinions and giving feedback to both parties in a timely manner.",
                 "securityText": "We help families find their kids who have lost contact for more than 24 hours. We provide the best legal and psychological counselors in the United States from the California Bar Association.",
                 "serviceText": "We provide the best tutors, and high-GPA seniors to help international Chinese students steadily improve their GPA.",
                 "mediaText": "We have official accounts on social platforms such as Instagram, Facebook, LinkedIn, WeChat, Weibo, Zhihu, Baidu Post Bar, etc., with a total follower of more than 20,000. The official account maintains a monthly growth of 10%.",
@@ -85,7 +85,7 @@
     "more": {
         "banner": {
             "title": "MORE SERVICES",
-            "description": "The IFU has cooperated with Hoolilaw, an overseas legal service platform, to launch the \"365 Study Abroad Family Protection Program\" and hold a weekly legal lecture for free. With just $1 a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
+            "description": "The IFU has cooperated with Hoolilaw, an overseas legal service platform, to launch the \"365 Study Abroad Family Protection Program\" and hold a free weekly lecture of law. With just $1 a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
             "buttonText": "Contact Us",
             "tabContent": "OTHER SERVICES"
         },
@@ -185,8 +185,8 @@
     "about": {
         "banner": {
             "title": "ABOUT US",
-            "description": "International Family Union (abbr. IFU) is a non-government organization that consists of overseas students to assist international students and their families, especially based on campus security and studying abroad experiences. In order to provide assistance for parents in emergency, we set up student organizations in various universities and recruit college volunteers periodically.",
-            "buttonText": "Become Campus Volunteer"
+            "description": "IFU, founded by international students across the globe, is a non-governmental organization serving the purpose of student wellbeing on campus and a communication platform connecting international students and their families.\n\nWe will help international families to solve problems promptly during an emergency. Our mission is to reduce the generational gap between international students and their parents through information sharing, whether online or in-person, thereby addressing social problems such as students’ anxiety.",
+            "buttonText": "Contact Us"
         },
         "tabList": {
             "culture": "CULTURE",
@@ -197,10 +197,10 @@
         "culture": {
             "cultureTitle": "Our Culture",
             "cultureText": "Sharing, Respect, Creativity",
-            "cultureText2": "Sharing of our story and experience brings us the international students and families;",
-            "cultureText3": "Sharing of our culture, value, and creed brings us the volunteers;",
-            "cultureText4": "Respect of parents, students and volunteers helps us understand each other;",
-            "cultureText5": "Mutual understanding leads to the choice of creating new possibility!",
+            "cultureText2": "Sharing of our story and experience brings us to international students and families; ",
+            "cultureText3": "Sharing of our culture, value, and creed brings us to our volunteers; ",
+            "cultureText4": "Respect of parents, students, and volunteers helps us understand each other; ",
+            "cultureText5": "Mutual understanding leads to the choice of creating new possibilities!",
             "distributionTitle": "Our Volunteers Distribution",
             "joinText1": "We are keeping changing and growing!",
             "joinText2": "We welcome the most dedicated and creative people to join with us, for spreading love and care to every corner of the world.",
@@ -229,20 +229,20 @@
         },
         "story": {
             "achievement": "Our Achievement",
-            "text1": "We're consistently productive and productive: <span>646</span> original articles were published.",
-            "text2": "We organized <span>90+</span> online lectures and <span>49</span> experience sharing groups for parents in 2019 based on our culture and goals.",
-            "text3": "We firmly believe that the journey of a thousand miles begins with one step. In 2019, we received <span>500</span> volunteer applications, and <span>280</span> of them were approved. Our volunteers were distributed in <span>28</span> overseas universities; Our team spanned <span>4</span> time zones: the United States, Canada, Singapore, and China; We now have more than <span>13,000</span> followers, parents account for <span>59%</span> of the total followers, net annual growth: <span>5219+</span>, followers cover all over China;",
-            "text4": "We host the IFU Carnival in China every July. From 2018 to 2019, our footprints covered in <span>Beijing, Shanghai, Tianjin, Hangzhou, Wuxi, Dalian, Hefei and so on</span>; We share overseas stories with more than <span>1,000</span> parents.",
-            "text5": "We continue to welcome contributions from international students, and the University of Washington’s parents contribute to Seattle Travel Notes, with a total of <span>31,000+</span> views.",
-            "text6": "We launched the Totoroad project in March 2019, which includes bridging courses for freshmen, academic counseling for students, and career planning. Since the opening of the course, <span>52</span> outstanding seniors and volunteers have helped <span>42</span> international students reduce academic pressures. The average grades have increased from 50 to 85, and the improvement rate is <span>97%</span>.",
-            "text7": "According to the summary and investigation of the problem of loss of contact, we found that the fundamental problem among overseas students appears above the psychology. The psychological burden caused by <span>overseas culture, learning pressure, language barriers, social fears, and even parents high expectations</span> have caused their psychological burden. Willingness to communicate with the outside world, eventually resulting in the so-called \"disconnection, disappearance\" situation.",
-            "text8": "We maintained our original intentions and reached out during the crisis. When the Wuhan epidemic broke out, we organized volunteers to raise <span>RMB 50,000</span> donations within <span>3</span> days;",
-            "text9": "IFU has also helped parents understand their children’s real learning and life abroad through more than <span>147</span> online and offline sharing activities of outstanding seniors and elder sisters; helping prepare students to go abroad, increasing the experience of students, eliminating psychological and spiritual anxiety, and also recognizing like-minded people International students to create high-quality social circles.",
-            "text10": "WECHAT group senior from UCSD, UR, USC and other schools and professional teachers share once a week since September 2018. Total amount of shares reach at <span>57</span> times.",
-            "text11": "With continuous efforts, we have not forgotten the original intention and goals of the organization. We can quickly respond to the urgent moment when parents seek help: In 2018-2019, we have helped parents deal with more than <span>30</span> child disconnections; An emergency article gets more than <span>1,000 +</span> views per article in half an hour, and a maximum total reading of <span>10,000 +</span>",
-            "text12": "IFU WeChat official account has more than <span>12,000</span> followers. We also has official accounts on social platforms such as Weibo, Zhihu, bilibili, and Instagram. In addition to that, each school set up a weekly Wechat sharing from senior students which are deeply recognized and loved by parents.",
-            "text13": "We have <span>11</span> Professor Interview Video from different colleges, which has been professor interview related to a total of <span>7</span> articles.",
-            "text14": "We continue to welcome contributions from international students, and the University of Washington’s parents contribute to Seattle Travel Notes, with a total of <span>31,000+</span> views."
+            "text1": "We always stay productive and efficient. As of March 2020, we have produced <span>646</span> high-quality original articles. ",
+            "text2": "We organized <span>49</span> sharing groups for parents, and over <span>90</span> webinars align with our social missions and culture in 2019.",
+            "text3": "We firmly believe that the journey of a thousand miles begins with one step. In 2019, IFU received a total of <span>500</span> volunteer applications. In the end, <span>280</span> volunteers at <span>28</span> different universities outside of China joined us and helped to create student organizations across all of these universities. Our staff work as a virtual team across <span>4</span> different time zones: the United States, Canada, Singapore, and China. We currently have more than <span>20,000</span> followers on social media. <span>74%</span> of the followers on WeChat are parents, with more than <span>10%</span> monthly growth. ",
+            "text4": "We host IFU students’ carnivals in July every year.  In 2018-2019, our footprint spread across China, covering cities such as <span>Beijing, Shanghai, Tianjin, Hangzhou, Wuxi, Dalian, Hefei</span>. We shared our studying abroad experiences with over <span>1000</span> parents and students throughout those sharing sessions during the time.",
+            "text5": "Contributions are always welcomed by international students and their families. A parent of a University of Washington student wrote a travel review regarding tourism in Seattle, released on our WeChat official account, and the article received a total of <span>31,000+</span> views.",
+            "text6": "We launched the Totoroad Academy in March 2019, including services such as bridge courses, academic tutoring, and career coaching for international students. Since the launch, <span>52</span> of our volunteers helped <span>42</span> international students to deal with stress caused by language barriers and academic pressure. On averages, our students have improved from F to over B+, with <span>97%</span> improvement in their performances. Not only have we helped students to achieve success in academics, but their parents will also be less concerned about their children.",
+            "text7": "According to our research on the missing student cases, we found that psychological disorders caused by <span>cultural shock, academic stress, language barrier, social phobia, and even pressures from peers and parents</span> were the main factors to this issue. Students’ psychological overburden and reluctance in communicating with others caused by those factors, ultimately lead to the case of missing and lost contact with their families.",
+            "text8": "We took initiatives and supported people in need during the COVID-19 crisis. IFU organized our volunteers and international families and managed to raise over <span>50,000 RMB</span> in three days during the early stage of the Wuhan outbreak.",
+            "text9": "We have organized more than <span>147</span> online and in-person sharing sessions to help parents learn the real insight into international students' academic and social life overseas. We also helped incoming first-year and current students to gain social experiences as well as eliminate psychological fear and anxiety by creating high-quality networks for international students to maintain long-lasting friendships with other students.",
+            "text10": "Since September in 2018, for universities such as the University of California San Diego, the University of Rochester, the University of Southern California, we had sharing webinars, on average, once per week, a total of <span>57</span> webinars by our on-campus volunteers and invited professionals.",
+            "text11": "IFU always keeps up with our goals and original intentions. We provide a prompt response to emergencies when parents seek help. Specifically, we helped over <span>30</span> missing international students' cases in 2018-2019. Emergency posts had the highest views reaching <span>10,000+</span> ,and for each post reaches <span>1,000+</span> views in half an hour.",
+            "text12": "Our volunteers in <span>California Irvine and San Diego</span> participated in local volunteer events. By collaborating with other social sectors, we helped international students to overcome language barriers, social anxiety, and smooth their transition from high schools to colleges.",
+            "text13": "In total, we have conducted <span>11</span> interviews with university professors and produced <span>7</span> related original articles.",
+            "text14": "Our WeChat official account has more than <span>13,000</span> followers, and we are on other social media platforms, including Weibo, Zhihu, Bilibili, Instagram, and Toutiao. On WeChat, We also have weekly sharing sessions in group chats for different universities that are recognized and loved by parents."
         },
         "history": {
             "2017": {
@@ -282,7 +282,7 @@
     "membership": {
         "banner": {
             "title": "IFU MEMBERSHIP",
-            "description": "Because of supporting IFU and appreciating IFU culture, through simple registration operation (no need to conduct an interview) to become our members' companions, IFU will send monthly events and share information by email. At the same time, students who hold IFU x ISIC international student card can enjoy life, travel, dining, law, and academic discounts worldwide. (For specific discounts, see the store)",
+            "description": "Supporting IFU and appreciating IFU culture, you can become our members through simple registration (no need to conduct an interview); IFU will send monthly events and share information by email. At the same time, students who hold IFU x ISIC international student card can enjoy travel, dining, law, and academic discounts worldwide in their daily lives. (For specific discounts, see the store)",
             "buttonText": "Become IFU Member For Free"
         },
         "colhalf": {
@@ -293,16 +293,16 @@
             "ifuDiscountTitle": "IFU Sample Discounts",
             "becomeVIP": "As a member of the IFU, you can enjoy up to 10% discount on all IFU services.",
             "becomeVipDesktop": "As a member of the IFU, you can enjoy up to 10% discount on all IFU services.",
-            "becomeVipContent": "The purchase of an International Student ID (ISIC x IFU co-branded card) with an exclusive IFU logo can also be used to enjoy exclusive discounts on IFUs other than ISIC's own discounts, such as GRE training exclusive discounts, Student Universe exclusive flight ticket discounts",
+            "becomeVipContent": "The purchase of an International Student ID (IFU x ISIC co-branded card) with an exclusive IFU logo can also be used to enjoy exclusive discounts on IFU’s own discounts other than ISIC's, such as exclusive discounts of GRE training, tickets of Student Universe with exclusive flight discounts.",
             "buttonText": "List Your Offer",
-            "overView1": "The IFU x ISIC joint international student card is the only international full-time student certification document recognized by UNESCO. It can enjoy more than 150,000 student discount benefits worldwide. At the same time, many discounts are exclusive benefits of the IFUxISIC card !! Card holders can enjoy discounts at over 21,000 restaurants and entertainment venues. Many international institutions also recognize ISIC x IFU joint student IDs, such as IELTS, and can enjoy a free pre-exam practice and advice.",
+            "overView1": "The IFU x ISIC co-branded card for international student is the only international full-time student certification document recognized by UNESCO. It enjoys more than 150,000 student discount worldwide. At the same time, many discounts are exclusive benefits of the IFUxISIC card!! Card holders can enjoy discounts at over 21,000 restaurants and entertainment venues. IFU x ISIC co-branded student IDs are also recognized by many internatoinal institutions, such as IELTS, and can enjoy a free pre-exam practice and advice.",
             "overView2": "",
             "overView3": "",
             "overView4": "",
             "overView5": "",
             "overView6": "",
             "overView7": "",
-            "overView8": "In addition, there is free early consultation on legal services, and 20% discount on entrusted lawyer services later; 5% off on GRE postgraduate counselling; parents of students with international student IDs automatically become IFU members, and we will provide exclusive activities for member parents, such as The free online English classes offered on Wall Street before, free to learn practical spoken English, and don’t worry about children when you go abroad.",
+            "overView8": "In addition, there is free consultation on legal services at early stage, and 20% discount on later lawyer services ; 5% off on GRE postgraduate counselling; parents of students with international student IDs automatically become IFU members, and we will provide exclusive activities for members’ parents, such as the online English classes given by Wall Street before that offers chances to learn practical spoken English for free. So don’t worry when you go abroad to visit your children!",
             "overView9": "",
             "overView10": "",
             "overView11": "",
@@ -310,18 +310,18 @@
             "becomeMemberBtnText": "Become IFU X ISIC Member"
         },
         "cardList": {
-            "imgDescription1": "50% discount on stays at hotels or private hotels nationwide",
-            "imgDescription2": "5% discount on UCSD bookstore and on-campus markets",
+            "imgDescription1": "50% discount on hotel reservation or private hotels nationwide",
+            "imgDescription2": "5% discount on UCSD bookstore and on-campus stores",
             "imgDescription3": "10% discount on sports event tickets",
-            "imgDescription4": "50% discount on stays at hotels or private hotels nationwide",
-            "imgDescription5": "5% discount on UCSD bookstore and on-campus markets",
-            "imgDescription6": "10% discount on sports event tickets",
-            "imgDescription7": "50% discount on stays at hotels or private hotels nationwide",
-            "imgDescription8": "5% discount on UCSD bookstore and on-campus markets",
-            "imgDescription9": "10% discount on sports event tickets",
-            "imgDescription10": "GRE training Exclusive discounts",
-            "imgDescription11": "Student Universe exclusive ticket discounts",
-            "imgDescription12": "Free legal consultancy services 20% discount for lawyers"
+            "imgDescription4": "25% discount on car rental",
+            "imgDescription5": "35% discount on cityPass across America",
+            "imgDescription6": "Up to 46% discount on electronic devices",
+            "imgDescription7": "Up to 40% discount on major theme parks in the U.S. such as Universal Studios, Disneyland, Six Flags, Sea World, etc.",
+            "imgDescription8": "24% discount at all American theatres",
+            "imgDescription9": "Exclusive offers at Amazon",
+            "imgDescription10": "Exclusive discounts for GRE training ",
+            "imgDescription11": "Tickets of Student Universe with exclusive discounts",
+            "imgDescription12": "Free legal consultancy services; 20% discount on lawyer services"
         },
         "tabList": {
             "regularMember": "MEMBERSHIP",
@@ -335,11 +335,11 @@
         "regularMember": {
             "bannerTitle": "Membership Benefits",
             "benefit1": "• No cost for member registration",
-            "benefit2": "• Member's Monthly Mail: Various event information",
+            "benefit2": "• Member's Monthly Mail: Information of Various events",
             "benefit3": "• Privilege to participate in activities",
             "benefit4": "• No interview required",
             "benefit5": "• No need to perform volunteer duties",
-            "benefit6": "• Open to all ages, Chinese living in all countries",
+            "benefit6": "• Open to Chinese of all ages living across the world",
             "benefit7": "• Fully open to friends who like and support IFU culture",
             "memberTitle": "Regular Member",
             "memberText": "普通学生卡普通学生卡普通学生卡普通学生卡",
@@ -427,14 +427,14 @@
         "banner": {
             "title": "IFU TOTOROAD ACADEMY",
             "description": "Totoroad Academy is an education project established by IFU to help international students, especially upcoming freshmen, to better transit academically from their previous study lives in high schools to the distinct, brand-new study lives in universities and colleges faraway from home.",
-            "buttonText": "course schedule"
+            "buttonText": "Course Schedule"
         },
         "totoro": {
-            "title": "What Is IFU Totoroad Project?",
-            "text": "The name “Totoroad” comes from a classic Japanese anime My Neighbor Totoro (1988) by Hayao Miyazaki. In the anime, while being invisible for most of the time, Totoro came out to support people as long as they need helps. We adopt his name but with a different character (we use 多多罗 instead of the official translation 多多洛) to imply the meaning of “Compass” (罗means compass in Chinese): like Tororo, we help the international students in need; like a compass, we direct these students and their family toward academic success.",
+            "title": "What Is IFU Totoroad Academy?",
+            "text": "The name “Totoroad” comes from a classic Japanese anime My Neighbor Totoro (1988) by Hayao Miyazaki. In the anime, while being invisible for most of the time, Totoro came out to help people when they need helps. We adopt his name but with a different character (we use 多多罗 instead of the official translation 多多洛) to imply the meaning of “Compass” (means compass in Chinese): like Tororo, we help the international students in need; like a compass, we direct these students and their family toward academic success.",
             "courseList": {
                 "title1": "TOTOROAD BRIDGING COURSES",
-                "text1": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Totoroad Academy assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future. We would like ourselves to become Totoro in the anime: always backing international students and their family in need.",
+                "text1": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Totoroad Academy assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future.\n\nWe would like ourselves to become Totoro in the anime: always backing international students and their family in need.",
                 "title2": "TOTOROAD SYNCHRONOUS TUTORING",
                 "text2": "In order to help students currently studying in universities to consolidate what they have learned and to get better grades, we also offer Totoroad synchronous tutoring. Mentors with GPA at 4.0 in the corresponding course or Master/ Phd students would come to you in a one-to-one class to help you study better. Courses are personally designed according to individuals’ needs to best fit into the path and weakness of the mentee. Mentors would help students review the knowledge, analyze the difficult part or preview as preparations leading to a better overall understanding and academic success. Right now, the subjects offered include but are not limited to Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics."
             }
@@ -481,7 +481,7 @@
             "text2": "Totoroad bridging courses encompass subjects of Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics. Except Computer Science, which teaches basic programing language Java, all the other courses offer two different levels – basic level and upper level: the basic level courses target students without rudimentary understanding of the subject, specifically without AP/IB score, and will teach the basic knowledge of the subject; the upper level course target students with AP/IB scores and will teach subsequent college knowledge, relatively hard, in the subject, which all the student with related major would learn in the future.",
             "text3": "All the bridging courses would be offered by carefully picked upper-class mentors, including Master students and Phd students. All these mentors are verified with a GPA of 4.0 in the corresponding courses and comes from Top 50 university/college in the world/America. Two kinds of class size can be selected: 4-6 student class and one-to-one class.",
             "text4": " With the sophisticated experience and knowledge, agreeable communication abilities and responsible attitudes, starting from this summer, not only can we bring you accommodating mentors but also the great academic advantage entering the college.",
-            "oneToone": "1 On 1 Class",
+            "oneToone": "1-to-1 Class",
             "smallGroup": "4-6 People Class",
             "buttonText": "Enroll"
         },
@@ -497,7 +497,7 @@
             "text8": "Right now, the subjects offered include but are not limited to Math-Calculus, Physics, Chemistry, Computer Science-Java, Microeconomics, Macroeconomics.",
             "text9": "",
             "oneToOne": "1 On 1 Class",
-            "oneToOnePhd": "Phd 1 On 1",
+            "oneToOnePhd": "Consolidate foundation",
             "text12": "Increase Difficulty",
             "text13": "Deep understanding",
             "text14": "Contact IFU Wechat Assistant for \n\nconsulting or signing up",
@@ -617,7 +617,7 @@
     "contact": {
         "banner": {
             "title": "CONTACT US",
-            "description": "When the stars come together, they can be bright than the Sun. Thank you for your stay for even a moment, as well as your love for us. IFU could hardly grow without your company and support. We invite you to support the operation of IFU nonprofit organization and work together to build bridges between families whose children are studying abroad. Regardless of the amount, IFU sincerely thanks you for your confidence in us!"
+            "description": "When the stars come together, they can be brighter than the Sun. Thank you for your stay for even a moment, as well as your love for us. IFU could hardly grow without your company and support. We invite you to support the operation of IFU nonprofit organization and work together to build bridges between families whose children are studying abroad. Regardless of the amount, IFU sincerely thanks you for your confidence in us!"
         },
         "emergency": {
             "title": "EMERGENCY CONTACT",
@@ -644,7 +644,7 @@
     "donation": {
         "banner": {
             "title": "CHARITY DONATION",
-            "description": "“We invite you to support our operation of IFU nonprofit organization and work together to build bridges between families who children are studying abroad. Regardless of the amount of your donation, IFU sincerely thanks you for your trust!”",
+            "description": "“We invite you to support our operation of IFU nonprofit organization and work together to build bridges between families whose children are studying abroad. Regardless of the amount of your donation, IFU sincerely thanks you for your trust!”",
             "buttonText": "Our Story"
         },
         "support": {
@@ -667,39 +667,30 @@
     },
     "other": {
         "otherService": {
-            "otherService1": "Since 2019, the IFU has cooperated with Hoolilaw, an overseas legal service platform, to launch the ",
-            "otherService2": "365 study abroad family protection program ",
-            "otherService3": "and hold a weekly free legal lecture. With just ",
-            "otherService4": "$1",
-            "otherService5": " a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
-            "otherService6": "At the same time, ",
-            "otherService7": "Tuoyan education",
-            "otherService8": ", recommended by IFU, specializes in american-based ",
-            "otherService9": "GRE",
-            "otherService10": " in Shanghai, providing high-quality professional training courses for students in the United States. Adhering to the concept of \"you are responsible and serious, we are responsible for letting you win\" , 63 percent of students with 320 or more points in the 2018 exam scored 325 or more in the first exam, 20 percent scored 330 or more in the first exam, and ",
-            "otherService11": "the highest score was 338.",
-            "otherService12": "** Please scan the Qr Code in the bottom right corner of the page to add the assistant information for more information. "
+            "otherService1": "Since 2019, the IFU has cooperated with Hoolilaw, an overseas legal service platform, to launch the <b>\"365 Study Abroad Family Protection Program\"</b> and hold a free weekly lecture of law. With just <b>$1</b> a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
+            "otherService2": "At the same time, Tuoyan education, recommended by IFU, specializes in american-based GRE in Shanghai by providing high-quality professional training courses for students in the United States. Adhering to the concept of \"we are responsible and serious, we are responsible for letting you win\", among all the students who scored 320 or higher in the 2018 exam, 63 percent of them scored scored 325 or higher in their first exam, and 20 percent scored 330 or higher in their first exam, with the highest score of 338.",
+            "otherService3": "<b>** Please scan the QR Code in the bottom right corner of the page to add the assistant for more information.</b>"
         },
         "legalService": {
             "legalTitle": "Legal Services",
-            "legal1": "Since 2019, the IFU has joined forces with",
+            "legal1": "Since 2019, the IFU has cooperated with",
             "legal2": " Hoolilaw, an overseas legal service platform",
-            "legal3": ", to launch the \"365 study abroad family protection program\" and hold a weekly free legal lecture. For just $1 a day, plan 365 offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
-            "legal4": "The NYIS LAWFIRM, founded in 1979, began to focus on legal advice for international students in 2013, covering more than ",
+            "legal3": ", to launch the \"365 Study Abroad Family Protection Program\" and hold a free weekly lecture of law. With just $1 a day, the program offers the services of a professional lawyer who can help you solve legal problems in your daily life!",
+            "legal4": "The NYIS LAWFIRM, founded in 1979, began to focus on legal advice for international students in 2013, covering more than",
             "legal5": "200,000 consultations",
-            "legal6": " in the US. Over the past two years, more than 65,000 legal advisory services have been completed. This includes visa related legal services, campus disputes, real estate disputes, traffic accidents, criminal cases, civil disputes, and other legal related cases. The Hoolilaw legal protection program covers four services: Regulatory Training, Legal Aid, personal security, and employment protection. In case of an emergency, ",
+            "legal6": "  in the US. Over the past two years, more than 65,000 legal advisory services have been completed. This includes visa related legal services, campus disputes, real estate disputes, traffic accidents, criminal cases, civil disputes, etc. The Hoolilaw legal protection program covers four services: Regulatory Training, Legal Aid, personal security, and employment protection. In case of an emergency, ",
             "legal7": "the 365 Study Abroad Family Protection Program",
-            "legal8": " matches the child's assigned lawyer to help the child deal with the emergency on behalf of the parents. On average, for $1 a day, you can get counseling from a senior attorney.",
+            "legal8": " matches the child's assigned lawyer to help the child deal with the emergency on behalf of the parents. On average, with $1 a day, you can have counseling service from a senior attorney.",
             "legalLearnMoreBtn": "Learn More"
         },
         "greTraining": {
             "trainingTitle": "Graduate Entrance Training",
-            "training1": " Shanghai Tuoyan Education",
-            "training2": "As the leading GRE training institution in the United States, is committed to providing",
+            "training1": "As the leading GRE training institution in the United States, Shanghai Tuoyan Education",
+            "training2": " is committed to providing",
             "training3": " high-quality and professional GRE courses ",
-            "training4": "for students studying in the United States. Excellent teachers and an attitude of refinement have enabled Tuoyan to cultivate a group of students who are satisfied with their scores.",
-            "training5": " 'Tuoyan's teacher is the most responsible GRE teacher I have ever encountered.",
-            "training6": " If you have any questions, I can respond quickly if we ask on WeChat. Thank you very much! Let me no longer worry about insufficient grades and no graduate Colleges can go! 'Said IFU senior sister. Thank you, Mr. Tuo Yan, for your full support during the education of IFU Charity Program. Thank you for growing up with IFU!",
+            "training4": "for students studying in the United States. Excellent teachers and a spirit of continuous improvement have enabled Tuoyan to cultivate a group of students who earn scores that are satisfying to themselves. '",
+            "training5": "Tuoyan's teachers are the most responsible GRE teachers I have ever encountered.",
+            "training6": "  If I have any questions, I will be responded immediately if I ask on WeChat. Thank you for letting me worry no more about my grades and the possibility of not being accepted into any graduate Colleges! 'said IFU students. Thank you, Mr. Tuo Yan, for your full support during the education of IFU Charity Program. Thank you for growing up with IFU!",
             "learnMoreBtn": "Learn More"
         }
     }

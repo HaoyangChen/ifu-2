@@ -2,25 +2,9 @@
     <div>
         <div class="row">
             <div class="text-container left">
-                <p>
-                    {{ $t('other.otherService.otherService1')
-                    }}<b>{{ $t('other.otherService.otherService2') }}</b
-                    >{{ $t('other.otherService.otherService3')
-                    }}<b>{{ $t('other.otherService.otherService4') }}</b
-                    >{{ $t('other.otherService.otherService5') }}
-                </p>
-                <p>
-                    {{ $t('other.otherService.otherService6')
-                    }}<b>{{ $t('other.otherService.otherService7') }}</b
-                    >{{ $t('other.otherService.otherService8')
-                    }}<b>{{ $t('other.otherService.otherService9') }}</b
-                    >{{ $t('other.otherService.otherService10')
-                    }}<b> {{ $t('other.otherService.otherService11') }}</b
-                    >。
-                </p>
-                <p>
-                    {{ $t('other.otherService.otherService12') }}
-                </p>
+                <p v-html="$t('other.otherService.otherService1')" />
+                <p v-html="$t('other.otherService.otherService2')" />
+                <p v-html="$t('other.otherService.otherService3')" />
             </div>
             <div class="img-container desktop">
                 <img :src="section1Image" />
