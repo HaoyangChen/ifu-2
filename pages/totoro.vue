@@ -20,7 +20,7 @@
                 <TotoroProfile
                     v-for="(staff, index) in staffList"
                     :key="index"
-                    class="profole-list"
+                    class="profile-list"
                     :staff="staff"
                     :image="staff.image"
                     :title="staff.title"
@@ -28,7 +28,7 @@
             </div>
         </section>
         <div class="img">
-            <img :src="totoroImage" alt="" />
+            <img src="@/assets/totoro/totoro.png" alt="" />
             <div class="text">
                 <p>{{ $t('totoro.tutors.joinTutor') }}</p>
                 <Button
@@ -45,9 +45,17 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Carousel from '@/components/Carousel.vue';
+import Button from '@/components/Button.vue';
+import Tab from '@/components/Tab.vue';
 import TotoroProfile from '@/components/TotoroProfile.vue';
+
+import Academic from '@/tabs/totoro/Academic.vue';
+import Cohesion from '@/tabs/totoro/Cohesion.vue';
+
 import bannerImage from '@/assets/totoro/banner.png';
 import carouselImage from '@/assets/totoro/carousel.png';
+import icon1Image from '@/assets/totoro/icon1.png';
+import icon2Image from '@/assets/totoro/icon2.png';
 
 import liuchenshuImage from '@/assets/totoro/mentor/liuchenshu.png';
 import zhangtianluImage from '@/assets/totoro/mentor/zhangtianlu.png';
@@ -65,15 +73,6 @@ import houkaiwenImage from '@/assets/totoro/mentor/houkaiwen.png';
 import jiangjiaruiImage from '@/assets/totoro/mentor/jiangjiarui.png';
 import yinluwaImage from '@/assets/totoro/mentor/yinluwa.png';
 
-import totoroImage from '@/assets/totoro/totoro.png';
-import Tab from '@/components/Tab.vue';
-import Academic from '@/tabs/totoro/Academic.vue';
-import Cohesion from '@/tabs/totoro/Cohesion.vue';
-import Button from '@/components/Button.vue';
-
-import icon1Image from '@/assets/totoro/icon1.png';
-import icon2Image from '@/assets/totoro/icon2.png';
-
 export default {
     name: 'Totoro',
     components: {
@@ -86,7 +85,6 @@ export default {
     data() {
         return {
             bannerImage,
-            totoroImage,
             staffList: [
                 {
                     image: houkaiwenImage,
@@ -291,7 +289,7 @@ export default {
     justify-content: space-between;
 }
 p {
-    font-size: 16px;
+    font-size: $text-size;
     line-height: 31px;
     letter-spacing: 0.02em;
 }
@@ -299,13 +297,13 @@ p {
     flex-basis: 30%;
 }
 
-.profole-list {
+.profile-list {
     padding: 15px 0 0 0;
 }
 
 .img {
     position: relative;
-    border: 3px solid #34bbc9;
+    border: 3px solid $teal;
     box-shadow: 0px 5px 15px rgba(52, 187, 201, 0.25);
     border-radius: 0px 0px 40px 40px;
     width: 642px;
@@ -336,7 +334,7 @@ p {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .profile {
         flex-basis: 100%;
     }
@@ -354,14 +352,14 @@ p {
         font-size: 14px;
     }
     section:last-child {
-        .profole-list {
+        .profile-list {
             text-align: left;
         }
     }
     .img {
         border: none;
         box-shadow: none;
-        border-top: 3px solid #34bbc9;
+        border-top: 3px solid $teal;
         height: auto;
         width: 100%;
         .text {

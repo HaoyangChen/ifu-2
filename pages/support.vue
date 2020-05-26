@@ -101,14 +101,21 @@ export default {
 .row {
     display: flex;
     justify-content: space-between;
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .support-section {
-    background-color: #f1f9ff;
-    p {
+    background-color: $background-light-blue;
+
+    > p {
         line-height: 31px;
         width: 70%;
     }
+
     .images-row {
         width: 100%;
         display: flex;
@@ -145,11 +152,6 @@ section > div:first-of-type {
     margin: 33px 50px 0 0;
 }
 
-.row img {
-    width: 250px;
-    height: 250px;
-}
-
 @media (max-width: 1300px) {
     // Change flex items
     .support-section .images-row .image-item {
@@ -161,21 +163,17 @@ section > div:first-of-type {
         margin: 33px 15% 0 0;
     }
 
-    .row img {
-        width: 150px;
-        height: 150px;
+    .row {
+        img {
+            width: 150px;
+            height: 150px;
+        }
     }
 }
 
-@media (max-width: 1024px) {
-    img {
-        margin: 15px 0;
-        width: 200px;
-        height: 200px;
-    }
-
+@media (max-width: $mobile-max-width) {
     .support-section {
-        p {
+        > p {
             width: 100%;
         }
 
@@ -208,6 +206,12 @@ section > div:first-of-type {
         &.bottom-divide {
             margin-bottom: 35px;
         }
+    }
+
+    img {
+        margin: 15px 0;
+        width: 200px;
+        height: 200px;
     }
 
     .row {

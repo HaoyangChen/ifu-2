@@ -243,7 +243,7 @@ export default {
 
 .col-half > p {
     width: 80%;
-    font-size: 16px;
+    font-size: $text-size;
     line-height: 31px;
     letter-spacing: 0.02em;
 }
@@ -254,7 +254,7 @@ export default {
 }
 
 .ifu-discount-banner {
-    background-color: #f1f9ff;
+    background-color: $background-light-blue;
 }
 
 .display-mobile {
@@ -267,10 +267,10 @@ export default {
 
 #more-discount {
     text-decoration: none;
-    color: #22a5d8;
+    color: $button-color;
 
     &:hover {
-        color: #f96291;
+        color: $dark-pink;
     }
 }
 
@@ -278,7 +278,7 @@ export default {
     padding: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     #waveimg {
         width: 100%;
     }

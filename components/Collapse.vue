@@ -84,7 +84,7 @@ export default {
     padding-top: 100px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .collapse {
         min-height: 85px;
     }

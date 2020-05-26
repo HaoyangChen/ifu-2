@@ -120,7 +120,7 @@ export default {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    line-height: 40px;
+    line-height: $h1-size;
     white-space: pre-line;
     text-align: center;
     font-size: 28px;

@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/style/var.scss';
-
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,20 +27,21 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
-    color: #202020;
-    font-size: 16px;
+    color: $text-color;
+    font-size: $text-size;
     word-spacing: 0.02rem;
 }
 
 body {
-    max-width: 1440px;
+    max-width: $page-max-width;
     margin: auto;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: inherit; // 默认所有 DOM 为 border-box
+    // 避免被边框影响设置好的长宽
 }
 
 #app {
@@ -54,12 +53,12 @@ section {
     padding: $padding-vertical $padding-horizontal;
 
     h1 {
-        font-size: 40px;
+        font-size: $h1-size;
         font-weight: normal;
     }
 
     h2 {
-        font-size: 23px;
+        font-size: $h2-size;
         font-weight: normal;
     }
 }
@@ -73,7 +72,7 @@ section {
     display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     html {
         font-size: 14px;
     }
@@ -90,7 +89,7 @@ section {
         padding: 15px 30px;
 
         > h2 {
-            font-size: 23px;
+            font-size: $h2-size;
         }
     }
 }

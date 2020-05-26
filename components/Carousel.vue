@@ -126,7 +126,7 @@ export default {
 
     p {
         margin: 10px 0 0 0;
-        font-size: 16px;
+        font-size: $text-size;
         line-height: 31px;
         letter-spacing: 0.02em;
     }
@@ -178,7 +178,7 @@ export default {
 .line {
     display: inline-block;
     height: 110px;
-    border: 2px solid #fe4c31;
+    border: 2px solid $red;
     position: absolute;
     top: 25px;
     left: -20px;
@@ -188,7 +188,7 @@ export default {
     position: relative;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .list {
         display: none;
     }

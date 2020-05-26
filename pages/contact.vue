@@ -14,8 +14,8 @@
 import Banner from '../components/Banner.vue';
 import Tab from '../components/Tab.vue';
 import bannerImage from '../assets/contact/banner.png';
-import emergency from '../tabs/contact/emergency.vue';
-import other from '../tabs/contact/other.vue';
+import Emergency from '../tabs/contact/emergency.vue';
+import Other from '../tabs/contact/other.vue';
 
 export default {
     name: 'Contact',
@@ -33,13 +33,13 @@ export default {
             return [
                 {
                     title: this.$t('contact.emergency.title'),
-                    content: emergency,
+                    content: Emergency,
                     color: '#7ECAC6',
                     defaultShow: true,
                 },
                 {
                     title: this.$t('contact.other.title'),
-                    content: other,
+                    content: Other,
                     color: '#EB5848',
                 },
             ];

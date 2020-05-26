@@ -110,8 +110,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/var.scss';
-
 .culture-section {
     position: relative;
 
@@ -172,14 +170,14 @@ export default {
     .tips-text {
         width: 116px;
         height: 70px;
-        border: 2px solid #c9d74a;
-        color: #c9d74a;
+        border: 2px solid $green;
+        color: $green;
     }
 
     .tips-line {
         width: 2px;
         height: 110px;
-        background: #c9d74a;
+        background: $green;
         left: 58px;
     }
 }
@@ -191,14 +189,14 @@ export default {
     .tips-text {
         width: 144px;
         height: 41px;
-        border: 2px solid #f96291;
-        color: #f96291;
+        border: 2px solid $dark-pink;
+        color: $dark-pink;
     }
 
     .tips-line {
         width: 2px;
         height: 113px;
-        background: #f96291;
+        background: $dark-pink;
         left: 72px;
     }
 }
@@ -210,14 +208,14 @@ export default {
     .tips-text {
         width: 171px;
         height: 227px;
-        border: 2px solid #34bbc9;
-        color: #34bbc9;
+        border: 2px solid $teal;
+        color: $teal;
     }
 
     .tips-line {
         width: 34px;
         height: 2px;
-        background: #34bbc9;
+        background: $teal;
         top: 28px;
         left: 170px;
     }
@@ -230,14 +228,14 @@ export default {
     .tips-text {
         width: 183px;
         height: 255px;
-        border: 2px solid #34bbc9;
-        color: #34bbc9;
+        border: 2px solid $teal;
+        color: $teal;
     }
 
     .tips-line {
         width: 31px;
         height: 2px;
-        background: #34bbc9;
+        background: $teal;
         top: 28px;
         left: -30px;
     }
@@ -250,14 +248,14 @@ export default {
     .tips-text {
         width: 121px;
         height: 41px;
-        border: 2px solid #fda63b;
-        color: #fda63b;
+        border: 2px solid $orange;
+        color: $orange;
     }
 
     .tips-line {
         width: 2px;
         height: 98px;
-        background: #fda63b;
+        background: $orange;
         top: -96px;
         left: 59px;
     }
@@ -272,7 +270,7 @@ export default {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: $page-max-width) {
     .distribution-image {
         width: 764px;
     }
@@ -324,7 +322,7 @@ export default {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .culture-section p {
         width: 100%;
     }

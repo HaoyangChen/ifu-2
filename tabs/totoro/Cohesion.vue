@@ -23,7 +23,7 @@
                 <div class="col-half ">
                     <div class="cohesion-image">
                         <img
-                            :src="cohesionImage"
+                            src="@/assets/totoro/cohesion.png"
                             alt="image in cohesion section"
                         />
                     </div>
@@ -61,7 +61,7 @@
                 <div class="col-half ">
                     <div class="cohesion-image3">
                         <img
-                            :src="cohesionImage3"
+                            src="@/assets/totoro/cohesion-section-3.png"
                             alt="image in cohesion section"
                         />
                     </div>
@@ -90,13 +90,19 @@
                 </section>
                 <div class="col-half col-half-half col-flex">
                     <div class="icon-register half-to-half icon-one-to-one">
-                        <img :src="onetooneImage" alt="one to one image" />
+                        <img
+                            src="@/assets/totoro/onetoone.png"
+                            alt="one to one image"
+                        />
                         <span>{{ $t('totoro.cohesion.oneToone') }}</span>
                     </div>
                     <div
                         class="icon-register half-to-half group-top icon-one-to-more"
                     >
-                        <img :src="smallGroupImage" alt="one to one image" />
+                        <img
+                            src="@/assets/totoro/small-group.png"
+                            alt="one to one image"
+                        />
                         <span>{{ $t('totoro.cohesion.smallGroup') }}</span>
                     </div>
                 </div>
@@ -106,25 +112,17 @@
 </template>
 
 <script>
-import cohesionImage from '@/assets/totoro/cohesion.png';
-import onetooneImage from '@/assets/totoro/onetoone.png';
-import smallGroupImage from '@/assets/totoro/small-group.png';
 import cohesionDiagramImage from '@/assets/totoro/cohesion-diagram.png';
 import cohesionDiagramImageEn from '@/assets/totoro/cohesion-diagram-en.png';
-import cohesionImage3 from '@/assets/totoro/cohesion-section-3.png';
 
 export default {
     name: 'Cohesion',
     data() {
         return {
-            cohesionImage,
-            onetooneImage,
-            smallGroupImage,
             cohesionDiagram: {
                 zh: cohesionDiagramImage,
                 en: cohesionDiagramImageEn,
             },
-            cohesionImage3,
         };
     },
 };
@@ -182,13 +180,13 @@ export default {
 }
 
 .col-half > p {
-    font-size: 16px;
+    font-size: $text-size;
     line-height: 31px;
     letter-spacing: 0.02em;
 }
 
 .cohesion-section {
-    border-bottom: 6px solid #c9d74a;
+    border-bottom: 6px solid $green;
     padding: 0 0 0 0 !important;
 }
 
@@ -212,27 +210,27 @@ export default {
 }
 
 .blue {
-    background: #34bbc9;
+    background: $teal;
 }
 
 .green {
-    background: #c9d74a;
+    background: $green;
 }
 
 .purple {
-    background: #cc8abd;
+    background: $purple;
 }
 
 .orange {
-    background: #fda63b;
+    background: $orange;
 }
 
 .blue-light {
-    background: #54bef5;
+    background: $dark-blue;
 }
 
 .pink {
-    background: #f96191;
+    background: $dark-pink;
 }
 
 .middle-margin {
@@ -247,7 +245,7 @@ export default {
 }
 
 .light-blue-row {
-    background: #f1f9ff;
+    background: $background-light-blue;
 }
 
 .icon-register {
@@ -294,15 +292,15 @@ export default {
 }
 
 .follow-us {
-    background: #f1f9ff;
+    background: $background-light-blue;
 
     section {
         height: 100%;
-        background: #f1f9ff;
+        background: $background-light-blue;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .row {
         flex-direction: column;
         margin: 0;

@@ -7,7 +7,7 @@
                 <p v-html="$t('other.otherService.otherService3')" />
             </div>
             <div class="img-container desktop">
-                <img :src="section1Image" />
+                <img src="@/assets/more/other/section1.png" />
             </div>
         </div>
         <div class="row">
@@ -23,12 +23,12 @@
                 >
             </div>
             <div class="desktop">
-                <img :src="section2Image" />
+                <img src="@/assets/more/other/section2.png" />
             </div>
         </div>
         <div class="row">
             <div class="desktop">
-                <img :src="section3Image" />
+                <img src="@/assets/more/other/section3.png" />
             </div>
             <div class="text-container right">
                 <h2>{{ $t('other.greTraining.trainingTitle') }}</h2>
@@ -45,27 +45,15 @@
 
 <script>
 import Button from '@/components/Button.vue';
-import section1Image from '@/assets/more/other/section1.png';
-import section2Image from '@/assets/more/other/section2.png';
-import section3Image from '@/assets/more/other/section3.png';
 
 export default {
     components: {
         Button,
     },
-    data() {
-        return {
-            section1Image,
-            section2Image,
-            section3Image,
-        };
-    },
 };
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/var.scss';
-
 .row {
     display: flex;
 
@@ -110,7 +98,7 @@ img {
     margin-top: 12%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .row > div {
         flex-basis: 100%;
     }

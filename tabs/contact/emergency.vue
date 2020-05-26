@@ -2,7 +2,7 @@
     <div class="emergency-contact">
         <section>
             <div class="image-container">
-                <img :src="emergencyImage" />
+                <img src="@/assets/contact/emergency.png" />
             </div>
             <h2>{{ $t('contact.emergency.contact') }}</h2>
             <p v-html="$t('contact.emergency.p1')" />
@@ -15,17 +15,11 @@
 </template>
 
 <script>
-import Button from '../../components/Button.vue';
-import emergencyImage from '../../assets/contact/emergency.png';
+import Button from '@/components/Button.vue';
 
 export default {
     components: {
         Button,
-    },
-    data() {
-        return {
-            emergencyImage,
-        };
     },
 };
 </script>
@@ -55,7 +49,7 @@ export default {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .emergency-contact {
         p {
             width: 100%;

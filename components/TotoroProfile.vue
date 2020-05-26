@@ -70,14 +70,14 @@ strong {
     font-weight: 600;
 }
 span {
-    font-size: 23px;
+    font-size: $h2-size;
     font-weight: 600;
 }
 .text {
     padding: 15px 0 15px 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .profile {
         flex-basis: 100%;
     }

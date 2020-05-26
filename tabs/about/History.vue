@@ -3,11 +3,14 @@
         <div class="blue-background" />
         <div class="timeline-container">
             <div class="time-2018-background mobile" />
-            <img class="time-background desktop" :src="timelineImage" />
+            <img
+                class="time-background desktop"
+                src="@/assets/about/history/timeline.png"
+            />
             <div class="time-background-container">
                 <img
                     class="time-background mobile"
-                    :src="timelineImageMobile"
+                    src="@/assets/about/history/timeline-mobile.jpg"
                 />
             </div>
             <section class="time-2017">
@@ -80,21 +83,6 @@
     </div>
 </template>
 
-<script>
-import timelineImage from '@/assets/about/history/timeline.png';
-import timelineImageMobile from '@/assets/about/history/timeline-mobile.jpg';
-
-export default {
-    name: 'History',
-    data() {
-        return {
-            timelineImage,
-            timelineImageMobile,
-        };
-    },
-};
-</script>
-
 <style lang="scss" scoped>
 section {
     padding: 0;
@@ -125,11 +113,11 @@ section {
 
     .time {
         width: 122px;
-        height: 40px;
+        height: $h1-size;
         border-radius: 10px;
         color: white;
         text-align: center;
-        line-height: 40px;
+        line-height: $h1-size;
     }
 
     .text {
@@ -149,7 +137,7 @@ section {
     height: 662px;
 
     .time {
-        background: #c9d74a;
+        background: $green;
     }
 
     .time-item:nth-child(1) {
@@ -176,7 +164,7 @@ section {
     height: 1119px;
 
     .time {
-        background: #34bbc9;
+        background: $teal;
     }
 
     .time-item:nth-child(1) {
@@ -242,7 +230,7 @@ section {
 
     .time-item {
         .time {
-            background: #f96291;
+            background: $dark-pink;
         }
 
         .text {
@@ -271,7 +259,7 @@ section {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: $page-max-width) {
     .timeline-container {
         width: 1180px;
         height: 2200px;
@@ -310,7 +298,7 @@ section {
         height: 917px;
         position: absolute;
         top: 542px;
-        background: #f1f9ff;
+        background: $background-light-blue;
         z-index: -1;
     }
 
@@ -397,7 +385,7 @@ section {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .blue-background {
         display: none;
     }

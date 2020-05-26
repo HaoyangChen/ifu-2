@@ -32,24 +32,24 @@ export default {
 button {
     // width: 185px;
     height: 50px;
-    background-color: #22a5d8;
+    background-color: $button-color;
     box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
     border: none;
     border-radius: 30px;
     color: white;
-    font-size: 16px;
+    font-size: $text-size;
     padding: 0 45px;
 }
 
 button:hover {
     cursor: pointer;
     background-color: white;
-    color: #22a5d8;
-    border: 1px solid #22a5d8;
+    color: $button-color;
+    border: 1px solid $button-color;
     box-shadow: 0px 10px 15px white;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     button {
         font-size: 14px;
         // width: 140px;

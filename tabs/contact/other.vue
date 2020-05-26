@@ -2,7 +2,7 @@
     <div class="contact-other">
         <section>
             <div class="desktop">
-                <img :src="shapesImage" />
+                <img src="@/assets/contact/shapes.png" />
             </div>
             <div>
                 <p>
@@ -24,24 +24,10 @@
             </div>
         </section>
         <div class="image-container">
-            <img :src="otherImage" />
+            <img src="@/assets/contact/other.png" />
         </div>
     </div>
 </template>
-
-<script>
-import shapesImage from '../../assets/contact/shapes.png';
-import otherImage from '../../assets/contact/other.png';
-
-export default {
-    data() {
-        return {
-            shapesImage,
-            otherImage,
-        };
-    },
-};
-</script>
 
 <style lang="scss" scoped>
 .contact-other {
@@ -49,7 +35,6 @@ export default {
 
     section {
         > div {
-            display: inline-block;
             width: 50%;
             float: left;
         }
@@ -70,15 +55,15 @@ export default {
     }
 
     a {
-        color: #22a5d8;
+        color: $button-color;
 
         &:hover {
-            color: #f96291;
+            color: $dark-pink;
         }
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .contact-other {
         position: relative;
 
@@ -86,7 +71,6 @@ export default {
             margin: 50px 0;
 
             > div {
-                display: block;
                 width: 100%;
             }
         }

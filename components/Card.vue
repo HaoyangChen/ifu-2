@@ -50,9 +50,9 @@ export default {
         position: relative;
         width: 90%;
         text-align: center;
-        color: #202020;
+        color: $text-color;
         margin-top: 5%;
-        font-size: 16px;
+        font-size: $text-size;
         line-height: 31px;
         height: 50%;
     }

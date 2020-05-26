@@ -366,43 +366,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/var.scss';
-
-/deep/ .banner .subtitle-text {
-    margin-bottom: 0px;
-}
-
-/deep/ .banner .title-text {
-    margin-top: 0px;
-}
-
-.event-left:hover {
-    background: #000;
-    img {
-        opacity: 0.5;
+/deep/ .banner {
+    // 缩短 Banner 两行标题间的距离
+    .subtitle-text {
+        margin-bottom: 0px;
     }
-    #arrow2 {
-        opacity: 1;
-        position: absolute;
-        top: 37%;
-        left: 40%;
-        height: auto;
-        min-width: auto;
-        display: flex;
-    }
-}
 
-#arrow2 {
-    display: none;
+    .title-text {
+        margin-top: 0px;
+    }
 }
 
 .wuhan-coronavirus {
-    background: #f1f9ff;
+    background: $background-light-blue;
     display: flex;
 
     h1 {
-        font-size: 40px;
-        font-weight: 400;
+        font-size: $h1-size;
+        font-weight: normal;
     }
 
     h2 {
@@ -419,7 +400,7 @@ export default {
     .wuhan-description {
         padding: 0 0 0 18px;
         margin: 35px 0;
-        border-left: 5px solid #fe4c31;
+        border-left: 5px solid $red;
         border-radius: 4px;
         position: relative;
         left: -18px;
@@ -433,7 +414,7 @@ export default {
 .container p {
     font-family: PingFang SC;
     line-height: 31px;
-    font-size: 16px;
+    font-size: $text-size;
     letter-spacing: 0.02em;
     margin: 0;
 }
@@ -450,30 +431,7 @@ export default {
         font-weight: 400;
     }
 }
-.profile-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.profile-item {
-    flex-basis: 30%;
-    margin-bottom: 48px;
-}
-
-.event-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.event-item {
-    flex-basis: 31%; // 强制三个一排
-    height: 186px;
-    margin-bottom: 30px;
-    margin: 5px;
-    font-size: 14px;
-}
 .event-left {
     display: inline-block;
     vertical-align: top;
@@ -488,12 +446,62 @@ export default {
     img {
         min-width: 100%;
     }
+
+    #arrow2 {
+        display: none;
+    }
+
+    &:hover {
+        background: #000;
+        img {
+            opacity: 0.5;
+        }
+        #arrow2 {
+            opacity: 1;
+            position: absolute;
+            top: 37%;
+            left: 40%;
+            height: auto;
+            min-width: auto;
+            display: flex;
+        }
+    }
 }
+
 .event-right {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
     width: 75%;
+
+    .event-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .event-item {
+            flex-basis: 31%; // 强制三个一排
+            height: 186px;
+            margin-bottom: 30px;
+            margin: 5px;
+            font-size: 14px;
+        }
+    }
+}
+
+.event-text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(78, 189, 247, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
 }
 
 .more-events {
@@ -501,11 +509,11 @@ export default {
     margin-top: 30px;
 
     a {
-        color: #22a5d8;
+        color: $button-color;
         text-decoration: none;
 
         &:hover {
-            color: #f96291;
+            color: $dark-pink;
         }
     }
 }
@@ -566,7 +574,7 @@ img {
     }
     p {
         margin: 0;
-        font-size: 16px;
+        font-size: $text-size;
         line-height: 31px;
         letter-spacing: 0.02em;
     }
@@ -587,20 +595,6 @@ img {
     div {
         padding: 20px 0;
     }
-}
-.event-text {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0px;
-    background-color: rgba(78, 189, 247, 0.9);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
 }
 
 .about-us-section {
@@ -644,38 +638,15 @@ img {
 }
 
 .background-blue {
-    background-color: #f1f9ff;
+    background-color: $background-light-blue;
 }
 
-@media (max-width: 1024px) {
-    .about-us-section {
-        .half-style {
-            flex-direction: column;
-        }
-
-        .col-half {
-            max-width: 100%;
-        }
-
-        .qr-image > img {
-            width: 100%;
-            height: 90%;
-        }
-
-        .student-group-image {
-            flex-direction: column;
-
-            .qr-image {
-                margin: 10px;
-            }
-        }
-    }
-
+@media (max-width: $mobile-max-width) {
     .wuhan-coronavirus {
         flex-direction: column;
 
         h1 {
-            font-size: 23px;
+            font-size: $h2-size;
             font-weight: 600;
             margin: 0;
         }
@@ -687,8 +658,8 @@ img {
         section {
             flex-basis: 100%;
             padding: 15px 30px;
-            border-top: 5px solid #fe4c31;
-            border-bottom: 5px solid #fe4c31;
+            border-top: 5px solid $red;
+            border-bottom: 5px solid $red;
 
             .wuhan-mobile-image {
                 max-width: 100%;
@@ -772,29 +743,56 @@ img {
             width: 100%;
             padding-right: 0;
         }
+
         .service-right {
             width: 100%;
         }
-    }
-    .text-container span {
-        font-size: 14px;
+
+        span {
+            font-size: 14px;
+        }
     }
     .bg {
         padding-bottom: 50px;
     }
-    .profile-item {
-        flex-basis: 100%;
-    }
-    .event-item {
-        flex-basis: 100%;
-        min-height: 100%;
-        margin-bottom: 30px;
-    }
+
     .event-left {
         display: none;
     }
+
     .event-right {
         width: 100%;
+
+        .event-list {
+            .event-item {
+                flex-basis: 100%;
+                min-height: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .about-us-section {
+        .half-style {
+            flex-direction: column;
+        }
+
+        .col-half {
+            max-width: 100%;
+        }
+
+        .qr-image > img {
+            width: 100%;
+            height: 90%;
+        }
+
+        .student-group-image {
+            flex-direction: column;
+
+            .qr-image {
+                margin: 10px;
+            }
+        }
     }
 }
 </style>

@@ -1,2 +1,26 @@
+// Page
+$page-max-width: 1440px; // 整个页面最宽为 1440px
 $padding-horizontal: 8%; // header 和 section 的左右 padding
 $padding-vertical: 80px; // header 和 section 的上下 padding
+$mobile-max-width: 1024px; // Desktop 和 Mobile 页面的分界点
+
+// Font
+$text-color: #202020;
+$text-size: 16px; // 正文默认字体大小
+$h1-size: 40px; // 页面标题默认字体大小
+$h2-size: 23px; // Section 标题默认字体大小
+
+// Colors
+$teal: #34bbc9;
+$purple: #cc8abd;
+$green: #c9d74a;
+$orange: #fda63b;
+$dark-pink: #f96191;
+$light-pink: #ffc2d6;
+$dark-blue: #54bef5;
+$light-blue: #a9defa;
+$red: #fe4c31;
+$background-light-blue: #f1f9ff;
+
+// Components
+$button-color: #22a5d8;
