@@ -62,7 +62,7 @@ export default {
 <style lang="scss" scoped>
 /* Use /deep/ selector to penetrate Swiper component */
 /deep/ .swiper-pagination-bullet {
-    background: #fe4c31;
+    background: $red;
 
     &:not(.swiper-pagination-bullet-active) {
         background: white;
@@ -88,14 +88,14 @@ export default {
 .swiper-button-prev {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid #54bef5;
+    border-right: 10px solid $dark-blue;
     margin: -20px auto;
     margin-left: 43%;
 }
 .swiper-button-next {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #54bef5;
+    border-left: 10px solid $dark-blue;
     right: 44%;
 }
 .wrapper {
@@ -121,7 +121,7 @@ export default {
             margin: 30px 0 10px 0;
             .line {
                 width: 110px;
-                border: 2px solid #fe4c31;
+                border: 2px solid $red;
             }
             p:last-child {
                 font-size: 14px;

@@ -155,13 +155,13 @@ export default {
         margin: 24px 0;
 
         /deep/ span {
-            color: #54bef5;
+            color: $dark-blue;
             font-weight: bold;
         }
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .achievement-list {
         justify-content: center;
     }
@@ -190,11 +190,11 @@ export default {
     }
 
     .achievement-item:nth-child(1) {
-        background: #34bbc9;
+        background: $teal;
     }
 
     .achievement-item:nth-child(3) {
-        background: #c9d74a;
+        background: $green;
     }
 
     .achievement-item:nth-child(5) {
@@ -202,11 +202,11 @@ export default {
     }
 
     .achievement-item:nth-child(7) {
-        background: #cc8abd;
+        background: $purple;
     }
 
     .achievement-item:nth-child(9) {
-        background: #f96291;
+        background: $dark-pink;
     }
 
     .achievement-item:nth-child(2) {
@@ -214,36 +214,36 @@ export default {
     }
 
     .achievement-item:nth-child(4) {
-        background: #cc8abd;
+        background: $purple;
     }
 
     .achievement-item:nth-child(6) {
-        background: #f96291;
+        background: $dark-pink;
     }
 
     .achievement-item:nth-child(8) {
-        background: #c9d74a;
+        background: $green;
     }
 
     .achievement-item:nth-child(10) {
-        background: #34bbc9;
+        background: $teal;
     }
 
     .achievement-item {
         &:nth-child(11) {
-            background: #cc8abd;
+            background: $purple;
         }
 
         &:nth-child(12) {
-            background: #fda63b;
+            background: $orange;
         }
 
         &:nth-child(13) {
-            background: #f96291;
+            background: $dark-pink;
         }
 
         &:nth-child(14) {
-            background: #34bbc9;
+            background: $teal;
         }
     }
 }

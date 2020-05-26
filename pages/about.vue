@@ -16,8 +16,7 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Tab from '@/components/Tab.vue';
-// import bannerImage from '@/assets/about/banner.png';
-import bannerImage from '@/assets/course/ai_banner.png';
+import bannerImage from '@/assets/about/banner.png';
 import Culture from '@/tabs/about/Culture.vue';
 import History from '@/tabs/about/History.vue';
 import Story from '@/tabs/about/Story.vue';

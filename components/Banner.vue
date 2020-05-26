@@ -75,8 +75,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/var.scss';
-
 .banner {
     width: 100%;
     height: 100%;
@@ -89,7 +87,7 @@ export default {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: $h1-size;
     color: #2c3e51;
     font-weight: normal;
     margin: 0;
@@ -109,7 +107,7 @@ button {
     margin-top: 45px;
 }
 .title {
-    font-size: 16px;
+    font-size: $text-size;
     line-height: 31px;
 }
 
@@ -126,14 +124,14 @@ strong {
     margin-right: 5px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .banner {
         padding: 70px 30px 35px 30px;
         flex-wrap: wrap;
     }
 
     h1 {
-        font-size: 23px;
+        font-size: $h2-size;
         margin: 0 0 20px 0;
     }
 

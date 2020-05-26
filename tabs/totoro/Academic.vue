@@ -50,7 +50,10 @@
                 </section>
                 <div class="col-half col-half-half col-flex">
                     <div class="icon-register half-to-half icon-one-to-one">
-                        <img :src="onetooneImage" alt="one to one image" />
+                        <img
+                            src="@/assets/totoro/onetoone.png"
+                            alt="one to one image"
+                        />
                         <span>{{ $t('totoro.academic.oneToOne') }}</span>
                     </div>
                     <div
@@ -69,24 +72,18 @@
 </template>
 
 <script>
-import academicImage from '@/assets/totoro/academic-img.png';
 import syncDiagramZh from '@/assets/totoro/sync-diagram.png';
 import syncDiagramEn from '@/assets/totoro/sync-diagram-en.png';
-import ifuLogo from '@/assets/totoro/ifu-logo.png';
-import onetooneImage from '@/assets/totoro/onetoone.png';
 
 export default {
     name: 'Academic',
     components: {},
     data() {
         return {
-            academicImage,
-            ifuLogo,
             syncDiagram: {
                 zh: syncDiagramZh,
                 en: syncDiagramEn,
             },
-            onetooneImage,
         };
     },
 };
@@ -172,14 +169,14 @@ export default {
 }
 
 .col-half > p {
-    font-size: 16px;
+    font-size: $text-size;
     line-height: 31px;
     letter-spacing: 0.02em;
 }
 
 .academic-section {
     padding: 0 0 0 0 !important;
-    border-bottom: 6px solid #54bef5;
+    border-bottom: 6px solid $dark-blue;
 }
 
 .flex-top-left {
@@ -209,19 +206,19 @@ export default {
 }
 
 .orange {
-    background: #fda63b;
+    background: $orange;
 }
 
 .pink {
-    background: #f96191;
+    background: $dark-pink;
 }
 
 .blue {
-    background: #34bbc9;
+    background: $teal;
 }
 
 .green {
-    background: #c9d74a;
+    background: $green;
 }
 #scan-qr {
     line-height: inherit;
@@ -232,15 +229,15 @@ export default {
 }
 
 .follow-us {
-    background: #f1f9ff;
+    background: $background-light-blue;
 
     section {
         height: 100%;
-        background: #f1f9ff;
+        background: $background-light-blue;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .row {
         flex-direction: column;
         margin: 0;
@@ -275,7 +272,7 @@ export default {
     }
 
     .color-box {
-        font-size: 23px;
+        font-size: $h2-size;
     }
     .academic-section {
         padding: 0 0 0 0 !important;

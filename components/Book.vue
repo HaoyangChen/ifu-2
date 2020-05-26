@@ -155,7 +155,7 @@ export default {
     width: 50%;
     height: 100%;
     box-sizing: border-box;
-    border: 6px solid #f96291;
+    border: 6px solid $dark-pink;
     right: 0;
     transition: transform linear 1s;
     transform-origin: left;
@@ -190,7 +190,7 @@ export default {
     height: 0;
     border-top: 27px solid transparent;
     border-bottom: 27px solid transparent;
-    border-right: 50px solid #f96291;
+    border-right: 50px solid $dark-pink;
 
     &:hover:not(.disabled) {
         border-right: 50px solid rgba(249, 98, 145, 0.3);
@@ -207,7 +207,7 @@ export default {
 }
 
 /* Mobile */
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .page-container {
         width: 100%;
         height: 100%;
@@ -221,7 +221,7 @@ export default {
     .right-arrow {
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
-        border-right: 20px solid #f96291;
+        border-right: 20px solid $dark-pink;
 
         &:hover:not(.disabled) {
             border-right: 20px solid rgba(249, 98, 145, 0.3);

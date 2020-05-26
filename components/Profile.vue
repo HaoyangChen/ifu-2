@@ -60,7 +60,7 @@ span {
     font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .profile-image-container {
         height: 260px;
     }

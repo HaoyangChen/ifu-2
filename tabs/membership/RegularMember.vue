@@ -141,7 +141,7 @@ export default {
 .container p {
     font-family: PingFang SC;
     line-height: 31px;
-    font-size: 16px;
+    font-size: $text-size;
     letter-spacing: 0.02em;
     margin: 0;
 }
@@ -232,7 +232,7 @@ img {
     }
     p {
         margin: 0;
-        font-size: 16px;
+        font-size: $text-size;
         line-height: 31px;
         letter-spacing: 0.02em;
     }
@@ -260,7 +260,7 @@ img {
 }
 .all-members a {
     text-decoration: none;
-    color: #22a5d8;
+    color: $button-color;
 }
 .event-text {
     width: 100%;
@@ -308,7 +308,7 @@ img {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .event-right {
         width: 100%;
         .event-list {

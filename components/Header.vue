@@ -122,8 +122,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/var.scss';
-
 header {
     width: 100%;
     border-bottom: 1px solid #e8e9ed;
@@ -188,7 +186,7 @@ header {
     height: 0;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
-    border-right: 8px solid #202020;
+    border-right: 8px solid $text-color;
     transform: rotateZ(180deg);
 }
 
@@ -205,18 +203,18 @@ header {
 a {
     height: 33px;
     text-decoration: none;
-    color: #202020;
+    color: $text-color;
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 33px;
 }
 
 .n-link:hover {
     box-sizing: border-box;
-    border-bottom: 3px solid #54bef5;
+    border-bottom: 3px solid $dark-blue;
 }
 
 .nuxt-link-active {
-    color: #54bef5;
+    color: $dark-blue;
 }
 
 .desktop {
@@ -224,7 +222,7 @@ a {
     line-height: 33px;
 
     .active {
-        color: #54bef5;
+        color: $dark-blue;
     }
 }
 
@@ -233,7 +231,7 @@ span {
 }
 
 /* Mobile style */
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     header {
         border-bottom: none;
     }
@@ -291,7 +289,7 @@ span {
         height: 0;
         border-top: 6px solid transparent;
         border-bottom: 6px solid transparent;
-        border-right: 8px solid #202020;
+        border-right: 8px solid $text-color;
     }
 
     .open-arrow {
@@ -304,7 +302,7 @@ span {
 
     .nuxt-link-active:not(.logo-mobile) {
         color: black;
-        background: #a9defa;
+        background: $light-blue;
         border-bottom: none;
     }
 

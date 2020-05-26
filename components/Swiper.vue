@@ -97,7 +97,7 @@ p {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .swiper-button-prev {
         top: 38%;
     }
@@ -127,7 +127,7 @@ p {
     .swiper-button-prev {
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
-        border-right: 10px solid #54bef5;
+        border-right: 10px solid $dark-blue;
         top: 38%;
 
         &:hover {
@@ -137,7 +137,7 @@ p {
     .swiper-button-next {
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
-        border-left: 10px solid #54bef5;
+        border-left: 10px solid $dark-blue;
         right: 0;
         top: 38%;
 

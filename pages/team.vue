@@ -274,6 +274,7 @@ export default {
     },
 };
 </script>
+
 <style lang="scss" scoped>
 .team-container {
     padding-bottom: 30px;
@@ -290,7 +291,7 @@ h2 {
     padding: 40px 0 30px 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     section {
         &:first-of-type {
             padding-top: 15px;
@@ -308,7 +309,7 @@ h2 {
     }
     .img {
         padding: 30px;
-        border-bottom: 15px solid #fe4c31;
+        border-bottom: 15px solid $red;
         img {
             width: 100%;
         }

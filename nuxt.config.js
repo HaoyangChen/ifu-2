@@ -73,6 +73,7 @@ export default {
         [
             'nuxt-i18n',
             {
+                seo: true,
                 detectBrowserLanguage: {
                     useCookie: true,
                     fallbackLocale: 'zh',
@@ -102,7 +103,11 @@ export default {
             },
         ],
         '@nuxtjs/sitemap',
+        '@nuxtjs/style-resources',
     ],
+    styleResources: {
+        scss: ['style/var.scss'],
+    },
     /**
      * Sitemap Configuration
      */

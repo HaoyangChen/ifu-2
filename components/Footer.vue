@@ -73,8 +73,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/var.scss';
-
 footer {
     width: 100%;
     text-align: center;
@@ -86,7 +84,7 @@ img {
 }
 .footer {
     text-align: left;
-    background-color: #54bef5;
+    background-color: $dark-blue;
     min-height: 184px;
     width: 100%;
     position: relative;
@@ -102,7 +100,7 @@ img {
             display: inline-block;
             vertical-align: middle;
             .zh {
-                font-size: 16px;
+                font-size: $text-size;
                 line-height: 31px;
                 letter-spacing: 0.25em;
             }
@@ -123,7 +121,7 @@ img {
             display: inline-block;
             vertical-align: middle;
             .zh {
-                font-size: 16px;
+                font-size: $text-size;
                 line-height: 31px;
                 letter-spacing: 0.25em;
             }
@@ -142,7 +140,7 @@ img {
 .follow {
     color: #fff;
     font-size: 14px;
-    line-height: 16px;
+    line-height: $text-size;
     letter-spacing: 0.03em;
     display: inline-block;
     padding-top: 35px;
@@ -178,7 +176,7 @@ img {
     text-align: center;
     p {
         margin: 0;
-        font-size: 16px;
+        font-size: $text-size;
         letter-spacing: 0.025em;
     }
 }
@@ -190,7 +188,7 @@ img {
     top: 0px;
     right: $padding-horizontal;
     text-align: center;
-    color: #54bef5;
+    color: $dark-blue;
     font-size: 10px;
     line-height: 13px;
     letter-spacing: 0.05em;
@@ -208,7 +206,7 @@ img {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-max-width) {
     .top {
         padding: 0 20px;
     }
@@ -235,8 +233,8 @@ img {
             margin-left: -135px;
             text-align: left;
             width: 140px;
-            font-size: 16px;
-            line-height: 16px;
+            font-size: $text-size;
+            line-height: $text-size;
             letter-spacing: 0.03em;
 
             a {
