@@ -1,10 +1,10 @@
 <template>
     <header>
         <div class="header-inner">
-            <nuxt-link class="desktop logo" to="/" exact>
+            <nuxt-link class="desktop logo" :to="localePath('/')" exact>
                 <img src="../assets/header/logo.png" />
             </nuxt-link>
-            <nuxt-link class="mobile logo-mobile" to="/" exact>
+            <nuxt-link class="mobile logo-mobile" :to="localePath('/')" exact>
                 <img src="../assets/header/logo_mobile.png" />
             </nuxt-link>
             <p class="mobile title">
@@ -13,10 +13,10 @@
                 国际家长汇
             </p>
             <div class="header-menu">
-                <n-link class="n-link" to="/" exact>{{
+                <n-link class="n-link" :to="localePath('/')" exact>{{
                     $t('header.home')
                 }}</n-link>
-                <n-link class="n-link" to="/about">{{
+                <n-link class="n-link" :to="localePath('/about')">{{
                     $t('header.about')
                 }}</n-link>
                 <div class="service">
@@ -35,47 +35,55 @@
                     <div class="service-menu desktop">
                         <div class="service-menu-separator" />
                         <div class="service-menu-inner">
-                            <n-link class="n-link" to="/totoro">{{
-                                $t('header.totoro')
-                            }}</n-link>
-                            <n-link class="n-link" to="/membership">{{
-                                $t('header.membership')
-                            }}</n-link>
-                            <n-link class="n-link" to="/more">{{
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/totoro')"
+                                >{{ $t('header.totoro') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/membership')"
+                                >{{ $t('header.membership') }}</n-link
+                            >
+                            <n-link class="n-link" :to="localePath('/more')">{{
                                 $t('header.more')
                             }}</n-link>
                         </div>
                     </div>
                 </div>
                 <div v-if="showServiceMenu" class="service-menu-mobile mobile">
-                    <n-link to="/totoro">{{ $t('header.totoro') }}</n-link>
-                    <n-link to="/membership">{{
+                    <n-link :to="localePath('/totoro')">{{
+                        $t('header.totoro')
+                    }}</n-link>
+                    <n-link :to="localePath('/membership')">{{
                         $t('header.membership')
                     }}</n-link>
-                    <n-link to="/more">{{ $t('header.more') }}</n-link>
+                    <n-link :to="localePath('/more')">{{
+                        $t('header.more')
+                    }}</n-link>
                 </div>
-                <n-link class="n-link" to="/contact">{{
+                <n-link class="n-link" :to="localePath('/contact')">{{
                     $t('header.contact')
                 }}</n-link>
-                <n-link class="n-link" to="/support">{{
+                <n-link class="n-link" :to="localePath('/support')">{{
                     $t('header.support')
                 }}</n-link>
                 <div class="desktop">
-                    <span :class="activeLang('zh')" @click="changeLang('zh')"
-                        >中文</span
+                    <nuxt-link :to="switchLocalePath('zh')" exact
+                        >中文</nuxt-link
                     >
                     <span> / </span>
-                    <span :class="activeLang('en')" @click="changeLang('en')"
-                        >EN</span
+                    <nuxt-link :to="switchLocalePath('en')" exact
+                        >English</nuxt-link
                     >
                 </div>
                 <div class="mobile change-lang">
-                    <div :class="activeLang('zh')" @click="changeLang('zh')">
-                        中文
-                    </div>
-                    <div :class="activeLang('en')" @click="changeLang('en')">
-                        EN
-                    </div>
+                    <nuxt-link :to="switchLocalePath('zh')" exact
+                        >中文</nuxt-link
+                    >
+                    <nuxt-link :to="switchLocalePath('en')" exact
+                        >English</nuxt-link
+                    >
                 </div>
             </div>
         </div>
@@ -108,14 +116,8 @@ export default {
         },
     },
     methods: {
-        changeLang(lang) {
-            this.$i18n.setLocale(lang);
-        },
         toggleServiceMenu() {
             this.showServiceMenu = !this.showServiceMenu;
-        },
-        activeLang(lang) {
-            return this.$i18n.locale === lang ? 'active' : '';
         },
     },
 };
@@ -220,10 +222,6 @@ a {
 .desktop {
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 33px;
-
-    .active {
-        color: $dark-blue;
-    }
 }
 
 span {
@@ -310,17 +308,6 @@ span {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-    }
-
-    .change-lang div {
-        width: 50%;
-        height: 54px;
-        line-height: 54px;
-        text-align: center;
-    }
-
-    .change-lang .active {
-        background: #ddf2fd;
     }
 }
 </style>
