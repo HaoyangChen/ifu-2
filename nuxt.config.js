@@ -69,42 +69,30 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: [
-        [
-            'nuxt-i18n',
+    modules: [['nuxt-i18n'], '@nuxtjs/sitemap', '@nuxtjs/style-resources'],
+    i18n: {
+        langDir: 'lang/',
+        defaultLocale: 'zh',
+        detectBrowserLanguage: {
+            useCookie: true,
+        },
+        locales: [
             {
-                seo: true,
-                detectBrowserLanguage: {
-                    useCookie: true,
-                    fallbackLocale: 'zh',
-                },
-                vueI18n: {
-                    // When no translation available,
-                    // fallback to zh-CN
-                    fallbackLocale: 'zh',
-                },
-                langDir: 'lang/',
-                locales: [
-                    {
-                        code: 'zh',
-                        iso: 'zh-CN',
-                        name: 'Chinese',
-                        file: 'zh.json',
-                    },
-                    {
-                        code: 'en',
-                        iso: 'en-US',
-                        name: 'English',
-                        file: 'en.json',
-                    },
-                ],
-                strategy: 'no_prefix',
-                lazy: true,
+                name: 'Chinese',
+                code: 'zh',
+                iso: 'zh-CN',
+                file: 'zh.json',
+            },
+            {
+                name: 'English',
+                code: 'en',
+                iso: 'en-US',
+                file: 'en.json',
             },
         ],
-        '@nuxtjs/sitemap',
-        '@nuxtjs/style-resources',
-    ],
+        lazy: true,
+        seo: true,
+    },
     styleResources: {
         scss: ['style/var.scss'],
     },
