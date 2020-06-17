@@ -349,9 +349,7 @@ export default {
                 {
                     hid: 'description',
                     name: 'description',
-                    content:
-                        '国际家长汇 International Family Union' +
-                        this.$t('home.banner.description'),
+                    content: this.$t('home.banner.description'),
                 },
                 {
                     hid: 'keywords',

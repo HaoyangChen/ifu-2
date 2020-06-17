@@ -72,7 +72,7 @@ export default {
     modules: [['nuxt-i18n'], '@nuxtjs/sitemap', '@nuxtjs/style-resources'],
     i18n: {
         langDir: 'lang/',
-        defaultLocale: 'zh',
+        defaultLocale: 'en',
         detectBrowserLanguage: {
             useCookie: true,
         },
