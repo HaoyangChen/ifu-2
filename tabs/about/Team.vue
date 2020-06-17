@@ -68,7 +68,6 @@ import sunxiaoqiaoImage from '@/assets/team/sunxiaoqiao.png';
 import chenxinyiImage from '@/assets/team/chenxinyi.png';
 
 export default {
-    name: 'Team',
     components: {
         Banner,
         Swiper,
@@ -266,11 +265,6 @@ export default {
                 },
             ];
         },
-    },
-    head() {
-        return {
-            title: this.$t('header.team'),
-        };
     },
 };
 </script>

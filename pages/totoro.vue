@@ -13,6 +13,18 @@
             <p>{{ $t('totoro.totoro.text') }}</p>
             <Carousel :list="courseList" use-subtitle />
         </section>
+        <div
+            :style="{
+                display: 'flex',
+                justifyContent: 'center',
+            }"
+        >
+            <img
+                src="https://drk5sw.sn.files.1drv.com/y4mIOmJgidSzzsXy-TRdDbX_RE0wAiCQeXHl-unELuGmcKaGr5Wa3NRITaXkVDzJyAmwhNVvqFHYIEbwnBdW63AcNUtKZWvmSB3JOAqyP0FZl5IYiZCixjyzbg10UfT09Ziep_jwmiUB8yspllGNLmBltA8S-wyJmP1AwJXbRLql59MrprdzMI2IDlq6kd-p4q-hQdrvVbnUAnrWvsiDN1aEg?width=640&height=1008&cropmode=none"
+                width="320"
+                height="558"
+            />
+        </div>
         <Tab :list="tabList" />
         <section>
             <h2>{{ $t('totoro.tutors.title') }}</h2>

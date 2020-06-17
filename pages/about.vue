@@ -20,7 +20,7 @@ import bannerImage from '@/assets/about/banner.png';
 import Culture from '@/tabs/about/Culture.vue';
 import History from '@/tabs/about/History.vue';
 import Story from '@/tabs/about/Story.vue';
-import Team from '@/pages/team.vue';
+import Team from '@/tabs/about/Team.vue';
 
 export default {
     name: 'About',
