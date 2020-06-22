@@ -82,10 +82,7 @@
 </template>
 
 <script>
-import AOS from 'aos';
 import Button from '@/components/Button.vue';
-
-import 'aos/dist/aos.css';
 
 export default {
     name: 'Culture',
@@ -99,12 +96,6 @@ export default {
                 en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
             },
         };
-    },
-    created() {
-        AOS.init({
-            delay: 0,
-            duration: 800,
-        });
     },
 };
 </script>
