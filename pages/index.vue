@@ -355,7 +355,7 @@ export default {
                     hid: 'keywords',
                     name: 'keywords',
                     content:
-                        '留学生海外援助, 公益组织, 志愿者联盟, 美国留学安全, 美国留学建议, 美国留学注意事项, 在美国遇到困难可以求助的机构, 在美国留学遇到困难怎么办, 孩子在美国留学不放心怎么办, 留学生实时动态, 孩子一个人在国外上学',
+                        '留学生海外援助, 公益组织, 志愿者联盟, 美国留学安全, 美国留学建议, 美国留学注意事项, 在美国遇到困难可以求助的机构, 在美国留学遇到困难怎么办, 孩子在美国留学不放心怎么办, 留学生实时动态, 孩子一个人在国外上学, International Family Union, IFU, NGO, International student help usa, Missing international student, International student mental health, International student NGO, Volunteer for international students, Study abroad pressure, Study abroad anxiety, International education NGO donation, International student NGO donation, International student NGO, Chinese student help overseas, Study abroad safety sharing, Study abroad experience',
                 },
             ],
         };

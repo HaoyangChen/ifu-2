@@ -4,7 +4,7 @@ export default {
      ** Headers of the page
      */
     head: {
-        titleTemplate: '%s - IFU',
+        titleTemplate: '%s - International Family Union (IFU)',
         meta: [
             {
                 charset: 'utf-8',
@@ -23,7 +23,7 @@ export default {
                 hid: 'keywords',
                 name: 'keywords',
                 content:
-                    '美国留学安全, 留学生海外援助, 留学生心理健康, 留学生活分享, 海外校园信息, 留学生峰会, 留学交流会, 留学生实时动态, 留学生失联, 海外捐款, 美本学术辅导, 美国课程在线辅导, 美本线上辅导课, 留学生公益活动, 美国留学建议, 留学生海外求助, 留学压力,  UCSD新生群, UW新生群, GWU新生群, 戴维斯新生群, 南加州新生群, 留学生公益组织, 留学生非政府组织, International student NGO, International student help usa, Missing international student, International student mental health, International student NGO, Volunteer for international students, Study abroad pressure, Study abroad anxiety, International education NGO donation, International student NGO donation, International student NGO, Chinese student help overseas, Study abroad safety sharing, Study abroad experience',
+                    '美国留学安全, 留学生海外援助, 留学生心理健康, 留学生活分享, 海外校园信息, 留学生峰会, 留学交流会, 留学生实时动态, 留学生失联, 海外捐款, 美本学术辅导, 美国课程在线辅导, 美本线上辅导课, 留学生公益活动, 美国留学建议, 留学生海外求助, 留学压力,  UCSD新生群, UW新生群, GWU新生群, 戴维斯新生群, 南加州新生群, 留学生公益组织, 留学生非政府组织, International Family Union, IFU, International student NGO, International student help usa, Missing international student, International student mental health, International student NGO, Volunteer for international students, Study abroad pressure, Study abroad anxiety, International education NGO donation, International student NGO donation, International student NGO, Chinese student help overseas, Study abroad safety sharing, Study abroad experience',
             },
         ],
         link: [
