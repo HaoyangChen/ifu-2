@@ -14,7 +14,12 @@
             </div>
         </div>
         <div class="desktop tab-content">
-            <component :is="list[activeIndex].content" />
+            <component
+                :is="tabContent.content"
+                v-for="(tabContent, index) in list"
+                v-show="index === activeIndex"
+                :key="index"
+            />
         </div>
         <div class="mobile tab-mobile">
             <Collapse
