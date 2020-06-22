@@ -51,6 +51,10 @@ export default {
             src: '~plugins/drift.js',
             mode: 'client',
         },
+        {
+            src: '~plugins/aos.js',
+            mode: 'client',
+        },
     ],
     /*
      ** Nuxt.js dev-modules
