@@ -66,7 +66,7 @@ export default {
     },
     head() {
         return {
-            title: this.$t('header.about'),
+            title: this.$t('header.about') + ' - ' + this.$t('header.orgName'),
             meta: [
                 {
                     hid: 'description',

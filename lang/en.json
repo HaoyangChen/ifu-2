@@ -1,13 +1,14 @@
 {
     "header": {
-        "home": "HOME",
-        "service": "SERVICE",
-        "about": "ABOUT",
-        "contact": "CONTACT",
-        "totoro": "TOTOROAD ACADEMY",
-        "membership": "IFU MEMBERSHIP",
-        "more": "IFU OTHER SERVICES",
-        "support": "SUPPORT"
+        "home": "Home",
+        "service": "Service",
+        "about": "About",
+        "contact": "Contact",
+        "totoro": "Totoroad Academy",
+        "membership": "IFU Membership",
+        "more": "IFU Other Services",
+        "support": "Support",
+        "orgName": "International Family Union"
     },
     "footer": {
         "subTitle1": "To Make Our Campus Life Safer",

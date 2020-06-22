@@ -4,7 +4,6 @@ export default {
      ** Headers of the page
      */
     head: {
-        titleTemplate: '%s - International Family Union (IFU)',
         meta: [
             {
                 charset: 'utf-8',
@@ -62,7 +61,7 @@ export default {
         [
             '@nuxtjs/google-analytics',
             {
-                id: 'G-F48WM6RK48',
+                id: 'G-N0XV5Z4L71',
             },
         ],
     ],
