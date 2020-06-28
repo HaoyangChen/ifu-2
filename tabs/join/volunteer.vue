@@ -11,11 +11,19 @@
                 <img src="@/assets/join/volunteer/volunteer.png" />
             </div>
         </div>
+        <section>
+            <volunteer-application name="IFU文件翻译员" department="行政部" />
+        </section>
     </div>
 </template>
 
 <script>
-export default {};
+import VolunteerApplication from '@/components/VolunteerApplication.vue';
+export default {
+    components: {
+        VolunteerApplication,
+    },
+};
 </script>
 
 <style lang="scss" scoped>
