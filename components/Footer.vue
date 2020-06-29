@@ -15,7 +15,7 @@
             <div class="contact-us">
                 <span class="light-blue">{{ $t('footer.contactUs') }}</span>
                 <div class="mgt-separate">
-                    <nuxt-link :to="localePath('/join')">{{
+                    <nuxt-link :to="localePath('/career')">{{
                         $t('footer.joinUs')
                     }}</nuxt-link>
                 </div>

@@ -8,7 +8,7 @@
                 </p>
             </section>
             <div>
-                <img src="@/assets/join/volunteer/volunteer.png" />
+                <img src="@/assets/career/volunteer/volunteer.png" />
             </div>
         </div>
         <section class="volunteer-section">
@@ -46,6 +46,7 @@ export default {
 <style lang="scss" scoped>
 .row-1 {
     overflow: auto;
+    line-height: 2em;
 
     > section,
     > div {

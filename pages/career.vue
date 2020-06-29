@@ -16,7 +16,7 @@ import Banner from '@/components/Banner.vue';
 import Tab from '@/components/Tab.vue';
 import Volunteer from '@/tabs/career/volunteer.vue';
 import Staff from '@/tabs/career/staff.vue';
-import bannerImage from '@/assets/join/banner.png';
+import bannerImage from '@/assets/career/banner.png';
 
 export default {
     components: {

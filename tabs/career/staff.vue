@@ -9,20 +9,20 @@
                 </p>
             </section>
             <div>
-                <img src="@/assets/join/staff/staff.png" />
+                <img src="@/assets/career/staff/staff.png" />
             </div>
         </div>
         <section class="join-section">
             <p>
                 感谢您对我们的认可，IFU目前暂无工作人员岗位招聘。考虑作为志愿者加入我们？
             </p>
-            <nuxt-link :to="localePath('/join')"
+            <nuxt-link :to="localePath('/career')"
                 >查看志愿者招募职位>>></nuxt-link
             >
         </section>
         <section class="clipart-section">
             <div>
-                <img src="@/assets/join/staff/clipart.png" />
+                <img src="@/assets/career/staff/clipart.png" />
             </div>
         </section>
     </div>
@@ -36,6 +36,7 @@ export default {};
 .row-1 {
     overflow: auto;
     background: $background-light-blue;
+    line-height: 2em;
 
     > section,
     > div {
@@ -72,6 +73,7 @@ export default {};
         width: 50%;
         text-align: right;
         color: $button-color;
+        text-decoration: none;
 
         &:hover {
             color: $dark-pink;
