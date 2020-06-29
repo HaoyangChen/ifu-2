@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="top">
             <div class="logo">
-                <div>IFU</div>
+                <div class="ifu-underline">IFU</div>
                 <div class="zh">
                     <p>{{ $t('footer.subTitle1') }}</p>
                     <p>{{ $t('footer.subTitle2') }}</p>
@@ -111,16 +111,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-footer {
-    width: 100%;
-    text-align: center;
-}
 img {
     width: 36px;
     height: 36px;
     margin-right: 10px;
 }
 .footer {
+    width: 100%;
+    text-align: center;
     text-align: left;
     background-color: $dark-blue;
     min-height: 175px;
@@ -312,19 +310,140 @@ img {
         letter-spacing: 0.25em;
     }
 }
+
+@media (max-width: 1425px) {
+    footer {
+        min-height: 260px !important;
+    }
+
+    .more-info {
+        top: 145px;
+        left: 555px;
+    }
+
+    .top {
+        .logo {
+            .rights-reserved {
+                margin-top: 100px;
+                margin-left: 27%;
+            }
+        }
+    }
+
+    .decoration-line1 {
+        height: 182px;
+    }
+
+    .decoration-line2 {
+        display: none;
+    }
+
+    .decoration-line3 {
+        display: none;
+    }
+
+    .follow {
+        right: 230px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .top {
+        .contact-us {
+            left: 530px;
+            top: 143px;
+        }
+
+        .more-info {
+            top: 143px;
+            left: 705px;
+        }
+    }
+    .decoration-line1 {
+        left: 460px;
+    }
+}
+
+@media (max-width: 1096px) {
+    footer {
+        min-height: 360px !important;
+    }
+
+    .decoration-line1 {
+        height: 59px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .decoration-line {
+        top: 167px;
+    }
+
+    .top {
+        .logo {
+            position: absolute;
+            transform: translate(-50%, 0%);
+            left: 50%;
+
+            .rights-reserved {
+                margin-top: auto;
+                margin-left: auto;
+                position: absolute;
+                top: 300px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: fit-content;
+            }
+
+            div {
+                text-align: center;
+                display: block;
+            }
+        }
+
+        .more-info {
+            top: 163px;
+            left: 55%;
+            .mgt-separate {
+                margin-top: 10px;
+            }
+        }
+
+        .contact-us {
+            top: 163px;
+            left: 37%;
+            .mgt-separate {
+                margin-top: 10px;
+            }
+        }
+
+        .follow {
+            padding-top: 0px;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0%);
+            top: 220px;
+            > .light-blue {
+                display: none;
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         text-align: center;
         // height: 380px;
     }
     .top {
-        height: 320px;
+        height: 450px;
         .follow {
-            top: 100px;
-            left: 50%;
-            margin-left: -135px;
+            // top: 100px;
+            // left: 50%;
+            // margin-left: -135px;
             text-align: left;
-            width: 140px;
+            width: 280px;
             font-size: $text-size;
             line-height: $text-size;
             letter-spacing: 0.03em;
@@ -335,6 +454,29 @@ img {
                 height: 60px;
                 margin-bottom: 20px;
             }
+        }
+
+        .logo {
+            position: relative;
+            transform: none;
+            left: auto;
+
+            .ifu-underline {
+                border-bottom: 1px solid #fff;
+                width: fit-content;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
+
+            .rights-reserved {
+                top: 407px;
+            }
+        }
+
+        .contact-us {
+            left: 23%;
         }
     }
     .bottom {
@@ -356,10 +498,10 @@ img {
     .en {
         padding-bottom: 40px;
     }
-    .zh {
-        border-left: 1px solid #fff;
-        padding-left: 20px;
-    }
+    // .zh {
+    //     border-left: 1px solid #fff;
+    //     padding-left: 20px;
+    // }
     .top-en {
         height: 400px;
         .follow {
