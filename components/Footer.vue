@@ -62,7 +62,7 @@
 <script>
 // import wechatImg from '@/assets/footer/wechat.png';
 import wechatIcon from '@/assets/footer/wechat_icon.svg';
-import facebookIcon from '@/assets/footer/FB_icon.svg';
+import facebookIcon from '@/assets/footer/fb_icon.svg';
 // import codeImg from '@/assets/footer/code.png';
 import weiboIcon from '@/assets/footer/weibo_icon.svg';
 import zhihuIcon from '@/assets/footer/zhihu_icon.svg';
