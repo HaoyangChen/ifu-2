@@ -14,8 +14,8 @@
 <script>
 import Banner from '@/components/Banner.vue';
 import Tab from '@/components/Tab.vue';
-import Volunteer from '@/tabs/join/volunteer.vue';
-import Staff from '@/tabs/join/staff.vue';
+import Volunteer from '@/tabs/career/volunteer.vue';
+import Staff from '@/tabs/career/staff.vue';
 import bannerImage from '@/assets/join/banner.png';
 
 export default {
@@ -44,6 +44,11 @@ export default {
                 },
             ];
         },
+    },
+    head() {
+        return {
+            title: this.$t('header.career') + ' - ' + this.$t('header.orgName'),
+        };
     },
 };
 </script>
