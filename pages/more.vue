@@ -6,7 +6,7 @@
             :description="$t('more.banner.description')"
             :button-text="$t('more.banner.buttonText')"
             :background="bannerImage"
-            to="/contact"
+            :to="localePath('/contact')"
         />
         <Tab :list="tabList" />
     </div>

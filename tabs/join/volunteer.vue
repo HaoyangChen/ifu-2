@@ -11,17 +11,34 @@
                 <img src="@/assets/join/volunteer/volunteer.png" />
             </div>
         </div>
-        <section>
-            <volunteer-application name="IFU文件翻译员" department="行政部" />
+        <section class="volunteer-section">
+            <volunteer-application
+                v-for="(volunteer, index) in volunteers"
+                :key="index"
+                :name="volunteer.name"
+                :department="volunteer.department"
+                :description="volunteer.description"
+                :requirement="volunteer.requirement"
+                :reward="volunteer.reward"
+                :people="volunteer.people"
+                :time="volunteer.time"
+            />
         </section>
     </div>
 </template>
 
 <script>
 import VolunteerApplication from '@/components/VolunteerApplication.vue';
+import volunteers from '@/data/volunteer.json';
+
 export default {
     components: {
         VolunteerApplication,
+    },
+    data() {
+        return {
+            volunteers,
+        };
     },
 };
 </script>
@@ -41,6 +58,17 @@ export default {
             height: 100%;
             width: 100%;
         }
+    }
+}
+
+.volunteer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > * {
+        flex-basis: 45%;
+        margin-bottom: 50px;
     }
 }
 </style>

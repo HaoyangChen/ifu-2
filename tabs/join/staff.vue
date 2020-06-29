@@ -16,7 +16,9 @@
             <p>
                 感谢您对我们的认可，IFU目前暂无工作人员岗位招聘。考虑作为志愿者加入我们？
             </p>
-            <nuxt-link to="/join">查看志愿者招募职位>>></nuxt-link>
+            <nuxt-link :to="localePath('/join')"
+                >查看志愿者招募职位>>></nuxt-link
+            >
         </section>
         <section class="clipart-section">
             <div>

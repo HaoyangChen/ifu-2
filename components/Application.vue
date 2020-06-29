@@ -13,6 +13,21 @@
             }"
         >
             {{ title }}
+            <div
+                class="tag"
+                :style="{
+                    border: '1px solid ' + color,
+                    color: color,
+                }"
+            >
+                急聘
+                <div
+                    class="tag-tail"
+                    :style="{
+                        borderLeft: '1px solid ' + color,
+                    }"
+                />
+            </div>
         </div>
         <div class="content">
             <slot />
@@ -24,7 +39,15 @@
                     borderTop: '1px solid ' + color,
                 }"
             >
-                1
+                <div
+                    class="ifuicon"
+                    :style="{
+                        color: color,
+                    }"
+                >
+                    &#xe600;
+                </div>
+                <b>{{ button1Text }}</b>
             </div>
             <div
                 class="button-2"
@@ -33,15 +56,18 @@
                     borderLeft: '1px solid ' + color,
                 }"
             >
-                2
+                <div
+                    class="ifuicon"
+                    :style="{
+                        color: color,
+                    }"
+                >
+                    &#xe601;
+                </div>
+                <b>{{ button2Text }}</b>
             </div>
-            <div
-                class="apply-button"
-                :style="{
-                    background: color,
-                }"
-            >
-                提交申请
+            <div class="apply-button" :style="applyButtonStyle">
+                <b>{{ button3Text }}</b>
             </div>
         </div>
     </div>
@@ -57,6 +83,30 @@ export default {
         color: {
             type: String,
             required: true,
+        },
+        button1Text: {
+            type: String,
+            required: true,
+        },
+        button2Text: {
+            type: String,
+            required: true,
+        },
+        button3Text: {
+            type: String,
+            required: true,
+        },
+        hoverColor: {
+            type: String,
+            required: true,
+        },
+    },
+    computed: {
+        applyButtonStyle() {
+            return {
+                '--color': this.color,
+                '--hover-color': this.hoverColor,
+            };
         },
     },
 };
@@ -75,6 +125,29 @@ export default {
     line-height: 87px;
     padding: 0 47px;
     font-size: 23px;
+    position: relative;
+
+    .tag {
+        position: absolute;
+        right: -11px;
+        top: 22px;
+        background: white;
+        width: 101px;
+        height: 47px;
+        line-height: 47px;
+        text-align: center;
+        font-size: 16px;
+
+        .tag-tail {
+            content: '';
+            position: absolute;
+            right: -10px;
+            bottom: -18px;
+            width: 20px;
+            height: 12px;
+            transform: rotate(60deg);
+        }
+    }
 }
 
 .content {
@@ -88,17 +161,36 @@ export default {
     width: 100%;
     height: 109px;
     display: flex;
-    line-height: 109px;
     text-align: center;
+
+    .button-1,
+    .button-2,
+    .apply-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
     .button-1,
     .button-2 {
         flex-basis: 33.3%;
     }
 
+    .ifuicon {
+        font-size: 35px;
+    }
+
     .apply-button {
         flex-basis: 33.4%;
         color: white;
+        font-size: 23px;
+        background: var(--color);
+
+        &:hover {
+            background: var(--hover-color);
+            cursor: pointer;
+        }
     }
 }
 </style>

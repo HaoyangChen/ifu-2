@@ -92,7 +92,7 @@
                         {{ $t('membership.colhalf.becomeVipDesktop') }}
                     </p>
                     <p>{{ $t('membership.colhalf.becomeVipContent') }}</p>
-                    <Button to="/contact">{{
+                    <Button :to="localePath('/contact')">{{
                         $t('membership.colhalf.buttonText')
                     }}</Button>
                 </div>
