@@ -32,7 +32,9 @@
                     <a>{{ $t('footer.resourceShare') }}</a>
                 </div>
                 <div>
-                    <a>{{ $t('footer.vipDetail') }}</a>
+                    <nuxt-link :to="localePath('/membership')">{{
+                        $t('footer.vipDetail')
+                    }}</nuxt-link>
                 </div>
             </div>
             <div class="decoration-line decoration-line3"></div>
@@ -203,6 +205,14 @@ img {
     right: 482px;
 }
 
+.contact-us,
+.more-info {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 .contact-us {
     position: absolute;
     top: 41px;
@@ -210,11 +220,6 @@ img {
 
     .mgt-separate {
         margin-top: 20px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
     }
 }
 

@@ -35,6 +35,7 @@ export default {};
 <style lang="scss" scoped>
 .row-1 {
     overflow: auto;
+    background: $background-light-blue;
 
     > section,
     > div {
@@ -67,8 +68,24 @@ export default {};
     }
 
     a {
+        display: block;
         width: 50%;
         text-align: right;
+        color: $button-color;
+
+        &:hover {
+            color: $dark-pink;
+        }
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .row-1 {
+        > section,
+        > div {
+            width: 100%;
+            float: none;
+        }
     }
 }
 </style>

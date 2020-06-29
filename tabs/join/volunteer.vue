@@ -65,10 +65,29 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: $background-light-blue;
 
     > * {
-        flex-basis: 45%;
+        flex-basis: 48%;
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .row-1 {
+        > section,
+        > div {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .volunteer-section {
+        justify-content: center;
+
+        > * {
+            flex-basis: 100%;
+        }
     }
 }
 </style>

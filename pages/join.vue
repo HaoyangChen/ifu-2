@@ -35,6 +35,7 @@ export default {
                     title: '志愿者招募',
                     content: Volunteer,
                     color: '#C9D74A',
+                    defaultShow: true,
                 },
                 {
                     title: '工作人员招募',

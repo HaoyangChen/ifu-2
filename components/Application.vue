@@ -2,7 +2,6 @@
     <div
         class="application"
         :style="{
-            border: '1px solid ' + color,
             boxShadow: '0 4px 4px ' + color,
         }"
     >
@@ -114,16 +113,19 @@ export default {
 
 <style lang="scss" scoped>
 .application {
-    width: 568px;
+    max-width: 568px;
     height: 660px;
+    background: white;
 }
 
 .title {
     color: white;
     width: 100%;
     height: 87px;
-    line-height: 87px;
-    padding: 0 47px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 137px 0 47px;
     font-size: 23px;
     position: relative;
 
@@ -153,12 +155,12 @@ export default {
 .content {
     overflow: auto;
     width: 100%;
-    height: 462px;
+    height: 464px;
     padding: 50px 47px;
 }
 
 .button-list {
-    width: 100%;
+    width: 100.1%; // 100% 可能会导致 1px 的误差
     height: 109px;
     display: flex;
     text-align: center;
@@ -190,6 +192,34 @@ export default {
         &:hover {
             background: var(--hover-color);
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .application {
+        height: 560px;
+    }
+
+    .title {
+        padding: 0 110px 0 20px;
+        font-size: 16px;
+    }
+
+    .content {
+        height: 404px;
+        padding: 30px 20px;
+    }
+
+    .button-list {
+        height: 69px;
+
+        .ifuicon {
+            font-size: 20px;
+        }
+
+        .apply-button {
+            font-size: 16px;
         }
     }
 }
