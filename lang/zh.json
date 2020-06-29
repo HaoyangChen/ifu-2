@@ -13,7 +13,13 @@
     "footer": {
         "subTitle1": "让留学生活更安全",
         "subTitle2": "让学生家长更放心",
-        "followUs": "关注我们",
+        "followUs": "关注我们 获取实时动态",
+        "contactUs": "联系我们",
+        "joinUs": "加入我们",
+        "moreInfo": "更多资讯",
+        "resourceShare": "资源分享",
+        "vipDetail": "会员详情",
+        "supportUs": "支持我们",
         "codeText1": "扫描添加",
         "codeText2": "IFU小助手"
     },

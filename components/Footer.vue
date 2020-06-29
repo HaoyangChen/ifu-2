@@ -7,9 +7,33 @@
                     <p>{{ $t('footer.subTitle1') }}</p>
                     <p>{{ $t('footer.subTitle2') }}</p>
                 </div>
+                <p class="rights-reserved light-blue">
+                    © 2019 IFU All Rights Reserved
+                </p>
             </div>
+            <div class="decoration-line decoration-line1"></div>
+            <div class="contact-us">
+                <span class="light-blue">{{ $t('footer.contactUs') }}</span>
+                <div class="mgt-separate">
+                    <a>{{ $t('footer.joinUs') }}</a>
+                </div>
+                <div>
+                    <a>{{ $t('footer.supportUs') }}</a>
+                </div>
+            </div>
+            <div class="decoration-line decoration-line2"></div>
+            <div class="more-info">
+                <span class="light-blue">{{ $t('footer.moreInfo') }}</span>
+                <div class="mgt-separate">
+                    <a>{{ $t('footer.resourceShare') }}</a>
+                </div>
+                <div>
+                    <a>{{ $t('footer.vipDetail') }}</a>
+                </div>
+            </div>
+            <div class="decoration-line decoration-line3"></div>
             <div class="follow">
-                <p>{{ $t('footer.followUs') }}</p>
+                <p class="light-blue">{{ $t('footer.followUs') }}</p>
                 <div class="icon-container">
                     <a
                         v-for="(item, index) in followList"
@@ -22,47 +46,61 @@
                     </a>
                 </div>
             </div>
-            <div class="code">
-                <img :src="codeImg" alt="" />
-                <p>{{ $t('footer.codeText1') }}</p>
-                <p>{{ $t('footer.codeText2') }}</p>
-            </div>
         </div>
-        <div class="bottom">
+        <!-- <div class="bottom">
             <p>© 2019 IFU All Rights Reserved</p>
-        </div>
+        </div> -->
     </footer>
 </template>
 
 <script>
-import wechatImg from '@/assets/footer/wechat.png';
-import FBImg from '@/assets/footer/FB.png';
-import codeImg from '@/assets/footer/code.png';
-import weiboImg from '@/assets/footer/weibo.png';
-import zhihuImg from '@/assets/footer/zhihu.png';
+// import wechatImg from '@/assets/footer/wechat.png';
+import wechatIcon from '@/assets/footer/wechat_icon.svg';
+import facebookIcon from '@/assets/footer/FB_icon.svg';
+// import codeImg from '@/assets/footer/code.png';
+import weiboIcon from '@/assets/footer/weibo_icon.svg';
+import zhihuIcon from '@/assets/footer/zhihu_icon.svg';
+import bilibiliIcon from '@/assets/footer/bilibili_icon.svg';
+import linkedinIcon from '@/assets/footer/linkedin_icon.svg';
+import instagramIcon from '@/assets/footer/instagram_icon.svg';
+
 export default {
     name: 'Footer',
     data() {
         return {
-            codeImg,
             followList: [
                 {
-                    image: wechatImg,
+                    image: wechatIcon,
                     link:
                         'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=100010050&idx=2&sn=884d96ee07af997401e4e2d47d17b224&scene=19#wechat_redirect',
                 },
                 {
-                    image: weiboImg,
+                    image: weiboIcon,
                     link:
                         'https://www.weibo.com/u/6422822665?refer_flag=1001030103_&is_hot=1',
                 },
                 {
-                    image: zhihuImg,
+                    image: zhihuIcon,
                     link:
                         'https://www.zhihu.com/people/ifuguo-ji-jia-chang-hui/activities',
                 },
                 {
-                    image: FBImg,
+                    image: bilibiliIcon,
+                    link:
+                        'https://www.facebook.com/International-Family-Union-775710742807913/',
+                },
+                {
+                    image: facebookIcon,
+                    link:
+                        'https://www.facebook.com/International-Family-Union-775710742807913/',
+                },
+                {
+                    image: instagramIcon,
+                    link:
+                        'https://www.facebook.com/International-Family-Union-775710742807913/',
+                },
+                {
+                    image: linkedinIcon,
                     link:
                         'https://www.facebook.com/International-Family-Union-775710742807913/',
                 },
@@ -85,9 +123,10 @@ img {
 .footer {
     text-align: left;
     background-color: $dark-blue;
-    min-height: 184px;
+    min-height: 175px;
     width: 100%;
     position: relative;
+    color: #fff;
 }
 .top {
     padding: 0 $padding-horizontal;
@@ -113,6 +152,10 @@ img {
                 margin: 0px;
             }
         }
+
+        .rights-reserved {
+            margin-top: auto;
+        }
     }
     .logo-en {
         color: #fff;
@@ -137,22 +180,67 @@ img {
         }
     }
 }
+
+.decoration-line {
+    background-color: #a9defa;
+    height: 80px;
+    width: 2px;
+    position: absolute;
+    top: 43px;
+}
+
+.decoration-line1 {
+    left: 480px;
+}
+
+.decoration-line2 {
+    left: 710px;
+}
+
+.decoration-line3 {
+    right: 482px;
+}
+
+.contact-us {
+    position: absolute;
+    top: 41px;
+    left: 555px;
+
+    .mgt-separate {
+        margin-top: 20px;
+    }
+}
+
+.more-info {
+    position: absolute;
+    top: 41px;
+    left: 795px;
+
+    .mgt-separate {
+        margin-top: 20px;
+    }
+}
+
+.light-blue {
+    color: #a9defa;
+}
+
 .follow {
     color: #fff;
-    font-size: 14px;
+    // font-size: 14px;
     line-height: $text-size;
     letter-spacing: 0.03em;
     display: inline-block;
-    padding-top: 35px;
+    padding-top: 43px;
     position: absolute;
-    right: 272px;
+    right: 120px;
     p {
         margin: 0;
         margin-bottom: 10px;
     }
 
     a {
-        background: white;
+        // background: white;
         width: 36px;
         height: 36px;
         display: inline-block;
@@ -167,6 +255,10 @@ img {
                 opacity: 0.7;
             }
         }
+    }
+
+    .icon-container {
+        margin-top: 29px;
     }
 }
 .bottom {
