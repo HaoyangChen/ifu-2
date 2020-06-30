@@ -15,10 +15,14 @@
             <div class="contact-us">
                 <span class="light-blue">{{ $t('footer.contactUs') }}</span>
                 <div class="mgt-separate">
-                    <a>{{ $t('footer.joinUs') }}</a>
+                    <nuxt-link :to="localePath('/career')">{{
+                        $t('footer.joinUs')
+                    }}</nuxt-link>
                 </div>
                 <div>
-                    <a>{{ $t('footer.supportUs') }}</a>
+                    <nuxt-link :to="localePath('/support')">{{
+                        $t('footer.supportUs')
+                    }}</nuxt-link>
                 </div>
             </div>
             <div class="decoration-line decoration-line2"></div>
@@ -28,7 +32,9 @@
                     <a>{{ $t('footer.resourceShare') }}</a>
                 </div>
                 <div>
-                    <a>{{ $t('footer.vipDetail') }}</a>
+                    <nuxt-link :to="localePath('/membership')">{{
+                        $t('footer.vipDetail')
+                    }}</nuxt-link>
                 </div>
             </div>
             <div class="decoration-line decoration-line3"></div>
@@ -202,12 +208,30 @@ img {
     .mgt-separate {
         margin-top: 20px;
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .more-info {
     position: absolute;
     top: 41px;
     left: 795px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 
     .mgt-separate {
         margin-top: 20px;
