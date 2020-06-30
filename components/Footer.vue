@@ -49,6 +49,11 @@
                         rel="noreferrer noopener"
                     >
                         <img :src="item.image" alt="" />
+                        <!-- <img :src="gongzhonghaoImg" class="qrcode" alt="" /> -->
+                        <div class="qrcode">
+                            <img :src="gongzhonghaoImg" alt="" />
+                            <span>gekogeko</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -61,17 +66,19 @@
 
 <script>
 import wechatIcon from '@/assets/footer/wechat_icon.svg';
-import facebookIcon from '@/assets/footer/FB_icon.svg';
+import facebookIcon from '@/assets/footer/fb_icon.svg';
 import weiboIcon from '@/assets/footer/weibo_icon.svg';
 import zhihuIcon from '@/assets/footer/zhihu_icon.svg';
 import bilibiliIcon from '@/assets/footer/bilibili_icon.svg';
 import linkedinIcon from '@/assets/footer/linkedin_icon.svg';
 import instagramIcon from '@/assets/footer/instagram_icon.svg';
+import gongzhonghaoImg from '@/assets/footer/gongzhonghao.png';
 
 export default {
     name: 'Footer',
     data() {
         return {
+            gongzhonghaoImg,
             followList: [
                 {
                     image: wechatIcon,
@@ -276,6 +283,38 @@ img {
 
     .icon-container {
         margin-top: 29px;
+
+        a:first-of-type {
+            position: relative;
+            div.qrcode {
+                position: absolute;
+                z-index: 99;
+                top: -135px;
+                right: -52px;
+                width: 7.5rem;
+                max-width: none;
+                height: 7.5rem;
+                transform: scale(0);
+                transform-origin: bottom;
+                opacity: 0;
+                -webkit-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        a:first-of-type:hover {
+            div.qrcode {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        a:not(:first-child) {
+            div.qrcode {
+                display: none;
+            }
+        }
     }
 }
 .bottom {
