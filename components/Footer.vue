@@ -15,10 +15,14 @@
             <div class="contact-us">
                 <span class="light-blue">{{ $t('footer.contactUs') }}</span>
                 <div class="mgt-separate">
-                    <a>{{ $t('footer.joinUs') }}</a>
+                    <nuxt-link :to="localePath('/career')">{{
+                        $t('footer.joinUs')
+                    }}</nuxt-link>
                 </div>
                 <div>
-                    <a>{{ $t('footer.supportUs') }}</a>
+                    <nuxt-link :to="localePath('/support')">{{
+                        $t('footer.supportUs')
+                    }}</nuxt-link>
                 </div>
             </div>
             <div class="decoration-line decoration-line2"></div>
@@ -28,7 +32,9 @@
                     <a>{{ $t('footer.resourceShare') }}</a>
                 </div>
                 <div>
-                    <a>{{ $t('footer.vipDetail') }}</a>
+                    <nuxt-link :to="localePath('/membership')">{{
+                        $t('footer.vipDetail')
+                    }}</nuxt-link>
                 </div>
             </div>
             <div class="decoration-line decoration-line3"></div>
@@ -56,7 +62,7 @@
 <script>
 // import wechatImg from '@/assets/footer/wechat.png';
 import wechatIcon from '@/assets/footer/wechat_icon.svg';
-import facebookIcon from '@/assets/footer/FB_icon.svg';
+import facebookIcon from '@/assets/footer/fb_icon.svg';
 // import codeImg from '@/assets/footer/code.png';
 import weiboIcon from '@/assets/footer/weibo_icon.svg';
 import zhihuIcon from '@/assets/footer/zhihu_icon.svg';
@@ -197,6 +203,14 @@ img {
 
 .decoration-line3 {
     right: 482px;
+}
+
+.contact-us,
+.more-info {
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .contact-us {

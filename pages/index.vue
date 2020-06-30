@@ -4,7 +4,7 @@
             :title="$t('home.banner.subTitle')"
             :sub-title="$t('home.banner.title')"
             :button-text="$t('home.banner.buttonText')"
-            to="/about"
+            :to="localePath('/about')"
             :background="bannerImage"
             title-color="#2C3E51"
         >

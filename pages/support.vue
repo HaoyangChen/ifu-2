@@ -5,7 +5,7 @@
             :description="$t('donation.banner.description')"
             :background="bannerImage"
             :button-text="$t('donation.banner.buttonText')"
-            to="/about"
+            :to="localePath('/about')"
         />
         <section class="support-section">
             <h2>{{ $t('donation.support.title') }}</h2>

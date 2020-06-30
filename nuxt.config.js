@@ -91,7 +91,7 @@ export default {
         seo: true,
     },
     styleResources: {
-        scss: ['style/var.scss'],
+        scss: ['style/var.scss', 'style/icon.scss'],
     },
     /**
      * Sitemap Configuration

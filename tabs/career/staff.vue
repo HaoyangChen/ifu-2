@@ -9,18 +9,20 @@
                 </p>
             </section>
             <div>
-                <img src="@/assets/join/staff/staff.png" />
+                <img src="@/assets/career/staff/staff.png" />
             </div>
         </div>
         <section class="join-section">
             <p>
                 感谢您对我们的认可，IFU目前暂无工作人员岗位招聘。考虑作为志愿者加入我们？
             </p>
-            <nuxt-link to="/join">查看志愿者招募职位>>></nuxt-link>
+            <a @click="$router.go({ path: localePath('/career'), force: true })"
+                >查看志愿者招募职位>>></a
+            >
         </section>
         <section class="clipart-section">
             <div>
-                <img src="@/assets/join/staff/clipart.png" />
+                <img src="@/assets/career/staff/clipart.svg" />
             </div>
         </section>
     </div>
@@ -33,6 +35,8 @@ export default {};
 <style lang="scss" scoped>
 .row-1 {
     overflow: auto;
+    background: $background-light-blue;
+    line-height: 2em;
 
     > section,
     > div {
@@ -65,8 +69,32 @@ export default {};
     }
 
     a {
+        display: block;
         width: 50%;
         text-align: right;
+        color: $button-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-pink;
+            cursor: pointer;
+        }
+    }
+}
+
+.clipart-section {
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .row-1 {
+        > section,
+        > div {
+            width: 100%;
+            float: none;
+        }
     }
 }
 </style>
