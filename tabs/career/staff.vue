@@ -81,6 +81,12 @@ export default {};
     }
 }
 
+.clipart-section {
+    img {
+        width: 100%;
+    }
+}
+
 @media (max-width: $mobile-max-width) {
     .row-1 {
         > section,

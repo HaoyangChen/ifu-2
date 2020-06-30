@@ -46,7 +46,9 @@
                 >
                     &#xe600;
                 </div>
-                <b>{{ button1Text }}</b>
+                <p>
+                    招募 <b>{{ button1Text }}</b>
+                </p>
             </div>
             <div
                 class="button-2"
@@ -63,11 +65,17 @@
                 >
                     &#xe601;
                 </div>
-                <b>{{ button2Text }}</b>
+                <p>
+                    志愿周期 <b>{{ button2Text }}</b>
+                </p>
             </div>
-            <div class="apply-button" :style="applyButtonStyle">
-                <b>{{ button3Text }}</b>
-            </div>
+            <a
+                class="apply-button"
+                :style="applyButtonStyle"
+                :href="to"
+                target="_blank"
+                ><b>{{ button3Text }}</b></a
+            >
         </div>
     </div>
 </template>
@@ -99,6 +107,10 @@ export default {
             type: String,
             required: true,
         },
+        to: {
+            type: String,
+            required: true,
+        },
     },
     computed: {
         applyButtonStyle() {
@@ -124,10 +136,11 @@ export default {
     height: 87px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0 137px 0 47px;
     font-size: 23px;
     position: relative;
+    font-weight: 600;
 
     .tag {
         position: absolute;
@@ -177,6 +190,10 @@ export default {
     .button-1,
     .button-2 {
         flex-basis: 33.3%;
+
+        p {
+            margin: 0;
+        }
     }
 
     .ifuicon {
@@ -185,9 +202,10 @@ export default {
 
     .apply-button {
         flex-basis: 33.4%;
+        background: var(--color);
+        text-decoration: none;
         color: white;
         font-size: 23px;
-        background: var(--color);
 
         &:hover {
             background: var(--hover-color);

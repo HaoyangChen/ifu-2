@@ -2,10 +2,11 @@
     <volunteer-application
         :title="department + ' - ' + name"
         :color="departmentColorMap[department]"
-        :button1-text="'招募 ' + people + '人'"
-        :button2-text="'志愿周期 ' + time + '个月'"
+        :button1-text="people + '人'"
+        :button2-text="time + '个月'"
         button3-text="提交申请"
         :hover-color="hoverColorMap[department]"
+        :to="link"
     >
         <p><b>申请人基本条件</b></p>
         <p>{{ requirement }}</p>
@@ -49,6 +50,10 @@ export default {
             required: true,
         },
         time: {
+            type: String,
+            required: true,
+        },
+        link: {
             type: String,
             required: true,
         },

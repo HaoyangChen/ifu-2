@@ -22,6 +22,10 @@
                 :reward="volunteer.reward"
                 :people="volunteer.people"
                 :time="volunteer.time"
+                :link="
+                    volunteer.link ||
+                        'https://docs.google.com/forms/d/e/1FAIpQLScxv4rY_MMRqShfJRdAPHx50t2R_slZxQVTSJh1Tt_numq-tA/viewform'
+                "
             />
         </section>
     </div>
