@@ -15,14 +15,10 @@
             <div class="contact-us">
                 <span class="light-blue">{{ $t('footer.contactUs') }}</span>
                 <div class="mgt-separate">
-                    <nuxt-link :to="localePath('/career')">{{
-                        $t('footer.joinUs')
-                    }}</nuxt-link>
+                    <a>{{ $t('footer.joinUs') }}</a>
                 </div>
                 <div>
-                    <nuxt-link :to="localePath('/support')">{{
-                        $t('footer.supportUs')
-                    }}</nuxt-link>
+                    <a>{{ $t('footer.supportUs') }}</a>
                 </div>
             </div>
             <div class="decoration-line decoration-line2"></div>
@@ -32,9 +28,7 @@
                     <a>{{ $t('footer.resourceShare') }}</a>
                 </div>
                 <div>
-                    <nuxt-link :to="localePath('/membership')">{{
-                        $t('footer.vipDetail')
-                    }}</nuxt-link>
+                    <a>{{ $t('footer.vipDetail') }}</a>
                 </div>
             </div>
             <div class="decoration-line decoration-line3"></div>
@@ -60,10 +54,8 @@
 </template>
 
 <script>
-// import wechatImg from '@/assets/footer/wechat.png';
 import wechatIcon from '@/assets/footer/wechat_icon.svg';
-import facebookIcon from '@/assets/footer/fb_icon.svg';
-// import codeImg from '@/assets/footer/code.png';
+import facebookIcon from '@/assets/footer/FB_icon.svg';
 import weiboIcon from '@/assets/footer/weibo_icon.svg';
 import zhihuIcon from '@/assets/footer/zhihu_icon.svg';
 import bilibiliIcon from '@/assets/footer/bilibili_icon.svg';
@@ -92,8 +84,7 @@ export default {
                 },
                 {
                     image: bilibiliIcon,
-                    link:
-                        'https://www.facebook.com/International-Family-Union-775710742807913/',
+                    link: 'https://space.bilibili.com/399581752',
                 },
                 {
                     image: facebookIcon,
@@ -102,13 +93,11 @@ export default {
                 },
                 {
                     image: instagramIcon,
-                    link:
-                        'https://www.facebook.com/International-Family-Union-775710742807913/',
+                    link: 'https://www.instagram.com/ifu_i_family_u/?hl=en',
                 },
                 {
                     image: linkedinIcon,
-                    link:
-                        'https://www.facebook.com/International-Family-Union-775710742807913/',
+                    link: 'https://www.linkedin.com/company/ifu-china/',
                 },
             ],
         };
@@ -203,14 +192,6 @@ img {
 
 .decoration-line3 {
     right: 482px;
-}
-
-.contact-us,
-.more-info {
-    a {
-        text-decoration: none;
-        color: white;
-    }
 }
 
 .contact-us {
