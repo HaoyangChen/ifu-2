@@ -51,10 +51,28 @@
         "name": "微信公众号作者",
         "department": "运营部",
         "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；较强的新闻报道写作能力；具有一定英译中能力",
+        "description": "解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪；展示真实留学生活，分享优质留学经验；宣传IFU组织形象",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "若干",
+        "time": "3"
+    },
+    {
+        "name": "微信公众号作者",
+        "department": "运营部",
+        "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；较强的新闻报道写作能力；具有一定英译中能力",
         "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
         "time": "3"
+    },
+    {
+        "name": "公众号编辑",
+        "department": "运营部",
+        "requirement": "会使用秀米网站进行文章排版；非硬性要求，有图片设计基础优先；如果有社交媒体运营经验/做过博主，请提供相关作品",
+        "description": "根据已有文案素材，进行公众号文章排版，保证最终效果美观吸引用户",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "1",
+        "time": "6"
     },
     {
         "name": "Instagram平台内容运营",

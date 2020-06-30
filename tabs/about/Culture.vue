@@ -74,9 +74,11 @@
         <section class="join-section">
             <p>{{ $t('about.culture.joinText1') }}</p>
             <p>{{ $t('about.culture.joinText2') }}</p>
-            <Button external :to="campusVolunteerLink[$i18n.locale]">{{
-                $t('about.culture.joinButtonText')
-            }}</Button>
+            <Button
+                external
+                to="https://docs.google.com/forms/d/e/1FAIpQLScxv4rY_MMRqShfJRdAPHx50t2R_slZxQVTSJh1Tt_numq-tA/viewform"
+                >{{ $t('about.culture.joinButtonText') }}</Button
+            >
         </section>
     </div>
 </template>
@@ -88,14 +90,6 @@ export default {
     name: 'Culture',
     components: {
         Button,
-    },
-    data() {
-        return {
-            campusVolunteerLink: {
-                zh: 'https://www.wjx.cn/jq/71891803.aspx',
-                en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
-            },
-        };
     },
 };
 </script>
