@@ -22,7 +22,9 @@
         "resourceShare": "Resources",
         "vipDetail": "Membership",
         "codeText1": "Scan To Add Our",
-        "codeText2": "WeChat Assistant"
+        "codeText2": "WeChat Assistant",
+        "gongzhonghao": "Follow Official Account",
+        "assistant": "Scan to add Assistant"
     },
     "home": {
         "banner": {

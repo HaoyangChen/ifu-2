@@ -22,7 +22,9 @@
         "vipDetail": "会员详情",
         "supportUs": "支持我们",
         "codeText1": "扫描添加",
-        "codeText2": "IFU小助手"
+        "codeText2": "IFU小助手",
+        "gongzhonghao": "关注官方公众号",
+        "assistant": "扫描添加IFU小助手"
     },
     "home": {
         "banner": {

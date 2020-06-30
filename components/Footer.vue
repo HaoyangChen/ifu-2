@@ -51,8 +51,14 @@
                         <img :src="item.image" alt="" />
                         <!-- <img :src="gongzhonghaoImg" class="qrcode" alt="" /> -->
                         <div class="qrcode">
-                            <img :src="gongzhonghaoImg" alt="" />
-                            <span>gekogeko</span>
+                            <div class="official_qrcode">
+                                <img :src="gongzhonghaoImg" alt="" />
+                                <span>{{ $t('footer.gongzhonghao') }}</span>
+                            </div>
+                            <div class="assistant_qrcode">
+                                <img :src="assistantImg" alt="" />
+                                <span>{{ $t('footer.assistant') }}</span>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -73,12 +79,14 @@ import bilibiliIcon from '@/assets/footer/bilibili_icon.svg';
 import linkedinIcon from '@/assets/footer/linkedin_icon.svg';
 import instagramIcon from '@/assets/footer/instagram_icon.svg';
 import gongzhonghaoImg from '@/assets/footer/gongzhonghao.png';
+import assistantImg from '@/assets/footer/assistant_qrcode.png';
 
 export default {
     name: 'Footer',
     data() {
         return {
             gongzhonghaoImg,
+            assistantImg,
             followList: [
                 {
                     image: wechatIcon,
@@ -283,23 +291,52 @@ img {
 
     .icon-container {
         margin-top: 29px;
+        text-align: center;
 
         a:first-of-type {
             position: relative;
             div.qrcode {
                 position: absolute;
                 z-index: 99;
-                top: -135px;
-                right: -52px;
-                width: 7.5rem;
+                top: -206px;
+                right: -145px;
+                // width: 7.5rem;
                 max-width: none;
-                height: 7.5rem;
+                // height: 7.5rem;
                 transform: scale(0);
                 transform-origin: bottom;
                 opacity: 0;
                 -webkit-transition: all 0.4s ease-in-out;
                 -o-transition: all 0.4s ease-in-out;
                 transition: all 0.4s ease-in-out;
+                display: flex;
+                flex-direction: row;
+                background-color: #fff;
+                padding: 0 15px;
+
+                span {
+                    color: #54bef5;
+                    font-size: 0.5rem;
+                }
+
+                .official_qrcode {
+                    padding: 15px;
+                    img {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        margin-bottom: 8px;
+                        margin-right: 0px;
+                    }
+                }
+                .assistant_qrcode {
+                    padding: 15px;
+                    img {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        margin-bottom: 8px;
+                        margin-right: 0px;
+                    }
+                }
             }
         }
 
