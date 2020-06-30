@@ -518,4 +518,29 @@ img {
         }
     }
 }
+
+@media (max-width: 498px) {
+    .follow {
+        .icon-container {
+            margin-top: 45px;
+        }
+    }
+
+    .top {
+        .contact-us {
+            left: 23%;
+            top: 175px;
+        }
+
+        .more-info {
+            top: 175px;
+        }
+
+        .logo {
+            .rights-reserved {
+                top: 416px;
+            }
+        }
+    }
+}
 </style>
