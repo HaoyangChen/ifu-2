@@ -6,7 +6,8 @@
         "description": "翻译组织更新的各种文件（中翻英/英翻中）",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1-2",
-        "time": "1-3"
+        "time": "1-3",
+        "urgent": true
     },
     {
         "name": "法务人员",
@@ -15,7 +16,8 @@
         "description": "IFU合作合同、捐赠合同审核；IFU人事合同审核；IFU章程审核；其他负责人安排的事物",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
-        "time": "3-6"
+        "time": "3-6",
+        "urgent": true
     },
     {
         "name": "Panelists",
@@ -25,7 +27,8 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
         "time": "1",
-        "link": "https://www.wjx.top/jq/83086067.aspx"
+        "link": "https://www.wjx.top/jq/83086067.aspx",
+        "urgent": true
     },
     {
         "name": "Management Specialists",
@@ -35,7 +38,8 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
         "time": "1",
-        "link": "https://www.wjx.top/jq/83086067.aspx"
+        "link": "https://www.wjx.top/jq/83086067.aspx",
+        "urgent": true
     },
     {
         "name": "Communication Specialists",
@@ -45,7 +49,8 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
         "time": "1",
-        "link": "https://www.wjx.top/jq/83086067.aspx"
+        "link": "https://www.wjx.top/jq/83086067.aspx",
+        "urgent": true
     },
     {
         "name": "微信公众号作者",
@@ -54,25 +59,8 @@
         "description": "解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪；展示真实留学生活，分享优质留学经验；宣传IFU组织形象",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
-        "time": "3"
-    },
-    {
-        "name": "微信公众号作者",
-        "department": "运营部",
-        "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；较强的新闻报道写作能力；具有一定英译中能力",
-        "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "若干",
-        "time": "3"
-    },
-    {
-        "name": "公众号编辑",
-        "department": "运营部",
-        "requirement": "会使用秀米网站进行文章排版；非硬性要求，有图片设计基础优先；如果有社交媒体运营经验/做过博主，请提供相关作品",
-        "description": "根据已有文案素材，进行公众号文章排版，保证最终效果美观吸引用户",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "6"
+        "time": "3",
+        "urgent": true
     },
     {
         "name": "Instagram平台内容运营",
@@ -81,7 +69,27 @@
         "description": "负责Instagram内容运营规划，定期将数据分析反馈给运营组负责人，优化运营方案；基于宣传组织形象的目的，制作图片及文案，收集IFU活动&团队照片，发布帖子",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
-        "time": "3"
+        "time": "3",
+        "urgent": true
+    },
+    {
+        "name": "公众号编辑",
+        "department": "运营部",
+        "requirement": "会使用秀米网站进行文章排版；非硬性要求，有图片设计基础优先；如果有社交媒体运营经验/做过博主，请提供相关作品",
+        "description": "根据已有文案素材，进行公众号文章排版，保证最终效果美观吸引用户",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "urgent": true
+    },
+    {
+        "name": "知乎平台内容运营",
+        "department": "运营部",
+        "requirement": "至少一年留学经验；有知乎账号运营经验优先",
+        "description": "负责知乎内容运营规划，定期将数据分析反馈给运营组负责人，优化运营方案；基于宣传组织形象的目的，制作图片及文案，收集IFU活动&团队照片，发布帖子；挑选留学相关问题邀请，发布高质量回答；挑选公众号优质内容，搬运到知乎平台",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "1",
+        "time": "6"
     },
     {
         "name": "UI/UX设计师",

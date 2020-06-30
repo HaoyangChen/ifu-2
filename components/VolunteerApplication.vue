@@ -7,6 +7,7 @@
         button3-text="提交申请"
         :hover-color="hoverColorMap[department]"
         :to="link"
+        :tag="urgent"
     >
         <p><b>申请人基本条件</b></p>
         <p>{{ requirement }}</p>
@@ -56,6 +57,10 @@ export default {
         link: {
             type: String,
             required: true,
+        },
+        urgent: {
+            type: Boolean,
+            default: false,
         },
     },
     data() {

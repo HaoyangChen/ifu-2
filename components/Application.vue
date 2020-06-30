@@ -13,6 +13,7 @@
         >
             {{ title }}
             <div
+                v-show="tag"
                 class="tag"
                 :style="{
                     border: '1px solid ' + color,
@@ -110,6 +111,10 @@ export default {
         to: {
             type: String,
             required: true,
+        },
+        tag: {
+            type: Boolean,
+            default: false,
         },
     },
     computed: {
