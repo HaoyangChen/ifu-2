@@ -9,11 +9,13 @@
             class="title"
             :style="{
                 background: color,
+                height: titleHeight + 'px',
             }"
         >
-            {{ title }}
+            <p v-if="department.length < 10">{{ department + ' - ' + name }}</p>
+            <p v-else>{{ department }}<br />{{ '- ' + name }}</p>
             <div
-                v-show="tag"
+                v-show="urgent"
                 class="tag"
                 :style="{
                     border: '1px solid ' + color,
@@ -29,8 +31,15 @@
                 />
             </div>
         </div>
-        <div class="content">
-            <slot />
+        <div
+            class="content"
+            :style="{
+                height: contentHeight + 'px',
+            }"
+        >
+            <p><b>申请人基本条件</b><br />{{ requirement }}</p>
+            <p><b>职位具体介绍</b><br />{{ description }}</p>
+            <p><b>结束任期回报</b><br />{{ reward }}</p>
         </div>
         <div class="button-list">
             <div
@@ -48,7 +57,7 @@
                     &#xe600;
                 </div>
                 <p>
-                    招募 <b>{{ button1Text }}</b>
+                    招募 <b>{{ people }}</b>
                 </p>
             </div>
             <div
@@ -67,7 +76,7 @@
                     &#xe601;
                 </div>
                 <p>
-                    志愿周期 <b>{{ button2Text }}</b>
+                    志愿周期 <b>{{ time }}</b>
                 </p>
             </div>
             <a
@@ -75,7 +84,7 @@
                 :style="applyButtonStyle"
                 :href="to"
                 target="_blank"
-                ><b>{{ button3Text }}</b></a
+                ><b>提交申请</b></a
             >
         </div>
     </div>
@@ -84,38 +93,62 @@
 <script>
 export default {
     props: {
-        title: {
+        name: {
             type: String,
             required: true,
         },
-        color: {
+        department: {
             type: String,
             required: true,
         },
-        button1Text: {
+        people: {
             type: String,
             required: true,
         },
-        button2Text: {
+        requirement: {
             type: String,
             required: true,
         },
-        button3Text: {
+        description: {
             type: String,
             required: true,
         },
-        hoverColor: {
+        reward: {
             type: String,
             required: true,
         },
-        to: {
+        time: {
             type: String,
             required: true,
         },
-        tag: {
+        link: {
+            type: String,
+            required: true,
+        },
+        urgent: {
             type: Boolean,
             default: false,
         },
+    },
+    data() {
+        return {
+            departmentColorMap: {
+                行政部: '#C9D74A',
+                运营部: '#FDA63B',
+                技术部: '#54BEF5',
+                多多罗: '#F96191',
+                志愿者团队: '#CC8ABD',
+                '2020学长学姐嘉年华': '#FDA63B',
+            },
+            hoverColorMap: {
+                行政部: '#B7C348',
+                运营部: '#EA9A38',
+                技术部: '#4FAFE1',
+                多多罗: '#E15682',
+                志愿者团队: '#A37297',
+                '2020学长学姐嘉年华': '#EA9A38',
+            },
+        };
     },
     computed: {
         applyButtonStyle() {
@@ -123,6 +156,18 @@ export default {
                 '--color': this.color,
                 '--hover-color': this.hoverColor,
             };
+        },
+        color() {
+            return this.departmentColorMap[this.department];
+        },
+        hoverColor() {
+            return this.hoverColorMap[this.department];
+        },
+        titleHeight() {
+            return this.department.length < 10 ? 87 : 114;
+        },
+        contentHeight() {
+            return 660 - 109 - this.titleHeight;
         },
     },
 };
@@ -138,7 +183,6 @@ export default {
 .title {
     color: white;
     width: 100%;
-    height: 87px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -171,10 +215,14 @@ export default {
 }
 
 .content {
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
-    height: 464px;
-    padding: 50px 47px;
+    padding: 47px 47px;
+
+    p {
+        line-height: 31px;
+        margin-bottom: 25px;
+    }
 }
 
 .button-list {

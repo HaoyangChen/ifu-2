@@ -4,7 +4,7 @@
             <section>
                 <h2>加入工作人员团队</h2>
                 <p>
-                    IFU的工作人员负责组织的日常运营。组织分为运营、志愿者管理、行政、项目、技术、对外关系六大部门。工作人员直接申请要求有至少3个月以上的工作经验，需通过递交简历申请、面试、General
+                    IFU的工作人员负责组织的日常运营。组织分为<b>运营、志愿者管理、行政、项目、技术、对外关系</b>六大部门。工作人员直接申请要求有至少3个月以上的工作经验，需通过递交简历申请、面试、General
                     Test和3个月的考核期，通过后将根据考核结果进入对应职位带领志愿者达成组织使命。
                 </p>
             </section>
@@ -34,20 +34,20 @@ export default {};
 
 <style lang="scss" scoped>
 .row-1 {
-    overflow: auto;
+    display: flex;
     background: $background-light-blue;
     line-height: 2em;
 
     > section,
     > div {
-        width: 50%;
-        float: left; // 并排两个 block
+        flex-basis: 50%;
     }
 
     div {
         img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -90,10 +90,11 @@ export default {};
 
 @media (max-width: $mobile-max-width) {
     .row-1 {
+        flex-wrap: wrap;
+
         > section,
         > div {
-            width: 100%;
-            float: none;
+            flex-basis: 100%;
         }
     }
 }
