@@ -22,7 +22,7 @@
                     color: color,
                 }"
             >
-                急聘
+                {{ $t('application.urgent') }}
                 <div
                     class="tag-tail"
                     :style="{
@@ -37,9 +37,18 @@
                 height: contentHeight + 'px',
             }"
         >
-            <p><b>申请人基本条件</b><br />{{ requirement }}</p>
-            <p><b>职位具体介绍</b><br />{{ description }}</p>
-            <p><b>结束任期回报</b><br />{{ reward }}</p>
+            <p>
+                <b>{{ $t('application.requirement') }}</b
+                ><br />{{ requirement }}
+            </p>
+            <p>
+                <b>{{ $t('application.description') }}</b
+                ><br />{{ description }}
+            </p>
+            <p>
+                <b>{{ $t('application.reward') }}</b
+                ><br />{{ reward }}
+            </p>
         </div>
         <div class="button-list">
             <div
@@ -57,7 +66,8 @@
                     &#xe600;
                 </div>
                 <p>
-                    招募 <b>{{ people }}</b>
+                    {{ $t('application.people') }}
+                    <b>{{ people + $t('application.peopleUnit') }}</b>
                 </p>
             </div>
             <div
@@ -76,15 +86,16 @@
                     &#xe601;
                 </div>
                 <p>
-                    志愿周期 <b>{{ time }}</b>
+                    {{ $t('application.time') }}
+                    <b>{{ time + $t('application.timeUnit') }}</b>
                 </p>
             </div>
             <a
                 class="apply-button"
                 :style="applyButtonStyle"
-                :href="to"
+                :href="link"
                 target="_blank"
-                ><b>提交申请</b></a
+                ><b>{{ $t('application.submit') }}</b></a
             >
         </div>
     </div>
@@ -134,19 +145,29 @@ export default {
         return {
             departmentColorMap: {
                 行政部: '#C9D74A',
+                'Administration & Finance': '#C9D74A',
                 运营部: '#FDA63B',
+                Operation: '#FDA63B',
                 技术部: '#54BEF5',
+                'Design & Technology': '#54BEF5',
                 多多罗: '#F96191',
                 志愿者团队: '#CC8ABD',
+                'Volunteer Management': '#CC8ABD',
                 '2020学长学姐嘉年华': '#FDA63B',
+                '2020 IFU College Carnival': '#FDA63B',
             },
             hoverColorMap: {
                 行政部: '#B7C348',
+                'Administration & Finance': '#B7C348',
                 运营部: '#EA9A38',
+                Operation: '#EA9A38',
                 技术部: '#4FAFE1',
+                'Design & Technology': '#4FAFE1',
                 多多罗: '#E15682',
                 志愿者团队: '#A37297',
+                'Volunteer Management': '#A37297',
                 '2020学长学姐嘉年华': '#EA9A38',
+                '2020 IFU College Carnival': '#EA9A38',
             },
         };
     },

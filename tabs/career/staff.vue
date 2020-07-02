@@ -2,11 +2,8 @@
     <div>
         <div class="row-1">
             <section>
-                <h2>加入工作人员团队</h2>
-                <p>
-                    IFU的工作人员负责组织的日常运营。组织分为<b>运营、志愿者管理、行政、项目、技术、对外关系</b>六大部门。工作人员直接申请要求有至少3个月以上的工作经验，需通过递交简历申请、面试、General
-                    Test和3个月的考核期，通过后将根据考核结果进入对应职位带领志愿者达成组织使命。
-                </p>
+                <h2>{{ $t('career.staff.joinSection.title') }}</h2>
+                <p v-html="$t('career.staff.joinSection.description')" />
             </section>
             <div>
                 <img src="@/assets/career/staff/staff.png" />

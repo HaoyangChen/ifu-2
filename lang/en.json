@@ -697,5 +697,35 @@
             "training1": "As the leading GRE training institution in the United States, <b>Shanghai Tuoyan Education</b> is committed to providing <b>high-quality and professional GRE courses</b> for students studying in the United States. Excellent teachers and a spirit of continuous improvement have enabled Tuoyan to cultivate a group of students who earn scores that are satisfying to themselves. \"<b>Tuoyan's teachers are the most responsible GRE teachers I have ever encountered.</b> If I have any questions, I will be responded immediately if I ask on WeChat. Thank you for letting me worry no more about my grades and the possibility of not being accepted into any graduate Colleges! \"said IFU students. Thank you, Mr. Tuo Yan, for your full support during the education of IFU Charity Program. Thank you for growing up with IFU!",
             "learnMoreBtn": "Learn More"
         }
+    },
+    "career": {
+        "banner": {
+            "title": "JOIN US",
+            "buttonText": "Our Story",
+            "description": "If you are passionate about providing international students with help; if you would like to reduce the anxiety of families with their children studying abroad; if you would like to improve the generation and information gap between international students and and their parents; if you would like to soothe the minds of international students who struggle overseas, join the big family of IFU now!"
+        },
+        "volunteer": {
+            "joinSection": {
+                "title": "Become a Volunteer",
+                "description": "Volunteers of IFU are separated into <b>project volunteers</b> and <b>on-campus volunteers</b>.  Volunteers should have the experience of studying abroad or would like to make contributions to international students; always willing to give a hand, passionate about public services. For now, volunteers of IFU are divided geographically into teams in the east coast (U.S.), west coast (U.S.), and Canada. The management team consists of district managers and their assistants, guiding all volunteers of IFU towards the goals of reducing the anxiety between international students and parents and increasing the connection between them by conveying their voices to each other"
+            }
+        },
+        "staff": {
+            "joinSection": {
+                "title": "Become a Staff",
+                "description": "The staff of IFU are in charge of the running of the organization. The organization is divided into departments of <b>Operation, Volunteer Management, Administration & Finance, Cooperative Project, Design & Technology and Diplomacy</b>. The direct application of staff requires work experience of no fewer than three months, resume, (face-to-face) interview, General Test and a probation of three months. After passing the probation, according to the result of the probation, staff would start working and lead volunteers to achieve the goals of IFU."
+            }
+        }
+    },
+    "application": {
+        "urgent": "Urgent",
+        "requirement": "Requirement",
+        "description": "Job Description",
+        "reward": "Reward",
+        "people": "Position",
+        "peopleUnit": " available",
+        "time": "Volunteer Period",
+        "timeUnit": " month(s)",
+        "submit": "Apply Now"
     }
 }
