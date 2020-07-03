@@ -794,6 +794,24 @@ img {
         }
     }
 
+    .bg-carnival {
+        div.carnival-event {
+            width: auto;
+            padding: 10px;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+            .carnival-btn {
+                margin-top: 0px;
+            }
+        }
+    }
+
     .work-icon {
         display: inline;
         margin-right: 8px;
