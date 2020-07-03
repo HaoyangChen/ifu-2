@@ -19,11 +19,11 @@
                 />
                 <h1>{{ $t('home.coronavirus.title') }}</h1>
                 <div class="wuhan-description">
-                    <p>{{ $t('home.coronavirus.description') }}</p>
+                    <p v-html="$t('home.coronavirus.description')" />
                 </div>
                 <Button
                     external
-                    to="https://mp.weixin.qq.com/s/FUOLzynHbsRUq-6C4KmUwQ"
+                    to="https://mp.weixin.qq.com/s/DYgmlzgmHrr9_-T0UjdGYw"
                     >{{ $t('home.coronavirus.buttonText') }}</Button
                 >
                 <img
@@ -81,41 +81,43 @@
                 </div>
             </section>
         </div>
-        <section>
-            <h2>{{ $t('home.eventList.title') }}</h2>
-            <div class="event-left">
-                <a :href="eventLink" target="_blank">
-                    <img src="@/assets/home/event_7.png" alt="" />
-                    <img
-                        id="arrow2"
-                        src="@/assets/home/Arrow.png"
-                        alt="arrow"
-                    />
-                    <div class="event-text">
-                        {{ $t('home.eventList.text1') }}
-                    </div>
-                </a>
-            </div>
-            <div class="event-right">
-                <div class="event-list">
-                    <Event
-                        v-for="(event, index) in eventList"
-                        :key="index"
-                        class="event-item"
-                        :image="event.image"
-                        :link="event.link"
-                        :text="event.text"
-                    />
-                </div>
-            </div>
-            <div class="more-events">
-                <a
-                    href="http://mp.weixin.qq.com/mp/homepage?__biz=MzU1MTE2MDkxOQ==&hid=2&sn=6787ada9887b05cdee1a4f95d6f67cc3&scene=18#wechat_redirect"
-                    target="_blank"
-                    >{{ $t('home.eventList.more') }}</a
-                >
-            </div>
-        </section>
+        <div class="announcement-row">
+            <section class="announcement-section">
+                <h2>{{ $t('home.announcement.title') }}</h2>
+                <p>
+                    {{ $t('home.announcement.description') }}
+                </p>
+                <ul>
+                    <li>
+                        <span>{{ $t('home.announcement.1.time') }}</span
+                        >{{ $t('home.announcement.1.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.2.time') }}</span
+                        >{{ $t('home.announcement.2.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.3.time') }}</span
+                        >{{ $t('home.announcement.3.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.4.time') }}</span
+                        >{{ $t('home.announcement.4.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.5.time') }}</span
+                        >{{ $t('home.announcement.5.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.6.time') }}</span
+                        >{{ $t('home.announcement.6.name') }}
+                    </li>
+                </ul>
+            </section>
+            <section class="announcement-image">
+                <img src="@/assets/home/announcement.svg" />
+            </section>
+        </div>
         <section class="about-us-section background-blue">
             <div class="container half-style">
                 <div class="col-half">
@@ -152,12 +154,43 @@
                             src="@/assets/home/qrcode-student.png"
                             alt="QR Code for Student Group"
                         />
-                        <img
-                            :src="aprilAnnoucementImg[$i18n.locale]"
-                            alt="April Annoucement"
-                        />
                     </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <h2>{{ $t('home.eventList.title') }}</h2>
+            <div class="event-left">
+                <a :href="eventLink" target="_blank">
+                    <img src="@/assets/home/event_7.png" alt="" />
+                    <img
+                        id="arrow2"
+                        src="@/assets/home/Arrow.png"
+                        alt="arrow"
+                    />
+                    <div class="event-text">
+                        {{ $t('home.eventList.text1') }}
+                    </div>
+                </a>
+            </div>
+            <div class="event-right">
+                <div class="event-list">
+                    <Event
+                        v-for="(event, index) in eventList"
+                        :key="index"
+                        class="event-item"
+                        :image="event.image"
+                        :link="event.link"
+                        :text="event.text"
+                    />
+                </div>
+            </div>
+            <div class="more-events">
+                <a
+                    href="http://mp.weixin.qq.com/mp/homepage?__biz=MzU1MTE2MDkxOQ==&hid=2&sn=6787ada9887b05cdee1a4f95d6f67cc3&scene=18#wechat_redirect"
+                    target="_blank"
+                    >{{ $t('home.eventList.more') }}</a
+                >
             </div>
         </section>
     </div>
@@ -188,9 +221,6 @@ import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
 import HomeSwiper from '@/components/HomeSwiper.vue';
-
-import aprilAnnoucementImgZh from '@/assets/home/april-annoucement.png';
-import aprilAnnoucementImgEn from '@/assets/home/april-annoucement-en.png';
 
 export default {
     components: {
@@ -223,10 +253,6 @@ export default {
                         spaceBetween: 10,
                     },
                 },
-            },
-            aprilAnnoucementImg: {
-                zh: aprilAnnoucementImgZh,
-                en: aprilAnnoucementImgEn,
             },
         };
     },
@@ -402,6 +428,10 @@ export default {
         border-radius: 4px;
         position: relative;
         left: -18px;
+
+        /deep/ span {
+            color: $red;
+        }
     }
 
     img {
@@ -595,6 +625,36 @@ img {
     }
 }
 
+.announcement-row {
+    display: flex;
+    justify-content: space-between;
+    line-height: 31px;
+
+    .announcement-section,
+    .announcement-row {
+        flex-basis: 50%;
+        margin: 0;
+    }
+
+    .announcement-section {
+        padding-right: 0;
+    }
+
+    ul {
+        margin-top: 30px;
+        list-style: 0;
+        padding: 0;
+
+        span {
+            color: $button-color;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
 .about-us-section {
     padding-top: 60px;
 
@@ -767,6 +827,17 @@ img {
                 min-height: 100%;
                 margin-bottom: 30px;
             }
+        }
+    }
+
+    .announcement-row {
+        display: flex;
+        flex-direction: column;
+
+        .announcement-section,
+        .announcement-row {
+            flex-basis: 100%;
+            margin: 0;
         }
     }
 

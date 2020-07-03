@@ -36,8 +36,8 @@
         "coronavirus": {
             "subTitle": "IFU In The News",
             "title": "COVID-19 Epidemic Donation",
-            "description": "On New Year's Eve in 2020, the IFU working group held an emergency meeting and decided to raise funds for the Wuhan epidemic with a target of 50,000 yuan. To help reduce the Wuhan epidemic pressure, IFU spent 10,000 yuan purchasing face masks and then sending the face masks from Singapore to Wuhan. After that, since the covid-19 outbreak in the U.S., IFU decided to donate more than 50,000 yuan to purchase face masks for international students.",
-            "buttonText": "Read the Story"
+            "description": "From the outbreak of epidemic in China in January, to the gradual spread into overseas, volunteers and staff of IFU strived to contribute to the prevention of epidemic for homeland and international students. During the epidemic, from <span>January to May</span>, IFU post <span>80+</span> articles of update of epidemic; held <span>1</span> online/offline donation both overseas and within China; <span>7 events</span> of helping and protecting families of international students; <span>3 investigations</span> of current states of families of international students; <span>2 speeches</span> about public prevention of epidemic given by experts; <span>3</span> clock-in projects designed for international students staying overseas; <span>13</span> videos related to epidemic; <span>6</span> online academic lectures; academic seminars of seniors from <span>13 universities</span>; <span>3 seminars</span> specially held for international schools in China",
+            "buttonText": "Donation Project Report"
         },
         "ourWork": {
             "title": "Our Work",
@@ -77,7 +77,7 @@
             "text4": "Pre-Departure Safety Orientation & Experience Sharing - Beijing",
             "text5": "2019 Experience Sharing in China",
             "text6": "2019 Carnival - Beijing",
-            "text7": "2019 Carnival - Shanghai",
+            "text7": "2020 Internation Students Families Guardian Project",
             "more": "View more recent events >>"
         },
         "aboutUs": {
@@ -90,6 +90,34 @@
             "title": "IFU Students Group Chat",
             "text1": "As the saying goes, 'Stones from other mountains can attack jade', IFU (International Parent Union) hopes that all newcomers can get help on the road to glorious future, using the most effective Ways to inspire and guide you, so that you will no longer 'fight alone', so that you can move forward more firmly. Everyone can communicate and chat in this group, discuss study abroad, and plan a better university life.",
             "text3": "Scan the QR code on WeChat to join IFU Students Group Chat"
+        },
+        "announcement": {
+            "1": {
+                "time": "July 5th: ",
+                "name": "Seminar of data science and machine learning"
+            },
+            "2": {
+                "time": "July 18th: ",
+                "name": "2020 IFU Carnival within East U.S."
+            },
+            "3": {
+                "time": "July 19th: ",
+                "name": "2020 IFU Carnival within Canada"
+            },
+            "4": {
+                "time": "July 19th: ",
+                "name": "2020 IFU Carnival within West U.S."
+            },
+            "5": {
+                "time": "July 26th: ",
+                "name": "Seminar of math major"
+            },
+            "6": {
+                "time": "July 26th ~ Early August: ",
+                "name": "2020 IFU Carnival - Tea party with senior students from universities"
+            },
+            "title": "July Events Annoucements",
+            "description": "Carrying the goal of alleviating the anxiety of families of international students, IFU invites seniors students from various majors to help freshmen get to know about different majors in universities and the trend of future employment. Meanwhile, the carnival showing the true study life abroad of senior students will be held online. Getting rid of the constraint due to time zones and locations, IFU will provide more high-quality information for families of international students and develop a social circle that not only crosses countries, crosses universities but also crosses ages"
         }
     },
     "more": {
@@ -527,98 +555,84 @@
             "tutorIntroContent1": "Study in University of California, Santa Barbara (UCSB) , major in Mechanical Engineering Academic",
             "tutorExperience1": "Academic History: ",
             "tutorExperienceDetail1": "GPA 4.0 on Elementary Physics and Advanced Physics",
-
             "tutorName2": "Tianlu Zhang",
             "tutorCourse2": "Subject: Economics (Micro/Macro)",
             "tutorIntro2": "Description: ",
             "tutorIntroContent2": "Study in University of California, San Diego, major in Math-Economics",
             "tutorExperience2": "Academic History: ",
             "tutorExperienceDetail2": "GPA 4.0 on Economics(Micro/Macro)",
-
             "tutorName3": "Chenwei Liang",
             "tutorCourse3": "Subjects: Microeconomics, Macroeconomics, College Writing",
             "tutorIntro3": "Description: ",
             "tutorIntroContent3": " Study in University of California, San Diego, major in Management Science, minor in International Business",
             "tutorExperience3": " Academic History: ",
             "tutorExperienceDetail3": "GPA 4.0 on Microeconomics, Macroeconomics, College Writing",
-
             "tutorName4": "Jiarui Jiang",
             "tutorCourse4": "Subjects: Calculus",
             "tutorIntro4": "Description: ",
             "tutorIntroContent4": "Study in University of California, Los Angeles, major in Math-Economics, minor in Accounting",
             "tutorExperience4": "Academic History: ",
             "tutorExperienceDetail4": "GPA 4.0 on Calculus",
-
             "tutorName5": "Xiqiang Lin",
             "tutorCourse5": "Subject: Intro to Java ",
             "tutorIntro5": "Description: ",
             "tutorIntroContent5": "Study in University of California, San Diego, major in Computer Science Engineering",
             "tutorExperience5": "Academic History: ",
             "tutorExperienceDetail5": "GPA：3.8/4.0",
-
             "tutorName6": "Zhiwei Wang",
             "tutorCourse6": "Subject: Chemistry Engineering",
             "tutorIntro6": " Description: ",
             "tutorIntroContent6": "Study in University of Rochester, major in Chemistry Engineering, double major in Art History, minor in Math and anthropology",
             "tutorExperience6": "Academic History: ",
             "tutorExperienceDetail6": "GPA 4.0/4.0",
-
             "tutorName7": "Weikun Ma",
             "tutorCourse7": "Subjects: Intro to Java and Intro to Python",
             "tutorIntro7": "Description: ",
             "tutorIntroContent7": "Study in Duke University, Graduate student, major in Computer Science",
             "tutorExperience7": "Academic History: ",
             "tutorExperienceDetail7": "GPA 3.9/4.0",
-
             "tutorName8": "Jinlong Ruan",
             "tutorCourse8": "Subjects: Discrete mathematics, Java",
             "tutorIntro8": " Description: ",
             "tutorIntroContent8": " Study in University of Rochester, double major in Computer Science and Finance",
             "tutorExperience8": "Academic History: ",
             "tutorExperienceDetail8": "GPA 4.0 on Discrete mathematics, Java",
-
             "tutorName9": "Luwa Yi",
             "tutorCourse9": "Subject: Academic Writing I",
             "tutorIntro9": "Description: ",
             "tutorIntroContent9": "Study in Boston University, double major in Communication and Psychology",
             "tutorExperience9": "Academic History: ",
             "tutorExperienceDetail9": "Major GPA: 4.0/4.0",
-
             "tutorName10": "Chenshu Liu",
             "tutorCourse10": "Subjects: Calculus, integrals and series of multivariate variables, biological basis (Intro to cell biology)",
             "tutorIntro10": "Description: ",
             "tutorIntroContent10": "Study in University of Los Angeles, double major in Statistics and Neurology, minor in Bioinformation",
             "tutorExperience10": "Academic History: ",
             "tutorExperienceDetail10": "Major GPA：3.9/4.0",
-
             "tutorName11": "Chunling Li",
             "tutorCourse11": "Subjects: Intro to Statistic, Intro to College Writing",
             "tutorIntro11": "Description: ",
             "tutorIntroContent11": "Study in University of California, Davis, major in Management Economics",
             "tutorExperience11": "Academic History: ",
             "tutorExperienceDetail11": "Major GPA: 4.0/4.0",
-
             "tutorName12": "Yuqing Wang",
             "tutorCourse12": "Subject: Math, Economics( Micro/ Macro)",
             "tutorIntro12": "Description: ",
             "tutorIntroContent12": "Study in University of California, Davis, double major in Economics and Statistics",
             "tutorExperience12": "Academic History: ",
             "tutorExperienceDetail12": "Major GPA: 3.95/4.0",
-
             "tutorName13": "Jun Zeng",
             "tutorCourse13": "Subjects: Microbes, Microorganisms",
             "tutorIntro13": "Description: ",
             "tutorIntroContent13": "Bachelor from University of Washington, double major in Biology and Microbiology. Studying Doctor degree in Duke University, major in Molecular genetics and microbiology",
             "tutorExperience13": "",
             "tutorExperienceDetail13": "",
-
             "tutorName14": "Jiaqi Huang",
             "tutorCourse14": "Subjects: Microeconomics, Macroeconomics, Marketing, Marketing Strategies",
             "tutorIntro14": "Description: ",
             "tutorIntroContent14": "Study in University of Southern California, Master degree in Communication Management (This major in the top one in US)",
             "tutorExperience14": "Academic History: ",
             "tutorExperienceDetail14": "GPA 4.0 on Microeconomics, Macroeconomics, Marketing, Marketing Strategies",
-
             "tutorName15": "Zihao Zhou",
             "tutorCourse15": "Subject: Intro to Calculus, Advanced Calculus, Advanced Java",
             "tutorIntro15": "Description: ",
