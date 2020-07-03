@@ -32,12 +32,12 @@ export default {
         tabList() {
             return [
                 {
-                    title: '志愿者招募',
+                    title: this.$t('career.volunteer.tabTitle'),
                     content: Volunteer,
                     color: '#C9D74A',
                 },
                 {
-                    title: '工作人员招募',
+                    title: this.$t('career.staff.tabTitle'),
                     content: Staff,
                     color: '#F96291',
                 },
