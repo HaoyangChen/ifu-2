@@ -10,6 +10,24 @@
         >
             <p v-html="$t('home.banner.description')" />
         </Banner>
+        <div class="bg-carnival">
+            <section class="container">
+                <div class="carnival-event">
+                    <h1>{{ $t('home.carnival.title') }}</h1>
+                    <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                    <div class="carnival-description">
+                        <p v-html="$t('home.carnival.description')" />
+                    </div>
+                    <div class="carnival-btn">
+                        <Button
+                            external
+                            to="https://mp.weixin.qq.com/s/DYgmlzgmHrr9_-T0UjdGYw"
+                            >{{ $t('home.carnival.buttonText') }}</Button
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="wuhan-coronavirus">
             <section class="container">
                 <h2>{{ $t('home.coronavirus.subTitle') }}</h2>
@@ -217,6 +235,7 @@ import workImage2 from '@/assets/home/work_2.png';
 import workImage3 from '@/assets/home/work_3.png';
 import workImage4 from '@/assets/home/work_4.png';
 import workImage5 from '@/assets/home/work_5.png';
+import carnivalBackground from '@/assets/home/carnival_bg.png';
 import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
@@ -233,6 +252,7 @@ export default {
     data() {
         return {
             bannerImage,
+            carnivalBackground,
             eventLink:
                 'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247498115&idx=3&sn=20a54f7f102af1e73b54598589bd49b7&chksm=fb9724bbcce0adad7c9b15d53a4ae6325574498324813dda4ee9d2a4dc241e8ef68a92ff3922&token=1217661680&lang=zh_CN#rd',
             swiperOption: {
@@ -591,6 +611,46 @@ img {
     background: url('../assets/home/bg.png') no-repeat;
     padding: 80px 0 0 0;
 }
+
+.bg-carnival {
+    background: url('../assets/home/carnival_bg.png') no-repeat;
+    padding: 80px 0 0 0;
+
+    div.carnival-event {
+        width: 720px;
+        background: rgba(84, 190, 245, 0.25);
+        padding: 41px 60px 88px 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .carnival-description {
+            p {
+                width: 86%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /deep/ span {
+                font-weight: bold;
+            }
+        }
+
+        .carnival-btn {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+}
+
 .text-container {
     padding-top: 20px;
 }
