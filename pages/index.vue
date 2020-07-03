@@ -21,7 +21,7 @@
                     <div class="carnival-btn">
                         <Button
                             external
-                            to="https://mp.weixin.qq.com/s/DYgmlzgmHrr9_-T0UjdGYw"
+                            to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
                             >{{ $t('home.carnival.buttonText') }}</Button
                         >
                     </div>
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="background-blue">
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
@@ -382,8 +382,7 @@ export default {
                 {
                     image: eventImage6,
                     text: this.$t('home.eventList.text7'),
-                    link:
-                        'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247494272&idx=1&sn=9d63bd2ce8273c06c7b451b7bae8e1f5&chksm=fb9737b8cce0beae781e5dde3ac9207668c840ec8313dcd0a067127adb4a827409230d545df2&token=1217661680&lang=zh_CN#rd',
+                    link: 'https://mp.weixin.qq.com/s/X1cFXrsW_zKLK_9sbWN1rA',
                 },
             ];
         },
@@ -613,7 +612,7 @@ img {
 }
 
 .bg-carnival {
-    background: url('../assets/home/carnival_bg.png') no-repeat;
+    background: url('../assets/home/carnival_bg.png') repeat;
     padding: 80px 0 0 0;
 
     div.carnival-event {
@@ -704,6 +703,7 @@ img {
         margin-top: 30px;
         list-style: 0;
         padding: 0;
+        list-style-type: none;
 
         span {
             color: $button-color;
