@@ -41,7 +41,7 @@
             <div class="follow">
                 <p class="light-blue">{{ $t('footer.followUs') }}</p>
                 <div class="icon-container">
-                    <a
+                    <!-- <a
                         v-for="(item, index) in followList"
                         :key="index"
                         :href="item.link"
@@ -49,7 +49,6 @@
                         rel="noreferrer noopener"
                     >
                         <img :src="item.image" alt="" />
-                        <!-- <img :src="gongzhonghaoImg" class="qrcode" alt="" /> -->
                         <div class="qrcode">
                             <div class="official_qrcode">
                                 <img :src="gongzhonghaoImg" alt="" />
@@ -58,6 +57,91 @@
                             <div class="assistant_qrcode">
                                 <img :src="assistantImg" alt="" />
                                 <span>{{ $t('footer.assistant') }}</span>
+                            </div>
+                        </div>
+                    </a> -->
+                    <a :href="followList[0].link" target="_blank">
+                        <img :src="followList[0].image" alt="wechat icon" />
+                        <div class="qrcode">
+                            <div class="official_qrcode">
+                                <img :src="followList[0].qrcode[0]" alt="" />
+                                <span>{{ $t('footer.gongzhonghao') }}</span>
+                            </div>
+                            <div class="assistant_qrcode">
+                                <img :src="followList[0].qrcode[1]" alt="" />
+                                <span>{{ $t('footer.assistant') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="followList[1].link" target="_blank">
+                        <img :src="followList[1].image" alt="weibo icon" />
+                        <div class="icon-qrcode">
+                            <div class="single-qrcode">
+                                <img
+                                    :src="followList[1].qrcode"
+                                    alt="weibo qrcode"
+                                />
+                                <span>{{ $t('footer.weiboQRCode') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="followList[2].link" target="_blank">
+                        <img :src="followList[2].image" alt="zhihu icon" />
+                        <div class="icon-qrcode">
+                            <div class="single-qrcode">
+                                <img
+                                    :src="followList[2].qrcode"
+                                    alt="zhihu qrcode"
+                                />
+                                <span>{{ $t('footer.zhihuQRCode') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="followList[3].link" target="_blank">
+                        <img :src="followList[3].image" alt="bilibili icon" />
+                        <div class="icon-qrcode">
+                            <div class="single-qrcode">
+                                <img
+                                    :src="followList[3].qrcode"
+                                    alt="bilibili qrcode"
+                                />
+                                <span>{{ $t('footer.bilibiliQRCode') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="followList[4].link" target="_blank">
+                        <img :src="followList[4].image" alt="facebook icon" />
+                        <div class="icon-qrcode">
+                            <div class="single-qrcode">
+                                <img
+                                    :src="followList[4].qrcode"
+                                    alt="facebook qrcode"
+                                />
+                                <span>{{ $t('footer.facebookQRCode') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="followList[5].link" target="_blank">
+                        <img :src="followList[5].image" alt="instagram icon" />
+                        <div class="icon-qrcode">
+                            <div class="single-qrcode">
+                                <img
+                                    :src="followList[5].qrcode"
+                                    alt="instagram qrcode"
+                                />
+                                <span>{{ $t('footer.instagramQRCode') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="followList[6].link" target="_blank">
+                        <img :src="followList[6].image" alt="linkedin icon" />
+                        <div class="icon-qrcode">
+                            <div class="single-qrcode">
+                                <img
+                                    :src="followList[6].qrcode"
+                                    alt="linkedin qrcode"
+                                />
+                                <span>{{ $t('footer.linkedinQRCode') }}</span>
                             </div>
                         </div>
                     </a>
@@ -80,6 +164,12 @@ import linkedinIcon from '@/assets/footer/linkedin_icon.svg';
 import instagramIcon from '@/assets/footer/instagram_icon.svg';
 import gongzhonghaoImg from '@/assets/footer/gongzhonghao.png';
 import assistantImg from '@/assets/footer/assistant_qrcode.png';
+import bilibiliQRCode from '@/assets/footer/bilibili_qrcode.png';
+import facebookQRCode from '@/assets/footer/facebook_qrcode.png';
+import instagramQRCode from '@/assets/footer/instagram_qrcode.png';
+import linkedinQRCode from '@/assets/footer/linkedin_qrcode.png';
+import weiboQRCode from '@/assets/footer/weibo_qrcode.png';
+import zhihuQRCode from '@/assets/footer/zhihu_qrcode.png';
 
 export default {
     name: 'Footer',
@@ -90,34 +180,41 @@ export default {
             followList: [
                 {
                     image: wechatIcon,
+                    qrcode: [gongzhonghaoImg, assistantImg],
                     link:
                         'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=100010050&idx=2&sn=884d96ee07af997401e4e2d47d17b224&scene=19#wechat_redirect',
                 },
                 {
                     image: weiboIcon,
+                    qrcode: weiboQRCode,
                     link:
-                        'https://www.weibo.com/u/6422822665?refer_flag=1001030103_&is_hot=1',
+                        'https://weibo.com/u/6422822665?refer_flag=1005055013_',
                 },
                 {
                     image: zhihuIcon,
+                    qrcode: zhihuQRCode,
                     link:
-                        'https://www.zhihu.com/people/ifuguo-ji-jia-chang-hui/activities',
+                        'https://www.zhihu.com/people/ifuguo-ji-jia-chang-hui',
                 },
                 {
                     image: bilibiliIcon,
+                    qrcode: bilibiliQRCode,
                     link: 'https://space.bilibili.com/399581752',
                 },
                 {
                     image: facebookIcon,
+                    qrcode: facebookQRCode,
                     link:
                         'https://www.facebook.com/International-Family-Union-775710742807913/',
                 },
                 {
                     image: instagramIcon,
+                    qrcode: instagramQRCode,
                     link: 'https://www.instagram.com/ifu_i_family_u/?hl=en',
                 },
                 {
                     image: linkedinIcon,
+                    qrcode: linkedinQRCode,
                     link: 'https://www.linkedin.com/company/ifu-china/',
                 },
             ],
@@ -265,7 +362,7 @@ img {
     display: inline-block;
     padding-top: 43px;
     position: absolute;
-    right: 120px;
+    right: 80px;
     p {
         margin: 0;
         margin-bottom: 10px;
@@ -340,6 +437,48 @@ img {
             }
         }
 
+        a {
+            position: relative;
+            div.icon-qrcode {
+                position: absolute;
+                z-index: 99;
+                // top: -206px;
+                // right: -145px;
+                // width: 7.5rem;
+                max-width: none;
+                // height: 7.5rem;
+                transform: scale(0);
+                transform-origin: bottom;
+                opacity: 0;
+                -webkit-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+                display: flex;
+                flex-direction: row;
+                padding: 0 15px;
+
+                span {
+                    color: #54bef5;
+                    font-size: 0.5rem;
+                }
+
+                .single-qrcode {
+                    background-color: #fff;
+                    padding: 10px;
+                    img {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        margin-bottom: 8px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+            div.icon-qrcode:first-of-type {
+                top: -180px;
+                right: -66px;
+            }
+        }
+
         a:first-of-type:hover {
             div.qrcode {
                 transform: scale(1);
@@ -347,11 +486,18 @@ img {
             }
         }
 
-        a:not(:first-child) {
-            div.qrcode {
-                display: none;
+        a:not(:first-child):hover {
+            div.icon-qrcode {
+                transform: scale(1);
+                opacity: 1;
             }
         }
+
+        // a:not(:first-child) {
+        //     div.qrcode {
+        //         display: none;
+        //     }
+        // }
     }
 }
 .bottom {
@@ -487,7 +633,7 @@ img {
                 top: 300px;
                 left: 50%;
                 transform: translate(-50%, 0%);
-                width: fit-content;
+                width: max-content;
             }
 
             div {
@@ -538,7 +684,7 @@ img {
             // left: 50%;
             // margin-left: -135px;
             text-align: left;
-            width: 280px;
+            width: 300px;
             font-size: $text-size;
             line-height: $text-size;
             letter-spacing: 0.03em;

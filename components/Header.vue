@@ -73,17 +73,13 @@
                         >中文</nuxt-link
                     >
                     <span> / </span>
-                    <nuxt-link :to="switchLocalePath('en')" exact
-                        >English</nuxt-link
-                    >
+                    <nuxt-link :to="switchLocalePath('en')" exact>EN</nuxt-link>
                 </div>
                 <div class="mobile change-lang">
                     <nuxt-link :to="switchLocalePath('zh')" exact
                         >中文</nuxt-link
                     >
-                    <nuxt-link :to="switchLocalePath('en')" exact
-                        >English</nuxt-link
-                    >
+                    <nuxt-link :to="switchLocalePath('en')" exact>EN</nuxt-link>
                 </div>
             </div>
         </div>

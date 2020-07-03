@@ -24,6 +24,12 @@
         "codeText1": "扫描添加",
         "codeText2": "IFU小助手",
         "gongzhonghao": "关注官方公众号",
+        "weiboQRCode": "关注官方微博",
+        "zhihuQRCode": "关注官方知乎",
+        "bilibiliQRCode": "关注官方Bilibili",
+        "facebookQRCode": "关注官方Facebook",
+        "instagramQRCode": "关注官方Instagram",
+        "linkedinQRCode": "关注官方领英",
         "assistant": "扫描添加IFU小助手"
     },
     "home": {
