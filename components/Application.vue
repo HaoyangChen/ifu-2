@@ -35,6 +35,7 @@
             class="content"
             :style="{
                 height: contentHeight + 'px',
+                lineHeight: lineHeight[$i18n.locale],
             }"
         >
             <p>
@@ -169,6 +170,10 @@ export default {
                 '2020学长学姐嘉年华': '#EA9A38',
                 '2020 IFU College Carnival': '#EA9A38',
             },
+            lineHeight: {
+                zh: '30px',
+                en: '26px',
+            },
         };
     },
     computed: {
@@ -188,7 +193,7 @@ export default {
             return this.department.length < 10 ? 87 : 114;
         },
         contentHeight() {
-            return 660 - 109 - this.titleHeight;
+            return 760 - 109 - this.titleHeight;
         },
     },
 };
@@ -197,7 +202,7 @@ export default {
 <style lang="scss" scoped>
 .application {
     max-width: 568px;
-    height: 660px;
+    height: 760px;
     background: white;
 }
 
@@ -238,10 +243,9 @@ export default {
 .content {
     overflow: hidden;
     width: 100%;
-    padding: 47px 47px;
+    padding: 7px 47px;
 
     p {
-        line-height: 31px;
         margin-bottom: 25px;
     }
 }
@@ -288,9 +292,15 @@ export default {
     }
 }
 
+@media (max-width: 1200px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: $mobile-max-width) {
     .application {
-        height: 560px;
+        height: 720px;
     }
 
     .title {
