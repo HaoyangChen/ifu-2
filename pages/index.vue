@@ -838,6 +838,11 @@ img {
     }
 
     .bg-carnival {
+        #carnival-person1,
+        #carnival-person2,
+        #carnival-person3 {
+            display: none;
+        }
         div.carnival-event {
             width: auto;
             padding: 10px;
