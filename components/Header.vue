@@ -62,9 +62,11 @@
                         $t('header.more')
                     }}</n-link>
                 </div>
-                <n-link class="n-link" :to="localePath('/contact')">{{
-                    $t('header.contact')
-                }}</n-link>
+                <n-link
+                    :class="isContactPath ? 'nuxt-link-active' : 'n-link'"
+                    :to="localePath('/contact')"
+                    >{{ $t('header.contact') }}</n-link
+                >
                 <n-link class="n-link" :to="localePath('/support')">{{
                     $t('header.support')
                 }}</n-link>
@@ -102,7 +104,18 @@ export default {
             return (
                 this.currentPath === '/totoro' ||
                 this.currentPath === '/membership' ||
-                this.currentPath === '/more'
+                this.currentPath === '/more' ||
+                this.currentPath === '/zh/totoro' ||
+                this.currentPath === '/zh/membership' ||
+                this.currentPath === '/zh/more'
+            );
+        },
+        isContactPath() {
+            return (
+                this.currentPath === '/contact' ||
+                this.currentPath === '/career' ||
+                this.currentPath === '/zh/contact' ||
+                this.currentPath === '/zh/career'
             );
         },
     },

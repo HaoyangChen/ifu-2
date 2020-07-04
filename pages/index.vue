@@ -61,7 +61,12 @@
             </section>
         </div>
         <div class="wuhan-coronavirus">
-            <section class="container">
+            <section
+                :style="{
+                    paddingBottom: '80px',
+                }"
+                class="container"
+            >
                 <h2>{{ $t('home.coronavirus.subTitle') }}</h2>
                 <img
                     class="mobile wuhan-mobile-image"
@@ -494,6 +499,9 @@ export default {
 
     img {
         vertical-align: middle;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -767,6 +775,7 @@ img {
 
         span {
             color: $button-color;
+            font-weight: 600;
         }
     }
 
