@@ -12,6 +12,21 @@
         </Banner>
         <div class="bg-carnival">
             <section class="container">
+                <img
+                    id="carnival-person1"
+                    :src="carnivalPerson1"
+                    alt="carnival section decoration1"
+                />
+                <img
+                    id="carnival-person2"
+                    :src="carnivalPerson2"
+                    alt="carnival section decoration2"
+                />
+                <img
+                    id="carnival-person3"
+                    :src="carnivalPerson3"
+                    alt="carnival section decoration3"
+                />
                 <div class="carnival-event">
                     <h1>{{ $t('home.carnival.title') }}</h1>
                     <h2>{{ $t('home.carnival.subTitle') }}</h2>
@@ -239,6 +254,10 @@ import carnivalBackground from '@/assets/home/carnival_bg.png';
 import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
+import carnivalPerson1 from '@/assets/home/carnival_person1.png';
+import carnivalPerson2 from '@/assets/home/carnival_person2.png';
+import carnivalPerson3 from '@/assets/home/carnival_person3.png';
+
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
 export default {
@@ -253,6 +272,9 @@ export default {
         return {
             bannerImage,
             carnivalBackground,
+            carnivalPerson1,
+            carnivalPerson2,
+            carnivalPerson3,
             eventLink:
                 'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247498115&idx=3&sn=20a54f7f102af1e73b54598589bd49b7&chksm=fb9724bbcce0adad7c9b15d53a4ae6325574498324813dda4ee9d2a4dc241e8ef68a92ff3922&token=1217661680&lang=zh_CN#rd',
             swiperOption: {
@@ -614,6 +636,27 @@ img {
 .bg-carnival {
     background: url('../assets/home/carnival_bg.png') repeat;
     padding: 80px 0 0 0;
+
+    #carnival-person1 {
+        position: absolute;
+        width: 93px;
+        left: 1045px;
+        top: 540px;
+    }
+
+    #carnival-person2 {
+        position: absolute;
+        width: 127px;
+        left: 280px;
+        top: 386px;
+    }
+
+    #carnival-person3 {
+        position: absolute;
+        width: 88px;
+        left: 1004px;
+        top: 57px;
+    }
 
     div.carnival-event {
         width: 720px;
