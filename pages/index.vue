@@ -12,7 +12,7 @@
         </Banner>
         <div class="bg-carnival">
             <section class="container">
-                <img
+                <!-- <img
                     id="carnival-person1"
                     :src="carnivalPerson1"
                     alt="carnival section decoration1"
@@ -26,19 +26,36 @@
                     id="carnival-person3"
                     :src="carnivalPerson3"
                     alt="carnival section decoration3"
-                />
+                /> -->
                 <div class="carnival-event">
-                    <h1>{{ $t('home.carnival.title') }}</h1>
-                    <h2>{{ $t('home.carnival.subTitle') }}</h2>
-                    <div class="carnival-description">
-                        <p v-html="$t('home.carnival.description')" />
-                    </div>
-                    <div class="carnival-btn">
-                        <Button
-                            external
-                            to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
-                            >{{ $t('home.carnival.buttonText') }}</Button
-                        >
+                    <img
+                        id="carnival-person1"
+                        :src="carnivalPerson1"
+                        alt="carnival section decoration1"
+                    />
+                    <img
+                        id="carnival-person2"
+                        :src="carnivalPerson2"
+                        alt="carnival section decoration2"
+                    />
+                    <img
+                        id="carnival-person3"
+                        :src="carnivalPerson3"
+                        alt="carnival section decoration3"
+                    />
+                    <div>
+                        <h1>{{ $t('home.carnival.title') }}</h1>
+                        <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                        <div class="carnival-description">
+                            <p v-html="$t('home.carnival.description')" />
+                        </div>
+                        <div class="carnival-btn">
+                            <Button
+                                external
+                                to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
+                                >{{ $t('home.carnival.buttonText') }}</Button
+                            >
+                        </div>
                     </div>
                 </div>
             </section>
@@ -636,61 +653,59 @@ img {
 .bg-carnival {
     background: url('../assets/home/carnival_bg.png') repeat;
     padding: 80px 0 0 0;
-    section {
+    #carnival-person1 {
+        position: absolute;
+        width: 93px;
+        left: 680px;
+        top: 447px;
+    }
+
+    #carnival-person2 {
+        position: absolute;
+        width: 127px;
+        left: -86px;
+        top: 307px;
+    }
+
+    #carnival-person3 {
+        position: absolute;
+        width: 88px;
+        left: 645px;
+        top: -21px;
+    }
+
+    div.carnival-event {
+        width: 720px;
+        background: rgba(84, 190, 245, 0.25);
+        padding: 41px 60px 88px 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
         position: relative;
-        #carnival-person1 {
-            position: absolute;
-            width: 93px;
-            left: 1045px;
-            top: 540px;
+
+        h1 {
+            text-align: center;
         }
 
-        #carnival-person2 {
-            position: absolute;
-            width: 127px;
-            left: 280px;
-            top: 386px;
+        h2 {
+            text-align: center;
+            padding-top: 20px;
         }
 
-        #carnival-person3 {
-            position: absolute;
-            width: 88px;
-            left: 1004px;
-            top: 57px;
+        .carnival-description {
+            p {
+                width: 86%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /deep/ span {
+                font-weight: bold;
+            }
         }
 
-        div.carnival-event {
-            width: 720px;
-            background: rgba(84, 190, 245, 0.25);
-            padding: 41px 60px 88px 60px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 30px;
-
-            h1 {
-                text-align: center;
-            }
-
-            h2 {
-                text-align: center;
-                padding-top: 20px;
-            }
-
-            .carnival-description {
-                p {
-                    width: 86%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                /deep/ span {
-                    font-weight: bold;
-                }
-            }
-
-            .carnival-btn {
-                text-align: center;
-                margin-top: 50px;
-            }
+        .carnival-btn {
+            text-align: center;
+            margin-top: 50px;
         }
     }
 }
