@@ -10,6 +10,39 @@
         >
             <p v-html="$t('home.banner.description')" />
         </Banner>
+        <div class="bg-carnival">
+            <section class="container">
+                <img
+                    id="carnival-person1"
+                    :src="carnivalPerson1"
+                    alt="carnival section decoration1"
+                />
+                <img
+                    id="carnival-person2"
+                    :src="carnivalPerson2"
+                    alt="carnival section decoration2"
+                />
+                <img
+                    id="carnival-person3"
+                    :src="carnivalPerson3"
+                    alt="carnival section decoration3"
+                />
+                <div class="carnival-event">
+                    <h1>{{ $t('home.carnival.title') }}</h1>
+                    <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                    <div class="carnival-description">
+                        <p v-html="$t('home.carnival.description')" />
+                    </div>
+                    <div class="carnival-btn">
+                        <Button
+                            external
+                            to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
+                            >{{ $t('home.carnival.buttonText') }}</Button
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="wuhan-coronavirus">
             <section class="container">
                 <h2>{{ $t('home.coronavirus.subTitle') }}</h2>
@@ -158,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="background-blue">
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
@@ -217,9 +250,14 @@ import workImage2 from '@/assets/home/work_2.png';
 import workImage3 from '@/assets/home/work_3.png';
 import workImage4 from '@/assets/home/work_4.png';
 import workImage5 from '@/assets/home/work_5.png';
+import carnivalBackground from '@/assets/home/carnival_bg.png';
 import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
+import carnivalPerson1 from '@/assets/home/carnival_person1.png';
+import carnivalPerson2 from '@/assets/home/carnival_person2.png';
+import carnivalPerson3 from '@/assets/home/carnival_person3.png';
+
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
 export default {
@@ -233,6 +271,10 @@ export default {
     data() {
         return {
             bannerImage,
+            carnivalBackground,
+            carnivalPerson1,
+            carnivalPerson2,
+            carnivalPerson3,
             eventLink:
                 'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247498115&idx=3&sn=20a54f7f102af1e73b54598589bd49b7&chksm=fb9724bbcce0adad7c9b15d53a4ae6325574498324813dda4ee9d2a4dc241e8ef68a92ff3922&token=1217661680&lang=zh_CN#rd',
             swiperOption: {
@@ -362,8 +404,7 @@ export default {
                 {
                     image: eventImage6,
                     text: this.$t('home.eventList.text7'),
-                    link:
-                        'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247494272&idx=1&sn=9d63bd2ce8273c06c7b451b7bae8e1f5&chksm=fb9737b8cce0beae781e5dde3ac9207668c840ec8313dcd0a067127adb4a827409230d545df2&token=1217661680&lang=zh_CN#rd',
+                    link: 'https://mp.weixin.qq.com/s/X1cFXrsW_zKLK_9sbWN1rA',
                 },
             ];
         },
@@ -591,6 +632,67 @@ img {
     background: url('../assets/home/bg.png') no-repeat;
     padding: 80px 0 0 0;
 }
+
+.bg-carnival {
+    background: url('../assets/home/carnival_bg.png') repeat;
+    padding: 80px 0 0 0;
+
+    #carnival-person1 {
+        position: absolute;
+        width: 93px;
+        left: 1045px;
+        top: 540px;
+    }
+
+    #carnival-person2 {
+        position: absolute;
+        width: 127px;
+        left: 280px;
+        top: 386px;
+    }
+
+    #carnival-person3 {
+        position: absolute;
+        width: 88px;
+        left: 1004px;
+        top: 57px;
+    }
+
+    div.carnival-event {
+        width: 720px;
+        background: rgba(84, 190, 245, 0.25);
+        padding: 41px 60px 88px 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .carnival-description {
+            p {
+                width: 86%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /deep/ span {
+                font-weight: bold;
+            }
+        }
+
+        .carnival-btn {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+}
+
 .text-container {
     padding-top: 20px;
 }
@@ -644,6 +746,7 @@ img {
         margin-top: 30px;
         list-style: 0;
         padding: 0;
+        list-style-type: none;
 
         span {
             color: $button-color;
@@ -730,6 +833,24 @@ img {
                 border: none;
                 margin-bottom: 0;
                 padding: 0;
+            }
+        }
+    }
+
+    .bg-carnival {
+        div.carnival-event {
+            width: auto;
+            padding: 10px;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+            .carnival-btn {
+                margin-top: 0px;
             }
         }
     }
