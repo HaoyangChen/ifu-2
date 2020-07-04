@@ -3,8 +3,7 @@
         <Banner
             :title="$t('about.banner.title')"
             :button-text="$t('about.banner.buttonText')"
-            external
-            :to="campusVolunteerLink[$i18n.locale]"
+            :to="localePath('/career')"
             :background="bannerImage"
         >
             <p v-html="$t('about.banner.description')" />
@@ -31,10 +30,6 @@ export default {
     data() {
         return {
             bannerImage,
-            campusVolunteerLink: {
-                zh: 'https://www.wjx.cn/jq/71891803.aspx',
-                en: 'https://forms.gle/ViLaGzEtXmRjpDTD9',
-            },
         };
     },
     computed: {

@@ -8,27 +8,48 @@
         "membership": "IFU Membership",
         "more": "IFU Other Services",
         "support": "Support",
+        "career": "Career",
         "orgName": "International Family Union"
     },
     "footer": {
         "subTitle1": "To Make Our Campus Life Safer",
         "subTitle2": "To Keep The Parents Assured",
-        "followUs": "Follow Us",
+        "followUs": "FOLLOW US",
+        "contactUs": "CONTACT US",
+        "joinUs": "Career",
+        "supportUs": "Donate",
+        "moreInfo": "QUICK LINKS",
+        "resourceShare": "Resources",
+        "vipDetail": "Membership",
         "codeText1": "Scan To Add Our",
-        "codeText2": "WeChat Assistant"
+        "codeText2": "WeChat Assistant",
+        "gongzhonghao": "Follow Official Account",
+        "weiboQRCode": "Follow Weibo",
+        "zhihuQRCode": "Follow Zhihu",
+        "bilibiliQRCode": "Follow Bilibili",
+        "facebookQRCode": "Follow Facebook",
+        "instagramQRCode": "Follow Instagram",
+        "linkedinQRCode": "Follow LinkedIn",
+        "assistant": "Scan to add Assistant"
     },
     "home": {
         "banner": {
             "title": "IFU",
             "subTitle": "I, Family, You",
-            "description": "We meet, we know, we share, and we are the IFU;<br>To reduce the anxiety among international students and their parents;<br>To build a bridge between them.",
+            "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. Now we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. We committed to solve International families' overseas safety issues, and information asymmetry. We aim to convey the voices of students to their parents, and serve the families studying abroad.",
             "buttonText": "Our Story"
+        },
+        "carnival": {
+            "title": "The Third IFU College Carnival",
+            "subTitle": "Our Upcoming Event — IFU assists your studying abroad needs",
+            "description": "IFU's goal in the social mission of <span>making international families feel more secure abroad</span>, aims to reduce the information gap between international students and become the communication bridge between them; IFU will hold the third College Carnival in <span>2020 Mid-July</span>. At this event, IFU will invite international students studying abroad and professionals from a wide variety of fields to share their experiences and advice (in campus life, academic preparation, safety, and career planning) to reduce new incoming students’ concerns and help them better integrate into college life. IFU will assist your needs in studying abroad.",
+            "buttonText": "Event Details"
         },
         "coronavirus": {
             "subTitle": "IFU In The News",
             "title": "COVID-19 Epidemic Donation",
-            "description": "On New Year's Eve in 2020, the IFU working group held an emergency meeting and decided to raise funds for the Wuhan epidemic with a target of 50,000 yuan. To help reduce the Wuhan epidemic pressure, IFU spent 10,000 yuan purchasing face masks and then sending the face masks from Singapore to Wuhan. After that, since the covid-19 outbreak in the U.S., IFU decided to donate more than 50,000 yuan to purchase face masks for international students.",
-            "buttonText": "Read the Story"
+            "description": "From the outbreak of epidemic in China in January, to the gradual spread into overseas, volunteers and staff of IFU strived to contribute to the prevention of epidemic for homeland and international students. During the epidemic, from <span>January to May</span>, IFU post <span>80+</span> articles of update of epidemic; held <span>1</span> online/offline donation both overseas and within China; <span>7 events</span> of helping and protecting families of international students; <span>3 investigations</span> of current states of families of international students; <span>2 speeches</span> about public prevention of epidemic given by experts; <span>3</span> clock-in projects designed for international students staying overseas; <span>13</span> videos related to epidemic; <span>6</span> online academic lectures; academic seminars of seniors from <span>13 universities</span>; <span>3 seminars</span> specially held for international schools in China.",
+            "buttonText": "Donation Project Report"
         },
         "ourWork": {
             "title": "Our Work",
@@ -68,7 +89,7 @@
             "text4": "Pre-Departure Safety Orientation & Experience Sharing - Beijing",
             "text5": "2019 Experience Sharing in China",
             "text6": "2019 Carnival - Beijing",
-            "text7": "2019 Carnival - Shanghai",
+            "text7": "2020 Internation Students Families Guardian Project",
             "more": "View more recent events >>"
         },
         "aboutUs": {
@@ -81,6 +102,34 @@
             "title": "IFU Students Group Chat",
             "text1": "As the saying goes, 'Stones from other mountains can attack jade', IFU (International Parent Union) hopes that all newcomers can get help on the road to glorious future, using the most effective Ways to inspire and guide you, so that you will no longer 'fight alone', so that you can move forward more firmly. Everyone can communicate and chat in this group, discuss study abroad, and plan a better university life.",
             "text3": "Scan the QR code on WeChat to join IFU Students Group Chat"
+        },
+        "announcement": {
+            "1": {
+                "time": "July 5th: ",
+                "name": "Seminar - Data Science and Machine Learning"
+            },
+            "2": {
+                "time": "July 18th: ",
+                "name": "2020 IFU College Carnival - East Coast (U.S.)"
+            },
+            "3": {
+                "time": "July 19th: ",
+                "name": "2020 IFU College Carnival - Canada"
+            },
+            "4": {
+                "time": "July 19th: ",
+                "name": "2020 IFU College Carnival - West Coast (U.S.)"
+            },
+            "5": {
+                "time": "July 26th: ",
+                "name": "Seminar - Major in Math"
+            },
+            "6": {
+                "time": "July 26th ~ Early August: ",
+                "name": "2020 IFU College Carnival - Tea Chat with Seminar Students"
+            },
+            "title": "Events in July",
+            "description": "Working toward our social mission to reduce international families' anxieties, IFU will invite senior students from various majors to help first-year students get to know college majors and career planning in July. Meanwhile, IFU will hold our third College Carnival online, which shows the real study abroad experience. Without the limitation of time zones and locations, IFU will provide high-quality information for international families and develop a network that crosses countries, universities, and ages."
         }
     },
     "more": {
@@ -187,7 +236,7 @@
         "banner": {
             "title": "ABOUT US",
             "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. In 2018, we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. <br><br>We committed to solve International families' overseas safety issues, and information asymmetry. We aim to reduce the anxiety between international students and parents, to increase the connection between them by conveying their voices to each other.",
-            "buttonText": "Become On-Campus Volunteer"
+            "buttonText": "Join Us"
         },
         "tabList": {
             "culture": "CULTURE",
@@ -518,98 +567,84 @@
             "tutorIntroContent1": "Study in University of California, Santa Barbara (UCSB) , major in Mechanical Engineering Academic",
             "tutorExperience1": "Academic History: ",
             "tutorExperienceDetail1": "GPA 4.0 on Elementary Physics and Advanced Physics",
-
             "tutorName2": "Tianlu Zhang",
             "tutorCourse2": "Subject: Economics (Micro/Macro)",
             "tutorIntro2": "Description: ",
             "tutorIntroContent2": "Study in University of California, San Diego, major in Math-Economics",
             "tutorExperience2": "Academic History: ",
             "tutorExperienceDetail2": "GPA 4.0 on Economics(Micro/Macro)",
-
             "tutorName3": "Chenwei Liang",
             "tutorCourse3": "Subjects: Microeconomics, Macroeconomics, College Writing",
             "tutorIntro3": "Description: ",
             "tutorIntroContent3": " Study in University of California, San Diego, major in Management Science, minor in International Business",
             "tutorExperience3": " Academic History: ",
             "tutorExperienceDetail3": "GPA 4.0 on Microeconomics, Macroeconomics, College Writing",
-
             "tutorName4": "Jiarui Jiang",
             "tutorCourse4": "Subjects: Calculus",
             "tutorIntro4": "Description: ",
             "tutorIntroContent4": "Study in University of California, Los Angeles, major in Math-Economics, minor in Accounting",
             "tutorExperience4": "Academic History: ",
             "tutorExperienceDetail4": "GPA 4.0 on Calculus",
-
             "tutorName5": "Xiqiang Lin",
             "tutorCourse5": "Subject: Intro to Java ",
             "tutorIntro5": "Description: ",
             "tutorIntroContent5": "Study in University of California, San Diego, major in Computer Science Engineering",
             "tutorExperience5": "Academic History: ",
             "tutorExperienceDetail5": "GPA：3.8/4.0",
-
             "tutorName6": "Zhiwei Wang",
             "tutorCourse6": "Subject: Chemistry Engineering",
             "tutorIntro6": " Description: ",
             "tutorIntroContent6": "Study in University of Rochester, major in Chemistry Engineering, double major in Art History, minor in Math and anthropology",
             "tutorExperience6": "Academic History: ",
             "tutorExperienceDetail6": "GPA 4.0/4.0",
-
             "tutorName7": "Weikun Ma",
             "tutorCourse7": "Subjects: Intro to Java and Intro to Python",
             "tutorIntro7": "Description: ",
             "tutorIntroContent7": "Study in Duke University, Graduate student, major in Computer Science",
             "tutorExperience7": "Academic History: ",
             "tutorExperienceDetail7": "GPA 3.9/4.0",
-
             "tutorName8": "Jinlong Ruan",
             "tutorCourse8": "Subjects: Discrete mathematics, Java",
             "tutorIntro8": " Description: ",
             "tutorIntroContent8": " Study in University of Rochester, double major in Computer Science and Finance",
             "tutorExperience8": "Academic History: ",
             "tutorExperienceDetail8": "GPA 4.0 on Discrete mathematics, Java",
-
             "tutorName9": "Luwa Yi",
             "tutorCourse9": "Subject: Academic Writing I",
             "tutorIntro9": "Description: ",
             "tutorIntroContent9": "Study in Boston University, double major in Communication and Psychology",
             "tutorExperience9": "Academic History: ",
             "tutorExperienceDetail9": "Major GPA: 4.0/4.0",
-
             "tutorName10": "Chenshu Liu",
             "tutorCourse10": "Subjects: Calculus, integrals and series of multivariate variables, biological basis (Intro to cell biology)",
             "tutorIntro10": "Description: ",
             "tutorIntroContent10": "Study in University of Los Angeles, double major in Statistics and Neurology, minor in Bioinformation",
             "tutorExperience10": "Academic History: ",
             "tutorExperienceDetail10": "Major GPA：3.9/4.0",
-
             "tutorName11": "Chunling Li",
             "tutorCourse11": "Subjects: Intro to Statistic, Intro to College Writing",
             "tutorIntro11": "Description: ",
             "tutorIntroContent11": "Study in University of California, Davis, major in Management Economics",
             "tutorExperience11": "Academic History: ",
             "tutorExperienceDetail11": "Major GPA: 4.0/4.0",
-
             "tutorName12": "Yuqing Wang",
             "tutorCourse12": "Subject: Math, Economics( Micro/ Macro)",
             "tutorIntro12": "Description: ",
             "tutorIntroContent12": "Study in University of California, Davis, double major in Economics and Statistics",
             "tutorExperience12": "Academic History: ",
             "tutorExperienceDetail12": "Major GPA: 3.95/4.0",
-
             "tutorName13": "Jun Zeng",
             "tutorCourse13": "Subjects: Microbes, Microorganisms",
             "tutorIntro13": "Description: ",
             "tutorIntroContent13": "Bachelor from University of Washington, double major in Biology and Microbiology. Studying Doctor degree in Duke University, major in Molecular genetics and microbiology",
             "tutorExperience13": "",
             "tutorExperienceDetail13": "",
-
             "tutorName14": "Jiaqi Huang",
             "tutorCourse14": "Subjects: Microeconomics, Macroeconomics, Marketing, Marketing Strategies",
             "tutorIntro14": "Description: ",
             "tutorIntroContent14": "Study in University of Southern California, Master degree in Communication Management (This major in the top one in US)",
             "tutorExperience14": "Academic History: ",
             "tutorExperienceDetail14": "GPA 4.0 on Microeconomics, Macroeconomics, Marketing, Marketing Strategies",
-
             "tutorName15": "Zihao Zhou",
             "tutorCourse15": "Subject: Intro to Calculus, Advanced Calculus, Advanced Java",
             "tutorIntro15": "Description: ",
@@ -688,5 +723,37 @@
             "training1": "As the leading GRE training institution in the United States, <b>Shanghai Tuoyan Education</b> is committed to providing <b>high-quality and professional GRE courses</b> for students studying in the United States. Excellent teachers and a spirit of continuous improvement have enabled Tuoyan to cultivate a group of students who earn scores that are satisfying to themselves. \"<b>Tuoyan's teachers are the most responsible GRE teachers I have ever encountered.</b> If I have any questions, I will be responded immediately if I ask on WeChat. Thank you for letting me worry no more about my grades and the possibility of not being accepted into any graduate Colleges! \"said IFU students. Thank you, Mr. Tuo Yan, for your full support during the education of IFU Charity Program. Thank you for growing up with IFU!",
             "learnMoreBtn": "Learn More"
         }
+    },
+    "career": {
+        "banner": {
+            "title": "JOIN US",
+            "buttonText": "Our Story",
+            "description": "If you are passionate about providing international students with help; if you would like to reduce the anxiety of families with their children studying abroad; if you would like to improve the generation and information gap between international students and and their parents; if you would like to soothe the minds of international students who struggle overseas, join the big family of IFU now!"
+        },
+        "volunteer": {
+            "tabTitle": "VOLUNTEER POSITIONS",
+            "joinSection": {
+                "title": "Become a Volunteer",
+                "description": "Volunteers of IFU are separated into <b>project volunteers</b> and <b>on-campus volunteers</b>.  Volunteers should have the experience of studying abroad or would like to make contributions to international students; always willing to give a hand, passionate about public services. For now, volunteers of IFU are divided geographically into teams in the east coast (U.S.), west coast (U.S.), and Canada. The management team consists of district managers and their assistants, guiding all volunteers of IFU towards the goals of reducing the anxiety between international students and parents and increasing the connection between them by conveying their voices to each other"
+            }
+        },
+        "staff": {
+            "tabTitle": "STAFF POSITIONS",
+            "joinSection": {
+                "title": "Become a Staff",
+                "description": "The staff of IFU are in charge of the running of the organization. The organization is divided into departments of <b>Operation, Volunteer Management, Administration & Finance, Cooperative Project, Design & Technology and Diplomacy</b>. The direct application of staff requires work experience of no fewer than three months, resume, (face-to-face) interview, General Test and a probation of three months. After passing the probation, according to the result of the probation, staff would start working and lead volunteers to achieve the goals of IFU."
+            }
+        }
+    },
+    "application": {
+        "urgent": "Urgent",
+        "requirement": "Requirement",
+        "description": "Job Description",
+        "reward": "Reward",
+        "people": "Position",
+        "peopleUnit": " available",
+        "time": "Volunteer Period",
+        "timeUnit": " month(s)",
+        "submit": "Apply Now"
     }
 }

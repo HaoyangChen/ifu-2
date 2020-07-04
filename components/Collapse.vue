@@ -6,10 +6,7 @@
             @click="toggle"
         >
             <div class="arrow" :class="show ? 'arrow-up' : 'arrow-down'"></div>
-            <div
-                :class="lang === 'zh' ? 'title-zh' : 'title-en'"
-                class="title-en"
-            >
+            <div class="title">
                 {{ title }}
             </div>
         </div>
@@ -76,7 +73,7 @@ export default {
     border-left: 10px solid transparent;
     border-top: 10px solid #fff;
 }
-.title-en {
+.title {
     display: inline-block;
     margin-right: 30px;
 }
@@ -98,10 +95,9 @@ export default {
         color: #fff;
         float: inherit;
     }
-    .title-en {
+    .title {
         font-size: 18px;
         text-align: right;
-        white-space: pre-line;
     }
 }
 </style>
