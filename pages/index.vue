@@ -12,21 +12,6 @@
         </Banner>
         <div class="bg-carnival">
             <section class="container">
-                <!-- <img
-                    id="carnival-person1"
-                    :src="carnivalPerson1"
-                    alt="carnival section decoration1"
-                />
-                <img
-                    id="carnival-person2"
-                    :src="carnivalPerson2"
-                    alt="carnival section decoration2"
-                />
-                <img
-                    id="carnival-person3"
-                    :src="carnivalPerson3"
-                    alt="carnival section decoration3"
-                /> -->
                 <div class="carnival-event">
                     <img
                         id="carnival-person1"
@@ -990,6 +975,7 @@ img {
         .announcement-row {
             flex-basis: 100%;
             margin: 0;
+            padding-right: 30px;
         }
     }
 

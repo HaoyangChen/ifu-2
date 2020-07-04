@@ -36,19 +36,19 @@
         "banner": {
             "title": "IFU",
             "subTitle": "I, Family, You",
-            "description": "We meet, we know, we share, and we are the IFU;<br>To reduce the anxiety among international students and their parents;<br>To build a bridge between them.",
+            "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. Now we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. We committed to solve International families' overseas safety issues, and information asymmetry. We aim to convey the voices of students to their parents, and serve the families studying abroad.",
             "buttonText": "Our Story"
         },
         "carnival": {
             "title": "The Third IFU College Carnival",
             "subTitle": "Our Upcoming Event — IFU assists your studying abroad needs",
-            "description": "IFU’s goal in the social mission of <span>making international families feel more secure abroad</span>, aims to reduce the information gap between international students and become the communication bridge between them; IFU will hold the third College Carnival in <span>2020 Mid-July</span>. At this event, IFU will invite international students studying abroad and professionals from a wide variety of fields to share their experiences and advice (in campus life, academic preparation, safety, and career planning) to reduce new incoming students’ concerns and help them better integrate into college life. IFU will assist your needs in studying abroad.",
+            "description": "IFU's goal in the social mission of <span>making international families feel more secure abroad</span>, aims to reduce the information gap between international students and become the communication bridge between them; IFU will hold the third College Carnival in <span>2020 Mid-July</span>. At this event, IFU will invite international students studying abroad and professionals from a wide variety of fields to share their experiences and advice (in campus life, academic preparation, safety, and career planning) to reduce new incoming students’ concerns and help them better integrate into college life. IFU will assist your needs in studying abroad.",
             "buttonText": "Event Details"
         },
         "coronavirus": {
             "subTitle": "IFU In The News",
             "title": "COVID-19 Epidemic Donation",
-            "description": "From the outbreak of epidemic in China in January, to the gradual spread into overseas, volunteers and staff of IFU strived to contribute to the prevention of epidemic for homeland and international students. During the epidemic, from <span>January to May</span>, IFU post <span>80+</span> articles of update of epidemic; held <span>1</span> online/offline donation both overseas and within China; <span>7 events</span> of helping and protecting families of international students; <span>3 investigations</span> of current states of families of international students; <span>2 speeches</span> about public prevention of epidemic given by experts; <span>3</span> clock-in projects designed for international students staying overseas; <span>13</span> videos related to epidemic; <span>6</span> online academic lectures; academic seminars of seniors from <span>13 universities</span>; <span>3 seminars</span> specially held for international schools in China",
+            "description": "From the outbreak of epidemic in China in January, to the gradual spread into overseas, volunteers and staff of IFU strived to contribute to the prevention of epidemic for homeland and international students. During the epidemic, from <span>January to May</span>, IFU post <span>80+</span> articles of update of epidemic; held <span>1</span> online/offline donation both overseas and within China; <span>7 events</span> of helping and protecting families of international students; <span>3 investigations</span> of current states of families of international students; <span>2 speeches</span> about public prevention of epidemic given by experts; <span>3</span> clock-in projects designed for international students staying overseas; <span>13</span> videos related to epidemic; <span>6</span> online academic lectures; academic seminars of seniors from <span>13 universities</span>; <span>3 seminars</span> specially held for international schools in China.",
             "buttonText": "Donation Project Report"
         },
         "ourWork": {
@@ -106,30 +106,30 @@
         "announcement": {
             "1": {
                 "time": "July 5th: ",
-                "name": "Seminar of data science and machine learning"
+                "name": "Seminar - Data Science and Machine Learning"
             },
             "2": {
                 "time": "July 18th: ",
-                "name": "2020 IFU Carnival within East U.S."
+                "name": "2020 IFU College Carnival - East Coast (U.S.)"
             },
             "3": {
                 "time": "July 19th: ",
-                "name": "2020 IFU Carnival within Canada"
+                "name": "2020 IFU College Carnival - Canada"
             },
             "4": {
                 "time": "July 19th: ",
-                "name": "2020 IFU Carnival within West U.S."
+                "name": "2020 IFU College Carnival - West Coast (U.S.)"
             },
             "5": {
                 "time": "July 26th: ",
-                "name": "Seminar of math major"
+                "name": "Seminar - Major in Math"
             },
             "6": {
                 "time": "July 26th ~ Early August: ",
-                "name": "2020 IFU Carnival - Tea party with senior students from universities"
+                "name": "2020 IFU College Carnival - Tea Chat with Seminar Students"
             },
-            "title": "July Events Annoucements",
-            "description": "Carrying the goal of alleviating the anxiety of families of international students, IFU invites seniors students from various majors to help freshmen get to know about different majors in universities and the trend of future employment. Meanwhile, the carnival showing the true study life abroad of senior students will be held online. Getting rid of the constraint due to time zones and locations, IFU will provide more high-quality information for families of international students and develop a social circle that not only crosses countries, crosses universities but also crosses ages"
+            "title": "Events in July",
+            "description": "Working toward our social mission to reduce international families' anxieties, IFU will invite senior students from various majors to help first-year students get to know college majors and career planning in July. Meanwhile, IFU will hold our third College Carnival online, which shows the real study abroad experience. Without the limitation of time zones and locations, IFU will provide high-quality information for international families and develop a network that crosses countries, universities, and ages."
         }
     },
     "more": {

@@ -8,7 +8,7 @@
                     <p>{{ $t('footer.subTitle2') }}</p>
                 </div>
                 <p class="rights-reserved light-blue">
-                    © 2019 IFU All Rights Reserved
+                    © 2020 IFU All Rights Reserved
                 </p>
             </div>
             <div class="decoration-line decoration-line1"></div>
@@ -29,7 +29,7 @@
             <div class="more-info">
                 <span class="light-blue">{{ $t('footer.moreInfo') }}</span>
                 <div class="mgt-separate">
-                    <a>{{ $t('footer.resourceShare') }}</a>
+                    <a id="resource-id">{{ $t('footer.resourceShare') }}</a>
                 </div>
                 <div>
                     <nuxt-link :to="localePath('/membership')">{{
@@ -318,7 +318,8 @@ img {
     left: 555px;
 
     .mgt-separate {
-        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 5px;
     }
 
     a {
@@ -346,7 +347,11 @@ img {
     }
 
     .mgt-separate {
-        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        a#resource-id {
+            display: none !important;
+        }
     }
 }
 
@@ -562,15 +567,6 @@ img {
         left: 555px;
     }
 
-    .top {
-        .logo {
-            .rights-reserved {
-                margin-top: 100px;
-                margin-left: 27%;
-            }
-        }
-    }
-
     .decoration-line1 {
         height: 182px;
     }
@@ -646,16 +642,16 @@ img {
             top: 163px;
             left: 55%;
             .mgt-separate {
-                margin-top: 10px;
+                margin-top: -5px;
             }
         }
 
         .contact-us {
             top: 163px;
             left: 37%;
-            .mgt-separate {
-                margin-top: 10px;
-            }
+            // .mgt-separate {
+            //     margin-top: 10px;
+            // }
         }
 
         .follow {
@@ -716,9 +712,9 @@ img {
             }
         }
 
-        .contact-us {
-            left: 23%;
-        }
+        // .contact-us {
+        //     left: 23%;
+        // }
     }
     .bottom {
         border: none;
@@ -769,7 +765,7 @@ img {
 
     .top {
         .contact-us {
-            left: 23%;
+            left: 30%;
             top: 175px;
         }
 
