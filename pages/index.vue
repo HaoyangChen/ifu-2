@@ -636,59 +636,61 @@ img {
 .bg-carnival {
     background: url('../assets/home/carnival_bg.png') repeat;
     padding: 80px 0 0 0;
-
-    #carnival-person1 {
-        position: absolute;
-        width: 93px;
-        left: 1045px;
-        top: 540px;
-    }
-
-    #carnival-person2 {
-        position: absolute;
-        width: 127px;
-        left: 280px;
-        top: 386px;
-    }
-
-    #carnival-person3 {
-        position: absolute;
-        width: 88px;
-        left: 1004px;
-        top: 57px;
-    }
-
-    div.carnival-event {
-        width: 720px;
-        background: rgba(84, 190, 245, 0.25);
-        padding: 41px 60px 88px 60px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 30px;
-
-        h1 {
-            text-align: center;
+    section {
+        position: relative;
+        #carnival-person1 {
+            position: absolute;
+            width: 93px;
+            left: 1045px;
+            top: 540px;
         }
 
-        h2 {
-            text-align: center;
-            padding-top: 20px;
+        #carnival-person2 {
+            position: absolute;
+            width: 127px;
+            left: 280px;
+            top: 386px;
         }
 
-        .carnival-description {
-            p {
-                width: 86%;
-                margin-left: auto;
-                margin-right: auto;
+        #carnival-person3 {
+            position: absolute;
+            width: 88px;
+            left: 1004px;
+            top: 57px;
+        }
+
+        div.carnival-event {
+            width: 720px;
+            background: rgba(84, 190, 245, 0.25);
+            padding: 41px 60px 88px 60px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+
+            h1 {
+                text-align: center;
             }
-            /deep/ span {
-                font-weight: bold;
-            }
-        }
 
-        .carnival-btn {
-            text-align: center;
-            margin-top: 50px;
+            h2 {
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .carnival-description {
+                p {
+                    width: 86%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                /deep/ span {
+                    font-weight: bold;
+                }
+            }
+
+            .carnival-btn {
+                text-align: center;
+                margin-top: 50px;
+            }
         }
     }
 }
@@ -844,8 +846,8 @@ img {
             display: none;
         }
         div.carnival-event {
-            width: auto;
-            padding: 10px;
+            width: auto !important;
+            padding: 10px !important;
 
             h1 {
                 font-size: 23px;
