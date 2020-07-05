@@ -347,7 +347,7 @@ img {
     }
 
     .mgt-separate {
-        padding-top: 15px;
+        padding-top: 10px;
         padding-bottom: 5px;
         a#resource-id {
             display: none !important;
@@ -641,9 +641,9 @@ img {
         .more-info {
             top: 163px;
             left: 55%;
-            .mgt-separate {
-                margin-top: -5px;
-            }
+            // .mgt-separate {
+            //     margin-top: -5px;
+            // }
         }
 
         .contact-us {

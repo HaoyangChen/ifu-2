@@ -1,5 +1,43 @@
 <template>
     <div class="carnival">
+        <div class="bg-carnival">
+            <section class="container">
+                <div class="carnival-event">
+                    <img
+                        id="carnival-person1"
+                        :src="carnivalPerson1"
+                        alt="carnival section decoration1"
+                    />
+                    <img
+                        id="carnival-person2"
+                        :src="carnivalPerson2"
+                        alt="carnival section decoration2"
+                    />
+                    <img
+                        id="carnival-person3"
+                        :src="carnivalPerson3"
+                        alt="carnival section decoration3"
+                    />
+                    <div>
+                        <h1>{{ $t('home.carnival.title') }}</h1>
+                        <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                        <div class="carnival-description">
+                            <p v-html="$t('home.carnival.description')" />
+                        </div>
+                        <div class="carnival-btn">
+                            <!-- <Button
+                                external
+                                to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
+                                >{{ $t('home.carnival.buttonText') }}</Button
+                            > -->
+                            <Button :to="localePath('/carnival')">{{
+                                $t('home.carnival.buttonText')
+                            }}</Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section class="section-1">
             <div>
                 <div>
@@ -190,9 +228,91 @@
     </div>
 </template>
 
+<script>
+import Button from '@/components/Button.vue';
+import carnivalPerson1 from '@/assets/home/carnival_person1.png';
+import carnivalPerson2 from '@/assets/home/carnival_person2.png';
+import carnivalPerson3 from '@/assets/home/carnival_person3.png';
+import carnivalBackground from '@/assets/home/carnival_bg.png';
+
+export default {
+    components: {
+        Button,
+    },
+    data() {
+        return {
+            carnivalBackground,
+            carnivalPerson1,
+            carnivalPerson2,
+            carnivalPerson3,
+        };
+    },
+};
+</script>
+
 <style lang="scss" scoped>
 .carnival {
     line-height: 31px;
+}
+
+.bg-carnival {
+    background: url('../assets/home/carnival_bg.png') repeat;
+    padding: 80px 0 0 0;
+    #carnival-person1 {
+        position: absolute;
+        width: 93px;
+        left: 680px;
+        top: 447px;
+    }
+
+    #carnival-person2 {
+        position: absolute;
+        width: 127px;
+        left: -86px;
+        top: 307px;
+    }
+
+    #carnival-person3 {
+        position: absolute;
+        width: 88px;
+        left: 645px;
+        top: -21px;
+    }
+
+    div.carnival-event {
+        width: 720px;
+        background: rgba(84, 190, 245, 0.25);
+        padding: 41px 60px 88px 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        position: relative;
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .carnival-description {
+            p {
+                width: 86%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /deep/ span {
+                font-weight: bold;
+            }
+        }
+
+        .carnival-btn {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
 }
 
 .section-1 {
