@@ -105,9 +105,11 @@ export default {
                 this.currentPath === '/totoro' ||
                 this.currentPath === '/membership' ||
                 this.currentPath === '/more' ||
+                this.currentPath === '/carnival' ||
                 this.currentPath === '/zh/totoro' ||
                 this.currentPath === '/zh/membership' ||
-                this.currentPath === '/zh/more'
+                this.currentPath === '/zh/more' ||
+                this.currentPath === '/zh/carnival'
             );
         },
         isContactPath() {

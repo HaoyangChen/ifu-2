@@ -132,6 +132,11 @@
             "description": "Working toward our social mission to reduce international families' anxieties, IFU will invite senior students from various majors to help first-year students get to know college majors and career planning in July. Meanwhile, IFU will hold our third College Carnival online, which shows the real study abroad experience. Without the limitation of time zones and locations, IFU will provide high-quality information for international families and develop a network that crosses countries, universities, and ages."
         }
     },
+    "carnival": {
+        "banner": {
+            "buttonText": "Register Now"
+        }
+    },
     "more": {
         "banner": {
             "title": "MORE SERVICES",

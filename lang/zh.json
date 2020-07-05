@@ -133,6 +133,11 @@
             }
         }
     },
+    "carnival": {
+        "banner": {
+            "buttonText": "立即报名"
+        }
+    },
     "more": {
         "banner": {
             "title": "IFU 更多服务",

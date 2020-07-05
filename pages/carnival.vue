@@ -25,14 +25,11 @@
                             <p v-html="$t('home.carnival.description')" />
                         </div>
                         <div class="carnival-btn">
-                            <!-- <Button
+                            <Button
                                 external
                                 to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
-                                >{{ $t('home.carnival.buttonText') }}</Button
-                            > -->
-                            <Button :to="localePath('/carnival')">{{
-                                $t('home.carnival.buttonText')
-                            }}</Button>
+                                >{{ $t('carnival.banner.buttonText') }}</Button
+                            >
                         </div>
                     </div>
                 </div>
