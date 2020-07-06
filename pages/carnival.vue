@@ -72,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-1 mobile">
+        <section class="section-1-mobile mobile">
             <div class="div-1">
                 <img src="@/assets/carnival/section-1-icon-1.svg" />
                 <h3>{{ $t('carnival.section-1.div-1.title') }}</h3>
@@ -651,19 +651,19 @@ export default {
         }
     }
 
-    .section-1 {
+    .section-1-mobile {
+        background: $background-light-blue;
+        display: flex;
         flex-direction: column;
+
+        h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
 
         > div {
             flex-basis: 100%;
-        }
-
-        .clipart {
-            display: none;
-        }
-
-        p {
-            padding-right: 0;
         }
 
         .div-1 {
