@@ -765,7 +765,7 @@ img {
 
     .top {
         .contact-us {
-            left: 30%;
+            left: 23%;
             top: 175px;
         }
 
