@@ -52,7 +52,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="clipart">
                 <img src="@/assets/carnival/section-1.svg" />
             </div>
             <div>
@@ -211,7 +211,7 @@
                             <p>{{ $t('carnival.section-7.div-10.qr-1') }}</p>
                         </div>
                         <div>
-                            <img src="@/assets/carnival/section-7-qr-1.png" />
+                            <img src="@/assets/carnival/section-7-qr-2.png" />
                             <p>{{ $t('carnival.section-7.div-10.qr-2') }}</p>
                         </div>
                     </div>
@@ -572,6 +572,172 @@ export default {
 
                 > div {
                     margin-left: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .bg-carnival {
+        #carnival-person1,
+        #carnival-person2,
+        #carnival-person3 {
+            display: none;
+        }
+        div.carnival-event {
+            width: auto !important;
+            padding: 10px !important;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+            .carnival-btn {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .section-1 {
+        flex-direction: column;
+
+        > div {
+            flex-basis: 100%;
+            margin-top: 61px;
+        }
+
+        .clipart {
+            display: none;
+        }
+
+        p {
+            padding-right: 0;
+        }
+    }
+
+    .section-2 {
+        background-size: contain;
+        background-position: bottom;
+
+        .card {
+            width: 100%;
+            padding: 91px 14px 52px 29px;
+        }
+    }
+
+    .section-3 {
+        .title {
+            height: 80px;
+            font-size: 23px;
+            line-height: 80px;
+        }
+
+        > section {
+            flex-direction: column;
+            padding-top: 50px;
+            padding-bottom: 78px;
+
+            > div {
+                flex-basis: 100%;
+                margin-bottom: 52px;
+
+                > p {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .section-4 {
+        height: 435px;
+        background-size: 626px 477px;
+        margin: 0;
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .section-5 {
+        flex-direction: column;
+
+        > section {
+            padding-top: 51px;
+            padding-bottom: 51px;
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            padding: 0 0 0 16px;
+        }
+
+        .div-1 {
+            p {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .section-6 {
+        flex-direction: column;
+
+        > div {
+            flex-basis: 100%;
+            margin: 50px 0;
+        }
+    }
+
+    .section-7 {
+        .title {
+            height: 80px;
+            font-size: 23px;
+            line-height: 80px;
+        }
+
+        section {
+            justify-content: space-evenly;
+
+            > div {
+                width: 159px;
+                height: 147px;
+                margin: 30px 0;
+                padding: 0 25px 0 38px;
+            }
+
+            .div-10 {
+                width: 100%;
+                height: unset;
+                padding: 50px 35px;
+                flex-direction: column;
+
+                .text {
+                    flex-basis: 100%;
+                    margin-bottom: 7px;
+
+                    h3 {
+                        font-size: 23px;
+                        margin-top: 0;
+                    }
+                }
+
+                .image {
+                    width: 100%;
+                    justify-content: space-evenly;
+
+                    > div {
+                        margin-left: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
                 }
             }
         }
