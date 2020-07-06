@@ -135,6 +135,108 @@
     "carnival": {
         "banner": {
             "buttonText": "Register Now"
+        },
+        "section-1": {
+            "div-1": {
+                "title": "Real stories & high quality studying abroad information",
+                "description": "Experienced seniors will share their real stories to inspire more incoming students. Professionals from a wide variety of fields and representatives from different universities’ international students offices will share the most reliable information."
+            },
+            "div-2": {
+                "title": "An international network platform",
+                "description": "At College Carnival, you will not only have chances to meet international families with different backgrounds; but also make friends with experienced professionals and seniors. "
+            },
+            "div-3": {
+                "title": "An comprehensive information platform",
+                "description": "At College Carnival, you will gain all the information needed from your freshman year to your graduation."
+            },
+            "div-4": {
+                "title": "No limitations on time zones and locations",
+                "description": "You do not need to worry about traffic, parking, time difference and the pandemic, the tour will be done remotely!"
+            }
+        },
+        "section-2": {
+            "div-1": {
+                "title": "Time (In Beijing time)",
+                "description": "<b>East Coast (U.S.)</b> – July 18th | Sat. | 10AM<br /><b>Canada & U.K.</b> – July 19th | Sun. | 10AM<br /><b>West Coast (U.S.)</b> – July 19th | Sun. | 1PM"
+            },
+            "div-2": {
+                "title": "Location",
+                "description": "Live on <b>Zoom</b>;<br />Stream on <b>Bilibili</b> and College Carnival <b>WeChat group-chats</b>"
+            }
+        },
+        "section-3": {
+            "title": "Event Sessions",
+            "div-1": {
+                "title": "— Seniors Panel —",
+                "description": "Alumni, and seniors from specific universities will share their stories and experiences about studying abroad, including topics such as, campus life, academic preparation, safety, career planning, campus resources and more."
+            },
+            "div-2": {
+                "title": "— Professionals Speech —",
+                "description": "Our professional speakers with different  backgrounds will provide you with reliable advice on trending topics - International students’ policy, overseas legal issues, admission policy under pandemic."
+            },
+            "div-3": {
+                "title": "— break-out discussion —",
+                "description": "During the break-out discussion session, you will have the chance to interact with alumni and seniors for more specific questions. Get your questions ready ;)"
+            }
+        },
+        "section-4": {
+            "title": "IFU 2020 College Carnival<br />Volunteer Recruitment",
+            "description": "Panelists | Management Specialists | Communication Specialists"
+        },
+        "section-5": {
+            "div-1": {
+                "title": "— IF YOU —",
+                "li-1": " Would like to do something for international families, or simply <b>encourage students with your experience</b>;",
+                "li-2": "Want to see <b>insights</b> of non-governmental organizations;",
+                "li-3": "Want to learn about the <b>operation and management of users and communities</b>;",
+                "li-4": "Want a chance to <b>practice</b> your public speaking skill;",
+                "p": "<b>Join IFU 2020 College Carnival volunteer team now!</b>"
+            },
+            "div-2": {
+                "title": "— YOU CAN —",
+                "li-1": "<b>Share your experience</b> of studying abroad;",
+                "li-2": "<b>Meet people</b> with different backgrounds;",
+                "li-3": "<b>Improve</b> your operation, management, public speaking and marketing <b>skills</b>;",
+                "li-4": "Gain a <b>Certificate of Appreciation</b> of NGO;",
+                "li-5": "More rewards waiting for you to become a volunteer!"
+            }
+        },
+        "section-6": {
+            "descriptionTitle": "Position Description",
+            "requirementTitle": "Requirement",
+            "div-1": {
+                "name": "Panelists",
+                "description": "Be able to talk fluently during break-out sessions, share your experience and stories during your study abroad, and inspire international students.",
+                "requirement": "Has experience in giving a speech; able to express and communicate effectively and fluently; confident and influential; minimum one-year studying abroad experience."
+            },
+            "div-2": {
+                "name": "Management Specialists",
+                "description": "Manage community operations among users during IFU 2020 College Carnival; answer questions for students and their parents; manage the operation on Zoom and Bilibili.",
+                "requirement": "Familiar with Zoom or Bilibili; excellent writing and editing skills; good communication skills."
+            },
+            "div-3": {
+                "name": "Communication Specialists",
+                "description": "Produce posters and articles for IFU 2020 College Carnival; record the event; interview guests and participants; responsible for post-event report and manage the operation of social media.",
+                "requirement": "Familiar with Zoom or Bilibili; excellent article writing and editing skills; basic knowledge of video editing and poster design; good communication skills."
+            }
+        },
+        "section-7": {
+            "title": "Recruitment & Workflow of Carnival Volunteers",
+            "div-1": "Submit your application",
+            "div-2": "Wait for our team to review your application",
+            "div-3": "Receive interview request email in a week",
+            "div-4": "Interview",
+            "div-5": "Receive application result in three days",
+            "div-6": "Volunteer Orientation & Training",
+            "div-7": "IFU 2020 College Carnival Rehearsal",
+            "div-8": "IFU 2020 College Carnival Day",
+            "div-9": "Tea party with alumni & seniors",
+            "div-10": {
+                "title": "Ready? Scan QR Code to Apply",
+                "description": "Feel free to add our WeChat assistant No.2 to join IFU 2020 College Carnival volunteers WeChat group and ask questions. ",
+                "qr-1": "Apply Now",
+                "qr-2": "WeChat Assistant"
+            }
         }
     },
     "more": {
