@@ -35,7 +35,7 @@
                 </div>
             </section>
         </div>
-        <section class="section-1">
+        <section class="section-1 desktop">
             <div>
                 <div>
                     <img src="@/assets/carnival/section-1-icon-1.svg" />
@@ -72,8 +72,41 @@
                 </div>
             </div>
         </section>
+        <section class="section-1 mobile">
+            <div class="div-1">
+                <img src="@/assets/carnival/section-1-icon-1.svg" />
+                <h3>{{ $t('carnival.section-1.div-1.title') }}</h3>
+                <p>
+                    {{ $t('carnival.section-1.div-1.description') }}
+                </p>
+            </div>
+            <div class="div-2">
+                <img src="@/assets/carnival/section-1-icon-2.svg" />
+                <h3>{{ $t('carnival.section-1.div-2.title') }}</h3>
+                <p>
+                    {{ $t('carnival.section-1.div-2.description') }}
+                </p>
+            </div>
+            <div class="div-3">
+                <img src="@/assets/carnival/section-1-icon-3.svg" />
+                <h3>{{ $t('carnival.section-1.div-3.title') }}</h3>
+                <p>
+                    {{ $t('carnival.section-1.div-3.description') }}
+                </p>
+            </div>
+            <div class="div-4">
+                <img src="@/assets/carnival/section-1-icon-4.svg" />
+                <h3>{{ $t('carnival.section-1.div-4.title') }}</h3>
+                <p>
+                    {{ $t('carnival.section-1.div-4.description') }}
+                </p>
+            </div>
+        </section>
         <section class="section-2">
             <div class="card">
+                <div class="tag">
+                    {{ $t('carnival.section-2.tag') }}
+                </div>
                 <h3>{{ $t('carnival.section-2.div-1.title') }}</h3>
                 <p v-html="$t('carnival.section-2.div-1.description')" />
                 <br />
@@ -338,7 +371,7 @@ export default {
     background: url(~assets/carnival/section-2.svg);
     min-height: 500px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     height: 617px;
@@ -348,12 +381,27 @@ export default {
     }
 
     .card {
-        background: url(~assets/carnival/section-2-card.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        border: 3px solid #f2d07e;
+        box-shadow: 0px 5px 15px rgba(242, 208, 126, 0.25);
         width: 482px;
         height: 457px;
         padding: 99px 71px;
+        position: relative;
+
+        .tag {
+            position: absolute;
+            font-size: 14px;
+            top: 31px;
+            left: -11px;
+            background: url(~assets/carnival/section-2-card.svg);
+            width: 146px;
+            height: 47px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: white;
+            font-weight: 600;
+            padding: 5px 0 7px 15px;
+        }
 
         > h3 {
             margin-top: 0;
@@ -466,6 +514,7 @@ export default {
             font-weight: 600;
             color: #466eb6;
             background: white;
+            overflow-wrap: break-word;
         }
     }
 }
@@ -607,7 +656,6 @@ export default {
 
         > div {
             flex-basis: 100%;
-            margin-top: 61px;
         }
 
         .clipart {
@@ -617,6 +665,26 @@ export default {
         p {
             padding-right: 0;
         }
+
+        .div-1 {
+            margin-top: 56px;
+            margin-bottom: 61px;
+        }
+
+        .div-2 {
+            margin-top: 0;
+            margin-bottom: 61px;
+        }
+
+        .div-3 {
+            margin-top: 0;
+            margin-bottom: 61px;
+        }
+
+        .div-4 {
+            margin-top: 0;
+            margin-bottom: 95px;
+        }
     }
 
     .section-2 {
@@ -624,6 +692,7 @@ export default {
         background-position: bottom;
 
         .card {
+            height: fit-content;
             width: 100%;
             padding: 91px 14px 52px 29px;
         }
@@ -642,8 +711,14 @@ export default {
             padding-bottom: 78px;
 
             > div {
+                width: 100%;
                 flex-basis: 100%;
                 margin-bottom: 52px;
+
+                img {
+                    width: 144px;
+                    height: 144px;
+                }
 
                 > p {
                     padding: 0;
@@ -656,6 +731,7 @@ export default {
         height: 435px;
         background-size: 626px 477px;
         margin: 0;
+        text-align: center;
 
         h3 {
             font-size: 18px;
@@ -666,6 +742,7 @@ export default {
         flex-direction: column;
 
         > section {
+            width: 100%;
             padding-top: 51px;
             padding-bottom: 51px;
 
@@ -691,6 +768,14 @@ export default {
         > div {
             flex-basis: 100%;
             margin: 50px 0;
+
+            .title {
+                font-size: 23px;
+                left: 15%;
+                width: 70%;
+                top: -25px;
+                height: 28px;
+            }
         }
     }
 

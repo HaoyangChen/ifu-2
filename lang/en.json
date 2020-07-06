@@ -155,6 +155,7 @@
             }
         },
         "section-2": {
+            "tag": "TIME & LOCATION",
             "div-1": {
                 "title": "Time (In Beijing time)",
                 "description": "<b>East Coast (U.S.)</b> – July 18th | Sat. | 10AM<br /><b>Canada & U.K.</b> – July 19th | Sun. | 10AM<br /><b>West Coast (U.S.)</b> – July 19th | Sun. | 1PM"
@@ -190,7 +191,7 @@
                 "li-2": "Want to see <b>insights</b> of non-governmental organizations;",
                 "li-3": "Want to learn about the <b>operation and management of users and communities</b>;",
                 "li-4": "Want a chance to <b>practice</b> your public speaking skill;",
-                "p": "<b>Join IFU 2020 College Carnival volunteer team now!</b>"
+                "p": "<b>--- Join IFU 2020 College Carnival volunteer team now!</b>"
             },
             "div-2": {
                 "title": "— YOU CAN —",
