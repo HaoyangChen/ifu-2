@@ -20,7 +20,7 @@
                     />
                     <div>
                         <h1>{{ $t('home.carnival.title') }}</h1>
-                        <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                        <h2 v-html="$t('home.carnival.subTitle')" />
                         <div class="carnival-description">
                             <p v-html="$t('home.carnival.description')" />
                         </div>
@@ -37,7 +37,7 @@
         </div>
         <section class="section-1 desktop">
             <div>
-                <div>
+                <div class="div-1">
                     <img src="@/assets/carnival/section-1-icon-1.svg" />
                     <h3>{{ $t('carnival.section-1.div-1.title') }}</h3>
                     <p>
@@ -56,7 +56,7 @@
                 <img src="@/assets/carnival/section-1.svg" />
             </div>
             <div>
-                <div>
+                <div class="div-2">
                     <img src="@/assets/carnival/section-1-icon-2.svg" />
                     <h3>{{ $t('carnival.section-1.div-2.title') }}</h3>
                     <p>
@@ -319,7 +319,10 @@ export default {
         }
 
         h2 {
-            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 86%;
+            text-align: left;
             padding-top: 20px;
         }
 
@@ -344,8 +347,15 @@ export default {
 .section-1 {
     background: $background-light-blue;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    .clipart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 680px;
+    }
 
     h3 {
         font-size: 18px;
@@ -357,8 +367,14 @@ export default {
         flex-basis: 33%;
     }
 
-    p {
-        padding-right: 50px;
+    .div-1,
+    .div-2 {
+        height: 350px;
+    }
+
+    .div-3,
+    .div-4 {
+        height: 250px;
     }
 
     .div-3,
@@ -404,9 +420,13 @@ export default {
         }
 
         > h3 {
-            margin-top: 0;
+            margin: 0;
             font-weight: 600;
             text-transform: uppercase;
+        }
+
+        > p {
+            margin-top: 0;
         }
     }
 }
@@ -440,7 +460,7 @@ export default {
 
             > p {
                 text-align: left;
-                padding: 0 70px;
+                padding: 0 50px;
             }
         }
     }
@@ -500,21 +520,29 @@ export default {
         flex-basis: 30%;
         border: 8px solid #466eb6;
         border-radius: 20px;
-        padding: 37px 41px;
+        padding: 37px 20px 7px 20px;
         position: relative;
 
         .title {
             position: absolute;
-            width: 50%;
-            height: 25px;
-            top: -20px;
-            left: 25%;
+            width: 68%;
+            height: 28px;
+            top: -25px;
+            left: 16%;
             text-align: center;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             color: #466eb6;
             background: white;
             overflow-wrap: break-word;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0;
         }
     }
 }
@@ -621,6 +649,11 @@ export default {
 
                 > div {
                     margin-left: 26px;
+
+                    p {
+                        margin: 0;
+                        line-height: 10px;
+                    }
                 }
             }
         }
@@ -652,7 +685,7 @@ export default {
     }
 
     .section-1-mobile {
-        background: $background-light-blue;
+        background: url(~assets/carnival/section-1-mobile.svg);
         display: flex;
         flex-direction: column;
 
@@ -688,8 +721,12 @@ export default {
     }
 
     .section-2 {
-        background-size: contain;
+        background: url(~assets/carnival/section-2-mobile.svg);
+        background-size: 100% 200px;
         background-position: bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 225px;
+        height: fit-content;
 
         .card {
             height: fit-content;
@@ -768,14 +805,6 @@ export default {
         > div {
             flex-basis: 100%;
             margin: 50px 0;
-
-            .title {
-                font-size: 23px;
-                left: 15%;
-                width: 70%;
-                top: -25px;
-                height: 28px;
-            }
         }
     }
 
