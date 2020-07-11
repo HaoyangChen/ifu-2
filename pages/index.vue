@@ -30,7 +30,7 @@
                     />
                     <div>
                         <h1>{{ $t('home.carnival.title') }}</h1>
-                        <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                        <h2 v-html="$t('home.carnival.subTitle')" />
                         <div class="carnival-description">
                             <p v-html="$t('home.carnival.description')" />
                         </div>
@@ -459,6 +459,7 @@ export default {
     h1 {
         font-size: $h1-size;
         font-weight: normal;
+        line-height: 50px;
     }
 
     h2 {
@@ -755,6 +756,10 @@ img {
         padding-right: 0;
     }
 
+    p {
+        margin-top: 0;
+    }
+
     ul {
         margin-top: 30px;
         list-style: 0;
@@ -985,6 +990,10 @@ img {
     .about-us-section {
         .half-style {
             flex-direction: column;
+        }
+
+        h2:nth-of-type(2) {
+            padding-top: 0;
         }
 
         .col-half {

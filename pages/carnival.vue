@@ -693,6 +693,11 @@ export default {
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0;
         }
 
         > div {
@@ -765,12 +770,16 @@ export default {
     }
 
     .section-4 {
+        background: url(~assets/carnival/section-4-mobile.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 435px;
-        background-size: 626px 477px;
         margin: 0;
         text-align: center;
 
         h3 {
+            margin-top: 1em;
             font-size: 18px;
         }
     }
@@ -819,10 +828,9 @@ export default {
             justify-content: space-evenly;
 
             > div {
-                width: 159px;
-                height: 147px;
+                width: 230px;
+                height: 214px;
                 margin: 30px 0;
-                padding: 0 25px 0 38px;
             }
 
             .div-10 {
