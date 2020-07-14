@@ -25,11 +25,13 @@
                             <p v-html="$t('home.carnival.description')" />
                         </div>
                         <div class="carnival-btn">
-                            <Button
-                                external
-                                to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
-                                >{{ $t('carnival.banner.buttonText') }}</Button
-                            >
+                            <Button :click="popupClick">
+                                {{ $t('carnival.banner.buttonText') }}
+                            </Button>
+                            <div v-if="showPopup" class="popup">
+                                <img src="@/assets/carnival/popup-qr.svg" />
+                                <div>立即扫码报名吧！</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,6 +135,23 @@
                     <img src="@/assets/carnival/section-3-icon-3.svg" />
                     <h3>{{ $t('carnival.section-3.div-3.title') }}</h3>
                     <p>{{ $t('carnival.section-3.div-3.description') }}</p>
+                </div>
+            </section>
+        </div>
+        <div class="section-schedule">
+            <div class="title">日程安排（北京时间）</div>
+            <section>
+                <carnival-tab />
+                <div class="qr-card">
+                    <div class="text">
+                        <h3>已经等不及啦？快扫描二维码报名吧！</h3>
+                        <p>
+                            这个夏天，让我们摆脱疫情、时区、地区的限制，认识各校学长学姐，获取专业嘉宾的留学趋势分析，一起在线上“见面”吧！
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="@/assets/carnival/section-schedule-qr.svg" />
+                    </div>
                 </div>
             </section>
         </div>
@@ -256,6 +275,7 @@
 
 <script>
 import Button from '@/components/Button.vue';
+import CarnivalTab from '@/components/CarnivalTab.vue';
 import carnivalPerson1 from '@/assets/home/carnival_person1.png';
 import carnivalPerson2 from '@/assets/home/carnival_person2.png';
 import carnivalPerson3 from '@/assets/home/carnival_person3.png';
@@ -264,6 +284,7 @@ import carnivalBackground from '@/assets/home/carnival_bg.png';
 export default {
     components: {
         Button,
+        CarnivalTab,
     },
     data() {
         return {
@@ -271,7 +292,13 @@ export default {
             carnivalPerson1,
             carnivalPerson2,
             carnivalPerson3,
+            showPopup: false,
         };
+    },
+    methods: {
+        popupClick() {
+            this.showPopup = !this.showPopup;
+        },
     },
 };
 </script>
@@ -340,6 +367,30 @@ export default {
         .carnival-btn {
             text-align: center;
             margin-top: 50px;
+            position: relative;
+
+            .popup {
+                padding: 61px 57px 0 57px;
+                background: $dark-blue;
+                border-radius: 30px;
+                width: 454px;
+                height: 454px;
+                position: absolute;
+                top: -500px;
+                left: 75px;
+
+                img {
+                    width: 340px;
+                    height: 317px;
+                }
+
+                div {
+                    color: white;
+                    font-size: 24px;
+                    margin-top: 16px;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
@@ -461,6 +512,43 @@ export default {
             > p {
                 text-align: left;
                 padding: 0 50px;
+            }
+        }
+    }
+}
+
+.section-schedule {
+    background: $background-light-blue;
+
+    .title {
+        width: 100%;
+        height: 97px;
+        background: $button-color;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        line-height: 97px;
+    }
+
+    .qr-card {
+        margin-top: 50px;
+        margin-left: 8%;
+        width: 669px;
+        height: 220px;
+        padding: 38px 41px;
+        background: white;
+        border: 3px solid $button-color;
+        box-shadow: 0px 5px 15px rgba(34, 165, 216, 0.25);
+        display: flex;
+        align-items: center;
+
+        .text {
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                padding-right: 20px;
             }
         }
     }
