@@ -120,19 +120,17 @@
                 <div>
                     <img src="@/assets/carnival/section-3-icon-1.svg" />
                     <h3>{{ $t('carnival.section-3.div-1.title') }}</h3>
-                    <p>
-                        {{ $t('carnival.section-3.div-1.description') }}
-                    </p>
+                    <p v-html="$t('carnival.section-3.div-1.description')" />
                 </div>
                 <div>
                     <img src="@/assets/carnival/section-3-icon-2.svg" />
                     <h3>{{ $t('carnival.section-3.div-2.title') }}</h3>
-                    <p>{{ $t('carnival.section-3.div-2.description') }}</p>
+                    <p v-html="$t('carnival.section-3.div-2.description')" />
                 </div>
                 <div>
                     <img src="@/assets/carnival/section-3-icon-3.svg" />
                     <h3>{{ $t('carnival.section-3.div-3.title') }}</h3>
-                    <p>{{ $t('carnival.section-3.div-3.description') }}</p>
+                    <p v-html="$t('carnival.section-3.div-3.description')" />
                 </div>
             </section>
         </div>
