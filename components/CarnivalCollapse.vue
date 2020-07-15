@@ -1,17 +1,34 @@
 <template>
     <div>
-        <div class="title-bar">
+        <div class="title-bar" @click="toggleOpen">
             <div class="time">{{ time }}</div>
             <div class="title">{{ title }}</div>
         </div>
-        <div class="content-section">
-            <div class="guest"></div>
-            <div class="content">
-                <p v-for="(content, index) in contentList" :key="index">
-                    {{ content }}
-                </p>
+        <div v-if="open" class="content-section">
+            <div class="guest">
+                <div v-for="(guest, index) in guestList" :key="index">
+                    <p>{{ guest }}</p>
+                </div>
             </div>
-            <div class="guest-description"></div>
+            <div class="content">
+                <div v-for="(content, index) in contentList" :key="index">
+                    <p>
+                        <b>{{ content.title }}</b>
+                    </p>
+                    <p v-for="(p, i) in content.p" :key="i">{{ p }}</p>
+                </div>
+            </div>
+            <div class="guest-description">
+                <div
+                    v-for="(guest, index) in guestDescriptionList"
+                    :key="index"
+                >
+                    <p>
+                        <b>{{ guest.title }}</b>
+                    </p>
+                    <p>{{ guest.description }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -40,6 +57,16 @@ export default {
             required: true,
         },
     },
+    data() {
+        return {
+            open: false,
+        };
+    },
+    methods: {
+        toggleOpen() {
+            this.open = !this.open;
+        },
+    },
 };
 </script>
 
@@ -50,6 +77,11 @@ export default {
     font-size: 16px;
     border-bottom: 2px solid $button-color;
     align-items: center;
+
+    &:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
 
     .time {
         flex-basis: 20%;
@@ -64,7 +96,6 @@ export default {
 .content-section {
     display: flex;
     color: #466eb6;
-    font-weight: 600;
     border-bottom: 2px solid $button-color;
 
     .guest {
@@ -73,10 +104,25 @@ export default {
 
     .content {
         flex-basis: 50%;
+        padding-right: 50px;
+
+        div {
+            margin: 30px 0;
+        }
+        p {
+            margin: 0;
+        }
     }
 
     .guest-description {
         flex-basis: 30%;
+
+        div {
+            margin: 30px 0;
+        }
+        p {
+            margin: 0;
+        }
     }
 }
 </style>

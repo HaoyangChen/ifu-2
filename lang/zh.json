@@ -135,7 +135,8 @@
     },
     "carnival": {
         "banner": {
-            "buttonText": "立即报名"
+            "buttonText": "立即报名",
+            "qrText": "立即扫码报名吧！"
         },
         "section-1": {
             "div-1": {

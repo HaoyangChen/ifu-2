@@ -134,7 +134,8 @@
     },
     "carnival": {
         "banner": {
-            "buttonText": "Register Now"
+            "buttonText": "Register Now",
+            "qrText": "Scan to Register Now!"
         },
         "section-1": {
             "div-1": {

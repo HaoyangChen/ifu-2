@@ -29,14 +29,37 @@
                                 {{ $t('carnival.banner.buttonText') }}
                             </Button>
                             <div v-if="showPopup" class="popup">
-                                <img src="@/assets/carnival/popup-qr.svg" />
-                                <div>立即扫码报名吧！</div>
+                                <img
+                                    class="qr"
+                                    src="@/assets/carnival/popup-qr.svg"
+                                />
+                                <div>{{ $t('carnival.banner.qrText') }}</div>
+                                <img
+                                    class="close-icon"
+                                    src="@/assets/carnival/popup-close.svg"
+                                    @click="popupClick"
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        <section class="section-0">
+            <h2>嘉年华两大主题与四大亮点</h2>
+            <div>
+                <div class="title">主题 一</div>
+                <div class="description">
+                    美国、加拿大、英国留学趋势及环境变动；
+                </div>
+            </div>
+            <div>
+                <div class="title">主题 二</div>
+                <div class="description">
+                    如何在日益激烈的竞争中，适应不断变化的环境，做好学术要求、生活、法律安全、职业规划等一系列留学准备，培养国际型人才潜力。
+                </div>
+            </div>
+        </section>
         <section class="section-1 desktop">
             <div>
                 <div class="div-1">
@@ -377,7 +400,7 @@ export default {
                 top: -500px;
                 left: 75px;
 
-                img {
+                .qr {
                     width: 340px;
                     height: 317px;
                 }
@@ -388,7 +411,57 @@ export default {
                     margin-top: 16px;
                     font-weight: 600;
                 }
+
+                .close-icon {
+                    position: absolute;
+                    top: 20px;
+                    right: 21px;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: brightness(30%);
+                    }
+                }
             }
+        }
+    }
+}
+
+.section-0 {
+    border-top: 10px solid rgba(34, 165, 216, 0.5);
+    border-bottom: 10px solid rgba(34, 165, 216, 0.5);
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    > div {
+        margin: 11px auto;
+        width: 70%;
+        height: 118px;
+        display: flex;
+
+        .title {
+            flex-basis: 20%;
+            height: 100%;
+            background: #f2d07e;
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .description {
+            flex-basis: 80%;
+            background: #d4effc;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 65px;
         }
     }
 }
