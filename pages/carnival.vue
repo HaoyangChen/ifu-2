@@ -843,6 +843,31 @@ export default {
         }
     }
 
+    .section-0 {
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        > div {
+            margin: 11px auto;
+            width: 100%;
+            height: 158px;
+
+            .title {
+                flex-basis: 25%;
+                font-size: 18px;
+            }
+
+            .description {
+                flex-basis: 75%;
+                padding: 0 15px;
+            }
+        }
+    }
+
     .section-1-mobile {
         background: url(~assets/carnival/section-1-mobile.svg);
         display: flex;
@@ -923,6 +948,34 @@ export default {
 
                 > p {
                     padding: 0;
+                }
+            }
+        }
+    }
+
+    .section-schedule {
+        .title {
+            height: 80px;
+            font-size: 23px;
+            line-height: 80px;
+        }
+
+        .qr-card {
+            margin-left: 0;
+            width: 100%;
+            height: fit-content;
+            padding: 8%;
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+                h3 {
+                    font-size: 18px;
+                    margin: 0;
+                }
+
+                p {
+                    padding-right: 0;
                 }
             }
         }

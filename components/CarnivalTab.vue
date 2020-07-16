@@ -23,8 +23,28 @@
                     :guest-description-list="item.guestDescriptionList"
                 />
             </div>
-            <div v-else-if="activeTab === 2" class="tab-2">2</div>
-            <div v-else class="tab-3">3</div>
+            <div v-else-if="activeTab === 2" class="tab-2">
+                <carnival-collapse
+                    v-for="(item, index) in carnival2Json"
+                    :key="index"
+                    :time="item.time"
+                    :title="item.title"
+                    :guest-list="item.guestList"
+                    :content-list="item.contentList"
+                    :guest-description-list="item.guestDescriptionList"
+                />
+            </div>
+            <div v-else class="tab-3">
+                <carnival-collapse
+                    v-for="(item, index) in carnival3Json"
+                    :key="index"
+                    :time="item.time"
+                    :title="item.title"
+                    :guest-list="item.guestList"
+                    :content-list="item.contentList"
+                    :guest-description-list="item.guestDescriptionList"
+                />
+            </div>
         </div>
     </div>
 </template>
@@ -32,6 +52,8 @@
 <script>
 import CarnivalCollapse from '@/components/CarnivalCollapse.vue';
 import carnival1Json from '@/data/carnival-1.json';
+import carnival2Json from '@/data/carnival-2.json';
+import carnival3Json from '@/data/carnival-3.json';
 
 export default {
     components: {
@@ -41,6 +63,8 @@ export default {
         return {
             activeTab: 1,
             carnival1Json,
+            carnival2Json,
+            carnival3Json,
         };
     },
     methods: {
@@ -79,6 +103,19 @@ export default {
         &:hover {
             color: $button-color;
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .title {
+        display: flex;
+        border-bottom: 2px solid $button-color;
+
+        > div {
+            height: unset;
+            font-size: 18px;
+            line-height: unset;
         }
     }
 }
