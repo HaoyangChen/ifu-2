@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="content">
-            <div v-if="activeTab === 1" class="tab-1">
+            <div v-if="activeTab === 1" key="tab-1" class="tab-1">
                 <carnival-collapse
                     v-for="(item, index) in carnival1Json"
                     :key="index"
@@ -23,7 +23,7 @@
                     :guest-description-list="item.guestDescriptionList"
                 />
             </div>
-            <div v-else-if="activeTab === 2" class="tab-2">
+            <div v-else-if="activeTab === 2" key="tab-2" class="tab-2">
                 <carnival-collapse
                     v-for="(item, index) in carnival2Json"
                     :key="index"
@@ -34,7 +34,7 @@
                     :guest-description-list="item.guestDescriptionList"
                 />
             </div>
-            <div v-else class="tab-3">
+            <div v-else key="tab-3" class="tab-3">
                 <carnival-collapse
                     v-for="(item, index) in carnival3Json"
                     :key="index"
@@ -75,6 +75,7 @@ export default {
             if (this.activeTab === index) {
                 return {
                     borderBottom: '3px solid #22a5d8',
+                    color: '#22A5D8',
                 };
             }
             return {};
@@ -113,7 +114,7 @@ export default {
         border-bottom: 2px solid $button-color;
 
         > div {
-            height: unset;
+            height: 80px;
             font-size: 18px;
             line-height: unset;
         }

@@ -17,6 +17,11 @@
                         <b>{{ content.title }}</b>
                     </p>
                     <p v-for="(p, i) in content.p" :key="i">{{ p }}</p>
+                    <ul>
+                        <li v-for="(li, i) in content.list" :key="i">
+                            {{ li }}
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="guest-description">
@@ -176,6 +181,11 @@ export default {
         p {
             margin: 0;
         }
+
+        ul {
+            margin: 0;
+            padding-left: 0;
+        }
     }
 
     .guest-description {
@@ -221,14 +231,14 @@ export default {
         }
 
         .content {
-            padding-left: 4%;
-            padding-right: 4%;
+            padding: 0 4%;
             p {
                 margin: 0;
             }
         }
 
         .guest-description {
+            padding: 0 4%;
             div {
                 margin: 0 0 30px 0;
             }
