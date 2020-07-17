@@ -143,7 +143,7 @@ export default {
                 'Jialu Lv': 吕佳鹭,
                 Aman,
                 周凯彤,
-                Kaitong: 周凯彤,
+                'Kaitong Zhou': 周凯彤,
                 罗嫣然,
                 'Yanran Luo': 罗嫣然,
             },
@@ -238,6 +238,7 @@ export default {
 
         .title {
             flex-basis: 70%;
+            line-height: 1.2;
         }
     }
 
