@@ -46,17 +46,21 @@
             </section>
         </div>
         <section class="section-0">
-            <h2>嘉年华两大主题与四大亮点</h2>
+            <h2>{{ $t('carnival.section-0.title') }}</h2>
             <div>
-                <div class="title">主题 一</div>
+                <div class="title">
+                    {{ $t('carnival.section-0.div-1.title') }}
+                </div>
                 <div class="description">
-                    美国、加拿大、英国留学趋势及环境变动；
+                    {{ $t('carnival.section-0.div-1.description') }}
                 </div>
             </div>
             <div>
-                <div class="title">主题 二</div>
+                <div class="title">
+                    {{ $t('carnival.section-0.div-2.title') }}
+                </div>
                 <div class="description">
-                    如何在日益激烈的竞争中，适应不断变化的环境，做好学术要求、生活、法律安全、职业规划等一系列留学准备，培养国际型人才潜力。
+                    {{ $t('carnival.section-0.div-2.description') }}
                 </div>
             </div>
         </section>
@@ -160,7 +164,7 @@
             </section>
         </div>
         <div class="section-schedule">
-            <div class="title">日程安排（北京时间）</div>
+            <div class="title">{{ $t('carnival.section-schedule.title') }}</div>
             <section>
                 <carnival-tab />
                 <div class="qr-card">
@@ -821,6 +825,11 @@ export default {
 
 @media (max-width: $mobile-max-width) {
     .bg-carnival {
+        background: url(~assets/carnival/banner-mobile.svg);
+        section {
+            padding: 0;
+        }
+
         #carnival-person1,
         #carnival-person2,
         #carnival-person3 {
@@ -828,7 +837,13 @@ export default {
         }
         div.carnival-event {
             width: auto !important;
-            padding: 10px !important;
+            padding: 15px 30px;
+            border-radius: 0;
+
+            h1,
+            h2 {
+                width: 100%;
+            }
 
             h1 {
                 font-size: 23px;
@@ -837,8 +852,36 @@ export default {
             h2 {
                 font-size: 14px;
             }
+
+            .carnival-description {
+                p {
+                    width: 100%;
+                }
+            }
+
             .carnival-btn {
                 margin-top: 0px;
+                text-align: left;
+
+                .popup {
+                    padding: 45px 25px 0 25px;
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    top: -250px;
+                    left: calc(50% - 125px);
+                    text-align: center;
+
+                    .qr {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    div {
+                        font-size: 18px;
+                        margin-top: 0;
+                    }
+                }
             }
         }
     }
@@ -859,11 +902,13 @@ export default {
             .title {
                 flex-basis: 25%;
                 font-size: 18px;
+                text-align: center;
             }
 
             .description {
                 flex-basis: 75%;
                 padding: 0 15px;
+                line-height: 22px;
             }
         }
     }

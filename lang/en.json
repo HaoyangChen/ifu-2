@@ -137,6 +137,17 @@
             "buttonText": "Register Now",
             "qrText": "Scan to Register Now!"
         },
+        "section-0": {
+            "title": "Topics & Highlights of IFU Carnival",
+            "div-1": {
+                "title": "Topic No.1",
+                "description": "Trends and international environment changes studying in the United States, Canada, and the United Kingdom."
+            },
+            "div-2": {
+                "title": "Topic No.2",
+                "description": "How to adapt to the changing and competitive environment, prepare well for academic requirements, life abroad, legal safety, career planning, etc. to become future international elites."
+            }
+        },
         "section-1": {
             "div-1": {
                 "title": "Real stories & high quality studying abroad information",
@@ -158,8 +169,8 @@
         "section-2": {
             "tag": "TIME & LOCATION",
             "div-1": {
-                "title": "Time (In Beijing time)",
-                "description": "<b>East Coast (U.S.)</b> – July 18th | Sat. | 10AM<br /><b>Canada & U.K.</b> – July 19th | Sun. | 10AM<br /><b>West Coast (U.S.)</b> – July 19th | Sun. | 1PM"
+                "title": "Time (In PACIFIC time)",
+                "description": "<b>East Coast (U.S.)</b> – July 17th | Fri. | 7:30PM<br /><b>Canada & U.K.</b> – July 18th | Sat. | 7:00PM<br /><b>West Coast (U.S.)</b> – July 18th | Sat. | 10:30PM"
             },
             "div-2": {
                 "title": "Location",
@@ -179,6 +190,22 @@
             "div-3": {
                 "title": "— Break-out Discussion —",
                 "description": "IFU seniors will open different <b>discussion rooms</b> for common questions raised by international families. During the break-out discussion session, you will have the chance to <b>interact with alumni and seniors</b> for more specific questions. Get your questions ready ;)"
+            }
+        },
+        "section-schedule": {
+            "title": "Event Schedule (In Pacific Time)",
+            "tab-1": {
+                "title": "East Coast U.S.（7.17 PST）"
+            },
+            "tab-2": {
+                "title": "Canada & U.K.（7.18 PST）"
+            },
+            "tab-3": {
+                "title": "West Coast U.S.（7.18 PST）"
+            },
+            "qr-card": {
+                "title": "已经等不及啦？快扫描二维码报名吧！",
+                "description": "这个夏天，让我们摆脱疫情、时区、地区的限制，认识各校学长学姐，获取专业嘉宾的留学趋势分析，一起在线上“见面”吧！"
             }
         },
         "section-4": {
