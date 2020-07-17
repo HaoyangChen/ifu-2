@@ -65,6 +65,8 @@ import Aman from '@/assets/carnival/guests/Aman.svg';
 import 甘林 from '@/assets/carnival/guests/甘林.svg';
 import 孙千雅 from '@/assets/carnival/guests/孙千雅.svg';
 import 吕佳鹭 from '@/assets/carnival/guests/吕佳鹭.svg';
+import 周凯彤 from '@/assets/carnival/guests/周凯彤.svg';
+import 罗嫣然 from '@/assets/carnival/guests/罗嫣然.svg';
 
 export default {
     props: {
@@ -140,6 +142,10 @@ export default {
                 吕佳鹭,
                 'Jialu Lv': 吕佳鹭,
                 Aman,
+                周凯彤,
+                Kaitong: 周凯彤,
+                罗嫣然,
+                'Yanran Luo': 罗嫣然,
             },
         };
     },

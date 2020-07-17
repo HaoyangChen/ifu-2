@@ -169,9 +169,15 @@
                 <carnival-tab />
                 <div class="qr-card">
                     <div class="text">
-                        <h3>已经等不及啦？快扫描二维码报名吧！</h3>
+                        <h3>
+                            {{ $t('carnival.section-schedule.qr-card.title') }}
+                        </h3>
                         <p>
-                            这个夏天，让我们摆脱疫情、时区、地区的限制，认识各校学长学姐，获取专业嘉宾的留学趋势分析，一起在线上“见面”吧！
+                            {{
+                                $t(
+                                    'carnival.section-schedule.qr-card.description',
+                                )
+                            }}
                         </p>
                     </div>
                     <div class="image">
@@ -527,7 +533,7 @@ export default {
         box-shadow: 0px 5px 15px rgba(242, 208, 126, 0.25);
         width: 482px;
         height: 457px;
-        padding: 99px 71px;
+        padding: 99px 45px;
         position: relative;
 
         .tag {
@@ -582,6 +588,7 @@ export default {
             > h3 {
                 color: $button-color;
                 text-transform: uppercase;
+                font-size: 16px;
             }
 
             > p {
@@ -609,7 +616,7 @@ export default {
         margin-top: 50px;
         margin-left: 8%;
         width: 669px;
-        height: 220px;
+        height: fit-content;
         padding: 38px 41px;
         background: white;
         border: 3px solid $button-color;
@@ -620,6 +627,7 @@ export default {
         .text {
             h3 {
                 font-size: 24px;
+                margin-bottom: 0;
             }
 
             p {

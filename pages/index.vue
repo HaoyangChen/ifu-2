@@ -685,8 +685,10 @@ img {
         }
 
         h2 {
-            text-align: center;
+            text-align: left;
             padding-top: 20px;
+            margin: 0 auto;
+            width: 86%;
         }
 
         .carnival-description {

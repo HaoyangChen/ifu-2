@@ -13,13 +13,25 @@
     {
         "time": "10:00 AM",
         "title": "嘉年华活动开场",
-        "guestList": [],
+        "guestList": ["罗嫣然", "周凯彤"],
         "contentList": [
             {
                 "title": "IFU是谁？为什么要举办嘉年华？我们的心声想与你分享。"
+            },
+            {
+                "title": "接下来的几个小时里，将由两位活动主持人带领大家开启我们的IFU2020嘉年华之旅，了解大家所关心的留学问题并给大家发福利。你准备好了吗？"
             }
         ],
-        "guestDescriptionList": []
+        "guestDescriptionList": [
+            {
+                "title": "罗嫣然 - 活动主持人",
+                "description": "罗嫣然学姐就读于UCI加州大学欧文分校，是社会学与经济学双专业准大三学生，多次获得学院Dean’s Honor List。担任2020 IFU学长学姐嘉年华活动负责人、IFU工作团队Operation and Event Planning Department运营部门负责人。罗嫣然学姐平常喜欢去音乐会/音乐剧现场，业余钢琴扒谱，喝去糖奶茶。"
+            },
+            {
+                "title": "周凯彤 - 活动主持人",
+                "description": "周凯彤学姐本科就读于AU美利坚大学，专业是工商管理 (专修国际商务，市场营销)。周凯彤学姐不仅曾多次获得学院dean’s list，而且是Magna Cum Laude荣誉毕业生。她曾在获得2020美利坚大学Carlton Savage Award（对校园跨文化贡献最大的国际学生）。她目前是2020 IFU学长学姐嘉年华活动负责人，和IFU团队Operation and Event Planning Department工作人员。周凯彤学姐平时喜欢看超级无敌悲伤电影，喝奶茶，做饭。"
+            }
+        ]
     },
     {
         "time": "10:05 AM",
