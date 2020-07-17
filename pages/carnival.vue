@@ -374,6 +374,7 @@ export default {
 
         h1 {
             text-align: center;
+            font-weight: bold;
         }
 
         h2 {
@@ -834,6 +835,7 @@ export default {
 @media (max-width: $mobile-max-width) {
     .bg-carnival {
         background: url(~assets/carnival/banner-mobile.svg);
+        padding: 0;
         section {
             padding: 0;
         }

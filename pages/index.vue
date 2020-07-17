@@ -682,6 +682,7 @@ img {
 
         h1 {
             text-align: center;
+            font-weight: bold;
         }
 
         h2 {
@@ -859,6 +860,12 @@ img {
     }
 
     .bg-carnival {
+        background: url(~assets/carnival/banner-mobile.svg);
+        padding: 0;
+        section {
+            padding: 0;
+        }
+
         #carnival-person1,
         #carnival-person2,
         #carnival-person3 {
@@ -866,7 +873,13 @@ img {
         }
         div.carnival-event {
             width: auto !important;
-            padding: 10px !important;
+            padding: 15px 30px;
+            border-radius: 0;
+
+            h1,
+            h2 {
+                width: 100%;
+            }
 
             h1 {
                 font-size: 23px;
@@ -875,8 +888,36 @@ img {
             h2 {
                 font-size: 14px;
             }
+
+            .carnival-description {
+                p {
+                    width: 100%;
+                }
+            }
+
             .carnival-btn {
                 margin-top: 0px;
+                text-align: left;
+
+                .popup {
+                    padding: 45px 25px 0 25px;
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    top: -250px;
+                    left: calc(50% - 125px);
+                    text-align: center;
+
+                    .qr {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    div {
+                        font-size: 18px;
+                        margin-top: 0;
+                    }
+                }
             }
         }
     }
