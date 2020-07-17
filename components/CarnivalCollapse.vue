@@ -257,6 +257,10 @@ export default {
                 height: 45px;
                 width: 45px;
             }
+
+            p {
+                line-height: 1.5;
+            }
         }
 
         .content {
