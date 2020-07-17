@@ -30,16 +30,19 @@
                     />
                     <div>
                         <h1>{{ $t('home.carnival.title') }}</h1>
-                        <h2>{{ $t('home.carnival.subTitle') }}</h2>
+                        <h2 v-html="$t('home.carnival.subTitle')" />
                         <div class="carnival-description">
                             <p v-html="$t('home.carnival.description')" />
                         </div>
                         <div class="carnival-btn">
-                            <Button
+                            <!-- <Button
                                 external
                                 to="https://mp.weixin.qq.com/s/7ljBJF4sphtmxkAYwzNMdA"
                                 >{{ $t('home.carnival.buttonText') }}</Button
-                            >
+                            > -->
+                            <Button :to="localePath('/carnival')">{{
+                                $t('home.carnival.buttonText')
+                            }}</Button>
                         </div>
                     </div>
                 </div>
@@ -456,6 +459,7 @@ export default {
     h1 {
         font-size: $h1-size;
         font-weight: normal;
+        line-height: 50px;
     }
 
     h2 {
@@ -681,8 +685,10 @@ img {
         }
 
         h2 {
-            text-align: center;
+            text-align: left;
             padding-top: 20px;
+            margin: 0 auto;
+            width: 86%;
         }
 
         .carnival-description {
@@ -750,6 +756,10 @@ img {
 
     .announcement-section {
         padding-right: 0;
+    }
+
+    p {
+        margin-top: 0;
     }
 
     ul {
@@ -982,6 +992,10 @@ img {
     .about-us-section {
         .half-style {
             flex-direction: column;
+        }
+
+        h2:nth-of-type(2) {
+            padding-top: 0;
         }
 
         .col-half {

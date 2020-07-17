@@ -1,0 +1,225 @@
+[
+    {
+        "time": "10:20 PM",
+        "title": "Check-in",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Welcome to IFU 2020 College Carnival. Let’s meet our IFU seniors first!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "10:30 PM",
+        "title": "Opening",
+        "guestList": ["Yanran Luo", "Kaitong"],
+        "contentList": [
+            {
+                "title": "Who is the International Family Union (IFU)? Why does IFU hold a College Carnival? We want to share our experience and thoughts with you."
+            },
+            {
+                "title": "In the next few hours, our two event hosts will lead us into IFU 2020 College Carnival to learn about trending topics on study abroad with chances to win some prizes. Are you ready?"
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Yanran Luo - Event Host",
+                "description": "Yanran is a junior majoring in sociology and economics at University of California, Irvine and has been awarded Dean's Honor List for several times. Yanran is in charge of 2020 IFU College Carnival and the Operation and Event Planning Department of IFU. Yanran loves going to concerts and musicals,  playing the piano, and drinking boba milk tea no sugar no ice."
+            },
+            {
+                "title": "Kaitong - Event Host",
+                "description": "Kaitong graduated from American University in DC with a major in Business Administration (specializations: International Business, Marketing). She won the 2020 American University Carlton Savage Award (an international student who had the greatest cross-cultural contribution on campus). She graduated with Magna Cum Laude. Kaitong is in charge of 2020 IFU College Carnival, and is a staff of the Operation and Event Planning Department of IFU. Kaitong loves watching sad movies, drinking milk tea, and cooking."
+            }
+        ]
+    },
+    {
+        "time": "10:35 PM",
+        "title": "Seniors Panel",
+        "guestList": [
+            "Zhiyu Cheng",
+            "Pinyi Yang",
+            "Yangfan Zou",
+            "Zhenyang Li"
+        ],
+        "contentList": [
+            {
+                "title": "What problems do international students from all around the world face? In the current trend of globalization, how can we become international elites? Senior students with abundant study abroad experience will share based on the key topics: life abroad, academics, career, social contacts, campus resources and so on. Study abroad in high school, graduate from ordinary high school, graduate from international high school, undergraduate transfer... with different educational backgrounds, there is always one senior who can answer your questions."
+            },
+            {
+                "title": "Panel Topics:",
+                "p": [],
+                "list": [
+                    "Discuss how international students can address the mental health issues; Share psychological counseling resources on campus.",
+                    "Introduce UCGE course; Introduce how the UC university system transfers AP scores; Discuss the importance of tracking academic progress.",
+                    "Share how international students should apply for on-campus jobs; Introduce the application process of Social Security Number, CPT and OPT."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Zhiyu Cheng - Mental Health",
+                "description": "Zhiyu is a junior majoring in mathematics and political science at University of California, Irvine. Meanwhile, as an IFU volunteer, he is also the campus leader of our UCI campus volunteer team."
+            },
+            {
+                "title": "Pinyi Yang - Academic Preparation",
+                "description": "Pinyi is an undergraduate student of statistics at UCLA. Pinyi's personal tags are: food appreciation, life sharing, and video editing."
+            },
+            {
+                "title": "Yangfan Zou - Academic Preparation",
+                "description": "Yangfan is studying at University of California, Santa Barbara, majoring in Communication & Sociology. She is currently working with professors on a research project about contemporary women's reproductive rights. Yangfan loves playing Pipa, writing, cooking and watching musical drama."
+            },
+            {
+                "title": "Zhenyang Li - Career Planning",
+                "description": "Zhenyang is a senior student at Rutgers University, majoring in Economics and Computer Science. She has some working experience in the Student Alumni Office of the university. She also has experience of transferring to different majors and applying for double majors."
+            }
+        ]
+    },
+    {
+        "time": "11:15 PM",
+        "title": "Raffles - Round 1",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "11:20 PM",
+        "title": "Professionals Sharing Webinar 1",
+        "guestList": ["Ruchen Liu (Bobo)"],
+        "contentList": [
+            {
+                "title": "Our professionals would like to share their analysis of study abroad environment and international students policy changes!"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Discuss how international students should make choices on attending in-person classes, taking online classes, or taking gap year under pandemic; interpret international students’ legal status and visas; analyze some most common legal problems encountered by international students; discuss how international students should avoid legal issues; share some necessary knowledge for international students to purchase medical insurance."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Ruchen Liu (Bobo)",
+                "description": "Bobo is an elite graduate of Cornell University in the United States, the founder of the Xiao Niu legal consulting, and a special lecturer of \"Learning Power\". He participates in more than 150 legal cases of international students every year, and the cumulative number of the consultations he took has exceeded 80,000."
+            }
+        ]
+    },
+    {
+        "time": "11:50 PM",
+        "title": "Raffles - Round 2",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "11:55 PM",
+        "title": "Sharing of Kimmy, Founder of IFU",
+        "guestList": ["Jiawen Tang (Kimmy)"],
+        "contentList": [
+            {
+                "title": "After five years of studying abroad, Kimmy has studied in two countries and made friends with people from 56 countries. What are the problems that international students all over the world encounter?"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Analyze the role of language in studying abroad; share how to deal with the integration and conflict of cultural systems; analyze how to abide by the rules when studying abroad; share how to balance the original intention and academic pursuit of \"improving self and expanding horizons\"."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Jiawen Tang (Kimmy)",
+                "description": "Jiawen Tang graduated from the University of California, San Diego, majoring in international relations and economics; and she is currently a graduate student at the Lee Kuan Yew School of Public Policy, the National University of Singapore."
+            }
+        ]
+    },
+    {
+        "time": "12:10 AM",
+        "title": "Raffles - Round 3",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "12:35 AM",
+        "title": "Break-Out Discussion + The End of 2020 IFU College Carnival",
+        "guestList": [
+            "Lin Gan",
+            "Qianya Sun",
+            "Zhenyang Li",
+            "Xiyu Wang",
+            "Jialu Lv"
+        ],
+        "contentList": [
+            {
+                "title": "Academic, work, freshmen preparation, study abroad life, our IFU seniors are ready to discuss the topics that you are interested in. For different needs, we prepared the following break-out sessions for you:"
+            },
+            {
+                "title": "【Academic Preparation】",
+                "p": [],
+                "list": [
+                    "Share recommendations on choosing majors that fit different individuals; Introduce the preparation for transfering to other majors, and studying double majors.",
+                    "Discuss the difference between P/NP and Letter Grade; Introduce on-campus academic resources."
+                ]
+            },
+            {
+                "title": "【Career Planning】",
+                "p": [],
+                "list": [
+                    "Share how international students should apply for on-campus jobs; Introduce the application process of Social Security Number, CPT and OPT."
+                ]
+            },
+            {
+                "title": "【Oversea Life】",
+                "p": [],
+                "list": [
+                    "Share suggestions about renting housing; Discuss how to purchase health insurance."
+                ]
+            },
+            {
+                "title": "【Freshmen Preparation】",
+                "p": [],
+                "list": [
+                    "Introduce freshmen orientation; introduce on-campus housing and meal plan."
+                ]
+            },
+            {
+                "title": "IFU College Carnival will hold interviews about your preferences during IFU’s Tea Party with Alumni & Seniors. We are looking forward to talking with you about studying abroad experience then! See you at our upcoming tea party or IFU 2021 College Carnival!"
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Lin Gan - Academic Preparation",
+                "description": "Lin, a junior student at the University of California, Davis, majoring in Psychology. She enjoys reading, practicing yoga, eating, and traveling. As an international student, Lin has achieved some academic success, especially in academic writing. She won the 2020 UCD Big Bang Health Innovation Award. She also had experiences in operation on various social media platforms."
+            },
+            {
+                "title": "Qianya Sun - Academic Preparation",
+                "description": "Qianya is a senior majoring in Psychology at the university of California, Davis. She worked as a teacher assistant of Zhejiang Montessori Model United Nations (MMUN), a laboratory assistant of UCD LEAD Program, a teacher assistant of Japanese and Chinese courses. She loves playing golf, playing piano, listening to music, reading, and drinking milk tea."
+            },
+            {
+                "title": "Zhenyang Li - Career Planning",
+                "description": "Zhenyang is a senior student at Rutgers University, majoring in Economics and Computer Science. She has some working experience in the Student Alumni Office of the university. She also has experience of transferring to different majors and applying for double majors."
+            },
+            {
+                "title": "Xiyu Wang - Oversea Life",
+                "description": "Xiyu is an second-year graduate student at University of Southern California. She worked as a teaching assistant at an Ivy Summer Camp, a volunteer at YouthCare's Alzheimer's Care Program, a yoga instructor, and a CPR paramedic."
+            },
+            {
+                "title": "Jialu Lv - Freshmen Preparation",
+                "description": "Jialu is a sophomore studying Mathematics, Statistics and Computer Science at UCLA. She also has her own online platform about used books."
+            }
+        ]
+    }
+]

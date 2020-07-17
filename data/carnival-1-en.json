@@ -1,0 +1,261 @@
+[
+    {
+        "time": "7:20 PM",
+        "title": "Check-in",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Welcome to IFU 2020 College Carnival. Let’s meet our IFU seniors first!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "7:30 PM",
+        "title": "Opening",
+        "guestList": ["Yanran Luo", "Kaitong"],
+        "contentList": [
+            {
+                "title": "Who is the International Family Union (IFU)? Why does IFU hold a College Carnival? We want to share our experience and thoughts with you."
+            },
+            {
+                "title": "In the next few hours, our two event hosts will lead us into IFU 2020 College Carnival to learn about trending topics on study abroad with chances to win some prizes. Are you ready?"
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Yanran Luo - Event Host",
+                "description": "Yanran is a junior majoring in sociology and economics at University of California, Irvine and has been awarded Dean's Honor List for several times. Yanran is in charge of 2020 IFU College Carnival and the Operation and Event Planning Department of IFU. Yanran loves going to concerts and musicals,  playing the piano, and drinking boba milk tea no sugar no ice."
+            },
+            {
+                "title": "Kaitong - Event Host",
+                "description": "Kaitong graduated from American University in DC with a major in Business Administration (specializations: International Business, Marketing). She won the 2020 American University Carlton Savage Award (an international student who had the greatest cross-cultural contribution on campus). She graduated with Magna Cum Laude. Kaitong is in charge of 2020 IFU College Carnival, and is a staff of the Operation and Event Planning Department of IFU. Kaitong loves watching sad movies, drinking milk tea, and cooking."
+            }
+        ]
+    },
+    {
+        "time": "7:35 PM",
+        "title": "Seniors Panel",
+        "guestList": ["Yaying Zheng", "Jinlong Ruan", "Xinpei Hu"],
+        "contentList": [
+            {
+                "title": "What problems do international students from all around the world face? In the current trend of globalization, how can we become international elites? Senior students with abundant study abroad experience will share based on the key topics: life abroad, academics, career, social contacts, campus resources and so on. Study abroad in high school, graduate from ordinary high school, graduate from international high school, undergraduate transfer... with different educational backgrounds, there is always one senior who can answer your questions."
+            },
+            {
+                "title": "Panel Topics:",
+                "p": [],
+                "list": [
+                    "Life in the United States for Chinese students; Mental health of overseas students.",
+                    "Discuss how to succeed in American education system; share suggestions to international students to achieve academic success; discuss some academic problems that international students may encounter.",
+                    "Discuss how international students can apply jobs in the United States; Share suggestions before international students apply for jobs."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Yaying Zheng - Life and Mental Health",
+                "description": "Yaying is going to study psychology and film media in Tufts university. Yaying has conducted some social media psychological science and podcast interviews, and has run some mental health campaigns with friends. She won awards at film festivals with micro films that she made. She is the member of a comedy troupe. She also has performed at the UCB Theatre in New York. About academics, Yaying had received the Chancellor's Honor Roll Award on campus."
+            },
+            {
+                "title": "Jinlong Ruan - Academic Preparation",
+                "description": "Jinlong is majoring in computer Science & Finance at UR Rochester University with GPA of 3.97/4.0. His recent research projects are \"Stock market forecasting\" and \"Gun ownership\"."
+            },
+            {
+                "title": "Xinpei Hu - Career Planning",
+                "description": "Xinpei, a graduate student from USC University of Southern California, is currently working in Silicon Valley in the direction of computer career training."
+            }
+        ]
+    },
+    {
+        "time": "8:15 PM ",
+        "title": "Raffles - Round 1",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "8:20 PM",
+        "title": "Professionals Sharing Webinar 1",
+        "guestList": ["Haoyu Lu (Henry)"],
+        "contentList": [
+            {
+                "title": "Our professionals would like to share their analysis of study abroad environment and international students policy changes!"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Discuss and analyze the solution of the latest issues on visa and online courses."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Haoyu Lu (Henry)",
+                "description": "Henry is the Master of Actuarial Studies of Columbia University, director of the China-US Youth Education Development Foundation, and the co-founder of the \"One Dollar Public Welfare Fund\". He worked in the Office of the President and Admissions Office of the Ohio State University."
+            }
+        ]
+    },
+    {
+        "time": "8:50 PM",
+        "title": "Raffles - Round 2",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "8:55 PM",
+        "title": "Sharing of Kimmy, Founder of IFU",
+        "guestList": ["Jiawen Tang (Kimmy)"],
+        "contentList": [
+            {
+                "title": "After five years of studying abroad, Kimmy has studied in two countries and made friends with people from 56 countries. What are the problems that international students all over the world encounter?"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Analyze the role of language in studying abroad; share how to deal with the integration and conflict of cultural systems; analyze how to abide by the rules when studying abroad; share how to balance the original intention and academic pursuit of \"improving self and expanding horizons\"."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Jiawen Tang (Kimmy)",
+                "description": "Jiawen Tang graduated from the University of California, San Diego, majoring in international relations and economics; and she is currently a graduate student at the Lee Kuan Yew School of Public Policy, the National University of Singapore."
+            }
+        ]
+    },
+    {
+        "time": "9:10 PM",
+        "title": "Raffles - Round 3",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "9:15 PM",
+        "title": "Professionals Sharing Webinar 2",
+        "guestList": ["Benjamin Nicholson"],
+        "contentList": [
+            {
+                "title": "Our professionals would like to share their analysis of study abroad environment and international students policy changes!"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "US/China relations; history of education exchange between China and the U.S.; the liberal art education system in the U.S.; solutions for students under the pandemic."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Benjamin Nicholson",
+                "description": "Benjamin Nicholson is the brand manager for U.S. News Global Education in Mainland China, Hong Kong, Macao and Taiwan. He is a dual honors graduate from the University of Nottingham with a BSc in Business, Economics and Contemporary Chinese Studies and a MSc in Business and Economy of Contemporary China. He has spent much of his career working in American university admissions counseling in China and has helped Chinese students successfully apply to Ivy League schools in the United States as well as help families and students gain a deep understanding of the American university system. He is passionate about educating students and parents on how to find the right fit, and strongly believes a student’s personal interests, passions and abilities should align with their choice of university."
+            }
+        ]
+    },
+    {
+        "time": "9:45 PM",
+        "title": "Professionals Sharing Webinar 3",
+        "guestList": ["Aman"],
+        "contentList": [
+            {
+                "title": "Our professionals would like to share their analysis of study abroad environment and international students policy changes!"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Discuss and analyze the college application process in the U.S."
+                ]
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "10:10 PM",
+        "title": "Break-Out Discussion + The End of 2020 IFU College Carnival",
+        "guestList": [
+            "Zhenyang Li",
+            "Haojun Zhao",
+            "Xinpei Hu",
+            "Xiyu Wang",
+            "Zixuan Zhan",
+            "Kuixing Wang"
+        ],
+        "contentList": [
+            {
+                "title": "Academics, work, freshmen preparation, study abroad life, our IFU seniors are ready to discuss the topics that you are interested in. For different needs, we prepared the following break-out sessions for you:"
+            },
+            {
+                "title": "【Academic Preparation】",
+                "p": [],
+                "list": [
+                    "Introduce how new students should select courses and choose appropriate majors; also introduce how international students can inquire about graduate requirements for difference majors?",
+                    "Share stories about transferring majors; Share some suggestions to students who are preparing master programs applications."
+                ]
+            },
+            {
+                "title": "【Career Planning】",
+                "p": [],
+                "list": [
+                    "Discuss how international students can apply for jobs in the United States; Share suggestions before international students apply for jobs."
+                ]
+            },
+            {
+                "title": "【Oversea Life】",
+                "p": [],
+                "list": [
+                    "Share suggestions about renting housing; Discuss how to purchase health insurance."
+                ]
+            },
+            {
+                "title": "【Freshmen Preparation】",
+                "p": [],
+                "list": [
+                    "Introduce vaccine medical examination for new students before enrollment; share suggestions on getting debit/credit cards in the United States?",
+                    "Share how international students should apply for driver's licenses and purchase car insurance in the United States; Introduce some popular supermarkets in the U.S."
+                ]
+            },
+            {
+                "title": "IFU College Carnival will hold interviews about your preferences during IFU’s Tea Party with Alumni & Seniors. We are looking forward to talking with you about studying abroad experience then! See you at our upcoming tea party or IFU 2021 College Carnival!"
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Zhenyang Li - Academic Preparation",
+                "description": "Zhenyang is a senior student at Rutgers University, majoring in Economics and Computer Science. She has some working experience in the Student Alumni Office of the university. She also has experience of transferring to different majors and applying for double majors."
+            },
+            {
+                "title": "Haojun Zhao - Academic Preparation",
+                "description": "Haojun graduated from OSU Ohio state university. She is currently a grad student studying Electrical Engineering."
+            },
+            {
+                "title": "Xinpei Hu - Career Planning",
+                "description": "Xinpei, a graduate student from USC University of Southern California, is currently working in Silicon Valley in the direction of computer career training."
+            },
+            {
+                "title": "Xiyu Wang - Oversea Life",
+                "description": "Xiyu is an second-year graduate student at University of Southern California. She worked as a teaching assistant at an Ivy Summer Camp, a volunteer at YouthCare's Alzheimer's Care Program, a yoga instructor, and a CPR paramedic."
+            },
+            {
+                "title": "Zixuan Zhan - Freshmen Preparation",
+                "description": "Zixuan graduated from UCI University of California, Irvine. She is the leader of the Western US volunteers management team of IFU."
+            },
+            {
+                "title": "Kuixing Wang - Freshmen Preparation",
+                "description": "Kuixing Wang, an undergraduate student at University of Virginia, majoring in psychology. He is passionate about photography."
+            }
+        ]
+    }
+]

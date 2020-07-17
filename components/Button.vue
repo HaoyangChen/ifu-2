@@ -4,6 +4,9 @@
             <slot />
         </button>
     </a>
+    <button v-else-if="click" @click="click">
+        <slot />
+    </button>
     <nuxt-link v-else :to="to">
         <button>
             <slot />
@@ -22,7 +25,11 @@ export default {
         },
         to: {
             type: String,
-            required: true,
+            default: null,
+        },
+        click: {
+            type: Function,
+            default: null,
         },
     },
 };

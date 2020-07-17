@@ -1,0 +1,185 @@
+[
+    {
+        "time": "6:50 PM",
+        "title": "Check-in",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Welcome to IFU 2020 College Carnival. Let’s meet our IFU seniors first!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "7:00 PM",
+        "title": "Opening",
+        "guestList": ["Yanran Luo", "Kaitong"],
+        "contentList": [
+            {
+                "title": "Who is the International Family Union (IFU)? Why does IFU hold a College Carnival? We want to share our experience and thoughts with you."
+            },
+            {
+                "title": "In the next few hours, our two event hosts will lead us into IFU 2020 College Carnival to learn about trending topics on study abroad with chances to win some prizes. Are you ready?"
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Yanran Luo - Event Host",
+                "description": "Yanran is a junior majoring in sociology and economics at University of California, Irvine and has been awarded Dean's Honor List for several times. Yanran is in charge of 2020 IFU College Carnival and the Operation and Event Planning Department of IFU. Yanran loves going to concerts and musicals,  playing the piano, and drinking boba milk tea no sugar no ice."
+            },
+            {
+                "title": "Kaitong - Event Host",
+                "description": "Kaitong graduated from American University in DC with a major in Business Administration (specializations: International Business, Marketing). She won the 2020 American University Carlton Savage Award (an international student who had the greatest cross-cultural contribution on campus). She graduated with Magna Cum Laude. Kaitong is in charge of 2020 IFU College Carnival, and is a staff of the Operation and Event Planning Department of IFU. Kaitong loves watching sad movies, drinking milk tea, and cooking."
+            }
+        ]
+    },
+    {
+        "time": "7:05 PM",
+        "title": "Seniors Panel - Life + Academics (Canada)",
+        "guestList": ["Xingyu Zhao", "Yinxian Wang", "Ran Tao"],
+        "contentList": [
+            {
+                "title": "What problems do international students from all around the world face? In the current trend of globalization, how can we become international elites? Senior students with abundant study abroad experience will share based on the key topics: life abroad, academics, career, social contacts, campus resources and so on. Study abroad in high school, graduate from ordinary high school, graduate from international high school, undergraduate transfer... with different educational backgrounds, there is always one senior who can answer your questions."
+            },
+            {
+                "title": "Panel Topics:",
+                "p": [],
+                "list": [
+                    "Introduce the application process of getting international students' visas in Canada; Introduce some options for getting bank accounts and mobile phone cards.",
+                    "Introduce the public transportation system in Canada; Share recommendations about purchasing cars and renting housings in Canada.",
+                    "Share suggestions for international students to prepare for studying abroad in Canada."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Xingyu Zhao - Life (Canada)",
+                "description": "Xingyu completed his high school study in the U.K.. He is currently an undergraduate student at UBC British Columbia University in Canada, majoring in Economics and Urban Planning. He has some experiences in outdoor adventures of the Duke of Edinburgh’s Bonus Prize. He was the representative of international students in the Exchange Association of Rydal Penrhos School in the United Kingdom, an assistant at the North American Model Federation China Association, and a volunteer in the UBC Chinese Department."
+            },
+            {
+                "title": "Yinxian Wang - Life (Canada)",
+                "description": "Yinxian graduated from a high school in Saskatoon, Saskatchewan Province, Central Canada. She is currently studying at UBC British Columbia University in Canada. At the freshman year, she studied at the food department of the University of British Columbia; at the sophomore year, she transferred to the liberal arts department. For her working experience: she has some working experience in Vancouver, Canada, and also in Shanghai."
+            },
+            {
+                "title": "Ran Tao - Academic Preparation (Canada)",
+                "description": "Ran studies in the University of British Columbia in Canada, majoring in electrical and computer engineering. His personal tags are: Blender 3D modeling 2D animation, FlStudio music production, and cooking."
+            }
+        ]
+    },
+    {
+        "time": "7:45 PM",
+        "title": "Raffles - Round 1",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "7:50 PM",
+        "title": "Seniors Panel - Academics + Career (U.K.)",
+        "guestList": ["Lejia Zhang", "Yiwei Tan"],
+        "contentList": [
+            {
+                "title": "What problems do international students from all around the world face? In the current trend of globalization, how can we become international elites? Senior students with abundant study abroad experience will share based on the key topics: life abroad, academics, career, social contacts, campus resources and so on. Study abroad in high school, graduate from ordinary high school, graduate from international high school, undergraduate transfer... with different educational backgrounds, there is always one senior who can answer your questions."
+            },
+            {
+                "title": "Panel Topics:",
+                "p": [],
+                "list": [
+                    "Introduce how to apply for university in the U.K.; Introduce Sixth Form in British education system; Share academic experience about liberal arts.",
+                    "Share experience on applying for jobs in the U.K.; Discuss career planning for international students in the U.K."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Lejia Zhang - Academic Preparation (U.K.)",
+                "description": "Lejia is a junior majoring in English literature at Durham university, with an average score of 91% (84% in English literature) in sixth form. She is the trainee leader of the mountaineering team of Durham university. Lejia is also the ITC certified outdoor first-aid worker and a volunteer for COVID-19 on campus."
+            },
+            {
+                "title": "Yiwei Tan - Career Planning (U.K.)",
+                "description": "Yiwei is a sophomore in International Business Management and Overseas Exchange program at The University of Sheffield. Yiwei is also an International Student Ambassador of the University of Sheffield, an academic representative of students of the School of Management, and a member of the Outreach Department of the Sheffield Chinese Student Association."
+            }
+        ]
+    },
+    {
+        "time": "8:05 PM",
+        "title": "Professionals Sharing Webinar 1",
+        "guestList": ["Brittany Bi"],
+        "contentList": [
+            {
+                "title": "Our professionals would like to share their analysis of study abroad environment and international students policy changes!"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Advantages of studying in the U.K.; comparison of Chinese and British education systems; U.K. visa issues and legal right to work in the U.K.; University of Sheffield’s comprehensive strength and popular majors."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Brittany Bi",
+                "description": "Brittany is responsible for enrollment and mentoring of pre-university programs such as Sheffield, Durham, Cardiff, Lancaster, Leeds, etc. in China. Since engaging in international education in 2010, Mr. Brittany has helped hundreds of students to study overseas and make choices in schools. Based on her 10 years working experience on international education, and her academic background of studying in the U.K., Brittany is well versed in the U.K. education system, admission requirements, U.K. teaching, assessment methods, and the details of life such as clothing, food, housing, and travel. She is ready to interpret how to study abroad in the U.K. for international families."
+            }
+        ]
+    },
+    {
+        "time": "8:35 PM",
+        "title": "Raffles - Round 2",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "8:40 PM",
+        "title": "Sharing of Kimmy, Founder of IFU",
+        "guestList": ["Jiawen Tang (Kimmy)"],
+        "contentList": [
+            {
+                "title": "After five years of studying abroad, Kimmy has studied in two countries and made friends with people from 56 countries. What are the problems that international students all over the world encounter?"
+            },
+            {
+                "title": "Webinar Topics:",
+                "p": [
+                    "Analyze the role of language in studying abroad; share how to deal with the integration and conflict of cultural systems; analyze how to abide by the rules when studying abroad; share how to balance the original intention and academic pursuit of \"improving self and expanding horizons\"."
+                ]
+            }
+        ],
+        "guestDescriptionList": [
+            {
+                "title": "Jiawen Tang (Kimmy)",
+                "description": "Jiawen Tang graduated from the University of California, San Diego, majoring in international relations and economics; and she is currently a graduate student at the Lee Kuan Yew School of Public Policy, the National University of Singapore."
+            }
+        ]
+    },
+    {
+        "time": "8:45 PM",
+        "title": "Raffles - Round 3",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "Various gifts for the carnival’s raffles are waiting for you. Follow our hosts’ guidance to participate in the raffles in our College Carnival WeChat group. Don’t miss the chance to win the prize!"
+            }
+        ],
+        "guestDescriptionList": []
+    },
+    {
+        "time": "8:50 PM",
+        "title": "The End of 2020 IFU College Carnival",
+        "guestList": [],
+        "contentList": [
+            {
+                "title": "IFU College Carnival will hold interviews about your preferences during IFU’s Tea Party with Alumni & Seniors. We are looking forward to talking with you about studying abroad experience then! See you at our upcoming tea party or IFU 2021 College Carnival!"
+            }
+        ],
+        "guestDescriptionList": []
+    }
+]
