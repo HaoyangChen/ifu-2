@@ -168,14 +168,7 @@
         },
         "section-2": {
             "tag": "TIME & LOCATION",
-            "div-1": {
-                "title": "Time (In PACIFIC time)",
-                "description": "<b>East Coast (U.S.)</b> – July 17th | Fri. | 7:30PM<br /><b>Canada & U.K.</b> – July 18th | Sat. | 7:00PM<br /><b>West Coast (U.S.)</b> – July 18th | Sat. | 10:30PM"
-            },
-            "div-2": {
-                "title": "Location",
-                "description": "Live on <b>Zoom</b>;<br />Stream on <b>Bilibili</b> and College Carnival <b>WeChat group-chats</b>"
-            }
+            "p": "北京时间2020年7月18日、19日，2020第三届IFU学长学姐嘉年华的三场线上活动成功举办！我们的活动单场平均热度破四位数，感谢同学们和家长们的参与、以及对IFU、对学长学姐嘉年华的支持！嘉年华的学长学姐以及专业嘉宾们的分享全程干货满满，考虑到留学家庭们可以在活动后重温分享内容，也考虑到因为时差等原因部分同学们家长们来不及参与嘉年华，2020 IFU学长学姐嘉年华志愿者团队将各场次精选片段整理了出来！"
         },
         "section-3": {
             "title": "Event Sessions",

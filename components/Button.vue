@@ -4,6 +4,11 @@
             <slot />
         </button>
     </a>
+    <a v-else-if="scroll" :href="to">
+        <button>
+            <slot />
+        </button>
+    </a>
     <button v-else-if="click" @click="click">
         <slot />
     </button>
