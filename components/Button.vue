@@ -36,6 +36,10 @@ export default {
             type: Function,
             default: null,
         },
+        scroll: {
+            type: String,
+            default: null,
+        },
     },
 };
 </script>

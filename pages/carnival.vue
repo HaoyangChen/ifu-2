@@ -147,6 +147,45 @@
                 <p v-html="$t('carnival.section-2.p')" />
             </div>
         </section>
+        <section id="review" class="us-east-section">
+            <div>
+                <img src="@/assets/carnival/us-east.png" class="review-video" />
+            </div>
+            <div class="text">
+                <h2>{{ $t('carnival.review.div-1.title') }}</h2>
+                <p v-html="$t('carnival.review.div-1.content')" />
+                <Button external>{{
+                    $t('carnival.review.div-1.buttonText')
+                }}</Button>
+            </div>
+        </section>
+        <section class="canada-uk-section">
+            <div class="text">
+                <h2>{{ $t('carnival.review.div-2.title') }}</h2>
+                <p v-html="$t('carnival.review.div-2.content')" />
+                <Button external>{{
+                    $t('carnival.review.div-2.buttonText')
+                }}</Button>
+            </div>
+            <div>
+                <img
+                    src="@/assets/carnival/canada-uk.png"
+                    class="review-video"
+                />
+            </div>
+        </section>
+        <section class="us-west-section">
+            <div>
+                <img src="@/assets/carnival/us-west.png" class="review-video" />
+            </div>
+            <div class="text">
+                <h2>{{ $t('carnival.review.div-3.title') }}</h2>
+                <p v-html="$t('carnival.review.div-3.content')" />
+                <Button external>{{
+                    $t('carnival.review.div-3.buttonText')
+                }}</Button>
+            </div>
+        </section>
         <div class="section-schedule">
             <div class="title">{{ $t('carnival.section-schedule.title') }}</div>
             <section>
@@ -170,44 +209,6 @@
                 </div>
             </section>
         </div>
-        <section id="review" class="us-east-section">
-            <div>
-                <img src="@/assets/carnival/us-east.png" />
-            </div>
-            <div class="text">
-                <h2>美东场</h2>
-                <p>
-                    作为今年IFU学长学姐嘉年华的第一场，美东场邀请到超过10位海外<b>高校在读学长学姐</b>进行<b>分享</b>，同时，我们邀请的中外专业嘉宾的<b>“留学政策解析”、“中美教育系统对比”、“疫情下留学生应对措施”</b>也不容错过！
-                </p>
-                <Button external>回顾视频</Button>
-            </div>
-        </section>
-        <section class="canada-uk-section">
-            <div class="text">
-                <h2>加拿大英国场</h2>
-                <p>
-                    今年是IFU面向加拿大和英国举办学长学姐嘉年华的第一年，很高兴我们的学长学姐能就<b>加英留学生活、学术准备、工作申请</b>方面进行经验分享。加拿大英国场IFU邀请到了极富留学工作经验的嘉宾为大家带来<b
-                        >“英国留学优势及Top 100大学介绍”</b
-                    >，作为2020留学白皮书中国留学家庭第一选择留学国家，对英国留学感兴趣的同学们家长们，赶紧戳视频看看吧！
-                </p>
-                <Button external>回顾视频</Button>
-            </div>
-            <div>
-                <img src="@/assets/carnival/canada-uk.png" />
-            </div>
-        </section>
-        <section class="us-west-section">
-            <div>
-                <img src="@/assets/carnival/us-west.png" />
-            </div>
-            <div class="text">
-                <h2>美西场</h2>
-                <p>
-                    美西场是我们今年IFU学长学姐嘉年华的收官场，学长学姐们以及嘉宾们带来的干货更是重量级。除了有来自美国西部的十余位神仙学长学姐对<b>美西留学全方面</b>的精彩经验分享，美西场还有专业留学法律咨询律师带来的<b>“留学生合法身份与签证正确解读”</b>及<b>“留学生常遇到的法律问题及如何避雷”</b>的精彩分享！
-                </p>
-                <Button external>回顾视频</Button>
-            </div>
-        </section>
     </div>
 </template>
 
@@ -391,6 +392,7 @@ export default {
     display: flex;
     justify-content: center;
     height: 617px;
+    margin-bottom: 42px;
 
     /deep/ b {
         color: $button-color;
@@ -705,6 +707,26 @@ export default {
                 }
             }
         }
+    }
+
+    .us-east-section {
+        flex-direction: column;
+    }
+
+    .canada-uk-section {
+        flex-direction: column-reverse;
+    }
+
+    .us-west-section {
+        flex-direction: column;
+    }
+
+    .review-video {
+        margin: auto;
+        position: relative;
+        width: 100%;
+        right: 0;
+        float: none;
     }
 
     .section-schedule {

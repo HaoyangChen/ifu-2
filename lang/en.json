@@ -167,8 +167,8 @@
             }
         },
         "section-2": {
-            "tag": "TIME & LOCATION",
-            "p": "北京时间2020年7月18日、19日，2020第三届IFU学长学姐嘉年华的三场线上活动成功举办！我们的活动单场平均热度破四位数，感谢同学们和家长们的参与、以及对IFU、对学长学姐嘉年华的支持！嘉年华的学长学姐以及专业嘉宾们的分享全程干货满满，考虑到留学家庭们可以在活动后重温分享内容，也考虑到因为时差等原因部分同学们家长们来不及参与嘉年华，2020 IFU学长学姐嘉年华志愿者团队将各场次精选片段整理了出来！"
+            "tag": "Event Recap",
+            "p": "On July 18th and 19th, 2020 (Beijing time), 3rd IFU College Carnival was held successfully online! <b>The average attendance for each session of our event exceeded thousands.</b> Thanks for your participation and support in IFU College Carnival! Our seniors and guest speakers shared various helpful resources during the carnival. 2020 IFU College Carnival volunteer team compiled <b>event highlight clips</b> for international families who would like to review and families who missed the event due to time differences and other reasons."
         },
         "section-3": {
             "title": "Event Sessions",
@@ -258,6 +258,23 @@
                 "description": "Feel free to add our WeChat assistant No.2 to join IFU 2020 College Carnival volunteers WeChat group and ask questions. ",
                 "qr-1": "Apply Now",
                 "qr-2": "WeChat Assistant"
+            }
+        },
+        "review": {
+            "div-1": {
+                "title": "East Coast U.S.",
+                "content": "As the kick off session of this year's IFU College Carnival, the U.S. east coast session invited more than 10 seniors from overseas colleges and universities to share with international families. At the same time, we invited both Chinese and foreign professional guests to share their <b>analysis on study abroad policy, comparison on Sino-US education system</b>, and insights on the <b>measures for international students during the epidemic.</b>",
+                "buttonText": "Recap Clips"
+            },
+            "div-2": {
+                "title": "Canada & U.K.",
+                "content": "This year is the first year that IFU has organized a carnival focusing on Canada and the United Kingdom. We are glad to have seniors share their experience related to <b>living, academic preparation, and career in Canada and the United Kingdom.</b> And our guest speakers with rich experience in studying abroad shared their insights on the <b>benefits of studying in the U.K. and made an introduction to the top 100 universities.</b> U.K. as the No.1 choice for Chinese families studying abroad in the 2020 Study Abroad White Paper, parents and students who are interested in studying in the U.K. come check out our recap videos now!",
+                "buttonText": "Recap Clips"
+            },
+            "div-3": {
+                "title": "West Coast U.S.",
+                "content": "The U.S. west coast session is the final session of our IFU College Carnival this year. The information brought by seniors and guest speakers is even more critical and helpful. In addition to panel discussions on <b>all aspects of studying abroad in the U.S.</b> brought by more than 10 seniors living on the west coast, this session also covered interpretation related to the <b>legal status of international students and their visas, and common legal problems</b> encountered by international students and <b>how to avoid</b> those problems.",
+                "buttonText": "Recap Clips"
             }
         }
     },
