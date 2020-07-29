@@ -148,8 +148,16 @@
             </div>
         </section>
         <section id="review" class="us-east-section">
-            <div>
-                <img src="@/assets/carnival/us-east.png" class="review-video" />
+            <div class="video">
+                <iframe
+                    src="//player.bilibili.com/player.html?aid=244071100&bvid=BV1pv411v7hJ&cid=218067581&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                >
+                </iframe>
             </div>
             <div class="text">
                 <h2>{{ $t('carnival.review.div-1.title') }}</h2>
@@ -167,16 +175,29 @@
                     $t('carnival.review.div-2.buttonText')
                 }}</Button>
             </div>
-            <div>
-                <img
-                    src="@/assets/carnival/canada-uk.png"
-                    class="review-video"
-                />
+            <div class="video">
+                <iframe
+                    src="//player.bilibili.com/player.html?aid=244052186&bvid=BV1Sv411q73A&cid=217608009&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                >
+                </iframe>
             </div>
         </section>
         <section class="us-west-section">
-            <div>
-                <img src="@/assets/carnival/us-west.png" class="review-video" />
+            <div class="video">
+                <iframe
+                    src="//player.bilibili.com/player.html?aid=711505277&bvid=BV1FD4y1U76M&cid=217541685&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                >
+                </iframe>
             </div>
             <div class="text">
                 <h2>{{ $t('carnival.review.div-3.title') }}</h2>
@@ -511,15 +532,32 @@ export default {
     background: #fff3d9;
     display: flex;
 
+    .video {
+        flex-basis: 50%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
     .text {
+        flex-basis: 50%;
         padding-left: 8%;
     }
 }
 
 .canada-uk-section {
     display: flex;
-
+    .video {
+        flex-basis: 50%;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
     .text {
+        flex-basis: 50%;
         padding-right: 8%;
     }
 }
@@ -527,8 +565,15 @@ export default {
 .us-west-section {
     background: #fff3d9;
     display: flex;
-
+    .video {
+        flex-basis: 50%;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
     .text {
+        flex-basis: 50%;
         padding-left: 8%;
     }
 }
