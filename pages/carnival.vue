@@ -756,14 +756,24 @@ export default {
 
     .us-east-section {
         flex-direction: column;
+
+        .text {
+            padding-left: 0;
+        }
     }
 
     .canada-uk-section {
         flex-direction: column-reverse;
+        .text {
+            padding-right: 0;
+        }
     }
 
     .us-west-section {
         flex-direction: column;
+        .text {
+            padding-left: 0;
+        }
     }
 
     .review-video {
