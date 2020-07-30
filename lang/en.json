@@ -40,10 +40,10 @@
             "buttonText": "Our Story"
         },
         "carnival": {
-            "title": "The Third IFU College Carnival",
-            "subTitle": "Our Upcoming Event<br/>— IFU assists your studying abroad needs",
-            "description": "IFU's goal in the social mission of <span>making international families feel more secure abroad</span>, aims to reduce the information gap between international students and become the communication bridge between them; IFU will hold the third College Carnival in <span>2020 Mid-July</span>. At this event, IFU will invite international students studying abroad and professionals from a wide variety of fields to share their experiences and advice (in campus life, academic preparation, safety, and career planning) to reduce new incoming students’ concerns and help them better integrate into college life. IFU will assist your needs in studying abroad.",
-            "buttonText": "Event Details"
+            "title": "THE THIRD IFU COLLEGE CARNIVAL",
+            "subTitle": "2020 College Carnival Ended In Success<br />— IFU Assists Your Studying Abroad Needs",
+            "description": "IFU seniors are pleased to meet new and old friends online this year. The seniors shared <span>how to adapt to the changes</span> and <span>how to become international talents in the increasingly fierce competition</span>, and our guest speakers analyzed <span>the environment and policy of universities</span> in the United States. We hope that those activities are helpful to parents and students. Therefore IFU is one step closer to our goal——to make international families more at ease. We also hope that IFU can become a supporter of overseas students and families through IFU’s <span>emergency contact assistant, Totoroad Academy, Peer Mentor Program,</span> IFU’s regular <span>free online webinars</span>, and <span>offline activities</span>. Please do follow our official website here and ask IFU WeChat assistants for help! See you next year!",
+            "buttonText": "Event Recap"
         },
         "coronavirus": {
             "subTitle": "IFU In The News",
@@ -134,7 +134,7 @@
     },
     "carnival": {
         "banner": {
-            "buttonText": "Register Now",
+            "buttonText": "Event Recap",
             "qrText": "Scan to Register Now!"
         },
         "section-0": {
@@ -167,15 +167,8 @@
             }
         },
         "section-2": {
-            "tag": "TIME & LOCATION",
-            "div-1": {
-                "title": "Time (In PACIFIC time)",
-                "description": "<b>East Coast (U.S.)</b> – July 17th | Fri. | 7:30PM<br /><b>Canada & U.K.</b> – July 18th | Sat. | 7:00PM<br /><b>West Coast (U.S.)</b> – July 18th | Sat. | 10:30PM"
-            },
-            "div-2": {
-                "title": "Location",
-                "description": "Live on <b>Zoom</b>;<br />Stream on <b>Bilibili</b> and College Carnival <b>WeChat group-chats</b>"
-            }
+            "tag": "Event Recap",
+            "p": "On July 18th and 19th, 2020 (Beijing time), 3rd IFU College Carnival was held successfully online! <b>The average attendance for each session of our event exceeded thousands.</b> Thanks for your participation and support in IFU College Carnival! Our seniors and guest speakers shared various helpful resources during the carnival. 2020 IFU College Carnival volunteer team compiled <b>event highlight clips</b> for international families who would like to review and families who missed the event due to time differences and other reasons."
         },
         "section-3": {
             "title": "Event Sessions",
@@ -204,8 +197,8 @@
                 "title": "West Coast U.S.（7.18 PST）"
             },
             "qr-card": {
-                "title": "Can't Wait？Scan QR code to register now!",
-                "description": "This summer, let's break the limitations caused by the pandemic, time zone differences, and locations. Let's meet our IFU seniors from various schools, learn from our professional guests about overseas study trends, and \"meet\" each other online!"
+                "title": "Interested in Similar Events? Scan to Follow Us!",
+                "description": "IFU gives timely assistance to international families. Through the first-person perspective of international students, IFU builds a communication bridge between China and the world. Follow us to receive authentic study abroad news, all kinds of resources, free online webinars, etc."
             }
         },
         "section-4": {
@@ -265,6 +258,23 @@
                 "description": "Feel free to add our WeChat assistant No.2 to join IFU 2020 College Carnival volunteers WeChat group and ask questions. ",
                 "qr-1": "Apply Now",
                 "qr-2": "WeChat Assistant"
+            }
+        },
+        "review": {
+            "div-1": {
+                "title": "East Coast U.S.",
+                "content": "As the kick off session of this year's IFU College Carnival, the U.S. east coast session invited more than 10 seniors from overseas colleges and universities to share with international families. At the same time, we invited both Chinese and foreign professional guests to share their <b>analysis on study abroad policy, comparison on Sino-US education system</b>, and insights on the <b>measures for international students during the epidemic.</b>",
+                "buttonText": "Recap Clips"
+            },
+            "div-2": {
+                "title": "Canada & U.K.",
+                "content": "This year is the first year that IFU has organized a carnival focusing on Canada and the United Kingdom. We are glad to have seniors share their experience related to <b>living, academic preparation, and career in Canada and the United Kingdom.</b> And our guest speakers with rich experience in studying abroad shared their insights on the <b>benefits of studying in the U.K. and made an introduction to the top 100 universities.</b> U.K. as the No.1 choice for Chinese families studying abroad in the 2020 Study Abroad White Paper, parents and students who are interested in studying in the U.K. come check out our recap videos now!",
+                "buttonText": "Recap Clips"
+            },
+            "div-3": {
+                "title": "West Coast U.S.",
+                "content": "The U.S. west coast session is the final session of our IFU College Carnival this year. The information brought by seniors and guest speakers is even more critical and helpful. In addition to panel discussions on <b>all aspects of studying abroad in the U.S.</b> brought by more than 10 seniors living on the west coast, this session also covered interpretation related to the <b>legal status of international students and their visas, and common legal problems</b> encountered by international students and <b>how to avoid</b> those problems.",
+                "buttonText": "Recap Clips"
             }
         }
     },

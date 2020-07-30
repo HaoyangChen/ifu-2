@@ -25,21 +25,9 @@
                             <p v-html="$t('home.carnival.description')" />
                         </div>
                         <div class="carnival-btn">
-                            <Button :click="popupClick">
+                            <Button scroll to="#recap">
                                 {{ $t('carnival.banner.buttonText') }}
                             </Button>
-                            <div v-if="showPopup" class="popup">
-                                <img
-                                    class="qr"
-                                    src="@/assets/carnival/popup-qr.svg"
-                                />
-                                <div>{{ $t('carnival.banner.qrText') }}</div>
-                                <img
-                                    class="close-icon"
-                                    src="@/assets/carnival/popup-close.svg"
-                                    @click="popupClick"
-                                />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,18 +119,6 @@
                 </p>
             </div>
         </section>
-        <section class="section-2">
-            <div class="card">
-                <div class="tag">
-                    {{ $t('carnival.section-2.tag') }}
-                </div>
-                <h3>{{ $t('carnival.section-2.div-1.title') }}</h3>
-                <p v-html="$t('carnival.section-2.div-1.description')" />
-                <br />
-                <h3>{{ $t('carnival.section-2.div-2.title') }}</h3>
-                <p v-html="$t('carnival.section-2.div-2.description')" />
-            </div>
-        </section>
         <div class="section-3">
             <div class="title">{{ $t('carnival.section-3.title') }}</div>
             <section>
@@ -163,6 +139,56 @@
                 </div>
             </section>
         </div>
+        <section id="recap" class="section-2">
+            <div class="card">
+                <div class="tag">
+                    {{ $t('carnival.section-2.tag') }}
+                </div>
+                <p v-html="$t('carnival.section-2.p')" />
+            </div>
+        </section>
+        <section class="us-east-section">
+            <div class="video">
+                <img src="@/assets/carnival/us-east.svg" />
+            </div>
+            <div class="text">
+                <h2>{{ $t('carnival.review.div-1.title') }}</h2>
+                <p v-html="$t('carnival.review.div-1.content')" />
+                <Button
+                    external
+                    to="https://www.bilibili.com/video/BV1pv411v7hJ/"
+                    >{{ $t('carnival.review.div-1.buttonText') }}</Button
+                >
+            </div>
+        </section>
+        <section class="canada-uk-section">
+            <div class="text">
+                <h2>{{ $t('carnival.review.div-2.title') }}</h2>
+                <p v-html="$t('carnival.review.div-2.content')" />
+                <Button
+                    external
+                    to="https://www.bilibili.com/video/BV1Sv411q73A/"
+                    >{{ $t('carnival.review.div-2.buttonText') }}</Button
+                >
+            </div>
+            <div class="video">
+                <img src="@/assets/carnival/canada-uk.svg" />
+            </div>
+        </section>
+        <section class="us-west-section">
+            <div class="video">
+                <img src="@/assets/carnival/us-west.svg" />
+            </div>
+            <div class="text">
+                <h2>{{ $t('carnival.review.div-3.title') }}</h2>
+                <p v-html="$t('carnival.review.div-3.content')" />
+                <Button
+                    external
+                    to="https://www.bilibili.com/video/BV1FD4y1U76M/"
+                    >{{ $t('carnival.review.div-3.buttonText') }}</Button
+                >
+            </div>
+        </section>
         <div class="section-schedule">
             <div class="title">{{ $t('carnival.section-schedule.title') }}</div>
             <section>
@@ -182,121 +208,6 @@
                     </div>
                     <div class="image">
                         <img src="@/assets/carnival/section-schedule-qr.svg" />
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="section-4">
-            <h3 v-html="$t('carnival.section-4.title')" />
-            <p>{{ $t('carnival.section-4.description') }}</p>
-        </section>
-        <div class="section-5">
-            <section class="div-1">
-                <h3>{{ $t('carnival.section-5.div-1.title') }}</h3>
-                <ul>
-                    <li v-html="$t('carnival.section-5.div-1.li-1')" />
-                    <li v-html="$t('carnival.section-5.div-1.li-2')" />
-                    <li v-html="$t('carnival.section-5.div-1.li-3')" />
-                </ul>
-                <p v-html="$t('carnival.section-5.div-1.p')" />
-            </section>
-            <section class="div-2">
-                <h3>{{ $t('carnival.section-5.div-2.title') }}</h3>
-                <ul>
-                    <li v-html="$t('carnival.section-5.div-2.li-1')" />
-                    <li v-html="$t('carnival.section-5.div-2.li-2')" />
-                    <li v-html="$t('carnival.section-5.div-2.li-3')" />
-                    <li v-html="$t('carnival.section-5.div-2.li-4')" />
-                    <li v-html="$t('carnival.section-5.div-2.li-5')" />
-                </ul>
-            </section>
-        </div>
-        <section class="section-6">
-            <div>
-                <div class="title">
-                    {{ $t('carnival.section-6.div-1.name') }}
-                </div>
-                <h3>{{ $t('carnival.section-6.descriptionTitle') }}</h3>
-                <p v-html="$t('carnival.section-6.div-1.description')" />
-                <br />
-                <h3>{{ $t('carnival.section-6.requirementTitle') }}</h3>
-                <p>
-                    {{ $t('carnival.section-6.div-1.requirement') }}
-                </p>
-            </div>
-            <div>
-                <div class="title">
-                    {{ $t('carnival.section-6.div-2.name') }}
-                </div>
-                <h3>{{ $t('carnival.section-6.descriptionTitle') }}</h3>
-                <p>
-                    {{ $t('carnival.section-6.div-2.description') }}
-                </p>
-                <br />
-                <h3>{{ $t('carnival.section-6.requirementTitle') }}</h3>
-                <p>
-                    {{ $t('carnival.section-6.div-2.requirement') }}
-                </p>
-            </div>
-            <div>
-                <div class="title">
-                    {{ $t('carnival.section-6.div-3.name') }}
-                </div>
-                <h3>{{ $t('carnival.section-6.descriptionTitle') }}</h3>
-                <p>
-                    {{ $t('carnival.section-6.div-3.description') }}
-                </p>
-                <br />
-                <h3>{{ $t('carnival.section-6.requirementTitle') }}</h3>
-                <p>{{ $t('carnival.section-6.div-3.requirement') }}</p>
-            </div>
-        </section>
-        <div class="section-7">
-            <div class="title">{{ $t('carnival.section-7.title') }}</div>
-            <section>
-                <div class="div-1">
-                    <p>{{ $t('carnival.section-7.div-1') }}</p>
-                </div>
-                <div class="div-2">
-                    <p>{{ $t('carnival.section-7.div-2') }}</p>
-                </div>
-                <div class="div-3">
-                    <p>{{ $t('carnival.section-7.div-3') }}</p>
-                </div>
-                <div class="div-4">
-                    <p>{{ $t('carnival.section-7.div-4') }}</p>
-                </div>
-                <div class="div-5">
-                    <p>{{ $t('carnival.section-7.div-5') }}</p>
-                </div>
-                <div class="div-6">
-                    <p>{{ $t('carnival.section-7.div-6') }}</p>
-                </div>
-                <div class="div-7">
-                    <p>{{ $t('carnival.section-7.div-7') }}</p>
-                </div>
-                <div class="div-8">
-                    <p>{{ $t('carnival.section-7.div-8') }}</p>
-                </div>
-                <div class="div-9">
-                    <p>{{ $t('carnival.section-7.div-9') }}</p>
-                </div>
-                <div class="div-10">
-                    <div class="text">
-                        <h3>{{ $t('carnival.section-7.div-10.title') }}</h3>
-                        <p>
-                            {{ $t('carnival.section-7.div-10.description') }}
-                        </p>
-                    </div>
-                    <div class="image">
-                        <div>
-                            <img src="@/assets/carnival/section-7-qr-1.png" />
-                            <p>{{ $t('carnival.section-7.div-10.qr-1') }}</p>
-                        </div>
-                        <div>
-                            <img src="@/assets/carnival/section-7-qr-2.png" />
-                            <p>{{ $t('carnival.section-7.div-10.qr-2') }}</p>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -323,13 +234,7 @@ export default {
             carnivalPerson1,
             carnivalPerson2,
             carnivalPerson3,
-            showPopup: false,
         };
-    },
-    methods: {
-        popupClick() {
-            this.showPopup = !this.showPopup;
-        },
     },
 };
 </script>
@@ -366,7 +271,7 @@ export default {
     div.carnival-event {
         width: 720px;
         background: rgba(84, 190, 245, 0.25);
-        padding: 41px 60px 88px 60px;
+        padding: 41px 30px 88px 30px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 30px;
@@ -374,7 +279,7 @@ export default {
 
         h1 {
             text-align: center;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         h2 {
@@ -400,40 +305,6 @@ export default {
             text-align: center;
             margin-top: 50px;
             position: relative;
-
-            .popup {
-                padding: 61px 57px 0 57px;
-                background: $dark-blue;
-                border-radius: 30px;
-                width: 454px;
-                height: 454px;
-                position: absolute;
-                top: -500px;
-                left: 75px;
-
-                .qr {
-                    width: 340px;
-                    height: 317px;
-                }
-
-                div {
-                    color: white;
-                    font-size: 24px;
-                    margin-top: 16px;
-                    font-weight: 600;
-                }
-
-                .close-icon {
-                    position: absolute;
-                    top: 20px;
-                    right: 21px;
-
-                    &:hover {
-                        cursor: pointer;
-                        filter: brightness(30%);
-                    }
-                }
-            }
         }
     }
 }
@@ -524,20 +395,18 @@ export default {
     display: flex;
     justify-content: center;
     height: 617px;
-
-    /deep/ b {
-        color: $button-color;
-    }
+    margin-bottom: 42px;
 
     .card {
         border: 3px solid #f2d07e;
         box-shadow: 0px 5px 15px rgba(242, 208, 126, 0.25);
-        width: 482px;
-        height: 457px;
+        width: 480px;
+        height: 480px;
         padding: 99px 45px;
         position: relative;
 
         .tag {
+            text-align: center;
             position: absolute;
             font-size: 14px;
             top: 31px;
@@ -549,7 +418,7 @@ export default {
             background-repeat: no-repeat;
             color: white;
             font-weight: 600;
-            padding: 5px 0 7px 15px;
+            padding: 5px 0 7px 0;
         }
 
         > h3 {
@@ -638,197 +507,53 @@ export default {
     }
 }
 
-.section-4 {
-    background: url(~assets/carnival/section-4.svg);
-    height: 612px;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 80px 0;
+.us-east-section {
+    background: #fff3d9;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    h3 {
-        font-size: 30px;
-        font-weight: 600;
-        margin-top: 0;
-        text-transform: uppercase;
-        line-height: 1.3;
+    .video {
+        flex-basis: 42%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .text {
+        flex-basis: 58%;
+        padding-left: 8%;
     }
 }
 
-.section-5 {
+.canada-uk-section {
     display: flex;
-
-    > section {
-        flex-basis: 50%;
-
-        > h3 {
-            text-align: center;
+    .video {
+        flex-basis: 42%;
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
-
-    .div-1 {
-        background: #466eb6;
-        color: white;
-
-        p {
-            padding-left: 20px;
-        }
-    }
-
-    .div-2 {
-        background: $background-light-blue;
-        color: #466eb6;
+    .text {
+        flex-basis: 58%;
+        padding-right: 8%;
     }
 }
 
-.section-6 {
+.us-west-section {
+    background: #fff3d9;
     display: flex;
-    justify-content: space-between;
-
-    > div {
-        flex-basis: 30%;
-        border: 8px solid #466eb6;
-        border-radius: 20px;
-        padding: 37px 20px 7px 20px;
-        position: relative;
-
-        .title {
-            position: absolute;
-            width: 68%;
-            height: 28px;
-            top: -25px;
-            left: 16%;
-            text-align: center;
-            font-size: 22px;
-            font-weight: 600;
-            color: #466eb6;
-            background: white;
-            overflow-wrap: break-word;
-        }
-
-        h3 {
-            margin-bottom: 0;
-        }
-
-        p {
-            margin-top: 0;
+    .video {
+        flex-basis: 42%;
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
-}
-
-.section-7 {
-    .title {
-        background: #f2d07e;
-        height: 97px;
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        line-height: 97px;
-        font-weight: 600;
-    }
-
-    section {
-        display: flex;
-        flex-wrap: wrap;
-
-        > div {
-            width: 237px;
-            height: 224px;
-            margin: 80px 30px;
-            padding: 0 38px 0 68px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .div-1 {
-            background: url(~assets/carnival/section-7-icon-1.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-2 {
-            background: url(~assets/carnival/section-7-icon-2.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-3 {
-            background: url(~assets/carnival/section-7-icon-3.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-4 {
-            background: url(~assets/carnival/section-7-icon-4.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-5 {
-            background: url(~assets/carnival/section-7-icon-5.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-6 {
-            background: url(~assets/carnival/section-7-icon-6.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-7 {
-            background: url(~assets/carnival/section-7-icon-7.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-8 {
-            background: url(~assets/carnival/section-7-icon-8.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-9 {
-            background: url(~assets/carnival/section-7-icon-9.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .div-10 {
-            border: 3px solid #f2d07e;
-            width: 767px;
-            height: 220px;
-            padding: 38px 41px;
-            box-shadow: 0px 5px 15px rgba(242, 208, 126, 0.25);
-            text-align: left;
-
-            .text {
-                flex-basis: 70%;
-            }
-
-            .image {
-                flex-basis: 30%;
-                display: flex;
-                font-size: 10px;
-                text-align: center;
-                justify-content: space-between;
-
-                > div {
-                    margin-left: 26px;
-
-                    p {
-                        margin: 0;
-                        line-height: 10px;
-                    }
-                }
-            }
-        }
+    .text {
+        flex-basis: 58%;
+        padding-left: 8%;
     }
 }
 
@@ -1008,6 +733,36 @@ export default {
         }
     }
 
+    .us-east-section {
+        flex-direction: column;
+
+        .text {
+            padding-left: 0;
+        }
+    }
+
+    .canada-uk-section {
+        flex-direction: column-reverse;
+        .text {
+            padding-right: 0;
+        }
+    }
+
+    .us-west-section {
+        flex-direction: column;
+        .text {
+            padding-left: 0;
+        }
+    }
+
+    .review-video {
+        margin: auto;
+        position: relative;
+        width: 100%;
+        right: 0;
+        float: none;
+    }
+
     .section-schedule {
         .title {
             height: 80px;
@@ -1031,102 +786,6 @@ export default {
 
                 p {
                     padding-right: 0;
-                }
-            }
-        }
-    }
-
-    .section-4 {
-        background: url(~assets/carnival/section-4-mobile.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 435px;
-        margin: 0;
-        text-align: center;
-
-        h3 {
-            margin-top: 1em;
-            font-size: 18px;
-        }
-    }
-
-    .section-5 {
-        flex-direction: column;
-
-        > section {
-            width: 100%;
-            padding-top: 51px;
-            padding-bottom: 51px;
-
-            h3 {
-                font-size: 18px;
-            }
-        }
-
-        ul {
-            padding: 0 0 0 16px;
-        }
-
-        .div-1 {
-            p {
-                padding-left: 0;
-            }
-        }
-    }
-
-    .section-6 {
-        flex-direction: column;
-
-        > div {
-            flex-basis: 100%;
-            margin: 50px 0;
-        }
-    }
-
-    .section-7 {
-        .title {
-            height: 80px;
-            font-size: 23px;
-            line-height: 80px;
-        }
-
-        section {
-            justify-content: space-evenly;
-
-            > div {
-                width: 230px;
-                height: 214px;
-                margin: 30px 0;
-            }
-
-            .div-10 {
-                width: 100%;
-                height: unset;
-                padding: 50px 35px;
-                flex-direction: column;
-
-                .text {
-                    flex-basis: 100%;
-                    margin-bottom: 7px;
-
-                    h3 {
-                        font-size: 23px;
-                        margin-top: 0;
-                    }
-                }
-
-                .image {
-                    width: 100%;
-                    justify-content: space-evenly;
-
-                    > div {
-                        margin-left: 0;
-                    }
-
-                    p {
-                        margin: 0;
-                    }
                 }
             }
         }
