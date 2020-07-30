@@ -25,7 +25,7 @@
                             <p v-html="$t('home.carnival.description')" />
                         </div>
                         <div class="carnival-btn">
-                            <Button scroll to="#review">
+                            <Button scroll to="#recap">
                                 {{ $t('carnival.banner.buttonText') }}
                             </Button>
                         </div>
@@ -139,7 +139,7 @@
                 </div>
             </section>
         </div>
-        <section class="section-2">
+        <section id="recap" class="section-2">
             <div class="card">
                 <div class="tag">
                     {{ $t('carnival.section-2.tag') }}
@@ -147,64 +147,46 @@
                 <p v-html="$t('carnival.section-2.p')" />
             </div>
         </section>
-        <section id="review" class="us-east-section">
+        <section class="us-east-section">
             <div class="video">
-                <iframe
-                    src="//player.bilibili.com/player.html?aid=244071100&bvid=BV1pv411v7hJ&cid=218067581&page=1"
-                    scrolling="no"
-                    border="0"
-                    frameborder="no"
-                    framespacing="0"
-                    allowfullscreen="true"
-                >
-                </iframe>
+                <img src="@/assets/carnival/us-east.svg" />
             </div>
             <div class="text">
                 <h2>{{ $t('carnival.review.div-1.title') }}</h2>
                 <p v-html="$t('carnival.review.div-1.content')" />
-                <Button external>{{
-                    $t('carnival.review.div-1.buttonText')
-                }}</Button>
+                <Button
+                    external
+                    to="https://www.bilibili.com/video/BV1pv411v7hJ/"
+                    >{{ $t('carnival.review.div-1.buttonText') }}</Button
+                >
             </div>
         </section>
         <section class="canada-uk-section">
             <div class="text">
                 <h2>{{ $t('carnival.review.div-2.title') }}</h2>
                 <p v-html="$t('carnival.review.div-2.content')" />
-                <Button external>{{
-                    $t('carnival.review.div-2.buttonText')
-                }}</Button>
+                <Button
+                    external
+                    to="https://www.bilibili.com/video/BV1Sv411q73A/"
+                    >{{ $t('carnival.review.div-2.buttonText') }}</Button
+                >
             </div>
             <div class="video">
-                <iframe
-                    src="//player.bilibili.com/player.html?aid=244052186&bvid=BV1Sv411q73A&cid=217608009&page=1"
-                    scrolling="no"
-                    border="0"
-                    frameborder="no"
-                    framespacing="0"
-                    allowfullscreen="true"
-                >
-                </iframe>
+                <img src="@/assets/carnival/canada-uk.svg" />
             </div>
         </section>
         <section class="us-west-section">
             <div class="video">
-                <iframe
-                    src="//player.bilibili.com/player.html?aid=711505277&bvid=BV1FD4y1U76M&cid=217541685&page=1"
-                    scrolling="no"
-                    border="0"
-                    frameborder="no"
-                    framespacing="0"
-                    allowfullscreen="true"
-                >
-                </iframe>
+                <img src="@/assets/carnival/us-west.svg" />
             </div>
             <div class="text">
                 <h2>{{ $t('carnival.review.div-3.title') }}</h2>
                 <p v-html="$t('carnival.review.div-3.content')" />
-                <Button external>{{
-                    $t('carnival.review.div-3.buttonText')
-                }}</Button>
+                <Button
+                    external
+                    to="https://www.bilibili.com/video/BV1FD4y1U76M/"
+                    >{{ $t('carnival.review.div-3.buttonText') }}</Button
+                >
             </div>
         </section>
         <div class="section-schedule">
@@ -289,7 +271,7 @@ export default {
     div.carnival-event {
         width: 720px;
         background: rgba(84, 190, 245, 0.25);
-        padding: 41px 60px 88px 60px;
+        padding: 41px 30px 88px 30px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 30px;
@@ -297,7 +279,7 @@ export default {
 
         h1 {
             text-align: center;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         h2 {
@@ -415,19 +397,16 @@ export default {
     height: 617px;
     margin-bottom: 42px;
 
-    /deep/ b {
-        color: $button-color;
-    }
-
     .card {
         border: 3px solid #f2d07e;
         box-shadow: 0px 5px 15px rgba(242, 208, 126, 0.25);
-        width: 482px;
-        height: 457px;
+        width: 480px;
+        height: 480px;
         padding: 99px 45px;
         position: relative;
 
         .tag {
+            text-align: center;
             position: absolute;
             font-size: 14px;
             top: 31px;
@@ -439,7 +418,7 @@ export default {
             background-repeat: no-repeat;
             color: white;
             font-weight: 600;
-            padding: 5px 0 7px 45px;
+            padding: 5px 0 7px 0;
         }
 
         > h3 {
