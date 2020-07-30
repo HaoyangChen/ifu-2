@@ -512,16 +512,16 @@ export default {
     display: flex;
 
     .video {
-        flex-basis: 50%;
+        flex-basis: 42%;
 
-        iframe {
+        img {
             width: 100%;
             height: 100%;
         }
     }
 
     .text {
-        flex-basis: 50%;
+        flex-basis: 58%;
         padding-left: 8%;
     }
 }
@@ -529,14 +529,14 @@ export default {
 .canada-uk-section {
     display: flex;
     .video {
-        flex-basis: 50%;
-        iframe {
+        flex-basis: 42%;
+        img {
             width: 100%;
             height: 100%;
         }
     }
     .text {
-        flex-basis: 50%;
+        flex-basis: 58%;
         padding-right: 8%;
     }
 }
@@ -545,14 +545,14 @@ export default {
     background: #fff3d9;
     display: flex;
     .video {
-        flex-basis: 50%;
-        iframe {
+        flex-basis: 42%;
+        img {
             width: 100%;
             height: 100%;
         }
     }
     .text {
-        flex-basis: 50%;
+        flex-basis: 58%;
         padding-left: 8%;
     }
 }
