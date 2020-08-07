@@ -19,50 +19,59 @@
         <section>
             <h2>{{ $t('about.culture.distributionTitle') }}</h2>
             <div class="distribution-image desktop">
-                <img src="../../assets/about/culture/map.png" />
+                <img :src="map[$i18n.locale]" />
                 <div class="tips" data-aos="fade-up">
                     <div class="tips-text">
-                        <p>{{ $t('about.culture.schoool1') }}</p>
-                        <p>{{ $t('about.culture.schoool2') }}</p>
+                        <p
+                            v-for="school in $t('about.culture.canada')"
+                            :key="school"
+                        >
+                            {{ school }}
+                        </p>
                     </div>
                     <div class="tips-line" />
                 </div>
                 <div class="tips" data-aos="fade-up">
                     <div class="tips-text">
-                        <p>{{ $t('about.culture.schoool3') }}</p>
+                        <p
+                            v-for="school in $t('about.culture.uk')"
+                            :key="school"
+                        >
+                            {{ school }}
+                        </p>
                     </div>
                     <div class="tips-line" />
                 </div>
                 <div class="tips" data-aos="fade-left">
                     <div class="tips-text">
-                        <p>{{ $t('about.culture.schoool4') }}</p>
-                        <p>{{ $t('about.culture.schoool5') }}</p>
-                        <p>{{ $t('about.culture.schoool6') }}</p>
-                        <p>{{ $t('about.culture.schoool7') }}</p>
-                        <p>{{ $t('about.culture.schoool8') }}</p>
-                        <p>{{ $t('about.culture.schoool9') }}</p>
-                        <p>{{ $t('about.culture.schoool10') }}</p>
-                        <p>{{ $t('about.culture.schoool11') }}</p>
+                        <p
+                            v-for="school in $t('about.culture.us-west')"
+                            :key="school"
+                        >
+                            {{ school }}
+                        </p>
                     </div>
                     <div class="tips-line" />
                 </div>
                 <div class="tips" data-aos="fade-right">
                     <div class="tips-text">
-                        <p>{{ $t('about.culture.schoool12') }}</p>
-                        <p>{{ $t('about.culture.schoool13') }}</p>
-                        <p>{{ $t('about.culture.schoool14') }}</p>
-                        <p>{{ $t('about.culture.schoool15') }}</p>
-                        <p>{{ $t('about.culture.schoool16') }}</p>
-                        <p>{{ $t('about.culture.schoool17') }}</p>
-                        <p>{{ $t('about.culture.schoool18') }}</p>
-                        <p>{{ $t('about.culture.schoool19') }}</p>
-                        <p>{{ $t('about.culture.schoool20') }}</p>
+                        <p
+                            v-for="school in $t('about.culture.us-east')"
+                            :key="school"
+                        >
+                            {{ school }}
+                        </p>
                     </div>
                     <div class="tips-line" />
                 </div>
                 <div class="tips" data-aos="fade-down">
                     <div class="tips-text">
-                        <p>{{ $t('about.culture.schoool21') }}</p>
+                        <p
+                            v-for="school in $t('about.culture.singapore')"
+                            :key="school"
+                        >
+                            {{ school }}
+                        </p>
                     </div>
                     <div class="tips-line" />
                 </div>
@@ -85,11 +94,21 @@
 
 <script>
 import Button from '@/components/Button.vue';
+import mapImage from '@/assets/about/culture/map.png';
+import mapEnImage from '@/assets/about/culture/map-en.png';
 
 export default {
     name: 'Culture',
     components: {
         Button,
+    },
+    data() {
+        return {
+            map: {
+                zh: mapImage,
+                en: mapEnImage,
+            },
+        };
     },
 };
 </script>
@@ -149,11 +168,11 @@ export default {
 }
 
 .tips:nth-of-type(1) {
-    top: -43px;
-    left: 317px;
+    top: -75px;
+    left: 251px;
 
     .tips-text {
-        width: 116px;
+        width: 144px;
         height: 70px;
         border: 2px solid $green;
         color: $green;
@@ -163,13 +182,13 @@ export default {
         width: 2px;
         height: 110px;
         background: $green;
-        left: 58px;
+        left: 77px;
     }
 }
 
 .tips:nth-of-type(2) {
-    top: 0px;
-    left: 495px;
+    top: -20px;
+    left: 439px;
 
     .tips-text {
         width: 144px;
@@ -187,8 +206,8 @@ export default {
 }
 
 .tips:nth-of-type(3) {
-    top: 218px;
-    left: 32px;
+    top: 225px;
+    left: -45px;
 
     .tips-text {
         width: 171px;
@@ -207,8 +226,8 @@ export default {
 }
 
 .tips:nth-of-type(4) {
-    top: 241px;
-    left: 397px;
+    top: 238px;
+    left: 347px;
 
     .tips-text {
         width: 183px;
@@ -227,8 +246,8 @@ export default {
 }
 
 .tips:nth-of-type(5) {
-    top: 494px;
-    left: 827px;
+    top: 534px;
+    left: 875px;
 
     .tips-text {
         width: 121px;
@@ -261,8 +280,8 @@ export default {
     }
 
     .tips:nth-of-type(1) {
-        top: -50px;
-        left: 184px;
+        top: -65px;
+        left: 155px;
 
         .tips-line {
             height: 64px;
@@ -270,8 +289,8 @@ export default {
     }
 
     .tips:nth-of-type(2) {
-        top: 32px;
-        left: 295px;
+        top: 22px;
+        left: 259px;
 
         .tips-line {
             height: 25px;
@@ -279,8 +298,8 @@ export default {
     }
 
     .tips:nth-of-type(3) {
-        top: 146px;
-        left: -48px;
+        top: 136px;
+        left: -100px;
 
         .tips-line {
             left: 170px;
@@ -288,8 +307,8 @@ export default {
     }
 
     .tips:nth-of-type(4) {
-        top: 146px;
-        left: 267px;
+        top: 144px;
+        left: 235px;
 
         .tips-text {
             height: 215px;
@@ -297,8 +316,8 @@ export default {
     }
 
     .tips:nth-of-type(5) {
-        top: 294px;
-        left: 507px;
+        top: 318px;
+        left: 546px;
 
         .tips-line {
             height: 38px;
