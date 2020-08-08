@@ -21,21 +21,27 @@
         </div>
         <div class="section-activity">
             <div>
-                <img />
+                <img
+                    src="@/assets/volunteer/icon-emergency.svg"
+                    alt="emergency icon"
+                />
                 <h2>紧急情况</h2>
                 <p>
                     IFU能够在紧急情况发生时，例如：失联、心理精神、法律、学术问题，及时地帮助家长通过联系IFU工作人员以及相对应校园志愿者获得帮助。
                 </p>
             </div>
             <div>
-                <img />
+                <img src="@/assets/volunteer/icon-info.svg" alt="info icon" />
                 <h2>信息传递</h2>
                 <p>
                     IFU通过线上和线下信息分享的方式来减少留学家庭之间的信息代沟。分享内容包括：校园官方信息、留学生第一视角的校园、生活体验、学长学姐经验等。让留学生父母更了解孩子海外生活，也让孩子更理解父母所忧，成为彼此之间的信息桥梁。
                 </p>
             </div>
             <div>
-                <img />
+                <img
+                    src="@/assets/volunteer/icon-program.svg"
+                    alt="program icon"
+                />
                 <h2>特定项目</h2>
                 <p>
                     IFU针对部分留学问题制定了特定项目去解决。例如：IFU Peer
@@ -45,13 +51,45 @@
         </div>
         <section class="section-school">
             <div>
-                <h2>美国东部</h2>
+                <h2 class="color-underline east-color">美国东部</h2>
+                <p>伊利诺伊大学香槟分校</p>
+                <p>罗切斯特大学</p>
+                <p>弗里吉尼亚联邦大学</p>
+                <p>乔治华盛顿大学</p>
+                <p>俄亥俄州立大学</p>
+                <p>波士顿大学</p>
+                <p>纽约大学</p>
+                <p>威斯康辛麦迪逊大学</p>
+                <p>北卡州立大学</p>
+                <p>佐治亚大学</p>
+                <p>奥本大学</p>
+                <p>杜兰大学</p>
             </div>
-            <div><h2>美国西部</h2></div>
-            <div><h2>加拿大&英国</h2></div>
-            <div><h2>新加坡</h2></div>
+            <div>
+                <h2 class="color-underline west-color">美国西部</h2>
+                <p>加州大学欧文分校</p>
+                <p>加州大学圣地亚哥分校</p>
+                <p>加州大学洛杉矶分校</p>
+                <p>加州大学圣塔芭芭拉分校</p>
+                <p>加州大学戴维斯分校</p>
+                <p>加州大学伯克利分校</p>
+                <p>南加州大学</p>
+                <p>华盛顿大学</p>
+            </div>
+            <div>
+                <h2 class="color-underline canada-color">加拿大&英国</h2>
+                <p>英属哥伦比亚大学</p>
+                <p>西蒙菲莎大学</p>
+                <p>阿尔伯塔大学</p>
+                <p>维多利亚大学</p>
+                <p>伦敦大学学院</p>
+            </div>
+            <div>
+                <h2 class="color-underline singapore-color">新加坡</h2>
+                <p>新加坡国立大学</p>
+            </div>
         </section>
-        <section>
+        <section class="event-review">
             <h2>活动回顾</h2>
             <p>
                 月报、年报总结。加下载report 链接。月报、年报总结。加下载report
@@ -122,3 +160,71 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+.section-mission {
+    display: flex;
+    background-color: #f1f9ff;
+
+    p {
+        line-height: 31px;
+    }
+}
+
+.section-activity {
+    display: flex;
+    justify-content: center;
+
+    > div {
+        flex-basis: 33.3%;
+        text-align: center;
+        padding: 80px 4%;
+        color: #ffffff;
+
+        > p {
+            text-align: left;
+            padding: 0 50px;
+            line-height: 31px;
+        }
+    }
+
+    div:first-of-type {
+        background-color: #c9d74a;
+    }
+    div:nth-of-type(2) {
+        background-color: #fda63b;
+    }
+    div:nth-of-type(3) {
+        background-color: #54bef5;
+    }
+}
+
+.section-school {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background: url(~assets/volunteer/section-school.png);
+
+    .color-underline {
+        border-bottom: 5px solid;
+    }
+    .east-color {
+        border-color: #34bbc9;
+    }
+    .west-color {
+        border-color: #c9d74a;
+    }
+    .canada-color {
+        border-color: #f96191;
+    }
+    .singapore-color {
+        border-color: #fda63b;
+    }
+}
+
+.event-review {
+    width: 70%;
+    margin-left: 0px;
+    line-height: 31px;
+}
+</style>
