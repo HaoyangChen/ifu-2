@@ -289,7 +289,7 @@ export default {
 
 @media (max-width: $mobile-max-width) {
     .application {
-        height: 720px;
+        height: fit-content;
     }
 
     .title {
@@ -298,8 +298,12 @@ export default {
     }
 
     .content {
-        height: 404px;
-        padding: 30px 20px;
+        height: fit-content !important;
+        padding: 0 20px 10px 20px;
+
+        ul {
+            padding-left: 10px;
+        }
     }
 
     .button-list {
