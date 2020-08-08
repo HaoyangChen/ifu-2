@@ -909,6 +909,10 @@
         "peopleUnit": "人",
         "time": "志愿周期",
         "timeUnit": "个月",
-        "submit": "提交申请"
+        "submit": "提交申请",
+        "staff": {
+            "tasks": "工作内容",
+            "requirements": "工作能力与要求"
+        }
     }
 }

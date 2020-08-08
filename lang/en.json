@@ -911,6 +911,10 @@
         "peopleUnit": " available",
         "time": "Volunteer Period",
         "timeUnit": " month(s)",
-        "submit": "Apply Now"
+        "submit": "Apply Now",
+        "staff": {
+            "tasks": "Tasks",
+            "requirements": "Qualification and Requirements"
+        }
     }
 }
