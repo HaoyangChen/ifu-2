@@ -99,14 +99,14 @@
                 链接。月报、年报总结。加下载report 链接。
             </p>
         </section>
-        <section>
-            <div>
+        <section class="become-campus-volunteer">
+            <div class="volunteer-become">
                 <h2>成为校园志愿者</h2>
                 <p>
                     IFU致力于减少留学安全问题，提升留学家庭和谐度，改善留学家庭信息不对称，减少留学在外不平等的社会问题，着重服务于留学生家长，以及关注其孩子的心理健康问题。我们将通过3大核心方式来完成我们的使命：紧急情况、信息传递、校园官方信息翻译。
                 </p>
             </div>
-            <div>
+            <div class="campus-volunteer-lr">
                 <div>
                     <h3>作为校园志愿者你将会</h3>
                     <ul>
@@ -131,7 +131,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="ready-to-join">
                     <h2>准备好加入我们了吗？</h2>
                     <p>
                         感谢你愿意为留学群体，为IFU让留学家庭更安心的使命做出一份贡献～
@@ -203,10 +203,11 @@ export default {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    background: url(~assets/volunteer/section-school.png);
+    background: url(~assets/volunteer/section-school.png) no-repeat;
 
     .color-underline {
         border-bottom: 5px solid;
+        width: fit-content;
     }
     .east-color {
         border-color: #34bbc9;
@@ -226,5 +227,21 @@ export default {
     width: 70%;
     margin-left: 0px;
     line-height: 31px;
+}
+
+.become-campus-volunteer {
+    background: url(~assets/volunteer/become-campus-volunteer.svg) no-repeat;
+    background-color: rgba(201, 215, 74, 0.2);
+
+    .volunteer-become {
+        width: 62%;
+        line-height: 31px;
+        color: #ffffff;
+    }
+
+    .campus-volunteer-lr {
+        display: flex;
+        margin-top: 120px;
+    }
 }
 </style>
