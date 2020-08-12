@@ -42,17 +42,9 @@
                 {{ description }}
             </p>
             <h3>{{ $t('application.staff.tasks') }}</h3>
-            <ul>
-                <li v-for="task in tasks" :key="task">
-                    {{ task }}
-                </li>
-            </ul>
+            <p>{{ task }}</p>
             <h3>{{ $t('application.staff.requirements') }}</h3>
-            <ul>
-                <li v-for="requirement in requirements" :key="requirement">
-                    {{ requirement }}
-                </li>
-            </ul>
+            <p>{{ requirement }}</p>
         </div>
         <div class="button-list">
             <div
@@ -104,12 +96,12 @@ export default {
             type: String,
             required: true,
         },
-        requirements: {
-            type: Array,
+        requirement: {
+            type: String,
             required: true,
         },
-        tasks: {
-            type: Array,
+        task: {
+            type: String,
             required: true,
         },
         link: {
@@ -183,6 +175,7 @@ export default {
     max-width: 568px;
     height: 888px;
     background: white;
+    position: relative;
 }
 
 .title {
@@ -222,22 +215,15 @@ export default {
 .content {
     overflow: hidden;
     width: 100%;
-    padding: 0 17px 0 37px;
+    padding: 27px 47px;
 
     p {
-        margin-bottom: 0;
+        margin: 0;
     }
 
     h3 {
         font-size: 16px;
         margin-bottom: 0;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    ul {
-        margin: 0;
-        padding-left: 0;
     }
 }
 
@@ -246,6 +232,8 @@ export default {
     height: 109px;
     display: flex;
     text-align: center;
+    position: absolute;
+    bottom: 0;
 
     .button-1,
     .apply-button {
@@ -282,8 +270,13 @@ export default {
 }
 
 @media (max-width: 1200px) {
+    .application {
+        height: 929px;
+    }
+
     .title {
         font-size: 20px;
+        padding: 0 117px 0 27px;
     }
 }
 
@@ -299,15 +292,12 @@ export default {
 
     .content {
         height: fit-content !important;
-        padding: 0 20px 10px 20px;
-
-        ul {
-            padding-left: 10px;
-        }
+        padding: 20px;
     }
 
     .button-list {
         height: 69px;
+        position: relative;
 
         .ifuicon {
             font-size: 20px;
