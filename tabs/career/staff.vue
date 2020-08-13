@@ -9,13 +9,19 @@
                 <img src="@/assets/career/staff/staff.png" />
             </div>
         </div>
-        <section class="join-section">
-            <p>
-                感谢您对我们的认可，IFU目前暂无工作人员岗位招聘。考虑作为志愿者加入我们？
-            </p>
-            <a @click="$router.go({ path: localePath('/career'), force: true })"
-                >查看志愿者招募职位>>></a
-            >
+        <section class="staff-section">
+            <staff-application
+                v-for="(staff, index) in staffs[$i18n.locale]"
+                :key="index"
+                :name="staff.name"
+                :department="staff.department"
+                :description="staff.description"
+                :task="staff.task"
+                :requirement="staff.requirement"
+                :people="staff.people"
+                :link="staff.link"
+                :urgent="staff.urgent || false"
+            />
         </section>
         <section class="clipart-section">
             <div>
@@ -26,7 +32,23 @@
 </template>
 
 <script>
-export default {};
+import StaffApplication from '@/components/StaffApplication.vue';
+import staffData from '@/data/staff.json';
+import staffDataEn from '@/data/staff-en.json';
+
+export default {
+    components: {
+        StaffApplication,
+    },
+    data() {
+        return {
+            staffs: {
+                zh: staffData,
+                en: staffDataEn,
+            },
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -49,37 +71,20 @@ export default {};
     }
 }
 
-.join-section,
+.staff-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > * {
+        flex-basis: 48%;
+        margin-bottom: 50px;
+    }
+}
+
 .clipart-section {
     text-align: center;
-}
 
-.join-section {
-    p,
-    a {
-        margin: 15px auto;
-    }
-
-    p {
-        width: 100%;
-        text-align: center;
-    }
-
-    a {
-        display: block;
-        width: 50%;
-        text-align: right;
-        color: $button-color;
-        text-decoration: none;
-
-        &:hover {
-            color: $dark-pink;
-            cursor: pointer;
-        }
-    }
-}
-
-.clipart-section {
     img {
         width: 100%;
     }
@@ -91,6 +96,14 @@ export default {};
 
         > section,
         > div {
+            flex-basis: 100%;
+        }
+    }
+
+    .staff-section {
+        justify-content: center;
+
+        > * {
             flex-basis: 100%;
         }
     }

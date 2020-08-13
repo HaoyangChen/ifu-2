@@ -24,3 +24,12 @@ $background-light-blue: #f1f9ff;
 
 // Components
 $button-color: #22a5d8;
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
