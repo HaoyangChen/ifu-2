@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="distribution-image-mobile mobile">
-                <img src="../../assets/about/culture/map-mobile.png" />
+                <img :src="mapMobile[$i18n.locale]" />
             </div>
         </section>
         <section class="join-section">
@@ -96,6 +96,8 @@
 import Button from '@/components/Button.vue';
 import mapImage from '@/assets/about/culture/map.png';
 import mapEnImage from '@/assets/about/culture/map-en.png';
+import mapMobileImage from '@/assets/about/culture/map-mobile.png';
+import mapMobileImageEn from '@/assets/about/culture/map-mobile-en.png';
 
 export default {
     name: 'Culture',
@@ -107,6 +109,10 @@ export default {
             map: {
                 zh: mapImage,
                 en: mapEnImage,
+            },
+            mapMobile: {
+                zh: mapMobileImage,
+                en: mapMobileImageEn,
             },
         };
     },
