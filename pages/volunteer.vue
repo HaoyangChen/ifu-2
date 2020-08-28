@@ -99,6 +99,25 @@
                 链接。月报、年报总结。加下载report 链接。
             </p>
         </section>
+        <div class="swiper-section">
+            <div v-swiper:mySwiper="swiperOption">
+                <div class="swiper-wrapper">
+                    <div
+                        v-for="(item, index) in swiperList"
+                        :key="index"
+                        class="swiper-slide"
+                    >
+                        <div class="img">
+                            <img :src="item.image" />
+                            <p>{{ item.title }}</p>
+                            <p>{{ item.subTitle }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div slot="button-prev" class="swiper-button-prev"></div>
+                <div slot="button-next" class="swiper-button-next"></div>
+            </div>
+        </div>
         <section class="become-campus-volunteer">
             <div class="volunteer-become">
                 <h2>成为校园志愿者</h2>
@@ -144,11 +163,19 @@
 </template>
 
 <script>
+import { directive } from 'vue-awesome-swiper';
 import Banner from '@/components/Banner.vue';
 import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
+import swiperImage1 from '@/assets/volunteer/carousel/1.png';
+import swiperImage2 from '@/assets/volunteer/carousel/2.png';
+import swiperImage3 from '@/assets/volunteer/carousel/3.png';
+import 'swiper/css/swiper.css';
 
 export default {
+    directives: {
+        swiper: directive,
+    },
     components: {
         Banner,
         Button,
@@ -156,7 +183,41 @@ export default {
     data() {
         return {
             bannerImage,
+            swiperOption: {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 150,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+            },
         };
+    },
+    computed: {
+        swiperList() {
+            return [
+                {
+                    title: '2017加州中国留学生家长交流峰会（上海）',
+                    image: swiperImage1,
+                },
+                {
+                    title: 'IFU X Shelter Helper 募集善款活动',
+                    image: swiperImage2,
+                },
+                {
+                    title: '农历新年聚会',
+                    image: swiperImage3,
+                },
+            ];
+        },
     },
 };
 </script>
@@ -227,6 +288,32 @@ export default {
     width: 70%;
     margin-left: 0px;
     line-height: 31px;
+}
+
+.swiper-section {
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: white;
+        font-weight: bold;
+    }
+
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .img {
+                height: 580px;
+                width: 80%;
+                img {
+                    width: 100%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
 
 .become-campus-volunteer {
