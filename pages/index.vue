@@ -134,22 +134,6 @@
                         <span>{{ $t('home.announcement.2.time') }}</span
                         >{{ $t('home.announcement.2.name') }}
                     </li>
-                    <li>
-                        <span>{{ $t('home.announcement.3.time') }}</span
-                        >{{ $t('home.announcement.3.name') }}
-                    </li>
-                    <li>
-                        <span>{{ $t('home.announcement.4.time') }}</span
-                        >{{ $t('home.announcement.4.name') }}
-                    </li>
-                    <li>
-                        <span>{{ $t('home.announcement.5.time') }}</span
-                        >{{ $t('home.announcement.5.name') }}
-                    </li>
-                    <li>
-                        <span>{{ $t('home.announcement.6.time') }}</span
-                        >{{ $t('home.announcement.6.name') }}
-                    </li>
                 </ul>
             </section>
             <section class="announcement-image">
@@ -391,8 +375,7 @@ export default {
                 {
                     image: eventImage3,
                     text: this.$t('home.eventList.text4'),
-                    link:
-                        'https://mp.weixin.qq.com/s?__biz=MzU1MTE2MDkxOQ==&mid=2247486143&idx=1&sn=bd6151cd3e8f5aed1a4b34604426a592&chksm=fb94d787cce35e91c270bf50b678cacadff08c479698a784831fc5b7c0dd42f343ed82197778&token=1217661680&lang=zh_CN#rd ',
+                    link: 'https://www.bilibili.com/video/BV1dv411y78M',
                 },
                 {
                     image: eventImage4,
