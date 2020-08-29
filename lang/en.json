@@ -264,17 +264,20 @@
             "div-1": {
                 "title": "East Coast U.S.",
                 "content": "As the kick off session of this year's IFU College Carnival, the U.S. east coast session invited more than 10 seniors from overseas colleges and universities to share with international families. At the same time, we invited both Chinese and foreign professional guests to share their <b>analysis on study abroad policy, comparison on Sino-US education system</b>, and insights on the <b>measures for international students during the epidemic.</b>",
-                "buttonText": "Recap Clips"
+                "buttonText": "Recap Post",
+                "buttonText2": "Video Gallery"
             },
             "div-2": {
                 "title": "Canada & U.K.",
                 "content": "This year is the first year that IFU has organized a carnival focusing on Canada and the United Kingdom. We are glad to have seniors share their experience related to <b>living, academic preparation, and career in Canada and the United Kingdom.</b> And our guest speakers with rich experience in studying abroad shared their insights on the <b>benefits of studying in the U.K. and made an introduction to the top 100 universities.</b> U.K. as the No.1 choice for Chinese families studying abroad in the 2020 Study Abroad White Paper, parents and students who are interested in studying in the U.K. come check out our recap videos now!",
-                "buttonText": "Recap Clips"
+                "buttonText": "Recap Post",
+                "buttonText2": "Video Gallery"
             },
             "div-3": {
                 "title": "West Coast U.S.",
                 "content": "The U.S. west coast session is the final session of our IFU College Carnival this year. The information brought by seniors and guest speakers is even more critical and helpful. In addition to panel discussions on <b>all aspects of studying abroad in the U.S.</b> brought by more than 10 seniors living on the west coast, this session also covered interpretation related to the <b>legal status of international students and their visas, and common legal problems</b> encountered by international students and <b>how to avoid</b> those problems.",
-                "buttonText": "Recap Clips"
+                "buttonText": "Recap Post",
+                "buttonText2": "Video Gallery"
             }
         }
     },
@@ -431,8 +434,12 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": ["University College London"],
-            "singapore": ["National University of Singapore"]
+            "uk": [
+                "University College London"
+            ],
+            "singapore": [
+                "National University of Singapore"
+            ]
         },
         "story": {
             "achievement": "Our Achievement",

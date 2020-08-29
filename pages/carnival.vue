@@ -149,44 +149,89 @@
         </section>
         <section class="us-east-section">
             <div class="video">
-                <img src="@/assets/carnival/us-east.svg" />
+                <iframe
+                    src="//player.bilibili.com/player.html?aid=244071100&bvid=BV1pv411v7hJ&cid=218067581&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                >
+                </iframe>
             </div>
             <div class="text">
                 <h2>{{ $t('carnival.review.div-1.title') }}</h2>
                 <p v-html="$t('carnival.review.div-1.content')" />
-                <Button
-                    external
-                    to="https://www.bilibili.com/video/BV1pv411v7hJ/"
-                    >{{ $t('carnival.review.div-1.buttonText') }}</Button
-                >
+                <div class="button-container">
+                    <Button
+                        external
+                        to="https://www.bilibili.com/video/BV1pv411v7hJ/"
+                        >{{ $t('carnival.review.div-1.buttonText2') }}</Button
+                    >
+                    <Button
+                        external
+                        to="https://mp.weixin.qq.com/s/gbmCitvhfk8XiWDhwtiqkw"
+                        >{{ $t('carnival.review.div-1.buttonText') }}</Button
+                    >
+                </div>
             </div>
         </section>
         <section class="canada-uk-section">
             <div class="text">
                 <h2>{{ $t('carnival.review.div-2.title') }}</h2>
                 <p v-html="$t('carnival.review.div-2.content')" />
-                <Button
-                    external
-                    to="https://www.bilibili.com/video/BV1Sv411q73A/"
-                    >{{ $t('carnival.review.div-2.buttonText') }}</Button
-                >
+                <div class="button-container">
+                    <Button
+                        external
+                        to="https://www.bilibili.com/video/BV1Sv411q73A/"
+                        >{{ $t('carnival.review.div-2.buttonText2') }}</Button
+                    >
+                    <Button
+                        external
+                        to="https://mp.weixin.qq.com/s/KyuYcA1yqr0YqDBR2Ivrkg"
+                        >{{ $t('carnival.review.div-2.buttonText') }}</Button
+                    >
+                </div>
             </div>
             <div class="video">
-                <img src="@/assets/carnival/canada-uk.svg" />
+                <iframe
+                    src="//player.bilibili.com/player.html?aid=244052186&bvid=BV1Sv411q73A&cid=217608009&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                >
+                </iframe>
             </div>
         </section>
         <section class="us-west-section">
             <div class="video">
-                <img src="@/assets/carnival/us-west.svg" />
+                <iframe
+                    src="//player.bilibili.com/player.html?aid=711505277&bvid=BV1FD4y1U76M&cid=217541685&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                >
+                </iframe>
             </div>
             <div class="text">
                 <h2>{{ $t('carnival.review.div-3.title') }}</h2>
                 <p v-html="$t('carnival.review.div-3.content')" />
-                <Button
-                    external
-                    to="https://www.bilibili.com/video/BV1FD4y1U76M/"
-                    >{{ $t('carnival.review.div-3.buttonText') }}</Button
-                >
+                <div class="button-container">
+                    <Button
+                        external
+                        to="https://www.bilibili.com/video/BV1FD4y1U76M/"
+                        >{{ $t('carnival.review.div-3.buttonText2') }}</Button
+                    >
+                    <Button
+                        external
+                        to="https://mp.weixin.qq.com/s/lYcVpNnrFzgjwKcuJd7QwA"
+                        >{{ $t('carnival.review.div-3.buttonText') }}</Button
+                    >
+                </div>
             </div>
         </section>
         <div class="section-schedule">
@@ -518,11 +563,20 @@ export default {
             width: 100%;
             height: 100%;
         }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .text {
         flex-basis: 58%;
         padding-left: 8%;
+    }
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
@@ -530,7 +584,13 @@ export default {
     display: flex;
     .video {
         flex-basis: 42%;
+
         img {
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
             width: 100%;
             height: 100%;
         }
@@ -539,6 +599,10 @@ export default {
         flex-basis: 58%;
         padding-right: 8%;
     }
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 
 .us-west-section {
@@ -546,7 +610,13 @@ export default {
     display: flex;
     .video {
         flex-basis: 42%;
+
         img {
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
             width: 100%;
             height: 100%;
         }
@@ -554,6 +624,10 @@ export default {
     .text {
         flex-basis: 58%;
         padding-left: 8%;
+    }
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
