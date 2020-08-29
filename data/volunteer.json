@@ -20,76 +20,24 @@
         "urgent": true
     },
     {
-        "name": "Panelists",
-        "department": "2020学长学姐嘉年华",
-        "requirement": "有演讲经历，具备流利沟通表达能力；自信有感染力；拥有一年以上留学经历",
-        "description": "在嘉年华中的学长学姐panel、自由畅谈break-out session、以及嘉年华后的学长学姐茶话会中，分享你最宝贵的留学故事和建议。让你的故事启发并鼓励更多留学生",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "若干",
-        "time": "1",
-        "link": "https://www.wjx.top/jq/83086067.aspx",
-        "urgent": true
-    },
-    {
-        "name": "Management Specialists",
-        "department": "2020学长学姐嘉年华",
-        "requirement": "能熟悉操作zoom或Bilibili平台；有良好的文字编辑能力；有良好的沟通交流能力",
-        "description": "在活动前中后期进行社群运营以及用户运营管理，在嘉年华活动群中解答同学们与家长们的疑虑，负责协助嘉年华活动进行中的zoom、bilibili平台管理",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "若干",
-        "time": "1",
-        "link": "https://www.wjx.top/jq/83086067.aspx",
-        "urgent": true
-    },
-    {
-        "name": "Communication Specialists",
-        "department": "2020学长学姐嘉年华",
-        "requirement": "熟悉操作zoom或Bilibili平台；熟悉推文编辑、有良好的文字功底；有基础视频剪辑、海报制作能力；有良好的交流沟通能力",
-        "description": "协助活动宣传海报及文案制作，记录活动过程，采访嘉宾和活动参与者，完成活动回顾报道以及社交媒体平台运营",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "若干",
-        "time": "1",
-        "link": "https://www.wjx.top/jq/83086067.aspx",
-        "urgent": true
-    },
-    {
-        "name": "微信公众号作者",
+        "name": "微信公众号栏目作者",
         "department": "运营部",
         "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；较强的新闻报道写作能力；具有一定英译中能力",
         "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪；展示真实留学生活，分享优质留学经验；宣传IFU组织形象",
         "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "若干",
+        "people": "1-2",
         "time": "3",
         "urgent": true
     },
     {
-        "name": "Instagram平台内容运营",
+        "name": "公众号责任编辑",
         "department": "运营部",
-        "requirement": "非硬性要求，有图片设计基础优先；如果有社交媒体运营经验/做过博主，请提供相关作品",
-        "description": "负责Instagram内容运营规划，定期将数据分析反馈给运营组负责人，优化运营方案；基于宣传组织形象的目的，制作图片及文案，收集IFU活动&团队照片，发布帖子",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "3",
-        "urgent": true
-    },
-    {
-        "name": "公众号编辑",
-        "department": "运营部",
-        "requirement": "会使用秀米网站进行文章排版；非硬性要求，有图片设计基础优先；如果有社交媒体运营经验/做过博主，请提供相关作品",
-        "description": "根据已有文案素材，进行公众号文章排版，保证最终效果美观吸引用户",
+        "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；具有一定文字与排版功底，认真细致，有公众号、新闻、个人栏目运营经验优先；具有一定英译中能力",
+        "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪。确保IFU发布信息的准确性、全面性、客观性，把控发布内容的质量。",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
         "urgent": true
-    },
-    {
-        "name": "知乎平台内容运营",
-        "department": "运营部",
-        "requirement": "至少一年留学经验；有知乎账号运营经验优先",
-        "description": "负责知乎内容运营规划，定期将数据分析反馈给运营组负责人，优化运营方案；基于宣传组织形象的目的，制作图片及文案，收集IFU活动&团队照片，发布帖子；挑选留学相关问题邀请，发布高质量回答；挑选公众号优质内容，搬运到知乎平台",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "6"
     },
     {
         "name": "UI/UX设计师",
@@ -100,76 +48,23 @@
         "people": "2-3",
         "time": "6"
     },
-    {
-        "name": "HR助理",
-        "department": "行政部",
-        "requirement": "Business HR/Admin专业；相关HR/Admin实习经历优先",
-        "description": "监督并参与IFU人员变动的流程设计(人员升级，职位调动等)；更新IFU招聘、离职的邮件；简历筛选screening；通知工作人员(转正，面试等等)",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1-2",
-        "time": "6"
-    },
-    {
-        "name": "网页文案撰写及翻译员",
-        "department": "技术部",
-        "requirement": "有中英文翻译经验优先",
-        "description": "能够在基于对IFU有良好认识的基础上，撰写网页所需文案以及翻译工作等部门负责人安排的其他相关工作",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "6"
-    },
-    {
-        "name": "视频博主",
-        "department": "运营部",
-        "requirement": "会使用AE或者其他(包括手机)视频剪辑软件；了解最新热词/大火的视频或音乐，能把当下热门有趣的元素结合在视频里，吸引更多观众",
-        "description": "协助IFU Bilibili等平台视频制作与剪辑；如运营组有制定的视频主题，协助收集视频素材；每月独立制作一只留学生活相关视频",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "6"
-    },
-    {
-        "name": "行政助理",
-        "department": "行政部",
-        "requirement": "细心，负责；有公司行政实习经验优先",
-        "description": "IFU文件整理+归档；行政邮件发送+回复；Member邮件管理；团建活动策划，会议记录，行政事务处理等",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1-2",
-        "time": "6"
-    },
-    {
-        "name": "网页数据分析师",
-        "department": "技术部",
-        "requirement": "Data Analystics 相关专业；相关网页数据分析(Web Analystic)经历优先",
-        "description": "定期收集整理网页运营性能数据并进行分析；根据数据整理网页运营成效，与UX设计师和技术负责人一起制定网页发展修改方向",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "6"
-    },
+    
     {
         "name": "网页前端开发人员",
         "department": "技术部",
         "requirement": "能熟练运用HTML&CSS, Vue, Javascript 等相关编程语言；能独立完成网页的视觉设计到静态、动态网页的转化；Computer Science, Interactive Design等相关专业优先，请提供作品集",
         "description": "根据设计稿搭建合理高效的页面；根据用户、数据以及其他成员的反馈对网页进行定期的维护与优化",
         "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "2-3",
+        "people": "1-2",
         "time": "6"
     },
     {
-        "name": "Campus Leader",
-        "department": "志愿者团队",
-        "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献；有参加或者组建相关社团的经验",
-        "description": "CampusLeader除了履行志愿者的基本职责之外，是该校所有志愿者的总负责人，需要管理、领导团队，负责招募志愿者，参加IFU每月的会议等",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "每个校区1",
-        "time": "6-12"
-    },
-    {
-        "name": "Campus Volunteer",
-        "department": "志愿者团队",
-        "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献",
-        "description": "履行志愿者的基本职责：确保信息传递，紧急情况发生时能够第一时间与校园志愿者组长协助工作人员及时处理；配合校园志愿者组长以及地区负责人完成IFU“让留学家庭更安心”的使命",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "若干",
-        "time": "3-12"
+        "name": "IFU多多罗学术辅导授课导师",
+        "department": "多多罗",
+        "requirement": "TOP50本科学校在读或毕业；除教授课程外，还须义务配合IFU多多罗销售宣传与课程设计；有良好的语言表达能力",
+        "description": "如果你细心，耐心，热爱教育与分享，每周有2-3小时的时间与学生线上交流 （具体时间以导师方便的时间为准），愿意与学生分享你的申请经验、留学生活、科研或工作经历，帮助学员修改申请文书，提供学术指导，欢迎加入我们的多多罗导师团。",
+        "reward": "薪资+奖金约30美金/小时；提供实习/工作证明； 适情况颁发志愿者证书",
+        "people": "不限",
+        "time": "12"
     }
 ]
