@@ -15,7 +15,7 @@
         "subTitle1": "让留学生活更安全",
         "subTitle2": "让学生家长更放心",
         "followUs": "关注我们 获取实时动态",
-        "contactUs": "联系我们",
+        "contactUs": "联系我们a",
         "joinUs": "加入我们",
         "moreInfo": "更多资讯",
         "resourceShare": "资源分享",
@@ -435,12 +435,8 @@
                 "阿尔伯塔大学",
                 "维多利亚大学"
             ],
-            "uk": [
-                "伦敦大学学院"
-            ],
-            "singapore": [
-                "新加坡国立大学"
-            ]
+            "uk": ["伦敦大学学院"],
+            "singapore": ["新加坡国立大学"]
         },
         "history": {
             "2017": {
