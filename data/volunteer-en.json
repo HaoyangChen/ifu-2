@@ -7,7 +7,7 @@
         "reward": "Certificate of Volunteer; Certificate of Appreciation",
         "people": "1-2",
         "time": "1-3",
-        "urgent": true
+        "urgent": false
     },
     {
         "name": "Legal Specialist",
@@ -17,7 +17,7 @@
         "reward": "Certificate of Volunteer; Certificate of Appreciation",
         "people": "1",
         "time": "3-6",
-        "urgent": true
+        "urgent":false
     },
     {
         "name": "Media Operation & Event Planning - Columnist",
