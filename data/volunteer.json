@@ -27,7 +27,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1-2",
         "time": "3",
-        "urgent": true
+        "urgent": false
     },
     {
         "name": "公众号责任编辑",
@@ -37,7 +37,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "urgent": true
+        "urgent": false
     },
     {
         "name": "UI/UX设计师",
