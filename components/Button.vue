@@ -55,6 +55,7 @@ button {
     color: white;
     font-size: $text-size;
     padding: 0 45px;
+    margin-right: 50px;
 }
 
 button:hover {

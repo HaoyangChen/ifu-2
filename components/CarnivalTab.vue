@@ -119,6 +119,7 @@ export default {
         &:hover {
             color: $button-color;
             cursor: pointer;
+            border-bottom: 2.3px solid $button-color;
         }
     }
 }
