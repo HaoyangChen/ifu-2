@@ -126,7 +126,7 @@
                 </p>
             </div>
             <div class="campus-volunteer-lr">
-                <div>
+                <div class="requirement">
                     <h3>作为校园志愿者你将会</h3>
                     <ul>
                         <li>
@@ -282,6 +282,9 @@ export default {
     .singapore-color {
         border-color: #fda63b;
     }
+    div p {
+        text-decoration: underline;
+    }
 }
 
 .event-review {
@@ -329,6 +332,11 @@ export default {
     .campus-volunteer-lr {
         display: flex;
         margin-top: 120px;
+        .requirement {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 30px;
+        }
     }
 }
 </style>
