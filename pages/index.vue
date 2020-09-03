@@ -134,6 +134,14 @@
                         <span>{{ $t('home.announcement.2.time') }}</span
                         >{{ $t('home.announcement.2.name') }}
                     </li>
+                    <li>
+                        <span>{{ $t('home.announcement.3.time') }}</span
+                        >{{ $t('home.announcement.3.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.4.time') }}</span
+                        >{{ $t('home.announcement.4.name') }}
+                    </li>
                 </ul>
             </section>
             <section class="announcement-image">
