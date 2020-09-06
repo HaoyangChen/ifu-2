@@ -772,9 +772,8 @@ img {
         font-weight: bold;
     }
     .qr-announcement > img {
-        height: 81px;
-        width: 81px;
         margin: 0px 55px;
+        width: auto;
     }
     img {
         width: 100%;
