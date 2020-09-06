@@ -151,11 +151,14 @@
                     </ul>
                 </div>
                 <div class="ready-to-join">
-                    <h2>准备好加入我们了吗？</h2>
-                    <p>
-                        感谢你愿意为留学群体，为IFU让留学家庭更安心的使命做出一份贡献～
-                    </p>
-                    <Button to="/career">提交申请</Button>
+                    <div class="content">
+                        <h2>准备好加入我们了吗？</h2>
+                        <p>
+                            感谢你愿意为留学群体，为IFU让留学家<br />庭更安心的使命做出一份贡献～
+                        </p>
+                        <Button to="/career">提交申请</Button>
+                    </div>
+                    <img src="@/assets/volunteer/Kimmy.png" alt="kimmy" />
                 </div>
             </div>
         </section>
@@ -336,6 +339,26 @@ export default {
             background-color: white;
             box-sizing: border-box;
             padding: 30px;
+            width: 50%;
+        }
+        .ready-to-join {
+            position: relative;
+            width: 50%;
+            padding-left: 50px;
+            box-sizing: border-box;
+            .content {
+                width: 461px;
+                height: 333px;
+                background-image: url(~assets/volunteer/frame.png);
+                box-sizing: border-box;
+                padding-left: 50px;
+                padding-top: 50px;
+            }
+            img {
+                position: absolute;
+                top: 320px;
+                right: -30px;
+            }
         }
     }
 }
