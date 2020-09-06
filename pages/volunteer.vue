@@ -88,6 +88,12 @@
                 <h2 class="color-underline singapore-color">新加坡</h2>
                 <p>新加坡国立大学</p>
             </div>
+            <div class="pic">
+                <h3>持续扩展中...</h3>
+                <span>想要成为校园志愿者，为<br />留学生群体尽一份力吗？</span>
+                <br />
+                <span class="link">加入我们 >>></span>
+            </div>
         </section>
         <section class="event-review">
             <h2>活动回顾</h2>
@@ -288,6 +294,21 @@ export default {
     div p {
         text-decoration: underline;
     }
+    .pic {
+        width: 337px;
+        height: 289px;
+        background-image: url(~assets/volunteer/bubble.png);
+        position: relative;
+        top: 150px;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-top: 50px;
+        color: black;
+        text-decoration: none;
+        .link {
+            color: #4ebdf7;
+        }
+    }
 }
 
 .event-review {
@@ -355,9 +376,8 @@ export default {
                 padding-top: 50px;
             }
             img {
-                position: absolute;
-                top: 320px;
-                right: -30px;
+                position: relative;
+                left: 400px;
             }
         }
     }
