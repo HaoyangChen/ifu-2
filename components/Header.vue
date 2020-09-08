@@ -2,7 +2,7 @@
     <header>
         <div class="header-inner">
             <nuxt-link class="desktop logo" :to="localePath('/')" exact>
-                <img src="../assets/header/logo.png" />
+                <img src="../assets/header/logo2020.png" />
             </nuxt-link>
             <nuxt-link class="mobile logo-mobile" :to="localePath('/')" exact>
                 <img src="../assets/header/logo_mobile.png" />
@@ -145,6 +145,11 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .logo > img {
+        width: 391px;
+        height: auto;
     }
 }
 
