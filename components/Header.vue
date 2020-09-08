@@ -10,7 +10,6 @@
             <p class="mobile title">
                 INTERNATIONAL FAMILY UNION
                 <br />
-                国际家长汇
             </p>
             <div class="header-menu">
                 <n-link class="n-link" :to="localePath('/')" exact>{{
@@ -148,7 +147,7 @@ header {
     }
 
     .logo > img {
-        width: 391px;
+        width: 300px;
         height: auto;
     }
 }
