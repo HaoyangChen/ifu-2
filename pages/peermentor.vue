@@ -106,37 +106,36 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
         </section>
 
-        <section>
-            <div class="section-requirement">
-                <div class="half-half orange-color">
-                    <h2>朋辈导师 要求</h2>
-                    <ul>
-                        <li>有一颗愿意帮助他人，有志愿者精神的人；</li>
-                        <li>乐于分享，享受帮助他人成长的感觉；</li>
-                        <li>拥有积极向上，勇于求进的热情;</li>
-                        <li>有良好的学术背景和优质的学生品行；</li>
-                        <li>在不同领域有一定的经验 (领域不限);</li>
-                        <li>能够参加朋辈导师团队的每月会议，培训和各类活动</li>
-                    </ul>
-                </div>
-                <div class="half-half blue-color">
-                    <h2>朋辈导师 福利</h2>
-                    <ul>
-                        <li>获得定期的资深培训；</li>
-                        <li>获得IFU志愿者证书；</li>
-                        <li>有机会评选“年度优秀 导师服务奖”;</li>
-                        <li>锻炼自身的领导和咨询的能力；</li>
-                        <li>
-                            收获自我的成长，通过反思和复盘获得对自我新的认知;
-                        </li>
-                        <li>拓展人际关系网，结实一群志同道合的小伙伴；</li>
-                        <li>
-                            IFU社交平台将会对优秀导师和学生的感人故事和真诚分享进行系列报道
-                        </li>
-                    </ul>
-                </div>
+        <div class="section-requirement">
+            <div class="half-half orange-color">
+                <h2>朋辈导师 要求</h2>
+                <ul>
+                    <li>有一颗愿意帮助他人，有志愿者精神的人；</li>
+                    <li>乐于分享，享受帮助他人成长的感觉；</li>
+                    <li>拥有积极向上，勇于求进的热情;</li>
+                    <li>有良好的学术背景和优质的学生品行；</li>
+                    <li>在不同领域有一定的经验 (领域不限);</li>
+                    <li>能够参加朋辈导师团队的每月会议，培训和各类活动</li>
+                </ul>
             </div>
-        </section>
+            <div class="half-half blue-color">
+                <h2>朋辈导师 福利</h2>
+                <ul>
+                    <li>获得定期的资深培训；</li>
+                    <li>获得IFU志愿者证书；</li>
+                    <li>有机会评选“年度优秀 导师服务奖”;</li>
+                    <li>锻炼自身的领导和咨询的能力；</li>
+                    <li>
+                        收获自我的成长，通过反思和复盘获得对自我新的认知;
+                    </li>
+                    <li>拓展人际关系网，结实一群志同道合的小伙伴；</li>
+                    <li>
+                        IFU社交平台将会对优秀导师和学生的感人故事和真诚分享进行系列报道
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <!-- Keep the following commented code -->
         <!-- <section>
             <button class="button" @click="openEnvelope">
