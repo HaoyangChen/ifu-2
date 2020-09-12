@@ -38,26 +38,46 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
             <div class="fourreason-outside">
                 <div class="one-fourth">
-                    <div class="circle-image"></div>
+                    <div class="circle-image">
+                        <img
+                            src="@/assets/peermentor/icon_pressure.png"
+                            alt="pressue icon"
+                        />
+                    </div>
                     <h3 class="center">压力</h3>
                     <p>心理压力过大，是超过一半留学生失踪事件发生的原因。</p>
                 </div>
                 <div class="one-fourth">
-                    <div class="circle-image"></div>
+                    <div class="circle-image">
+                        <img
+                            src="@/assets/peermentor/icon_company.png"
+                            alt="company icon"
+                        />
+                    </div>
                     <h3 class="center">陪伴</h3>
                     <p>
                         大部分的留学生都表示需要陪伴，时常感到孤独和抑郁，特别是在疫情时期。
                     </p>
                 </div>
                 <div class="one-fourth">
-                    <div class="circle-image"></div>
+                    <div class="circle-image">
+                        <img
+                            src="@/assets/peermentor/icon_help.png"
+                            alt="help icon"
+                        />
+                    </div>
                     <h3 class="center">帮助</h3>
                     <p>
                         大多学生都表示希望可以在求职、社交上，得到拓展和帮助等。
                     </p>
                 </div>
                 <div class="one-fourth">
-                    <div class="circle-image"></div>
+                    <div class="circle-image">
+                        <img
+                            src="@/assets/peermentor/icon_ignore.png"
+                            alt="ignore icon"
+                        />
+                    </div>
                     <h3 class="center">忽视</h3>
                     <p>
                         留学生群体极容易被主流社会忽视，该项目也可最大程度的帮助这类人群，实现NGO的职责。
