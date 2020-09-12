@@ -20,7 +20,10 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 </p>
             </div>
             <div class="img-container desktop">
-                <img src="@/assets/peermentor/peer_mentor_program.png" />
+                <img
+                    src="@/assets/peermentor/peer_mentor_program.png"
+                    alt="peer mentor program"
+                />
             </div>
         </div>
         <section class="whypeermentor">
@@ -35,16 +38,119 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
             <div class="fourreason-outside">
                 <div class="one-fourth">
-                    <h3>压力</h3>
+                    <div class="circle-image"></div>
+                    <h3 class="center">压力</h3>
+                    <p>心理压力过大，是超过一半留学生失踪事件发生的原因。</p>
                 </div>
                 <div class="one-fourth">
-                    <h3>陪伴</h3>
+                    <div class="circle-image"></div>
+                    <h3 class="center">陪伴</h3>
+                    <p>
+                        大部分的留学生都表示需要陪伴，时常感到孤独和抑郁，特别是在疫情时期。
+                    </p>
                 </div>
                 <div class="one-fourth">
-                    <h3>帮助</h3>
+                    <div class="circle-image"></div>
+                    <h3 class="center">帮助</h3>
+                    <p>
+                        大多学生都表示希望可以在求职、社交上，得到拓展和帮助等。
+                    </p>
                 </div>
                 <div class="one-fourth">
-                    <h3>忽视</h3>
+                    <div class="circle-image"></div>
+                    <h3 class="center">忽视</h3>
+                    <p>
+                        留学生群体极容易被主流社会忽视，该项目也可最大程度的帮助这类人群，实现NGO的职责。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="join-peermentor">
+            <div class="peermentor-envelop">
+                <img src="@/assets/peermentor/envelop.png" alt="envelop" />
+                <div class="letter-content">
+                    <h2>加入成为我们IFU学员吧！</h2>
+                    <p>
+                        如果近期因为学业繁忙，课程困难，而感到焦虑；如果生活中遇到不顺心的事，而感到郁闷，甚至不安；如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！
+                    </p>
+                    <div class="letterpart-with-graph">
+                        <img
+                            src="@/assets/peermentor/letter_left_graph.png"
+                            alt="letter left graph"
+                        />
+                        <p>IFU朋辈项目，伴你度过留学路上的底谷时光。</p>
+                        <img
+                            src="@/assets/peermentor/letter_right_group.png"
+                            alt="letter left graph"
+                        />
+                    </div>
+                    <p>
+                        我们会一直在这里，陪伴着你走出这段低谷时光。你和我们分享的所有信息和内容都是保密性质的，你可以放心的和我们倾述你的苦恼，让我们一起分摊你的担忧。
+                    </p>
+                    <p>
+                        IFU朋辈导师们是受过特定培训，在各个领域都有有所涉猎。希望我们能够以倾听者，陪伴者和协助者的三重身份，帮助到你，让你不再迷茫和无助。
+                    </p>
+                    <div class="must-know-part">
+                        <h2>学员咨询须知</h2>
+                        <ul>
+                            <li>愿意主动与导师联系</li>
+                            <li>尊重导师，要守时</li>
+                            <li>在该学期内和导师进行谈话</li>
+                            <li>
+                                通过电子邮件/微信/电话与导师跟进，并将进展/困难告与导师
+                            </li>
+                            <li>正面看待导师反馈</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Keep the following commented code -->
+        <!-- <section>
+            <button class="button" @click="openEnvelope">
+                OPEN
+            </button>
+
+            <div class="email">
+                <div class="envelope">
+                    <div class="back paper"></div>
+                    <div class="note">
+                        <div class="form-wrapper">
+                            <form>
+                                <label
+                                    >Send a personal message to someone.</label
+                                >
+                                <textarea
+                                    placeholder="What would you like to say?"
+                                ></textarea>
+
+                                <button type="submit">Share</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="front paper"></div>
+                </div>
+            </div>
+        </section> -->
+        <section>
+            <h2>IFU朋辈咨询项目火热招募进行中...</h2>
+            <p class="peermentor-recruit-p">
+                如果你希望找到一个群体、倾听、陪伴者，或是用自身的经验和能力，指导、鼓舞他人，就赶快点击下方链接报名加入吧！
+            </p>
+            <div class="section-requirement">
+                <div class="half-half">
+                    <img
+                        class="recruit-image"
+                        src="@/assets/peermentor/tutor_graphic.png"
+                        alt="tutor recruitment"
+                    />
+                </div>
+                <div class="half-half">
+                    <img
+                        class="recruit-image"
+                        src="@/assets/peermentor/student_graphic.png"
+                        alt="tutor recruitment"
+                    />
                 </div>
             </div>
         </section>
@@ -65,6 +171,9 @@ export default {
         return {
             bannerImage,
         };
+    },
+    methods: {
+        openEnvelope() {},
     },
 };
 </script>
@@ -111,12 +220,89 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        text-align: center;
 
         .one-fourth {
-            flex-basis: 25%;
+            flex-basis: 21%;
+
+            .circle-image {
+                height: 135px;
+                width: 135px;
+                background: #c4c4c4;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .center {
+                text-align: center;
+            }
         }
     }
+}
+
+.join-peermentor {
+    .peermentor-envelop {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .letter-content {
+            position: absolute;
+            width: 50%;
+            top: 6%;
+
+            .letterpart-with-graph {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: bold;
+            }
+
+            .must-know-part {
+                width: 60%;
+                line-height: 31px;
+                letter-spacing: 0.03em;
+                background: #ffffff;
+                padding: 20px 20px;
+
+                h2 {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.section-requirement {
+    display: flex;
+    justify-content: center;
+
+    .half-half {
+        flex-basis: 50%;
+        text-align: center;
+        padding: 80px 7%;
+        color: #ffffff;
+        ul {
+            text-align: left;
+            line-height: 31px;
+        }
+
+        .recruit-image {
+            width: 350px;
+            height: 100%;
+        }
+    }
+
+    .orange-color {
+        background: #ff9843;
+    }
+    .blue-color {
+        background: #54bef5;
+    }
+}
+
+.peermentor-recruit-p {
+    width: 45%;
 }
 
 p {
@@ -126,5 +312,149 @@ p {
     &:last-of-type {
         margin-bottom: 50px;
     }
+}
+</style>
+
+<style>
+/* letter animation style goes here */
+button,
+.button {
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background: #f7941e;
+    border: none;
+    color: #fff;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    padding: 7px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+button:hover,
+.button:hover {
+    background: #f9ab4f;
+}
+button:active,
+.button:active {
+    background: #da7a08;
+}
+
+.email {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.email .envelope {
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+}
+.email .envelope .paper {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.email .envelope .back:before {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 200px 250px 0px 250px;
+    border-color: transparent transparent #999 transparent;
+    height: 0px;
+    width: 0px;
+}
+.email .envelope .back:after {
+    content: '';
+    display: block;
+    background-color: #999;
+    width: 500px;
+    height: 200px;
+}
+.email .envelope .back.animate:before {
+    -moz-transition: border-width;
+    -o-transition: border-width;
+    -webkit-transition: border-width;
+    transition: border-width;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    border-width: 0 250px 200px 250px;
+}
+.email .envelope .front {
+    top: 200px;
+}
+.email .envelope .front:after {
+    content: '';
+    display: block;
+    background-color: #808285;
+    height: 100px;
+    width: 500px;
+}
+.email .envelope .front:before {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 200px 250px 0px 250px;
+    border-color: transparent #808285;
+    height: 0px;
+    width: 0px;
+}
+.email .envelope .note {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    display: block;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    width: 500px;
+}
+.email .envelope .note.animate {
+    -moz-transition-property: top;
+    -o-transition-property: top;
+    -webkit-transition-property: top;
+    transition-property: top;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    top: 50px;
+}
+.email .envelope .form-wrapper {
+    background: #fff;
+    height: auto;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+    width: 90%;
+}
+.email .envelope .form-wrapper form {
+    border: 1px dotted #000;
+    height: 210px;
+    padding: 20px;
+}
+.email .envelope .form-wrapper label {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 5px;
+}
+.email .envelope .form-wrapper textarea {
+    display: block;
+    float: left;
+    min-height: 100px;
+    overflow: scroll;
+    width: 100%;
 }
 </style>
