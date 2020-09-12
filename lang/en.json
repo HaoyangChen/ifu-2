@@ -105,31 +105,24 @@
         },
         "announcement": {
             "1": {
-                "time": "July 5th: ",
-                "name": "Seminar - Data Science and Machine Learning"
+                "time": "Sep. 5th: ",
+                "name": "Totoroad Seminar — What You Have to Know Before the Fall Semester"
             },
             "2": {
-                "time": "July 18th: ",
-                "name": "2020 IFU College Carnival - East Coast (U.S.)"
+                "time": "Sep. 12th: ",
+                "name": "Totoroad Academy Tutoring — 30-minutes Free Trial Class"
             },
             "3": {
-                "time": "July 19th: ",
-                "name": "2020 IFU College Carnival - Canada"
+                "time": "Sep. 19th: ",
+                "name": "Totoroad Seminar — Grad School Application"
             },
             "4": {
-                "time": "July 19th: ",
-                "name": "2020 IFU College Carnival - West Coast (U.S.)"
+                "time": "Sep. 26th: ",
+                "name": "Totoroad Seniors Panel — Prep for New Semester: Zoom Discussion Session"
             },
-            "5": {
-                "time": "July 26th: ",
-                "name": "Seminar - Major in Math"
-            },
-            "6": {
-                "time": "July 26th ~ Early August: ",
-                "name": "2020 IFU College Carnival - Tea Chat with Seminar Students"
-            },
-            "title": "Events in July",
-            "description": "Working toward our social mission to reduce international families' anxieties, IFU will invite senior students from various majors to help first-year students get to know college majors and career planning in July. Meanwhile, IFU will hold our third College Carnival online, which shows the real study abroad experience. Without the limitation of time zones and locations, IFU will provide high-quality information for international families and develop a network that crosses countries, universities, and ages."
+            "title": "Events in September",
+            "description": "As Fall 2020 comes closer and closer, are you well prepared for the upcoming online semester? IFU Totoroad Academy is dedicated to providing help to all students in need, and we have organized a list of useful guidance and advice for those who may feel not prepared enough for the following academic school year. Please join us for the online workshop and get ready for a fresh start!",
+            "qrDescription": "* Tips: All the event dates are shown in <span>U.S. time.</span> Scan the QR code to sign up now!"
         }
     },
     "carnival": {

@@ -88,6 +88,12 @@
                 <h2 class="color-underline singapore-color">新加坡</h2>
                 <p>新加坡国立大学</p>
             </div>
+            <div class="pic">
+                <h3>持续扩展中...</h3>
+                <span>想要成为校园志愿者，为<br />留学生群体尽一份力吗？</span>
+                <br />
+                <span class="link">加入我们 >>></span>
+            </div>
         </section>
         <section class="event-review">
             <h2>活动回顾</h2>
@@ -126,7 +132,7 @@
                 </p>
             </div>
             <div class="campus-volunteer-lr">
-                <div>
+                <div class="requirement">
                     <h3>作为校园志愿者你将会</h3>
                     <ul>
                         <li>
@@ -151,11 +157,14 @@
                     </ul>
                 </div>
                 <div class="ready-to-join">
-                    <h2>准备好加入我们了吗？</h2>
-                    <p>
-                        感谢你愿意为留学群体，为IFU让留学家庭更安心的使命做出一份贡献～
-                    </p>
-                    <Button to="/career">提交申请</Button>
+                    <div class="content">
+                        <h2>准备好加入我们了吗？</h2>
+                        <p>
+                            感谢你愿意为留学群体，为IFU让留学家<br />庭更安心的使命做出一份贡献～
+                        </p>
+                        <Button to="/career">提交申请</Button>
+                    </div>
+                    <img src="@/assets/volunteer/Kimmy.png" alt="kimmy" />
                 </div>
             </div>
         </section>
@@ -282,6 +291,24 @@ export default {
     .singapore-color {
         border-color: #fda63b;
     }
+    div p {
+        text-decoration: underline;
+    }
+    .pic {
+        width: 337px;
+        height: 289px;
+        background-image: url(~assets/volunteer/bubble.png);
+        position: relative;
+        top: 150px;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-top: 50px;
+        color: black;
+        text-decoration: none;
+        .link {
+            color: #4ebdf7;
+        }
+    }
 }
 
 .event-review {
@@ -329,6 +356,30 @@ export default {
     .campus-volunteer-lr {
         display: flex;
         margin-top: 120px;
+        .requirement {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 30px;
+            width: 50%;
+        }
+        .ready-to-join {
+            position: relative;
+            width: 50%;
+            padding-left: 50px;
+            box-sizing: border-box;
+            .content {
+                width: 461px;
+                height: 333px;
+                background-image: url(~assets/volunteer/frame.png);
+                box-sizing: border-box;
+                padding-left: 50px;
+                padding-top: 50px;
+            }
+            img {
+                position: relative;
+                left: 400px;
+            }
+        }
     }
 }
 </style>

@@ -134,7 +134,20 @@
                         <span>{{ $t('home.announcement.2.time') }}</span
                         >{{ $t('home.announcement.2.name') }}
                     </li>
+                    <li>
+                        <span>{{ $t('home.announcement.3.time') }}</span
+                        >{{ $t('home.announcement.3.name') }}
+                    </li>
+                    <li>
+                        <span>{{ $t('home.announcement.4.time') }}</span
+                        >{{ $t('home.announcement.4.name') }}
+                    </li>
                 </ul>
+                <div class="qr-announcement">
+                    <p v-html="$t('home.announcement.qrDescription')" />
+
+                    <img src="@/assets/home/qrcode-announcements.png" />
+                </div>
             </section>
             <section class="announcement-image">
                 <img src="@/assets/home/announcement.svg" />
@@ -752,7 +765,16 @@ img {
             font-weight: 600;
         }
     }
-
+    .qr-announcement {
+        display: flex;
+    }
+    /deep/ span {
+        font-weight: bold;
+    }
+    .qr-announcement > img {
+        margin: 0px 55px;
+        width: auto;
+    }
     img {
         width: 100%;
     }
