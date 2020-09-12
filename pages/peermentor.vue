@@ -23,12 +23,30 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 <img src="@/assets/peermentor/peer_mentor_program.png" />
             </div>
         </div>
-        <section>
+        <section class="whypeermentor">
             <h2>为什么要实行IFU朋辈咨询项目？</h2>
-            <p>
-                今年的留学生涯，真的是越发的难过了，疫情隔离，游行暴乱，校园关闭等。对于今年毕业的学子，未来是否回国，还是升学读研，一切都是未知数，当面临着越来越多的困难决定时，留学生所面对生活上的、心理上的压力的问题也是不能忽略的。
-                通过IFU这几年处理的紧急事件的经验，和各种线上下活动的反馈，以及平时对学生家长疑惑的收集，我们发现以下几点。IFU秉承“让留学家庭更安心”的使命，感觉到守护留学生的心理健康问题，不容延迟。
-            </p>
+            <div class="whypeermentor-upper">
+                <p>
+                    今年的留学生涯，真的是越发的难过了，疫情隔离，游行暴乱，校园关闭等。对于今年毕业的学子，未来是否回国，还是升学读研，一切都是未知数，当面临着越来越多的困难决定时，留学生所面对生活上的、心理上的压力的问题也是不能忽略的。
+                </p>
+                <p>
+                    通过IFU这几年处理的紧急事件的经验，和各种线上下活动的反馈，以及平时对学生家长疑惑的收集，我们发现以下几点。IFU秉承“让留学家庭更安心”的使命，感觉到守护留学生的心理健康问题，不容延迟。
+                </p>
+            </div>
+            <div class="fourreason-outside">
+                <div class="one-fourth">
+                    <h3>压力</h3>
+                </div>
+                <div class="one-fourth">
+                    <h3>陪伴</h3>
+                </div>
+                <div class="one-fourth">
+                    <h3>帮助</h3>
+                </div>
+                <div class="one-fourth">
+                    <h3>忽视</h3>
+                </div>
+            </div>
         </section>
     </div>
 </template>
@@ -82,6 +100,23 @@ export default {
 .peer-mentor-intro-section {
     border-top: 10px solid rgba(38, 156, 209, 0.8);
     border-bottom: 10px solid rgba(38, 156, 209, 0.8);
+}
+
+.whypeermentor {
+    .whypeermentor-upper {
+        width: 70%;
+    }
+
+    .fourreason-outside {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: center;
+
+        .one-fourth {
+            flex-basis: 25%;
+        }
+    }
 }
 
 p {
