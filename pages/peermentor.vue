@@ -85,6 +85,94 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 </div>
             </div>
         </section>
+        <section class="project-process">
+            <div class="project-process-title">
+                <h1>项目流程与提供服务</h1>
+            </div>
+            <div class="project-process-images">
+                <div class="bubbles-content">
+                    <div class="bubbles-content-blue">
+                        <h3>一对一面谈</h3>
+                        <ul>
+                            <li>陪伴倾听</li>
+                            <li>朋辈咨询</li>
+                            <li>生活经验分享</li>
+                            <li>学习经验分享</li>
+                            <li>简历修改，求职信修改</li>
+                            <li>求职工作经验分享</li>
+                        </ul>
+                    </div>
+                    <div class="bubbles-content-green">
+                        <h3>小组活动</h3>
+                        <ul>
+                            <li>朋辈导师讲座</li>
+                            <li>其他精彩活动</li>
+                        </ul>
+                    </div>
+                    <div class="bubbles-content-right">
+                        <h3>准备好加入我们了吗</h3>
+                        <ul>
+                            <li>成为导师帮助倾听他人</li>
+                            <li>成为学员找到自己的陪伴</li>
+                        </ul>
+                        <button>立即报名</button>
+                    </div>
+                </div>
+                <img
+                    class="blue-person"
+                    src="@/assets/peermentor/blue_person.png"
+                    alt="blue person"
+                />
+                <img
+                    src="@/assets/peermentor/process_bubbles.png"
+                    alt="process bubbles"
+                />
+            </div>
+            <div class="project-process-table">
+                <div class="table-content">
+                    <div class="row-content">
+                        <h2>第一阶段</h2>
+                        <p>
+                            <span>IFU朋辈导师（Mentor）招募:</span>
+                            每个学期初，通过IFU的各个社交平台发布导师招募邀请。
+                        </p>
+                    </div>
+                    <div class="row-content">
+                        <h2>第二阶段</h2>
+                        <p>
+                            <span>学生（Mentee）申请表递交:</span>
+                            想要申请和IFU朋辈导师进行沟通交流的学生，填写项目申请报名表。项目负责人将会进行科学的配对导师和学生。
+                        </p>
+                    </div>
+                    <div class="row-content">
+                        <h2>第三阶段</h2>
+                        <p>
+                            <span>导师联系学生:</span>
+                            学生会收到导师的预约链接；学生可根据自己的时间sign
+                            up，与导师进行线上一对一的沟通和交流。
+                        </p>
+                    </div>
+                    <div class="row-content">
+                        <h2>第四阶段</h2>
+                        <p>
+                            <span>导师学生交流:</span>
+                            导师与学生将每月进行至少两次30-40分钟线下或线上会谈。导师计划为学期制，导师和学生也可在双方同意的基础上延长辅导。
+                        </p>
+                    </div>
+                    <div class="row-content">
+                        <h2>第五阶段</h2>
+                        <p>
+                            <span>季末反馈:</span>
+                            每季度导师计划结束后，学生则会通过表格填写的形式，进行对项目的反馈和导师的评估。
+                        </p>
+                    </div>
+                </div>
+                <img
+                    src="@/assets/peermentor/project-process-table.png"
+                    alt="project process table"
+                />
+            </div>
+        </section>
         <section class="join-peermentor">
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
@@ -286,6 +374,115 @@ export default {
 
             .center {
                 text-align: center;
+            }
+        }
+    }
+}
+
+.project-process {
+    padding: 80px 0;
+
+    .project-process-title {
+        height: 97px;
+        width: auto;
+        background-color: rgba(38, 156, 209, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+
+        h1 {
+            color: white;
+        }
+    }
+
+    .project-process-images {
+        height: auto;
+        text-align: center;
+        margin-bottom: 75px;
+
+        .blue-person {
+            margin: -100px 0 300px 295px;
+            position: absolute;
+        }
+    }
+    .bubbles-content {
+        position: absolute;
+
+        .bubbles-content-blue {
+            margin: 75px 0 0 140px;
+
+            li {
+                text-align: left;
+                padding: 0.25em 0;
+            }
+
+            h3 {
+                text-align: left;
+                margin: 0 0 0 25px;
+            }
+        }
+
+        .bubbles-content-green {
+            margin: -30px 0 0 400px;
+
+            li {
+                text-align: left;
+                padding: 0.25em 0;
+            }
+
+            h3 {
+                text-align: left;
+                margin: 0 0 0 25px;
+            }
+        }
+
+        .bubbles-content-right {
+            margin: -260px 0 0 1050px;
+
+            li {
+                text-align: left;
+                padding: 0.25em 0;
+            }
+
+            h3 {
+                text-align: left;
+                margin: 0 0 0 25px;
+            }
+            button {
+                background-color: rgba(38, 156, 209, 0.8);
+                text-align: center;
+                margin-left: 32px;
+                padding: 1em 4em;
+            }
+        }
+    }
+    .project-process-table {
+        .table-content {
+            position: absolute;
+            width: 1440px;
+            height: 803px;
+
+            .row-content {
+                display: grid;
+                grid-template-columns: 169px 300px 118px auto 202px;
+                grid-auto-rows: 160px;
+
+                span {
+                    font-weight: bold;
+                }
+
+                h2 {
+                    margin: 10px 0 0 0;
+                    grid-column: 2 / 3;
+                    align-self: center;
+                    justify-self: center;
+                }
+                p {
+                    margin: 0;
+                    grid-column: 4 / 5;
+                    align-self: center;
+                }
             }
         }
     }
