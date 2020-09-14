@@ -51,7 +51,7 @@
         </div>
         <section class="section-school">
             <div>
-                <h2 class="color-underline east-color">美国东部</h2>
+                <h2 class="color-underline east-color title">美国东部</h2>
                 <p>伊利诺伊大学香槟分校</p>
                 <p>罗切斯特大学</p>
                 <p>弗里吉尼亚联邦大学</p>
@@ -66,7 +66,7 @@
                 <p>杜兰大学</p>
             </div>
             <div>
-                <h2 class="color-underline west-color">美国西部</h2>
+                <h2 class="color-underline west-color title">美国西部</h2>
                 <p>加州大学欧文分校</p>
                 <p>加州大学圣地亚哥分校</p>
                 <p>加州大学洛杉矶分校</p>
@@ -77,7 +77,7 @@
                 <p>华盛顿大学</p>
             </div>
             <div>
-                <h2 class="color-underline canada-color">加拿大&英国</h2>
+                <h2 class="color-underline canada-color title">加拿大&英国</h2>
                 <p>英属哥伦比亚大学</p>
                 <p>西蒙菲莎大学</p>
                 <p>阿尔伯塔大学</p>
@@ -85,14 +85,16 @@
                 <p>伦敦大学学院</p>
             </div>
             <div>
-                <h2 class="color-underline singapore-color">新加坡</h2>
+                <h2 class="color-underline singapore-color title">新加坡</h2>
                 <p>新加坡国立大学</p>
             </div>
             <div class="pic">
                 <h3>持续扩展中...</h3>
                 <span>想要成为校园志愿者，为<br />留学生群体尽一份力吗？</span>
                 <br />
-                <span class="link">加入我们 >>></span>
+                <a class="link" href="https://forms.gle/KvsV5GiSb4nMtLER7"
+                    >加入我们>>>
+                </a>
             </div>
         </section>
         <section class="event-review">
@@ -239,6 +241,9 @@ export default {
     p {
         line-height: 31px;
     }
+    img {
+        height: 100%;
+    }
 }
 
 .section-activity {
@@ -274,7 +279,10 @@ export default {
     justify-content: space-between;
     color: #fff;
     background: url(~assets/volunteer/section-school.png) no-repeat;
-
+    flex-wrap: wrap;
+    .title {
+        font-weight: bolder;
+    }
     .color-underline {
         border-bottom: 5px solid;
         width: fit-content;
@@ -291,6 +299,11 @@ export default {
     .singapore-color {
         border-color: #fda63b;
     }
+    div {
+        width: 25%;
+        height: 250px;
+        overflow: visible;
+    }
     div p {
         text-decoration: underline;
     }
@@ -299,14 +312,22 @@ export default {
         height: 289px;
         background-image: url(~assets/volunteer/bubble.png);
         position: relative;
-        top: 150px;
+        left: 70%;
         box-sizing: border-box;
-        padding-left: 50px;
+        padding-left: 75px;
         padding-top: 50px;
         color: black;
         text-decoration: none;
+        line-height: 35px;
+        h3 {
+            font-size: 20px;
+        }
+        span {
+            font-size: 15px;
+        }
         .link {
             color: #4ebdf7;
+            text-decoration: none;
         }
     }
 }
