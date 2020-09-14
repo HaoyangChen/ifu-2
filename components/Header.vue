@@ -2,7 +2,7 @@
     <header>
         <div class="header-inner">
             <nuxt-link class="desktop logo" :to="localePath('/')" exact>
-                <img src="../assets/header/logo2020.png" />
+                <img src="../assets/header/logo_mobile.png" />
             </nuxt-link>
             <nuxt-link class="mobile logo-mobile" :to="localePath('/')" exact>
                 <img src="../assets/header/logo_mobile.png" />
@@ -147,7 +147,7 @@ header {
     }
 
     .logo > img {
-        width: 300px;
+        width: auto;
         height: auto;
     }
 }
