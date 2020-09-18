@@ -6,8 +6,9 @@
 IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生能够安心诉说烦恼和担忧，为学生分担由于各种因素带来的忧虑和不安情绪；朋辈导师也将通过一对一面谈和小组活动的方式，用自身的经验和能力，指导、鼓舞学生解决问题。
 "
             button-text="成为学员"
-            :to="localePath('/peermentor')"
             :background="bannerImage"
+            external
+            to="https://forms.gle/qrmRz8E6TgFFD7BK7"
         />
         <div class="row peer-mentor-intro-section">
             <div class="text-container left">
@@ -21,7 +22,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
             <div class="img-container desktop">
                 <img
-                    src="@/assets/peermentor/peer_mentor_program.png"
+                    src="@/assets/peermentor/peer_mentor_program.svg"
                     alt="peer mentor program"
                 />
             </div>
@@ -40,7 +41,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_pressure.png"
+                            src="@/assets/peermentor/icon_pressure.svg"
                             alt="pressue icon"
                         />
                     </div>
@@ -50,7 +51,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_company.png"
+                            src="@/assets/peermentor/icon_company.svg"
                             alt="company icon"
                         />
                     </div>
@@ -62,7 +63,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_help.png"
+                            src="@/assets/peermentor/icon_help.svg"
                             alt="help icon"
                         />
                     </div>
@@ -74,7 +75,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_ignore.png"
+                            src="@/assets/peermentor/icon_ignore.svg"
                             alt="ignore icon"
                         />
                     </div>
@@ -176,28 +177,28 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
                 <div class="letter-content">
-                    <h2>加入成为我们IFU学员吧！</h2>
-                    <p>
+                    <h2 class="half-center">加入成为我们IFU学员吧！</h2>
+                    <p class="half-center">
                         如果近期因为学业繁忙，课程困难，而感到焦虑；如果生活中遇到不顺心的事，而感到郁闷，甚至不安；如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！
                     </p>
-                    <div class="letterpart-with-graph">
+                    <div class="letterpart-with-graph fit-letter">
                         <img
-                            src="@/assets/peermentor/letter_left_graph.png"
+                            src="@/assets/peermentor/letter_left_graph.svg"
                             alt="letter left graph"
                         />
                         <p>IFU朋辈项目，伴你度过留学路上的底谷时光。</p>
                         <img
-                            src="@/assets/peermentor/letter_right_group.png"
+                            src="@/assets/peermentor/letter_right_group.svg"
                             alt="letter left graph"
                         />
                     </div>
-                    <p>
+                    <p class="half-center">
                         我们会一直在这里，陪伴着你走出这段低谷时光。你和我们分享的所有信息和内容都是保密性质的，你可以放心的和我们倾述你的苦恼，让我们一起分摊你的担忧。
                     </p>
-                    <p>
+                    <p class="half-center">
                         IFU朋辈导师们是受过特定培训，在各个领域都有有所涉猎。希望我们能够以倾听者，陪伴者和协助者的三重身份，帮助到你，让你不再迷茫和无助。
                     </p>
-                    <div class="must-know-part">
+                    <div class="must-know-part half-center">
                         <h2>学员咨询须知</h2>
                         <ul>
                             <li>愿意主动与导师联系</li>
@@ -214,7 +215,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
         </section>
 
         <div class="section-requirement">
-            <div class="half-half orange-color">
+            <div class="half-half-nop half-half orange-color">
                 <h2>朋辈导师 要求</h2>
                 <ul>
                     <li>有一颗愿意帮助他人，有志愿者精神的人；</li>
@@ -225,7 +226,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                     <li>能够参加朋辈导师团队的每月会议，培训和各类活动</li>
                 </ul>
             </div>
-            <div class="half-half blue-color">
+            <div class="half-half-nop half-half blue-color">
                 <h2>朋辈导师 福利</h2>
                 <ul>
                     <li>获得定期的资深培训；</li>
@@ -276,19 +277,29 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 如果你希望找到一个群体、倾听、陪伴者，或是用自身的经验和能力，指导、鼓舞他人，就赶快点击下方链接报名加入吧！
             </p>
             <div class="section-requirement">
-                <div class="half-half">
-                    <img
-                        class="recruit-image"
-                        src="@/assets/peermentor/tutor_graphic.png"
-                        alt="tutor recruitment"
-                    />
+                <div class="half-half-nop">
+                    <a
+                        href="https://forms.gle/3EYR58psCfqTsR4Z7"
+                        target="_blank"
+                    >
+                        <img
+                            class="recruit-image"
+                            src="@/assets/peermentor/tutor_graphic.svg"
+                            alt="tutor recruitment"
+                        />
+                    </a>
                 </div>
-                <div class="half-half">
-                    <img
-                        class="recruit-image"
-                        src="@/assets/peermentor/student_graphic.png"
-                        alt="tutor recruitment"
-                    />
+                <div class="half-half-nop">
+                    <a
+                        href="https://forms.gle/qrmRz8E6TgFFD7BK7"
+                        target="_blank"
+                    >
+                        <img
+                            class="recruit-image"
+                            src="@/assets/peermentor/student_graphic.svg"
+                            alt="tutor recruitment"
+                        />
+                    </a>
                 </div>
             </div>
         </section>
@@ -344,12 +355,17 @@ export default {
     }
 }
 
+h2 {
+    font-weight: 600;
+}
+
 .peer-mentor-intro-section {
     border-top: 10px solid rgba(38, 156, 209, 0.8);
     border-bottom: 10px solid rgba(38, 156, 209, 0.8);
 }
 
 .whypeermentor {
+    padding-bottom: 0px;
     .whypeermentor-upper {
         width: 70%;
     }
@@ -358,6 +374,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-top: 6%;
 
         .one-fourth {
             flex-basis: 21%;
@@ -509,6 +526,7 @@ export default {
 }
 
 .join-peermentor {
+    padding-top: 0px;
     .peermentor-envelop {
         display: flex;
         justify-content: center;
@@ -516,8 +534,20 @@ export default {
 
         .letter-content {
             position: absolute;
-            width: 50%;
+            // width: 50%;
             top: 6%;
+
+            .half-center {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .fit-letter {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             .letterpart-with-graph {
                 display: flex;
@@ -527,14 +557,17 @@ export default {
             }
 
             .must-know-part {
-                width: 60%;
+                width: 50%;
                 line-height: 31px;
                 letter-spacing: 0.03em;
                 background: #ffffff;
                 padding: 20px 20px;
-
+                border: 5px solid #efcbab;
                 h2 {
                     margin-left: 20px;
+                }
+                ul {
+                    width: 50%;
                 }
             }
         }
@@ -545,10 +578,9 @@ export default {
     display: flex;
     justify-content: center;
 
-    .half-half {
+    .half-half-nop {
         flex-basis: 50%;
         text-align: center;
-        padding: 80px 7%;
         color: #ffffff;
         ul {
             text-align: left;
@@ -559,6 +591,10 @@ export default {
             width: 350px;
             height: 100%;
         }
+    }
+
+    .half-half {
+        padding: 80px 7%;
     }
 
     .orange-color {
@@ -579,6 +615,28 @@ p {
 
     &:last-of-type {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .row {
+        > div {
+            flex-basis: 100%;
+        }
+    }
+
+    .whypeermentor {
+        .whypeermentor-upper {
+            width: 100%;
+        }
+
+        .fourreason-outside {
+            flex-direction: column;
+        }
+    }
+
+    .section-requirement {
+        flex-direction: column;
     }
 }
 </style>
