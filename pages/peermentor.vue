@@ -597,6 +597,28 @@ p {
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: $mobile-max-width) {
+    .row {
+        > div {
+            flex-basis: 100%;
+        }
+    }
+
+    .whypeermentor {
+        .whypeermentor-upper {
+            width: 100%;
+        }
+
+        .fourreason-outside {
+            flex-direction: column;
+        }
+    }
+
+    .section-requirement {
+        flex-direction: column;
+    }
+}
 </style>
 
 <style>
