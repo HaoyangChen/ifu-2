@@ -130,12 +130,14 @@
             <div class="volunteer-become">
                 <h2>成为校园志愿者</h2>
                 <p>
-                    IFU致力于减少留学安全问题，提升留学家庭和谐度，改善留学家庭信息不对称，减少留学在外不平等的社会问题，着重服务于留学生家长，以及关注其孩子的心理健康问题。我们将通过3大核心方式来完成我们的使命：紧急情况、信息传递、校园官方信息翻译。
+                    IFU致力于减少留学安全问题，提升留学家庭和谐度，改善留学家庭信息不对称，减少留学在外不平等的社会问题，着重服务于留学生家长，以及关注其孩子的心理健康问题。我们将通过3大核心方式来完成我们的使命：<strong
+                        >紧急情况、信息传递、校园官方信息翻译。</strong
+                    >
                 </p>
             </div>
             <div class="campus-volunteer-lr">
                 <div class="requirement">
-                    <h3>作为校园志愿者你将会</h3>
+                    <p>作为校园志愿者你将会</p>
                     <ul>
                         <li>
                             在紧急情况发生时，及时帮助家长联系到校园志愿者获得帮助。
@@ -148,7 +150,7 @@
                         </li>
                     </ul>
                     <br />
-                    <h3>作为校园志愿者你需要是</h3>
+                    <p>作为校园志愿者你需要是</p>
                     <ul>
                         <li>
                             海外大学在读学生或毕业生
@@ -372,19 +374,28 @@ export default {
         width: 62%;
         line-height: 31px;
         color: #ffffff;
+        h2 {
+            font-weight: bolder;
+        }
     }
-
     .campus-volunteer-lr {
         display: flex;
-        margin-top: 120px;
+        margin-top: 70px;
         .requirement {
             background-color: white;
             box-sizing: border-box;
             padding: 30px;
             width: 50%;
+            margin-top: 0;
+            line-height: 35px;
+            p {
+                margin-left: 25px;
+                font-weight: bolder;
+            }
         }
         .ready-to-join {
             position: relative;
+            top: 40px;
             width: 50%;
             padding-left: 50px;
             box-sizing: border-box;
@@ -395,6 +406,10 @@ export default {
                 box-sizing: border-box;
                 padding-left: 50px;
                 padding-top: 50px;
+                line-height: 30px;
+                h2 {
+                    font-weight: bolder;
+                }
             }
             img {
                 position: relative;
