@@ -90,34 +90,33 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                 <h1>项目流程与提供服务</h1>
             </div>
             <div class="project-process-images">
-                <div class="bubbles-content">
-                    <div class="bubbles-content-blue">
-                        <h3>一对一面谈</h3>
-                        <ul>
-                            <li>陪伴倾听</li>
-                            <li>朋辈咨询</li>
-                            <li>生活经验分享</li>
-                            <li>学习经验分享</li>
-                            <li>简历修改，求职信修改</li>
-                            <li>求职工作经验分享</li>
-                        </ul>
-                    </div>
-                    <div class="bubbles-content-green">
-                        <h3>小组活动</h3>
-                        <ul>
-                            <li>朋辈导师讲座</li>
-                            <li>其他精彩活动</li>
-                        </ul>
-                    </div>
-                    <div class="bubbles-content-right">
-                        <h3>准备好加入我们了吗</h3>
-                        <ul>
-                            <li>成为导师帮助倾听他人</li>
-                            <li>成为学员找到自己的陪伴</li>
-                        </ul>
-                        <button>立即报名</button>
-                    </div>
+                <div class="bubbles-content-blue">
+                    <h3>一对一面谈</h3>
+                    <ul>
+                        <li>陪伴倾听</li>
+                        <li>朋辈咨询</li>
+                        <li>生活经验分享</li>
+                        <li>学习经验分享</li>
+                        <li>简历修改，求职信修改</li>
+                        <li>求职工作经验分享</li>
+                    </ul>
                 </div>
+                <div class="bubbles-content-green">
+                    <h3>小组活动</h3>
+                    <ul>
+                        <li>朋辈导师讲座</li>
+                        <li>其他精彩活动</li>
+                    </ul>
+                </div>
+                <div class="bubbles-content-right">
+                    <h3>准备好加入我们了吗</h3>
+                    <ul>
+                        <li>成为导师帮助倾听他人</li>
+                        <li>成为学员找到自己的陪伴</li>
+                    </ul>
+                    <button>立即报名</button>
+                </div>
+
                 <img
                     class="blue-person"
                     src="@/assets/peermentor/blue_person.png"
@@ -393,24 +392,37 @@ export default {
 
         h1 {
             color: white;
+            font-size: 30px;
+            font-weight: 600;
         }
     }
 
     .project-process-images {
         height: auto;
-        text-align: center;
         margin-bottom: 75px;
+        position: relative;
+        text-align: center;
 
-        .blue-person {
-            margin: -100px 0 300px 295px;
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        div {
             position: absolute;
         }
-    }
-    .bubbles-content {
-        position: absolute;
+
+        .blue-person {
+            width: 50%;
+            height: auto;
+            left: 25%;
+            bottom: 0.4%;
+            position: absolute;
+        }
 
         .bubbles-content-blue {
-            margin: 75px 0 0 140px;
+            top: 15%;
+            left: 5%;
 
             li {
                 text-align: left;
@@ -424,7 +436,8 @@ export default {
         }
 
         .bubbles-content-green {
-            margin: -30px 0 0 400px;
+            top: 65%;
+            left: 25%;
 
             li {
                 text-align: left;
@@ -438,7 +451,8 @@ export default {
         }
 
         .bubbles-content-right {
-            margin: -260px 0 0 1050px;
+            top: 25%;
+            left: 75%;
 
             li {
                 text-align: left;
@@ -450,13 +464,19 @@ export default {
                 margin: 0 0 0 25px;
             }
             button {
-                background-color: rgba(38, 156, 209, 0.8);
-                text-align: center;
-                margin-left: 32px;
-                padding: 1em 4em;
+                height: 50px;
+                background-color: $button-color;
+                box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
+                border: none;
+                border-radius: 30px;
+                color: white;
+                font-size: $text-size;
+                padding: 0 45px;
+                margin-left: 17%;
             }
         }
     }
+
     .project-process-table {
         .table-content {
             position: absolute;
