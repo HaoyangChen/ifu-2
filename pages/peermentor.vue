@@ -115,7 +115,9 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                         <li>成为导师帮助倾听他人</li>
                         <li>成为学员找到自己的陪伴</li>
                     </ul>
-                    <button>立即报名</button>
+                    <Button scroll to="#peermentor-recruit-p">
+                        立即报名
+                    </Button>
                 </div>
 
                 <img
@@ -273,7 +275,7 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
         </section> -->
         <section>
             <h2>IFU朋辈咨询项目火热招募进行中...</h2>
-            <p class="peermentor-recruit-p">
+            <p id="peermentor-recruit-p" class="peermentor-recruit-p">
                 如果你希望找到一个群体、倾听、陪伴者，或是用自身的经验和能力，指导、鼓舞他人，就赶快点击下方链接报名加入吧！
             </p>
             <div class="section-requirement">
@@ -308,13 +310,13 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
 
 <script>
 import Banner from '@/components/Banner.vue';
-// import Button from '@/components/Button.vue';
+import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
 
 export default {
     components: {
         Banner,
-        // Button,
+        Button,
     },
     data() {
         return {
@@ -480,21 +482,25 @@ h2 {
                 text-align: left;
                 margin: 0 0 0 25px;
             }
-            button {
-                height: 50px;
-                background-color: $button-color;
-                box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
-                border: none;
-                border-radius: 30px;
-                color: white;
-                font-size: $text-size;
-                padding: 0 45px;
-                margin-left: 17%;
-            }
+            // button {
+            //     height: 50px;
+            //     background-color: $button-color;
+            //     box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
+            //     border: none;
+            //     border-radius: 30px;
+            //     color: white;
+            //     font-size: $text-size;
+            //     padding: 0 45px;
+            //     margin-left: 17%;
+            // }
         }
     }
 
     .project-process-table {
+        img {
+            height: auto;
+            max-width: 1440px;
+        }
         .table-content {
             position: absolute;
             width: 1440px;
