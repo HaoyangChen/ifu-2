@@ -1,23 +1,18 @@
 <template>
     <div>
         <Banner
-            title="IFU 朋辈项目"
-            description="IFU朋辈项目，伴你度过留学路上的底谷时光。
-IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生能够安心诉说烦恼和担忧，为学生分担由于各种因素带来的忧虑和不安情绪；朋辈导师也将通过一对一面谈和小组活动的方式，用自身的经验和能力，指导、鼓舞学生解决问题。
-"
-            button-text="成为学员"
+            :title="$t('peermentor.banner.title')"
+            :description="$t('peermentor.banner.description')"
+            :button-text="$t('peermentor.banner.buttonText')"
             :background="bannerImage"
             external
             to="https://forms.gle/qrmRz8E6TgFFD7BK7"
         />
         <div class="row peer-mentor-intro-section">
             <div class="text-container left">
-                <h2>什么是IFU朋辈项目？</h2>
+                <h2>{{ $t('peermentor.introduction.title') }}</h2>
                 <p>
-                    今年6月，从最初的朋辈项目策划和试营，历经两个月整，通过IFU各部门工作人员和超过15名志愿者努力，IFU朋辈项目才能正式顺利推出。
-                    “IFU朋辈项目”项目由鼎恒留学提供全额赞助资金运营支持，该项目将完全免费面向所有海外留学生。IFU朋辈导师
-                    (Peer Mentor)
-                    将作为学生的倾听、陪伴者，让学生能够安心诉说烦恼和担忧，为学生分担由于各种因素带来的忧虑和不安情绪；朋辈导师也将通过一对一面谈和小组活动的方式，用自身的经验和能力，指导、鼓舞学生解决问题。
+                    {{ $t('peermentor.introduction.description') }}
                 </p>
             </div>
             <div class="img-container desktop">
@@ -28,13 +23,13 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
         </div>
         <section class="whypeermentor">
-            <h2>为什么要实行IFU朋辈咨询项目？</h2>
+            <h2>{{ $t('peermentor.why.title') }}</h2>
             <div class="whypeermentor-upper">
                 <p>
-                    今年的留学生涯，真的是越发的难过了，疫情隔离，游行暴乱，校园关闭等。对于今年毕业的学子，未来是否回国，还是升学读研，一切都是未知数，当面临着越来越多的困难决定时，留学生所面对生活上的、心理上的压力的问题也是不能忽略的。
+                    {{ $t('peermentor.why.description1') }}
                 </p>
                 <p>
-                    通过IFU这几年处理的紧急事件的经验，和各种线上下活动的反馈，以及平时对学生家长疑惑的收集，我们发现以下几点。IFU秉承“让留学家庭更安心”的使命，感觉到守护留学生的心理健康问题，不容延迟。
+                    {{ $t('peermentor.why.description2') }}
                 </p>
             </div>
             <div class="fourreason-outside">
@@ -45,8 +40,10 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                             alt="pressue icon"
                         />
                     </div>
-                    <h3 class="center">压力</h3>
-                    <p>心理压力过大，是超过一半留学生失踪事件发生的原因。</p>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title1') }}
+                    </h3>
+                    <p>{{ $t('peermentor.why.pics.description1') }}</p>
                 </div>
                 <div class="one-fourth">
                     <div class="circle-image">
@@ -55,9 +52,11 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                             alt="company icon"
                         />
                     </div>
-                    <h3 class="center">陪伴</h3>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title2') }}
+                    </h3>
                     <p>
-                        大部分的留学生都表示需要陪伴，时常感到孤独和抑郁，特别是在疫情时期。
+                        {{ $t('peermentor.why.pics.description2') }}
                     </p>
                 </div>
                 <div class="one-fourth">
@@ -67,9 +66,11 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                             alt="help icon"
                         />
                     </div>
-                    <h3 class="center">帮助</h3>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title3') }}
+                    </h3>
                     <p>
-                        大多学生都表示希望可以在求职、社交上，得到拓展和帮助等。
+                        {{ $t('peermentor.why.pics.description3') }}
                     </p>
                 </div>
                 <div class="one-fourth">
@@ -79,44 +80,66 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
                             alt="ignore icon"
                         />
                     </div>
-                    <h3 class="center">忽视</h3>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title4') }}
+                    </h3>
                     <p>
-                        留学生群体极容易被主流社会忽视，该项目也可最大程度的帮助这类人群，实现NGO的职责。
+                        {{ $t('peermentor.why.pics.description4') }}
                     </p>
                 </div>
             </div>
         </section>
         <section class="project-process">
             <div class="project-process-title">
-                <h1>项目流程与提供服务</h1>
+                <h1>{{ $t('peermentor.services.title') }}</h1>
             </div>
             <div class="project-process-images">
                 <div class="bubbles-content-blue">
-                    <h3>一对一面谈</h3>
+                    <h3>{{ $t('peermentor.services.blueBubble.title') }}</h3>
                     <ul>
-                        <li>陪伴倾听</li>
-                        <li>朋辈咨询</li>
-                        <li>生活经验分享</li>
-                        <li>学习经验分享</li>
-                        <li>简历修改，求职信修改</li>
-                        <li>求职工作经验分享</li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item2') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item3') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item4') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item5') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item6') }}
+                        </li>
                     </ul>
                 </div>
                 <div class="bubbles-content-green">
-                    <h3>小组活动</h3>
+                    <h3>{{ $t('peermentor.services.greenBubble.title') }}</h3>
                     <ul>
-                        <li>朋辈导师讲座</li>
-                        <li>其他精彩活动</li>
+                        <li>
+                            {{ $t('peermentor.services.greenBubble.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.greenBubble.item2') }}
+                        </li>
                     </ul>
                 </div>
                 <div class="bubbles-content-right">
-                    <h3>准备好加入我们了吗</h3>
+                    <h3>{{ $t('peermentor.services.rightBubble.title') }}</h3>
                     <ul>
-                        <li>成为导师帮助倾听他人</li>
-                        <li>成为学员找到自己的陪伴</li>
+                        <li>
+                            {{ $t('peermentor.services.rightBubble.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.rightBubble.item2') }}
+                        </li>
                     </ul>
                     <Button scroll to="#peermentor-recruit-p">
-                        立即报名
+                        {{ $t('peermentor.services.rightBubble.buttonText') }}
                     </Button>
                 </div>
 
@@ -133,40 +156,64 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             <div class="project-process-table">
                 <div class="table-content">
                     <div class="row-content">
-                        <h2>第一阶段</h2>
-                        <p>
-                            <span>IFU朋辈导师（Mentor）招募:</span>
-                            每个学期初，通过IFU的各个社交平台发布导师招募邀请。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage1.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage1.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第二阶段</h2>
-                        <p>
-                            <span>学生（Mentee）申请表递交:</span>
-                            想要申请和IFU朋辈导师进行沟通交流的学生，填写项目申请报名表。项目负责人将会进行科学的配对导师和学生。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage2.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage2.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第三阶段</h2>
-                        <p>
-                            <span>导师联系学生:</span>
-                            学生会收到导师的预约链接；学生可根据自己的时间sign
-                            up，与导师进行线上一对一的沟通和交流。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage3.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage3.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第四阶段</h2>
-                        <p>
-                            <span>导师学生交流:</span>
-                            导师与学生将每月进行至少两次30-40分钟线下或线上会谈。导师计划为学期制，导师和学生也可在双方同意的基础上延长辅导。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage4.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage4.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第五阶段</h2>
-                        <p>
-                            <span>季末反馈:</span>
-                            每季度导师计划结束后，学生则会通过表格填写的形式，进行对项目的反馈和导师的评估。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage5.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage5.description',
+                                )
+                            "
+                        />
                     </div>
                 </div>
                 <img
@@ -179,37 +226,47 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
                 <div class="letter-content">
-                    <h2 class="half-center">加入成为我们IFU学员吧！</h2>
+                    <h2 class="half-center">
+                        {{ $t('peermentor.envelope.letter.title') }}
+                    </h2>
                     <p class="half-center">
-                        如果近期因为学业繁忙，课程困难，而感到焦虑；如果生活中遇到不顺心的事，而感到郁闷，甚至不安；如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！
+                        {{ $t('peermentor.envelope.letter.content1') }}
                     </p>
                     <div class="letterpart-with-graph fit-letter">
                         <img
                             src="@/assets/peermentor/letter_left_graph.svg"
                             alt="letter left graph"
                         />
-                        <p>IFU朋辈项目，伴你度过留学路上的底谷时光。</p>
+                        <p>{{ $t('peermentor.envelope.letter.content2') }}</p>
                         <img
                             src="@/assets/peermentor/letter_right_group.svg"
                             alt="letter left graph"
                         />
                     </div>
                     <p class="half-center">
-                        我们会一直在这里，陪伴着你走出这段低谷时光。你和我们分享的所有信息和内容都是保密性质的，你可以放心的和我们倾述你的苦恼，让我们一起分摊你的担忧。
+                        {{ $t('peermentor.envelope.letter.content3') }}
                     </p>
                     <p class="half-center">
-                        IFU朋辈导师们是受过特定培训，在各个领域都有有所涉猎。希望我们能够以倾听者，陪伴者和协助者的三重身份，帮助到你，让你不再迷茫和无助。
+                        {{ $t('peermentor.envelope.letter.content4') }}
                     </p>
                     <div class="must-know-part half-center">
-                        <h2>学员咨询须知</h2>
+                        <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
                         <ul>
-                            <li>愿意主动与导师联系</li>
-                            <li>尊重导师，要守时</li>
-                            <li>在该学期内和导师进行谈话</li>
                             <li>
-                                通过电子邮件/微信/电话与导师跟进，并将进展/困难告与导师
+                                {{ $t('peermentor.envelope.mustKnow.item1') }}
                             </li>
-                            <li>正面看待导师反馈</li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item2') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item3') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item4') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item5') }}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -218,29 +275,29 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
 
         <div class="section-requirement">
             <div class="half-half-nop half-half orange-color">
-                <h2>朋辈导师 要求</h2>
+                <h2>{{ $t('peermentor.requirements.title') }}</h2>
                 <ul>
-                    <li>有一颗愿意帮助他人，有志愿者精神的人；</li>
-                    <li>乐于分享，享受帮助他人成长的感觉；</li>
-                    <li>拥有积极向上，勇于求进的热情;</li>
-                    <li>有良好的学术背景和优质的学生品行；</li>
-                    <li>在不同领域有一定的经验 (领域不限);</li>
-                    <li>能够参加朋辈导师团队的每月会议，培训和各类活动</li>
+                    <li>{{ $t('peermentor.requirements.item1') }}</li>
+                    <li>{{ $t('peermentor.requirements.item2') }}</li>
+                    <li>{{ $t('peermentor.requirements.item3') }}</li>
+                    <li>{{ $t('peermentor.requirements.item4') }}</li>
+                    <li>{{ $t('peermentor.requirements.item5') }}</li>
+                    <li>{{ $t('peermentor.requirements.item6') }}</li>
                 </ul>
             </div>
             <div class="half-half-nop half-half blue-color">
-                <h2>朋辈导师 福利</h2>
+                <h2>{{ $t('peermentor.benefits.title') }}</h2>
                 <ul>
-                    <li>获得定期的资深培训；</li>
-                    <li>获得IFU志愿者证书；</li>
-                    <li>有机会评选“年度优秀 导师服务奖”;</li>
-                    <li>锻炼自身的领导和咨询的能力；</li>
+                    <li>{{ $t('peermentor.benefits.item1') }}</li>
+                    <li>{{ $t('peermentor.benefits.item2') }}</li>
+                    <li>{{ $t('peermentor.benefits.item3') }}</li>
+                    <li>{{ $t('peermentor.benefits.item4') }}</li>
                     <li>
-                        收获自我的成长，通过反思和复盘获得对自我新的认知;
+                        {{ $t('peermentor.benefits.item5') }}
                     </li>
-                    <li>拓展人际关系网，结实一群志同道合的小伙伴；</li>
+                    <li>{{ $t('peermentor.benefits.item6') }}</li>
                     <li>
-                        IFU社交平台将会对优秀导师和学生的感人故事和真诚分享进行系列报道
+                        {{ $t('peermentor.benefits.item7') }}
                     </li>
                 </ul>
             </div>
@@ -274,9 +331,9 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
         </section> -->
         <section>
-            <h2>IFU朋辈咨询项目火热招募进行中...</h2>
+            <h2>{{ $t('peermentor.recruiting.title') }}</h2>
             <p id="peermentor-recruit-p" class="peermentor-recruit-p">
-                如果你希望找到一个群体、倾听、陪伴者，或是用自身的经验和能力，指导、鼓舞他人，就赶快点击下方链接报名加入吧！
+                {{ $t('peermentor.recruiting.description') }}
             </p>
             <div class="section-requirement">
                 <div class="half-half-nop">
@@ -511,7 +568,7 @@ h2 {
                 grid-template-columns: 169px 300px 118px auto 202px;
                 grid-auto-rows: 160px;
 
-                span {
+                /deep/ span {
                     font-weight: bold;
                 }
 
