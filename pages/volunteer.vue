@@ -4,7 +4,8 @@
             title="IFU 校园志愿者"
             description="IFU校园志愿者是IFU全体志愿者中的一类。 其职责是在围绕着“让留学家庭更安心”的使命上，参与紧急事件援助、正确翻译、传播学校信息、社群答疑，以减少留学家庭之间信息差，留学生海外焦虑问题。目前IFU校园志愿者遍布北美25所高校，以学生社团或单人志愿者的形式在校园存在。"
             button-text="成为校园志愿者"
-            :to="localePath('/career')"
+            external
+            to="https://forms.gle/KvsV5GiSb4nMtLER7"
             :background="bannerImage"
         />
         <div class="section-mission">
@@ -166,7 +167,11 @@
                         <p>
                             感谢你愿意为留学群体，为IFU让留学家<br />庭更安心的使命做出一份贡献～
                         </p>
-                        <Button to="/career">提交申请</Button>
+                        <Button
+                            external
+                            to="https://forms.gle/KvsV5GiSb4nMtLER7"
+                            >提交申请</Button
+                        >
                     </div>
                     <img src="@/assets/volunteer/Kimmy.png" alt="kimmy" />
                 </div>
