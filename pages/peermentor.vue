@@ -1,123 +1,148 @@
 <template>
     <div>
         <Banner
-            title="IFU 朋辈项目"
-            description="IFU朋辈项目，伴你度过留学路上的底谷时光。
-IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生能够安心诉说烦恼和担忧，为学生分担由于各种因素带来的忧虑和不安情绪；朋辈导师也将通过一对一面谈和小组活动的方式，用自身的经验和能力，指导、鼓舞学生解决问题。
-"
-            button-text="成为学员"
-            :to="localePath('/peermentor')"
+            :title="$t('peermentor.banner.title')"
+            :description="$t('peermentor.banner.description')"
+            :button-text="$t('peermentor.banner.buttonText')"
             :background="bannerImage"
+            external
+            to="https://forms.gle/qrmRz8E6TgFFD7BK7"
         />
         <div class="row peer-mentor-intro-section">
             <div class="text-container left">
-                <h2>什么是IFU朋辈项目？</h2>
+                <h2>{{ $t('peermentor.introduction.title') }}</h2>
                 <p>
-                    今年6月，从最初的朋辈项目策划和试营，历经两个月整，通过IFU各部门工作人员和超过15名志愿者努力，IFU朋辈项目才能正式顺利推出。
-                    “IFU朋辈项目”项目由鼎恒留学提供全额赞助资金运营支持，该项目将完全免费面向所有海外留学生。IFU朋辈导师
-                    (Peer Mentor)
-                    将作为学生的倾听、陪伴者，让学生能够安心诉说烦恼和担忧，为学生分担由于各种因素带来的忧虑和不安情绪；朋辈导师也将通过一对一面谈和小组活动的方式，用自身的经验和能力，指导、鼓舞学生解决问题。
+                    {{ $t('peermentor.introduction.description') }}
                 </p>
             </div>
             <div class="img-container desktop">
                 <img
-                    src="@/assets/peermentor/peer_mentor_program.png"
+                    src="@/assets/peermentor/peer_mentor_program.svg"
                     alt="peer mentor program"
                 />
             </div>
         </div>
         <section class="whypeermentor">
-            <h2>为什么要实行IFU朋辈咨询项目？</h2>
+            <h2>{{ $t('peermentor.why.title') }}</h2>
             <div class="whypeermentor-upper">
                 <p>
-                    今年的留学生涯，真的是越发的难过了，疫情隔离，游行暴乱，校园关闭等。对于今年毕业的学子，未来是否回国，还是升学读研，一切都是未知数，当面临着越来越多的困难决定时，留学生所面对生活上的、心理上的压力的问题也是不能忽略的。
+                    {{ $t('peermentor.why.description1') }}
                 </p>
                 <p>
-                    通过IFU这几年处理的紧急事件的经验，和各种线上下活动的反馈，以及平时对学生家长疑惑的收集，我们发现以下几点。IFU秉承“让留学家庭更安心”的使命，感觉到守护留学生的心理健康问题，不容延迟。
+                    {{ $t('peermentor.why.description2') }}
                 </p>
             </div>
             <div class="fourreason-outside">
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_pressure.png"
+                            src="@/assets/peermentor/icon_pressure.svg"
                             alt="pressue icon"
                         />
                     </div>
-                    <h3 class="center">压力</h3>
-                    <p>心理压力过大，是超过一半留学生失踪事件发生的原因。</p>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title1') }}
+                    </h3>
+                    <p>{{ $t('peermentor.why.pics.description1') }}</p>
                 </div>
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_company.png"
+                            src="@/assets/peermentor/icon_company.svg"
                             alt="company icon"
                         />
                     </div>
-                    <h3 class="center">陪伴</h3>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title2') }}
+                    </h3>
                     <p>
-                        大部分的留学生都表示需要陪伴，时常感到孤独和抑郁，特别是在疫情时期。
+                        {{ $t('peermentor.why.pics.description2') }}
                     </p>
                 </div>
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_help.png"
+                            src="@/assets/peermentor/icon_help.svg"
                             alt="help icon"
                         />
                     </div>
-                    <h3 class="center">帮助</h3>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title3') }}
+                    </h3>
                     <p>
-                        大多学生都表示希望可以在求职、社交上，得到拓展和帮助等。
+                        {{ $t('peermentor.why.pics.description3') }}
                     </p>
                 </div>
                 <div class="one-fourth">
                     <div class="circle-image">
                         <img
-                            src="@/assets/peermentor/icon_ignore.png"
+                            src="@/assets/peermentor/icon_ignore.svg"
                             alt="ignore icon"
                         />
                     </div>
-                    <h3 class="center">忽视</h3>
+                    <h3 class="center">
+                        {{ $t('peermentor.why.pics.title4') }}
+                    </h3>
                     <p>
-                        留学生群体极容易被主流社会忽视，该项目也可最大程度的帮助这类人群，实现NGO的职责。
+                        {{ $t('peermentor.why.pics.description4') }}
                     </p>
                 </div>
             </div>
         </section>
         <section class="project-process">
             <div class="project-process-title">
-                <h1>项目流程与提供服务</h1>
+                <h1>{{ $t('peermentor.services.title') }}</h1>
             </div>
             <div class="project-process-images">
-                <div class="bubbles-content">
-                    <div class="bubbles-content-blue">
-                        <h3>一对一面谈</h3>
-                        <ul>
-                            <li>陪伴倾听</li>
-                            <li>朋辈咨询</li>
-                            <li>生活经验分享</li>
-                            <li>学习经验分享</li>
-                            <li>简历修改，求职信修改</li>
-                            <li>求职工作经验分享</li>
-                        </ul>
-                    </div>
-                    <div class="bubbles-content-green">
-                        <h3>小组活动</h3>
-                        <ul>
-                            <li>朋辈导师讲座</li>
-                            <li>其他精彩活动</li>
-                        </ul>
-                    </div>
-                    <div class="bubbles-content-right">
-                        <h3>准备好加入我们了吗</h3>
-                        <ul>
-                            <li>成为导师帮助倾听他人</li>
-                            <li>成为学员找到自己的陪伴</li>
-                        </ul>
-                        <button>立即报名</button>
-                    </div>
+                <div class="bubbles-content-blue">
+                    <h3>{{ $t('peermentor.services.blueBubble.title') }}</h3>
+                    <ul>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item2') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item3') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item4') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item5') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.blueBubble.item6') }}
+                        </li>
+                    </ul>
                 </div>
+                <div class="bubbles-content-green">
+                    <h3>{{ $t('peermentor.services.greenBubble.title') }}</h3>
+                    <ul>
+                        <li>
+                            {{ $t('peermentor.services.greenBubble.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.greenBubble.item2') }}
+                        </li>
+                    </ul>
+                </div>
+                <div class="bubbles-content-right">
+                    <h3>{{ $t('peermentor.services.rightBubble.title') }}</h3>
+                    <ul>
+                        <li>
+                            {{ $t('peermentor.services.rightBubble.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.services.rightBubble.item2') }}
+                        </li>
+                    </ul>
+                    <Button scroll to="#peermentor-recruit-p">
+                        {{ $t('peermentor.services.rightBubble.buttonText') }}
+                    </Button>
+                </div>
+
                 <img
                     class="blue-person"
                     src="@/assets/peermentor/blue_person.png"
@@ -131,40 +156,64 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             <div class="project-process-table">
                 <div class="table-content">
                     <div class="row-content">
-                        <h2>第一阶段</h2>
-                        <p>
-                            <span>IFU朋辈导师（Mentor）招募:</span>
-                            每个学期初，通过IFU的各个社交平台发布导师招募邀请。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage1.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage1.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第二阶段</h2>
-                        <p>
-                            <span>学生（Mentee）申请表递交:</span>
-                            想要申请和IFU朋辈导师进行沟通交流的学生，填写项目申请报名表。项目负责人将会进行科学的配对导师和学生。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage2.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage2.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第三阶段</h2>
-                        <p>
-                            <span>导师联系学生:</span>
-                            学生会收到导师的预约链接；学生可根据自己的时间sign
-                            up，与导师进行线上一对一的沟通和交流。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage3.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage3.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第四阶段</h2>
-                        <p>
-                            <span>导师学生交流:</span>
-                            导师与学生将每月进行至少两次30-40分钟线下或线上会谈。导师计划为学期制，导师和学生也可在双方同意的基础上延长辅导。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage4.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage4.description',
+                                )
+                            "
+                        />
                     </div>
                     <div class="row-content">
-                        <h2>第五阶段</h2>
-                        <p>
-                            <span>季末反馈:</span>
-                            每季度导师计划结束后，学生则会通过表格填写的形式，进行对项目的反馈和导师的评估。
-                        </p>
+                        <h2>
+                            {{ $t('peermentor.programstreams.stage5.title') }}
+                        </h2>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage5.description',
+                                )
+                            "
+                        />
                     </div>
                 </div>
                 <img
@@ -177,37 +226,47 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
                 <div class="letter-content">
-                    <h2>加入成为我们IFU学员吧！</h2>
-                    <p>
-                        如果近期因为学业繁忙，课程困难，而感到焦虑；如果生活中遇到不顺心的事，而感到郁闷，甚至不安；如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！
+                    <h2 class="half-center">
+                        {{ $t('peermentor.envelope.letter.title') }}
+                    </h2>
+                    <p class="half-center">
+                        {{ $t('peermentor.envelope.letter.content1') }}
                     </p>
-                    <div class="letterpart-with-graph">
+                    <div class="letterpart-with-graph fit-letter">
                         <img
-                            src="@/assets/peermentor/letter_left_graph.png"
+                            src="@/assets/peermentor/letter_left_graph.svg"
                             alt="letter left graph"
                         />
-                        <p>IFU朋辈项目，伴你度过留学路上的底谷时光。</p>
+                        <p>{{ $t('peermentor.envelope.letter.content2') }}</p>
                         <img
-                            src="@/assets/peermentor/letter_right_group.png"
+                            src="@/assets/peermentor/letter_right_group.svg"
                             alt="letter left graph"
                         />
                     </div>
-                    <p>
-                        我们会一直在这里，陪伴着你走出这段低谷时光。你和我们分享的所有信息和内容都是保密性质的，你可以放心的和我们倾述你的苦恼，让我们一起分摊你的担忧。
+                    <p class="half-center">
+                        {{ $t('peermentor.envelope.letter.content3') }}
                     </p>
-                    <p>
-                        IFU朋辈导师们是受过特定培训，在各个领域都有有所涉猎。希望我们能够以倾听者，陪伴者和协助者的三重身份，帮助到你，让你不再迷茫和无助。
+                    <p class="half-center">
+                        {{ $t('peermentor.envelope.letter.content4') }}
                     </p>
-                    <div class="must-know-part">
-                        <h2>学员咨询须知</h2>
+                    <div class="must-know-part half-center">
+                        <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
                         <ul>
-                            <li>愿意主动与导师联系</li>
-                            <li>尊重导师，要守时</li>
-                            <li>在该学期内和导师进行谈话</li>
                             <li>
-                                通过电子邮件/微信/电话与导师跟进，并将进展/困难告与导师
+                                {{ $t('peermentor.envelope.mustKnow.item1') }}
                             </li>
-                            <li>正面看待导师反馈</li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item2') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item3') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item4') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.envelope.mustKnow.item5') }}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -215,30 +274,30 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
         </section>
 
         <div class="section-requirement">
-            <div class="half-half orange-color">
-                <h2>朋辈导师 要求</h2>
+            <div class="half-half-nop half-half orange-color">
+                <h2>{{ $t('peermentor.requirements.title') }}</h2>
                 <ul>
-                    <li>有一颗愿意帮助他人，有志愿者精神的人；</li>
-                    <li>乐于分享，享受帮助他人成长的感觉；</li>
-                    <li>拥有积极向上，勇于求进的热情;</li>
-                    <li>有良好的学术背景和优质的学生品行；</li>
-                    <li>在不同领域有一定的经验 (领域不限);</li>
-                    <li>能够参加朋辈导师团队的每月会议，培训和各类活动</li>
+                    <li>{{ $t('peermentor.requirements.item1') }}</li>
+                    <li>{{ $t('peermentor.requirements.item2') }}</li>
+                    <li>{{ $t('peermentor.requirements.item3') }}</li>
+                    <li>{{ $t('peermentor.requirements.item4') }}</li>
+                    <li>{{ $t('peermentor.requirements.item5') }}</li>
+                    <li>{{ $t('peermentor.requirements.item6') }}</li>
                 </ul>
             </div>
-            <div class="half-half blue-color">
-                <h2>朋辈导师 福利</h2>
+            <div class="half-half-nop half-half blue-color">
+                <h2>{{ $t('peermentor.benefits.title') }}</h2>
                 <ul>
-                    <li>获得定期的资深培训；</li>
-                    <li>获得IFU志愿者证书；</li>
-                    <li>有机会评选“年度优秀 导师服务奖”;</li>
-                    <li>锻炼自身的领导和咨询的能力；</li>
+                    <li>{{ $t('peermentor.benefits.item1') }}</li>
+                    <li>{{ $t('peermentor.benefits.item2') }}</li>
+                    <li>{{ $t('peermentor.benefits.item3') }}</li>
+                    <li>{{ $t('peermentor.benefits.item4') }}</li>
                     <li>
-                        收获自我的成长，通过反思和复盘获得对自我新的认知;
+                        {{ $t('peermentor.benefits.item5') }}
                     </li>
-                    <li>拓展人际关系网，结实一群志同道合的小伙伴；</li>
+                    <li>{{ $t('peermentor.benefits.item6') }}</li>
                     <li>
-                        IFU社交平台将会对优秀导师和学生的感人故事和真诚分享进行系列报道
+                        {{ $t('peermentor.benefits.item7') }}
                     </li>
                 </ul>
             </div>
@@ -272,24 +331,34 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
             </div>
         </section> -->
         <section>
-            <h2>IFU朋辈咨询项目火热招募进行中...</h2>
-            <p class="peermentor-recruit-p">
-                如果你希望找到一个群体、倾听、陪伴者，或是用自身的经验和能力，指导、鼓舞他人，就赶快点击下方链接报名加入吧！
+            <h2>{{ $t('peermentor.recruiting.title') }}</h2>
+            <p id="peermentor-recruit-p" class="peermentor-recruit-p">
+                {{ $t('peermentor.recruiting.description') }}
             </p>
             <div class="section-requirement">
-                <div class="half-half">
-                    <img
-                        class="recruit-image"
-                        src="@/assets/peermentor/tutor_graphic.png"
-                        alt="tutor recruitment"
-                    />
+                <div class="half-half-nop">
+                    <a
+                        href="https://forms.gle/3EYR58psCfqTsR4Z7"
+                        target="_blank"
+                    >
+                        <img
+                            class="recruit-image"
+                            src="@/assets/peermentor/tutor_graphic.svg"
+                            alt="tutor recruitment"
+                        />
+                    </a>
                 </div>
-                <div class="half-half">
-                    <img
-                        class="recruit-image"
-                        src="@/assets/peermentor/student_graphic.png"
-                        alt="tutor recruitment"
-                    />
+                <div class="half-half-nop">
+                    <a
+                        href="https://forms.gle/qrmRz8E6TgFFD7BK7"
+                        target="_blank"
+                    >
+                        <img
+                            class="recruit-image"
+                            src="@/assets/peermentor/student_graphic.svg"
+                            alt="tutor recruitment"
+                        />
+                    </a>
                 </div>
             </div>
         </section>
@@ -298,13 +367,13 @@ IFU朋辈导师 (Peer Mentor) 将作为学生的倾听、陪伴者，让学生�
 
 <script>
 import Banner from '@/components/Banner.vue';
-// import Button from '@/components/Button.vue';
+import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
 
 export default {
     components: {
         Banner,
-        // Button,
+        Button,
     },
     data() {
         return {
@@ -345,12 +414,17 @@ export default {
     }
 }
 
+h2 {
+    font-weight: 600;
+}
+
 .peer-mentor-intro-section {
     border-top: 10px solid rgba(38, 156, 209, 0.8);
     border-bottom: 10px solid rgba(38, 156, 209, 0.8);
 }
 
 .whypeermentor {
+    padding-bottom: 0px;
     .whypeermentor-upper {
         width: 70%;
     }
@@ -359,6 +433,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-top: 6%;
 
         .one-fourth {
             flex-basis: 21%;
@@ -393,24 +468,37 @@ export default {
 
         h1 {
             color: white;
+            font-size: 30px;
+            font-weight: 600;
         }
     }
 
     .project-process-images {
         height: auto;
-        text-align: center;
         margin-bottom: 75px;
+        position: relative;
+        text-align: center;
 
-        .blue-person {
-            margin: -100px 0 300px 295px;
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        div {
             position: absolute;
         }
-    }
-    .bubbles-content {
-        position: absolute;
+
+        .blue-person {
+            width: 50%;
+            height: auto;
+            left: 25%;
+            bottom: 0.4%;
+            position: absolute;
+        }
 
         .bubbles-content-blue {
-            margin: 75px 0 0 140px;
+            top: 15%;
+            left: 5%;
 
             li {
                 text-align: left;
@@ -424,7 +512,8 @@ export default {
         }
 
         .bubbles-content-green {
-            margin: -30px 0 0 400px;
+            top: 65%;
+            left: 25%;
 
             li {
                 text-align: left;
@@ -438,7 +527,8 @@ export default {
         }
 
         .bubbles-content-right {
-            margin: -260px 0 0 1050px;
+            top: 25%;
+            left: 75%;
 
             li {
                 text-align: left;
@@ -449,15 +539,25 @@ export default {
                 text-align: left;
                 margin: 0 0 0 25px;
             }
-            button {
-                background-color: rgba(38, 156, 209, 0.8);
-                text-align: center;
-                margin-left: 32px;
-                padding: 1em 4em;
-            }
+            // button {
+            //     height: 50px;
+            //     background-color: $button-color;
+            //     box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
+            //     border: none;
+            //     border-radius: 30px;
+            //     color: white;
+            //     font-size: $text-size;
+            //     padding: 0 45px;
+            //     margin-left: 17%;
+            // }
         }
     }
+
     .project-process-table {
+        img {
+            height: auto;
+            max-width: 1440px;
+        }
         .table-content {
             position: absolute;
             width: 1440px;
@@ -468,7 +568,7 @@ export default {
                 grid-template-columns: 169px 300px 118px auto 202px;
                 grid-auto-rows: 160px;
 
-                span {
+                /deep/ span {
                     font-weight: bold;
                 }
 
@@ -489,6 +589,7 @@ export default {
 }
 
 .join-peermentor {
+    padding-top: 0px;
     .peermentor-envelop {
         display: flex;
         justify-content: center;
@@ -496,8 +597,20 @@ export default {
 
         .letter-content {
             position: absolute;
-            width: 50%;
+            // width: 50%;
             top: 6%;
+
+            .half-center {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .fit-letter {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             .letterpart-with-graph {
                 display: flex;
@@ -507,14 +620,17 @@ export default {
             }
 
             .must-know-part {
-                width: 60%;
+                width: 50%;
                 line-height: 31px;
                 letter-spacing: 0.03em;
                 background: #ffffff;
                 padding: 20px 20px;
-
+                border: 5px solid #efcbab;
                 h2 {
                     margin-left: 20px;
+                }
+                ul {
+                    width: 50%;
                 }
             }
         }
@@ -525,10 +641,9 @@ export default {
     display: flex;
     justify-content: center;
 
-    .half-half {
+    .half-half-nop {
         flex-basis: 50%;
         text-align: center;
-        padding: 80px 7%;
         color: #ffffff;
         ul {
             text-align: left;
@@ -539,6 +654,10 @@ export default {
             width: 350px;
             height: 100%;
         }
+    }
+
+    .half-half {
+        padding: 80px 7%;
     }
 
     .orange-color {
@@ -559,6 +678,28 @@ p {
 
     &:last-of-type {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: $mobile-max-width) {
+    .row {
+        > div {
+            flex-basis: 100%;
+        }
+    }
+
+    .whypeermentor {
+        .whypeermentor-upper {
+            width: 100%;
+        }
+
+        .fourreason-outside {
+            flex-direction: column;
+        }
+    }
+
+    .section-requirement {
+        flex-direction: column;
     }
 }
 </style>
