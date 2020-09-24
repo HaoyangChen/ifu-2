@@ -41,6 +41,11 @@
                             >
                             <n-link
                                 class="n-link"
+                                :to="localePath('/peermentor')"
+                                >{{ $t('header.peermentor') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
                                 :to="localePath('/membership')"
                                 >{{ $t('header.membership') }}</n-link
                             >
@@ -195,6 +200,9 @@ header {
     align-items: center;
     position: relative;
     background-color: #ddf2fd;
+    .nuxt-link-active {
+        color: black;
+    }
 }
 
 .arrow {
@@ -228,7 +236,7 @@ a {
 
 .n-link:hover {
     box-sizing: border-box;
-    border-bottom: 3px solid $dark-blue;
+    border-bottom: 3px solid $light-blue;
 }
 
 .nuxt-link-active {

@@ -539,17 +539,6 @@ h2 {
                 text-align: left;
                 margin: 0 0 0 25px;
             }
-            // button {
-            //     height: 50px;
-            //     background-color: $button-color;
-            //     box-shadow: 0px 10px 15px rgba(78, 189, 247, 0.25);
-            //     border: none;
-            //     border-radius: 30px;
-            //     color: white;
-            //     font-size: $text-size;
-            //     padding: 0 45px;
-            //     margin-left: 17%;
-            // }
         }
     }
 

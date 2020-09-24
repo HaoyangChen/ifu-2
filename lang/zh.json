@@ -1,10 +1,11 @@
 {
     "header": {
         "home": "主页",
-        "service": "服务",
+        "service": "项目",
         "about": "关于我们",
         "contact": "联系我们",
-        "totoro": "多多罗计划",
+        "totoro": "多多罗学术辅导",
+        "peermentor": "IFU 朋辈项目",
         "membership": "IFU 会员",
         "more": "IFU 更多服务",
         "support": "支持我们",
