@@ -110,7 +110,7 @@ export default {
 
 <style lang="scss" scoped>
 .carousel {
-    height: 450px;
+    height: 520px;
     display: flex;
     color: white;
 }

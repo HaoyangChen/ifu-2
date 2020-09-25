@@ -74,6 +74,9 @@
                 "totoroTitle": "TOTOROAD",
                 "totoroText": "IFU希望通过多多罗计划，集合最优秀的海外学长学姐们所学的专业知识，所得的留学经验，以及海外高校官方权威数据为准留学生家庭定制学术衔接先修课、同步辅导课，帮助留学生家庭找到正确的方向（ 无论是择校，四年规划，亦或是融入进海外课堂，本土文化，学术上的辅导帮助等），减少留学前后的信息闭塞， 绕开那些可避免的弯路。",
                 "totorosubTitle": "多多罗 同步辅导衔接课",
+                "peerMentorTitle": "PEER MENTOR",
+                "peerMentorText": "The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be the students’ best listeners and companions so that students can freely share their worries. Peer mentors will guide and inspire students to solve problems with their own experience and knowledge through one-on-one, face to face chat and group activities.",
+                "peerMentorsubTitle": "Support from a fellow peer",
                 "membershipTitle": "MEMBERSHIP",
                 "membershipText": "因支持IFU并欣赏IFU文化，通过简单注册操作（不需要进行面试）成为我们的会员的同伴们，IFU会以邮件形式发送每月活动及分享会资讯。同时，持有IFUxISIC国际学生卡的同学，可享有全球范围的生活、旅行、餐饮、法律、学术折扣（具体折扣见店家）。",
                 "membershipsubTitle": "IFU 会员",
@@ -445,12 +448,8 @@
                 "阿尔伯塔大学",
                 "维多利亚大学"
             ],
-            "uk": [
-                "伦敦大学学院"
-            ],
-            "singapore": [
-                "新加坡国立大学"
-            ]
+            "uk": ["伦敦大学学院"],
+            "singapore": ["新加坡国立大学"]
         },
         "history": {
             "2017": {

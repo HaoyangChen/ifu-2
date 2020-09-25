@@ -74,6 +74,9 @@
                 "totoroTitle": "TOTOROAD",
                 "totoroText": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Project Totoroad assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future.",
                 "totorosubTitle": "Tutoring and Mentorship",
+                "peerMentorTitle": "PEER MENTOR",
+                "peerMentorText": "The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be the students’ best listeners and companions so that students can freely share their worries. Peer mentors will guide and inspire students to solve problems with their own experience and knowledge through one-on-one, face to face chat and group activities.",
+                "peerMentorsubTitle": "Support from a fellow peer",
                 "membershipTitle": "MEMBERSHIP",
                 "membershipText": "To support and appreciate the IFU culture, through simple registration operation (no interview required) to become our member's companions, IFU will send monthly events and share meeting information by email. At the same time, students holding the IFUxISIC International Student Card can enjoy worldwide discounts on life, travel, catering, law, and academics (see the store for specific discounts).",
                 "membershipsubTitle": "IFU Member & Student Identity Card",
@@ -428,12 +431,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",
