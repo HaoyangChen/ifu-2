@@ -34,7 +34,7 @@
                 <Button
                     class="btn"
                     external
-                    to="https://www.wjx.top/jq/40951475.aspx"
+                    to="https://www.wjx.top/jq/89696872.aspx"
                     >{{ $t('totoro.tutors.submitApplication') }}</Button
                 >
             </div>
