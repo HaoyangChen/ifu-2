@@ -349,7 +349,7 @@ export default {
     .swiper-button-prev,
     .swiper-button-next {
         color: white;
-        font-weight: bold;
+        font-weight: bolder;
     }
 
     .swiper-wrapper {
@@ -362,9 +362,10 @@ export default {
                 height: 580px;
                 width: 80%;
                 img {
-                    width: 100%;
+                    width: 80%;
                     height: 80%;
                     object-fit: cover;
+                    border-radius: 0.5rem;
                 }
             }
         }
