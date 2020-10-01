@@ -359,10 +359,10 @@ export default {
             align-items: center;
             text-align: center;
             .img {
-                height: 580px;
+                height: 650px;
                 width: 80%;
                 img {
-                    width: 80%;
+                    width: 100%;
                     height: 80%;
                     object-fit: cover;
                     border-radius: 0.5rem;
