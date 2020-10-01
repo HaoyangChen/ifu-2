@@ -89,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="project-process">
+        <!-- <section class="project-process">
             <div class="project-process-title">
                 <h1>{{ $t('peermentor.services.title') }}</h1>
             </div>
@@ -220,6 +220,96 @@
                     src="@/assets/peermentor/project-process-table.png"
                     alt="project process table"
                 />
+            </div>
+        </section> -->
+        <section class="blue-section">
+            <div class="project-process-title">
+                <h1>{{ $t('peermentor.services.title') }}</h1>
+            </div>
+            <div class="project-process-section">
+                <div class="blue-bubble-section">
+                    <img
+                        src="@/assets/peermentor/blue_bubble.svg"
+                        alt="blue bubble"
+                    />
+                    <div class="blue-bubble-inner">
+                        <h3>
+                            {{ $t('peermentor.services.blueBubble.title') }}
+                        </h3>
+                        <ul>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item1') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item2') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item3') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item4') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item5') }}
+                            </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item6') }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="green-bubble-section">
+                    <img
+                        src="@/assets/peermentor/green_bubble.svg"
+                        alt="green bubble"
+                    />
+                    <div class="green-bubble-inner">
+                        <h3>
+                            {{ $t('peermentor.services.greenBubble.title') }}
+                        </h3>
+                        <ul>
+                            <li>
+                                {{
+                                    $t('peermentor.services.greenBubble.item1')
+                                }}
+                            </li>
+                            <li>
+                                {{
+                                    $t('peermentor.services.greenBubble.item2')
+                                }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blue-person-section">
+                    <img
+                        src="@/assets/peermentor/blue_person.svg"
+                        alt="blue person"
+                    />
+                </div>
+                <div class="blue-outline-section">
+                    <img
+                        src="@/assets/peermentor/blue_outline_bubble.svg"
+                        alt="blue outline bubble"
+                    />
+                    <div class="green-bubble-inner">
+                        <h3>
+                            {{ $t('peermentor.services.greenBubble.title') }}
+                        </h3>
+                        <ul>
+                            <li>
+                                {{
+                                    $t('peermentor.services.greenBubble.item1')
+                                }}
+                            </li>
+                            <li>
+                                {{
+                                    $t('peermentor.services.greenBubble.item2')
+                                }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="join-peermentor">
@@ -367,13 +457,13 @@
 
 <script>
 import Banner from '@/components/Banner.vue';
-import Button from '@/components/Button.vue';
+// import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
 
 export default {
     components: {
         Banner,
-        Button,
+        // Button,
     },
     data() {
         return {
@@ -450,6 +540,54 @@ h2 {
             .center {
                 text-align: center;
             }
+        }
+    }
+}
+
+.blue-section {
+    .project-process-title {
+        background-color: rgba(38, 156, 209, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+
+        h1 {
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .project-process-section {
+        line-height: 31px;
+        position: relative;
+
+        letter-spacing: 0.02em;
+        .blue-bubble-section {
+            position: absolute;
+
+            .blue-bubble-inner {
+                position: absolute;
+                top: 20px;
+                left: 53px;
+            }
+        }
+        .green-bubble-section {
+            position: absolute;
+            left: 270px;
+            top: 190px;
+
+            .green-bubble-inner {
+                position: absolute;
+                top: 20px;
+                left: 53px;
+            }
+        }
+        .blue-person-section {
+            position: absolute;
+            top: -97px;
+            left: 259px;
         }
     }
 }
