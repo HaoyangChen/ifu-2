@@ -292,22 +292,49 @@
                         src="@/assets/peermentor/blue_outline_bubble.svg"
                         alt="blue outline bubble"
                     />
-                    <div class="green-bubble-inner">
+                    <div class="blue-outline-inner">
                         <h3>
-                            {{ $t('peermentor.services.greenBubble.title') }}
+                            {{ $t('peermentor.services.rightBubble.title') }}
                         </h3>
                         <ul>
                             <li>
                                 {{
-                                    $t('peermentor.services.greenBubble.item1')
+                                    $t('peermentor.services.rightBubble.item1')
                                 }}
                             </li>
                             <li>
                                 {{
-                                    $t('peermentor.services.greenBubble.item2')
+                                    $t('peermentor.services.rightBubble.item2')
                                 }}
                             </li>
                         </ul>
+                        <Button scroll to="#peermentor-recruit-p">
+                            {{
+                                $t('peermentor.services.rightBubble.buttonText')
+                            }}
+                        </Button>
+                    </div>
+                </div>
+                <!-- height of section -->
+                <div class="project-process-height"></div>
+                <!-- phases -->
+                <div class="project-process-phases">
+                    <div class="phase-flex phase1-background">
+                        <h2 class="phase-number">
+                            {{ $t('peermentor.programstreams.stage1.title') }}
+                        </h2>
+                        <img
+                            src="@/assets/peermentor/line_process.svg"
+                            alt="line process"
+                        />
+                        <div class="phase-circle"></div>
+                        <p
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage1.description',
+                                )
+                            "
+                        />
                     </div>
                 </div>
             </div>
@@ -457,13 +484,13 @@
 
 <script>
 import Banner from '@/components/Banner.vue';
-// import Button from '@/components/Button.vue';
+import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
 
 export default {
     components: {
         Banner,
-        // Button,
+        Button,
     },
     data() {
         return {
@@ -560,7 +587,7 @@ h2 {
     }
 
     .project-process-section {
-        line-height: 31px;
+        line-height: 35px;
         position: relative;
 
         letter-spacing: 0.02em;
@@ -588,6 +615,49 @@ h2 {
             position: absolute;
             top: -97px;
             left: 259px;
+            z-index: 1;
+        }
+
+        .blue-outline-section {
+            position: absolute;
+            left: 880px;
+            top: -24px;
+
+            .blue-outline-inner {
+                position: absolute;
+                top: 69px;
+                left: 71px;
+            }
+        }
+    }
+
+    .project-process-height {
+        height: 470px;
+    }
+
+    .project-process-phases {
+        .phase-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .phase-number {
+                padding: 15px 120px;
+                background: #fff;
+                margin-left: 10%;
+                border-radius: 34px;
+            }
+
+            .phase-circle {
+                height: 46px;
+                width: 46px;
+                border-radius: 50%;
+                border: 3px dashed #ffffff;
+            }
+        }
+
+        .phase1-background {
+            background-color: #bee1f1;
         }
     }
 }
@@ -801,11 +871,6 @@ h2 {
 
 p {
     line-height: 31px;
-    margin-bottom: 30px;
-
-    &:last-of-type {
-        margin-bottom: 50px;
-    }
 }
 
 @media (max-width: $mobile-max-width) {
