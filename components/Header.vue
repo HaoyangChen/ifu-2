@@ -15,15 +15,81 @@
                 <n-link class="n-link" :to="localePath('/')" exact>{{
                     $t('header.home')
                 }}</n-link>
-                <n-link class="n-link" :to="localePath('/about')">{{
+                <!-- <n-link class="n-link" :to="localePath('/about')">{{
                     $t('header.about')
-                }}</n-link>
+                }}</n-link> -->
+                <div class="about">
+                    <a
+                        :class="isAboutPath ? 'nuxt-link-active' : ''"
+                        @click="toggleAboutMenu"
+                    >
+                        {{ $t('header.about') }}
+                        <div class="arrow desktop" />
+                        <div v-if="showAboutMenu" class="close-arrow mobile" />
+                        <div v-else class="open-arrow mobile" />
+                    </a>
+                    <div class="about-menu desktop">
+                        <div class="service-menu-separator" />
+                        <div class="about-menu-inner">
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/ourstory')"
+                                >{{ $t('header.ourstory') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/ourculture')"
+                                >{{ $t('header.ourculture') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/ourjourney')"
+                                >{{ $t('header.ourjourney') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/organizationstructure')"
+                                >{{ $t('header.orgstructure') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/ourteam')"
+                                >{{ $t('header.ourteam') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/campusvolunteer')"
+                                >{{ $t('header.campusvolunteer') }}</n-link
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div v-if="showAboutMenu" class="about-menu-mobile mobile">
+                    <n-link :to="localePath('/ourstory')">{{
+                        $t('header.ourstory')
+                    }}</n-link>
+                    <n-link :to="localePath('/ourculture')">{{
+                        $t('header.peermentor')
+                    }}</n-link>
+                    <n-link :to="localePath('/ourjourney')">{{
+                        $t('header.membership')
+                    }}</n-link>
+                    <n-link :to="localePath('/organizationstructure')">{{
+                        $t('header.orgstructure')
+                    }}</n-link>
+                    <n-link :to="localePath('/ourteam')">{{
+                        $t('header.ourteam')
+                    }}</n-link>
+                    <n-link :to="localePath('/campusvolunteers')">{{
+                        $t('header.campusvolunteer')
+                    }}</n-link>
+                </div>
                 <div class="service">
                     <a
                         :class="isServicePath ? 'nuxt-link-active' : ''"
                         @click="toggleServiceMenu"
                     >
-                        {{ $t('header.service') }}
+                        {{ $t('header.programs') }}
                         <div class="arrow desktop" />
                         <div
                             v-if="showServiceMenu"
@@ -69,11 +135,48 @@
                         $t('header.more')
                     }}</n-link>
                 </div>
-                <n-link
+                <!-- <n-link
                     :class="isContactPath ? 'nuxt-link-active' : 'n-link'"
                     :to="localePath('/contact')"
                     >{{ $t('header.contact') }}</n-link
-                >
+                > -->
+                <div class="connect">
+                    <a
+                        :class="isConnectPath ? 'nuxt-link-active' : ''"
+                        @click="toggleConnectMenu"
+                    >
+                        {{ $t('header.connect') }}
+                        <div class="arrow desktop" />
+                        <div
+                            v-if="showConnectMenu"
+                            class="close-arrow mobile"
+                        />
+                        <div v-else class="open-arrow mobile" />
+                    </a>
+                    <div class="connect-menu desktop">
+                        <div class="service-menu-separator" />
+                        <div class="connect-menu-inner">
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/contact')"
+                                >{{ $t('header.contact') }}</n-link
+                            >
+                            <n-link
+                                class="n-link"
+                                :to="localePath('/career')"
+                                >{{ $t('header.career') }}</n-link
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div v-if="showConnectMenu" class="connect-menu-mobile mobile">
+                    <n-link :to="localePath('/contact')">{{
+                        $t('header.contact')
+                    }}</n-link>
+                    <n-link :to="localePath('/career')">{{
+                        $t('header.career')
+                    }}</n-link>
+                </div>
                 <n-link class="n-link" :to="localePath('/support')">{{
                     $t('header.support')
                 }}</n-link>
@@ -100,12 +203,17 @@ export default {
     name: 'Header',
     data() {
         return {
+            showAboutMenu: false,
             showServiceMenu: false,
+            showConnectMenu: false,
         };
     },
     computed: {
         currentPath() {
             return this.$route.path;
+        },
+        isAboutPath() {
+            return this.currentPath.includes('/about');
         },
         isServicePath() {
             return (
@@ -119,7 +227,7 @@ export default {
                 this.currentPath === '/zh/carnival'
             );
         },
-        isContactPath() {
+        isConnectPath() {
             return (
                 this.currentPath === '/contact' ||
                 this.currentPath === '/career' ||
@@ -131,11 +239,19 @@ export default {
     watch: {
         $route(to, from) {
             this.showServiceMenu = false;
+            this.showAboutMenu = false;
+            this.showConnectMenu = false;
         },
     },
     methods: {
+        toggleAboutMenu() {
+            this.showAboutMenu = !this.showAboutMenu;
+        },
         toggleServiceMenu() {
             this.showServiceMenu = !this.showServiceMenu;
+        },
+        toggleConnectMenu() {
+            this.showConnectMenu = !this.showConnectMenu;
         },
     },
 };
@@ -175,6 +291,41 @@ header {
     width: 50%;
     display: flex;
     justify-content: space-between;
+}
+
+.about {
+    position: relative;
+    cursor: default;
+}
+
+.about-menu {
+    display: none;
+    position: absolute;
+}
+
+.about-menu-inner {
+    width: 300px;
+    height: 240px;
+    left: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: #ddf2fd;
+    .nuxt-link-active {
+        color: black;
+    }
+}
+
+.about:hover {
+    .about-menu {
+        display: block;
+    }
+
+    .arrow {
+        transform: rotateZ(-90deg);
+    }
 }
 
 .service {
@@ -220,6 +371,41 @@ header {
 
 .service:hover {
     .service-menu {
+        display: block;
+    }
+
+    .arrow {
+        transform: rotateZ(-90deg);
+    }
+}
+
+.connect {
+    position: relative;
+    cursor: default;
+}
+
+.connect-menu {
+    display: none;
+    position: absolute;
+}
+
+.connect-menu-inner {
+    width: 250px;
+    height: 90px;
+    left: -75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: #ddf2fd;
+    .nuxt-link-active {
+        color: black;
+    }
+}
+
+.connect:hover {
+    .connect-menu {
         display: block;
     }
 
@@ -290,7 +476,9 @@ span {
         border-bottom: none;
     }
 
-    .service-menu-mobile {
+    .service-menu-mobile,
+    .about-menu-mobile,
+    .connect-menu-mobile {
         background: #ddf2fd;
     }
 

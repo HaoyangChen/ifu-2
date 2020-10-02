@@ -1,15 +1,23 @@
 {
     "header": {
         "home": "主页",
-        "service": "项目",
         "about": "关于我们",
-        "contact": "联系我们",
+        "service": "项目",
+        "ourstory": "我们的故事",
+        "ourculture": "我们的文化",
+        "ourjourney": "我们的文化",
+        "orgstructure": "组织结构",
+        "ourteam": "我们的团队",
+        "campusvolunteer": "校园志愿者",
+        "programs": "项目",
         "totoro": "多多罗学术辅导",
         "peermentor": "IFU 朋辈项目",
         "membership": "IFU 会员",
         "more": "IFU 更多服务",
-        "support": "支持我们",
+        "connect": "联系我们",
+        "contact": "联系我们",
         "career": "加入我们",
+        "support": "支持我们",
         "orgName": "国际家长汇"
     },
     "footer": {
@@ -448,8 +456,12 @@
                 "阿尔伯塔大学",
                 "维多利亚大学"
             ],
-            "uk": ["伦敦大学学院"],
-            "singapore": ["新加坡国立大学"]
+            "uk": [
+                "伦敦大学学院"
+            ],
+            "singapore": [
+                "新加坡国立大学"
+            ]
         },
         "history": {
             "2017": {

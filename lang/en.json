@@ -1,15 +1,23 @@
 {
     "header": {
         "home": "Home",
-        "service": "Service",
         "about": "About",
-        "contact": "Contact",
+        "service": "Service",
+        "ourstory": "Our Story",
+        "ourculture": "Our Culture",
+        "ourjourney": "Our Journey",
+        "orgstructure": "Organization Structure",
+        "ourteam": "Our Team",
+        "campusvolunteer": "Campus Volunteers",
+        "programs": "Programs",
         "totoro": "Totoroad Academy",
         "peermentor": "Peer Mentor Program",
         "membership": "IFU Membership",
         "more": "IFU Other Services",
-        "support": "Support",
+        "connect": "Connect",
+        "contact": "Contact",
         "career": "Career",
+        "support": "Support",
         "orgName": "International Family Union"
     },
     "footer": {
@@ -431,8 +439,12 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": ["University College London"],
-            "singapore": ["National University of Singapore"]
+            "uk": [
+                "University College London"
+            ],
+            "singapore": [
+                "National University of Singapore"
+            ]
         },
         "story": {
             "achievement": "Our Achievement",
