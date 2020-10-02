@@ -1,5 +1,23 @@
 [
     {
+        "name": "Campus Leader",
+        "department": "Volunteer Management",
+        "requirement": "Undergraduate or graduates from universities overseas; has correct understanding of non-governmental organizations; recognize the goals of IFU and hope to contribute to international students; have experience in being a part of or building clubs alike",
+        "description": "Besides carrying out basic duties of volunteers, campus leader is the person in charge of all volunteers of the university, manage and guide the team, recruit volunteers and attend monthly meetings of IFU and so on",
+        "reward": "Certificate of Volunteer; Certificate of Appreciation",
+        "people": "1 per campus",
+        "time": "6-12"
+    },
+    {
+        "name": "Campus Volunteer",
+        "department": "Volunteer Management",
+        "requirement": "Undergraduate or graduates from universities overseas; has correct understanding of non-governmental organizations; recognize the goals of IFU and hope to contribute to international students",
+        "description": "Carrying out basic duties of volunteers; ensures messages are sent out, contact with Campus Leader at once when emergency happens; cooperate with Campus Leader to achieve the goal of alleviating the anxiety of families of international students",
+        "reward": "Certificate of Volunteer; Certificate of Appreciation",
+        "people": "Open",
+        "time": "3-12"
+    },
+    {
         "name": "Document Translator",
         "department": "Administration & Finance",
         "requirement": "Applicants with experience of Chinese translation would be better",
