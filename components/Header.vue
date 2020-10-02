@@ -420,7 +420,7 @@ a {
     color: $text-color;
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 33px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 }
 
 .n-link:hover {
