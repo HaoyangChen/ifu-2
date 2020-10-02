@@ -222,7 +222,7 @@
                 />
             </div>
         </section> -->
-        <section class="blue-section">
+        <div class="blue-section">
             <div class="project-process-title">
                 <h1>{{ $t('peermentor.services.title') }}</h1>
             </div>
@@ -329,6 +329,7 @@
                         />
                         <div class="phase-circle"></div>
                         <p
+                            class="phase-description"
                             v-html="
                                 $t(
                                     'peermentor.programstreams.stage1.description',
@@ -336,9 +337,81 @@
                             "
                         />
                     </div>
+                    <div class="phase-flex phase2-background">
+                        <h2 class="phase-number">
+                            {{ $t('peermentor.programstreams.stage2.title') }}
+                        </h2>
+                        <img
+                            src="@/assets/peermentor/line_process.svg"
+                            alt="line process"
+                        />
+                        <div class="phase-circle"></div>
+                        <p
+                            class="phase-description"
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage2.description',
+                                )
+                            "
+                        />
+                    </div>
+                    <div class="phase-flex phase3-background">
+                        <h2 class="phase-number">
+                            {{ $t('peermentor.programstreams.stage3.title') }}
+                        </h2>
+                        <img
+                            src="@/assets/peermentor/line_process.svg"
+                            alt="line process"
+                        />
+                        <div class="phase-circle"></div>
+                        <p
+                            class="phase-description"
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage3.description',
+                                )
+                            "
+                        />
+                    </div>
+                    <div class="phase-flex phase4-background">
+                        <h2 class="phase-number">
+                            {{ $t('peermentor.programstreams.stage4.title') }}
+                        </h2>
+                        <img
+                            src="@/assets/peermentor/line_process.svg"
+                            alt="line process"
+                        />
+                        <div class="phase-circle"></div>
+                        <p
+                            class="phase-description"
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage4.description',
+                                )
+                            "
+                        />
+                    </div>
+                    <div class="phase-flex phase5-background">
+                        <h2 class="phase-number">
+                            {{ $t('peermentor.programstreams.stage5.title') }}
+                        </h2>
+                        <img
+                            src="@/assets/peermentor/line_process.svg"
+                            alt="line process"
+                        />
+                        <div class="phase-circle"></div>
+                        <p
+                            class="phase-description"
+                            v-html="
+                                $t(
+                                    'peermentor.programstreams.stage5.description',
+                                )
+                            "
+                        />
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="join-peermentor">
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
@@ -593,6 +666,7 @@ h2 {
         letter-spacing: 0.02em;
         .blue-bubble-section {
             position: absolute;
+            left: 8%;
 
             .blue-bubble-inner {
                 position: absolute;
@@ -602,7 +676,7 @@ h2 {
         }
         .green-bubble-section {
             position: absolute;
-            left: 270px;
+            left: 27%;
             top: 190px;
 
             .green-bubble-inner {
@@ -614,13 +688,13 @@ h2 {
         .blue-person-section {
             position: absolute;
             top: -97px;
-            left: 259px;
+            left: 26%;
             z-index: 1;
         }
 
         .blue-outline-section {
             position: absolute;
-            left: 880px;
+            left: 70%;
             top: -24px;
 
             .blue-outline-inner {
@@ -639,25 +713,45 @@ h2 {
         .phase-flex {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
+            padding-left: 10%;
 
             .phase-number {
-                padding: 15px 120px;
                 background: #fff;
-                margin-left: 10%;
                 border-radius: 34px;
+                height: 70px;
+                width: 331px;
+                text-align: center;
+                align-items: center;
+                line-height: 70px;
             }
 
             .phase-circle {
                 height: 46px;
                 width: 46px;
                 border-radius: 50%;
-                border: 3px dashed #ffffff;
+                background-color: #fff;
+            }
+
+            .phase-description {
+                width: 50%;
             }
         }
 
         .phase1-background {
             background-color: #bee1f1;
+        }
+        .phase2-background {
+            background-color: #a8d7ed;
+        }
+        .phase3-background {
+            background-color: #92cde8;
+        }
+        .phase4-background {
+            background-color: #7dc4e3;
+        }
+        .phase5-background {
+            background-color: #67badf;
         }
     }
 }
@@ -786,7 +880,7 @@ h2 {
 }
 
 .join-peermentor {
-    padding-top: 0px;
+    padding-top: 80px;
     .peermentor-envelop {
         display: flex;
         justify-content: center;
