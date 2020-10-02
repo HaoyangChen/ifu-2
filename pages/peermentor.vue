@@ -279,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <section class="join-peermentor">
+        <!-- <section class="join-peermentor">
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
                 <div class="letter-content">
@@ -328,8 +328,60 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="peermentor-letter-section">
+            <div class="peermentor-letter-innersection">
+                <h2>
+                    {{ $t('peermentor.envelope.letter.title') }}
+                </h2>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content1a') }}
+                </p>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content1b') }}
+                </p>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content1c') }}
+                </p>
+                <div class="three-in-onerow">
+                    <img
+                        src="@/assets/peermentor/letter_left_graph.svg"
+                        alt="letter left graph"
+                    />
+                    <p>{{ $t('peermentor.envelope.letter.content2') }}</p>
+                    <img
+                        src="@/assets/peermentor/letter_right_group.svg"
+                        alt="letter left graph"
+                    />
+                </div>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content3') }}
+                </p>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content4') }}
+                </p>
+                <div class="must-know-part">
+                    <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
+                    <ul>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item2') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item3') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item4') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item5') }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
         <div class="section-requirement">
             <div class="half-half-nop half-half orange-color">
                 <h2>{{ $t('peermentor.requirements.title') }}</h2>
@@ -791,6 +843,36 @@ h2 {
                 ul {
                     width: 50%;
                 }
+            }
+        }
+    }
+}
+
+.peermentor-letter-section {
+    .peermentor-letter-innersection {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background: url('../assets/peermentor/letter_paper.svg') no-repeat;
+        padding: 8%;
+
+        .three-in-onerow {
+            display: flex;
+            align-items: center;
+        }
+
+        .must-know-part {
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            background: #ffffff;
+            padding: 20px 20px;
+            border: 5px solid #efcbab;
+            width: 70%;
+            h2 {
+                margin-left: 20px;
+            }
+            ul {
+                width: 55%;
             }
         }
     }
