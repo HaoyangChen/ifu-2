@@ -89,139 +89,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="project-process">
-            <div class="project-process-title">
-                <h1>{{ $t('peermentor.services.title') }}</h1>
-            </div>
-            <div class="project-process-images">
-                <div class="bubbles-content-blue">
-                    <h3>{{ $t('peermentor.services.blueBubble.title') }}</h3>
-                    <ul>
-                        <li>
-                            {{ $t('peermentor.services.blueBubble.item1') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.blueBubble.item2') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.blueBubble.item3') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.blueBubble.item4') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.blueBubble.item5') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.blueBubble.item6') }}
-                        </li>
-                    </ul>
-                </div>
-                <div class="bubbles-content-green">
-                    <h3>{{ $t('peermentor.services.greenBubble.title') }}</h3>
-                    <ul>
-                        <li>
-                            {{ $t('peermentor.services.greenBubble.item1') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.greenBubble.item2') }}
-                        </li>
-                    </ul>
-                </div>
-                <div class="bubbles-content-right">
-                    <h3>{{ $t('peermentor.services.rightBubble.title') }}</h3>
-                    <ul>
-                        <li>
-                            {{ $t('peermentor.services.rightBubble.item1') }}
-                        </li>
-                        <li>
-                            {{ $t('peermentor.services.rightBubble.item2') }}
-                        </li>
-                    </ul>
-                    <Button scroll to="#peermentor-recruit-p">
-                        {{ $t('peermentor.services.rightBubble.buttonText') }}
-                    </Button>
-                </div>
-
-                <img
-                    class="blue-person"
-                    src="@/assets/peermentor/blue_person.png"
-                    alt="blue person"
-                />
-                <img
-                    src="@/assets/peermentor/process_bubbles.png"
-                    alt="process bubbles"
-                />
-            </div>
-            <div class="project-process-table">
-                <div class="table-content">
-                    <div class="row-content">
-                        <h2>
-                            {{ $t('peermentor.programstreams.stage1.title') }}
-                        </h2>
-                        <p
-                            v-html="
-                                $t(
-                                    'peermentor.programstreams.stage1.description',
-                                )
-                            "
-                        />
-                    </div>
-                    <div class="row-content">
-                        <h2>
-                            {{ $t('peermentor.programstreams.stage2.title') }}
-                        </h2>
-                        <p
-                            v-html="
-                                $t(
-                                    'peermentor.programstreams.stage2.description',
-                                )
-                            "
-                        />
-                    </div>
-                    <div class="row-content">
-                        <h2>
-                            {{ $t('peermentor.programstreams.stage3.title') }}
-                        </h2>
-                        <p
-                            v-html="
-                                $t(
-                                    'peermentor.programstreams.stage3.description',
-                                )
-                            "
-                        />
-                    </div>
-                    <div class="row-content">
-                        <h2>
-                            {{ $t('peermentor.programstreams.stage4.title') }}
-                        </h2>
-                        <p
-                            v-html="
-                                $t(
-                                    'peermentor.programstreams.stage4.description',
-                                )
-                            "
-                        />
-                    </div>
-                    <div class="row-content">
-                        <h2>
-                            {{ $t('peermentor.programstreams.stage5.title') }}
-                        </h2>
-                        <p
-                            v-html="
-                                $t(
-                                    'peermentor.programstreams.stage5.description',
-                                )
-                            "
-                        />
-                    </div>
-                </div>
-                <img
-                    src="@/assets/peermentor/project-process-table.png"
-                    alt="project process table"
-                />
-            </div>
-        </section> -->
         <div class="blue-section">
             <div class="project-process-title">
                 <h1>{{ $t('peermentor.services.title') }}</h1>
@@ -622,7 +489,7 @@ h2 {
     .fourreason-outside {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        // align-items: flex-start;
         margin-top: 6%;
 
         .one-fourth {
@@ -715,6 +582,7 @@ h2 {
             align-items: center;
             justify-content: space-around;
             padding-left: 10%;
+            padding-right: 10%;
 
             .phase-number {
                 background: #fff;
@@ -734,7 +602,7 @@ h2 {
             }
 
             .phase-description {
-                width: 50%;
+                width: 60%;
             }
         }
 
