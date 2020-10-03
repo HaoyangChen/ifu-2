@@ -452,8 +452,12 @@
                     >
                         <img
                             class="recruit-image"
-                            src="@/assets/peermentor/tutor_graphic.svg"
+                            :src="currentMentorImage"
                             alt="tutor recruitment"
+                            @mouseover="changeMentorImageWhen('over')"
+                            @mousedown="changeMentorImageWhen('down')"
+                            @mouseout="changeMentorImageWhen('out')"
+                            @mouseup="changeMentorImageWhen('up')"
                         />
                     </a>
                 </div>
@@ -464,8 +468,12 @@
                     >
                         <img
                             class="recruit-image"
-                            src="@/assets/peermentor/student_graphic.svg"
-                            alt="tutor recruitment"
+                            :src="currentStudentImage"
+                            alt="student recruitment"
+                            @mouseover="changeStudentImageWhen('over')"
+                            @mousedown="changeStudentImageWhen('down')"
+                            @mouseout="changeStudentImageWhen('out')"
+                            @mouseup="changeStudentImageWhen('up')"
                         />
                     </a>
                 </div>
@@ -478,6 +486,10 @@
 import Banner from '@/components/Banner.vue';
 import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
+import becomeMentorImg from '@/assets/peermentor/tutor_graphic.svg';
+import becomeMentorHoverImg from '@/assets/peermentor/tutor_graphic_hover.svg';
+import becomeStudentImg from '@/assets/peermentor/student_graphic.svg';
+import becomeStudentHoverImg from '@/assets/peermentor/student_graphic_hover.svg';
 
 export default {
     components: {
@@ -486,11 +498,35 @@ export default {
     },
     data() {
         return {
+            imagesMentor: {
+                out: becomeMentorImg,
+                over: becomeMentorHoverImg,
+                up: becomeMentorHoverImg,
+                down: becomeMentorHoverImg,
+            },
+            imagesStudent: {
+                out: becomeStudentImg,
+                over: becomeStudentHoverImg,
+                up: becomeStudentHoverImg,
+                down: becomeStudentHoverImg,
+            },
             bannerImage,
+            currentMentorImage: becomeMentorImg,
+            currentStudentImage: becomeMentorImg,
         };
+    },
+    created() {
+        this.currentMentorImage = this.imagesMentor.out;
+        this.currentStudentImage = this.imagesStudent.out;
     },
     methods: {
         openEnvelope() {},
+        changeMentorImageWhen(state) {
+            this.currentMentorImage = this.imagesMentor[state];
+        },
+        changeStudentImageWhen(state) {
+            this.currentStudentImage = this.imagesStudent[state];
+        },
     },
 };
 </script>
