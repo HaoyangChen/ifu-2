@@ -263,6 +263,11 @@ export default {
 header {
     width: 100%;
     border-bottom: 1px solid #e8e9ed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #fff;
 
     .logo {
         position: relative;

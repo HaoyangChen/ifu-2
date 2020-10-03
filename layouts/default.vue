@@ -45,7 +45,7 @@ body {
 }
 
 #app {
-    overflow: hidden;
+    overflow: inherit;
 }
 
 section {
@@ -73,6 +73,10 @@ section {
 }
 
 @media (max-width: $mobile-max-width) {
+    #app {
+        overflow: hidden;
+    }
+
     html {
         font-size: 14px;
     }
