@@ -279,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <section class="join-peermentor">
+        <!-- <section class="join-peermentor">
             <div class="peermentor-envelop">
                 <img src="@/assets/peermentor/envelop.png" alt="envelop" />
                 <div class="letter-content">
@@ -328,8 +328,60 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="peermentor-letter-section">
+            <div class="peermentor-letter-innersection">
+                <h2>
+                    {{ $t('peermentor.envelope.letter.title') }}
+                </h2>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content1a') }}
+                </p>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content1b') }}
+                </p>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content1c') }}
+                </p>
+                <div class="three-in-onerow">
+                    <img
+                        src="@/assets/peermentor/letter_left_graph.svg"
+                        alt="letter left graph"
+                    />
+                    <p>{{ $t('peermentor.envelope.letter.content2') }}</p>
+                    <img
+                        src="@/assets/peermentor/letter_right_group.svg"
+                        alt="letter left graph"
+                    />
+                </div>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content3') }}
+                </p>
+                <p>
+                    {{ $t('peermentor.envelope.letter.content4') }}
+                </p>
+                <div class="must-know-part">
+                    <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
+                    <ul>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item1') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item2') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item3') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item4') }}
+                        </li>
+                        <li>
+                            {{ $t('peermentor.envelope.mustKnow.item5') }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
         <div class="section-requirement">
             <div class="half-half-nop half-half orange-color">
                 <h2>{{ $t('peermentor.requirements.title') }}</h2>
@@ -400,8 +452,12 @@
                     >
                         <img
                             class="recruit-image"
-                            src="@/assets/peermentor/tutor_graphic.svg"
+                            :src="currentMentorImage"
                             alt="tutor recruitment"
+                            @mouseover="changeMentorImageWhen('over')"
+                            @mousedown="changeMentorImageWhen('down')"
+                            @mouseout="changeMentorImageWhen('out')"
+                            @mouseup="changeMentorImageWhen('up')"
                         />
                     </a>
                 </div>
@@ -412,8 +468,12 @@
                     >
                         <img
                             class="recruit-image"
-                            src="@/assets/peermentor/student_graphic.svg"
-                            alt="tutor recruitment"
+                            :src="currentStudentImage"
+                            alt="student recruitment"
+                            @mouseover="changeStudentImageWhen('over')"
+                            @mousedown="changeStudentImageWhen('down')"
+                            @mouseout="changeStudentImageWhen('out')"
+                            @mouseup="changeStudentImageWhen('up')"
                         />
                     </a>
                 </div>
@@ -426,6 +486,10 @@
 import Banner from '@/components/Banner.vue';
 import Button from '@/components/Button.vue';
 import bannerImage from '@/assets/volunteer/banner.png';
+import becomeMentorImg from '@/assets/peermentor/tutor_graphic.svg';
+import becomeMentorHoverImg from '@/assets/peermentor/tutor_graphic_hover.svg';
+import becomeStudentImg from '@/assets/peermentor/student_graphic.svg';
+import becomeStudentHoverImg from '@/assets/peermentor/student_graphic_hover.svg';
 
 export default {
     components: {
@@ -434,11 +498,35 @@ export default {
     },
     data() {
         return {
+            imagesMentor: {
+                out: becomeMentorImg,
+                over: becomeMentorHoverImg,
+                up: becomeMentorHoverImg,
+                down: becomeMentorHoverImg,
+            },
+            imagesStudent: {
+                out: becomeStudentImg,
+                over: becomeStudentHoverImg,
+                up: becomeStudentHoverImg,
+                down: becomeStudentHoverImg,
+            },
             bannerImage,
+            currentMentorImage: becomeMentorImg,
+            currentStudentImage: becomeMentorImg,
         };
+    },
+    created() {
+        this.currentMentorImage = this.imagesMentor.out;
+        this.currentStudentImage = this.imagesStudent.out;
     },
     methods: {
         openEnvelope() {},
+        changeMentorImageWhen(state) {
+            this.currentMentorImage = this.imagesMentor[state];
+        },
+        changeStudentImageWhen(state) {
+            this.currentStudentImage = this.imagesStudent[state];
+        },
     },
 };
 </script>
@@ -834,6 +922,36 @@ h2 {
                 ul {
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+.peermentor-letter-section {
+    .peermentor-letter-innersection {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background: url('../assets/peermentor/letter_paper.svg') no-repeat;
+        padding: 8%;
+
+        .three-in-onerow {
+            display: flex;
+            align-items: center;
+        }
+
+        .must-know-part {
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            background: #ffffff;
+            padding: 20px 20px;
+            border: 5px solid #efcbab;
+            width: 70%;
+            h2 {
+                margin-left: 20px;
+            }
+            ul {
+                width: 55%;
             }
         }
     }
