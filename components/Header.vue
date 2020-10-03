@@ -58,7 +58,7 @@
                             >
                             <n-link
                                 class="n-link"
-                                :to="localePath('/campusvolunteer')"
+                                :to="localePath('/volunteer')"
                                 >{{ $t('header.campusvolunteer') }}</n-link
                             >
                         </div>
@@ -213,7 +213,7 @@ export default {
             return this.$route.path;
         },
         isAboutPath() {
-            return this.currentPath.includes('/about');
+            return this.currentPath === '/volunteer';
         },
         isServicePath() {
             return (
@@ -221,10 +221,12 @@ export default {
                 this.currentPath === '/membership' ||
                 this.currentPath === '/more' ||
                 this.currentPath === '/carnival' ||
+                this.currentPath === '/peermentor' ||
                 this.currentPath === '/zh/totoro' ||
                 this.currentPath === '/zh/membership' ||
                 this.currentPath === '/zh/more' ||
-                this.currentPath === '/zh/carnival'
+                this.currentPath === '/zh/carnival' ||
+                this.currentPath === '/zh/peermentor'
             );
         },
         isConnectPath() {
