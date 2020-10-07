@@ -15,10 +15,10 @@
                 <n-link class="n-link" :to="localePath('/')" exact>{{
                     $t('header.home')
                 }}</n-link>
-                <!-- <n-link class="n-link" :to="localePath('/about')">{{
+                <n-link class="n-link" :to="localePath('/about')">{{
                     $t('header.about')
-                }}</n-link> -->
-                <div class="about">
+                }}</n-link>
+                <!-- <div class="about">
                     <a
                         :class="isAboutPath ? 'nuxt-link-active' : ''"
                         @click="toggleAboutMenu"
@@ -63,7 +63,7 @@
                             >
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div v-if="showAboutMenu" class="about-menu-mobile mobile">
                     <n-link :to="localePath('/ourstory')">{{
                         $t('header.ourstory')
@@ -135,12 +135,12 @@
                         $t('header.more')
                     }}</n-link>
                 </div>
-                <!-- <n-link
+                <n-link
                     :class="isContactPath ? 'nuxt-link-active' : 'n-link'"
                     :to="localePath('/contact')"
                     >{{ $t('header.contact') }}</n-link
-                > -->
-                <div class="connect">
+                >
+                <!-- <div class="connect">
                     <a
                         :class="isConnectPath ? 'nuxt-link-active' : ''"
                         @click="toggleConnectMenu"
@@ -176,7 +176,7 @@
                     <n-link :to="localePath('/career')">{{
                         $t('header.career')
                     }}</n-link>
-                </div>
+                </div> -->
                 <n-link class="n-link" :to="localePath('/support')">{{
                     $t('header.support')
                 }}</n-link>
@@ -229,7 +229,7 @@ export default {
                 this.currentPath === '/zh/peermentor'
             );
         },
-        isConnectPath() {
+        isContactPath() {
             return (
                 this.currentPath === '/contact' ||
                 this.currentPath === '/career' ||
