@@ -424,4 +424,72 @@ export default {
         }
     }
 }
+
+@media (max-width: $mobile-max-width) {
+    .section-mission {
+        flex-direction: column;
+
+        > div {
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .section-activity {
+        flex-direction: column;
+        flex-basis: auto;
+    }
+
+    .section-school {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 5%;
+
+        > div {
+            width: auto;
+            height: auto;
+        }
+
+        .pic {
+            padding: 10% 0 0 20%;
+            left: 0;
+            bottom: 25%;
+            background-size: 65% auto;
+            background-repeat: no-repeat;
+
+            h3 {
+                font-size: 18px;
+                padding-left: 5%;
+                margin-bottom: 0;
+            }
+            a {
+                padding-left: 5%;
+            }
+        }
+    }
+
+    .event-review {
+        width: 100%;
+    }
+
+    .become-campus-volunteer {
+        .volunteer-become {
+            width: 100%;
+        }
+        .campus-volunteer-lr {
+            flex-direction: column;
+            align-items: center;
+
+            .requirement {
+                width: 100%;
+            }
+
+            .ready-to-join {
+                width: 100%;
+            }
+        }
+    }
+}
 </style>
