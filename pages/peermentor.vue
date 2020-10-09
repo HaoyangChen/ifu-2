@@ -931,11 +931,6 @@ h2 {
                     width: 50%;
                 }
             }
-            :lang(en).must-know-part {
-                ul {
-                    width: 100%;
-                }
-            }
         }
     }
 }
@@ -969,6 +964,13 @@ h2 {
             }
             ul {
                 width: 55%;
+            }
+        }
+        :lang(en).must-know-part {
+            width: 70%;
+
+            ul {
+                width: 100%;
             }
         }
     }
