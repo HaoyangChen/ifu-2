@@ -191,6 +191,7 @@
                             {{ $t('peermentor.programstreams.stage1.title') }}
                         </h2>
                         <img
+                            class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
                             alt="line process"
                         />
@@ -209,6 +210,7 @@
                             {{ $t('peermentor.programstreams.stage2.title') }}
                         </h2>
                         <img
+                            class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
                             alt="line process"
                         />
@@ -227,6 +229,7 @@
                             {{ $t('peermentor.programstreams.stage3.title') }}
                         </h2>
                         <img
+                            class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
                             alt="line process"
                         />
@@ -245,6 +248,7 @@
                             {{ $t('peermentor.programstreams.stage4.title') }}
                         </h2>
                         <img
+                            class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
                             alt="line process"
                         />
@@ -263,6 +267,7 @@
                             {{ $t('peermentor.programstreams.stage5.title') }}
                         </h2>
                         <img
+                            class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
                             alt="line process"
                         />
@@ -352,6 +357,12 @@
                     <img
                         src="@/assets/peermentor/letter_right_group.svg"
                         alt="letter left graph"
+                    />
+                </div>
+                <div class="three-in-onerow-mobile">
+                    <img
+                        src="@/assets/peermentor/three_in_row.svg"
+                        alt="three graphics in one row"
                     />
                 </div>
                 <p>
@@ -932,12 +943,16 @@ h2 {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        background: url('../assets/peermentor/letter_paper.svg') no-repeat;
+        background: url('../assets/peermentor/letter_paper.svg') repeat;
         padding: 8%;
 
         .three-in-onerow {
             display: flex;
             align-items: center;
+        }
+
+        .three-in-onerow-mobile {
+            display: none;
         }
 
         .must-know-part {
@@ -1015,6 +1030,56 @@ p {
 
     .section-requirement {
         flex-direction: column;
+    }
+
+    .blue-section {
+        .project-process-phases {
+            .phase-flex {
+                flex-direction: column;
+
+                .phase-circle {
+                    display: none;
+                }
+
+                .phase-lines {
+                    display: none;
+                }
+
+                .phase-description {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .peermentor-letter-section {
+        padding: 0px;
+        .peermentor-letter-innersection {
+            width: 100%;
+
+            .three-in-onerow {
+                display: none;
+            }
+
+            .three-in-onerow-mobile {
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+            }
+            .must-know-part {
+                width: 100%;
+
+                ul {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .peermentor-recruit-p {
+        width: 100%;
     }
 }
 </style>
