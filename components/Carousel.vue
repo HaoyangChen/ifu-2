@@ -7,13 +7,20 @@
                 backgroundSize: 'cover',
             }"
         >
-            <div>
-                <p style="font-size: 36px; margin: 0">{{ title }}</p>
-                <p style="font-size: 20px; font-weight: 700">{{ text }}</p>
-            </div>
-            <div class="text-container">
-                <div class="line"></div>
-                <p>{{ activeItem.text }}</p>
+            <div class="inner">
+                <div>
+                    <p style="font-size: 36px; margin: 0">{{ title }}</p>
+                    <p style="font-size: 20px; font-weight: 700">{{ text }}</p>
+                </div>
+                <div class="text-container">
+                    <div class="line"></div>
+                    <p>{{ activeItem.text }}</p>
+                </div>
+                <div>
+                    <Button :to="localePath('/' + activeItem.link)">{{
+                        activeItem.buttonText
+                    }}</Button>
+                </div>
             </div>
         </div>
         <div class="list">
@@ -45,8 +52,12 @@
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
 export default {
     name: 'Carousel',
+    components: {
+        Button,
+    },
     props: {
         list: {
             type: Array,
@@ -116,8 +127,8 @@ export default {
 }
 .active-item {
     width: 825px;
-    height: 100%;
-    padding: 30px 15px 30px 45px;
+    // height: 100%;
+    // padding: 30px 15px 30px 45px;
     box-sizing: border-box;
     background-repeat: no-repeat;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -129,6 +140,15 @@ export default {
         font-size: $text-size;
         line-height: 31px;
         letter-spacing: 0.02em;
+    }
+
+    .inner {
+        background: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        padding: 30px 15px 30px 45px;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
     }
 }
 
