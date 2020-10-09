@@ -43,7 +43,9 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title1') }}
                     </h3>
-                    <p>{{ $t('peermentor.why.pics.description1') }}</p>
+                    <p class="text-center">
+                        {{ $t('peermentor.why.pics.description1') }}
+                    </p>
                 </div>
                 <div class="one-fourth">
                     <div class="circle-image">
@@ -55,7 +57,7 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title2') }}
                     </h3>
-                    <p>
+                    <p class="text-center">
                         {{ $t('peermentor.why.pics.description2') }}
                     </p>
                 </div>
@@ -69,7 +71,7 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title3') }}
                     </h3>
-                    <p>
+                    <p class="text-center">
                         {{ $t('peermentor.why.pics.description3') }}
                     </p>
                 </div>
@@ -83,7 +85,7 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title4') }}
                     </h3>
-                    <p>
+                    <p class="text-center">
                         {{ $t('peermentor.why.pics.description4') }}
                     </p>
                 </div>
@@ -688,9 +690,9 @@ h2 {
 
         .blue-outline-section {
             position: absolute;
-            left: 70%;
+            // left: 70%;
             top: -24px;
-
+            right: 8%;
             .blue-outline-inner {
                 position: absolute;
                 top: 69px;
@@ -1032,26 +1034,6 @@ p {
         flex-direction: column;
     }
 
-    .blue-section {
-        .project-process-phases {
-            .phase-flex {
-                flex-direction: column;
-
-                .phase-circle {
-                    display: none;
-                }
-
-                .phase-lines {
-                    display: none;
-                }
-
-                .phase-description {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
     .peermentor-letter-section {
         padding: 0px;
         .peermentor-letter-innersection {
@@ -1080,6 +1062,83 @@ p {
 
     .peermentor-recruit-p {
         width: 100%;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1379px) {
+    .blue-person-section {
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1225px) {
+    .blue-person-section {
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 807px) {
+    .blue-section {
+        .project-process-phases {
+            .phase-flex {
+                flex-direction: column;
+
+                .phase-circle {
+                    display: none;
+                }
+
+                .phase-lines {
+                    display: none;
+                }
+
+                .phase-description {
+                    width: 100%;
+                }
+            }
+        }
+
+        .project-process-height {
+            height: 1050px;
+        }
+
+        .project-process-section {
+            .blue-bubble-section {
+                left: 8%;
+            }
+
+            .green-bubble-section {
+                left: 17%;
+                top: 298px;
+            }
+
+            .blue-person-section {
+                left: 8%;
+                top: 417px;
+                z-index: 1;
+                img {
+                    width: 90%;
+                }
+            }
+
+            .blue-outline-section {
+                top: 616px;
+                right: 8%;
+                z-index: 2;
+                left: 8%;
+
+                img {
+                    width: auto;
+                }
+            }
+        }
     }
 }
 </style>
