@@ -1,14 +1,23 @@
 {
     "header": {
         "home": "Home",
-        "service": "Service",
         "about": "About",
-        "contact": "Contact",
+        "service": "Service",
+        "ourstory": "Our Story",
+        "ourculture": "Our Culture",
+        "ourjourney": "Our Journey",
+        "orgstructure": "Organization Structure",
+        "ourteam": "Our Team",
+        "campusvolunteer": "Campus Volunteers",
+        "programs": "Programs",
         "totoro": "Totoroad Academy",
+        "peermentor": "Peer Mentor Program",
         "membership": "IFU Membership",
         "more": "IFU Other Services",
-        "support": "Support",
+        "connect": "Connect",
+        "contact": "Contact",
         "career": "Career",
+        "support": "Support",
         "orgName": "International Family Union"
     },
     "footer": {
@@ -73,12 +82,19 @@
                 "totoroTitle": "TOTOROAD",
                 "totoroText": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Project Totoroad assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future.",
                 "totorosubTitle": "Tutoring and Mentorship",
+                "totoroButtonText": "Learn More About Totoroad Academy",
+                "peerMentorTitle": "PEER MENTOR",
+                "peerMentorText": "The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be the students’ best listeners and companions so that students can freely share their worries. Peer mentors will guide and inspire students to solve problems with their own experience and knowledge through one-on-one, face to face chat and group activities.",
+                "peerMentorsubTitle": "Mental Support and Counseling",
+                "peerMentorButtonText": "Learn More About Peer Mentor Program",
                 "membershipTitle": "MEMBERSHIP",
                 "membershipText": "To support and appreciate the IFU culture, through simple registration operation (no interview required) to become our member's companions, IFU will send monthly events and share meeting information by email. At the same time, students holding the IFUxISIC International Student Card can enjoy worldwide discounts on life, travel, catering, law, and academics (see the store for specific discounts).",
                 "membershipsubTitle": "IFU Member & Student Identity Card",
-                "otherTitle": "SERVICES",
-                "otherText": "IFU and Hoolilaw, an overseas legal service platform, jointly launched the \"365 Studying Abroad Family Protection Plan\", which only requires $ 1 a day to get professional lawyers' consulting services to solve various legal problems for you! At the same time, Tuoyan Education is a training course that specializes in the US-based GRE exam in Shanghai Delay Education. In 2018, among the students with a score of 320 or more in the first test of Tuoyan, 63% of the students had a score of 325 or more and the highest score was 338.",
-                "othersubTitle": "Legal Service & Other"
+                "membershipButtonText": "Learn More About IFU Memberships",
+                "otherTitle": "PARTNERS’ SERVICES",
+                "otherText": "IFU and Hoolilaw, an overseas legal service platform, launched the '365 Studying Abroad Family Protection Plan' together, which only requires $ 1 per day to get professional lawyers' consulting services to solve various legal issues for the whole year! At the same time, IFU and Tuoyan Education to help international students with the GRE exam in the U.S.  In 2018, among Tuoyan’s students with a score of 320 or higher, 63% of them reached 325 or higher their first test, and the highest score was 338. Tuoyan Education offers professional and specialized training courses for all international students studying abroad in the U.S. ",
+                "othersubTitle": "Legal Service & More",
+                "otherButtonText": "Learn More About Partners’ Services"
             }
         },
         "eventList": {
@@ -427,12 +443,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -609,10 +621,10 @@
         "name19": "Kaitong Zhou",
         "title20": "Manager",
         "name20": "Xiaoqin (Sherry) Gui",
-        "title21": "Officer (Frontend Web Developer)",
-        "name21": "Yutao Ma",
-        "title22": "Officer (Frontend Web Developer)",
-        "name22": "Haoyang (Eric) Chen",
+        "title21": "Officer (Lead Frontend Engineer)",
+        "name21": "Haoyang (Eric) Chen",
+        "title22": "Officer (Frontend Engineer)",
+        "name22": "Yutao Ma",
         "title23": "Officer (UI/UX Designer)",
         "name23": "Hao Li",
         "title24": "Officer (UI/UX Designer)",
@@ -810,6 +822,119 @@
             "tutorExperienceDetail15": "GPA：3.9/4.0",
             "joinTutor": "Do you have a high academic performance and want to contribute to something valuable? Are you looking for a way to put the knowledge you learned into practice? If that’s you, welcome to join the IFU PROJECT TOTOROAD’s mentor team as a part-time tutor. You will meet a team with the top excellent students all across the United States! Submit your application now and wait for our knock knock!",
             "submitApplication": "Apply"
+        }
+    },
+    "peermentor": {
+        "banner": {
+            "title": "IFU Peer Mentor Consult Program",
+            "description": "IFU Peer Mentors can help you to get out of rock bottom during abroad study. Peer mentors will be the students’ best listeners and supporters. Students can talk about their anxiety with mentors whenever they encounter difficulties. Peer mentors offer one-on-one, face to face interviews, and group activities to guide and inspire students to solve problems based on their own experience and knowledge.",
+            "buttonText": "Become Mentees"
+        },
+        "introduction": {
+            "title": "What is IFU Peer Mentor Program?",
+            "description": "In June of 2020 , after two months of planning and trials, IFU Peer Mentor Program was officially launched in the efforts of all IFU staff and more than 15 IFU volunteers. The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be the students’ best listeners and companions so that students can freely share their worries. Peer mentors will guide and inspire students to solve problems with their own experience and knowledge through one-on-one face to face interviews and group activities."
+        },
+        "why": {
+            "title": "Why Peer Mentor Program?",
+            "description1": "International students are facing hard times in 2020. They need to protect themselves from COVID-19, marches and even school shut down. For students who graduated in 2020, they are struggling for the uncertain future: Is it better to be back to home countries, or is it better to pursue graduate studies? With so many unexpected difficulties, the pressure of international students in life and in minds cannot be ignored.",
+            "description2": "Through the experience of emergencies handled by IFU in recent years, feedback from various online activities and doubts collected from parents of students, we found: . Adhering to the mission of \"Making international students' families feel more secure\", IFU feels that the mental health problems of international students should be taken care of  immediately.",
+            "pics": {
+                "title1": "Stress",
+                "description1": "Severe psychological stress is responsible for more than half of the international students missing.",
+                "title2": "Companion",
+                "description2": "Most international students express that they need company due to feeling lonely and depressed especially during severe epidemic situations.",
+                "title3": "Help",
+                "description3": "The majority of international students are eager to broaden their horizons and get help in job-seeking and social skills.",
+                "title4": "Neglect",
+                "description4": "International students are easily ignored by mainstream society. This program can help them in the best way and show our responsibility as an NGO."
+            }
+        },
+        "services": {
+            "title": "Services",
+            "blueBubble": {
+                "title": "One-on-one conversations",
+                "item1": "Companion and listen",
+                "item2": "Peer Mentoring Consulting services",
+                "item3": "Life experience sharing",
+                "item4": "Learning experience sharing",
+                "item5": "Job seeking and work experience sharing",
+                "item6": "Resume writing workshop and cover letter writing workshop"
+            },
+            "greenBubble": {
+                "title": "Group activity services",
+                "item1": "Peer mentoring lectures",
+                "item2": "Other wonderful activities"
+            },
+            "rightBubble": {
+                "title": "Join us",
+                "item1": "Become a mentor and help others",
+                "item2": "Become a mentee and find a company",
+                "buttonText": "Sign up now"
+            }
+        },
+        "programstreams": {
+            "stage1": {
+                "title": "First stage",
+                "description": "<span>Recruit IFU peer mentors:</span> At the beginning of each semester, the recruitment invitations for peer mentors will be issued through IFU social platforms."
+            },
+            "stage2": {
+                "title": "Second stage",
+                "description": "<span>Candidates mentees submit application forms:</span> For students who want to communicate with IFU peer mentors, fill out the program application forms. The program leader will conduct a scientific pairing of tutor and student."
+            },
+            "stage3": {
+                "title": "Third stage",
+                "description": "<span>Peer Mentors contact Mentees:</span> The students will receive appointment links from their peer mentors. Students can sign up according to their own schedule and have one-to-one online communications with their peer mentors."
+            },
+            "stage4": {
+                "title": "Fourth stage",
+                "description": "<span>Peer mentors communicate with students:</span> The peer mentors and their students will have 30-40 minutes offline or online communications at least twice a month. This program is a one-semester program, but the peer mentors and students may extend the program period on a mutually agreed basis."
+            },
+            "stage5": {
+                "title": "Fifth stage",
+                "description": "<span>Collect Feedback at the end of each semester:</span> At the end of each semester of the program, students can give feedback on the program and evaluate their mentors through questionnaires."
+            }
+        },
+        "envelope": {
+            "letter": {
+                "title": "Join us as a Mentee!",
+                "content1a": "If you feel anxious recently because of busy study and difficult courses;",
+                "content1b": "If you encounter unpleasant things in your life, and feel depressed, or even upset;",
+                "content1c": "If anything is bothering you, please register as one of our mentees and let us help you!",
+                "content2": "IFU Peer Mentors can help you to get out of rock bottom during study abroad",
+                "content3": "We will always be here to help you get out of the bad times. All information and content you share with us is confidential. You can rest assured that you can share your troubles with us and let us help you.",
+                "content4": "IFU peer mentors are specially-trained and have a range of expertise in various fields. As listeners, companions and helpers, peer mentors can help you so that you will no longer feel confused and helpless."
+            },
+            "mustKnow": {
+                "title": "Mentee Responsibilities",
+                "item1": "Please take the initiative to contact your Mentor.",
+                "item2": "Respect your Mentor. Please be on time.",
+                "item3": "Have conversations with your Mentor during the semester.",
+                "item4": "Follow up with your Mentor via email/WeChat/phone. Keep the Mentor informed of your progress/difficulties.",
+                "item5": "Look positively at your mentor's feedback."
+            }
+        },
+        "requirements": {
+            "title": "Peer Mentors Requirements",
+            "item1": "Be willing to help others and have the spirit of volunteers.",
+            "item2": "Be willing to share and enjoy the feeling of helping others grow.",
+            "item3": "Be positive and enterprising.",
+            "item4": "Have a good academic background and good conduct in student discipline.",
+            "item5": "Have experience in different fields (no limited areas).",
+            "item6": "Be able to participate in monthly meetings, training and various activities of the peer mentor team."
+        },
+        "benefits": {
+            "title": "Peer Mentors Benefits",
+            "item1": "Receive regular senior training.",
+            "item2": "Obtain IFU volunteer certificates.",
+            "item3": "Have the opportunity to get the \"Annual Excellent Mentor Service Awards\".",
+            "item4": "Exercise personal leadership and consulting skills.",
+            "item5": "Gain self-growth and new self-cognition through reflection.",
+            "item6": "Expand your social networking and get like-minded friends.",
+            "item7": "The IFU social platform will carry out a series of reports on the touching and sincere stories that happened between excellent mentors and students."
+        },
+        "recruiting": {
+            "title": "IFU Peer Mentor Program is Recruiting!",
+            "description": "If you are looking for people to talk to, or would like to inspire people with your experience, join us through the following links!"
         }
     },
     "contact": {

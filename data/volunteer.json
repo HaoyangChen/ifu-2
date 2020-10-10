@@ -1,5 +1,23 @@
 [
     {
+        "name": "Campus Leader",
+        "department": "志愿者团队",
+        "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献；有参加或者组建相关社团的经验",
+        "description": "CampusLeader除了履行志愿者的基本职责之外，是该校所有志愿者的总负责人，需要管理、领导团队，负责招募志愿者，参加IFU每月的会议等",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "每个校区1",
+        "time": "6-12"
+    },
+    {
+        "name": "Campus Volunteer",
+        "department": "志愿者团队",
+        "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献",
+        "description": "履行志愿者的基本职责：确保信息传递，紧急情况发生时能够第一时间与校园志愿者组长协助工作人员及时处理；配合校园志愿者组长以及地区负责人完成IFU“让留学家庭更安心”的使命",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "若干",
+        "time": "3-12"
+    },
+    {
         "name": "IFU文件翻译员",
         "department": "行政部",
         "requirement": "有中文翻译经验优先",

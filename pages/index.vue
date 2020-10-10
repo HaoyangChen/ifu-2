@@ -246,7 +246,8 @@ import eventImage5 from '@/assets/home/event_5.png';
 import eventImage6 from '@/assets/home/event_6.png';
 import serviceTotoroImage from '@/assets/home/service_totoro.png';
 import ifuMembershipImage from '@/assets/home/IFU_membership.png';
-import otherServiceImage from '@/assets/home/other_service.png';
+import otherServiceImage from '@/assets/home/partner_service.svg';
+import peerMentorImage from '@/assets/home/peer_mentor.png';
 import workImage1 from '@/assets/home/work_1.png';
 import workImage2 from '@/assets/home/work_2.png';
 import workImage3 from '@/assets/home/work_3.png';
@@ -256,6 +257,7 @@ import carnivalBackground from '@/assets/home/carnival_bg.png';
 import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
+import four from '@/assets/home/4.svg';
 import carnivalPerson1 from '@/assets/home/carnival_person1.png';
 import carnivalPerson2 from '@/assets/home/carnival_person2.png';
 import carnivalPerson3 from '@/assets/home/carnival_person3.png';
@@ -341,10 +343,32 @@ export default {
                     backgroundColor: '#34BBC9',
                     text: this.$t('home.ourServices.serviceList.totoroText'),
                     image: serviceTotoroImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.totoroButtonText',
+                    ),
+                    link: 'totoro',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.totorosubTitle',
                     ),
                     icon: one,
+                },
+                {
+                    title: this.$t(
+                        'home.ourServices.serviceList.peerMentorTitle',
+                    ),
+                    backgroundColor: '#CC8ABD',
+                    text: this.$t(
+                        'home.ourServices.serviceList.peerMentorText',
+                    ),
+                    image: peerMentorImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.peerMentorButtonText',
+                    ),
+                    link: 'peermentor',
+                    subTitle: this.$t(
+                        'home.ourServices.serviceList.peerMentorsubTitle',
+                    ),
+                    icon: four,
                 },
                 {
                     title: this.$t(
@@ -355,6 +379,10 @@ export default {
                         'home.ourServices.serviceList.membershipText',
                     ),
                     image: ifuMembershipImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.membershipButtonText',
+                    ),
+                    link: 'membership',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.membershipsubTitle',
                     ),
@@ -365,6 +393,10 @@ export default {
                     backgroundColor: '#F96291',
                     text: this.$t('home.ourServices.serviceList.otherText'),
                     image: otherServiceImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.otherButtonText',
+                    ),
+                    link: 'more',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.othersubTitle',
                     ),
