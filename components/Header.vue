@@ -105,11 +105,11 @@
                                 :to="localePath('/totoro')"
                                 >{{ $t('header.totoro') }}</n-link
                             >
-                            <n-link
+                            <!-- <n-link
                                 class="n-link"
                                 :to="localePath('/peermentor')"
                                 >{{ $t('header.peermentor') }}</n-link
-                            >
+                            > -->
                             <n-link
                                 class="n-link"
                                 :to="localePath('/membership')"
@@ -125,9 +125,9 @@
                     <n-link :to="localePath('/totoro')">{{
                         $t('header.totoro')
                     }}</n-link>
-                    <n-link :to="localePath('/peermentor')">{{
+                    <!-- <n-link :to="localePath('/peermentor')">{{
                         $t('header.peermentor')
-                    }}</n-link>
+                    }}</n-link> -->
                     <n-link :to="localePath('/membership')">{{
                         $t('header.membership')
                     }}</n-link>
