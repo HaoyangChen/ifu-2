@@ -246,7 +246,7 @@ import eventImage5 from '@/assets/home/event_5.png';
 import eventImage6 from '@/assets/home/event_6.png';
 import serviceTotoroImage from '@/assets/home/service_totoro.png';
 import ifuMembershipImage from '@/assets/home/IFU_membership.png';
-import otherServiceImage from '@/assets/home/other_service.png';
+import otherServiceImage from '@/assets/home/partner_service.svg';
 import peerMentorImage from '@/assets/home/peer_mentor.png';
 import workImage1 from '@/assets/home/work_1.png';
 import workImage2 from '@/assets/home/work_2.png';

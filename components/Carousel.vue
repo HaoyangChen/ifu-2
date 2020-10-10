@@ -29,8 +29,6 @@
                 :key="i"
                 :style="listStyle(list.length, i, item.backgroundColor)"
                 @click="changeItem(item, i)"
-                @mouseenter="onHover(i)"
-                @mouseleave="onLeave"
             >
                 <div class="list-item">
                     <div class="num">{{ '0' + (i + 1) }}</div>
@@ -71,6 +69,7 @@ export default {
             title: this.list[0].title,
             text: this.list[0].subTitle,
             index: 0,
+            activeIndex: null,
             hoverIndex: null,
         };
     },
@@ -87,16 +86,17 @@ export default {
             this.activeItem = newItem;
             this.title = newItem.title;
             this.text = newItem.subTitle;
+            this.hoverIndex = index;
             if (newItem.position) {
                 document.querySelector(newItem.position).scrollIntoView(true);
             }
         },
-        onHover(index) {
-            this.hoverIndex = index;
-        },
-        onLeave() {
-            this.hoverIndex = null;
-        },
+        // onHover(index) {
+        //     this.hoverIndex = index;
+        // },
+        // onLeave() {
+        //     this.hoverIndex = null;
+        // },
         listStyle(length, index, backgroundColor) {
             const style = {
                 zIndex: length - index,
@@ -143,7 +143,7 @@ export default {
     }
 
     .inner {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.5);
         height: 100%;
         padding: 30px 15px 30px 45px;
         justify-content: space-evenly;
