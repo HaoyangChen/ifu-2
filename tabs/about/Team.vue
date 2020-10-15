@@ -207,12 +207,12 @@ export default {
                             subTitle: this.$t('team.name20'),
                         },
                         {
-                            image: mayutaoImage,
+                            image: chenhaoyangImage,
                             title: this.$t('team.title21'),
                             subTitle: this.$t('team.name21'),
                         },
                         {
-                            image: chenhaoyangImage,
+                            image: mayutaoImage,
                             title: this.$t('team.title22'),
                             subTitle: this.$t('team.name22'),
                         },

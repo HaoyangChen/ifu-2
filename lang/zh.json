@@ -1,15 +1,23 @@
 {
     "header": {
         "home": "主页",
-        "service": "项目",
         "about": "关于我们",
-        "contact": "联系我们",
+        "service": "项目",
+        "ourstory": "我们的故事",
+        "ourculture": "我们的文化",
+        "ourjourney": "我们的历程",
+        "orgstructure": "组织结构",
+        "ourteam": "我们的团队",
+        "campusvolunteer": "校园志愿者",
+        "programs": "项目",
         "totoro": "多多罗学术辅导",
         "peermentor": "IFU 朋辈项目",
         "membership": "IFU 会员",
         "more": "IFU 更多服务",
-        "support": "支持我们",
+        "connect": "联系我们",
+        "contact": "联系我们",
         "career": "加入我们",
+        "support": "支持我们",
         "orgName": "国际家长汇"
     },
     "footer": {
@@ -74,15 +82,19 @@
                 "totoroTitle": "TOTOROAD",
                 "totoroText": "IFU希望通过多多罗计划，集合最优秀的海外学长学姐们所学的专业知识，所得的留学经验，以及海外高校官方权威数据为准留学生家庭定制学术衔接先修课、同步辅导课，帮助留学生家庭找到正确的方向（ 无论是择校，四年规划，亦或是融入进海外课堂，本土文化，学术上的辅导帮助等），减少留学前后的信息闭塞， 绕开那些可避免的弯路。",
                 "totorosubTitle": "多多罗 同步辅导衔接课",
+                "totoroButtonText": "了解更多关于多多罗",
                 "peerMentorTitle": "PEER MENTOR",
-                "peerMentorText": "The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be the students’ best listeners and companions so that students can freely share their worries. Peer mentors will guide and inspire students to solve problems with their own experience and knowledge through one-on-one, face to face chat and group activities.",
-                "peerMentorsubTitle": "Support from a fellow peer",
+                "peerMentorText": "“IFU朋辈项目”项目由鼎恒留学提供全额赞助资金运营支持，该项目完全免费面向所有海外留学生。IFU朋辈导师将作为学生的倾听、陪伴者，让学生能够安心诉说烦恼和担忧，为学生分担由于各种因素带来的忧虑和不安情绪；朋辈导师也将通过一对一面谈和小组活动的方式，用自身的经验和能力，指导、鼓舞学生解决问题",
+                "peerMentorsubTitle": "朋辈项目",
+                "peerMentorButtonText": "了解更多关于朋辈项目",
                 "membershipTitle": "MEMBERSHIP",
-                "membershipText": "因支持IFU并欣赏IFU文化，通过简单注册操作（不需要进行面试）成为我们的会员的同伴们，IFU会以邮件形式发送每月活动及分享会资讯。同时，持有IFUxISIC国际学生卡的同学，可享有全球范围的生活、旅行、餐饮、法律、学术折扣（具体折扣见店家）。",
+                "membershipText": "如支持IFU并欣赏IFU的文化，我们鼓励学生和家长，在官网简单注册免费成为IFU会员。我们会以邮件形式发送会员月刊，以便IFU会员及时了解每月活动及分享会资讯等。同时，学生可以申请成为IFU x ISIC会员，持有ISIC国际学生卡的会员，可享有全球范围的生活、旅行、餐饮、法律、学术折扣（具体折扣见店家）。",
                 "membershipsubTitle": "IFU 会员",
-                "otherTitle": "SERVICES",
-                "otherText": "IFU携手海外法律服务平台Hoolilaw，联合推出“365留学家庭保护计划”，每天只需1美金，就能得到专业律师的咨询服务，为你解决各种法律问题！与此同时，拓研教育是于上海拖延教育专攻美本GRE考试的培训课程，2018年拓研首考320分以上的学生中，63%学员首考325分以上，最高首考分338。",
-                "othersubTitle": "其他服务"
+                "membershipButtonText": "了解更多关于IFU会员",
+                "otherTitle": "PARTNERS’ SERVICES",
+                "otherText": "IFU携手海外法律服务平台Hoolilaw，联合推出“365留学家庭保护计划”，每天只需1美金，就能得到专业律师的咨询服务，为留学家庭解决各种法律问题！与此同时，IFU携手上海拓研教育帮助留学生攻克美国本科GRE考试，2018年拓研首考320分以上的学生中，63%学员首考325分以上，最高首考分338。拓研教育为广大留美同学提供优质专业的培训课程。",
+                "othersubTitle": "合作方服务",
+                "otherButtonText": "了解更多关于合作方服务"
             }
         },
         "eventList": {
@@ -607,10 +619,10 @@
         "name19": "周凯彤",
         "title20": "负责人",
         "name20": "桂小钦",
-        "title21": "成员（Web前端开发）",
-        "name21": "马钰涛",
-        "title22": "成员（Web前端开发）",
-        "name22": "陈昊飏",
+        "title21": "成员（前端开发高级工程师）",
+        "name21": "陈昊飏",
+        "title22": "成员（前端开发工程师）",
+        "name22": "马钰涛",
         "title23": "成员 (UI/UX设计)",
         "name23": "李昊",
         "title24": "成员 (UI/UX设计)",
@@ -883,7 +895,9 @@
         "envelope": {
             "letter": {
                 "title": "加入成为我们IFU学员吧！",
-                "content1": "如果近期因为学业繁忙，课程困难，而感到焦虑；如果生活中遇到不顺心的事，而感到郁闷，甚至不安；如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！",
+                "content1a": "如果近期因为学业繁忙，课程困难，而感到焦虑；如果生活中遇到不顺心的事，而感到郁闷，甚至不安；如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！",
+                "content1b": "如果生活中遇到不顺心的事，而感到郁闷，甚至不安；",
+                "content1c": "如果有任何事情让你产生困扰，请注册成为我们的学员，让我们帮助你吧！",
                 "content2": "IFU朋辈项目，伴你度过留学路上的底谷时光。",
                 "content3": "我们会一直在这里，陪伴着你走出这段低谷时光。你和我们分享的所有信息和内容都是保密性质的，你可以放心的和我们倾述你的苦恼，让我们一起分摊你的担忧。",
                 "content4": "IFU朋辈导师们是受过特定培训，在各个领域都有有所涉猎。希望我们能够以倾听者，陪伴者和协助者的三重身份，帮助到你，让你不再迷茫和无助。"

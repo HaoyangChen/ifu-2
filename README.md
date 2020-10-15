@@ -1,10 +1,6 @@
-# IFU Web 2.0
+# IFU Official Website
 
-## Important Development Note:
-
-### Please use the dev branch to develop the application!!!
-
-Submit a pull request from the dev branch to the master branch and request me or Yutao as a reviewer once you finish working on all tasks assigned to you.
+This is the source code for the official website of Internation Family Union (IFU), a registered Non-Governmental Organization (NGO) in the United States
 
 ## Framework
 
@@ -73,9 +69,19 @@ We recommend [Visual Studio Code](https://code.visualstudio.com/) as a default c
 -   Style - [SCSS](https://sass-lang.com/): preprocessor scripting language
 -   Translation - [Nuxt-i18n](https://nuxt-community.github.io/nuxt-i18n/)
 
+## Development Note:
+
+### Please use the dev branch to develop the application
+
+Submit a pull request from the dev branch to the master branch and request Haoyang Chen as a reviewer once you finish working on all tasks assigned to you.
+
 ## Deployment
 
--   We used [Vercel](https://vercel.com/)，a platform that deploys project automatically on every PR with the Github integration, to deploy the website
+-   We used [Vercel](https://vercel.com/), a platform that deploys project automatically on every PR with the Github integration, to deploy the website
     -   all commits pushed to dev branch will update [https://test.ifu-china.com/](https://test.ifu-china.com/)
     -   all commits pushed to master branch will update both [https://ifu-china.com/](https://ifu-china.com/) and [https://www.ifu-china.com/](https://www.ifu-china.com/)
     -   Because we specified to use dev branch for development，you should submit a pull request [Pull Request](https://github.com/HaoyangChen/ifu-2/pulls) from dev branch to master branch
+
+## Copyright & License
+
+Copyright 2020 International Family Union under the [GPL-3.0 License](https://github.com/HaoyangChen/ifu-2/blob/master/LICENSE)
