@@ -123,8 +123,15 @@
                         </div>
                     </div>
                 </div>
-                <div slot="button-prev" class="swiper-button-prev"></div>
-                <div slot="button-next" class="swiper-button-next"></div>
+                <div
+                    slot="button-prev"
+                    class="swiper-button-prev desktop"
+                ></div>
+                <div
+                    slot="button-next"
+                    class="swiper-button-next desktop"
+                ></div>
+                <div class="swiper-pagination mobile"></div>
             </div>
         </div>
         <section class="become-campus-volunteer">
@@ -162,6 +169,10 @@
                     </ul>
                 </div>
                 <div class="ready-to-join">
+                    <img
+                        class="mobile-frame mobile"
+                        src="@/assets/volunteer/frame-mobile.png"
+                    />
                     <div class="content">
                         <h2>准备好加入我们了吗？</h2>
                         <p>
@@ -205,6 +216,10 @@ export default {
                 effect: 'coverflow',
                 grabCursor: true,
                 centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -372,6 +387,21 @@ export default {
     }
 }
 
+/deep/ .swiper-pagination-bullet {
+    background: $red;
+
+    &:not(.swiper-pagination-bullet-active) {
+        background: #202020;
+        opacity: 1;
+    }
+}
+
+.swiper-pagination {
+    padding-top: 10px;
+    margin-bottom: 35px;
+    position: static;
+}
+
 .become-campus-volunteer {
     background: url(~assets/volunteer/become-campus-volunteer.svg) no-repeat;
     background-color: rgba(201, 215, 74, 0.2);
@@ -443,21 +473,25 @@ export default {
     }
 
     .section-school {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        column-gap: 5%;
+        flex-direction: column;
+        background-image: url(~assets/volunteer/school-section-mobile.png);
+        background-size: 100%;
+        width: 100%;
+
+        // background: url(/_nuxt/assets/volunteer/section-school-mobile.png);
 
         > div {
             width: auto;
             height: auto;
+            margin: 5% 0;
         }
 
         .pic {
-            padding: 10% 0 0 20%;
+            // padding: 10% 0 0 20%;
             left: 0;
-            bottom: 25%;
-            background-size: 65% auto;
-            background-repeat: no-repeat;
+            // bottom: 25%;
+            // background-size: 65% auto;
+            // background-repeat: no-repeat;
 
             h3 {
                 font-size: 18px;
@@ -470,24 +504,91 @@ export default {
         }
     }
 
+    .swiper-section {
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .img {
+                    height: auto;
+                    width: 360px;
+                    background-color: #f1f9ff;
+                    img {
+                        width: 360px;
+                        height: auto;
+                        // object-fit: cover;
+                        // border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
     .event-review {
         width: 100%;
     }
 
     .become-campus-volunteer {
+        background-image: none;
+        padding: 0;
+
         .volunteer-become {
             width: 100%;
+            background-color: #c9d74a;
+            padding: 15px 30px;
         }
         .campus-volunteer-lr {
+            margin-top: 25px;
+            width: 100%;
             flex-direction: column;
             align-items: center;
 
             .requirement {
+                padding: 2%;
                 width: 100%;
+                background-color: rgba(201, 215, 74, 0.02);
             }
 
             .ready-to-join {
                 width: 100%;
+                padding: 0;
+                height: 525px;
+
+                .mobile-frame {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 331px;
+                    height: auto;
+                }
+                .content {
+                    // left: 5%;
+                    padding-top: 25px;
+                    background-image: none;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+
+                    /deep/ a {
+                        button {
+                            background-color: #c9d74a;
+                            margin: 0 0 55px 60px;
+                        }
+                    }
+                }
+
+                img {
+                    top: 280px;
+                    left: 80px;
+                }
             }
         }
     }
