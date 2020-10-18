@@ -93,6 +93,11 @@
                 </h2>
                 <p>{{ $t('volunteer.singaPara1') }}</p>
             </div>
+            <img
+                class="mobile mobile-bubble"
+                src="@/assets/volunteer/bubble-mobile.png"
+                alt="mobile speech bubble"
+            />
             <div class="pic">
                 <h3>{{ $t('volunteer.picHeader') }}</h3>
                 <span>{{ $t('volunteer.picPara') }}</span>
@@ -137,9 +142,7 @@
         <section class="become-campus-volunteer">
             <div class="volunteer-become">
                 <h2>{{ $t('volunteer.becomeHeader') }}</h2>
-                <p>
-                    {{ $t('volunteer.becomePara') }}
-                </p>
+                <p v-html="$t('volunteer.becomePara')" />
             </div>
             <div class="campus-volunteer-lr">
                 <div class="requirement">
@@ -332,6 +335,7 @@ export default {
         box-sizing: border-box;
         padding-left: 75px;
         padding-top: 50px;
+        padding-right: 50px;
         color: black;
         text-decoration: none;
         line-height: 35px;
@@ -383,6 +387,7 @@ export default {
 
 /deep/ .swiper-pagination-bullet {
     background: $red;
+    margin: 5px;
 
     &:not(.swiper-pagination-bullet-active) {
         background: #202020;
@@ -436,6 +441,7 @@ export default {
                 box-sizing: border-box;
                 padding-left: 50px;
                 padding-top: 50px;
+                padding-right: 50px;
                 line-height: 30px;
                 h2 {
                     font-weight: bolder;
@@ -478,18 +484,25 @@ export default {
             width: auto;
             height: auto;
             margin: 5% 0;
+
+            p {
+                margin: 0.5em 0;
+            }
         }
 
+        img {
+            height: 252px;
+            width: auto;
+        }
         .pic {
-            // padding: 10% 0 0 20%;
+            padding: 15% 25% 0 20%;
+            top: 4070px;
             left: 0;
-            // bottom: 25%;
-            // background-size: 65% auto;
-            // background-repeat: no-repeat;
+            background: none;
+            position: absolute;
 
             h3 {
-                font-size: 18px;
-                padding-left: 5%;
+                font-size: 25px;
                 margin-bottom: 0;
             }
             a {
@@ -566,8 +579,9 @@ export default {
                 .content {
                     // left: 5%;
                     padding-top: 25px;
+                    padding-right: 0;
                     background-image: none;
-                    width: auto;
+                    width: 75%;
                     height: auto;
                     position: absolute;
 
