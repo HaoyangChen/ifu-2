@@ -246,7 +246,7 @@ import eventImage5 from '@/assets/home/event_5.png';
 import eventImage6 from '@/assets/home/event_6.png';
 import serviceTotoroImage from '@/assets/home/service_totoro.png';
 import ifuMembershipImage from '@/assets/home/IFU_membership.png';
-import otherServiceImage from '@/assets/home/other_service.png';
+import otherServiceImage from '@/assets/home/partner_service.svg';
 import peerMentorImage from '@/assets/home/peer_mentor.png';
 import workImage1 from '@/assets/home/work_1.png';
 import workImage2 from '@/assets/home/work_2.png';
@@ -343,6 +343,10 @@ export default {
                     backgroundColor: '#34BBC9',
                     text: this.$t('home.ourServices.serviceList.totoroText'),
                     image: serviceTotoroImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.totoroButtonText',
+                    ),
+                    link: 'totoro',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.totorosubTitle',
                     ),
@@ -357,6 +361,10 @@ export default {
                         'home.ourServices.serviceList.peerMentorText',
                     ),
                     image: peerMentorImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.peerMentorButtonText',
+                    ),
+                    link: 'peermentor',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.peerMentorsubTitle',
                     ),
@@ -371,6 +379,10 @@ export default {
                         'home.ourServices.serviceList.membershipText',
                     ),
                     image: ifuMembershipImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.membershipButtonText',
+                    ),
+                    link: 'membership',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.membershipsubTitle',
                     ),
@@ -381,6 +393,10 @@ export default {
                     backgroundColor: '#F96291',
                     text: this.$t('home.ourServices.serviceList.otherText'),
                     image: otherServiceImage,
+                    buttonText: this.$t(
+                        'home.ourServices.serviceList.otherButtonText',
+                    ),
+                    link: 'more',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.othersubTitle',
                     ),

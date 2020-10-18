@@ -43,7 +43,9 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title1') }}
                     </h3>
-                    <p>{{ $t('peermentor.why.pics.description1') }}</p>
+                    <p class="text-center">
+                        {{ $t('peermentor.why.pics.description1') }}
+                    </p>
                 </div>
                 <div class="one-fourth">
                     <div class="circle-image">
@@ -55,7 +57,7 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title2') }}
                     </h3>
-                    <p>
+                    <p class="text-center">
                         {{ $t('peermentor.why.pics.description2') }}
                     </p>
                 </div>
@@ -69,7 +71,7 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title3') }}
                     </h3>
-                    <p>
+                    <p class="text-center">
                         {{ $t('peermentor.why.pics.description3') }}
                     </p>
                 </div>
@@ -83,7 +85,7 @@
                     <h3 class="center">
                         {{ $t('peermentor.why.pics.title4') }}
                     </h3>
-                    <p>
+                    <p class="text-center">
                         {{ $t('peermentor.why.pics.description4') }}
                     </p>
                 </div>
@@ -422,34 +424,6 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Keep the following commented code -->
-        <!-- <section>
-            <button class="button" @click="openEnvelope">
-                OPEN
-            </button>
-
-            <div class="email">
-                <div class="envelope">
-                    <div class="back paper"></div>
-                    <div class="note">
-                        <div class="form-wrapper">
-                            <form>
-                                <label
-                                    >Send a personal message to someone.</label
-                                >
-                                <textarea
-                                    placeholder="What would you like to say?"
-                                ></textarea>
-
-                                <button type="submit">Share</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="front paper"></div>
-                </div>
-            </div>
-        </section> -->
         <section>
             <h2>{{ $t('peermentor.recruiting.title') }}</h2>
             <p id="peermentor-recruit-p" class="peermentor-recruit-p">
@@ -688,9 +662,9 @@ h2 {
 
         .blue-outline-section {
             position: absolute;
-            left: 70%;
+            // left: 70%;
             top: -24px;
-
+            right: 8%;
             .blue-outline-inner {
                 position: absolute;
                 top: 69px;
@@ -1034,26 +1008,6 @@ p {
         flex-direction: column;
     }
 
-    .blue-section {
-        .project-process-phases {
-            .phase-flex {
-                flex-direction: column;
-
-                .phase-circle {
-                    display: none;
-                }
-
-                .phase-lines {
-                    display: none;
-                }
-
-                .phase-description {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
     .peermentor-letter-section {
         padding: 0px;
         .peermentor-letter-innersection {
@@ -1077,155 +1031,96 @@ p {
                     width: 100%;
                 }
             }
+
+            :lang(en).must-know-part {
+                width: 100%;
+
+                ul {
+                    width: 100%;
+                }
+            }
         }
     }
 
     .peermentor-recruit-p {
         width: 100%;
     }
-}
-</style>
 
-<style>
-/* letter animation style goes here */
-button,
-.button {
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-    background: #f7941e;
-    border: none;
-    color: #fff;
-    display: block;
-    float: left;
-    margin-top: 5px;
-    padding: 7px 17px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-button:hover,
-.button:hover {
-    background: #f9ab4f;
-}
-button:active,
-.button:active {
-    background: #da7a08;
+    .text-center {
+        text-align: center;
+    }
 }
 
-.email {
-    display: block;
-    float: left;
-    position: relative;
-    width: 100%;
+@media (max-width: 1379px) {
+    .blue-person-section {
+        img {
+            width: 80%;
+        }
+    }
 }
-.email .envelope {
-    display: block;
-    height: 400px;
-    margin: 0 auto;
-    position: relative;
-    width: 500px;
+
+@media (max-width: 1225px) {
+    .blue-person-section {
+        img {
+            width: 60%;
+        }
+    }
 }
-.email .envelope .paper {
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-.email .envelope .back:before {
-    content: '';
-    display: block;
-    border-style: solid;
-    border-width: 200px 250px 0px 250px;
-    border-color: transparent transparent #999 transparent;
-    height: 0px;
-    width: 0px;
-}
-.email .envelope .back:after {
-    content: '';
-    display: block;
-    background-color: #999;
-    width: 500px;
-    height: 200px;
-}
-.email .envelope .back.animate:before {
-    -moz-transition: border-width;
-    -o-transition: border-width;
-    -webkit-transition: border-width;
-    transition: border-width;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    border-width: 0 250px 200px 250px;
-}
-.email .envelope .front {
-    top: 200px;
-}
-.email .envelope .front:after {
-    content: '';
-    display: block;
-    background-color: #808285;
-    height: 100px;
-    width: 500px;
-}
-.email .envelope .front:before {
-    content: '';
-    display: block;
-    border-style: solid;
-    border-width: 200px 250px 0px 250px;
-    border-color: transparent #808285;
-    height: 0px;
-    width: 0px;
-}
-.email .envelope .note {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    display: block;
-    height: 280px;
-    margin: 0 auto;
-    position: relative;
-    top: 200px;
-    width: 500px;
-}
-.email .envelope .note.animate {
-    -moz-transition-property: top;
-    -o-transition-property: top;
-    -webkit-transition-property: top;
-    transition-property: top;
-    -moz-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    -webkit-transition-duration: 2s;
-    transition-duration: 2s;
-    -moz-transition-delay: 1s;
-    -o-transition-delay: 1s;
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-    top: 50px;
-}
-.email .envelope .form-wrapper {
-    background: #fff;
-    height: auto;
-    margin: 10px auto 0 auto;
-    padding: 20px;
-    width: 90%;
-}
-.email .envelope .form-wrapper form {
-    border: 1px dotted #000;
-    height: 210px;
-    padding: 20px;
-}
-.email .envelope .form-wrapper label {
-    display: block;
-    font-family: Helvetica, Arial, sans-serif;
-    margin-bottom: 5px;
-}
-.email .envelope .form-wrapper textarea {
-    display: block;
-    float: left;
-    min-height: 100px;
-    overflow: scroll;
-    width: 100%;
+
+@media (max-width: 807px) {
+    .blue-section {
+        .project-process-phases {
+            .phase-flex {
+                flex-direction: column;
+
+                .phase-circle {
+                    display: none;
+                }
+
+                .phase-lines {
+                    display: none;
+                }
+
+                .phase-description {
+                    width: 100%;
+                }
+            }
+        }
+
+        .project-process-height {
+            height: 1050px;
+        }
+
+        .project-process-section {
+            .blue-bubble-section {
+                left: 8%;
+            }
+
+            .green-bubble-section {
+                left: 17%;
+                top: 298px;
+            }
+
+            .blue-person-section {
+                left: 8%;
+                top: 417px;
+                z-index: 1;
+                img {
+                    width: 90%;
+                }
+            }
+
+            .blue-outline-section {
+                top: 616px;
+                right: 8%;
+                z-index: 2;
+                left: 8%;
+
+                img {
+                    width: auto;
+                }
+            }
+        }
+    }
 }
 </style>
