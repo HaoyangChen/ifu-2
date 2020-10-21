@@ -93,18 +93,15 @@
                 </h2>
                 <p>{{ $t('volunteer.singaPara1') }}</p>
             </div>
-            <img
-                class="mobile mobile-bubble"
-                src="@/assets/volunteer/bubble-mobile.png"
-                alt="mobile speech bubble"
-            />
-            <div class="pic">
-                <h3>{{ $t('volunteer.picHeader') }}</h3>
-                <span>{{ $t('volunteer.picPara') }}</span>
-                <br />
-                <a class="link" href="https://forms.gle/KvsV5GiSb4nMtLER7"
-                    >{{ $t('volunteer.picLink') }}
-                </a>
+            <div class="bubble-section">
+                <div class="pic">
+                    <h3>{{ $t('volunteer.picHeader') }}</h3>
+                    <span>{{ $t('volunteer.picPara') }}</span>
+                    <br />
+                    <a class="link" href="https://forms.gle/KvsV5GiSb4nMtLER7"
+                        >{{ $t('volunteer.picLink') }}
+                    </a>
+                </div>
             </div>
         </section>
         <section class="event-review">
@@ -326,6 +323,9 @@ export default {
     div p {
         text-decoration: underline;
     }
+    .bubble-section {
+        width: 100%;
+    }
     .pic {
         width: 337px;
         height: 289px;
@@ -493,13 +493,10 @@ export default {
         img {
             height: 252px;
             width: auto;
+            display: none;
         }
         .pic {
-            padding: 15% 25% 0 20%;
-            top: 4070px;
             left: 0;
-            background: none;
-            position: absolute;
 
             h3 {
                 font-size: 25px;
@@ -508,6 +505,10 @@ export default {
             a {
                 padding-left: 5%;
             }
+        }
+        :lang(en).pic {
+            left: 0;
+            padding-top: 20px;
         }
     }
 
@@ -560,6 +561,7 @@ export default {
 
             .requirement {
                 padding: 2%;
+                padding-right: 5%;
                 width: 100%;
                 background-color: rgba(201, 215, 74, 0.02);
             }
@@ -579,9 +581,11 @@ export default {
                 .content {
                     // left: 5%;
                     padding-top: 25px;
-                    padding-right: 0;
+                    padding-right: 5%;
+                    padding-left: 7%;
                     background-image: none;
-                    width: 75%;
+                    width: 331px;
+                    height: 300px;
                     height: auto;
                     position: absolute;
 
@@ -590,6 +594,14 @@ export default {
                             background-color: #c9d74a;
                             margin: 0 0 55px 60px;
                         }
+                    }
+                }
+                :lang(en).content {
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                    p {
+                        margin-top: 0.5em;
                     }
                 }
 
