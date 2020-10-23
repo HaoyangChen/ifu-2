@@ -59,7 +59,7 @@ section {
 
     h2 {
         font-size: $h2-size;
-        font-weight: normal;
+        font-weight: 600;
     }
 }
 

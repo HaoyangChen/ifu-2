@@ -61,7 +61,7 @@
             "buttonText": "Donation Project Report"
         },
         "ourWork": {
-            "title": "Our Work",
+            "title": "What Do We Do?",
             "workList": {
                 "infoAsymmetry": "INFORMATION ASYMMETRY ",
                 "security": "OVERSEAS SAFETY",
@@ -76,8 +76,8 @@
             }
         },
         "ourServices": {
-            "title": "Our Service",
-            "description": "International Family Union (IFU) is composed of overseas seniors. It is a non-governmental organization that focuses on campus safety and serves international parents. Our services include \"Totoroad\" program courses, IFU members, IFU X DMA summer school, and GRE, CFA, H1B, OPT, CPT, and other related assistance. Please contact us if you want to know more or cooperate in the fields!",
+            "title": "What Do We Offer?",
+            "description": "International Family Union (IFU) is composed of overseas fellows. We’re a non-governmental organization that focuses on overseas campus safety and serves international students and their parents. Our programs include Totoroad Academy, IFU Peer Mentor, IFU membership, GRE, CFA, H1B, OPT, CPT, legal service, and other related assistance. Please contact us if you want to know more or cooperate in any field!",
             "serviceList": {
                 "totoroTitle": "TOTOROAD",
                 "totoroText": "We hope to give international students and their families comprehensive supports in the aspect of studying abroad, including comparisons of institutions, academic plans and acculturation supports, by designing and offering advanced bridging programs and synchronous tutoring. Project Totoroad assembles the most outstanding student mentors in America to help new international students by presenting sophisticated academic and life experience and knowledge. We aim to help new students with first-hand information and expertise to avoid and overcome unnecessary obstacles the students may meet in the future.",
@@ -88,7 +88,7 @@
                 "peerMentorsubTitle": "Mental Support and Counseling",
                 "peerMentorButtonText": "Learn More About Peer Mentor Program",
                 "membershipTitle": "MEMBERSHIP",
-                "membershipText": "To support and appreciate the IFU culture, through simple registration operation (no interview required) to become our member's companions, IFU will send monthly events and share meeting information by email. At the same time, students holding the IFUxISIC International Student Card can enjoy worldwide discounts on life, travel, catering, law, and academics (see the store for specific discounts).",
+                "membershipText": "If you agree with IFU’s culture and mission and want to join the conversation, we encourage both students and parents to apply for IFU membership for free, through a simple registration process on our website. IFU will send out a monthly newsletter via email for our members to access information related to upcoming events and sharing webinars, etc. At the same time, we encourage students to apply for the IFU x ISIC membership. With IFU x ISIC International Student Identity Card, students can enjoy worldwide discounts on life, travel, food, law, and academics (check the stores for specific discounts).",
                 "membershipsubTitle": "IFU Member & Student Identity Card",
                 "membershipButtonText": "Learn More About IFU Memberships",
                 "otherTitle": "PARTNERS’ SERVICES",
@@ -443,12 +443,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",
