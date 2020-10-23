@@ -957,14 +957,19 @@
             "title": "OTHER CONTACT INFORMATION",
             "business": {
                 "title": "Business Cooperation",
-                "description": "Send email to"
+                "description": "Send email to",
+                "mobileDescription": "Send email to :",
+                "mobileEmail": "internationalfamilyunion@gmail.com"
             },
             "other": {
                 "title": "Other Business",
-                "p1": "Please Contact Online Customer Service",
-                "p2": "Or Follow the IFU Official Account: ifu-china",
-                "p3": "Weibo: @IFU国际家长汇",
-                "p4": "Instagram：@ifu_i_family_u"
+                "p1": "Please Contact Online Customer Service (live chat box at the bottom right)",
+                "p1Mobile": "Please Contact Online Customer Service",
+                "p2": "Or Follow the IFU Wechat Official Account:",
+                "p3": "Zhihu:",
+                "p4": "Bilibili:",
+                "p5": "Instagram:",
+                "p6": "Weibo:"
             }
         }
     },
