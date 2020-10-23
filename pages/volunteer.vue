@@ -51,47 +51,47 @@
                 <h2 class="color-underline east-color title">
                     {{ $t('volunteer.schoolHeader') }}
                 </h2>
-                <p>{{ $t('volunteer.eastPara1') }}</p>
-                <p>{{ $t('volunteer.eastPara2') }}</p>
-                <p>{{ $t('volunteer.eastPara3') }}</p>
-                <p>{{ $t('volunteer.eastPara4') }}</p>
-                <p>{{ $t('volunteer.eastPara5') }}</p>
-                <p>{{ $t('volunteer.eastPara6') }}</p>
-                <p>{{ $t('volunteer.eastPara7') }}</p>
-                <p>{{ $t('volunteer.eastPara8') }}</p>
-                <p>{{ $t('volunteer.eastPara9') }}</p>
-                <p>{{ $t('volunteer.eastPara10') }}</p>
-                <p>{{ $t('volunteer.eastPara11') }}</p>
-                <p>{{ $t('volunteer.eastPara12') }}</p>
+                <p v-html="$t('volunteer.eastPara1')" />
+                <p v-html="$t('volunteer.eastPara2')" />
+                <p v-html="$t('volunteer.eastPara3')" />
+                <p v-html="$t('volunteer.eastPara4')" />
+                <p v-html="$t('volunteer.eastPara5')" />
+                <p v-html="$t('volunteer.eastPara6')" />
+                <p v-html="$t('volunteer.eastPara7')" />
+                <p v-html="$t('volunteer.eastPara8')" />
+                <p v-html="$t('volunteer.eastPara9')" />
+                <p v-html="$t('volunteer.eastPara10')" />
+                <p v-html="$t('volunteer.eastPara11')" />
+                <p v-html="$t('volunteer.eastPara12')" />
             </div>
             <div>
                 <h2 class="color-underline west-color title">
                     {{ $t('volunteer.west') }}
                 </h2>
-                <p>{{ $t('volunteer.westPara1') }}</p>
-                <p>{{ $t('volunteer.westPara2') }}</p>
-                <p>{{ $t('volunteer.westPara3') }}</p>
-                <p>{{ $t('volunteer.westPara4') }}</p>
-                <p>{{ $t('volunteer.westPara5') }}</p>
-                <p>{{ $t('volunteer.westPara6') }}</p>
-                <p>{{ $t('volunteer.westPara7') }}</p>
-                <p>{{ $t('volunteer.westPara8') }}</p>
+                <p v-html="$t('volunteer.westPara1')" />
+                <p v-html="$t('volunteer.westPara2')" />
+                <p v-html="$t('volunteer.westPara3')" />
+                <p v-html="$t('volunteer.westPara4')" />
+                <p v-html="$t('volunteer.westPara5')" />
+                <p v-html="$t('volunteer.westPara6')" />
+                <p v-html="$t('volunteer.westPara7')" />
+                <p v-html="$t('volunteer.westPara8')" />
             </div>
             <div>
                 <h2 class="color-underline canada-color title">
                     {{ $t('volunteer.caEn') }}
                 </h2>
-                <p>{{ $t('volunteer.caPara1') }}</p>
-                <p>{{ $t('volunteer.caPara2') }}</p>
-                <p>{{ $t('volunteer.caPara3') }}</p>
-                <p>{{ $t('volunteer.caPara4') }}</p>
-                <p>{{ $t('volunteer.caPara5') }}</p>
+                <p v-html="$t('volunteer.caPara1')" />
+                <p v-html="$t('volunteer.caPara2')" />
+                <p v-html="$t('volunteer.caPara3')" />
+                <p v-html="$t('volunteer.caPara4')" />
+                <p v-html="$t('volunteer.caPara5')" />
             </div>
             <div>
                 <h2 class="color-underline singapore-color title">
                     {{ $t('volunteer.singa') }}
                 </h2>
-                <p>{{ $t('volunteer.singaPara1') }}</p>
+                <p v-html="$t('volunteer.singaPara1')" />
             </div>
             <div class="bubble-section">
                 <div class="pic">
@@ -109,6 +109,11 @@
             <p>
                 {{ $t('volunteer.reviewPara') }}
             </p>
+            <div>
+                <a href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ">{{
+                    $t('volunteer.reviewLink')
+                }}</a>
+            </div>
         </section>
         <div class="swiper-section">
             <div v-swiper:mySwiper="swiperOption">
@@ -254,6 +259,11 @@ export default {
     display: flex;
     background-color: #f1f9ff;
 
+    h2 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
     p {
         line-height: 31px;
     }
@@ -296,6 +306,7 @@ export default {
     color: #fff;
     background: url(~assets/volunteer/section-school.png) no-repeat;
     flex-wrap: wrap;
+
     .title {
         font-weight: bolder;
     }
@@ -315,6 +326,7 @@ export default {
     .singapore-color {
         border-color: #fda63b;
     }
+
     div {
         width: 25%;
         height: 250px;
@@ -323,6 +335,11 @@ export default {
     div p {
         text-decoration: underline;
     }
+    :lang(en) {
+        text-decoration: none;
+        padding-right: 0.5%;
+    }
+
     .bubble-section {
         width: 100%;
     }
@@ -349,6 +366,16 @@ export default {
             color: #4ebdf7;
             text-decoration: none;
         }
+        .link:hover {
+            color: #f96291;
+        }
+    }
+    :lang(en).pic {
+        line-height: 25px;
+        padding-left: 50px;
+    }
+    :lang(zh) div p {
+        text-decoration: underline;
     }
 }
 
@@ -356,6 +383,36 @@ export default {
     width: 70%;
     margin-left: 0px;
     line-height: 31px;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+    div {
+        background-image: url(~assets/volunteer/link-image.png);
+        background-repeat: no-repeat;
+        background-size: 21px 20px;
+        background-position: 0% 40%;
+    }
+    div:hover {
+        background-image: url(~assets/volunteer/link-image-hover.png);
+        background-repeat: no-repeat;
+        background-size: 21px 20px;
+        background-position: 0% 40%;
+        a {
+            color: #f96291;
+        }
+    }
+
+    div a {
+        padding-left: 25px;
+        font-size: 1.5em;
+        color: #197599;
+    }
+    div img {
+        width: 21px;
+        height: 20px;
+    }
 }
 
 .swiper-section {
@@ -445,6 +502,18 @@ export default {
                 line-height: 30px;
                 h2 {
                     font-weight: bolder;
+                }
+                /deep/ a {
+                    button {
+                        background-color: #c9d74a;
+                        box-shadow: 0px 10px 15px rgba(201, 215, 74, 0.25);
+                    }
+                    button:hover {
+                        color: #c9d74a;
+                        background-color: white;
+                        box-shadow: 0px 10px 15px white;
+                        border: 1px solid #c9d74a;
+                    }
                 }
             }
             img {
