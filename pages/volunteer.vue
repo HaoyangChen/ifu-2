@@ -576,8 +576,9 @@ export default {
             }
         }
         :lang(en).pic {
+            line-height: 30px;
             left: 0;
-            padding-top: 20px;
+            padding-top: 40px;
         }
     }
 
