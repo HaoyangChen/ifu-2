@@ -189,9 +189,9 @@
                 <!-- phases -->
                 <div class="project-process-phases">
                     <div class="phase-flex phase1-background">
-                        <h2 class="phase-number">
+                        <p class="phase-number">
                             {{ $t('peermentor.programstreams.stage1.title') }}
-                        </h2>
+                        </p>
                         <img
                             class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
@@ -208,9 +208,9 @@
                         />
                     </div>
                     <div class="phase-flex phase2-background">
-                        <h2 class="phase-number">
+                        <p class="phase-number">
                             {{ $t('peermentor.programstreams.stage2.title') }}
-                        </h2>
+                        </p>
                         <img
                             class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
@@ -227,9 +227,9 @@
                         />
                     </div>
                     <div class="phase-flex phase3-background">
-                        <h2 class="phase-number">
+                        <p class="phase-number">
                             {{ $t('peermentor.programstreams.stage3.title') }}
-                        </h2>
+                        </p>
                         <img
                             class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
@@ -246,9 +246,9 @@
                         />
                     </div>
                     <div class="phase-flex phase4-background">
-                        <h2 class="phase-number">
+                        <p class="phase-number">
                             {{ $t('peermentor.programstreams.stage4.title') }}
-                        </h2>
+                        </p>
                         <img
                             class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
@@ -265,9 +265,9 @@
                         />
                     </div>
                     <div class="phase-flex phase5-background">
-                        <h2 class="phase-number">
+                        <p class="phase-number">
                             {{ $t('peermentor.programstreams.stage5.title') }}
-                        </h2>
+                        </p>
                         <img
                             class="phase-lines"
                             src="@/assets/peermentor/line_process.svg"
@@ -350,7 +350,7 @@
                 <p>
                     {{ $t('peermentor.envelope.letter.content1c') }}
                 </p>
-                <div class="three-in-onerow">
+                <!-- <div class="three-in-onerow">
                     <img
                         src="@/assets/peermentor/letter_left_graph.svg"
                         alt="letter left graph"
@@ -360,7 +360,7 @@
                         src="@/assets/peermentor/letter_right_group.svg"
                         alt="letter left graph"
                     />
-                </div>
+                </div> -->
                 <div class="three-in-onerow-mobile">
                     <img
                         src="@/assets/peermentor/three_in_row.svg"
@@ -554,7 +554,6 @@ h2 {
 }
 
 .whypeermentor {
-    padding-bottom: 0px;
     .whypeermentor-upper {
         width: 70%;
     }
@@ -698,17 +697,21 @@ h2 {
                 text-align: center;
                 align-items: center;
                 line-height: 70px;
+                font-size: 24px;
             }
 
             .phase-circle {
-                height: 46px;
-                width: 46px;
+                height: 24px;
+                width: 24px;
                 border-radius: 50%;
                 background-color: #fff;
             }
 
             .phase-description {
                 width: 60%;
+                padding-top: 62px;
+                padding-bottom: 62px;
+                padding-left: 27px;
             }
         }
 
@@ -890,12 +893,13 @@ h2 {
             }
 
             .must-know-part {
-                width: 50%;
                 line-height: 31px;
                 letter-spacing: 0.03em;
                 background: #ffffff;
                 padding: 20px 20px;
                 border: 5px solid #efcbab;
+                width: 50%;
+
                 h2 {
                     margin-left: 20px;
                 }
@@ -913,15 +917,23 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         background: url('../assets/peermentor/letter_paper.svg') repeat;
-        padding: 8%;
+        padding: 8% 13%;
 
-        .three-in-onerow {
-            display: flex;
-            align-items: center;
-        }
+        // .three-in-onerow {
+        //     display: flex;
+        //     align-items: center;
+        // }
+
+        // .three-in-onerow-mobile {
+        //     display: none;
+        // }
 
         .three-in-onerow-mobile {
-            display: none;
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         .must-know-part {
@@ -930,7 +942,9 @@ h2 {
             background: #ffffff;
             padding: 20px 20px;
             border: 5px solid #efcbab;
-            width: 70%;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
             h2 {
                 margin-left: 20px;
             }
@@ -1013,17 +1027,17 @@ p {
         .peermentor-letter-innersection {
             width: 100%;
 
-            .three-in-onerow {
-                display: none;
-            }
+            // .three-in-onerow {
+            //     display: none;
+            // }
 
-            .three-in-onerow-mobile {
-                display: block;
+            // .three-in-onerow-mobile {
+            //     display: block;
 
-                img {
-                    width: 100%;
-                }
-            }
+            //     img {
+            //         width: 100%;
+            //     }
+            // }
             .must-know-part {
                 width: 100%;
 
