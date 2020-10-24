@@ -124,6 +124,9 @@
                             <li>
                                 {{ $t('peermentor.services.blueBubble.item6') }}
                             </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item7') }}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -145,6 +148,11 @@
                             <li>
                                 {{
                                     $t('peermentor.services.greenBubble.item2')
+                                }}
+                            </li>
+                            <li>
+                                {{
+                                    $t('peermentor.services.greenBubble.item3')
                                 }}
                             </li>
                         </ul>
@@ -599,7 +607,7 @@ h2 {
     }
 
     .project-process-section {
-        line-height: 35px;
+        line-height: 30px;
         position: relative;
 
         letter-spacing: 0.02em;
@@ -607,10 +615,22 @@ h2 {
             position: absolute;
             left: 8%;
 
+            img {
+                width: 110%;
+            }
+
             .blue-bubble-inner {
                 position: absolute;
                 top: 20px;
                 left: 53px;
+                padding-left: 13%;
+                ul {
+                    padding-left: 10%;
+                }
+
+                h3 {
+                    line-height: 0px;
+                }
             }
 
             :lang(en).blue-bubble-inner {
@@ -632,16 +652,28 @@ h2 {
             left: 27%;
             top: 190px;
 
+            img {
+                width: 115%;
+            }
+
             .green-bubble-inner {
                 position: absolute;
                 top: 20px;
                 left: 53px;
+
+                ul {
+                    padding-left: 10%;
+                }
+
+                h3 {
+                    line-height: 0px;
+                }
             }
             :lang(en).green-bubble-inner {
                 position: absolute;
-                line-height: 20px;
+                line-height: 40px;
                 letter-spacing: 0;
-                top: 5px;
+                top: 20px;
                 left: 35px;
                 ul {
                     // margin-left: 0;
