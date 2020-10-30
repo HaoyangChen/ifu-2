@@ -11,12 +11,12 @@
                 <div>
                     <p style="font-size: 36px; margin: 0">{{ title }}</p>
                     <p style="font-size: 20px; font-weight: 700">{{ text }}</p>
+                    <div class="line"></div>
                 </div>
                 <div class="text-container">
-                    <div class="line"></div>
                     <p>{{ activeItem.text }}</p>
                 </div>
-                <div>
+                <div v-if="activeItem.link">
                     <Button :to="localePath('/' + activeItem.link)">{{
                         activeItem.buttonText
                     }}</Button>
@@ -143,7 +143,7 @@ export default {
     }
 
     .inner {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
         height: 100%;
         padding: 30px 15px 30px 45px;
         justify-content: space-evenly;
@@ -197,11 +197,11 @@ export default {
 }
 .line {
     display: inline-block;
-    height: 110px;
+    width: 110px;
     border: 2px solid $red;
-    position: absolute;
-    top: 25px;
-    left: -20px;
+    // position: absolute;
+    // top: 25px;
+    // left: -20px;
 }
 .text-container {
     display: inline-block;

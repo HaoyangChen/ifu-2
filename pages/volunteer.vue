@@ -1,20 +1,17 @@
 <template>
     <div>
         <Banner
-            title="IFU 校园志愿者"
-            description="IFU校园志愿者是IFU全体志愿者中的一类。 其职责是在围绕着“让留学家庭更安心”的使命上，参与紧急事件援助、正确翻译、传播学校信息、社群答疑，以减少留学家庭之间信息差，留学生海外焦虑问题。目前IFU校园志愿者遍布北美25所高校，以学生社团或单人志愿者的形式在校园存在。"
-            button-text="成为校园志愿者"
+            :title="$t('volunteer.bannerTitle')"
+            :description="$t('volunteer.bannerDescrip')"
+            :button-text="$t('volunteer.bannerText')"
             external
             to="https://forms.gle/KvsV5GiSb4nMtLER7"
             :background="bannerImage"
         />
         <div class="section-mission">
             <section>
-                <h2>校园志愿者的使命</h2>
-                <p>
-                    IFU全体志愿者的使命是达成IFU
-                    NGO“让留学家庭更安心”的社会目标。我们想要减少或解决一直被社会所忽视的留学生群体及背后家庭所面临的问题，例如留学安全、心理压力、文化冲突、学术就职压力等等。我们希望通过减少学生家长之间的信息代沟，在紧急情况时为家长提供校方联系，为学生提供法律、学术、心理援助等方式来完成我们的使命与组织的社会目标。
-                </p>
+                <h2>{{ $t('volunteer.missionHeader') }}</h2>
+                <p>{{ $t('volunteer.missionParagraph') }}</p>
             </section>
             <div>
                 <img src="@/assets/volunteer/section-mission.png" />
@@ -26,16 +23,16 @@
                     src="@/assets/volunteer/icon-emergency.svg"
                     alt="emergency icon"
                 />
-                <h2>紧急情况</h2>
+                <h2>{{ $t('volunteer.activityHeader') }}</h2>
                 <p>
-                    IFU能够在紧急情况发生时，例如：失联、心理精神、法律、学术问题，及时地帮助家长通过联系IFU工作人员以及相对应校园志愿者获得帮助。
+                    {{ $t('volunteer.activityParagraph') }}
                 </p>
             </div>
             <div>
                 <img src="@/assets/volunteer/icon-info.svg" alt="info icon" />
-                <h2>信息传递</h2>
+                <h2>{{ $t('volunteer.activityHeader2') }}</h2>
                 <p>
-                    IFU通过线上和线下信息分享的方式来减少留学家庭之间的信息代沟。分享内容包括：校园官方信息、留学生第一视角的校园、生活体验、学长学姐经验等。让留学生父母更了解孩子海外生活，也让孩子更理解父母所忧，成为彼此之间的信息桥梁。
+                    {{ $t('volunteer.activityParagraph2') }}
                 </p>
             </div>
             <div>
@@ -43,70 +40,80 @@
                     src="@/assets/volunteer/icon-program.svg"
                     alt="program icon"
                 />
-                <h2>特定项目</h2>
+                <h2>{{ $t('volunteer.activityHeader3') }}</h2>
                 <p>
-                    IFU针对部分留学问题制定了特定项目去解决。例如：IFU Peer
-                    Mentor Program、多多罗学术项目、暑期学长学姐高校嘉年华等。
+                    {{ $t('volunteer.activityParagraph3') }}
                 </p>
             </div>
         </div>
         <section class="section-school">
             <div>
-                <h2 class="color-underline east-color title">美国东部</h2>
-                <p>伊利诺伊大学香槟分校</p>
-                <p>罗切斯特大学</p>
-                <p>弗里吉尼亚联邦大学</p>
-                <p>乔治华盛顿大学</p>
-                <p>俄亥俄州立大学</p>
-                <p>波士顿大学</p>
-                <p>纽约大学</p>
-                <p>威斯康辛麦迪逊大学</p>
-                <p>北卡州立大学</p>
-                <p>佐治亚大学</p>
-                <p>奥本大学</p>
-                <p>杜兰大学</p>
+                <h2 class="color-underline east-color title">
+                    {{ $t('volunteer.schoolHeader') }}
+                </h2>
+                <p v-html="$t('volunteer.eastPara1')" />
+                <p v-html="$t('volunteer.eastPara2')" />
+                <p v-html="$t('volunteer.eastPara3')" />
+                <p v-html="$t('volunteer.eastPara4')" />
+                <p v-html="$t('volunteer.eastPara5')" />
+                <p v-html="$t('volunteer.eastPara6')" />
+                <p v-html="$t('volunteer.eastPara7')" />
+                <p v-html="$t('volunteer.eastPara8')" />
+                <p v-html="$t('volunteer.eastPara9')" />
+                <p v-html="$t('volunteer.eastPara10')" />
+                <p v-html="$t('volunteer.eastPara11')" />
+                <p v-html="$t('volunteer.eastPara12')" />
             </div>
             <div>
-                <h2 class="color-underline west-color title">美国西部</h2>
-                <p>加州大学欧文分校</p>
-                <p>加州大学圣地亚哥分校</p>
-                <p>加州大学洛杉矶分校</p>
-                <p>加州大学圣塔芭芭拉分校</p>
-                <p>加州大学戴维斯分校</p>
-                <p>加州大学伯克利分校</p>
-                <p>南加州大学</p>
-                <p>华盛顿大学</p>
+                <h2 class="color-underline west-color title">
+                    {{ $t('volunteer.west') }}
+                </h2>
+                <p v-html="$t('volunteer.westPara1')" />
+                <p v-html="$t('volunteer.westPara2')" />
+                <p v-html="$t('volunteer.westPara3')" />
+                <p v-html="$t('volunteer.westPara4')" />
+                <p v-html="$t('volunteer.westPara5')" />
+                <p v-html="$t('volunteer.westPara6')" />
+                <p v-html="$t('volunteer.westPara7')" />
+                <p v-html="$t('volunteer.westPara8')" />
             </div>
             <div>
-                <h2 class="color-underline canada-color title">加拿大&英国</h2>
-                <p>英属哥伦比亚大学</p>
-                <p>西蒙菲莎大学</p>
-                <p>阿尔伯塔大学</p>
-                <p>维多利亚大学</p>
-                <p>伦敦大学学院</p>
+                <h2 class="color-underline canada-color title">
+                    {{ $t('volunteer.caEn') }}
+                </h2>
+                <p v-html="$t('volunteer.caPara1')" />
+                <p v-html="$t('volunteer.caPara2')" />
+                <p v-html="$t('volunteer.caPara3')" />
+                <p v-html="$t('volunteer.caPara4')" />
+                <p v-html="$t('volunteer.caPara5')" />
             </div>
             <div>
-                <h2 class="color-underline singapore-color title">新加坡</h2>
-                <p>新加坡国立大学</p>
+                <h2 class="color-underline singapore-color title">
+                    {{ $t('volunteer.singa') }}
+                </h2>
+                <p v-html="$t('volunteer.singaPara1')" />
             </div>
-            <div class="pic">
-                <h3>持续扩展中...</h3>
-                <span>想要成为校园志愿者，为<br />留学生群体尽一份力吗？</span>
-                <br />
-                <a class="link" href="https://forms.gle/KvsV5GiSb4nMtLER7"
-                    >加入我们>>>
-                </a>
+            <div class="bubble-section">
+                <div class="pic">
+                    <h3>{{ $t('volunteer.picHeader') }}</h3>
+                    <span>{{ $t('volunteer.picPara') }}</span>
+                    <br />
+                    <a class="link" href="https://forms.gle/KvsV5GiSb4nMtLER7"
+                        >{{ $t('volunteer.picLink') }}
+                    </a>
+                </div>
             </div>
         </section>
         <section class="event-review">
-            <h2>活动回顾</h2>
+            <h2>{{ $t('volunteer.review') }}</h2>
             <p>
-                月报、年报总结。加下载report 链接。月报、年报总结。加下载report
-                链接。月报、年报总结。加下载report
-                链接。月报、年报总结。加下载report
-                链接。月报、年报总结。加下载report
-                链接。月报、年报总结。加下载report 链接。
+                {{ $t('volunteer.reviewPara') }}
             </p>
+            <div>
+                <a href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ">{{
+                    $t('volunteer.reviewLink')
+                }}</a>
+            </div>
         </section>
         <div class="swiper-section">
             <div v-swiper:mySwiper="swiperOption">
@@ -123,54 +130,57 @@
                         </div>
                     </div>
                 </div>
-                <div slot="button-prev" class="swiper-button-prev"></div>
-                <div slot="button-next" class="swiper-button-next"></div>
+                <div
+                    slot="button-prev"
+                    class="swiper-button-prev desktop"
+                ></div>
+                <div
+                    slot="button-next"
+                    class="swiper-button-next desktop"
+                ></div>
+                <div class="swiper-pagination mobile"></div>
             </div>
         </div>
         <section class="become-campus-volunteer">
             <div class="volunteer-become">
-                <h2>成为校园志愿者</h2>
-                <p>
-                    IFU致力于减少留学安全问题，提升留学家庭和谐度，改善留学家庭信息不对称，减少留学在外不平等的社会问题，着重服务于留学生家长，以及关注其孩子的心理健康问题。我们将通过3大核心方式来完成我们的使命：<strong
-                        >紧急情况、信息传递、校园官方信息翻译。</strong
-                    >
-                </p>
+                <h2>{{ $t('volunteer.becomeHeader') }}</h2>
+                <p v-html="$t('volunteer.becomePara')" />
             </div>
             <div class="campus-volunteer-lr">
                 <div class="requirement">
-                    <p>作为校园志愿者你将会</p>
+                    <p>{{ $t('volunteer.requirePara') }}</p>
                     <ul>
                         <li>
-                            在紧急情况发生时，及时帮助家长联系到校园志愿者获得帮助。
+                            {{ $t('volunteer.li1') }}
                         </li>
                         <li>
-                            通过传递留学生第一视角的校园、生活信息，来减少留学家庭之间的信息代沟。
+                            {{ $t('volunteer.li2') }}
                         </li>
                         <li>
-                            在各学校官方发出重大政策通知时，及时把学校官方信息进行翻译，传递给家长学生。
+                            {{ $t('volunteer.li3') }}
                         </li>
                     </ul>
                     <br />
-                    <p>作为校园志愿者你需要是</p>
+                    <p>{{ $t('volunteer.requirePara2') }}</p>
                     <ul>
-                        <li>
-                            海外大学在读学生或毕业生
-                        </li>
-                        <li>
-                            中英双语熟练优先
-                        </li>
+                        <li>{{ $t('volunteer.li4') }}</li>
+                        <li>{{ $t('volunteer.li5') }}</li>
                     </ul>
                 </div>
                 <div class="ready-to-join">
+                    <!-- <img
+                        class="mobile-frame mobile"
+                        src="@/assets/volunteer/frame-mobile.png"
+                    /> -->
                     <div class="content">
-                        <h2>准备好加入我们了吗？</h2>
+                        <h2>{{ $t('volunteer.join') }}</h2>
                         <p>
-                            感谢你愿意为留学群体，为IFU让留学家<br />庭更安心的使命做出一份贡献～
+                            {{ $t('volunteer.joinPara') }}
                         </p>
                         <Button
                             external
                             to="https://forms.gle/KvsV5GiSb4nMtLER7"
-                            >提交申请</Button
+                            >{{ $t('volunteer.button') }}</Button
                         >
                     </div>
                     <img src="@/assets/volunteer/Kimmy.png" alt="kimmy" />
@@ -205,6 +215,10 @@ export default {
                 effect: 'coverflow',
                 grabCursor: true,
                 centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -244,6 +258,11 @@ export default {
 .section-mission {
     display: flex;
     background-color: #f1f9ff;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 500;
+    }
 
     p {
         line-height: 31px;
@@ -287,6 +306,7 @@ export default {
     color: #fff;
     background: url(~assets/volunteer/section-school.png) no-repeat;
     flex-wrap: wrap;
+
     .title {
         font-weight: bolder;
     }
@@ -306,6 +326,7 @@ export default {
     .singapore-color {
         border-color: #fda63b;
     }
+
     div {
         width: 25%;
         height: 250px;
@@ -313,6 +334,14 @@ export default {
     }
     div p {
         text-decoration: underline;
+    }
+    :lang(en) {
+        text-decoration: none;
+        padding-right: 0.5%;
+    }
+
+    .bubble-section {
+        width: 100%;
     }
     .pic {
         width: 337px;
@@ -323,6 +352,7 @@ export default {
         box-sizing: border-box;
         padding-left: 75px;
         padding-top: 50px;
+        padding-right: 50px;
         color: black;
         text-decoration: none;
         line-height: 35px;
@@ -336,6 +366,16 @@ export default {
             color: #4ebdf7;
             text-decoration: none;
         }
+        .link:hover {
+            color: #f96291;
+        }
+    }
+    :lang(en).pic {
+        line-height: 25px;
+        padding-left: 50px;
+    }
+    :lang(zh) div p {
+        text-decoration: underline;
     }
 }
 
@@ -343,6 +383,36 @@ export default {
     width: 70%;
     margin-left: 0px;
     line-height: 31px;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+    div {
+        background-image: url(~assets/volunteer/link-image.png);
+        background-repeat: no-repeat;
+        background-size: 21px 20px;
+        background-position: 0% 40%;
+    }
+    div:hover {
+        background-image: url(~assets/volunteer/link-image-hover.png);
+        background-repeat: no-repeat;
+        background-size: 21px 20px;
+        background-position: 0% 40%;
+        a {
+            color: #f96291;
+        }
+    }
+
+    div a {
+        padding-left: 25px;
+        font-size: 1.5em;
+        color: #197599;
+    }
+    div img {
+        width: 21px;
+        height: 20px;
+    }
 }
 
 .swiper-section {
@@ -370,6 +440,22 @@ export default {
             }
         }
     }
+}
+
+/deep/ .swiper-pagination-bullet {
+    background: $red;
+    margin: 5px;
+
+    &:not(.swiper-pagination-bullet-active) {
+        background: #202020;
+        opacity: 1;
+    }
+}
+
+.swiper-pagination {
+    padding-top: 10px;
+    margin-bottom: 35px;
+    position: static;
 }
 
 .become-campus-volunteer {
@@ -412,9 +498,22 @@ export default {
                 box-sizing: border-box;
                 padding-left: 50px;
                 padding-top: 50px;
+                padding-right: 50px;
                 line-height: 30px;
                 h2 {
                     font-weight: bolder;
+                }
+                /deep/ a {
+                    button {
+                        background-color: #c9d74a;
+                        box-shadow: 0px 10px 15px rgba(201, 215, 74, 0.25);
+                    }
+                    button:hover {
+                        color: #c9d74a;
+                        background-color: white;
+                        box-shadow: 0px 10px 15px white;
+                        border: 1px solid #c9d74a;
+                    }
                 }
             }
             img {
@@ -443,29 +542,70 @@ export default {
     }
 
     .section-school {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        column-gap: 5%;
+        flex-direction: column;
+        background-image: url(~assets/volunteer/school-section-mobile.png);
+        background-size: 100%;
+        width: 100%;
+
+        // background: url(/_nuxt/assets/volunteer/section-school-mobile.png);
 
         > div {
             width: auto;
             height: auto;
+            margin: 5% 0;
+
+            p {
+                margin: 0.5em 0;
+            }
         }
 
+        img {
+            height: 252px;
+            width: auto;
+            display: none;
+        }
         .pic {
-            padding: 10% 0 0 20%;
             left: 0;
-            bottom: 25%;
-            background-size: 65% auto;
-            background-repeat: no-repeat;
 
             h3 {
-                font-size: 18px;
-                padding-left: 5%;
+                font-size: 25px;
                 margin-bottom: 0;
             }
             a {
                 padding-left: 5%;
+            }
+        }
+        :lang(en).pic {
+            line-height: 30px;
+            left: 0;
+            padding-top: 40px;
+        }
+    }
+
+    .swiper-section {
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .img {
+                    height: auto;
+                    width: 360px;
+                    background-color: #f1f9ff;
+                    img {
+                        width: 360px;
+                        height: auto;
+                        // object-fit: cover;
+                        // border-radius: 0.5rem;
+                    }
+                }
             }
         }
     }
@@ -475,19 +615,76 @@ export default {
     }
 
     .become-campus-volunteer {
+        background-image: none;
+        padding: 0;
+
         .volunteer-become {
             width: 100%;
+            background-color: #c9d74a;
+            padding: 15px 30px;
         }
         .campus-volunteer-lr {
+            margin-top: 25px;
+            width: 100%;
             flex-direction: column;
             align-items: center;
 
             .requirement {
+                padding: 2%;
+                padding-right: 5%;
                 width: 100%;
+                background-color: rgba(201, 215, 74, 0.02);
             }
 
             .ready-to-join {
                 width: 100%;
+                padding: 0;
+                height: 525px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                // .mobile-frame {
+                //     position: absolute;
+                //     left: 25%;
+                //     top: 0;
+                //     width: 331px;
+                //     height: auto;
+                //     display: none;
+                // }
+                .content {
+                    // left: 5%;
+                    padding-top: 25px;
+                    padding-right: 2em;
+                    padding-left: 2em;
+                    background-image: url(~assets/volunteer/frame-mobile.png);
+                    background-repeat: no-repeat;
+                    background-size: 331px auto;
+                    width: 331px;
+                    height: 350px;
+                    // height: auto;
+                    position: absolute;
+
+                    /deep/ a {
+                        button {
+                            background-color: #c9d74a;
+                            margin: 0 0 55px 60px;
+                        }
+                    }
+                }
+                :lang(en).content {
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                    p {
+                        margin-top: 0.5em;
+                    }
+                }
+
+                img {
+                    top: 280px;
+                    left: 0;
+                }
             }
         }
     }
