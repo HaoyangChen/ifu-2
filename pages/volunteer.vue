@@ -10,7 +10,7 @@
         />
         <div class="section-mission">
             <section>
-                <h2>{{ $t('volunteer.missionHeader') }}</h2>
+                <h3>{{ $t('volunteer.missionHeader') }}</h3>
                 <p>{{ $t('volunteer.missionParagraph') }}</p>
             </section>
             <div>
@@ -105,14 +105,26 @@
             </div>
         </section>
         <section class="event-review">
-            <h2>{{ $t('volunteer.review') }}</h2>
-            <p>
-                {{ $t('volunteer.reviewPara') }}
-            </p>
-            <div>
-                <a href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ">{{
-                    $t('volunteer.reviewLink')
-                }}</a>
+            <div class="event-review-left">
+                <h3>{{ $t('volunteer.review') }}</h3>
+                <p>
+                    {{ $t('volunteer.reviewPara') }}
+                </p>
+                <div>
+                    <a
+                        href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ"
+                        >{{ $t('volunteer.reviewLink') }}</a
+                    >
+                </div>
+            </div>
+            <div class="event-review-right desktop">
+                <img src="@/assets/volunteer/event-recap-pic.png" />
+                <div>
+                    <a
+                        href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ"
+                        >{{ $t('volunteer.reviewLink') }}</a
+                    >
+                </div>
             </div>
         </section>
         <div class="swiper-section">
@@ -123,9 +135,14 @@
                         :key="index"
                         class="swiper-slide"
                     >
-                        <div class="img">
+                        <div class="img zh-image">
                             <img :src="item.image" />
                             <p>{{ item.title }}</p>
+                            <p>{{ item.subTitle }}</p>
+                        </div>
+                        <div class="img en-image">
+                            <img :src="item.image" />
+                            <p>{{ item.enTitle }}</p>
                             <p>{{ item.subTitle }}</p>
                         </div>
                     </div>
@@ -173,10 +190,13 @@
                         src="@/assets/volunteer/frame-mobile.png"
                     /> -->
                     <div class="content">
-                        <h2>{{ $t('volunteer.join') }}</h2>
-                        <p>
-                            {{ $t('volunteer.joinPara') }}
-                        </p>
+                        <div class="content-text">
+                            <h2>{{ $t('volunteer.join') }}</h2>
+                            <p>
+                                {{ $t('volunteer.joinPara') }}
+                            </p>
+                        </div>
+
                         <Button
                             external
                             to="https://forms.gle/KvsV5GiSb4nMtLER7"
@@ -238,14 +258,18 @@ export default {
             return [
                 {
                     title: '2017加州中国留学生家长交流峰会（上海）',
+                    enTitle:
+                        '2017 Studying Abroad in California - Students & Parents Summit - Shanghai',
                     image: swiperImage1,
                 },
                 {
                     title: 'IFU X Shelter Helper 募集善款活动',
+                    enTitle: 'IFU X Shelter Helper Fundraising Event',
                     image: swiperImage2,
                 },
                 {
                     title: '农历新年聚会',
+                    enTitle: 'Lunar New Year Event',
                     image: swiperImage3,
                 },
             ];
@@ -258,10 +282,12 @@ export default {
 .section-mission {
     display: flex;
     background-color: #f1f9ff;
-
-    h2 {
-        font-size: 2em;
-        font-weight: 500;
+    div {
+        background-color: #c9d74a;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
     }
 
     p {
@@ -284,7 +310,7 @@ export default {
 
         > p {
             text-align: left;
-            padding: 0 50px;
+            padding: 0 25px;
             line-height: 31px;
         }
     }
@@ -306,6 +332,7 @@ export default {
     color: #fff;
     background: url(~assets/volunteer/section-school.png) no-repeat;
     flex-wrap: wrap;
+    padding-bottom: 100px;
 
     .title {
         font-weight: bolder;
@@ -380,38 +407,73 @@ export default {
 }
 
 .event-review {
-    width: 70%;
-    margin-left: 0px;
-    line-height: 31px;
+    display: flex;
+    // padding: 80px 6%;
 
-    h2 {
-        font-size: 2em;
-        font-weight: 500;
-    }
-    div {
-        background-image: url(~assets/volunteer/link-image.png);
-        background-repeat: no-repeat;
-        background-size: 21px 20px;
-        background-position: 0% 40%;
-    }
-    div:hover {
-        background-image: url(~assets/volunteer/link-image-hover.png);
-        background-repeat: no-repeat;
-        background-size: 21px 20px;
-        background-position: 0% 40%;
-        a {
-            color: #f96291;
+    .event-review-left {
+        line-height: 31px;
+        flex-basis: 50%;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        div {
+            background-image: url(~assets/volunteer/link-image.png);
+            background-repeat: no-repeat;
+            background-size: 21px 20px;
+            background-position: 0% 40%;
+
+            &:hover {
+                background-image: url(~assets/volunteer/link-image-hover.png);
+                a {
+                    color: #f96291;
+                }
+            }
+
+            a {
+                padding-left: 25px;
+                font-size: 18px;
+                color: #197599;
+            }
+            img {
+                width: 21px;
+                height: 20px;
+            }
         }
     }
+    .event-review-right {
+        position: relative;
+        flex-basis: 50%;
+        padding: 50px 0 0 100px;
 
-    div a {
-        padding-left: 25px;
-        font-size: 1.5em;
-        color: #197599;
-    }
-    div img {
-        width: 21px;
-        height: 20px;
+        div {
+            background-image: url(~assets/volunteer/link-image.png);
+            background-repeat: no-repeat;
+            background-size: 26px 28px;
+            background-position: 0% 40%;
+            position: absolute;
+            top: 10em;
+            left: 35%;
+
+            a {
+                padding-left: 30px;
+                font-size: 30px;
+                color: #197599;
+            }
+
+            &:hover {
+                background-image: url(~assets/volunteer/link-image-hover.png);
+                a {
+                    color: #f96291;
+                }
+            }
+        }
+
+        img {
+            width: 469px;
+            height: auto;
+        }
     }
 }
 
@@ -437,6 +499,12 @@ export default {
                     object-fit: cover;
                     border-radius: 0.5rem;
                 }
+            }
+            :lang(en).zh-image {
+                display: none;
+            }
+            :lang(zh).en-image {
+                display: none;
             }
         }
     }
@@ -496,13 +564,14 @@ export default {
                 height: 333px;
                 background-image: url(~assets/volunteer/frame.png);
                 box-sizing: border-box;
-                padding-left: 50px;
-                padding-top: 50px;
-                padding-right: 50px;
+                padding-left: 70px;
+                padding-top: 40px;
+                padding-right: 105px;
                 line-height: 30px;
                 h2 {
                     font-weight: bolder;
                 }
+
                 /deep/ a {
                     button {
                         background-color: #c9d74a;
@@ -516,6 +585,12 @@ export default {
                     }
                 }
             }
+            :lang(en).content {
+                background-image: url(~assets/volunteer/frame-en.png);
+                background-size: 100%;
+                height: 353px;
+                padding-right: 95px;
+            }
             img {
                 position: relative;
                 left: 400px;
@@ -523,11 +598,18 @@ export default {
         }
     }
 }
+:lang(en).become-campus-volunteer {
+    background: url(~assets/volunteer/become-campus-volunteer-en.png) no-repeat;
+    background-color: rgba(201, 215, 74, 0.2);
+    background-size: 100%;
+}
 
 @media (max-width: $mobile-max-width) {
     .section-mission {
         flex-direction: column;
-
+        h3 {
+            font-size: 24px;
+        }
         > div {
             > img {
                 width: 100%;
@@ -566,6 +648,7 @@ export default {
         }
         .pic {
             left: 0;
+            padding: 60px 75px 0 75px;
 
             h3 {
                 font-size: 25px;
@@ -578,7 +661,14 @@ export default {
         :lang(en).pic {
             line-height: 30px;
             left: 0;
-            padding-top: 40px;
+            padding-right: 0;
+            span {
+                display: inline-block;
+                padding-right: 50px;
+            }
+            a {
+                padding: 0;
+            }
         }
     }
 
@@ -612,6 +702,20 @@ export default {
 
     .event-review {
         width: 100%;
+        padding-bottom: 30px;
+
+        .event-review-left {
+            flex-basis: 100%;
+
+            h3 {
+                font-size: 24px;
+            }
+            div {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 
     .become-campus-volunteer {
@@ -654,30 +758,47 @@ export default {
                 // }
                 .content {
                     // left: 5%;
-                    padding-top: 25px;
-                    padding-right: 2em;
-                    padding-left: 2em;
+                    box-sizing: border-box;
+                    padding-top: 35px;
+                    padding-right: 0;
+                    padding-left: 0;
                     background-image: url(~assets/volunteer/frame-mobile.png);
                     background-repeat: no-repeat;
-                    background-size: 331px auto;
-                    width: 331px;
-                    height: 350px;
+                    background-size: 100%;
+                    width: 345px;
+                    height: 291px;
                     // height: auto;
                     position: absolute;
 
                     /deep/ a {
                         button {
                             background-color: #c9d74a;
-                            margin: 0 0 55px 60px;
+                            margin: 0 0 55px 110px;
+                        }
+                    }
+                    .content-text {
+                        h2 {
+                            margin-left: 2.5em;
+                        }
+                        p {
+                            margin: 1em 3.8em;
                         }
                     }
                 }
                 :lang(en).content {
-                    h2 {
-                        margin-bottom: 0;
-                    }
-                    p {
-                        margin-top: 0.5em;
+                    background-image: url(~assets/volunteer/frame-mobile.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 345px;
+                    height: 291px;
+                    padding-right: 0;
+                    .content-text {
+                        h2 {
+                            margin: 0.5em 0 0 2.5em;
+                        }
+                        p {
+                            margin-top: 0.5em;
+                        }
                     }
                 }
 

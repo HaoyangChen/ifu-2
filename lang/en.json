@@ -443,8 +443,12 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": ["University College London"],
-            "singapore": ["National University of Singapore"]
+            "uk": [
+                "University College London"
+            ],
+            "singapore": [
+                "National University of Singapore"
+            ]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -1095,6 +1099,7 @@
         "review": "Event Recap & Monthly Report",
         "reviewPara": "In September, IFU campus volunteers started a new semester from summer vacation. This year, we cannot gather together in person, as usual, to chat about IFU and the experience abroad. But our team is still communicating with the communities on social media and helping international families deal with emergencies, like missing contact and mental health issues. Besides, we’re working on updating local Covid-19 situations, translating new policies and timelines from schools, and planning the school organizations’ future work. Monthly meetings are also coming up as the semester starts.",
         "reviewLink": "September Report",
+        "sliderImage1": "2017 Studying Abroad in California - Students & Parents Summit - Shanghai",
         "becomeHeader": "Become Campus Volunteer",
         "becomePara": "IFU is dedicated to providing services to international families in bridging the information gap between international students and their parents back at home. We aim to help international students deal with problems in overseas safety, mental health, cultural shocks, academic and work pressure, etc. Campus volunteers are working to fulfill their mission through the following ways: <b>emergency help, information conveyance, volunteer activities.</b> ",
         "requirePara": "Campus Volunteer’s Duties",
