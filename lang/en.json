@@ -949,8 +949,8 @@
         "emergency": {
             "title": "EMERGENCY CONTACT",
             "contact": "IFU Emergency Contact List for International Students’ families",
-            "p1": "In case of emergency, IFU volunteers will contact the parents according to the information in the emergency contact book to ensure the smooth communication of the family.",
-            "p2": "If a child is missing, IFU school volunteers will use the information in the emergency contact list to locate the child in the United States through school authorities, local police, social media and other channels; after ensuring the safety of the child, IFU volunteers will let the parents know immediately.",
+            "p1": "In case of emergency, <b>IFU volunteers will contact the parents</b> according to the information in the emergency contact book to ensure the smooth communication of the family.",
+            "p2": "If a child is missing, <b>IFU campus volunteers</b> will use the information in the emergency contact list to <b>locate the child</b> in the United States through school authorities, local police, social media and other channels; after ensuring the safety of the child, IFU volunteers will let the parents know immediately.",
             "buttonText": "Fill Up The Emergency Contact List"
         },
         "other": {
