@@ -1041,12 +1041,23 @@ p {
     }
 
     .whypeermentor {
+        padding: 25px 8%;
         .whypeermentor-upper {
             width: 100%;
         }
 
         .fourreason-outside {
             flex-direction: column;
+
+            .one-fourth {
+                margin-top: 74px;
+                .text-center {
+                    text-align: left;
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
         }
     }
 
@@ -1094,6 +1105,12 @@ p {
 
     .text-center {
         text-align: center;
+    }
+}
+
+.blue-section {
+    .project-process-title {
+        margin-bottom: 21px;
     }
 }
 
