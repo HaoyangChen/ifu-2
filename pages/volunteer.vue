@@ -168,10 +168,10 @@
                     </ul>
                 </div>
                 <div class="ready-to-join">
-                    <img
+                    <!-- <img
                         class="mobile-frame mobile"
                         src="@/assets/volunteer/frame-mobile.png"
-                    />
+                    /> -->
                     <div class="content">
                         <h2>{{ $t('volunteer.join') }}</h2>
                         <p>
@@ -640,23 +640,29 @@ export default {
                 width: 100%;
                 padding: 0;
                 height: 525px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-                .mobile-frame {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 331px;
-                    height: auto;
-                }
+                // .mobile-frame {
+                //     position: absolute;
+                //     left: 25%;
+                //     top: 0;
+                //     width: 331px;
+                //     height: auto;
+                //     display: none;
+                // }
                 .content {
                     // left: 5%;
                     padding-top: 25px;
-                    padding-right: 5%;
-                    padding-left: 7%;
-                    background-image: none;
+                    padding-right: 2em;
+                    padding-left: 2em;
+                    background-image: url(~assets/volunteer/frame-mobile.png);
+                    background-repeat: no-repeat;
+                    background-size: 331px auto;
                     width: 331px;
-                    height: 300px;
-                    height: auto;
+                    height: 350px;
+                    // height: auto;
                     position: absolute;
 
                     /deep/ a {
@@ -677,7 +683,7 @@ export default {
 
                 img {
                     top: 280px;
-                    left: 80px;
+                    left: 0;
                 }
             }
         }
