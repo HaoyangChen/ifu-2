@@ -16,7 +16,7 @@
                 <div class="text-container">
                     <p>{{ activeItem.text }}</p>
                 </div>
-                <div>
+                <div v-if="activeItem.link">
                     <Button :to="localePath('/' + activeItem.link)">{{
                         activeItem.buttonText
                     }}</Button>
