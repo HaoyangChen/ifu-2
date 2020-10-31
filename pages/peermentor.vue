@@ -621,11 +621,12 @@ h2 {
 
             .blue-bubble-inner {
                 position: absolute;
-                top: 20px;
-                left: 53px;
+                top: 33px;
+                left: 39px;
                 padding-left: 13%;
                 ul {
                     padding-left: 10%;
+                    width: max-content;
                 }
 
                 h3 {
@@ -663,6 +664,7 @@ h2 {
 
                 ul {
                     padding-left: 10%;
+                    width: max-content;
                 }
 
                 h3 {
@@ -678,6 +680,7 @@ h2 {
                 ul {
                     // margin-left: 0;
                     padding-left: 20px;
+                    width: max-content;
                 }
                 h3 {
                     margin-left: 15px;
@@ -694,12 +697,15 @@ h2 {
         .blue-outline-section {
             position: absolute;
             // left: 70%;
-            top: -24px;
+            top: 0px;
             right: 8%;
             .blue-outline-inner {
                 position: absolute;
                 top: 69px;
                 left: 71px;
+                h3 {
+                    margin-left: 10%;
+                }
             }
             :lang(en).blue-outline-inner {
                 position: absolute;
@@ -1052,10 +1058,10 @@ p {
             .one-fourth {
                 margin-top: 74px;
                 .text-center {
-                    text-align: left;
+                    text-align: center;
                     width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
+                    // margin-left: auto;
+                    // margin-right: auto;
                 }
             }
         }
@@ -1123,6 +1129,11 @@ p {
                 img {
                     width: 70%;
                 }
+            }
+
+            .green-bubble-section {
+                left: 29%;
+                top: 220px;
             }
         }
     }
@@ -1234,6 +1245,17 @@ p {
 
         .second-nop {
             margin-top: 46px;
+        }
+    }
+
+    .whypeermentor {
+        .fourreason-outside {
+            .one-fourth {
+                .text-center {
+                    text-align: left;
+                    width: 100%;
+                }
+            }
         }
     }
 }
