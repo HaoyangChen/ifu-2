@@ -454,7 +454,7 @@
                         />
                     </a>
                 </div>
-                <div class="half-half-nop">
+                <div class="half-half-nop second-nop">
                     <a
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
@@ -981,7 +981,7 @@ h2 {
                 margin-left: 20px;
             }
             ul {
-                width: 55%;
+                width: 100%;
             }
         }
         :lang(en).must-know-part {
@@ -1053,7 +1053,7 @@ p {
                 margin-top: 74px;
                 .text-center {
                     text-align: left;
-                    width: 80%;
+                    width: 100%;
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -1114,18 +1114,44 @@ p {
     }
 }
 
-@media (max-width: 1379px) {
-    .blue-person-section {
-        img {
-            width: 80%;
+@media (max-width: 1472px) {
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: -62px;
+                left: 30%;
+                img {
+                    width: 70%;
+                }
+            }
         }
     }
 }
 
 @media (max-width: 1225px) {
-    .blue-person-section {
-        img {
-            width: 60%;
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: -27px;
+                left: 30%;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 948px) {
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: 0px;
+                left: 30%;
+                img {
+                    width: 40%;
+                }
+            }
         }
     }
 }
@@ -1146,6 +1172,11 @@ p {
 
                 .phase-description {
                     width: 100%;
+                    padding-top: 20px;
+                }
+
+                .phase-number {
+                    margin-top: 84px;
                 }
             }
         }
@@ -1157,6 +1188,9 @@ p {
         .project-process-section {
             .blue-bubble-section {
                 left: 8%;
+                img {
+                    width: 100%;
+                }
             }
 
             .green-bubble-section {
@@ -1178,11 +1212,28 @@ p {
                 right: 8%;
                 z-index: 2;
                 left: 8%;
+                .blue-outline-inner {
+                    h3 {
+                        padding-left: 10%;
+                    }
+                }
 
                 img {
                     width: auto;
                 }
             }
+        }
+    }
+
+    .section-requirement {
+        .half-half-nop {
+            .recruit-image {
+                width: 80%;
+            }
+        }
+
+        .second-nop {
+            margin-top: 46px;
         }
     }
 }
