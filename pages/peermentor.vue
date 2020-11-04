@@ -956,6 +956,7 @@ h2 {
         margin-right: auto;
         background: url('../assets/peermentor/letter_paper.svg') repeat;
         padding: 8% 13%;
+        background-size: cover;
 
         // .three-in-onerow {
         //     display: flex;
