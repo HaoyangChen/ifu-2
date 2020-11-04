@@ -113,6 +113,7 @@
                 <div>
                     <a
                         href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ"
+                        target="_blank"
                         >{{ $t('volunteer.reviewLink') }}</a
                     >
                 </div>
@@ -122,6 +123,7 @@
                 <div>
                     <a
                         href="https://mp.weixin.qq.com/s/WnYCL5vHY7UL3yZfieRTrQ"
+                        target="_blank"
                         >{{ $t('volunteer.reviewLink') }}</a
                     >
                 </div>
@@ -552,6 +554,9 @@ export default {
                 margin-left: 25px;
                 font-weight: bolder;
             }
+        }
+        :lang(en).requirement {
+            margin-top: -5px;
         }
         .ready-to-join {
             position: relative;
