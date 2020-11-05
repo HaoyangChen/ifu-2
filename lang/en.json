@@ -443,12 +443,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -856,18 +852,20 @@
         "services": {
             "title": "Services",
             "blueBubble": {
-                "title": "One-on-one conversations",
-                "item1": "Companion and listen",
-                "item2": "Peer Mentoring Consulting services",
+                "title": "One-on-one chat",
+                "item1": "Listening and support",
+                "item2": "Peer Mentoring",
                 "item3": "Life experience sharing",
-                "item4": "Learning experience sharing",
-                "item5": "Job seeking and work experience sharing",
-                "item6": "Resume writing workshop and cover letter writing workshop"
+                "item4": "Academic experience sharing",
+                "item5": "Job-hunting and networking experience sharing",
+                "item6": "Career development and work experience sharing",
+                "item7": "Workshops for preparing the resume and cover letter"
             },
             "greenBubble": {
                 "title": "Group activity services",
                 "item1": "Peer mentoring lectures",
-                "item2": "Other wonderful activities"
+                "item2": "Other meaningful activities based on inquiries",
+                "item3": "Feel free to submit your thoughts"
             },
             "rightBubble": {
                 "title": "Join us",

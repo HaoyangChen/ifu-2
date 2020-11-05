@@ -370,10 +370,11 @@
                     />
                 </div> -->
                 <div class="three-in-onerow-mobile">
-                    <img
+                    <!-- <img
                         src="@/assets/peermentor/three_in_row.svg"
                         alt="three graphics in one row"
-                    />
+                    /> -->
+                    <img :src="threeinrow[$i18n.locale]" />
                 </div>
                 <p>
                     {{ $t('peermentor.envelope.letter.content3') }}
@@ -483,6 +484,8 @@ import becomeMentorImg from '@/assets/peermentor/tutor_graphic.svg';
 import becomeMentorHoverImg from '@/assets/peermentor/tutor_graphic_hover.svg';
 import becomeStudentImg from '@/assets/peermentor/student_graphic.svg';
 import becomeStudentHoverImg from '@/assets/peermentor/student_graphic_hover.svg';
+import threeInRowCh from '@/assets/peermentor/three_in_row.svg';
+import threeInRowEn from '@/assets/peermentor/three_in_row_en.svg';
 
 export default {
     components: {
@@ -491,6 +494,10 @@ export default {
     },
     data() {
         return {
+            threeinrow: {
+                zh: threeInRowCh,
+                en: threeInRowEn,
+            },
             imagesMentor: {
                 out: becomeMentorImg,
                 over: becomeMentorHoverImg,
@@ -626,7 +633,8 @@ h2 {
                 padding-left: 13%;
                 ul {
                     padding-left: 10%;
-                    width: max-content;
+                    // width: max-content;
+                    width: 90%;
                 }
 
                 h3 {
@@ -637,6 +645,7 @@ h2 {
             :lang(en).blue-bubble-inner {
                 position: absolute;
                 left: 8%;
+                top: 0%;
                 line-height: 25px;
                 letter-spacing: 0;
                 h3 {
@@ -654,7 +663,7 @@ h2 {
             top: 190px;
 
             img {
-                width: 115%;
+                width: 130%;
             }
 
             .green-bubble-inner {
@@ -673,14 +682,17 @@ h2 {
             }
             :lang(en).green-bubble-inner {
                 position: absolute;
-                line-height: 40px;
+                // line-height: 40px;
                 letter-spacing: 0;
                 top: 20px;
-                left: 35px;
+                left: 30px;
                 ul {
                     // margin-left: 0;
-                    padding-left: 20px;
+                    padding-left: 10%;
                     width: max-content;
+                    li {
+                        width: 60%;
+                    }
                 }
                 h3 {
                     margin-left: 15px;
