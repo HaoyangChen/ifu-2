@@ -256,7 +256,7 @@ import eventImage6 from '@/assets/home/event_6.png';
 import serviceTotoroImage from '@/assets/home/service_totoro.png';
 import ifuMembershipImage from '@/assets/home/IFU_membership.png';
 import otherServiceImage from '@/assets/home/partner_service.png';
-import peerMentorImage from '@/assets/home/peer_mentor.png';
+// import peerMentorImage from '@/assets/home/peer_mentor.png';
 import workImage1 from '@/assets/home/work_1.png';
 import workImage2 from '@/assets/home/work_2.png';
 import workImage3 from '@/assets/home/work_3.png';
@@ -266,7 +266,7 @@ import carnivalBackground from '@/assets/home/carnival_bg.png';
 import one from '@/assets/home/1.png';
 import two from '@/assets/home/2.png';
 import three from '@/assets/home/3.png';
-import four from '@/assets/home/4.svg';
+// import four from '@/assets/home/4.svg';
 import carnivalPerson1 from '@/assets/home/carnival_person1.png';
 import carnivalPerson2 from '@/assets/home/carnival_person2.png';
 import carnivalPerson3 from '@/assets/home/carnival_person3.png';
@@ -361,24 +361,24 @@ export default {
                     ),
                     icon: one,
                 },
-                {
-                    title: this.$t(
-                        'home.ourServices.serviceList.peerMentorTitle',
-                    ),
-                    backgroundColor: '#CC8ABD',
-                    text: this.$t(
-                        'home.ourServices.serviceList.peerMentorText',
-                    ),
-                    image: peerMentorImage,
-                    buttonText: this.$t(
-                        'home.ourServices.serviceList.peerMentorButtonText',
-                    ),
-                    link: 'peermentor',
-                    subTitle: this.$t(
-                        'home.ourServices.serviceList.peerMentorsubTitle',
-                    ),
-                    icon: four,
-                },
+                // {
+                //     title: this.$t(
+                //         'home.ourServices.serviceList.peerMentorTitle',
+                //     ),
+                //     backgroundColor: '#CC8ABD',
+                //     text: this.$t(
+                //         'home.ourServices.serviceList.peerMentorText',
+                //     ),
+                //     image: peerMentorImage,
+                //     buttonText: this.$t(
+                //         'home.ourServices.serviceList.peerMentorButtonText',
+                //     ),
+                //     link: 'peermentor',
+                //     subTitle: this.$t(
+                //         'home.ourServices.serviceList.peerMentorsubTitle',
+                //     ),
+                //     icon: four,
+                // },
                 {
                     title: this.$t(
                         'home.ourServices.serviceList.membershipTitle',

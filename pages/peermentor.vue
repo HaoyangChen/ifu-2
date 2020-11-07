@@ -11,9 +11,8 @@
         <div class="row peer-mentor-intro-section">
             <div class="text-container left">
                 <h2>{{ $t('peermentor.introduction.title') }}</h2>
-                <p>
-                    {{ $t('peermentor.introduction.description') }}
-                </p>
+                <p v-html="$t('peermentor.introduction.description')" />
+                <p v-html="$t('peermentor.introduction.description2')" />
             </div>
             <div class="img-container desktop">
                 <img
@@ -124,6 +123,9 @@
                             <li>
                                 {{ $t('peermentor.services.blueBubble.item6') }}
                             </li>
+                            <li>
+                                {{ $t('peermentor.services.blueBubble.item7') }}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -145,6 +147,23 @@
                             <li>
                                 {{
                                     $t('peermentor.services.greenBubble.item2')
+                                }}
+                            </li>
+                            <li>
+                                {{
+                                    $t('peermentor.services.greenBubble.item3')
+                                }}
+                                <a
+                                    href="https://forms.gle/3EYR58psCfqTsR4Z7"
+                                    target="_blank"
+                                    >{{
+                                        $t(
+                                            'peermentor.services.greenBubble.item4',
+                                        )
+                                    }}</a
+                                >
+                                {{
+                                    $t('peermentor.services.greenBubble.item5')
                                 }}
                             </li>
                         </ul>
@@ -362,17 +381,14 @@
                     />
                 </div> -->
                 <div class="three-in-onerow-mobile">
-                    <img
+                    <!-- <img
                         src="@/assets/peermentor/three_in_row.svg"
                         alt="three graphics in one row"
-                    />
+                    /> -->
+                    <img :src="threeinrow[$i18n.locale]" />
                 </div>
-                <p>
-                    {{ $t('peermentor.envelope.letter.content3') }}
-                </p>
-                <p>
-                    {{ $t('peermentor.envelope.letter.content4') }}
-                </p>
+                <p v-html="$t('peermentor.envelope.letter.content3')" />
+                <p v-html="$t('peermentor.envelope.letter.content4')" />
                 <div class="must-know-part">
                     <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
                     <ul>
@@ -394,8 +410,18 @@
                     </ul>
                 </div>
             </div>
+            <img
+                class="letter-top desktop"
+                src="@/assets/peermentor/env_top.svg"
+                alt="top envelop"
+            />
+            <img
+                class="letter-bottom desktop"
+                src="@/assets/peermentor/env_bottom.svg"
+                alt="bottom envelop"
+            />
         </section>
-        <div class="section-requirement">
+        <div class="section-requirement mt-forletter">
             <div class="half-half-nop half-half orange-color">
                 <h2>{{ $t('peermentor.requirements.title') }}</h2>
                 <ul>
@@ -446,7 +472,7 @@
                         />
                     </a>
                 </div>
-                <div class="half-half-nop">
+                <div class="half-half-nop second-nop">
                     <a
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
@@ -475,6 +501,8 @@ import becomeMentorImg from '@/assets/peermentor/tutor_graphic.svg';
 import becomeMentorHoverImg from '@/assets/peermentor/tutor_graphic_hover.svg';
 import becomeStudentImg from '@/assets/peermentor/student_graphic.svg';
 import becomeStudentHoverImg from '@/assets/peermentor/student_graphic_hover.svg';
+import threeInRowCh from '@/assets/peermentor/three_in_row.svg';
+import threeInRowEn from '@/assets/peermentor/three_in_row_en.svg';
 
 export default {
     components: {
@@ -483,6 +511,10 @@ export default {
     },
     data() {
         return {
+            threeinrow: {
+                zh: threeInRowCh,
+                en: threeInRowEn,
+            },
             imagesMentor: {
                 out: becomeMentorImg,
                 over: becomeMentorHoverImg,
@@ -599,7 +631,7 @@ h2 {
     }
 
     .project-process-section {
-        line-height: 35px;
+        line-height: 30px;
         position: relative;
 
         letter-spacing: 0.02em;
@@ -607,15 +639,30 @@ h2 {
             position: absolute;
             left: 8%;
 
+            img {
+                width: 110%;
+            }
+
             .blue-bubble-inner {
                 position: absolute;
-                top: 20px;
-                left: 53px;
+                top: 33px;
+                left: 39px;
+                padding-left: 13%;
+                ul {
+                    padding-left: 10%;
+                    // width: max-content;
+                    width: 90%;
+                }
+
+                h3 {
+                    line-height: 0px;
+                }
             }
 
             :lang(en).blue-bubble-inner {
                 position: absolute;
                 left: 8%;
+                top: 5%;
                 line-height: 25px;
                 letter-spacing: 0;
                 h3 {
@@ -631,21 +678,39 @@ h2 {
             position: absolute;
             left: 27%;
             top: 190px;
+            z-index: 2;
+
+            img {
+                width: 130%;
+            }
 
             .green-bubble-inner {
                 position: absolute;
-                top: 20px;
+                top: 50px;
                 left: 53px;
+
+                ul {
+                    padding-left: 10%;
+                    width: max-content;
+                }
+
+                h3 {
+                    line-height: 0px;
+                }
             }
             :lang(en).green-bubble-inner {
                 position: absolute;
-                line-height: 20px;
+                // line-height: 40px;
                 letter-spacing: 0;
-                top: 5px;
-                left: 35px;
+                top: 26px;
+                left: 30px;
                 ul {
                     // margin-left: 0;
-                    padding-left: 20px;
+                    padding-left: 10%;
+                    width: max-content;
+                    li {
+                        width: 60%;
+                    }
                 }
                 h3 {
                     margin-left: 15px;
@@ -662,12 +727,15 @@ h2 {
         .blue-outline-section {
             position: absolute;
             // left: 70%;
-            top: -24px;
+            top: 0px;
             right: 8%;
             .blue-outline-inner {
                 position: absolute;
                 top: 69px;
-                left: 71px;
+                left: 60px;
+                h3 {
+                    margin-left: 10%;
+                }
             }
             :lang(en).blue-outline-inner {
                 position: absolute;
@@ -912,12 +980,29 @@ h2 {
 }
 
 .peermentor-letter-section {
+    position: relative;
+    .letter-top {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .letter-bottom {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        top: 88%;
+    }
+
     .peermentor-letter-innersection {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         background: url('../assets/peermentor/letter_paper.svg') repeat;
         padding: 8% 13%;
+        background-size: cover;
 
         // .three-in-onerow {
         //     display: flex;
@@ -949,7 +1034,7 @@ h2 {
                 margin-left: 20px;
             }
             ul {
-                width: 55%;
+                width: 100%;
             }
         }
         :lang(en).must-know-part {
@@ -962,9 +1047,14 @@ h2 {
     }
 }
 
+.mt-forletter {
+    margin-top: 38%;
+}
+
 .section-requirement {
     display: flex;
     justify-content: center;
+    // margin-top: 38%;
 
     .half-half-nop {
         flex-basis: 50%;
@@ -977,7 +1067,7 @@ h2 {
 
         .recruit-image {
             width: 350px;
-            height: 100%;
+            height: 278px;
         }
     }
 
@@ -1008,13 +1098,28 @@ p {
         }
     }
 
+    .mt-forletter {
+        margin-top: 0px;
+    }
+
     .whypeermentor {
+        padding: 25px 8%;
         .whypeermentor-upper {
             width: 100%;
         }
 
         .fourreason-outside {
             flex-direction: column;
+
+            .one-fourth {
+                margin-top: 74px;
+                .text-center {
+                    text-align: center;
+                    width: 100%;
+                    // margin-left: auto;
+                    // margin-right: auto;
+                }
+            }
         }
     }
 
@@ -1065,18 +1170,55 @@ p {
     }
 }
 
-@media (max-width: 1379px) {
-    .blue-person-section {
-        img {
-            width: 80%;
+.blue-section {
+    .project-process-title {
+        margin-bottom: 21px;
+    }
+}
+
+@media (max-width: 1472px) {
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: -62px;
+                left: 30%;
+                img {
+                    width: 70%;
+                }
+            }
+
+            .green-bubble-section {
+                left: 29%;
+                top: 187px;
+            }
         }
     }
 }
 
 @media (max-width: 1225px) {
-    .blue-person-section {
-        img {
-            width: 60%;
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: -27px;
+                left: 30%;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 948px) {
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: 0px;
+                left: 30%;
+                img {
+                    width: 40%;
+                }
+            }
         }
     }
 }
@@ -1097,17 +1239,25 @@ p {
 
                 .phase-description {
                     width: 100%;
+                    padding-top: 20px;
+                }
+
+                .phase-number {
+                    margin-top: 84px;
                 }
             }
         }
 
         .project-process-height {
-            height: 1050px;
+            height: 1160px;
         }
 
         .project-process-section {
             .blue-bubble-section {
                 left: 8%;
+                img {
+                    width: 100%;
+                }
             }
 
             .green-bubble-section {
@@ -1117,7 +1267,7 @@ p {
 
             .blue-person-section {
                 left: 8%;
-                top: 417px;
+                top: 497px;
                 z-index: 1;
                 img {
                     width: 90%;
@@ -1125,13 +1275,41 @@ p {
             }
 
             .blue-outline-section {
-                top: 616px;
+                top: 706px;
                 right: 8%;
                 z-index: 2;
                 left: 8%;
+                // .blue-outline-inner {
+                //     h3 {
+                //         padding-left: 10%;
+                //     }
+                // }
 
                 img {
                     width: auto;
+                }
+            }
+        }
+    }
+
+    .section-requirement {
+        .half-half-nop {
+            .recruit-image {
+                width: 80%;
+            }
+        }
+
+        .second-nop {
+            margin-top: 46px;
+        }
+    }
+
+    .whypeermentor {
+        .fourreason-outside {
+            .one-fourth {
+                .text-center {
+                    text-align: left;
+                    width: 100%;
                 }
             }
         }
