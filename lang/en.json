@@ -443,12 +443,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -869,7 +865,9 @@
                 "title": "Group activity services",
                 "item1": "Peer mentoring lectures",
                 "item2": "Other meaningful activities based on inquiries",
-                "item3": "Feel free to submit your thoughts"
+                "item3": "Feel free to",
+                "item4": "submit",
+                "item5": "your thoughts"
             },
             "rightBubble": {
                 "title": "Join us",
@@ -881,23 +879,23 @@
         "programstreams": {
             "stage1": {
                 "title": "Stage One",
-                "description": "<span>Recruit IFU peer mentors:</span> At the beginning of each semester, the recruiting information for peer mentors will be issued through IFU social platforms."
+                "description": "<b>Recruit IFU peer mentors:</b> At the beginning of each semester, the recruiting information for peer mentors will be issued through IFU social platforms."
             },
             "stage2": {
                 "title": "Stage Two",
-                "description": "<span>Mentees submit application forms:</span> For students who want to communicate with IFU peer mentors, fill out the program application forms. The program leader will pair up mentors and mentees based on their backgrounds and inquiries."
+                "description": "<b>Mentees submit application forms:</b> For students who want to communicate with IFU peer mentors, fill out the program application forms. The program leader will pair up mentors and mentees based on their backgrounds and inquiries."
             },
             "stage3": {
                 "title": "Stage Three",
-                "description": "<span>Appointment Scheduling:</span> Students will receive appointment scheduling links from their assigned peer mentors. Students can plan meetings and have one-on-one chats with their peer mentors according to their own schedules."
+                "description": "<b>Appointment Scheduling:</b> Students will receive appointment scheduling links from their assigned peer mentors. Students can plan meetings and have one-on-one chats with their peer mentors according to their own schedules."
             },
             "stage4": {
                 "title": "Stage Four",
-                "description": "<span>Peer mentors connect with mentees:</span> Peer mentors and their mentees will have online/in-person 30-40 minutes’ mentoring sessions, at least twice a month. The duration of our program is one semester, and the system will be reset automatically at the end of each semester. If you enjoyed the program and would like to continue the journey, please contact your peer mentor directly by the end of the semester."
+                "description": "<b>Peer mentors connect with mentees:</b> Peer mentors and their mentees will have online/in-person 30-40 minutes’ mentoring sessions, at least twice a month. The duration of our program is one semester, and the system will be reset automatically at the end of each semester. If you enjoyed the program and would like to continue the journey, please contact your peer mentor directly by the end of the semester."
             },
             "stage5": {
                 "title": "Stage Five",
-                "description": "<span>Feedback at the end of the program:</span> At the end of each mentorship, students can submit feedback regarding their experience with the mentors."
+                "description": "<b>Feedback at the end of the program:</b> At the end of each mentorship, students can submit feedback regarding their experience with the mentors."
             }
         },
         "envelope": {

@@ -154,6 +154,18 @@
                                 {{
                                     $t('peermentor.services.greenBubble.item3')
                                 }}
+                                <a
+                                    href="https://forms.gle/3EYR58psCfqTsR4Z7"
+                                    target="_blank"
+                                    >{{
+                                        $t(
+                                            'peermentor.services.greenBubble.item4',
+                                        )
+                                    }}</a
+                                >
+                                {{
+                                    $t('peermentor.services.greenBubble.item5')
+                                }}
                             </li>
                         </ul>
                     </div>
@@ -645,7 +657,7 @@ h2 {
             :lang(en).blue-bubble-inner {
                 position: absolute;
                 left: 8%;
-                top: 0%;
+                top: 5%;
                 line-height: 25px;
                 letter-spacing: 0;
                 h3 {
@@ -661,6 +673,7 @@ h2 {
             position: absolute;
             left: 27%;
             top: 190px;
+            z-index: 2;
 
             img {
                 width: 130%;
@@ -668,7 +681,7 @@ h2 {
 
             .green-bubble-inner {
                 position: absolute;
-                top: 20px;
+                top: 50px;
                 left: 53px;
 
                 ul {
@@ -684,7 +697,7 @@ h2 {
                 position: absolute;
                 // line-height: 40px;
                 letter-spacing: 0;
-                top: 20px;
+                top: 26px;
                 left: 30px;
                 ul {
                     // margin-left: 0;
@@ -714,7 +727,7 @@ h2 {
             .blue-outline-inner {
                 position: absolute;
                 top: 69px;
-                left: 71px;
+                left: 60px;
                 h3 {
                     margin-left: 10%;
                 }
@@ -1146,7 +1159,7 @@ p {
 
             .green-bubble-section {
                 left: 29%;
-                top: 220px;
+                top: 187px;
             }
         }
     }
@@ -1206,7 +1219,7 @@ p {
         }
 
         .project-process-height {
-            height: 1050px;
+            height: 1160px;
         }
 
         .project-process-section {
@@ -1224,7 +1237,7 @@ p {
 
             .blue-person-section {
                 left: 8%;
-                top: 417px;
+                top: 497px;
                 z-index: 1;
                 img {
                     width: 90%;
@@ -1232,15 +1245,15 @@ p {
             }
 
             .blue-outline-section {
-                top: 616px;
+                top: 706px;
                 right: 8%;
                 z-index: 2;
                 left: 8%;
-                .blue-outline-inner {
-                    h3 {
-                        padding-left: 10%;
-                    }
-                }
+                // .blue-outline-inner {
+                //     h3 {
+                //         padding-left: 10%;
+                //     }
+                // }
 
                 img {
                     width: auto;
