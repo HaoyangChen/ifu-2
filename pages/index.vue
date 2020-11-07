@@ -120,8 +120,17 @@
             </section>
         </div>
         <div class="announcement-row">
-            <section class="announcement-section">
-                <h2>{{ $t('home.announcement.title') }}</h2>
+            <!-- <section class="announcement-section">
+                <div class="col-left col">
+                    10月各个UC学校的同学们即将面临第一次期中考试，多多罗学长学姐特别策划了第一期公益期中复习辅导课程，报名即可获得学霸学长学姐精心定制的复习计划，一起线上模拟考试，练习考试真题，复习重点考点！另外参与本活动的同学们可以免费获取配套复习笔记大礼包一份！
+                </div>
+                <div class="col-right col">
+                    无托福无SAT的学长是如何进入波士顿大学并且收获满绩点GPA的？
+                    想要转学的同学们需要在入学的时候做什么准备？
+                    如何通过学术和社团工作有效优化个人经历？
+                    多多罗学术讲座就在本月，大一大二转学必读
+                </div> -->
+            <!-- <h2>{{ $t('home.announcement.title') }}</h2>
                 <p>
                     {{ $t('home.announcement.description') }}
                 </p>
@@ -150,8 +159,8 @@
                 </div>
             </section>
             <section class="announcement-image">
-                <img src="@/assets/home/announcement.svg" />
-            </section>
+                <img src="@/assets/home/announcement.svg" />-->
+            <!-- </section> -->
         </div>
         <section class="about-us-section background-blue">
             <div class="container half-style">
@@ -660,6 +669,9 @@ img {
 }
 .col {
     padding-bottom: 6px;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 70px;
 }
 .con {
     text-align: center;
@@ -768,48 +780,63 @@ img {
 }
 
 .announcement-row {
-    display: flex;
-    justify-content: space-between;
-    line-height: 31px;
-
-    .announcement-section,
-    .announcement-row {
-        flex-basis: 50%;
-        margin: 0;
-    }
-
     .announcement-section {
-        padding-right: 0;
-    }
-
-    p {
-        margin-top: 0;
-    }
-
-    ul {
-        margin-top: 30px;
-        list-style: 0;
-        padding: 0;
-        list-style-type: none;
-
-        span {
-            color: $button-color;
-            font-weight: 600;
+        display: flex;
+        justify-content: space-around;
+        // line-height: 31px;
+        flex-direction: row;
+        .col-left {
+            background-color: black;
+            flex-basis: 40%;
+            height: 400px;
+            background: url('../assets/home/left_graphics.png') no-repeat;
+        }
+        .col-right {
+            background-color: blue;
+            height: 400px;
+            flex-basis: 40%;
+            background: url('../assets/home/right_graphics.png') no-repeat;
         }
     }
-    .qr-announcement {
-        display: flex;
-    }
-    /deep/ span {
-        font-weight: bold;
-    }
-    .qr-announcement > img {
-        margin: 0px 55px;
-        width: auto;
-    }
-    img {
-        width: 100%;
-    }
+
+    //     .announcement-section,
+    //     .announcement-row {
+    //         flex-basis: 50%;
+    //         margin: 0;
+    //     }
+
+    //     .announcement-section {
+    //         padding-right: 0;
+    //     }
+
+    //     p {
+    //         margin-top: 0;
+    //     }
+
+    //     ul {
+    //         margin-top: 30px;
+    //         list-style: 0;
+    //         padding: 0;
+    //         list-style-type: none;
+
+    //         span {
+    //             color: $button-color;
+    //             font-weight: 600;
+    //         }
+    //     }
+    //     .qr-announcement {
+    //         display: flex;
+    //     }
+    //     /deep/ span {
+    //         font-weight: bold;
+    //     }
+    //     .qr-announcement > img {
+    //         margin: 0px 55px;
+    //         width: auto;
+    //     }
+    //     img {
+    //         width: 100%;
+    //     }
 }
 
 .about-us-section {
