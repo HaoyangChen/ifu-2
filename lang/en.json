@@ -832,7 +832,8 @@
         },
         "introduction": {
             "title": "What is the IFU Peer Mentor Program?",
-            "description": "After two months of planning and pre-launch testing, our IFU Peer Mentor Program was officially launched in June 2020, in the efforts of all IFU staff and more than 15 IFU volunteers. The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be students’ best listeners and supporters for students to share their worries freely. With their own experiences and knowledge, peer mentors will guide and inspire students to solve problems through one-on-one, face to face chat, and group activities."
+            "description": "After two months of planning and pre-launch testing, our IFU Peer Mentor Program was officially launched in June 2020, in the efforts of all IFU staff and more than 15 IFU volunteers.",
+            "description2": "The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is <b>free and open to all international students</b>. IFU Peer Mentors will be students’ best listeners and supporters for students to share their worries freely. With their own experiences and knowledge, peer mentors will guide and inspire students to solve problems through <b>one-on-one, face to face chat, and group activities.</b>"
         },
         "why": {
             "title": "Why Peer Mentor Program?",
@@ -905,8 +906,8 @@
                 "content1b": "If you’re having a hard time in your life and feeling upset or even depressed;",
                 "content1c": "If there’s anything that’s bothering you, come join us as a mentee and let us support you!",
                 "content2": "IFU Peer Mentors can help you to get out of rock bottom during study abroad.",
-                "content3": "We’ll always be here to walk you through difficulties. We’ll provide a safe space and confidential peer mentoring for you to participate without privacy concerns.",
-                "content4": "IFU peer mentors are well-trained experts in various fields. As listeners, friends, and supporters, IFU peer mentors will help you say bye to the sense of confusion and hopelessness during your study abroad life."
+                "content3": "We’ll always be here to walk you through difficulties. We’ll provide a <b>safe space and confidential peer mentoring</b> for you to participate without privacy concerns.",
+                "content4": "IFU peer mentors are <b>well-trained experts in various fields</b>. As listeners, friends, and supporters, IFU peer mentors will help you say bye to the sense of confusion and hopelessness during your study abroad life."
             },
             "mustKnow": {
                 "title": "Mentee Responsibilities",

@@ -11,9 +11,8 @@
         <div class="row peer-mentor-intro-section">
             <div class="text-container left">
                 <h2>{{ $t('peermentor.introduction.title') }}</h2>
-                <p>
-                    {{ $t('peermentor.introduction.description') }}
-                </p>
+                <p v-html="$t('peermentor.introduction.description')" />
+                <p v-html="$t('peermentor.introduction.description2')" />
             </div>
             <div class="img-container desktop">
                 <img
@@ -388,12 +387,8 @@
                     /> -->
                     <img :src="threeinrow[$i18n.locale]" />
                 </div>
-                <p>
-                    {{ $t('peermentor.envelope.letter.content3') }}
-                </p>
-                <p>
-                    {{ $t('peermentor.envelope.letter.content4') }}
-                </p>
+                <p v-html="$t('peermentor.envelope.letter.content3')" />
+                <p v-html="$t('peermentor.envelope.letter.content4')" />
                 <div class="must-know-part">
                     <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
                     <ul>
