@@ -410,8 +410,18 @@
                     </ul>
                 </div>
             </div>
+            <img
+                class="letter-top desktop"
+                src="@/assets/peermentor/env_top.svg"
+                alt="top envelop"
+            />
+            <img
+                class="letter-bottom desktop"
+                src="@/assets/peermentor/env_bottom.svg"
+                alt="bottom envelop"
+            />
         </section>
-        <div class="section-requirement">
+        <div class="section-requirement mt-forletter">
             <div class="half-half-nop half-half orange-color">
                 <h2>{{ $t('peermentor.requirements.title') }}</h2>
                 <ul>
@@ -970,6 +980,22 @@ h2 {
 }
 
 .peermentor-letter-section {
+    position: relative;
+    .letter-top {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .letter-bottom {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        top: 88%;
+    }
+
     .peermentor-letter-innersection {
         width: 70%;
         margin-left: auto;
@@ -1021,9 +1047,14 @@ h2 {
     }
 }
 
+.mt-forletter {
+    margin-top: 38%;
+}
+
 .section-requirement {
     display: flex;
     justify-content: center;
+    // margin-top: 38%;
 
     .half-half-nop {
         flex-basis: 50%;
@@ -1036,7 +1067,7 @@ h2 {
 
         .recruit-image {
             width: 350px;
-            height: 100%;
+            height: 278px;
         }
     }
 
@@ -1065,6 +1096,10 @@ p {
         > div {
             flex-basis: 100%;
         }
+    }
+
+    .mt-forletter {
+        margin-top: 0px;
     }
 
     .whypeermentor {
