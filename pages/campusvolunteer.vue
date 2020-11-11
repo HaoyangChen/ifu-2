@@ -694,14 +694,15 @@ export default {
                 align-items: center;
                 text-align: center;
                 .img {
-                    height: auto;
+                    height: 305px;
                     width: 360px;
                     background-color: #f1f9ff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     img {
                         width: 360px;
                         height: auto;
-                        // object-fit: cover;
-                        // border-radius: 0.5rem;
                     }
                 }
             }
