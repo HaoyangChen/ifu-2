@@ -5,7 +5,7 @@
             :description="$t('volunteer.bannerDescrip')"
             :button-text="$t('volunteer.bannerText')"
             external
-            to="https://forms.gle/KvsV5GiSb4nMtLER7"
+            to="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
             :background="bannerImage"
         />
         <div class="section-mission">
@@ -98,7 +98,10 @@
                     <h3>{{ $t('volunteer.picHeader') }}</h3>
                     <span>{{ $t('volunteer.picPara') }}</span>
                     <br />
-                    <a class="link" href="https://forms.gle/KvsV5GiSb4nMtLER7"
+                    <a
+                        class="link"
+                        target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
                         >{{ $t('volunteer.picLink') }}
                     </a>
                 </div>
@@ -201,7 +204,7 @@
 
                         <Button
                             external
-                            to="https://forms.gle/KvsV5GiSb4nMtLER7"
+                            to="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
                             >{{ $t('volunteer.button') }}</Button
                         >
                     </div>
