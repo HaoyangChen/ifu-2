@@ -939,7 +939,9 @@
         },
         "recruiting": {
             "title": "IFU Peer Mentor Program is Recruiting!",
-            "description": "If you are looking for people to have a chat as a mentee, or if you would like to inspire others with your own experience as a mentor, join us through the following links now!"
+            "description": "If you are looking for people to have a chat as a mentee, or if you would like to inspire others with your own experience as a mentor, join us through the following links now!",
+            "becomeTutor": "Become Mentor",
+            "becomeStudent": "Become Mentee"
         }
     },
     "contact": {

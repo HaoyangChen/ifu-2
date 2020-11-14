@@ -459,21 +459,26 @@
             <p id="peermentor-recruit-p" class="peermentor-recruit-p">
                 {{ $t('peermentor.recruiting.description') }}
             </p>
-            <div class="section-requirement">
+            <div class="section-requirement mt-recruitment">
                 <div class="half-half-nop">
                     <a
                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                         target="_blank"
                     >
-                        <img
-                            class="recruit-image"
-                            :src="currentMentorImage"
-                            alt="tutor recruitment"
-                            @mouseover="changeMentorImageWhen('over')"
-                            @mousedown="changeMentorImageWhen('down')"
-                            @mouseout="changeMentorImageWhen('out')"
-                            @mouseup="changeMentorImageWhen('up')"
-                        />
+                        <div class="rectangle">
+                            <img
+                                class="recruit-image recruit-tutor-img"
+                                :src="currentMentorImage"
+                                alt="tutor recruitment"
+                                @mouseover="changeMentorImageWhen('over')"
+                                @mousedown="changeMentorImageWhen('down')"
+                                @mouseout="changeMentorImageWhen('out')"
+                                @mouseup="changeMentorImageWhen('up')"
+                            />
+                            <p class="requirement-recruit-text">
+                                {{ $t('peermentor.recruiting.becomeTutor') }}
+                            </p>
+                        </div>
                     </a>
                 </div>
                 <div class="half-half-nop second-nop">
@@ -481,15 +486,20 @@
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
                     >
-                        <img
-                            class="recruit-image"
-                            :src="currentStudentImage"
-                            alt="student recruitment"
-                            @mouseover="changeStudentImageWhen('over')"
-                            @mousedown="changeStudentImageWhen('down')"
-                            @mouseout="changeStudentImageWhen('out')"
-                            @mouseup="changeStudentImageWhen('up')"
-                        />
+                        <div class="rectangle">
+                            <img
+                                class="recruit-image recruit-student-img"
+                                :src="currentStudentImage"
+                                alt="student recruitment"
+                                @mouseover="changeStudentImageWhen('over')"
+                                @mousedown="changeStudentImageWhen('down')"
+                                @mouseout="changeStudentImageWhen('out')"
+                                @mouseup="changeStudentImageWhen('up')"
+                            />
+                            <p class="requirement-recruit-text">
+                                {{ $t('peermentor.recruiting.becomeStudent') }}
+                            </p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -1066,23 +1076,59 @@ h2 {
     margin-top: 28%;
 }
 
+.mt-recruitment {
+    margin-top: 100px;
+}
+
 .section-requirement {
     display: flex;
     justify-content: center;
-    // margin-top: 38%;
 
     .half-half-nop {
         flex-basis: 50%;
         text-align: center;
         color: #ffffff;
+
+        .rectangle {
+            width: 333px;
+            height: 282px;
+            background-color: #269cd1;
+            border-radius: 10%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            .recruit-image {
+                width: 350px;
+                height: 278px;
+                position: absolute;
+            }
+
+            .recruit-tutor-img {
+                top: -28%;
+                left: 10%;
+            }
+
+            .recruit-student-img {
+                top: -28%;
+                left: -13%;
+            }
+
+            .requirement-recruit-text {
+                position: absolute;
+                width: 100%;
+                bottom: 8%;
+                font-family: PingFang SC;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                letter-spacing: 0.1em;
+                color: #ffffff;
+            }
+        }
         ul {
             text-align: left;
             line-height: 31px;
-        }
-
-        .recruit-image {
-            width: 350px;
-            height: 278px;
         }
     }
 
@@ -1210,6 +1256,13 @@ p {
     }
 }
 
+@media (max-width: 1024px) {
+    .second-nop {
+        margin-top: 150px;
+        margin-bottom: 47px;
+    }
+}
+
 @media (max-width: 1225px) {
     .blue-section {
         .project-process-section {
@@ -1225,6 +1278,10 @@ p {
 }
 
 @media (max-width: 948px) {
+    .second-nop {
+        margin-top: 150px;
+        margin-bottom: 47px;
+    }
     .blue-section {
         .project-process-section {
             .blue-person-section {
@@ -1315,7 +1372,8 @@ p {
         }
 
         .second-nop {
-            margin-top: 46px;
+            margin-top: 150px;
+            margin-bottom: 47px;
         }
     }
 
