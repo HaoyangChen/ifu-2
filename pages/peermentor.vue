@@ -196,7 +196,11 @@
                                 }}
                             </li>
                         </ul>
-                        <Button scroll to="#peermentor-recruit-p">
+                        <Button
+                            class="register-btn"
+                            scroll
+                            to="#peermentor-recruit-p"
+                        >
                             {{
                                 $t('peermentor.services.rightBubble.buttonText')
                             }}
@@ -615,6 +619,12 @@ h2 {
     }
 }
 
+.register-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .blue-section {
     .project-process-title {
         background-color: rgba(38, 156, 209, 0.8);
@@ -1030,6 +1040,7 @@ h2 {
             width: 85%;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 40px;
             h2 {
                 margin-left: 20px;
             }
@@ -1048,7 +1059,11 @@ h2 {
 }
 
 .mt-forletter {
-    margin-top: 38%;
+    margin-top: 35%;
+}
+
+:lang(en).mt-forletter {
+    margin-top: 28%;
 }
 
 .section-requirement {
