@@ -464,16 +464,23 @@
                     <a
                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                         target="_blank"
+                        @mouseover="
+                            changeMentorImageWhen('over'), (hoverMentor = true)
+                        "
+                        @mousedown="changeMentorImageWhen('down')"
+                        @mouseout="
+                            changeMentorImageWhen('out'), (hoverMentor = false)
+                        "
+                        @mouseup="changeMentorImageWhen('up')"
                     >
-                        <div class="rectangle">
+                        <div
+                            :class="{ activeMentor: hoverMentor }"
+                            class="rectangle rectangle-mentor"
+                        >
                             <img
                                 class="recruit-image recruit-tutor-img"
                                 :src="currentMentorImage"
                                 alt="tutor recruitment"
-                                @mouseover="changeMentorImageWhen('over')"
-                                @mousedown="changeMentorImageWhen('down')"
-                                @mouseout="changeMentorImageWhen('out')"
-                                @mouseup="changeMentorImageWhen('up')"
                             />
                             <p class="requirement-recruit-text">
                                 {{ $t('peermentor.recruiting.becomeTutor') }}
@@ -485,16 +492,23 @@
                     <a
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
+                        @mouseover="
+                            changeStudentImageWhen('over'), (hoverMentee = true)
+                        "
+                        @mousedown="changeStudentImageWhen('down')"
+                        @mouseout="
+                            changeStudentImageWhen('out'), (hoverMentee = false)
+                        "
+                        @mouseup="changeStudentImageWhen('up')"
                     >
-                        <div class="rectangle">
+                        <div
+                            :class="{ activeMentee: hoverMentee }"
+                            class="rectangle rectangle-mentee"
+                        >
                             <img
                                 class="recruit-image recruit-student-img"
                                 :src="currentStudentImage"
                                 alt="student recruitment"
-                                @mouseover="changeStudentImageWhen('over')"
-                                @mousedown="changeStudentImageWhen('down')"
-                                @mouseout="changeStudentImageWhen('out')"
-                                @mouseup="changeStudentImageWhen('up')"
                             />
                             <p class="requirement-recruit-text">
                                 {{ $t('peermentor.recruiting.becomeStudent') }}
@@ -544,6 +558,8 @@ export default {
             bannerImage,
             currentMentorImage: becomeMentorImg,
             currentStudentImage: becomeMentorImg,
+            hoverMentee: false,
+            hoverMentor: false,
         };
     },
     created() {
@@ -588,6 +604,16 @@ export default {
             max-width: 100%;
         }
     }
+}
+
+.activeMentee {
+    background-color: #a8ddcb !important;
+    color: #202020 !important;
+}
+
+.activeMentor {
+    background-color: #a9defa !important;
+    color: #202020 !important;
 }
 
 h2 {
@@ -1089,14 +1115,23 @@ h2 {
         text-align: center;
         color: #ffffff;
 
+        .rectangle-mentor {
+            background-color: #269cd1;
+        }
+
+        .rectangle-mentee {
+            background-color: #66c3a3;
+        }
+
         .rectangle {
             width: 333px;
             height: 282px;
-            background-color: #269cd1;
+            // background-color: #269cd1;
             border-radius: 10%;
             position: relative;
             left: 50%;
             transform: translate(-50%, 0%);
+            color: #ffffff;
             .recruit-image {
                 width: 350px;
                 height: 278px;
@@ -1123,7 +1158,6 @@ h2 {
                 font-size: 24px;
                 line-height: 33px;
                 letter-spacing: 0.1em;
-                color: #ffffff;
             }
         }
         ul {
