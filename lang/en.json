@@ -443,8 +443,12 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": ["University College London"],
-            "singapore": ["National University of Singapore"]
+            "uk": [
+                "University College London"
+            ],
+            "singapore": [
+                "National University of Singapore"
+            ]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -826,115 +830,122 @@
     },
     "peermentor": {
         "banner": {
-            "title": "IFU Peer Mentor Consult Program",
-            "description": "IFU Peer Mentors can help you to get out of rock bottom during abroad study. Peer mentors will be the students’ best listeners and supporters. Students can talk about their anxiety with mentors whenever they encounter difficulties. Peer mentors offer one-on-one, face to face interviews, and group activities to guide and inspire students to solve problems based on their own experience and knowledge.",
+            "title": "IFU Peer Mentor Program",
+            "description": "Peer mentors will be the students’ best listeners and supporters. Students can talk about their anxieties with mentors whenever they encounter difficulties. Peer mentors offer one-on-one, face to face interviews, and group activities to guide and inspire students to solve problems based on their own experience and knowledge.",
             "buttonText": "Become Mentees"
         },
         "introduction": {
-            "title": "What is IFU Peer Mentor Program?",
-            "description": "In June of 2020 , after two months of planning and trials, IFU Peer Mentor Program was officially launched in the efforts of all IFU staff and more than 15 IFU volunteers. The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is free and open to all international students. IFU Peer Mentors will be the students’ best listeners and companions so that students can freely share their worries. Peer mentors will guide and inspire students to solve problems with their own experience and knowledge through one-on-one face to face interviews and group activities."
+            "title": "What is the IFU Peer Mentor Program?",
+            "description": "After two months of planning and pre-launch testing, our IFU Peer Mentor Program was officially launched in June 2020, in the efforts of all IFU staff and more than 15 IFU volunteers.",
+            "description2": "The IFU Peer Mentor Program is fully funded and supported by DH International Consulting. The program is <b>free and open to all international students</b>. IFU Peer Mentors will be students’ best listeners and supporters for students to share their worries freely. With their own experiences and knowledge, peer mentors will guide and inspire students to solve problems through <b>one-on-one, face to face chat, and group activities.</b>"
         },
         "why": {
             "title": "Why Peer Mentor Program?",
-            "description1": "International students are facing hard times in 2020. They need to protect themselves from COVID-19, marches and even school shut down. For students who graduated in 2020, they are struggling for the uncertain future: Is it better to be back to home countries, or is it better to pursue graduate studies? With so many unexpected difficulties, the pressure of international students in life and in minds cannot be ignored.",
-            "description2": "Through the experience of emergencies handled by IFU in recent years, feedback from various online activities and doubts collected from parents of students, we found: . Adhering to the mission of \"Making international students' families feel more secure\", IFU feels that the mental health problems of international students should be taken care of  immediately.",
+            "description1": "International students are facing a hard time in 2020. They need to navigate through COVID-19, marches, school shut down, and all kinds of uncertainties. For students who graduated in 2020, they get lost in planning their futures: Is it better to go back to their home countries to find a job? Or is it better for them to pursue master’s programs and continue their study journeys? Students are “trapped” with too many unprecedented uncertainties. The challenges faced by international students both mentally and physically need to be recognized and addressed.",
+            "description2": "IFU learned the following 4 insights from emergencies we handled recent few years, feedback gathered from various online activities, and questions submitted by parents. We realized it is imperative for us to help international students walk through difficulties, as our social mission is “to make our overseas campus life safer, to keep our parents assured”. IFU feels the urge to take action to take care of international students’ mental health.",
             "pics": {
                 "title1": "Stress",
-                "description1": "Severe psychological stress is responsible for more than half of the international students missing.",
+                "description1": "Severe psychological stress was responsible for more than half of the international students’ missing cases.",
                 "title2": "Companion",
-                "description2": "Most international students express that they need company due to feeling lonely and depressed especially during severe epidemic situations.",
+                "description2": "Most international students expressed that they want supports. They feel lonely and depressed, especially during the current pandemic situation.",
                 "title3": "Help",
-                "description3": "The majority of international students are eager to broaden their horizons and get help in job-seeking and social skills.",
-                "title4": "Neglect",
-                "description4": "International students are easily ignored by mainstream society. This program can help them in the best way and show our responsibility as an NGO."
+                "description3": "The majority of international students are eager to broaden their visions and get assistance in job-hunting and networking skills.",
+                "title4": "Awareness",
+                "description4": "Mainstream society does not recognize nor understand the struggles that international students are facing. The IFU Peer Mentor program will try their best to help international students and show the students IFU’s responsibilities as an NGO for them."
             }
         },
         "services": {
-            "title": "Services",
+            "title": "Our Services",
             "blueBubble": {
-                "title": "One-on-one conversations",
-                "item1": "Companion and listen",
-                "item2": "Peer Mentoring Consulting services",
+                "title": "One-on-one chat",
+                "item1": "Listening and support",
+                "item2": "Peer Mentoring",
                 "item3": "Life experience sharing",
-                "item4": "Learning experience sharing",
-                "item5": "Job seeking and work experience sharing",
-                "item6": "Resume writing workshop and cover letter writing workshop"
+                "item4": "Academic experience sharing",
+                "item5": "Job-hunting and networking experience sharing",
+                "item6": "Career development and work experience sharing",
+                "item7": "Workshops for preparing the resume and cover letter"
             },
             "greenBubble": {
                 "title": "Group activity services",
                 "item1": "Peer mentoring lectures",
-                "item2": "Other wonderful activities"
+                "item2": "Other meaningful activities based on inquiries",
+                "item3": "Feel free to",
+                "item4": "submit",
+                "item5": "your thoughts"
             },
             "rightBubble": {
                 "title": "Join us",
-                "item1": "Become a mentor and help others",
-                "item2": "Become a mentee and find a company",
+                "item1": "Become a mentor to help others",
+                "item2": "Become a mentee to get support",
                 "buttonText": "Sign up now"
             }
         },
         "programstreams": {
             "stage1": {
-                "title": "First stage",
-                "description": "<span>Recruit IFU peer mentors:</span> At the beginning of each semester, the recruitment invitations for peer mentors will be issued through IFU social platforms."
+                "title": "Stage One",
+                "description": "<b>Recruit IFU peer mentors:</b> At the beginning of each semester, the recruiting information for peer mentors will be issued through IFU social platforms."
             },
             "stage2": {
-                "title": "Second stage",
-                "description": "<span>Candidates mentees submit application forms:</span> For students who want to communicate with IFU peer mentors, fill out the program application forms. The program leader will conduct a scientific pairing of tutor and student."
+                "title": "Stage Two",
+                "description": "<b>Mentees submit application forms:</b> For students who want to communicate with IFU peer mentors, fill out the program application forms. The program leader will pair up mentors and mentees based on their backgrounds and inquiries."
             },
             "stage3": {
-                "title": "Third stage",
-                "description": "<span>Peer Mentors contact Mentees:</span> The students will receive appointment links from their peer mentors. Students can sign up according to their own schedule and have one-to-one online communications with their peer mentors."
+                "title": "Stage Three",
+                "description": "<b>Appointment Scheduling:</b> Students will receive appointment scheduling links from their assigned peer mentors. Students can plan meetings and have one-on-one chats with their peer mentors according to their own schedules."
             },
             "stage4": {
-                "title": "Fourth stage",
-                "description": "<span>Peer mentors communicate with students:</span> The peer mentors and their students will have 30-40 minutes offline or online communications at least twice a month. This program is a one-semester program, but the peer mentors and students may extend the program period on a mutually agreed basis."
+                "title": "Stage Four",
+                "description": "<b>Peer mentors connect with mentees:</b> Peer mentors and their mentees will have online/in-person 30-40 minutes’ mentoring sessions, at least twice a month. The duration of our program is one semester, and the system will be reset automatically at the end of each semester. If you enjoyed the program and would like to continue the journey, please contact your peer mentor directly by the end of the semester."
             },
             "stage5": {
-                "title": "Fifth stage",
-                "description": "<span>Collect Feedback at the end of each semester:</span> At the end of each semester of the program, students can give feedback on the program and evaluate their mentors through questionnaires."
+                "title": "Stage Five",
+                "description": "<b>Feedback at the end of the program:</b> At the end of each mentorship, students can submit feedback regarding their experience with the mentors."
             }
         },
         "envelope": {
             "letter": {
                 "title": "Join us as a Mentee!",
-                "content1a": "If you feel anxious recently because of busy study and difficult courses;",
-                "content1b": "If you encounter unpleasant things in your life, and feel depressed, or even upset;",
-                "content1c": "If anything is bothering you, please register as one of our mentees and let us help you!",
-                "content2": "IFU Peer Mentors can help you to get out of rock bottom during study abroad",
-                "content3": "We will always be here to help you get out of the bad times. All information and content you share with us is confidential. You can rest assured that you can share your troubles with us and let us help you.",
-                "content4": "IFU peer mentors are specially-trained and have a range of expertise in various fields. As listeners, companions and helpers, peer mentors can help you so that you will no longer feel confused and helpless."
+                "content1a": "If you’re feeling the anxieties caused by busy school and hard courses;",
+                "content1b": "If you’re having a hard time in your life and feeling upset or even depressed;",
+                "content1c": "If there’s anything that’s bothering you, come join us as a mentee and let us support you!",
+                "content2": "IFU Peer Mentors can help you to get out of rock bottom during study abroad.",
+                "content3": "We’ll always be here to walk you through difficulties. We’ll provide a <b>safe space and confidential peer mentoring</b> for you to participate without privacy concerns.",
+                "content4": "IFU peer mentors are <b>well-trained experts in various fields</b>. As listeners, friends, and supporters, IFU peer mentors will help you say bye to the sense of confusion and hopelessness during your study abroad life."
             },
             "mustKnow": {
                 "title": "Mentee Responsibilities",
-                "item1": "Please take the initiative to contact your Mentor.",
-                "item2": "Respect your Mentor. Please be on time.",
-                "item3": "Have conversations with your Mentor during the semester.",
-                "item4": "Follow up with your Mentor via email/WeChat/phone. Keep the Mentor informed of your progress/difficulties.",
-                "item5": "Look positively at your mentor's feedback."
+                "item1": "Willing to communicate and initiate conversations with your mentor;",
+                "item2": "Respect your mentor and be on time to mentoring sessions;",
+                "item3": "Meet at least twice a month with your mentor throughout the program (semester);",
+                "item4": "Keep your mentor updated with your status/difficulties via email/Wechat/phone;",
+                "item5": "Be positive about your mentor’s feedback."
             }
         },
         "requirements": {
             "title": "Peer Mentors Requirements",
-            "item1": "Be willing to help others and have the spirit of volunteers.",
-            "item2": "Be willing to share and enjoy the feeling of helping others grow.",
-            "item3": "Be positive and enterprising.",
-            "item4": "Have a good academic background and good conduct in student discipline.",
-            "item5": "Have experience in different fields (no limited areas).",
-            "item6": "Be able to participate in monthly meetings, training and various activities of the peer mentor team."
+            "item1": "Willing to volunteer and help others;",
+            "item2": "Willing to share and enjoy the feeling of helping others;",
+            "item3": "Positive and seeking for growth;",
+            "item4": "Have a strong academic background with good conduct and disciplines as a student;",
+            "item5": "Have experience and expertise in different fields/industries (no specific limitation);",
+            "item6": "Able to participate in monthly meetings, training, and other activities held by our peer mentor team."
         },
         "benefits": {
-            "title": "Peer Mentors Benefits",
-            "item1": "Receive regular senior training.",
-            "item2": "Obtain IFU volunteer certificates.",
-            "item3": "Have the opportunity to get the \"Annual Excellent Mentor Service Awards\".",
-            "item4": "Exercise personal leadership and consulting skills.",
-            "item5": "Gain self-growth and new self-cognition through reflection.",
-            "item6": "Expand your social networking and get like-minded friends.",
-            "item7": "The IFU social platform will carry out a series of reports on the touching and sincere stories that happened between excellent mentors and students."
+            "title": "Peer Mentor Benefits",
+            "item1": "Regular free professional training;",
+            "item2": "IFU volunteer certificates (obtain with high performance);",
+            "item3": "Have the opportunity to get the \"Annual Excellent Mentor Award\".",
+            "item4": "Gain skills in leadership and consulting;",
+            "item5": "Self-growth and improved self-awareness;",
+            "item6": "Expand your social network and make like-minded friends;",
+            "item7": "Potential public mentions on IFU’s social media channels."
         },
         "recruiting": {
             "title": "IFU Peer Mentor Program is Recruiting!",
-            "description": "If you are looking for people to talk to, or would like to inspire people with your experience, join us through the following links!"
+            "description": "If you are looking for people to have a chat as a mentee, or if you would like to inspire others with your own experience as a mentor, join us through the following links now!",
+            "becomeTutor": "Become Mentor",
+            "becomeStudent": "Become Mentee"
         }
     },
     "contact": {
@@ -945,9 +956,9 @@
         "emergency": {
             "title": "EMERGENCY CONTACT",
             "contact": "IFU Emergency Contact List for International Students’ families",
-            "p1": "In case of emergency, IFU volunteers will contact the parents according to the information in the emergency contact book to ensure the smooth communication of the family.",
-            "p2": "If a child is missing, IFU school volunteers will use the information in the emergency contact list to locate the child in the United States through school authorities, local police, social media and other channels; after ensuring the safety of the child, IFU volunteers will let the parents know immediately.",
-            "buttonText": "Fill Up The Emergency Contact List"
+            "p1": "In case of emergency, <b>IFU volunteers will contact the parents</b> according to the information in the emergency contact book to ensure the smooth communication of the family.",
+            "p2": "If a child is missing, <b>IFU campus volunteers</b> will use the information in the emergency contact list to <b>locate the child</b> in the United States through school authorities, local police, social media and other channels; after ensuring the safety of the child, IFU volunteers will let the parents know immediately.",
+            "buttonText": "Fill the Emergency Contact List"
         },
         "other": {
             "title": "OTHER CONTACT INFORMATION",
@@ -961,7 +972,8 @@
                 "title": "Other Business",
                 "p1": "Please Contact Online Customer Service (live chat box at the bottom right)",
                 "p1Mobile": "Please Contact Online Customer Service",
-                "p2": "Or Follow the IFU Wechat Official Account:",
+                "p2a": "Or Follow",
+                "p2": "IFU Wechat Official Account:",
                 "p3": "Zhihu:",
                 "p4": "Bilibili:",
                 "p5": "Instagram:",
@@ -1095,6 +1107,7 @@
         "review": "Event Recap & Monthly Report",
         "reviewPara": "In September, IFU campus volunteers started a new semester from summer vacation. This year, we cannot gather together in person, as usual, to chat about IFU and the experience abroad. But our team is still communicating with the communities on social media and helping international families deal with emergencies, like missing contact and mental health issues. Besides, we’re working on updating local Covid-19 situations, translating new policies and timelines from schools, and planning the school organizations’ future work. Monthly meetings are also coming up as the semester starts.",
         "reviewLink": "September Report",
+        "sliderImage1": "2017 Studying Abroad in California - Students & Parents Summit - Shanghai",
         "becomeHeader": "Become Campus Volunteer",
         "becomePara": "IFU is dedicated to providing services to international families in bridging the information gap between international students and their parents back at home. We aim to help international students deal with problems in overseas safety, mental health, cultural shocks, academic and work pressure, etc. Campus volunteers are working to fulfill their mission through the following ways: <b>emergency help, information conveyance, volunteer activities.</b> ",
         "requirePara": "Campus Volunteer’s Duties",

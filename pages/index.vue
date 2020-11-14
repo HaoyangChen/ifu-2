@@ -108,7 +108,7 @@
         <div class="bg">
             <section class="container">
                 <h2>{{ $t('home.ourServices.title') }}</h2>
-                <p style="padding-bottom: 30px;">
+                <p style="padding-bottom: 30px">
                     {{ $t('home.ourServices.description') }}
                 </p>
                 <div class="desktop">
@@ -119,9 +119,18 @@
                 </div>
             </section>
         </div>
-        <div class="announcement-row">
+        <!-- <div class="announcement-row">
             <section class="announcement-section">
-                <h2>{{ $t('home.announcement.title') }}</h2>
+                <div class="col-left col">
+                    10月各个UC学校的同学们即将面临第一次期中考试，多多罗学长学姐特别策划了第一期公益期中复习辅导课程，报名即可获得学霸学长学姐精心定制的复习计划，一起线上模拟考试，练习考试真题，复习重点考点！另外参与本活动的同学们可以免费获取配套复习笔记大礼包一份！
+                </div>
+                <div class="col-right col">
+                    无托福无SAT的学长是如何进入波士顿大学并且收获满绩点GPA的？
+                    想要转学的同学们需要在入学的时候做什么准备？
+                    如何通过学术和社团工作有效优化个人经历？
+                    多多罗学术讲座就在本月，大一大二转学必读
+                </div> -->
+        <!-- <h2>{{ $t('home.announcement.title') }}</h2>
                 <p>
                     {{ $t('home.announcement.description') }}
                 </p>
@@ -147,12 +156,12 @@
                     <p v-html="$t('home.announcement.qrDescription')" />
 
                     <img src="@/assets/home/qrcode-announcements.png" />
-                </div>
-            </section>
-            <section class="announcement-image">
+                </div> -->
+        <!-- </section> -->
+        <!-- <section class="announcement-image">
                 <img src="@/assets/home/announcement.svg" />
-            </section>
-        </div>
+            </section> -->
+        <!-- </div> -->
         <section class="about-us-section background-blue">
             <div class="container half-style">
                 <div class="col-half">
@@ -228,6 +237,7 @@
                 >
             </div>
         </section>
+        <back-to-top text="Back to top"></back-to-top>
     </div>
 </template>
 
@@ -261,7 +271,6 @@ import three from '@/assets/home/3.png';
 import carnivalPerson1 from '@/assets/home/carnival_person1.png';
 import carnivalPerson2 from '@/assets/home/carnival_person2.png';
 import carnivalPerson3 from '@/assets/home/carnival_person3.png';
-
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
 export default {
@@ -660,6 +669,9 @@ img {
 }
 .col {
     padding-bottom: 6px;
+    // text-align: center;
+    // line-height: 40px;
+    // padding-top: 70px;
 }
 .con {
     text-align: center;
@@ -768,9 +780,24 @@ img {
 }
 
 .announcement-row {
-    display: flex;
-    justify-content: space-between;
-    line-height: 31px;
+    .announcement-section {
+        display: flex;
+        justify-content: space-around;
+        line-height: 31px;
+        flex-direction: row;
+        .col-left {
+            background-color: black;
+            flex-basis: 40%;
+            height: 400px;
+            background: url('../assets/home/left_graphics.png') no-repeat;
+        }
+        .col-right {
+            background-color: blue;
+            height: 400px;
+            flex-basis: 40%;
+            background: url('../assets/home/right_graphics.png') no-repeat;
+        }
+    }
 
     .announcement-section,
     .announcement-row {

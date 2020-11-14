@@ -11,9 +11,8 @@
         <div class="row peer-mentor-intro-section">
             <div class="text-container left">
                 <h2>{{ $t('peermentor.introduction.title') }}</h2>
-                <p>
-                    {{ $t('peermentor.introduction.description') }}
-                </p>
+                <p v-html="$t('peermentor.introduction.description')" />
+                <p v-html="$t('peermentor.introduction.description2')" />
             </div>
             <div class="img-container desktop">
                 <img
@@ -154,6 +153,18 @@
                                 {{
                                     $t('peermentor.services.greenBubble.item3')
                                 }}
+                                <a
+                                    href="https://forms.gle/3EYR58psCfqTsR4Z7"
+                                    target="_blank"
+                                    >{{
+                                        $t(
+                                            'peermentor.services.greenBubble.item4',
+                                        )
+                                    }}</a
+                                >
+                                {{
+                                    $t('peermentor.services.greenBubble.item5')
+                                }}
                             </li>
                         </ul>
                     </div>
@@ -185,7 +196,11 @@
                                 }}
                             </li>
                         </ul>
-                        <Button scroll to="#peermentor-recruit-p">
+                        <Button
+                            class="register-btn"
+                            scroll
+                            to="#peermentor-recruit-p"
+                        >
                             {{
                                 $t('peermentor.services.rightBubble.buttonText')
                             }}
@@ -370,17 +385,14 @@
                     />
                 </div> -->
                 <div class="three-in-onerow-mobile">
-                    <img
+                    <!-- <img
                         src="@/assets/peermentor/three_in_row.svg"
                         alt="three graphics in one row"
-                    />
+                    /> -->
+                    <img :src="threeinrow[$i18n.locale]" />
                 </div>
-                <p>
-                    {{ $t('peermentor.envelope.letter.content3') }}
-                </p>
-                <p>
-                    {{ $t('peermentor.envelope.letter.content4') }}
-                </p>
+                <p v-html="$t('peermentor.envelope.letter.content3')" />
+                <p v-html="$t('peermentor.envelope.letter.content4')" />
                 <div class="must-know-part">
                     <h2>{{ $t('peermentor.envelope.mustKnow.title') }}</h2>
                     <ul>
@@ -402,8 +414,18 @@
                     </ul>
                 </div>
             </div>
+            <img
+                class="letter-top desktop"
+                src="@/assets/peermentor/env_top.svg"
+                alt="top envelop"
+            />
+            <img
+                class="letter-bottom desktop"
+                src="@/assets/peermentor/env_bottom.svg"
+                alt="bottom envelop"
+            />
         </section>
-        <div class="section-requirement">
+        <div class="section-requirement mt-forletter">
             <div class="half-half-nop half-half orange-color">
                 <h2>{{ $t('peermentor.requirements.title') }}</h2>
                 <ul>
@@ -437,37 +459,61 @@
             <p id="peermentor-recruit-p" class="peermentor-recruit-p">
                 {{ $t('peermentor.recruiting.description') }}
             </p>
-            <div class="section-requirement">
+            <div class="section-requirement mt-recruitment">
                 <div class="half-half-nop">
                     <a
                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                         target="_blank"
+                        @mouseover="
+                            changeMentorImageWhen('over'), (hoverMentor = true)
+                        "
+                        @mousedown="changeMentorImageWhen('down')"
+                        @mouseout="
+                            changeMentorImageWhen('out'), (hoverMentor = false)
+                        "
+                        @mouseup="changeMentorImageWhen('up')"
                     >
-                        <img
-                            class="recruit-image"
-                            :src="currentMentorImage"
-                            alt="tutor recruitment"
-                            @mouseover="changeMentorImageWhen('over')"
-                            @mousedown="changeMentorImageWhen('down')"
-                            @mouseout="changeMentorImageWhen('out')"
-                            @mouseup="changeMentorImageWhen('up')"
-                        />
+                        <div
+                            :class="{ activeMentor: hoverMentor }"
+                            class="rectangle rectangle-mentor"
+                        >
+                            <img
+                                class="recruit-image recruit-tutor-img"
+                                :src="currentMentorImage"
+                                alt="tutor recruitment"
+                            />
+                            <p class="requirement-recruit-text">
+                                {{ $t('peermentor.recruiting.becomeTutor') }}
+                            </p>
+                        </div>
                     </a>
                 </div>
-                <div class="half-half-nop">
+                <div class="half-half-nop second-nop">
                     <a
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
+                        @mouseover="
+                            changeStudentImageWhen('over'), (hoverMentee = true)
+                        "
+                        @mousedown="changeStudentImageWhen('down')"
+                        @mouseout="
+                            changeStudentImageWhen('out'), (hoverMentee = false)
+                        "
+                        @mouseup="changeStudentImageWhen('up')"
                     >
-                        <img
-                            class="recruit-image"
-                            :src="currentStudentImage"
-                            alt="student recruitment"
-                            @mouseover="changeStudentImageWhen('over')"
-                            @mousedown="changeStudentImageWhen('down')"
-                            @mouseout="changeStudentImageWhen('out')"
-                            @mouseup="changeStudentImageWhen('up')"
-                        />
+                        <div
+                            :class="{ activeMentee: hoverMentee }"
+                            class="rectangle rectangle-mentee"
+                        >
+                            <img
+                                class="recruit-image recruit-student-img"
+                                :src="currentStudentImage"
+                                alt="student recruitment"
+                            />
+                            <p class="requirement-recruit-text">
+                                {{ $t('peermentor.recruiting.becomeStudent') }}
+                            </p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -483,6 +529,8 @@ import becomeMentorImg from '@/assets/peermentor/tutor_graphic.svg';
 import becomeMentorHoverImg from '@/assets/peermentor/tutor_graphic_hover.svg';
 import becomeStudentImg from '@/assets/peermentor/student_graphic.svg';
 import becomeStudentHoverImg from '@/assets/peermentor/student_graphic_hover.svg';
+import threeInRowCh from '@/assets/peermentor/three_in_row.svg';
+import threeInRowEn from '@/assets/peermentor/three_in_row_en.svg';
 
 export default {
     components: {
@@ -491,6 +539,10 @@ export default {
     },
     data() {
         return {
+            threeinrow: {
+                zh: threeInRowCh,
+                en: threeInRowEn,
+            },
             imagesMentor: {
                 out: becomeMentorImg,
                 over: becomeMentorHoverImg,
@@ -506,6 +558,8 @@ export default {
             bannerImage,
             currentMentorImage: becomeMentorImg,
             currentStudentImage: becomeMentorImg,
+            hoverMentee: false,
+            hoverMentor: false,
         };
     },
     created() {
@@ -552,6 +606,16 @@ export default {
     }
 }
 
+.activeMentee {
+    background-color: #a8ddcb !important;
+    color: #202020 !important;
+}
+
+.activeMentor {
+    background-color: #a9defa !important;
+    color: #202020 !important;
+}
+
 h2 {
     font-weight: 600;
 }
@@ -591,6 +655,12 @@ h2 {
     }
 }
 
+.register-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .blue-section {
     .project-process-title {
         background-color: rgba(38, 156, 209, 0.8);
@@ -621,11 +691,13 @@ h2 {
 
             .blue-bubble-inner {
                 position: absolute;
-                top: 20px;
-                left: 53px;
+                top: 33px;
+                left: 39px;
                 padding-left: 13%;
                 ul {
                     padding-left: 10%;
+                    // width: max-content;
+                    width: 90%;
                 }
 
                 h3 {
@@ -636,6 +708,7 @@ h2 {
             :lang(en).blue-bubble-inner {
                 position: absolute;
                 left: 8%;
+                top: 5%;
                 line-height: 25px;
                 letter-spacing: 0;
                 h3 {
@@ -651,18 +724,20 @@ h2 {
             position: absolute;
             left: 27%;
             top: 190px;
+            z-index: 2;
 
             img {
-                width: 115%;
+                width: 130%;
             }
 
             .green-bubble-inner {
                 position: absolute;
-                top: 20px;
+                top: 50px;
                 left: 53px;
 
                 ul {
                     padding-left: 10%;
+                    width: max-content;
                 }
 
                 h3 {
@@ -671,13 +746,17 @@ h2 {
             }
             :lang(en).green-bubble-inner {
                 position: absolute;
-                line-height: 40px;
+                // line-height: 40px;
                 letter-spacing: 0;
-                top: 20px;
-                left: 35px;
+                top: 26px;
+                left: 30px;
                 ul {
                     // margin-left: 0;
-                    padding-left: 20px;
+                    padding-left: 10%;
+                    width: max-content;
+                    li {
+                        width: 60%;
+                    }
                 }
                 h3 {
                     margin-left: 15px;
@@ -694,12 +773,15 @@ h2 {
         .blue-outline-section {
             position: absolute;
             // left: 70%;
-            top: -24px;
+            top: 0px;
             right: 8%;
             .blue-outline-inner {
                 position: absolute;
                 top: 69px;
-                left: 71px;
+                left: 60px;
+                h3 {
+                    margin-left: 10%;
+                }
             }
             :lang(en).blue-outline-inner {
                 position: absolute;
@@ -944,12 +1026,29 @@ h2 {
 }
 
 .peermentor-letter-section {
+    position: relative;
+    .letter-top {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .letter-bottom {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        top: 88%;
+    }
+
     .peermentor-letter-innersection {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         background: url('../assets/peermentor/letter_paper.svg') repeat;
         padding: 8% 13%;
+        background-size: cover;
 
         // .three-in-onerow {
         //     display: flex;
@@ -977,11 +1076,12 @@ h2 {
             width: 85%;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 40px;
             h2 {
                 margin-left: 20px;
             }
             ul {
-                width: 55%;
+                width: 100%;
             }
         }
         :lang(en).must-know-part {
@@ -994,6 +1094,18 @@ h2 {
     }
 }
 
+.mt-forletter {
+    margin-top: 35%;
+}
+
+:lang(en).mt-forletter {
+    margin-top: 28%;
+}
+
+.mt-recruitment {
+    margin-top: 100px;
+}
+
 .section-requirement {
     display: flex;
     justify-content: center;
@@ -1002,14 +1114,55 @@ h2 {
         flex-basis: 50%;
         text-align: center;
         color: #ffffff;
+
+        .rectangle-mentor {
+            background-color: #269cd1;
+        }
+
+        .rectangle-mentee {
+            background-color: #66c3a3;
+        }
+
+        .rectangle {
+            width: 333px;
+            height: 282px;
+            // background-color: #269cd1;
+            border-radius: 10%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            color: #ffffff;
+            .recruit-image {
+                width: 350px;
+                height: 278px;
+                position: absolute;
+            }
+
+            .recruit-tutor-img {
+                top: -28%;
+                left: 10%;
+            }
+
+            .recruit-student-img {
+                top: -28%;
+                left: -13%;
+            }
+
+            .requirement-recruit-text {
+                position: absolute;
+                width: 100%;
+                bottom: 8%;
+                font-family: PingFang SC;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                letter-spacing: 0.1em;
+            }
+        }
         ul {
             text-align: left;
             line-height: 31px;
-        }
-
-        .recruit-image {
-            width: 350px;
-            height: 100%;
         }
     }
 
@@ -1040,6 +1193,10 @@ p {
         }
     }
 
+    .mt-forletter {
+        margin-top: 0px;
+    }
+
     .whypeermentor {
         padding: 25px 8%;
         .whypeermentor-upper {
@@ -1052,10 +1209,10 @@ p {
             .one-fourth {
                 margin-top: 74px;
                 .text-center {
-                    text-align: left;
-                    width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
+                    text-align: center;
+                    width: 100%;
+                    // margin-left: auto;
+                    // margin-right: auto;
                 }
             }
         }
@@ -1114,18 +1271,60 @@ p {
     }
 }
 
-@media (max-width: 1379px) {
-    .blue-person-section {
-        img {
-            width: 80%;
+@media (max-width: 1472px) {
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: -62px;
+                left: 30%;
+                img {
+                    width: 70%;
+                }
+            }
+
+            .green-bubble-section {
+                left: 29%;
+                top: 187px;
+            }
         }
     }
 }
 
+@media (max-width: 1024px) {
+    .second-nop {
+        margin-top: 150px;
+        margin-bottom: 47px;
+    }
+}
+
 @media (max-width: 1225px) {
-    .blue-person-section {
-        img {
-            width: 60%;
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: -27px;
+                left: 30%;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 948px) {
+    .second-nop {
+        margin-top: 150px;
+        margin-bottom: 47px;
+    }
+    .blue-section {
+        .project-process-section {
+            .blue-person-section {
+                top: 0px;
+                left: 30%;
+                img {
+                    width: 40%;
+                }
+            }
         }
     }
 }
@@ -1146,17 +1345,25 @@ p {
 
                 .phase-description {
                     width: 100%;
+                    padding-top: 20px;
+                }
+
+                .phase-number {
+                    margin-top: 84px;
                 }
             }
         }
 
         .project-process-height {
-            height: 1050px;
+            height: 1160px;
         }
 
         .project-process-section {
             .blue-bubble-section {
                 left: 8%;
+                img {
+                    width: 100%;
+                }
             }
 
             .green-bubble-section {
@@ -1166,7 +1373,7 @@ p {
 
             .blue-person-section {
                 left: 8%;
-                top: 417px;
+                top: 497px;
                 z-index: 1;
                 img {
                     width: 90%;
@@ -1174,13 +1381,42 @@ p {
             }
 
             .blue-outline-section {
-                top: 616px;
+                top: 706px;
                 right: 8%;
                 z-index: 2;
                 left: 8%;
+                // .blue-outline-inner {
+                //     h3 {
+                //         padding-left: 10%;
+                //     }
+                // }
 
                 img {
                     width: auto;
+                }
+            }
+        }
+    }
+
+    .section-requirement {
+        .half-half-nop {
+            .recruit-image {
+                width: 80%;
+            }
+        }
+
+        .second-nop {
+            margin-top: 150px;
+            margin-bottom: 47px;
+        }
+    }
+
+    .whypeermentor {
+        .fourreason-outside {
+            .one-fourth {
+                .text-center {
+                    text-align: left;
+                    width: 100%;
                 }
             }
         }

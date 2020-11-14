@@ -63,7 +63,7 @@ button:hover {
     background-color: white;
     color: $button-color;
     border: 1px solid $button-color;
-    box-shadow: 0px 10px 15px white;
+    box-shadow: 0px 10px 15px grey;
 }
 
 @media (max-width: $mobile-max-width) {

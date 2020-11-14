@@ -85,7 +85,7 @@
             <p>{{ $t('about.culture.joinText2') }}</p>
             <Button
                 external
-                to="https://docs.google.com/forms/d/e/1FAIpQLScxv4rY_MMRqShfJRdAPHx50t2R_slZxQVTSJh1Tt_numq-tA/viewform"
+                to="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
                 >{{ $t('about.culture.joinButtonText') }}</Button
             >
         </section>
