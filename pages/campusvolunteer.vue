@@ -140,15 +140,33 @@
                         :key="index"
                         class="swiper-slide"
                     >
-                        <div class="img zh-image">
+                        <div class="img zh-image desktop">
                             <img :src="item.image" />
-                            <p>{{ item.title }}</p>
-                            <p>{{ item.subTitle }}</p>
+                            <div class="subtitle-content">
+                                <p>{{ item.title }}</p>
+                                <p>{{ item.subTitle }}</p>
+                            </div>
                         </div>
-                        <div class="img en-image">
+                        <div class="img en-image desktop">
                             <img :src="item.image" />
-                            <p>{{ item.enTitle }}</p>
-                            <p>{{ item.subTitle }}</p>
+                            <div class="subtitle-content">
+                                <p>{{ item.enTitle }}</p>
+                                <p>{{ item.subTitle }}</p>
+                            </div>
+                        </div>
+                        <div class="img zh-image mobile">
+                            <img :src="item.mobileImage" />
+                            <div class="subtitle-content">
+                                <p>{{ item.title }}</p>
+                                <p>{{ item.subTitle }}</p>
+                            </div>
+                        </div>
+                        <div class="img en-image mobile">
+                            <img :src="item.mobileImage" />
+                            <div class="subtitle-content">
+                                <p>{{ item.enTitle }}</p>
+                                <p>{{ item.subTitle }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,6 +241,9 @@ import bannerImage from '@/assets/volunteer/banner.png';
 import swiperImage1 from '@/assets/volunteer/carousel/1.png';
 import swiperImage2 from '@/assets/volunteer/carousel/2.png';
 import swiperImage3 from '@/assets/volunteer/carousel/3.png';
+import swiperImage1Mobile from '@/assets/volunteer/carousel/mobile1.png';
+import swiperImage2Mobile from '@/assets/volunteer/carousel/mobile2.png';
+import swiperImage3Mobile from '@/assets/volunteer/carousel/mobile3.png';
 import 'swiper/css/swiper.css';
 
 export default {
@@ -266,16 +287,19 @@ export default {
                     enTitle:
                         '2017 Studying Abroad in California - Students & Parents Summit - Shanghai',
                     image: swiperImage1,
+                    mobileImage: swiperImage1Mobile,
                 },
                 {
                     title: 'IFU X Shelter Helper 募集善款活动',
                     enTitle: 'IFU X Shelter Helper Fundraising Event',
                     image: swiperImage2,
+                    mobileImage: swiperImage2Mobile,
                 },
                 {
                     title: '农历新年聚会',
                     enTitle: 'Lunar New Year Event',
                     image: swiperImage3,
+                    mobileImage: swiperImage3Mobile,
                 },
             ];
         },
@@ -689,20 +713,27 @@ export default {
 
         .swiper-wrapper {
             .swiper-slide {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
                 .img {
-                    height: 305px;
-                    width: 360px;
+                    height: 302px;
+                    width: 362px;
                     background-color: #f1f9ff;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: flex-start;
+                    border-radius: 15px;
                     img {
                         width: 360px;
-                        height: auto;
+                        height: 214px;
+                    }
+                    .subtitle-content {
+                        height: 88px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            margin: 0;
+                        }
                     }
                 }
             }

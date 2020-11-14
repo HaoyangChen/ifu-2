@@ -196,7 +196,11 @@
                                 }}
                             </li>
                         </ul>
-                        <Button scroll to="#peermentor-recruit-p">
+                        <Button
+                            class="register-btn"
+                            scroll
+                            to="#peermentor-recruit-p"
+                        >
                             {{
                                 $t('peermentor.services.rightBubble.buttonText')
                             }}
@@ -455,37 +459,61 @@
             <p id="peermentor-recruit-p" class="peermentor-recruit-p">
                 {{ $t('peermentor.recruiting.description') }}
             </p>
-            <div class="section-requirement">
+            <div class="section-requirement mt-recruitment">
                 <div class="half-half-nop">
                     <a
                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                         target="_blank"
+                        @mouseover="
+                            changeMentorImageWhen('over'), (hoverMentor = true)
+                        "
+                        @mousedown="changeMentorImageWhen('down')"
+                        @mouseout="
+                            changeMentorImageWhen('out'), (hoverMentor = false)
+                        "
+                        @mouseup="changeMentorImageWhen('up')"
                     >
-                        <img
-                            class="recruit-image"
-                            :src="currentMentorImage"
-                            alt="tutor recruitment"
-                            @mouseover="changeMentorImageWhen('over')"
-                            @mousedown="changeMentorImageWhen('down')"
-                            @mouseout="changeMentorImageWhen('out')"
-                            @mouseup="changeMentorImageWhen('up')"
-                        />
+                        <div
+                            :class="{ activeMentor: hoverMentor }"
+                            class="rectangle rectangle-mentor"
+                        >
+                            <img
+                                class="recruit-image recruit-tutor-img"
+                                :src="currentMentorImage"
+                                alt="tutor recruitment"
+                            />
+                            <p class="requirement-recruit-text">
+                                {{ $t('peermentor.recruiting.becomeTutor') }}
+                            </p>
+                        </div>
                     </a>
                 </div>
                 <div class="half-half-nop second-nop">
                     <a
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
+                        @mouseover="
+                            changeStudentImageWhen('over'), (hoverMentee = true)
+                        "
+                        @mousedown="changeStudentImageWhen('down')"
+                        @mouseout="
+                            changeStudentImageWhen('out'), (hoverMentee = false)
+                        "
+                        @mouseup="changeStudentImageWhen('up')"
                     >
-                        <img
-                            class="recruit-image"
-                            :src="currentStudentImage"
-                            alt="student recruitment"
-                            @mouseover="changeStudentImageWhen('over')"
-                            @mousedown="changeStudentImageWhen('down')"
-                            @mouseout="changeStudentImageWhen('out')"
-                            @mouseup="changeStudentImageWhen('up')"
-                        />
+                        <div
+                            :class="{ activeMentee: hoverMentee }"
+                            class="rectangle rectangle-mentee"
+                        >
+                            <img
+                                class="recruit-image recruit-student-img"
+                                :src="currentStudentImage"
+                                alt="student recruitment"
+                            />
+                            <p class="requirement-recruit-text">
+                                {{ $t('peermentor.recruiting.becomeStudent') }}
+                            </p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -530,6 +558,8 @@ export default {
             bannerImage,
             currentMentorImage: becomeMentorImg,
             currentStudentImage: becomeMentorImg,
+            hoverMentee: false,
+            hoverMentor: false,
         };
     },
     created() {
@@ -576,6 +606,16 @@ export default {
     }
 }
 
+.activeMentee {
+    background-color: #a8ddcb !important;
+    color: #202020 !important;
+}
+
+.activeMentor {
+    background-color: #a9defa !important;
+    color: #202020 !important;
+}
+
 h2 {
     font-weight: 600;
 }
@@ -613,6 +653,12 @@ h2 {
             }
         }
     }
+}
+
+.register-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .blue-section {
@@ -1030,6 +1076,7 @@ h2 {
             width: 85%;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 40px;
             h2 {
                 margin-left: 20px;
             }
@@ -1048,26 +1095,74 @@ h2 {
 }
 
 .mt-forletter {
-    margin-top: 38%;
+    margin-top: 35%;
+}
+
+:lang(en).mt-forletter {
+    margin-top: 28%;
+}
+
+.mt-recruitment {
+    margin-top: 100px;
 }
 
 .section-requirement {
     display: flex;
     justify-content: center;
-    // margin-top: 38%;
 
     .half-half-nop {
         flex-basis: 50%;
         text-align: center;
         color: #ffffff;
+
+        .rectangle-mentor {
+            background-color: #269cd1;
+        }
+
+        .rectangle-mentee {
+            background-color: #66c3a3;
+        }
+
+        .rectangle {
+            width: 333px;
+            height: 282px;
+            // background-color: #269cd1;
+            border-radius: 10%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            color: #ffffff;
+            .recruit-image {
+                width: 350px;
+                height: 278px;
+                position: absolute;
+            }
+
+            .recruit-tutor-img {
+                top: -28%;
+                left: 10%;
+            }
+
+            .recruit-student-img {
+                top: -28%;
+                left: -13%;
+            }
+
+            .requirement-recruit-text {
+                position: absolute;
+                width: 100%;
+                bottom: 8%;
+                font-family: PingFang SC;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                letter-spacing: 0.1em;
+            }
+        }
         ul {
             text-align: left;
             line-height: 31px;
-        }
-
-        .recruit-image {
-            width: 350px;
-            height: 278px;
         }
     }
 
@@ -1195,6 +1290,13 @@ p {
     }
 }
 
+@media (max-width: 1024px) {
+    .second-nop {
+        margin-top: 150px;
+        margin-bottom: 47px;
+    }
+}
+
 @media (max-width: 1225px) {
     .blue-section {
         .project-process-section {
@@ -1210,6 +1312,10 @@ p {
 }
 
 @media (max-width: 948px) {
+    .second-nop {
+        margin-top: 150px;
+        margin-bottom: 47px;
+    }
     .blue-section {
         .project-process-section {
             .blue-person-section {
@@ -1300,7 +1406,8 @@ p {
         }
 
         .second-nop {
-            margin-top: 46px;
+            margin-top: 150px;
+            margin-bottom: 47px;
         }
     }
 

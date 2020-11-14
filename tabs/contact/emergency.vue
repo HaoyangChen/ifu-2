@@ -27,20 +27,21 @@ export default {
 <style lang="scss" scoped>
 .emergency-contact {
     position: relative;
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        width: 40%;
+    }
     p {
-        width: 45%;
+        width: 40%;
         line-height: 31px;
         margin-bottom: 50px;
-
-        /deep/ span {
-            color: #11a4da;
-        }
     }
     .image-container {
         position: absolute;
-        top: 80px;
+        top: 100px;
         right: 0;
-        max-width: 50%;
+        max-width: 55%;
         height: 100%;
 
         img {
@@ -53,6 +54,14 @@ export default {
     .emergency-contact {
         p {
             width: 100%;
+            padding: 0 5%;
+            // margin: 1em 1em;
+        }
+        h2 {
+            width: 100%;
+            font-size: 16px;
+            padding: 0 5%;
+            text-transform: uppercase;
         }
         .image-container {
             position: relative;
