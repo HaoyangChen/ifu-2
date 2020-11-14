@@ -108,7 +108,7 @@
         <div class="bg">
             <section class="container">
                 <h2>{{ $t('home.ourServices.title') }}</h2>
-                <p style="padding-bottom: 30px;">
+                <p style="padding-bottom: 30px">
                     {{ $t('home.ourServices.description') }}
                 </p>
                 <div class="desktop">
@@ -119,8 +119,8 @@
                 </div>
             </section>
         </div>
-        <div class="announcement-row">
-            <!-- <section class="announcement-section">
+        <!-- <div class="announcement-row">
+            <section class="announcement-section">
                 <div class="col-left col">
                     10月各个UC学校的同学们即将面临第一次期中考试，多多罗学长学姐特别策划了第一期公益期中复习辅导课程，报名即可获得学霸学长学姐精心定制的复习计划，一起线上模拟考试，练习考试真题，复习重点考点！另外参与本活动的同学们可以免费获取配套复习笔记大礼包一份！
                 </div>
@@ -130,7 +130,7 @@
                     如何通过学术和社团工作有效优化个人经历？
                     多多罗学术讲座就在本月，大一大二转学必读
                 </div> -->
-            <!-- <h2>{{ $t('home.announcement.title') }}</h2>
+        <!-- <h2>{{ $t('home.announcement.title') }}</h2>
                 <p>
                     {{ $t('home.announcement.description') }}
                 </p>
@@ -156,12 +156,12 @@
                     <p v-html="$t('home.announcement.qrDescription')" />
 
                     <img src="@/assets/home/qrcode-announcements.png" />
-                </div>
-            </section>
-            <section class="announcement-image">
-                <img src="@/assets/home/announcement.svg" />-->
-            <!-- </section> -->
-        </div>
+                </div> -->
+        <!-- </section> -->
+        <!-- <section class="announcement-image">
+                <img src="@/assets/home/announcement.svg" />
+            </section> -->
+        <!-- </div> -->
         <section class="about-us-section background-blue">
             <div class="container half-style">
                 <div class="col-half">
@@ -237,6 +237,7 @@
                 >
             </div>
         </section>
+        <back-to-top text="Back to top"></back-to-top>
     </div>
 </template>
 
@@ -270,7 +271,6 @@ import three from '@/assets/home/3.png';
 import carnivalPerson1 from '@/assets/home/carnival_person1.png';
 import carnivalPerson2 from '@/assets/home/carnival_person2.png';
 import carnivalPerson3 from '@/assets/home/carnival_person3.png';
-
 import HomeSwiper from '@/components/HomeSwiper.vue';
 
 export default {
@@ -669,9 +669,9 @@ img {
 }
 .col {
     padding-bottom: 6px;
-    text-align: center;
-    line-height: 40px;
-    padding-top: 70px;
+    // text-align: center;
+    // line-height: 40px;
+    // padding-top: 70px;
 }
 .con {
     text-align: center;
@@ -783,7 +783,7 @@ img {
     .announcement-section {
         display: flex;
         justify-content: space-around;
-        // line-height: 31px;
+        line-height: 31px;
         flex-direction: row;
         .col-left {
             background-color: black;
@@ -799,44 +799,44 @@ img {
         }
     }
 
-    //     .announcement-section,
-    //     .announcement-row {
-    //         flex-basis: 50%;
-    //         margin: 0;
-    //     }
+    .announcement-section,
+    .announcement-row {
+        flex-basis: 50%;
+        margin: 0;
+    }
 
-    //     .announcement-section {
-    //         padding-right: 0;
-    //     }
+    .announcement-section {
+        padding-right: 0;
+    }
 
-    //     p {
-    //         margin-top: 0;
-    //     }
+    p {
+        margin-top: 0;
+    }
 
-    //     ul {
-    //         margin-top: 30px;
-    //         list-style: 0;
-    //         padding: 0;
-    //         list-style-type: none;
+    ul {
+        margin-top: 30px;
+        list-style: 0;
+        padding: 0;
+        list-style-type: none;
 
-    //         span {
-    //             color: $button-color;
-    //             font-weight: 600;
-    //         }
-    //     }
-    //     .qr-announcement {
-    //         display: flex;
-    //     }
-    //     /deep/ span {
-    //         font-weight: bold;
-    //     }
-    //     .qr-announcement > img {
-    //         margin: 0px 55px;
-    //         width: auto;
-    //     }
-    //     img {
-    //         width: 100%;
-    //     }
+        span {
+            color: $button-color;
+            font-weight: 600;
+        }
+    }
+    .qr-announcement {
+        display: flex;
+    }
+    /deep/ span {
+        font-weight: bold;
+    }
+    .qr-announcement > img {
+        margin: 0px 55px;
+        width: auto;
+    }
+    img {
+        width: 100%;
+    }
 }
 
 .about-us-section {
