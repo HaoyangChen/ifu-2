@@ -27,6 +27,9 @@
                 <!-- <p class="mobile">{{ $t('contact.other.other.p1Mobile') }}</p> -->
                 <br />
                 <p>
+                    {{ $t('contact.other.other.p2a') }}
+                </p>
+                <p>
                     {{ $t('contact.other.other.p2') }}
                     <a
                         href="https://mp.weixin.qq.com/s/eYz1LNXvSUoB8vOx4tVe4A"

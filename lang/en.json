@@ -443,8 +443,12 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": ["University College London"],
-            "singapore": ["National University of Singapore"]
+            "uk": [
+                "University College London"
+            ],
+            "singapore": [
+                "National University of Singapore"
+            ]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -954,7 +958,7 @@
             "contact": "IFU Emergency Contact List for International Students’ families",
             "p1": "In case of emergency, <b>IFU volunteers will contact the parents</b> according to the information in the emergency contact book to ensure the smooth communication of the family.",
             "p2": "If a child is missing, <b>IFU campus volunteers</b> will use the information in the emergency contact list to <b>locate the child</b> in the United States through school authorities, local police, social media and other channels; after ensuring the safety of the child, IFU volunteers will let the parents know immediately.",
-            "buttonText": "Fill Up The Emergency Contact List"
+            "buttonText": "Fill the Emergency Contact List"
         },
         "other": {
             "title": "OTHER CONTACT INFORMATION",
@@ -968,7 +972,8 @@
                 "title": "Other Business",
                 "p1": "Please Contact Online Customer Service (live chat box at the bottom right)",
                 "p1Mobile": "Please Contact Online Customer Service",
-                "p2": "Or Follow the IFU Wechat Official Account:",
+                "p2a": "Or Follow",
+                "p2": "IFU Wechat Official Account:",
                 "p3": "Zhihu:",
                 "p4": "Bilibili:",
                 "p5": "Instagram:",
