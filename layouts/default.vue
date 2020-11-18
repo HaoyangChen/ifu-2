@@ -2,13 +2,11 @@
     <div id="app">
         <Header />
         <nuxt />
-        <GoTop></GoTop>
         <Footer />
     </div>
 </template>
 
 <script>
-import GoTop from '@inotom/vue-go-top';
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
@@ -16,7 +14,6 @@ export default {
     components: {
         Header,
         Footer,
-        GoTop,
     },
 };
 </script>
