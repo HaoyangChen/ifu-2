@@ -562,6 +562,16 @@ export default {
     .volunteer-become {
         width: 62%;
         line-height: 31px;
+        max-height: 143px;
+        color: #ffffff;
+        h2 {
+            font-weight: bolder;
+        }
+    }
+    :lang(en).volunteer-become {
+        width: 62%;
+        line-height: 31px;
+        max-height: 205px;
         color: #ffffff;
         h2 {
             font-weight: bolder;
@@ -569,6 +579,7 @@ export default {
     }
     .campus-volunteer-lr {
         display: flex;
+        // margin-top: 5.8%;
         margin-top: 70px;
         .requirement {
             background-color: white;
@@ -633,7 +644,7 @@ export default {
 :lang(en).become-campus-volunteer {
     background: url(~assets/volunteer/become-campus-volunteer-en.png) no-repeat;
     background-color: rgba(201, 215, 74, 0.2);
-    background-size: 100%;
+    background-size: 100% 369px;
 }
 
 @media (max-width: $mobile-max-width) {
@@ -724,6 +735,8 @@ export default {
                     img {
                         width: 360px;
                         height: 214px;
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
                     }
                     .subtitle-content {
                         height: 88px;
@@ -733,6 +746,7 @@ export default {
                         align-items: center;
                         p {
                             margin: 0;
+                            width: 70%;
                         }
                     }
                 }
@@ -766,6 +780,13 @@ export default {
             width: 100%;
             background-color: #c9d74a;
             padding: 15px 30px;
+            max-height: 100%;
+        }
+        :lang(en).volunteer-become {
+            width: 100%;
+            background-color: #c9d74a;
+            padding: 15px 30px;
+            max-height: 100%;
         }
         .campus-volunteer-lr {
             margin-top: 25px;
@@ -848,6 +869,10 @@ export default {
                 }
             }
         }
+    }
+    :lang(en).become-campus-volunteer {
+        background-image: none;
+        padding: 0;
     }
 }
 </style>
