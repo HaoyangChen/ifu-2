@@ -33,13 +33,14 @@ export default {
     width: 56px;
     height: 56px;
     position: fixed;
-    bottom: 30px;
-    left: 33px;
+    bottom: 35px;
+    right: 110px;
     border-radius: 50%;
     background-color: rgba(211, 211, 211, 0.6);
     transform: scale(1);
     transition: transform 0.5s;
     display: flex;
+    z-index: 2;
     justify-content: center;
 }
 #top .material-icons {
