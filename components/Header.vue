@@ -7,11 +7,25 @@
             <nuxt-link class="mobile logo-mobile" :to="localePath('/')" exact>
                 <img src="../assets/header/logo_mobile.png" />
             </nuxt-link>
-            <p class="mobile title">
+            <!-- <a
+                :class="isServicePath ? 'nuxt-link-active' : ''"
+                @click="toggleNav"
+            >
+                <p class="mobile title">
+                    INTERNATIONAL FAMILY UNION
+                    <br />
+                </p>
+                <div class="arrow desktop" />
+                <div v-if="showServiceMenu" class="close-arrow mobile" />
+                <div v-else class="open-arrow mobile" />
+            </a> -->
+            <a class="mobile title showNavLink" @click="toggleNav">
                 INTERNATIONAL FAMILY UNION
-                <br />
-            </p>
-            <div class="header-menu">
+                <div v-if="showNav" class="close-arrow mobile"></div>
+                <div v-else class="open-arrow mobile"></div>
+            </a>
+
+            <div v-if="showNav" class="header-menu">
                 <n-link class="n-link" :to="localePath('/')" exact>{{
                     $t('header.home')
                 }}</n-link>
@@ -206,6 +220,7 @@ export default {
             showAboutMenu: false,
             showServiceMenu: false,
             showConnectMenu: false,
+            showNav: true,
         };
     },
     computed: {
@@ -243,6 +258,7 @@ export default {
             this.showServiceMenu = false;
             this.showAboutMenu = false;
             this.showConnectMenu = false;
+            this.showNav = false;
         },
     },
     methods: {
@@ -254,6 +270,9 @@ export default {
         },
         toggleConnectMenu() {
             this.showConnectMenu = !this.showConnectMenu;
+        },
+        toggleNav() {
+            this.showNav = !this.showNav;
         },
     },
 };
@@ -463,6 +482,7 @@ span {
 
     .title {
         text-align: center;
+        display: inline;
     }
 
     .header-inner {
@@ -478,7 +498,6 @@ span {
         text-align: center;
         display: block;
     }
-
     .n-link:hover {
         border-bottom: none;
     }
