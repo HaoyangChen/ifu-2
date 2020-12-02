@@ -101,6 +101,7 @@
                     <a
                         class="link"
                         target="_blank"
+                        id="Join_us_Campus_Volunteer"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
                         >{{ $t('volunteer.picLink') }}
                     </a>
@@ -362,6 +363,7 @@ export default {
     background: url(~assets/volunteer/section-school.png) no-repeat;
     flex-wrap: wrap;
     padding-bottom: 100px;
+    position: relative;
 
     .title {
         font-weight: bolder;
@@ -385,7 +387,7 @@ export default {
 
     div {
         width: 25%;
-        height: 250px;
+        height: auto;
         overflow: visible;
     }
     div p {
@@ -398,6 +400,9 @@ export default {
 
     .bubble-section {
         width: 100%;
+        position: absolute;
+        top: 40%;
+        right: 2%;
     }
     .pic {
         width: 337px;
@@ -688,6 +693,10 @@ export default {
             height: 252px;
             width: auto;
             display: none;
+        }
+        .bubble-section {
+            width: 100%;
+            position: inherit;
         }
         .pic {
             left: 0;
