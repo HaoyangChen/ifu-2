@@ -36,7 +36,7 @@ export default {
     bottom: 35px;
     right: 110px;
     border-radius: 50%;
-    background-color: rgba(211, 211, 211, 0.6);
+    background-color: rgba(109, 205, 255, 0.5);
     transform: scale(1);
     transition: transform 0.5s;
     display: flex;
@@ -45,13 +45,14 @@ export default {
 }
 #top .material-icons {
     font-size: 60px;
-    color: black;
+    color: white;
 }
 #top:hover {
     transform: scale(1.2);
+    background-color: rgba(109, 205, 255, 1);
 }
 #top:hover .material-icons {
-    color: #22a5d8;
+    // color: #22a5d8;
 }
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
