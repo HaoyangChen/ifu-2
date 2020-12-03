@@ -4,9 +4,24 @@
             <nuxt-link class="desktop logo" :to="localePath('/')" exact>
                 <img src="../assets/header/logo_mobile.png" />
             </nuxt-link>
-            <nuxt-link class="mobile logo-mobile" :to="localePath('/')" exact>
-                <img src="../assets/header/logo_mobile.png" />
-            </nuxt-link>
+            <div class="top mobile">
+                <nuxt-link
+                    class="mobile logo-mobile"
+                    :to="localePath('/')"
+                    exact
+                >
+                    <img src="../assets/header/logo_mobile.png" />
+                </nuxt-link>
+                <a class="mobile title showNavLink" @click="toggleNav">
+                    <div v-if="showNav" class="mobile open">
+                        <img src="../assets/header/hamburger.svg" alt="" />
+                    </div>
+                    <div v-else class="mobile close">
+                        <img src="../assets/header/close.svg" alt="" />
+                    </div>
+                </a>
+            </div>
+
             <!-- <a
                 :class="isServicePath ? 'nuxt-link-active' : ''"
                 @click="toggleNav"
@@ -19,12 +34,6 @@
                 <div v-if="showServiceMenu" class="close-arrow mobile" />
                 <div v-else class="open-arrow mobile" />
             </a> -->
-            <a class="mobile title showNavLink" @click="toggleNav">
-                INTERNATIONAL FAMILY UNION
-                <div v-if="showNav" class="close-arrow mobile"></div>
-                <div v-else class="open-arrow mobile"></div>
-            </a>
-
             <div v-if="showNav" class="header-menu">
                 <n-link class="n-link" :to="localePath('/')" exact>{{
                     $t('header.home')
@@ -469,6 +478,13 @@ span {
 
 /* Mobile style */
 @media (max-width: $mobile-max-width) {
+    .top {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        width: 100%;
+    }
     header {
         border-bottom: none;
     }
@@ -520,7 +536,18 @@ span {
     .service-menu {
         left: 50px;
     }
-
+    .showNavLink {
+        height: 87px;
+        img {
+            width: 30px;
+            height: 30px;
+            margin-top: 30px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .open-arrow,
     .close-arrow {
         display: inline-block;
@@ -538,7 +565,6 @@ span {
     .close-arrow {
         transform: rotateZ(-90deg);
     }
-
     .nuxt-link-active:not(.logo-mobile) {
         color: black;
         background: $light-blue;
