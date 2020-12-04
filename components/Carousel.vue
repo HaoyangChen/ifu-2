@@ -26,11 +26,11 @@
         <div class="list">
             <a
                 v-for="(item, i) in list"
+                :id="setId(i)"
                 :key="i"
                 :style="listStyle(list.length, i, item.backgroundColor)"
-                @click="changeItem(item, i)"
-                :id="setId(i)"
                 :class="'googleTag'"
+                @click="changeItem(item, i)"
             >
                 <div class="list-item">
                     <div class="num">{{ '0' + (i + 1) }}</div>

@@ -99,9 +99,9 @@
                     <span>{{ $t('volunteer.picPara') }}</span>
                     <br />
                     <a
+                        id="Join_us_Campus_Volunteer"
                         class="link"
                         target="_blank"
-                        id="Join_us_Campus_Volunteer"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
                         >{{ $t('volunteer.picLink') }}
                     </a>
