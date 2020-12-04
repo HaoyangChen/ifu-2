@@ -30,7 +30,7 @@
                 :key="i"
                 :style="listStyle(list.length, i, item.backgroundColor)"
                 :class="'googleTag'"
-                @click="changeItem(item, i)"
+                @mouseover="changeItem(item, i)"
             >
                 <div class="list-item">
                     <div class="num">{{ '0' + (i + 1) }}</div>
@@ -183,12 +183,15 @@ export default {
     font-size: 28px;
     display: block;
 }
+
 .list a:hover .num {
     color: inherit;
 }
+
 .num {
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.21);
+    // color: rgba(255, 255, 255, 0.21);
+    color: inherit;
     height: 100%;
     display: flex;
     align-items: center;
