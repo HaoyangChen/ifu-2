@@ -267,7 +267,7 @@ export default {
             this.showServiceMenu = false;
             this.showAboutMenu = false;
             this.showConnectMenu = false;
-            this.showNav = false;
+            this.showNav = true;
         },
     },
     methods: {

@@ -26,11 +26,11 @@
         <div class="list">
             <a
                 v-for="(item, i) in list"
+                :id="setId(i)"
                 :key="i"
                 :style="listStyle(list.length, i, item.backgroundColor)"
-                @click="changeItem(item, i)"
-                :id="setId(i)"
                 :class="'googleTag'"
+                @mouseover="changeItem(item, i)"
             >
                 <div class="list-item">
                     <div class="num">{{ '0' + (i + 1) }}</div>
@@ -183,12 +183,15 @@ export default {
     font-size: 28px;
     display: block;
 }
+
 .list a:hover .num {
     color: inherit;
 }
+
 .num {
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.21);
+    // color: rgba(255, 255, 255, 0.21);
+    color: inherit;
     height: 100%;
     display: flex;
     align-items: center;

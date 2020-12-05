@@ -453,9 +453,9 @@
             <div class="section-requirement mt-recruitment">
                 <div class="half-half-nop">
                     <a
+                        id="Become_Mentor_below"
                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                         target="_blank"
-                        id="Become_Mentor_below"
                         @mouseover="
                             changeMentorImageWhen('over'), (hoverMentor = true)
                         "
@@ -482,9 +482,9 @@
                 </div>
                 <div class="half-half-nop second-nop">
                     <a
+                        id="Become_Mentee_below"
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
-                        id="Become_Mentee_below"
                         @mouseover="
                             changeStudentImageWhen('over'), (hoverMentee = true)
                         "
