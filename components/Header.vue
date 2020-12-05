@@ -14,10 +14,10 @@
                 </nuxt-link>
                 <a class="mobile title showNavLink" @click="toggleNav">
                     <div v-if="showNav" class="mobile open">
-                        <img src="../assets/header/hamburger.svg" alt="" />
+                        <img src="../assets/header/close.svg" alt="" />
                     </div>
                     <div v-else class="mobile close">
-                        <img src="../assets/header/close.svg" alt="" />
+                        <img src="../assets/header/hamburger.svg" alt="" />
                     </div>
                 </a>
             </div>
@@ -494,6 +494,10 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
+        img {
+            transform: scale(0.7);
+            margin-right: 110px;
+        }
     }
 
     .title {
@@ -542,6 +546,7 @@ span {
             width: 30px;
             height: 30px;
             margin-top: 30px;
+            margin-left: 110px;
         }
         display: flex;
         flex-direction: column;
