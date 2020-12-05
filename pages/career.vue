@@ -46,7 +46,7 @@ export default {
     },
     head() {
         return {
-            title: this.$t('header.career') + ' - ' + this.$t('header.orgName'),
+            title: this.$t('header.career'),
         };
     },
 };

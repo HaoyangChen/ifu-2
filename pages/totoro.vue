@@ -263,7 +263,7 @@ export default {
     },
     head() {
         return {
-            title: this.$t('header.totoro') + ' - ' + this.$t('header.orgName'),
+            title: this.$t('header.totoro'),
             meta: [
                 {
                     hid: 'description',

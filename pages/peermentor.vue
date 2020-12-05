@@ -96,10 +96,10 @@
             </div>
             <div class="project-process-section">
                 <div class="blue-bubble-section">
-                    <img
+                    <!-- <img
                         src="@/assets/peermentor/blue_bubble.svg"
                         alt="blue bubble"
-                    />
+                    /> -->
                     <div class="blue-bubble-inner">
                         <h3>
                             {{ $t('peermentor.services.blueBubble.title') }}
@@ -130,10 +130,10 @@
                     </div>
                 </div>
                 <div class="green-bubble-section">
-                    <img
+                    <!-- <img
                         src="@/assets/peermentor/green_bubble.svg"
                         alt="green bubble"
-                    />
+                    /> -->
                     <div class="green-bubble-inner">
                         <h3>
                             {{ $t('peermentor.services.greenBubble.title') }}
@@ -169,17 +169,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="blue-person-section">
-                    <img
-                        src="@/assets/peermentor/blue_person.svg"
-                        alt="blue person"
-                    />
-                </div>
+
                 <div class="blue-outline-section">
-                    <img
-                        src="@/assets/peermentor/blue_outline_bubble.svg"
-                        alt="blue outline bubble"
-                    />
                     <div class="blue-outline-inner">
                         <h3>
                             {{ $t('peermentor.services.rightBubble.title') }}
@@ -687,19 +678,17 @@ h2 {
             position: absolute;
             left: 8%;
 
-            img {
-                width: 110%;
-            }
-
             .blue-bubble-inner {
                 position: absolute;
                 top: 33px;
                 left: 39px;
                 padding-left: 13%;
+                background-color: #e0f5ff;
+                // width: 300px;
                 ul {
                     padding-left: 10%;
-                    // width: max-content;
-                    width: 90%;
+                    width: max-content;
+                    // width: 90%;
                 }
 
                 h3 {
@@ -728,15 +717,11 @@ h2 {
             top: 190px;
             z-index: 2;
 
-            img {
-                width: 130%;
-            }
-
             .green-bubble-inner {
                 position: absolute;
                 top: 50px;
                 left: 53px;
-
+                background-color: #e0f3ed;
                 ul {
                     padding-left: 10%;
                     width: max-content;
@@ -765,13 +750,6 @@ h2 {
                 }
             }
         }
-        .blue-person-section {
-            position: absolute;
-            top: -97px;
-            left: 26%;
-            z-index: 1;
-        }
-
         .blue-outline-section {
             position: absolute;
             // left: 70%;
