@@ -453,7 +453,7 @@ export default {
     },
     head() {
         return {
-            title: this.$t('header.home'),
+            title: this.$t('header.home' + ' ' + 'header.orgName'),
             meta: [
                 {
                     hid: 'description',
