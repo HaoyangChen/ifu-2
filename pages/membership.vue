@@ -52,7 +52,10 @@ export default {
     },
     head() {
         return {
-            title: this.$t('header.membership' + ' ' + 'header.orgName'),
+            title:
+                this.$t('header.membership') +
+                ' - ' +
+                this.$t('header.orgName'),
             meta: [
                 {
                     hid: 'description',
