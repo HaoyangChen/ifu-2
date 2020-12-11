@@ -740,7 +740,8 @@ h2 {
                 border-radius: 40px 40px 40px 40px;
                 ul {
                     padding-left: 10%;
-                    width: max-content;
+                    // width: max-content;
+                    width: 100%;
                 }
 
                 h3 {
@@ -749,11 +750,11 @@ h2 {
             }
 
             :lang(en).blue-bubble-inner {
-                // line-height: 25px;
-                // letter-spacing: 0;
-                // h3 {
-                //     margin-left: 20px;
-                // }
+                line-height: 25px;
+                letter-spacing: 0;
+                h3 {
+                    margin-left: 20px;
+                }
             }
         }
         :lang(en).blue-bubble-section {
@@ -770,7 +771,8 @@ h2 {
                 border-radius: 40px 40px 40px 40px;
                 ul {
                     padding-left: 10%;
-                    width: max-content;
+                    // width: max-content;
+                    width: 100%;
                 }
 
                 h3 {
@@ -778,18 +780,18 @@ h2 {
                 }
             }
             :lang(en).green-bubble-inner {
-                // letter-spacing: 0;
-                // ul {
-                //     // margin-left: 0;
-                //     padding-left: 10%;
-                //     width: max-content;
-                //     li {
-                //         width: 60%;
-                //     }
-                // }
-                // h3 {
-                //     margin-left: 15px;
-                // }
+                letter-spacing: 0;
+                ul {
+                    // margin-left: 0;
+                    padding-left: 10%;
+                    width: max-content;
+                    li {
+                        width: 60%;
+                    }
+                }
+                h3 {
+                    margin-left: 15px;
+                }
             }
         }
         .blue-outline-section {
@@ -797,6 +799,7 @@ h2 {
             height: 400px;
             border: solid 1px #22a5d8;
             z-index: 2;
+            // border-radius: 15px 15px 15px 15px;
             .blue-outline-inner {
                 padding-top: 30px;
                 // position: absolute;
@@ -810,9 +813,8 @@ h2 {
                 }
             }
             :lang(en).blue-outline-inner {
-                // position: absolute;
-                // line-height: 25px;
-                // letter-spacing: 0;
+                line-height: 25px;
+                letter-spacing: 0;
             }
         }
         .standing {
