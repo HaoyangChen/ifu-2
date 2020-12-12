@@ -18,7 +18,7 @@
         "contact": "联系我们",
         "career": "加入我们",
         "support": "支持我们",
-        "orgName": "国际家长汇"
+        "orgName": "International Family Union"
     },
     "footer": {
         "subTitle1": "让留学生活更安全",
@@ -460,12 +460,8 @@
                 "阿尔伯塔大学",
                 "维多利亚大学"
             ],
-            "uk": [
-                "伦敦大学学院"
-            ],
-            "singapore": [
-                "新加坡国立大学"
-            ]
+            "uk": ["伦敦大学学院"],
+            "singapore": ["新加坡国立大学"]
         },
         "history": {
             "2017": {

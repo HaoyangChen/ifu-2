@@ -139,6 +139,30 @@
             "title": "Events in September",
             "description": "As Fall 2020 comes closer and closer, are you well prepared for the upcoming online semester? IFU Totoroad Academy is dedicated to providing help to all students in need, and we have organized a list of useful guidance and advice for those who may feel not prepared enough for the following academic school year. Please join us for the online workshop and get ready for a fresh start!",
             "qrDescription": "* Tips: All the event dates are shown in <span>U.S. time.</span> Scan the QR code to sign up now!"
+        },
+        "resources": {
+            "title": "Quick Resources",
+            "description": "Here are some quick links to resources that we offer to international students and families. The color icon indicators at the bottom right corners of the cards show the audience of the resources. While the purple family icon         is for parents, the orange student icon       is for students. Those resources with both icon indicators are helpful resources for everyone.",
+            "card1": {
+                "title": "IFU-UNIVERSITY WECHAT GROUPS",
+                "li1": "Join the groups and learn more about your child’s life abroad",
+                "li2": "IFU volunteers and seniors in groups for your questions"
+            },
+            "card2": {
+                "title": "IFU WeChat official Account",
+                "li1": "Timely assistance",
+                "li2": "First perspective overseas campus",
+                "li3": "Sharing resources"
+            },
+            "card3": {
+                "title": "Emergency Contact Form",
+                "li1": "Fill out emergency contact form and if emergency happens, our volunteers will help you to find your children immediately"
+            },
+            "card4": {
+                "title": "IFU Click-in Project groups",
+                "li1": "Groups for study, cooking, and excercising, etc.",
+                "li2": "Chat and support each other in the community"
+            }
         }
     },
     "carnival": {

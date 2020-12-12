@@ -95,118 +95,157 @@
                 <h1>{{ $t('peermentor.services.title') }}</h1>
             </div>
             <div class="project-process-section">
-                <div class="blue-bubble-section">
-                    <img
-                        src="@/assets/peermentor/blue_bubble.svg"
-                        alt="blue bubble"
-                    />
-                    <div class="blue-bubble-inner">
-                        <h3>
-                            {{ $t('peermentor.services.blueBubble.title') }}
-                        </h3>
-                        <ul>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item1') }}
-                            </li>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item2') }}
-                            </li>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item3') }}
-                            </li>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item4') }}
-                            </li>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item5') }}
-                            </li>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item6') }}
-                            </li>
-                            <li>
-                                {{ $t('peermentor.services.blueBubble.item7') }}
-                            </li>
-                        </ul>
+                <div class="bubble-section">
+                    <div class="blue-bubble-section">
+                        <div class="blue-bubble-inner">
+                            <h3>
+                                {{ $t('peermentor.services.blueBubble.title') }}
+                            </h3>
+                            <ul>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item1',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item2',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item3',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item4',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item5',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item6',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.blueBubble.item7',
+                                        )
+                                    }}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="green-bubble-section">
-                    <img
+                    <div class="green-bubble-section">
+                        <!-- <img
                         src="@/assets/peermentor/green_bubble.svg"
                         alt="green bubble"
-                    />
-                    <div class="green-bubble-inner">
-                        <h3>
-                            {{ $t('peermentor.services.greenBubble.title') }}
-                        </h3>
-                        <ul>
-                            <li>
+                    /> -->
+                        <div class="green-bubble-inner">
+                            <h3>
                                 {{
-                                    $t('peermentor.services.greenBubble.item1')
+                                    $t('peermentor.services.greenBubble.title')
                                 }}
-                            </li>
-                            <li>
-                                {{
-                                    $t('peermentor.services.greenBubble.item2')
-                                }}
-                            </li>
-                            <li>
-                                {{
-                                    $t('peermentor.services.greenBubble.item3')
-                                }}
-                                <a
-                                    href="https://forms.gle/3EYR58psCfqTsR4Z7"
-                                    target="_blank"
-                                    >{{
+                            </h3>
+                            <ul>
+                                <li>
+                                    {{
                                         $t(
-                                            'peermentor.services.greenBubble.item4',
+                                            'peermentor.services.greenBubble.item1',
                                         )
-                                    }}</a
-                                >
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.greenBubble.item2',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.greenBubble.item3',
+                                        )
+                                    }}
+                                    <a
+                                        href="https://forms.gle/3EYR58psCfqTsR4Z7"
+                                        target="_blank"
+                                        >{{
+                                            $t(
+                                                'peermentor.services.greenBubble.item4',
+                                            )
+                                        }}</a
+                                    >
+                                    {{
+                                        $t(
+                                            'peermentor.services.greenBubble.item5',
+                                        )
+                                    }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="blue-outline-section">
+                        <div class="blue-outline-inner">
+                            <h3>
                                 {{
-                                    $t('peermentor.services.greenBubble.item5')
+                                    $t('peermentor.services.rightBubble.title')
                                 }}
-                            </li>
-                        </ul>
+                            </h3>
+                            <ul>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.rightBubble.item1',
+                                        )
+                                    }}
+                                </li>
+                                <li>
+                                    {{
+                                        $t(
+                                            'peermentor.services.rightBubble.item2',
+                                        )
+                                    }}
+                                </li>
+                            </ul>
+                            <Button
+                                class="register-btn"
+                                scroll
+                                to="#peermentor-recruit-p"
+                            >
+                                {{
+                                    $t(
+                                        'peermentor.services.rightBubble.buttonText',
+                                    )
+                                }}
+                            </Button>
+                        </div>
+                    </div>
+                    <div class="standing">
+                        <img src="@/assets/peermentor/standing.png" />
                     </div>
                 </div>
-                <div class="blue-person-section">
-                    <img
-                        src="@/assets/peermentor/blue_person.svg"
-                        alt="blue person"
-                    />
-                </div>
-                <div class="blue-outline-section">
-                    <img
-                        src="@/assets/peermentor/blue_outline_bubble.svg"
-                        alt="blue outline bubble"
-                    />
-                    <div class="blue-outline-inner">
-                        <h3>
-                            {{ $t('peermentor.services.rightBubble.title') }}
-                        </h3>
-                        <ul>
-                            <li>
-                                {{
-                                    $t('peermentor.services.rightBubble.item1')
-                                }}
-                            </li>
-                            <li>
-                                {{
-                                    $t('peermentor.services.rightBubble.item2')
-                                }}
-                            </li>
-                        </ul>
-                        <Button
-                            class="register-btn"
-                            scroll
-                            to="#peermentor-recruit-p"
-                        >
-                            {{
-                                $t('peermentor.services.rightBubble.buttonText')
-                            }}
-                        </Button>
-                    </div>
-                </div>
+
                 <!-- height of section -->
                 <div class="project-process-height"></div>
                 <!-- phases -->
@@ -462,6 +501,7 @@
             <div class="section-requirement mt-recruitment">
                 <div class="half-half-nop">
                     <a
+                        id="Become_Mentor_below"
                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                         target="_blank"
                         @mouseover="
@@ -490,6 +530,7 @@
                 </div>
                 <div class="half-half-nop second-nop">
                     <a
+                        id="Become_Mentee_below"
                         href="https://forms.gle/qrmRz8E6TgFFD7BK7"
                         target="_blank"
                         @mouseover="
@@ -677,27 +718,30 @@ h2 {
     }
 
     .project-process-section {
-        line-height: 30px;
-        position: relative;
-
-        letter-spacing: 0.02em;
+        line-height: 40px;
+        .bubble-section {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 70%;
+            margin-left: 5%;
+            padding-top: 100px;
+            // letter-spacing: 0.02em;
+        }
         .blue-bubble-section {
-            position: absolute;
-            left: 8%;
-
-            img {
-                width: 110%;
-            }
-
+            width: 30%;
+            height: 400px;
             .blue-bubble-inner {
-                position: absolute;
-                top: 33px;
-                left: 39px;
+                padding-top: 30px;
                 padding-left: 13%;
+                background-color: #e0f5ff;
+                height: 100%;
+                border-radius: 40px 40px 40px 40px;
                 ul {
                     padding-left: 10%;
                     // width: max-content;
-                    width: 90%;
+                    width: 100%;
                 }
 
                 h3 {
@@ -706,9 +750,6 @@ h2 {
             }
 
             :lang(en).blue-bubble-inner {
-                position: absolute;
-                left: 8%;
-                top: 5%;
                 line-height: 25px;
                 letter-spacing: 0;
                 h3 {
@@ -717,27 +758,21 @@ h2 {
             }
         }
         :lang(en).blue-bubble-section {
-            position: absolute;
-            left: 4%;
         }
         .green-bubble-section {
-            position: absolute;
-            left: 27%;
-            top: 190px;
             z-index: 2;
-
-            img {
-                width: 130%;
-            }
-
+            width: 30%;
+            height: 300px;
             .green-bubble-inner {
-                position: absolute;
-                top: 50px;
-                left: 53px;
-
+                padding-top: 30px;
+                background-color: #e0f3ed;
+                padding-left: 10%;
+                height: 100%;
+                border-radius: 40px 40px 40px 40px;
                 ul {
                     padding-left: 10%;
-                    width: max-content;
+                    // width: max-content;
+                    width: 100%;
                 }
 
                 h3 {
@@ -745,11 +780,7 @@ h2 {
                 }
             }
             :lang(en).green-bubble-inner {
-                position: absolute;
-                // line-height: 40px;
                 letter-spacing: 0;
-                top: 26px;
-                left: 30px;
                 ul {
                     // margin-left: 0;
                     padding-left: 10%;
@@ -763,36 +794,37 @@ h2 {
                 }
             }
         }
-        .blue-person-section {
-            position: absolute;
-            top: -97px;
-            left: 26%;
-            z-index: 1;
-        }
-
         .blue-outline-section {
-            position: absolute;
-            // left: 70%;
-            top: 0px;
-            right: 8%;
+            width: 30%;
+            height: 400px;
+            border: solid 1px #22a5d8;
+            z-index: 2;
+            // border-radius: 15px 15px 15px 15px;
             .blue-outline-inner {
-                position: absolute;
-                top: 69px;
-                left: 60px;
+                padding-top: 30px;
+                // position: absolute;
+                // top: 69px;
+                // left: 60px;
+                height: 100%;
+                background-color: white;
+                padding-left: 10%;
                 h3 {
                     margin-left: 10%;
                 }
             }
             :lang(en).blue-outline-inner {
-                position: absolute;
                 line-height: 25px;
                 letter-spacing: 0;
             }
         }
+        .standing {
+            position: absolute;
+            right: 12%;
+        }
     }
 
     .project-process-height {
-        height: 470px;
+        height: 100px;
     }
 
     .project-process-phases {

@@ -26,9 +26,11 @@
         <div class="list">
             <a
                 v-for="(item, i) in list"
+                :id="setId(i)"
                 :key="i"
                 :style="listStyle(list.length, i, item.backgroundColor)"
-                @click="changeItem(item, i)"
+                :class="'googleTag'"
+                @mouseover="changeItem(item, i)"
             >
                 <div class="list-item">
                     <div class="num">{{ '0' + (i + 1) }}</div>
@@ -115,6 +117,17 @@ export default {
             style.backgroundColor = backgroundColor;
             return style;
         },
+        setId(index) {
+            let idName;
+            if (index === 0) {
+                idName = 'TOTOROAD_01';
+            } else if (index === 1) {
+                idName = 'MEMBERSHIP_03';
+            } else if (index === 2) {
+                idName = 'PARTNERS_SERVICES_04';
+            }
+            return idName;
+        },
     },
 };
 </script>
@@ -165,16 +178,20 @@ export default {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     position: relative;
 }
+
 .list-item span {
     font-size: 28px;
     display: block;
 }
+
 .list a:hover .num {
     color: inherit;
 }
+
 .num {
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.21);
+    // color: rgba(255, 255, 255, 0.21);
+    color: inherit;
     height: 100%;
     display: flex;
     align-items: center;

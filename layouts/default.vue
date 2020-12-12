@@ -1,8 +1,18 @@
 <template>
     <div id="app">
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <div id="anchor"></div>
         <Header />
         <nuxt />
         <Footer />
+        <a href="#anchor">
+            <div id="top">
+                <span class="material-icons"> keyboard_arrow_up </span>
+            </div>
+        </a>
     </div>
 </template>
 
@@ -19,6 +29,31 @@ export default {
 </script>
 
 <style lang="scss">
+#top {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    bottom: 35px;
+    right: 110px;
+    border-radius: 50%;
+    background-color: rgba(109, 205, 255, 0.5);
+    transform: scale(1);
+    transition: transform 0.5s;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+}
+#top .material-icons {
+    font-size: 60px;
+    color: white;
+}
+#top:hover {
+    transform: scale(1.2);
+    background-color: rgba(109, 205, 255, 1);
+}
+#top:hover .material-icons {
+    // color: #22a5d8;
+}
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

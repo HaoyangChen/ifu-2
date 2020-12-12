@@ -99,6 +99,7 @@
                     <span>{{ $t('volunteer.picPara') }}</span>
                     <br />
                     <a
+                        id="Join_us_Campus_Volunteer"
                         class="link"
                         target="_blank"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfQSwvr7oNnFr5_T2SEKr79CwxXJglFjs6zFslk8mEweCJsMw/viewform"
@@ -362,6 +363,7 @@ export default {
     background: url(~assets/volunteer/section-school.png) no-repeat;
     flex-wrap: wrap;
     padding-bottom: 100px;
+    position: relative;
 
     .title {
         font-weight: bolder;
@@ -385,7 +387,7 @@ export default {
 
     div {
         width: 25%;
-        height: 250px;
+        height: auto;
         overflow: visible;
     }
     div p {
@@ -398,6 +400,9 @@ export default {
 
     .bubble-section {
         width: 100%;
+        position: absolute;
+        top: 40%;
+        right: 2%;
     }
     .pic {
         width: 337px;
@@ -562,6 +567,16 @@ export default {
     .volunteer-become {
         width: 62%;
         line-height: 31px;
+        max-height: 143px;
+        color: #ffffff;
+        h2 {
+            font-weight: bolder;
+        }
+    }
+    :lang(en).volunteer-become {
+        width: 62%;
+        line-height: 31px;
+        max-height: 205px;
         color: #ffffff;
         h2 {
             font-weight: bolder;
@@ -569,6 +584,7 @@ export default {
     }
     .campus-volunteer-lr {
         display: flex;
+        // margin-top: 5.8%;
         margin-top: 70px;
         .requirement {
             background-color: white;
@@ -633,7 +649,7 @@ export default {
 :lang(en).become-campus-volunteer {
     background: url(~assets/volunteer/become-campus-volunteer-en.png) no-repeat;
     background-color: rgba(201, 215, 74, 0.2);
-    background-size: 100%;
+    background-size: 100% 369px;
 }
 
 @media (max-width: $mobile-max-width) {
@@ -677,6 +693,10 @@ export default {
             height: 252px;
             width: auto;
             display: none;
+        }
+        .bubble-section {
+            width: 100%;
+            position: inherit;
         }
         .pic {
             left: 0;
@@ -724,6 +744,8 @@ export default {
                     img {
                         width: 360px;
                         height: 214px;
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
                     }
                     .subtitle-content {
                         height: 88px;
@@ -733,6 +755,7 @@ export default {
                         align-items: center;
                         p {
                             margin: 0;
+                            width: 70%;
                         }
                     }
                 }
@@ -766,6 +789,13 @@ export default {
             width: 100%;
             background-color: #c9d74a;
             padding: 15px 30px;
+            max-height: 100%;
+        }
+        :lang(en).volunteer-become {
+            width: 100%;
+            background-color: #c9d74a;
+            padding: 15px 30px;
+            max-height: 100%;
         }
         .campus-volunteer-lr {
             margin-top: 25px;
@@ -848,6 +878,10 @@ export default {
                 }
             }
         }
+    }
+    :lang(en).become-campus-volunteer {
+        background-image: none;
+        padding: 0;
     }
 }
 </style>
