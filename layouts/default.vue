@@ -169,5 +169,10 @@ section {
             font-size: $h2-size;
         }
     }
+    .navtop {
+        position: fixed;
+        right: 32px;
+        bottom: 110px;
+    }
 }
 </style>
