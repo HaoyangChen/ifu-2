@@ -186,15 +186,17 @@
                                             'peermentor.services.greenBubble.item3',
                                         )
                                     }}
-                                    <a
+                                    <!-- <a
                                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                                         target="_blank"
-                                        >{{
-                                            $t(
-                                                'peermentor.services.greenBubble.item4',
-                                            )
-                                        }}</a
-                                    >
+                                        >-->
+                                    {{
+                                        $t(
+                                            'peermentor.services.greenBubble.item4',
+                                        )
+                                    }}
+                                    <!-- </a
+                                    > -->
                                     {{
                                         $t(
                                             'peermentor.services.greenBubble.item5',
@@ -737,7 +739,7 @@ h2 {
                 padding-left: 13%;
                 background-color: #e0f5ff;
                 height: 100%;
-                border-radius: 40px 40px 40px 40px;
+                border-radius: 10px 10px 10px 10px;
                 ul {
                     padding-left: 10%;
                     // width: max-content;
@@ -768,7 +770,7 @@ h2 {
                 background-color: #e0f3ed;
                 padding-left: 10%;
                 height: 100%;
-                border-radius: 40px 40px 40px 40px;
+                border-radius: 10px 10px 10px 10px;
                 ul {
                     padding-left: 10%;
                     // width: max-content;
@@ -797,10 +799,11 @@ h2 {
         .blue-outline-section {
             width: 30%;
             height: 400px;
-            border: solid 1px #22a5d8;
+            border: solid 4px #22a5d8;
             z-index: 2;
-            // border-radius: 15px 15px 15px 15px;
+            border-radius: 10px 10px 10px 10px;
             .blue-outline-inner {
+                border-radius: 10px 10px 10px 10px;
                 padding-top: 30px;
                 // position: absolute;
                 // top: 69px;
@@ -1042,15 +1045,15 @@ h2 {
                 line-height: 31px;
                 letter-spacing: 0.03em;
                 background: #ffffff;
-                padding: 20px 20px;
+                padding: 10px 10px;
                 border: 5px solid #efcbab;
-                width: 50%;
+                width: 90%;
 
                 h2 {
                     margin-left: 20px;
                 }
                 ul {
-                    width: 50%;
+                    width: 100%;
                 }
             }
         }
@@ -1079,8 +1082,9 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         background: url('../assets/peermentor/letter_paper.svg') repeat;
-        padding: 8% 13%;
+        padding: 5% 8%;
         background-size: cover;
+        font-size: 15px;
 
         // .three-in-onerow {
         //     display: flex;
@@ -1096,6 +1100,7 @@ h2 {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                padding: 50px;
             }
         }
 
@@ -1117,7 +1122,7 @@ h2 {
             }
         }
         :lang(en).must-know-part {
-            width: 70%;
+            width: 90%;
 
             ul {
                 width: 100%;
@@ -1141,7 +1146,7 @@ h2 {
 .section-requirement {
     display: flex;
     justify-content: center;
-
+    padding-top: 100px;
     .half-half-nop {
         flex-basis: 50%;
         text-align: center;
