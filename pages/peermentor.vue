@@ -186,17 +186,16 @@
                                             'peermentor.services.greenBubble.item3',
                                         )
                                     }}
-                                    <!-- <a
+                                    <a
                                         href="https://forms.gle/3EYR58psCfqTsR4Z7"
                                         target="_blank"
-                                        >-->
-                                    {{
-                                        $t(
-                                            'peermentor.services.greenBubble.item4',
-                                        )
-                                    }}
-                                    <!-- </a
-                                    > -->
+                                    >
+                                        {{
+                                            $t(
+                                                'peermentor.services.greenBubble.item4',
+                                            )
+                                        }}
+                                    </a>
                                     {{
                                         $t(
                                             'peermentor.services.greenBubble.item5',
@@ -209,11 +208,11 @@
 
                     <div class="blue-outline-section">
                         <div class="blue-outline-inner">
-                            <h3>
+                            <h2>
                                 {{
                                     $t('peermentor.services.rightBubble.title')
                                 }}
-                            </h3>
+                            </h2>
                             <ul>
                                 <li>
                                     {{
@@ -702,6 +701,7 @@ h2 {
     display: flex;
     justify-content: center;
     text-decoration: none;
+    margin-right: 0;
 }
 
 .blue-section {
@@ -727,12 +727,12 @@ h2 {
             align-items: flex-end;
             justify-content: space-between;
             width: 70%;
-            margin-left: 5%;
+            margin-left: 9%;
             padding-top: 100px;
             // letter-spacing: 0.02em;
         }
         .blue-bubble-section {
-            width: 30%;
+            width: 32%;
             height: 400px;
             .blue-bubble-inner {
                 padding-top: 30px;
@@ -763,7 +763,7 @@ h2 {
         }
         .green-bubble-section {
             z-index: 2;
-            width: 30%;
+            width: 32%;
             height: 300px;
             .green-bubble-inner {
                 padding-top: 30px;
@@ -776,7 +776,12 @@ h2 {
                     // width: max-content;
                     width: 100%;
                 }
-
+                a:before {
+                    color: black;
+                }
+                a:after {
+                    color: black;
+                }
                 h3 {
                     line-height: 0px;
                 }
@@ -797,7 +802,7 @@ h2 {
             }
         }
         .blue-outline-section {
-            width: 30%;
+            width: 32%;
             height: 400px;
             border: solid 4px #22a5d8;
             z-index: 2;
@@ -811,6 +816,7 @@ h2 {
                 height: 100%;
                 background-color: white;
                 padding-left: 10%;
+                text-align: center;
                 h3 {
                     margin-left: 10%;
                 }
@@ -818,11 +824,16 @@ h2 {
             :lang(en).blue-outline-inner {
                 line-height: 25px;
                 letter-spacing: 0;
+                padding: 5px;
+                padding-top: 100px;
+                h2 {
+                    text-align: center;
+                }
             }
         }
         .standing {
             position: absolute;
-            right: 12%;
+            right: 9%;
         }
     }
 
@@ -1151,7 +1162,6 @@ h2 {
         flex-basis: 50%;
         text-align: center;
         color: #ffffff;
-
         .rectangle-mentor {
             background-color: #269cd1;
         }
