@@ -243,7 +243,7 @@
                         </div>
                     </div>
                     <div class="standing">
-                        <img src="@/assets/peermentor/standing.png" />
+                        <img src="@/assets/peermentor/standing.svg" />
                     </div>
                 </div>
 
@@ -701,7 +701,7 @@ h2 {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    margin-right: 0;
+    margin-right: -50px;
 }
 
 .blue-section {
@@ -752,7 +752,7 @@ h2 {
             }
 
             :lang(en).blue-bubble-inner {
-                line-height: 25px;
+                line-height: 29px;
                 letter-spacing: 0;
                 h3 {
                     margin-left: 20px;
@@ -766,7 +766,7 @@ h2 {
             width: 32%;
             height: 300px;
             .green-bubble-inner {
-                padding-top: 30px;
+                padding-top: 50px;
                 background-color: #e0f3ed;
                 padding-left: 10%;
                 height: 100%;
@@ -788,6 +788,7 @@ h2 {
             }
             :lang(en).green-bubble-inner {
                 letter-spacing: 0;
+                line-height: 29px;
                 ul {
                     // margin-left: 0;
                     padding-left: 10%;
@@ -810,6 +811,8 @@ h2 {
             .blue-outline-inner {
                 border-radius: 10px 10px 10px 10px;
                 padding-top: 30px;
+                padding-left: 5px;
+                padding-right: 5px;
                 // position: absolute;
                 // top: 69px;
                 // left: 60px;
@@ -822,7 +825,7 @@ h2 {
                 }
             }
             :lang(en).blue-outline-inner {
-                line-height: 25px;
+                line-height: 35px;
                 letter-spacing: 0;
                 padding: 5px;
                 padding-top: 100px;
