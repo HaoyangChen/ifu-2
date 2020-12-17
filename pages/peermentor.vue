@@ -735,11 +735,10 @@ h2 {
             width: 32%;
             height: 100%;
             .blue-bubble-inner {
-                padding-top: 30px;
-                padding-left: 13%;
                 background-color: #e0f5ff;
                 height: 100%;
                 border-radius: 10px 10px 10px 10px;
+                padding: 40px 30px;
                 ul {
                     padding-left: 10%;
                     // width: max-content;
@@ -764,9 +763,9 @@ h2 {
             .green-bubble-inner {
                 padding-top: 50px;
                 background-color: #e0f3ed;
-                padding-left: 10%;
                 height: 100%;
                 border-radius: 10px 10px 10px 10px;
+                padding: 40px 30px;
                 ul {
                     padding-left: 10%;
                     // width: max-content;
@@ -800,12 +799,13 @@ h2 {
             border-radius: 10px 10px 10px 10px;
             .blue-outline-inner {
                 border-radius: 10px 10px 10px 10px;
-                padding-top: 30px;
                 padding-left: 5px;
                 padding-right: 5px;
                 // position: absolute;
                 // top: 69px;
                 // left: 60px;
+                padding-top: 50px;
+                padding-bottom: 100px;
                 height: 100%;
                 background-color: white;
                 padding-left: 10%;
@@ -818,7 +818,8 @@ h2 {
                 line-height: 35px;
                 letter-spacing: 0;
                 padding: 5px;
-                padding-top: 100px;
+                padding-top: 50px;
+                padding-bottom: 100px;
                 h2 {
                     text-align: center;
                 }
@@ -1319,6 +1320,11 @@ p {
         .project-process-section {
             .bubble-section {
                 flex-direction: column;
+                padding-top: 0px;
+                width: 100%;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
                 .blue-bubble-section {
                     width: 100%;
                 }
@@ -1327,10 +1333,30 @@ p {
                 }
                 .blue-outline-section {
                     width: 100%;
+                    .blue-outline-inner {
+                        padding-bottom: 20px;
+                        h2 {
+                            text-align: left;
+                        }
+                        ul {
+                            text-align: left;
+                            margin-left: -5%;
+                        }
+                        .register-btn {
+                            justify-content: flex-start;
+                        }
+                    }
                 }
                 .standing {
                     position: relative;
+                    margin-left: auto;
+                    display: block;
+                    margin-right: auto;
+                    right: 0;
                 }
+            }
+            .project-process-height {
+                height: 20px;
             }
         }
     }
