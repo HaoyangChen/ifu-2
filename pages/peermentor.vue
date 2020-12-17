@@ -1335,6 +1335,7 @@ p {
                     width: 100%;
                     .blue-outline-inner {
                         padding-bottom: 20px;
+                        padding-left: 10%;
                         h2 {
                             text-align: left;
                         }
