@@ -827,7 +827,7 @@ h2 {
         }
         .standing {
             position: absolute;
-            right: 9%;
+            right: 12%;
         }
     }
 
