@@ -467,12 +467,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -649,9 +645,9 @@
         "name19": "Kaitong Zhou",
         "title20": "Manager",
         "name20": "Xiaoqin (Sherry) Gui",
-        "title21": "Officer (Lead Frontend Engineer)",
+        "title21": "Officer (Lead Software Engineer)",
         "name21": "Haoyang (Eric) Chen",
-        "title22": "Officer (Frontend Engineer)",
+        "title22": "Officer (Software Engineer)",
         "name22": "Yutao Ma",
         "title23": "Officer (UI/UX Designer)",
         "name23": "Hao Li",

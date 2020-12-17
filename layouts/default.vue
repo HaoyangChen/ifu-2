@@ -171,8 +171,8 @@ section {
     }
     .navtop {
         position: fixed;
-        right: 32px;
-        bottom: 110px;
+        right: 3%;
+        bottom: 13%;
     }
 }
 </style>

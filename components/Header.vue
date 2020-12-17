@@ -2,7 +2,7 @@
     <header>
         <div class="header-inner">
             <nuxt-link class="desktop logo" :to="localePath('/')" exact>
-                <img src="../assets/header/logo_mobile.png" />
+                <img src="../assets/header/logo_mobile.svg" />
             </nuxt-link>
             <div class="top mobile">
                 <nuxt-link
@@ -10,7 +10,7 @@
                     :to="localePath('/')"
                     exact
                 >
-                    <img src="../assets/header/logo_mobile.png" />
+                    <img src="../assets/header/logo_mobile.svg" />
                 </nuxt-link>
                 <a class="mobile title showNavLink" @click="toggleNav">
                     <div v-if="showNav" class="mobile open">

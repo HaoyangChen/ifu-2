@@ -1114,7 +1114,7 @@ h2 {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                padding: 50px;
+                // padding: 50px;
             }
         }
 
@@ -1244,7 +1244,7 @@ p {
     }
 
     .mt-forletter {
-        margin-top: 0px;
+        margin-top: 0px !important;
     }
 
     .whypeermentor {
@@ -1270,12 +1270,23 @@ p {
 
     .section-requirement {
         flex-direction: column;
+        padding-top: 0px;
+        .half-half-nop {
+            .rectangle {
+                width: 80%;
+                height: 245px;
+                .recruit-image {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     .peermentor-letter-section {
         padding: 0px;
         .peermentor-letter-innersection {
             width: 100%;
+            background-position: center;
 
             // .three-in-onerow {
             //     display: none;
@@ -1456,7 +1467,7 @@ p {
         }
 
         .second-nop {
-            margin-top: 150px;
+            margin-top: 78px;
             margin-bottom: 47px;
         }
     }
