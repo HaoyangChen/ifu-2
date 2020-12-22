@@ -617,6 +617,25 @@ export default {
             this.currentStudentImage = this.imagesStudent[state];
         },
     },
+    head() {
+        return {
+            title:
+                this.$t('header.peermentor') + ' ' + this.$t('header.orgName'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('peermentor.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '朋辈项目, 支持非政府组织, 支持留学生, 朋辈导师, 成为导师, 成为学员',
+                },
+            ],
+        };
+    },
 };
 </script>
 
