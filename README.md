@@ -2,6 +2,8 @@
 
 This is the source code for the official website of Internation Family Union (IFU), a registered Non-Governmental Organization (NGO) in the United States
 
+[Visit IFU Official Website](https://ifuglobal.org/)
+
 ## Framework
 
 -   [Nuxt.js](https://nuxtjs.org/), an open-source web application framework that supports server-side rendering based on Vue.js, Node.js, Webpack and Babel.js
@@ -13,7 +15,7 @@ This is the source code for the official website of Internation Family Union (IF
 -   lang: language files
 -   layouts：default.vue - Template file for all pages
 -   pages：webpage files，each of which automatically configures a route for the corresponding filename
-    -   Example：index.vue will be shown in [https://ifu-china.com/](https://ifu-china.com/), and about.vue will be shown in [https://ifu-china.com/about/](https://ifu-china.com/about/)
+    -   Example：index.vue will be shown in [https://ifuglobal.org/](https://ifuglobal.org/), and about.vue will be shown in [https://ifuglobal.org/about/](https://ifuglobal.org/about/)
 -   plugins: Loaded JS plug-in. Currently, we only have one chat box plug-in in this folder
 -   static：Static files other than image files. Currently, we only have site icons in this folder
 -   tabs：subpages - Use with components/Tab.vue to switch pages based on different tabs selected
@@ -79,7 +81,7 @@ Submit a pull request from the dev branch to the master branch and request Haoya
 
 -   We used [Vercel](https://vercel.com/), a platform that deploys project automatically on every PR with the Github integration, to deploy the website
     -   all commits pushed to dev branch will update [https://test.ifu-china.com/](https://test.ifu-china.com/)
-    -   all commits pushed to master branch will update both [https://ifu-china.com/](https://ifu-china.com/) and [https://www.ifu-china.com/](https://www.ifu-china.com/)
+    -   all commits pushed to master branch will update [https://ifuglobal.org/](https://ifuglobal.org/)
     -   Because we specified to use dev branch for development，you should submit a pull request [Pull Request](https://github.com/HaoyangChen/ifu-2/pulls) from dev branch to master branch
 
 ## Copyright & License
