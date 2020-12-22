@@ -38,10 +38,10 @@
                 <n-link class="n-link" :to="localePath('/')" exact>{{
                     $t('header.home')
                 }}</n-link>
-                <n-link class="n-link" :to="localePath('/about')">{{
+                <!-- <n-link class="n-link" :to="localePath('/about')">{{
                     $t('header.about')
-                }}</n-link>
-                <!-- <div class="about">
+                }}</n-link> -->
+                <div class="about">
                     <a
                         :class="isAboutPath ? 'nuxt-link-active' : ''"
                         @click="toggleAboutMenu"
@@ -54,56 +54,22 @@
                     <div class="about-menu desktop">
                         <div class="service-menu-separator" />
                         <div class="about-menu-inner">
+                            <n-link class="n-link" :to="localePath('/about')">{{
+                                $t('header.about')
+                            }}</n-link>
                             <n-link
                                 class="n-link"
-                                :to="localePath('/ourstory')"
-                                >{{ $t('header.ourstory') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/ourculture')"
-                                >{{ $t('header.ourculture') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/ourjourney')"
-                                >{{ $t('header.ourjourney') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/organizationstructure')"
-                                >{{ $t('header.orgstructure') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/ourteam')"
-                                >{{ $t('header.ourteam') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/volunteer')"
+                                :to="localePath('/campusvolunteer')"
                                 >{{ $t('header.campusvolunteer') }}</n-link
                             >
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div v-if="showAboutMenu" class="about-menu-mobile mobile">
-                    <n-link :to="localePath('/ourstory')">{{
-                        $t('header.ourstory')
+                    <n-link :to="localePath('/about')">{{
+                        $t('header.about')
                     }}</n-link>
-                    <n-link :to="localePath('/ourculture')">{{
-                        $t('header.peermentor')
-                    }}</n-link>
-                    <n-link :to="localePath('/ourjourney')">{{
-                        $t('header.membership')
-                    }}</n-link>
-                    <n-link :to="localePath('/organizationstructure')">{{
-                        $t('header.orgstructure')
-                    }}</n-link>
-                    <n-link :to="localePath('/ourteam')">{{
-                        $t('header.ourteam')
-                    }}</n-link>
-                    <n-link :to="localePath('/campusvolunteers')">{{
+                    <n-link :to="localePath('/campusvolunteer')">{{
                         $t('header.campusvolunteer')
                     }}</n-link>
                 </div>
@@ -128,11 +94,11 @@
                                 :to="localePath('/totoro')"
                                 >{{ $t('header.totoro') }}</n-link
                             >
-                            <!-- <n-link
+                            <n-link
                                 class="n-link"
                                 :to="localePath('/peermentor')"
                                 >{{ $t('header.peermentor') }}</n-link
-                            > -->
+                            >
                             <n-link
                                 class="n-link"
                                 :to="localePath('/membership')"
@@ -148,9 +114,9 @@
                     <n-link :to="localePath('/totoro')">{{
                         $t('header.totoro')
                     }}</n-link>
-                    <!-- <n-link :to="localePath('/peermentor')">{{
+                    <n-link :to="localePath('/peermentor')">{{
                         $t('header.peermentor')
-                    }}</n-link> -->
+                    }}</n-link>
                     <n-link :to="localePath('/membership')">{{
                         $t('header.membership')
                     }}</n-link>
@@ -340,7 +306,7 @@ header {
 
 .about-menu-inner {
     width: 300px;
-    height: 240px;
+    height: 112px;
     left: -120px;
     display: flex;
     flex-direction: column;
