@@ -1327,12 +1327,15 @@ p {
                 margin-right: auto;
                 .blue-bubble-section {
                     width: 100%;
+                    padding-bottom: 20px;
                 }
                 .green-bubble-section {
                     width: 100%;
+                    padding-bottom: 20px;
                 }
                 .blue-outline-section {
                     width: 100%;
+                    padding-bottom: 20px;
                     .blue-outline-inner {
                         padding-bottom: 20px;
                         padding-left: 10%;
@@ -1349,6 +1352,7 @@ p {
                     }
                 }
                 .standing {
+                    padding-top: 20px;
                     position: relative;
                     margin-left: auto;
                     display: block;
@@ -1392,6 +1396,14 @@ p {
     .second-nop {
         margin-top: 150px;
         margin-bottom: 47px;
+    }
+    .section-requirement {
+        .half-half-nop {
+            .rectangle {
+                height: 285px;
+                width: 320px;
+            }
+        }
     }
 }
 
