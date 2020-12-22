@@ -617,6 +617,25 @@ export default {
             this.currentStudentImage = this.imagesStudent[state];
         },
     },
+    head() {
+        return {
+            title:
+                this.$t('header.peermentor') + ' ' + this.$t('header.orgName'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('peermentor.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '朋辈项目, 支持非政府组织, 支持留学生, 朋辈导师, 成为导师, 成为学员',
+                },
+            ],
+        };
+    },
 };
 </script>
 
@@ -1327,12 +1346,15 @@ p {
                 margin-right: auto;
                 .blue-bubble-section {
                     width: 100%;
+                    padding-bottom: 20px;
                 }
                 .green-bubble-section {
                     width: 100%;
+                    padding-bottom: 20px;
                 }
                 .blue-outline-section {
                     width: 100%;
+                    padding-bottom: 20px;
                     .blue-outline-inner {
                         padding-bottom: 20px;
                         padding-left: 10%;
@@ -1349,6 +1371,7 @@ p {
                     }
                 }
                 .standing {
+                    padding-top: 20px;
                     position: relative;
                     margin-left: auto;
                     display: block;
@@ -1392,6 +1415,14 @@ p {
     .second-nop {
         margin-top: 150px;
         margin-bottom: 47px;
+    }
+    .section-requirement {
+        .half-half-nop {
+            .rectangle {
+                height: 285px;
+                width: 320px;
+            }
+        }
     }
 }
 

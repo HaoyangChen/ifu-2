@@ -305,6 +305,27 @@ export default {
             ];
         },
     },
+    head() {
+        return {
+            title:
+                this.$t('header.campusvolunteer') +
+                ' ' +
+                this.$t('header.orgName'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('volunteer.bannerDescrip'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '校园志愿者, 支持非政府组织, 支持留学生, 志愿者活动, 成为校园志愿者, 校园志愿者的职责',
+                },
+            ],
+        };
+    },
 };
 </script>
 
