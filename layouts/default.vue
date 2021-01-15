@@ -9,7 +9,10 @@
         <nuxt />
         <Footer />
         <a href="#anchor">
-            <div id="top">
+            <div
+                class="navbar navtop"
+                :class="{ 'navbar--hidden': !showNavbar }"
+            >
                 <span class="material-icons"> keyboard_arrow_up </span>
             </div>
         </a>
@@ -25,11 +28,43 @@ export default {
         Header,
         Footer,
     },
+    data() {
+        return {
+            showNavbar: false,
+            lastScrollPosition: 0,
+        };
+    },
+    mounted() {
+        window.addEventListener('scroll', this.onScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.onScroll);
+    },
+    methods: {
+        onScroll() {
+            // Get the current scroll position
+            const currentScrollPosition =
+                window.pageYOffset || document.documentElement.scrollTop;
+            // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
+            if (currentScrollPosition < 0) {
+                return;
+            }
+            if (
+                Math.abs(currentScrollPosition - this.lastScrollPosition) < 60
+            ) {
+                return;
+            }
+            // Here we determine whether we need to show or hide the navbar
+            this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+            // Set the current scroll position as the last scroll position
+            this.lastScrollPosition = currentScrollPosition;
+        },
+    },
 };
 </script>
 
 <style lang="scss">
-#top {
+.navtop {
     width: 56px;
     height: 56px;
     position: fixed;
@@ -43,16 +78,13 @@ export default {
     z-index: 2;
     justify-content: center;
 }
-#top .material-icons {
+.navtop .material-icons {
     font-size: 60px;
     color: white;
 }
-#top:hover {
+.navtop:hover {
     transform: scale(1.2);
     background-color: rgba(109, 205, 255, 1);
-}
-#top:hover .material-icons {
-    // color: #22a5d8;
 }
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -71,7 +103,13 @@ body {
     max-width: $page-max-width;
     margin: auto;
 }
-
+.navbar {
+    opacity: 0;
+    transition: opacity 2s;
+}
+.navbar.navbar--hidden {
+    opacity: 1;
+}
 *,
 *:before,
 *:after {
@@ -130,6 +168,11 @@ section {
         > h2 {
             font-size: $h2-size;
         }
+    }
+    .navtop {
+        position: fixed;
+        right: 3%;
+        bottom: 13%;
     }
 }
 </style>
