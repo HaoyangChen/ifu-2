@@ -140,6 +140,52 @@
             "description": "As Fall 2020 comes closer and closer, are you well prepared for the upcoming online semester? IFU Totoroad Academy is dedicated to providing help to all students in need, and we have organized a list of useful guidance and advice for those who may feel not prepared enough for the following academic school year. Please join us for the online workshop and get ready for a fresh start!",
             "qrDescription": "* Tips: All the event dates are shown in <span>U.S. time.</span> Scan the QR code to sign up now!"
         },
+        "newServices": {
+            "title": "What Do We Offer?",
+            "description": "International Family Union (IFU) is composed of overseas fellows. We’re a non-governmental organization that focuses on overseas campus safety and serves international students and their parents. Our programs include Totoroad Academy, IFU Peer Mentor, IFU membership, GRE, CFA, H1B, OPT, CPT, legal service, and other related assistance. Please contact us if you want to know more or cooperate in any field!",
+            "serviceList": {
+                "toto": {
+                    "title": "Totoroad Academy",
+                    "subTitle": "Tutoring and Mentorship",
+                    "bodyTitle": "Academic Mentorship",
+                    "text": "<b>For current and future college students</b><br> Giving hope to students for a better college experience. We offer 1-on-1 mentoring and tutoring so that you have the help you need.",
+                    "bottomText": "WE ARE THE GUARDIANS OF YOUR GPA!"
+                },
+                "peermentor": {
+                    "title": "Peer Mentor",
+                    "subTitle": "Peer Mental Support",
+                    "bodyTitle": "Peer Mentor Support",
+                    "text": "For all international students Our peer mentors walk you through struggles while studying abroad if you are seeking advice for relationships, career, future planning and more.",
+                    "bottomText": "WE ARE YOUR BIG BROTHERS AND SISTERS!"
+                },
+                "membership": {
+                    "title": "Membership",
+                    "subTitle": "IFU Member & Student Card",
+                    "bodyTitle": "Membership",
+                    "bodySubTitle": "IFU Member & Student Identity Card",
+                    "text": "For everyone who wants to join the conversation Informative monthly newsletter straight to your email. Join the conversation directly! Access to other information and resources that’s helpful for your journey. For all international students Worldwide discount included with IFU x ISIC memership.",
+                    "bottomText": "WE ARE THE COMMUNITY FOR YOU!"
+                },
+                "otherservices": {
+                    "title": "Other Services",
+                    "subTitle": "Legal Services & More",
+                    "bodyTitle": "Additional Services",
+                    "bodySubTitle": "Partnered Organization Programs",
+                    "text": "For all IFU members Connect with our partnered organizations for all your other needs.",
+                    "bottomText": "WE ARE HERE FOR YOU!"
+                }
+            }
+        },
+        "calendar": {
+            "title": "Events of the Month",
+            "description": "As Fall 2020 comes closer and closer, are you well prepared for the upcoming online semester? IFU Totoroad Academy is dedicated to providing help to all students in need, and we have organized a list of useful guidance and advice for those who may feel not prepared enough for the following academic school year. Please join us for the online workshop and get ready for a fresh start!",
+            "title1": "TOTOROAD SEMINAR",
+            "description1": "Totoraod Seminar - What You Have to Know Before the Fall Semester",
+            "title2": "TOTOROAD ACADEMY TUTORING",
+            "description2": "Totoroad Academy Tutoring - 30-minutes Free Trial Class",
+            "title3": "TOTOROAD SEMINAR",
+            "description3": "Totoroad Seminar - Grad School Application"
+        },
         "resources": {
             "title": "Quick Resources",
             "description": "Here are some quick links to resources that we offer to international students and families. The color icon indicators at the bottom right corners of the cards show the audience of the resources. While the purple family icon         is for parents, the orange student icon       is for students. Those resources with both icon indicators are helpful resources for everyone.",
