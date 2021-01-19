@@ -425,7 +425,9 @@ header {
         height: auto;
     }
 }
-
+.header-menu.mobile {
+    display: none;
+}
 .header-inner {
     width: 100%;
     height: 111px;
