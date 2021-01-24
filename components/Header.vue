@@ -595,6 +595,9 @@ span {
 
 /* Mobile style */
 @media (max-width: $mobile-max-width) {
+    .header-menu.mobile {
+        display: block;
+    }
     .top {
         display: flex;
         flex-direction: row;
