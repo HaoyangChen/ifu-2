@@ -344,7 +344,7 @@ export default {
             showAboutMenu: false,
             showServiceMenu: false,
             showConnectMenu: false,
-            showNav: false,
+            showNav: true,
         };
     },
     computed: {
