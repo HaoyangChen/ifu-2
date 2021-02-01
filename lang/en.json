@@ -513,8 +513,12 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": ["University College London"],
-            "singapore": ["National University of Singapore"]
+            "uk": [
+                "University College London"
+            ],
+            "singapore": [
+                "National University of Singapore"
+            ]
         },
         "story": {
             "achievement": "Our Achievement",
@@ -1186,5 +1190,56 @@
         "join": "Ready to Join Us?",
         "joinPara": "We’re glad that you agree with our values and want to join our mission to help international families!",
         "button": " Apply now"
+    },
+    "orgStructure": {
+        "banner": {
+            "title": "ORGANiZITION STRUCTURE",
+            "description": "Starting from the social mission of 'making our overseas campus life safer, to keep our parents assured', the IFU core team and all volunteers work hand in hand to present the most authentic campus information to fill the generation gap between students overseas and their parents back at home. In addition, we provide academic, psychological, and legal services to alleviate anxiety, depression, and other issues existing in international families.",
+            "buttonText": "Join the team"
+        },
+        "structure": {
+            "title": "IFU Organization Structure",
+            "content": "IFU is a non-profit organization with a virtual global team run by a core executive team and volunteers.",
+            "content2": "IFU consists of the core executive team, volunteers, and members overall."
+        },
+        "executive": {
+            "title": "IFU Core Executive Team",
+            "content": "The staff team is the core executive team of IFU, who is responsible for the daily operations of the organization. This team is very active, enthusiastic and keen on serving volunteers and international families. IFU is divided into five major departments: Department of Volunteer Management, Department of Cooperative Project, Department of Operation and Event Planning, Department of Administration, and Department of Technology and Design."
+        },
+        "volunteer": {
+            "title": "Volunteers",
+            "content": "IFU volunteers are a group of people who are willing to help others and have a passion for serving society. They assist IFU in completing voluntary work across departments. We hope that our volunteers’ experience in studying abroad and overseas life can contribute to the study abroad conversation and help other international students and their families. Currently, IFU volunteers, made of project volunteers and campus volunteers, are all around the world. All campus volunteers are led by the department of volunteer management to complete IFU’s social mission, “to make our overseas campus life safer, to keep our parents assured”."
+        },
+        "members": {
+            "title": "Members",
+            "para1": "IFU membership program is for everyone who agrees with our social mission, is interested in our activities and wants to be part of the conversation. IFU members help connect IFU with society, international families and international student groups. IFU communicates with the outside world by sharing event info, development updates and resources with our members via monthly newsletter.",
+            "para2": "We welcome all to become our members for free, no matter whether you are international students, parents or the general public, as long as you agree with our social mission or you are interested in our activities or you want to join the community. We make sure our members have access to our latest updates and resources promptly with exclusive membership offers to our programs."
+        },
+        "blueSection": {
+            "title1": "Board of Directors",
+            "content1": "The Board of Directors (BOD) is composed of the founders of IFU, current executives, social figures who have outstanding contributions to IFU from all aspects of life. As a member of the board of directors, the main task is to supervise the operation of IFU, give advice on the future development, and provide sufficient social resources for the organization.",
+            "title2": "Department of Volunteer Management",
+            "content2": "The department of volunteer management mainly leads campus volunteers and project volunteers to better fulfill their duties. We share our experience to help volunteers set up objectives and find the direction when they encounter difficulties, and assist everyone in achieving IFU’s social mission.",
+            "title3": "Campus Volunteer",
+            "content3": "Campus volunteers are distributed in various campuses as student organizations. Through the core methods of emergency help and online information conveyance, campus volunteers are together to achieve the social goal of 'Making our overseas campus life safer, to keep our parents assured'.",
+            "title4": "Project Volunteer",
+            "content4": "Project volunteers are distributed in various projects across departments in IFU. Project volunteers, compared to staff who have relatively less time commitment and work load, assist the staff team to complete work including but not limited to copywriting, translation, and file organization. They help IFU operate more smoothly."
+        },
+        "department": {
+            "title1": "Department of Cooperative Project",
+            "content1": "The department of cooperative project creates and operates IFU’s projects internally, but also partners with other organizations as IFU’s representative. Every project created by IFU is designed to tackle a problem that we have discovered that brings pressure to international families. We hope to help people in need through various free, public welfare projects, to reduce the confusions and worries during study abroad. We hope that all sectors in society can work with us and contribute to the social mission “to make our overseas campus life safer, to keep our parents assured”.",
+            "title2": "Totoroad Academy",
+            "content2": "Totoroad Academy is an academic mentorship project initiated by IFU to help international students all over the world reduce their academic pressure. Our goal is to 'relieve the academic pressure of international students and be the guardian of international students‘ GPA'.",
+            "title3": "Peer Mentor",
+            "content3": "IFU Peer Mentor Program is fully funded and supported by DH International Consulting. This program is free and open to all international students. IFU peer mentors will be students’ best listeners and supporters so that students can freely share their worries. With their own experience and knowledge, peer mentors will guide and inspire students to solve problems through one-on-one, face-to-face chat and group activities. We strive for mutual learning and support among peers."
+        },
+        "department2": {
+            "title1": "Department of Operation and Event Planning",
+            "content1": "The main goal of the department of operation and event planning is to improve IFU’s social credibility, provide a good communication platform for overseas international students and families through effective online information exchange, meanwhile, break the anxiety and worries caused by information mismatched for international students’ families. We publish IFU work and project reports regularly to present our progress to the public shareholders with full transparency. Other duties of the department are managing and operating IFU's social media, including WeChat official account, Sina Weibo, Zhihu, Instagram, LinkedIn and other platforms.",
+            "title2": "Department of Technology and Design",
+            "content2": "Creatives, designers and engineers in the Department of Technology and Design are on the mission to connect IFU with the outside world by building user-centered tools and products such as our official website. Our talents use creative solutions to meet users’ needs and facilitate IFU to achieve their social mission.",
+            "title3": "Department of Administration",
+            "content3": "The Department of Administration is divided into three teams: human resources, finance, and legal affairs. The department is mainly responsible for the internal coordination of IFU and the attendance management of staff, including filing documents, attendance records, recruitment and personnel docking, etc. The goal of the department is to bridge departments in IFU, to assist and cooperate with each department accomplishing their goals, and to achieve IFU's social mission altogether."
+        }
     }
 }
