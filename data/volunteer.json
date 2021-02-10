@@ -1,6 +1,6 @@
 [
     {
-        "name": "Campus Leader",
+        "name": "志愿者组长",
         "department": "志愿者团队",
         "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献；有参加或者组建相关社团的经验",
         "description": "CampusLeader除了履行志愿者的基本职责之外，是该校所有志愿者的总负责人，需要管理、领导团队，负责招募志愿者，参加IFU每月的会议等",
@@ -9,43 +9,13 @@
         "time": "6-12"
     },
     {
-        "name": "Campus Volunteer",
+        "name": "校园志愿者",
         "department": "志愿者团队",
         "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献",
         "description": "履行志愿者的基本职责：确保信息传递，紧急情况发生时能够第一时间与校园志愿者组长协助工作人员及时处理；配合校园志愿者组长以及地区负责人完成IFU“让留学家庭更安心”的使命",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
         "time": "3-12"
-    },
-    {
-        "name": "IFU文件翻译员",
-        "department": "行政部",
-        "requirement": "有中文翻译经验优先",
-        "description": "翻译组织更新的各种文件（中翻英/英翻中）",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1-2",
-        "time": "1-3",
-        "urgent": false
-    },
-    {
-        "name": "法务人员",
-        "department": "行政部",
-        "requirement": "法律专业；熟知Non-profit非营利性组织行业法律；熟知合同法",
-        "description": "IFU合作合同、捐赠合同审核；IFU人事合同审核；IFU章程审核；其他负责人安排的事物",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1",
-        "time": "3-6",
-        "urgent": false
-    },
-    {
-        "name": "微信公众号栏目作者",
-        "department": "运营部",
-        "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；较强的新闻报道写作能力；具有一定英译中能力",
-        "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪；展示真实留学生活，分享优质留学经验；宣传IFU组织形象",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "1-2",
-        "time": "3",
-        "urgent": false
     },
     {
         "name": "公众号责任编辑",
@@ -56,15 +26,6 @@
         "people": "1",
         "time": "6",
         "urgent": false
-    },
-    {
-        "name": "UI/UX设计师",
-        "department": "技术部",
-        "requirement": "能熟练运用Figma/Sketch等软件进行独立网页排版计划；Graphic Design/Interactive Design等相关专业优先，请提供作品集",
-        "description": "根据网页发展需要，根据IFU网页branding进行新的网页版面设计；整理网页开发所需的视觉素材，为开发做准备",
-        "reward": "志愿者证书；Certificate of Appreciation",
-        "people": "2-3",
-        "time": "6"
     },
     {
         "name": "网页前端开发人员",
@@ -126,13 +87,83 @@
         "link": "https://www.wjx.top/jq/89696872.aspx"
     },
     {
-        "name": "志愿者组长",
+        "name": "人事招募助理（前期准备）",
         "department": "志愿者团队",
-        "requirement": "海外各大学的在校生或毕业生；对非政府组织有良好的认知；认同IFU使命，希望用自己的一份力为留学群体作出贡献；有参加或者组建相关社团的经验",
-        "description": "志愿者组长除了履行志愿者的基本职责之外，是该校所有志愿者的总负责人，需要管理、领导团队，负责招募志愿者，参加IFU每月的会议等",
+        "requirement": "Business HR/Admin专业优先；相关HR/Admin实习经历优先",
+        "description": "协助HR招募前期准备工作。工作内容包括但不限于收集招募信息、更新招募职位需求、发布和对接报名人员。",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
-        "time": "6-12",
+        "time": "6",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "人事招募助理（简历筛选）",
+        "department": "志愿者团队",
+        "requirement": "Business HR/Admin专业优先；相关HR/Admin实习经历优先",
+        "description": "协助HR招募人才筛选以及邮件对接工作。具体工作内容包括但不限于根据所需职位的要求对报名人员进行筛选，协调负责人和报名者订阅面试时间，并负责前后的邮件沟通与对接。",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "人事招募助理(挑选与雇佣）",
+        "department": "志愿者团队",
+        "requirement": "Business HR/Admin专业优先；相关HR/Admin实习经历优先",
+        "description": "协助负责人进行面试以及后续工作对接。具体工作包括但不限于全程参与并协助负责人顺利完成面试，面试结束后的后续对接，邮件沟通，以及协议的签署。",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "行政助理",
+        "department": "志愿者团队",
+        "requirement": "IFU文件整理+归档；内部信息更新与邮件通知（生日祝福、假期提醒）；团建活动策划；Member邮件每月更新",
+        "description": "协助负责人进行面试以及后续工作对接。具体工作包括但不限于全程参与并协助负责人顺利完成面试，面试结束后的后续对接，邮件沟通，以及协议的签署。",
+        "reward": "志愿者证书；Certificate of Appreciation",
+        "people": "1-2",
+        "time": "6",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "海外新闻栏目作者",
+        "department": "志愿者团队",
+        "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；对于海外第一手新闻有强关注度、敏感性；有较强的新闻报道写作能力；具有一定英译中能力",
+        "description": "一个月撰写两篇与留学环境相关的海外新闻事件报道，例如：海外安全、政治事件、疫情进展等。",
+        "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
+        "people": "2",
+        "time": "3",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "知乎内容运营",
+        "department": "志愿者团队",
+        "requirement": "至少一年留学经验；有知乎运营经验优先",
+        "description": "负责内容运营规划，定期将数据分析反馈给运营组负责人，优化运营方案。每周至少3次从公众号挑选优质内容搬运到知乎平台。挑选留学相关问题邀请，发布高质量回答",
+        "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
+        "people": "1",
+        "time": "3-6",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "公众号编辑",
+        "department": "志愿者团队",
+        "requirement": "会使用秀米网站进行文章排版；非硬性要求，有图片设计基础优先；如果有社交媒体运营经验、做过博主，请提供相关作品。语言要求：中文（母语/熟练)，英文(熟练)",
+        "description": "根据已有文案素材，进行公众号文章排版，保证最终效果美观吸引用户",
+        "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
+        "people": "1",
+        "time": "6",
+        "link": "https://www.wjx.top/jq/89696872.aspx"
+    },
+    {
+        "name": "微信公众号责任编辑",
+        "department": "志愿者团队",
+        "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；具有一定文字与排版功底，认真细致，有公众号、新闻、个人栏目运营经验优先；具有一定英译中能力。语言要求：中文（母语/熟练)，英文(熟练)",
+        "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪",
+        "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
+        "people": "1",
+        "time": "3",
         "link": "https://www.wjx.top/jq/89696872.aspx"
     }
 ]
