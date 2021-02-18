@@ -10,6 +10,10 @@
         >
             <p v-html="$t('home.banner.description')" />
         </Banner>
+        <section class="work">
+            <h2>What Do We Do?</h2>
+            <img src="@/assets/newhome/work/umbrella.svg" alt="umbrella" />
+        </section>
         <section class="services">
             <h2>{{ $t('home.newServices.title') }}</h2>
             <p>{{ $t('home.newServices.description') }}</p>
@@ -358,6 +362,9 @@ export default {
 //     }
 p {
     line-height: 31px;
+}
+.work {
+    background-color: #f1f9ff;
 }
 .services {
     padding-right: 0;
