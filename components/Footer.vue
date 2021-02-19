@@ -8,7 +8,7 @@
                     <p>{{ $t('footer.subTitle2') }}</p>
                 </div>
                 <p class="rights-reserved light-blue">
-                    © 2020 IFU All Rights Reserved
+                    © 2021 IFU All Rights Reserved
                 </p>
             </div>
             <div class="decoration-line decoration-line1"></div>
