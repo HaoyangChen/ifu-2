@@ -6,7 +6,8 @@
         "description": "CampusLeader除了履行志愿者的基本职责之外，是该校所有志愿者的总负责人，需要管理、领导团队，负责招募志愿者，参加IFU每月的会议等",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "每个校区1",
-        "time": "6-12"
+        "time": "6-12",
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "校园志愿者",
@@ -15,7 +16,8 @@
         "description": "履行志愿者的基本职责：确保信息传递，紧急情况发生时能够第一时间与校园志愿者组长协助工作人员及时处理；配合校园志愿者组长以及地区负责人完成IFU“让留学家庭更安心”的使命",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
-        "time": "3-12"
+        "time": "3-12",
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "公众号责任编辑",
@@ -25,7 +27,8 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "urgent": false
+        "urgent": false,
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "网页前端开发人员",
@@ -34,7 +37,8 @@
         "description": "根据设计稿搭建合理高效的页面；根据用户、数据以及其他成员的反馈对网页进行定期的维护与优化",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1-2",
-        "time": "6"
+        "time": "6",
+        "link": "https://forms.gle/fXQbJEwzkq94S1Ld7"
     },
     {
         "name": "IFU多多罗学术辅导授课导师",
@@ -44,7 +48,7 @@
         "reward": "薪资+奖金约30美金/小时；提供实习/工作证明； 适情况颁发志愿者证书",
         "people": "不限",
         "time": "12",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/BLVh1ojVJtJoAS8t6"
     },
     {
         "name": "多多罗HR助理",
@@ -54,7 +58,7 @@
         "reward": "志愿者证书； Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/BLVh1ojVJtJoAS8t6"
     },
     {
         "name": "市场运营负责人",
@@ -64,7 +68,7 @@
         "reward": "底薪+奖金 推荐信、证书",
         "people": "1",
         "time": "12",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "hhttps://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "社群运营专员",
@@ -74,7 +78,7 @@
         "reward": "志愿者证书； Certificate of Appreciation 表现突出者可申请成为IFU 正式工作人员",
         "people": "3",
         "time": "3",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "网页文案撰写及翻译员",
@@ -84,7 +88,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "人事招募助理（前期准备）",
@@ -94,7 +98,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "人事招募助理（简历筛选）",
@@ -104,7 +108,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "人事招募助理(挑选与雇佣）",
@@ -124,7 +128,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1-2",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "海外新闻栏目作者",
@@ -134,7 +138,7 @@
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "2",
         "time": "3",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "知乎内容运营",
@@ -144,7 +148,7 @@
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "1",
         "time": "3-6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "公众号编辑",
@@ -154,7 +158,7 @@
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "1",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "微信公众号责任编辑",
@@ -164,6 +168,6 @@
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "1",
         "time": "3",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     }
 ]
