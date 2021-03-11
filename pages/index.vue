@@ -162,7 +162,43 @@
                 <img src="@/assets/home/announcement.svg" />
             </section> -->
         <!-- </div> -->
-        <section class="about-us-section background-blue">
+        <section class="container report">
+            <div class="report-container">
+                <div class="report left">
+                    <h2>{{ $t('home.report.leftTitle') }}</h2>
+                    <p>{{ $t('home.report.leftBody') }}</p>
+                    <img src="@/assets/home/clipboard.svg" alt="Clipboard" />
+                    <Button
+                        external
+                        to="https://1drv.ms/b/s!AjLe8dyJJ0x9bV-0xYwPiPPiWZs"
+                        >{{ $t('home.report.leftButton') }}</Button
+                    >
+                </div>
+                <div class="report right">
+                    <h2>{{ $t('home.report.rightTitle') }}</h2>
+                    <p>
+                        {{ $t('home.report.rightBody') }}
+                    </p>
+                    <img
+                        src="@/assets/home/mental-health-report.svg"
+                        alt="Mental health report"
+                    />
+                    <Button
+                        class="right-button right-button-en"
+                        external
+                        to="https://1drv.ms/b/s!AjLe8dyJJ0x9a-u4TrYc80u0PqQ"
+                        >{{ $t('home.report.rightButton') }}</Button
+                    >
+                    <Button
+                        class="right-button right-button-zh"
+                        external
+                        to="https://1drv.ms/b/s!AjLe8dyJJ0x9bBnrsODBQgJHWZE"
+                        >{{ $t('home.report.rightButton') }}</Button
+                    >
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section">
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
@@ -182,7 +218,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us-section">
+        <section class="about-us-section background-blue">
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.studentGroup.title') }}</h2>
@@ -202,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section class="background-blue">
+        <section>
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
@@ -741,6 +777,49 @@ img {
         .carnival-btn {
             text-align: center;
             margin-top: 50px;
+        }
+    }
+}
+
+.report {
+    background-color: #f1f9ff;
+}
+.report-container {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 43%;
+    }
+    .report {
+        p {
+            margin-bottom: 42px;
+        }
+    }
+
+    .right-button {
+        margin-left: 55px;
+    }
+
+    :lang(en) {
+        .right-button-zh {
+            display: none;
+        }
+    }
+
+    :lang(zh) {
+        .right-button-en {
+            display: none;
+        }
+    }
+}
+
+:lang(zh) {
+    .report-container {
+        .left {
+            p {
+                margin-bottom: 100px;
+            }
         }
     }
 }

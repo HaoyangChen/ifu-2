@@ -63,7 +63,8 @@ button:hover {
     background-color: white;
     color: $button-color;
     border: 1px solid $button-color;
-    box-shadow: 0px 10px 15px grey;
+    filter: drop-shadow(0px 10px 15px #ffffffff);
+    // box-shadow: 0px 10px 15px grey;
 }
 
 @media (max-width: $mobile-max-width) {
