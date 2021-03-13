@@ -91,7 +91,7 @@
                         <div class="service-menu-inner">
                             <n-link
                                 class="n-link"
-                                :to="localePath('/totoro')"
+                                :to="localePath('/totoroad')"
                                 >{{ $t('header.totoro') }}</n-link
                             >
                             <n-link
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div v-if="showServiceMenu" class="service-menu-mobile mobile">
-                    <n-link :to="localePath('/totoro')">{{
+                    <n-link :to="localePath('/totoroad')">{{
                         $t('header.totoro')
                     }}</n-link>
                     <n-link :to="localePath('/peermentor')">{{
@@ -207,12 +207,12 @@ export default {
         },
         isServicePath() {
             return (
-                this.currentPath === '/totoro' ||
+                this.currentPath === '/totoroad' ||
                 this.currentPath === '/membership' ||
                 this.currentPath === '/more' ||
                 this.currentPath === '/carnival' ||
                 this.currentPath === '/peermentor' ||
-                this.currentPath === '/zh/totoro' ||
+                this.currentPath === '/zh/totoroad' ||
                 this.currentPath === '/zh/membership' ||
                 this.currentPath === '/zh/more' ||
                 this.currentPath === '/zh/carnival' ||
