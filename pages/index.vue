@@ -1071,6 +1071,17 @@ img {
     .container .row .work-text {
         margin-top: 10px;
     }
+    .report-container {
+        flex-direction: column;
+        div {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 
     h2 {
         padding: 30px 0;
