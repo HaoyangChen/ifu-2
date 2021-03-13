@@ -1073,6 +1073,9 @@ img {
     }
     .report-container {
         flex-direction: column;
+        .right-button {
+            margin-left: 0;
+        }
         div {
             width: 100%;
 
