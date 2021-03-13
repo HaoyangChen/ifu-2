@@ -391,7 +391,7 @@ export default {
                     buttonText: this.$t(
                         'home.ourServices.serviceList.totoroButtonText',
                     ),
-                    link: 'totoro',
+                    link: 'totoroad',
                     subTitle: this.$t(
                         'home.ourServices.serviceList.totorosubTitle',
                     ),
