@@ -48,6 +48,11 @@
             "description": "International Family Union (abbr. IFU) was established in 2017 and started from a Student Organization at UCSD. Now we've become a registered Non-Governmental Organization in the U.S., actively connecting and serving international students and their families. We gathered more than 300 student volunteers covering the U.S., Canada, the U.K., France, and Singapore. We committed to solve International families' overseas safety issues, and information asymmetry. We aim to convey the voices of students to their parents, and serve the families studying abroad.",
             "buttonText": "Our Story"
         },
+        "surveyTop": {
+            "title": "International Family Survey Report 2020",
+            "description": "We value mental health very seriously at IFU. In 2020, under the influence of Covid-19, our annual research focused on understanding the status of Chinese international students and their parents during the pandemic. This research aims to help education institutions, other public sectors, and organizations better understand the real condition overseas students are in and make sure that IFU is providing the help that our community needs. Below is the downloadable report.",
+            "buttonText": "Download Report"
+        },
         "carnival": {
             "title": "THE THIRD IFU COLLEGE CARNIVAL",
             "subTitle": "2020 College Carnival Ended In Success<br />— IFU Assists Your Studying Abroad Needs",

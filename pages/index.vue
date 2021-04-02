@@ -10,6 +10,28 @@
         >
             <p v-html="$t('home.banner.description')" />
         </Banner>
+        <section class="container background-blue top-report">
+            <div class="top-report-left">
+                <h1>{{ $t('home.surveyTop.title') }}</h1>
+                <p>{{ $t('home.surveyTop.description') }}</p>
+                <Button
+                    class="top-report-button-en"
+                    external
+                    to="https://1drv.ms/b/s!AjLe8dyJJ0x9a-u4TrYc80u0PqQ"
+                    >{{ $t('home.surveyTop.buttonText') }}</Button
+                >
+                <Button
+                    class="top-report-button-zh"
+                    external
+                    to="https://1drv.ms/b/s!AjLe8dyJJ0x9bBnrsODBQgJHWZE"
+                    >{{ $t('home.surveyTop.buttonText') }}</Button
+                >
+            </div>
+            <img
+                class="top-report-image"
+                src="@/assets/home/top-report-graphic.svg"
+            />
+        </section>
         <div class="bg-carnival">
             <section class="container">
                 <div class="carnival-event">
@@ -180,7 +202,7 @@
                         {{ $t('home.report.rightBody') }}
                     </p>
                     <img
-                        src="@/assets/home/mental-health-report.svg"
+                        src="@/assets/home/top-report-graphic.svg"
                         alt="Mental health report"
                     />
                     <Button
@@ -520,6 +542,31 @@ export default {
     }
 }
 
+.top-report {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        padding-right: 8%;
+
+        p {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+:lang(zh) {
+    .top-report-button-en {
+        display: none;
+    }
+}
+
+:lang(en) {
+    .top-report-button-zh {
+        display: none;
+    }
+}
+
 .wuhan-coronavirus {
     background: $background-light-blue;
     display: flex;
@@ -796,7 +843,16 @@ img {
             margin-bottom: 42px;
         }
     }
-
+    .right {
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .left {
+        img {
+            margin-bottom: 35px;
+        }
+    }
     .right-button {
         margin-left: 55px;
     }
@@ -963,6 +1019,15 @@ img {
 }
 
 @media (max-width: $mobile-max-width) {
+    .top-report {
+        flex-direction: column;
+        div {
+            padding: 0;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
     .wuhan-coronavirus {
         flex-direction: column;
 
