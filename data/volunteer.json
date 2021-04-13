@@ -7,7 +7,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "每个校区1",
         "time": "6-12",
-        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+        "link": "https://forms.gle/P3vqcrGpRyr5qxaF9"
     },
     {
         "name": "校园志愿者",
@@ -17,7 +17,7 @@
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "若干",
         "time": "3-12",
-        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+        "link": "https://forms.gle/P3vqcrGpRyr5qxaF9"
     },
     {
         "name": "公众号责任编辑",
@@ -82,17 +82,17 @@
     },
     {
         "name": "网页文案撰写及翻译员",
-        "department": "运营部",
+        "department": "技术部",
         "requirement": "有中英文翻译经验优先",
         "description": "能够在基于对IFU有良好认识的基础上，撰写网页所需文案以及翻译工作等部门负责人安排的其他相关工作",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
+        "link": "https://forms.gle/fXQbJEwzkq94S1Ld7"
     },
     {
         "name": "人事招募助理（前期准备）",
-        "department": "志愿者团队",
+        "department": "行政部",
         "requirement": "Business HR/Admin专业优先；相关HR/Admin实习经历优先",
         "description": "协助HR招募前期准备工作。工作内容包括但不限于收集招募信息、更新招募职位需求、发布和对接报名人员。",
         "reward": "志愿者证书；Certificate of Appreciation",
@@ -102,7 +102,7 @@
     },
     {
         "name": "人事招募助理（简历筛选）",
-        "department": "志愿者团队",
+        "department": "行政部",
         "requirement": "Business HR/Admin专业优先；相关HR/Admin实习经历优先",
         "description": "协助HR招募人才筛选以及邮件对接工作。具体工作内容包括但不限于根据所需职位的要求对报名人员进行筛选，协调负责人和报名者订阅面试时间，并负责前后的邮件沟通与对接。",
         "reward": "志愿者证书；Certificate of Appreciation",
@@ -112,17 +112,17 @@
     },
     {
         "name": "人事招募助理(挑选与雇佣）",
-        "department": "志愿者团队",
+        "department": "行政部",
         "requirement": "Business HR/Admin专业优先；相关HR/Admin实习经历优先",
         "description": "协助负责人进行面试以及后续工作对接。具体工作包括但不限于全程参与并协助负责人顺利完成面试，面试结束后的后续对接，邮件沟通，以及协议的签署。",
         "reward": "志愿者证书；Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
     },
     {
         "name": "行政助理",
-        "department": "志愿者团队",
+        "department": "行政部",
         "requirement": "IFU文件整理+归档；内部信息更新与邮件通知（生日祝福、假期提醒）；团建活动策划；Member邮件每月更新",
         "description": "协助负责人进行面试以及后续工作对接。具体工作包括但不限于全程参与并协助负责人顺利完成面试，面试结束后的后续对接，邮件沟通，以及协议的签署。",
         "reward": "志愿者证书；Certificate of Appreciation",
@@ -132,42 +132,42 @@
     },
     {
         "name": "海外新闻栏目作者",
-        "department": "志愿者团队",
+        "department": "运营部",
         "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；对于海外第一手新闻有强关注度、敏感性；有较强的新闻报道写作能力；具有一定英译中能力",
         "description": "一个月撰写两篇与留学环境相关的海外新闻事件报道，例如：海外安全、政治事件、疫情进展等。",
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "2",
         "time": "3",
-        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "知乎内容运营",
-        "department": "志愿者团队",
+        "department": "运营部",
         "requirement": "至少一年留学经验；有知乎运营经验优先",
         "description": "负责内容运营规划，定期将数据分析反馈给运营组负责人，优化运营方案。每周至少3次从公众号挑选优质内容搬运到知乎平台。挑选留学相关问题邀请，发布高质量回答",
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "1",
         "time": "3-6",
-        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "公众号编辑",
-        "department": "志愿者团队",
+        "department": "运营部",
         "requirement": "会使用秀米网站进行文章排版；非硬性要求，有图片设计基础优先；如果有社交媒体运营经验、做过博主，请提供相关作品。语言要求：中文（母语/熟练)，英文(熟练)",
         "description": "根据已有文案素材，进行公众号文章排版，保证最终效果美观吸引用户",
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "1",
         "time": "6",
-        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "微信公众号责任编辑",
-        "department": "志愿者团队",
+        "department": "运营部",
         "requirement": "非硬性要求，有新媒体行业经验者、新闻专业优先；具有一定文字与排版功底，认真细致，有公众号、新闻、个人栏目运营经验优先；具有一定英译中能力。语言要求：中文（母语/熟练)，英文(熟练)",
         "description": "了解留学家庭信息需求，传递正确信息，减轻留学家庭在紧急事件下的焦虑情绪",
         "reward": "志愿者证书；Certificate of Appreciation。表现突出者可申请成为IFU 正式工作人员",
         "people": "1",
         "time": "3",
-        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     }
 ]
