@@ -47,6 +47,19 @@ export default {
     head() {
         return {
             title: this.$t('header.career') + ' ' + this.$t('header.orgName'),
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('career.banner.description'),
+                },
+                {
+                    hid: 'keywords',
+                    name: 'keywords',
+                    content:
+                        '加入我们, 加入志愿者团队, 加入工作人员团队, 成为项目型志愿者, 成为校园志愿者, JOIN US, Become a Volunteer, become project volunteers, become on-campus volunteers, become a staff',
+                },
+            ],
         };
     },
 };

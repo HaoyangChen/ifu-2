@@ -10,6 +10,28 @@
         >
             <p v-html="$t('home.banner.description')" />
         </Banner>
+        <section class="container background-blue top-report">
+            <div class="top-report-left">
+                <h1>{{ $t('home.surveyTop.title') }}</h1>
+                <p>{{ $t('home.surveyTop.description') }}</p>
+                <Button
+                    class="top-report-button-en"
+                    external
+                    to="https://1drv.ms/b/s!AjLe8dyJJ0x9a-u4TrYc80u0PqQ"
+                    >{{ $t('home.surveyTop.buttonText') }}</Button
+                >
+                <Button
+                    class="top-report-button-zh"
+                    external
+                    to="https://1drv.ms/b/s!AjLe8dyJJ0x9bBnrsODBQgJHWZE"
+                    >{{ $t('home.surveyTop.buttonText') }}</Button
+                >
+            </div>
+            <img
+                class="top-report-image"
+                src="@/assets/home/top-report-graphic.svg"
+            />
+        </section>
         <div class="bg-carnival">
             <section class="container">
                 <div class="carnival-event">
@@ -162,7 +184,43 @@
                 <img src="@/assets/home/announcement.svg" />
             </section> -->
         <!-- </div> -->
-        <section class="about-us-section background-blue">
+        <section class="container report">
+            <div class="report-container">
+                <div class="report left">
+                    <h2>{{ $t('home.report.leftTitle') }}</h2>
+                    <p>{{ $t('home.report.leftBody') }}</p>
+                    <img src="@/assets/home/clipboard.svg" alt="Clipboard" />
+                    <Button
+                        external
+                        to="https://1drv.ms/b/s!AjLe8dyJJ0x9bV-0xYwPiPPiWZs"
+                        >{{ $t('home.report.leftButton') }}</Button
+                    >
+                </div>
+                <div class="report right">
+                    <h2>{{ $t('home.report.rightTitle') }}</h2>
+                    <p>
+                        {{ $t('home.report.rightBody') }}
+                    </p>
+                    <img
+                        src="@/assets/home/top-report-graphic.svg"
+                        alt="Mental health report"
+                    />
+                    <Button
+                        class="right-button right-button-en"
+                        external
+                        to="https://1drv.ms/b/s!AjLe8dyJJ0x9a-u4TrYc80u0PqQ"
+                        >{{ $t('home.report.rightButton') }}</Button
+                    >
+                    <Button
+                        class="right-button right-button-zh"
+                        external
+                        to="https://1drv.ms/b/s!AjLe8dyJJ0x9bBnrsODBQgJHWZE"
+                        >{{ $t('home.report.rightButton') }}</Button
+                    >
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section">
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.aboutUs.title') }}</h2>
@@ -182,7 +240,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us-section">
+        <section class="about-us-section background-blue">
             <div class="container half-style">
                 <div class="col-half">
                     <h2>{{ $t('home.studentGroup.title') }}</h2>
@@ -202,7 +260,7 @@
                 </div>
             </div>
         </section>
-        <section class="background-blue">
+        <section>
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
                 <a :href="eventLink" target="_blank">
@@ -484,6 +542,31 @@ export default {
     }
 }
 
+.top-report {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        padding-right: 8%;
+
+        p {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+:lang(zh) {
+    .top-report-button-en {
+        display: none;
+    }
+}
+
+:lang(en) {
+    .top-report-button-zh {
+        display: none;
+    }
+}
+
 .wuhan-coronavirus {
     background: $background-light-blue;
     display: flex;
@@ -745,6 +828,58 @@ img {
     }
 }
 
+.report {
+    background-color: #f1f9ff;
+}
+.report-container {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 43%;
+    }
+    .report {
+        p {
+            margin-bottom: 42px;
+        }
+    }
+    .right {
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .left {
+        img {
+            margin-bottom: 35px;
+        }
+    }
+    .right-button {
+        margin-left: 55px;
+    }
+
+    :lang(en) {
+        .right-button-zh {
+            display: none;
+        }
+    }
+
+    :lang(zh) {
+        .right-button-en {
+            display: none;
+        }
+    }
+}
+
+:lang(zh) {
+    .report-container {
+        .left {
+            p {
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
 .text-container {
     padding-top: 20px;
 }
@@ -884,6 +1019,15 @@ img {
 }
 
 @media (max-width: $mobile-max-width) {
+    .top-report {
+        flex-direction: column;
+        div {
+            padding: 0;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
     .wuhan-coronavirus {
         flex-direction: column;
 
@@ -991,6 +1135,20 @@ img {
     }
     .container .row .work-text {
         margin-top: 10px;
+    }
+    .report-container {
+        flex-direction: column;
+        .right-button {
+            margin-left: 0;
+        }
+        div {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 
     h2 {
