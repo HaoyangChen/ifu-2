@@ -14,7 +14,10 @@
         "peermentor": "Peer Mentor Program",
         "membership": "IFU Membership",
         "more": "IFU Other Services",
+        "academia": "Academia & Planning",
+        "life": "Life & Mental",
         "connect": "Connect",
+        "involve": "Involve",
         "contact": "Contact",
         "career": "Career",
         "support": "Support",
@@ -526,12 +529,8 @@
                 "University of Alberta",
                 "University of Victoria"
             ],
-            "uk": [
-                "University College London"
-            ],
-            "singapore": [
-                "National University of Singapore"
-            ]
+            "uk": ["University College London"],
+            "singapore": ["National University of Singapore"]
         },
         "story": {
             "achievement": "Our Achievement",

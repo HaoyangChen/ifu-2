@@ -14,7 +14,10 @@
         "peermentor": "IFU 朋辈项目",
         "membership": "IFU 会员",
         "more": "IFU 更多服务",
+        "academia": "学术辅导",
+        "life": "生活陪伴",
         "connect": "联系我们",
+        "involve": "联系我们",
         "contact": "联系我们",
         "career": "加入我们",
         "support": "支持我们",
@@ -473,12 +476,8 @@
                 "阿尔伯塔大学",
                 "维多利亚大学"
             ],
-            "uk": [
-                "伦敦大学学院"
-            ],
-            "singapore": [
-                "新加坡国立大学"
-            ]
+            "uk": ["伦敦大学学院"],
+            "singapore": ["新加坡国立大学"]
         },
         "history": {
             "2017": {
