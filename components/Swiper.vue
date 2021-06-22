@@ -36,6 +36,7 @@ export default {
     data() {
         return {
             swiperOption: {
+                watchOverflow: true,
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
@@ -70,6 +71,15 @@ export default {
 .swiper-pagination {
     padding-top: 10px;
     position: static;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transition: opacity 0.5s;
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
 }
 
 .swiper-button-prev,

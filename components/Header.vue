@@ -381,7 +381,8 @@ header {
 }
 .about-menu-inner {
     width: 300px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+
     // height: 112px;
     left: -120px;
     display: flex;
@@ -417,6 +418,8 @@ header {
 }
 .service-menu-inner {
     width: 259px;
+    padding-bottom: 10px;
+
     // height: 167px;
     left: -100px;
     display: flex;
@@ -456,7 +459,8 @@ header {
 }
 .connect-menu-inner {
     width: 250px;
-    height: 90px;
+    // height: 90px;
+    padding-bottom: 10px;
     left: -75px;
     display: flex;
     flex-direction: column;
