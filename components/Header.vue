@@ -67,11 +67,11 @@
                                 :to="localePath('/ourstory')"
                                 >{{ $t('header.ourstory') }}</n-link
                             >
-                            <n-link
+                            <!-- <n-link
                                 class="n-link"
                                 :to="localePath('/ourculture')"
                                 >{{ $t('header.ourculture') }}</n-link
-                            >
+                            > -->
                             <n-link
                                 class="n-link"
                                 :to="localePath('/orgstructure')"
@@ -105,9 +105,9 @@
                     <n-link class="n-link" :to="localePath('/ourstory')">{{
                         $t('header.ourstory')
                     }}</n-link>
-                    <n-link class="n-link" :to="localePath('/ourculture')">{{
+                    <!-- <n-link class="n-link" :to="localePath('/ourculture')">{{
                         $t('header.ourculture')
-                    }}</n-link>
+                    }}</n-link> -->
                     <n-link class="n-link" :to="localePath('/orgstructure')">{{
                         $t('header.orgstructure')
                     }}</n-link>
