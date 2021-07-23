@@ -54,73 +54,23 @@
                     <div class="about-menu desktop">
                         <div class="service-menu-separator" />
                         <div class="about-menu-inner">
-                            <!-- <n-link class="n-link" :to="localePath('/about')">{{
+                            <n-link class="n-link" :to="localePath('/about')">{{
                                 $t('header.about')
                             }}</n-link>
                             <n-link
                                 class="n-link"
                                 :to="localePath('/campusvolunteer')"
                                 >{{ $t('header.campusvolunteer') }}</n-link
-                            > -->
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/ourstory')"
-                                >{{ $t('header.ourstory') }}</n-link
-                            >
-                            <!-- <n-link
-                                class="n-link"
-                                :to="localePath('/ourculture')"
-                                >{{ $t('header.ourculture') }}</n-link
-                            > -->
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/orgstructure')"
-                                >{{ $t('header.orgstructure') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/ourteam')"
-                                >{{ $t('header.ourteam') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/campusvolunteer')"
-                                >{{ $t('header.campusvolunteer') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/ourjourney')"
-                                >{{ $t('header.ourjourney') }}</n-link
                             >
                         </div>
                     </div>
                 </div>
                 <div v-if="showAboutMenu" class="about-menu-mobile mobile">
-                    <!-- <n-link :to="localePath('/about')">{{
+                    <n-link :to="localePath('/about')">{{
                         $t('header.about')
                     }}</n-link>
                     <n-link :to="localePath('/campusvolunteer')">{{
                         $t('header.campusvolunteer')
-                    }}</n-link> -->
-                    <n-link class="n-link" :to="localePath('/ourstory')">{{
-                        $t('header.ourstory')
-                    }}</n-link>
-                    <!-- <n-link class="n-link" :to="localePath('/ourculture')">{{
-                        $t('header.ourculture')
-                    }}</n-link> -->
-                    <n-link class="n-link" :to="localePath('/orgstructure')">{{
-                        $t('header.orgstructure')
-                    }}</n-link>
-                    <n-link class="n-link" :to="localePath('/ourteam')">{{
-                        $t('header.ourteam')
-                    }}</n-link>
-                    <n-link
-                        class="n-link"
-                        :to="localePath('/campusvolunteer')"
-                        >{{ $t('header.campusvolunteer') }}</n-link
-                    >
-                    <n-link class="n-link" :to="localePath('/ourjourney')">{{
-                        $t('header.ourjourney')
                     }}</n-link>
                 </div>
                 <div class="service">
@@ -139,7 +89,7 @@
                     <div class="service-menu desktop">
                         <div class="service-menu-separator" />
                         <div class="service-menu-inner">
-                            <!-- <n-link
+                            <n-link
                                 class="n-link"
                                 :to="localePath('/totoroad')"
                                 >{{ $t('header.totoro') }}</n-link
@@ -156,30 +106,12 @@
                             >
                             <n-link class="n-link" :to="localePath('/more')">{{
                                 $t('header.more')
-                            }}</n-link> -->
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/academiaandplanning')"
-                                >{{ $t('header.academia') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/lifeandmental')"
-                                >{{ $t('header.life') }}</n-link
-                            >
-                            <n-link
-                                class="n-link"
-                                :to="localePath('/membership')"
-                                >{{ $t('header.membership') }}</n-link
-                            >
-                            <n-link class="n-link" :to="localePath('/more')">{{
-                                $t('header.more')
                             }}</n-link>
                         </div>
                     </div>
                 </div>
                 <div v-if="showServiceMenu" class="service-menu-mobile mobile">
-                    <!-- <n-link :to="localePath('/totoroad')">{{
+                    <n-link :to="localePath('/totoroad')">{{
                         $t('header.totoro')
                     }}</n-link>
                     <n-link :to="localePath('/peermentor')">{{
@@ -190,33 +122,19 @@
                     }}</n-link>
                     <n-link :to="localePath('/more')">{{
                         $t('header.more')
-                    }}</n-link> -->
-                    <n-link
-                        class="n-link"
-                        :to="localePath('/academiaandplanning')"
-                        >{{ $t('header.academia') }}</n-link
-                    >
-                    <n-link class="n-link" :to="localePath('/lifeandmental')">{{
-                        $t('header.life')
-                    }}</n-link>
-                    <n-link class="n-link" :to="localePath('/membership')">{{
-                        $t('header.membership')
-                    }}</n-link>
-                    <n-link class="n-link" :to="localePath('/more')">{{
-                        $t('header.more')
                     }}</n-link>
                 </div>
-                <!-- <n-link
+                <n-link
                     :class="isContactPath ? 'nuxt-link-active' : 'n-link'"
                     :to="localePath('/contact')"
                     >{{ $t('header.contact') }}</n-link
-                > -->
-                <div class="connect">
+                >
+                <!-- <div class="connect">
                     <a
                         :class="isConnectPath ? 'nuxt-link-active' : ''"
                         @click="toggleConnectMenu"
                     >
-                        {{ $t('header.involve') }}
+                        {{ $t('header.connect') }}
                         <div class="arrow desktop" />
                         <div
                             v-if="showConnectMenu"
@@ -247,7 +165,7 @@
                     <n-link :to="localePath('/career')">{{
                         $t('header.career')
                     }}</n-link>
-                </div>
+                </div> -->
                 <n-link class="n-link" :to="localePath('/support')">{{
                     $t('header.support')
                 }}</n-link>
@@ -381,9 +299,7 @@ header {
 }
 .about-menu-inner {
     width: 300px;
-    padding-bottom: 10px;
-
-    // height: 112px;
+    height: 112px;
     left: -120px;
     display: flex;
     flex-direction: column;
@@ -418,9 +334,7 @@ header {
 }
 .service-menu-inner {
     width: 259px;
-    padding-bottom: 10px;
-
-    // height: 167px;
+    height: 167px;
     left: -100px;
     display: flex;
     flex-direction: column;
@@ -459,8 +373,7 @@ header {
 }
 .connect-menu-inner {
     width: 250px;
-    // height: 90px;
-    padding-bottom: 10px;
+    height: 90px;
     left: -75px;
     display: flex;
     flex-direction: column;
