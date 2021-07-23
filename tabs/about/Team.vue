@@ -36,36 +36,49 @@ import Swiper from '@/components/Swiper.vue';
 import teamImage from '@/assets/team/banner.png';
 import Button from '@/components/Button.vue';
 
-import tangejiawenImage from '@/assets/team/tangjiawen.png';
-import wangkuixingImage from '@/assets/team/wangkuixing.png';
-import xinyuanchuImage from '@/assets/team/xinyuanchu.png';
-import zhanzixuanImage from '@/assets/team/zhanzixuan.png';
-import zhuohanwenImage from '@/assets/team/zhuohanwen.png';
-import jianghanqinImage from '@/assets/team/jianghanqin.png';
-import zhaoshiyueImage from '@/assets/team/zhaoshiyue.png';
-import wangshuyiImage from '@/assets/team/wangshuyi.png';
-import wangqinImage from '@/assets/team/wangqin.png';
-import luoyanranImage from '@/assets/team/luoyanran.png';
-import gaoyingImage from '@/assets/team/gaoying.png';
-import hemanjiangImage from '@/assets/team/hemanjiang.png';
-import wangchujunImage from '@/assets/team/wangchujun.png';
-import shenzichenImage from '@/assets/team/shenzichen.png';
-import shijingyiImage from '@/assets/team/shijingyi.png';
-import yangyuImage from '@/assets/team/yangyu.png';
-import husiruiImage from '@/assets/team/husirui.png';
-import xuyifanImage from '@/assets/team/xuyifan.png';
-import zhoukaitongImage from '@/assets/team/zhoukaitong.png';
-import guixiaoqinImage from '@/assets/team/guixiaoqin.png';
-import lihaoImage from '@/assets/team/lihao.png';
-import mayutaoImage from '@/assets/team/mayutao.png';
-import hexinyiImage from '@/assets/team/hexinyi.png';
-import chenhaoyangImage from '@/assets/team/chenhaoyang.png';
-import huangwentaoImage from '@/assets/team/huangwentao.png';
-import xuzhiqiImage from '@/assets/team/xuzhiqi.png';
-import wangcaiweiImage from '@/assets/team/wangcaiwei.png';
-import fanyixuanImage from '@/assets/team/fanyixuan.png';
-import sunxiaoqiaoImage from '@/assets/team/sunxiaoqiao.png';
-import chenxinyiImage from '@/assets/team/chenxinyi.png';
+import tangKimmyImage from '@/assets/newteam/tang-kimmy.png';
+import guiSherryImage from '@/assets/newteam/gui-sherry.png';
+import wangRichardImage from '@/assets/newteam/wang-richard.png';
+import xinYuanchuImage from '@/assets/newteam/xin-yuanchu.png';
+import wangKuixingImage from '@/assets/newteam/wang-kuixing.png';
+import jiangJessicaImage from '@/assets/newteam/jiang-jessica.png';
+import zhaoShiyueImage from '@/assets/newteam/zhao-shiyue.png';
+import caiMandyImage from '@/assets/newteam/cai-mandy.png';
+import zhangAnnieImage from '@/assets/newteam/zhang-annie.png';
+import pangJingImage from '@/assets/newteam/pang-jing.png';
+import liRenaImage from '@/assets/newteam/li-rena.png';
+import liuHeyuanImage from '@/assets/newteam/liu-heyuan.png';
+import xuTonyImage from '@/assets/newteam/xu-tony.png';
+import henriksAndreaImage from '@/assets/newteam/henriks-andrea.png';
+import wuAliceImage from '@/assets/newteam/wu-alice.png';
+import linPatrickImage from '@/assets/newteam/lin-patrick.png';
+import yenJudyImage from '@/assets/newteam/yen-judy.png';
+import longAliImage from '@/assets/newteam/long-ali.png';
+import sobereScottImage from '@/assets/newteam/sobere-scott.png';
+import zhangHanyuImage from '@/assets/newteam/zhang-hanyu.png';
+import chenEricImage from '@/assets/newteam/chen-eric.png';
+import zanettiNickImage from '@/assets/newteam/zanetti-nick.png';
+import jiangTigoImage from '@/assets/newteam/jiang-tigo.png';
+import jinDanniImage from '@/assets/newteam/jin-danni.png';
+import huangSteckvonImage from '@/assets/newteam/huang-steckvon.png';
+import huangLilyImage from '@/assets/newteam/huang-lily.png';
+import wangVickyImage from '@/assets/newteam/wang-vicky.png';
+import luoYanranImage from '@/assets/newteam/luo-yanran.png';
+import foxAidanImage from '@/assets/newteam/fox-aidan.png';
+import wuJonathanImage from '@/assets/newteam/wu-jonathan.png';
+import huKatherineImage from '@/assets/newteam/hu-katherine.png';
+import zhangRuixiImage from '@/assets/newteam/zhang-ruixi.png';
+import fengLiyaImage from '@/assets/newteam/feng-liya.png';
+import jiangYikunImage from '@/assets/newteam/jiang-yikun.png';
+import qiuTianjieImage from '@/assets/newteam/qiu-tianjie.png';
+import gaoLangImage from '@/assets/newteam/gao-lang.png';
+import zhangXinerImage from '@/assets/newteam/zhang-xiner.png';
+import zhangClaireImage from '@/assets/newteam/zhang-claire.png';
+import sunSelinaImage from '@/assets/newteam/sun-selina.png';
+import yangPinyiImage from '@/assets/newteam/yang-pinyi.png';
+import blueTopImage from '@/assets/newteam/blue-top.png';
+import luQiwenImage from '@/assets/newteam/lu-qiwen.png';
+import golfImage from '@/assets/newteam/golf.png';
 
 export default {
     components: {
@@ -87,9 +100,19 @@ export default {
                     title: this.$t('team.department1'),
                     data: [
                         {
-                            image: tangejiawenImage,
+                            image: tangKimmyImage,
                             title: this.$t('team.title1'),
                             subTitle: this.$t('team.name1'),
+                        },
+                        {
+                            image: guiSherryImage,
+                            title: this.$t('team.title2'),
+                            subTitle: this.$t('team.name2'),
+                        },
+                        {
+                            image: wangRichardImage,
+                            title: this.$t('team.title3'),
+                            subTitle: this.$t('team.name3'),
                         },
                     ],
                 },
@@ -97,24 +120,19 @@ export default {
                     title: this.$t('team.department2'),
                     data: [
                         {
-                            image: zhuohanwenImage,
-                            title: this.$t('team.title2'),
-                            subTitle: this.$t('team.name2'),
-                        },
-                        {
-                            image: zhanzixuanImage,
-                            title: this.$t('team.title3'),
-                            subTitle: this.$t('team.name3'),
-                        },
-                        {
-                            image: xinyuanchuImage,
+                            image: tangKimmyImage,
                             title: this.$t('team.title4'),
                             subTitle: this.$t('team.name4'),
                         },
                         {
-                            image: wangkuixingImage,
+                            image: xinYuanchuImage,
                             title: this.$t('team.title5'),
                             subTitle: this.$t('team.name5'),
+                        },
+                        {
+                            image: wangKuixingImage,
+                            title: this.$t('team.title6'),
+                            subTitle: this.$t('team.name6'),
                         },
                     ],
                 },
@@ -122,24 +140,44 @@ export default {
                     title: this.$t('team.department3'),
                     data: [
                         {
-                            image: jianghanqinImage,
-                            title: this.$t('team.title6'),
-                            subTitle: this.$t('team.name6'),
-                        },
-                        {
-                            image: zhaoshiyueImage,
+                            image: jiangJessicaImage,
                             title: this.$t('team.title7'),
                             subTitle: this.$t('team.name7'),
                         },
                         {
-                            image: wangshuyiImage,
+                            image: zhaoShiyueImage,
                             title: this.$t('team.title8'),
                             subTitle: this.$t('team.name8'),
                         },
                         {
-                            image: wangqinImage,
+                            image: caiMandyImage,
                             title: this.$t('team.title9'),
                             subTitle: this.$t('team.name9'),
+                        },
+                        {
+                            image: zhangAnnieImage,
+                            title: this.$t('team.title10'),
+                            subTitle: this.$t('team.name10'),
+                        },
+                        {
+                            image: pangJingImage,
+                            title: this.$t('team.title11'),
+                            subTitle: this.$t('team.name11'),
+                        },
+                        {
+                            image: liRenaImage,
+                            title: this.$t('team.title12'),
+                            subTitle: this.$t('team.name12'),
+                        },
+                        {
+                            image: liuHeyuanImage,
+                            title: this.$t('team.title13'),
+                            subTitle: this.$t('team.name13'),
+                        },
+                        {
+                            image: xuTonyImage,
+                            title: this.$t('team.title14'),
+                            subTitle: this.$t('team.name14'),
                         },
                     ],
                 },
@@ -147,54 +185,79 @@ export default {
                     title: this.$t('team.department4'),
                     data: [
                         {
-                            image: luoyanranImage,
-                            title: this.$t('team.title10'),
-                            subTitle: this.$t('team.name10'),
-                        },
-                        {
-                            image: gaoyingImage,
-                            title: this.$t('team.title11'),
-                            subTitle: this.$t('team.name11'),
-                        },
-                        {
-                            image: hemanjiangImage,
-                            title: this.$t('team.title12'),
-                            subTitle: this.$t('team.name12'),
-                        },
-                        {
-                            image: wangchujunImage,
-                            title: this.$t('team.title13'),
-                            subTitle: this.$t('team.name13'),
-                        },
-                        {
-                            image: shenzichenImage,
-                            title: this.$t('team.title14'),
-                            subTitle: this.$t('team.name14'),
-                        },
-                        {
-                            image: shijingyiImage,
+                            image: guiSherryImage,
                             title: this.$t('team.title15'),
                             subTitle: this.$t('team.name15'),
                         },
                         {
-                            image: yangyuImage,
+                            image: henriksAndreaImage,
                             title: this.$t('team.title16'),
                             subTitle: this.$t('team.name16'),
                         },
                         {
-                            image: husiruiImage,
+                            image: wuAliceImage,
                             title: this.$t('team.title17'),
                             subTitle: this.$t('team.name17'),
                         },
                         {
-                            image: xuyifanImage,
+                            image: linPatrickImage,
                             title: this.$t('team.title18'),
                             subTitle: this.$t('team.name18'),
                         },
                         {
-                            image: zhoukaitongImage,
+                            image: yenJudyImage,
                             title: this.$t('team.title19'),
                             subTitle: this.$t('team.name19'),
+                        },
+                        {
+                            image: longAliImage,
+                            title: this.$t('team.title20'),
+                            subTitle: this.$t('team.name20'),
+                        },
+                        {
+                            image: sobereScottImage,
+                            title: this.$t('team.title21'),
+                            subTitle: this.$t('team.name21'),
+                        },
+                        {
+                            image: zhangHanyuImage,
+                            title: this.$t('team.title22'),
+                            subTitle: this.$t('team.name22'),
+                        },
+                        {
+                            image: chenEricImage,
+                            title: this.$t('team.title23'),
+                            subTitle: this.$t('team.name23'),
+                        },
+                        {
+                            image: zanettiNickImage,
+                            title: this.$t('team.title24'),
+                            subTitle: this.$t('team.name24'),
+                        },
+                        {
+                            image: jiangTigoImage,
+                            title: this.$t('team.title25'),
+                            subTitle: this.$t('team.name25'),
+                        },
+                        {
+                            image: jinDanniImage,
+                            title: this.$t('team.title26'),
+                            subTitle: this.$t('team.name26'),
+                        },
+                        {
+                            image: huangSteckvonImage,
+                            title: this.$t('team.title27'),
+                            subTitle: this.$t('team.name27'),
+                        },
+                        {
+                            image: huangLilyImage,
+                            title: this.$t('team.title28'),
+                            subTitle: this.$t('team.name28'),
+                        },
+                        {
+                            image: wangVickyImage,
+                            title: this.$t('team.title29'),
+                            subTitle: this.$t('team.name29'),
                         },
                     ],
                 },
@@ -202,34 +265,54 @@ export default {
                     title: this.$t('team.department5'),
                     data: [
                         {
-                            image: guixiaoqinImage,
-                            title: this.$t('team.title20'),
-                            subTitle: this.$t('team.name20'),
+                            image: luoYanranImage,
+                            title: this.$t('team.title30'),
+                            subTitle: this.$t('team.name30'),
                         },
                         {
-                            image: chenhaoyangImage,
-                            title: this.$t('team.title21'),
-                            subTitle: this.$t('team.name21'),
+                            image: foxAidanImage,
+                            title: this.$t('team.title31'),
+                            subTitle: this.$t('team.name31'),
                         },
                         {
-                            image: mayutaoImage,
-                            title: this.$t('team.title22'),
-                            subTitle: this.$t('team.name22'),
+                            image: wuJonathanImage,
+                            title: this.$t('team.title46'),
+                            subTitle: this.$t('team.name46'),
                         },
                         {
-                            image: lihaoImage,
-                            title: this.$t('team.title23'),
-                            subTitle: this.$t('team.name23'),
+                            image: huKatherineImage,
+                            title: this.$t('team.title32'),
+                            subTitle: this.$t('team.name32'),
                         },
                         {
-                            image: hexinyiImage,
-                            title: this.$t('team.title24'),
-                            subTitle: this.$t('team.name24'),
+                            image: zhangRuixiImage,
+                            title: this.$t('team.title33'),
+                            subTitle: this.$t('team.name33'),
                         },
                         {
-                            image: huangwentaoImage,
-                            title: this.$t('team.title25'),
-                            subTitle: this.$t('team.name25'),
+                            image: fengLiyaImage,
+                            title: this.$t('team.title34'),
+                            subTitle: this.$t('team.name34'),
+                        },
+                        {
+                            image: jiangYikunImage,
+                            title: this.$t('team.title35'),
+                            subTitle: this.$t('team.name35'),
+                        },
+                        {
+                            image: qiuTianjieImage,
+                            title: this.$t('team.title36'),
+                            subTitle: this.$t('team.name36'),
+                        },
+                        {
+                            image: gaoLangImage,
+                            title: this.$t('team.title37'),
+                            subTitle: this.$t('team.name37'),
+                        },
+                        {
+                            image: zhangXinerImage,
+                            title: this.$t('team.title38'),
+                            subTitle: this.$t('team.name38'),
                         },
                     ],
                 },
@@ -237,29 +320,39 @@ export default {
                     title: this.$t('team.department6'),
                     data: [
                         {
-                            image: xuzhiqiImage,
-                            title: this.$t('team.title26'),
-                            subTitle: this.$t('team.name26'),
+                            image: zhangClaireImage,
+                            title: this.$t('team.title39'),
+                            subTitle: this.$t('team.name39'),
                         },
                         {
-                            image: wangcaiweiImage,
-                            title: this.$t('team.title27'),
-                            subTitle: this.$t('team.name27'),
+                            image: guiSherryImage,
+                            title: this.$t('team.title40'),
+                            subTitle: this.$t('team.name40'),
                         },
                         {
-                            image: fanyixuanImage,
-                            title: this.$t('team.title28'),
-                            subTitle: this.$t('team.name28'),
+                            image: sunSelinaImage,
+                            title: this.$t('team.title41'),
+                            subTitle: this.$t('team.name41'),
                         },
                         {
-                            image: sunxiaoqiaoImage,
-                            title: this.$t('team.title29'),
-                            subTitle: this.$t('team.name29'),
+                            image: yangPinyiImage,
+                            title: this.$t('team.title42'),
+                            subTitle: this.$t('team.name42'),
                         },
                         {
-                            image: chenxinyiImage,
-                            title: this.$t('team.title30'),
-                            subTitle: this.$t('team.name30'),
+                            image: blueTopImage,
+                            title: this.$t('team.title43'),
+                            subTitle: this.$t('team.name43'),
+                        },
+                        {
+                            image: luQiwenImage,
+                            title: this.$t('team.title44'),
+                            subTitle: this.$t('team.name44'),
+                        },
+                        {
+                            image: golfImage,
+                            title: this.$t('team.title45'),
+                            subTitle: this.$t('team.name45'),
                         },
                     ],
                 },

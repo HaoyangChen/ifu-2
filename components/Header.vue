@@ -262,7 +262,6 @@ header {
     left: 0;
     z-index: 20;
     background-color: #fff;
-
     .logo {
         position: relative;
         left: -12px; // 使 Logo 图对齐左 padding 线
@@ -270,13 +269,11 @@ header {
         align-items: center;
         justify-content: center;
     }
-
     .logo > img {
         width: auto;
         height: auto;
     }
 }
-
 .header-inner {
     width: 100%;
     height: 111px;
@@ -287,23 +284,19 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 .header-menu {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
-
 .about {
     position: relative;
     cursor: default;
 }
-
 .about-menu {
     display: none;
     position: absolute;
 }
-
 .about-menu-inner {
     width: 300px;
     height: 112px;
@@ -318,33 +311,27 @@ header {
         color: black;
     }
 }
-
 .about:hover {
     .about-menu {
         display: block;
     }
-
     .arrow {
         transform: rotateZ(-90deg);
     }
 }
-
 .service {
     position: relative;
     cursor: default;
 }
-
 .service-menu {
     display: none;
     position: absolute;
 }
-
 .service-menu-separator {
     height: 40px;
     position: relative;
     left: -100px;
 }
-
 .service-menu-inner {
     width: 259px;
     height: 167px;
@@ -359,7 +346,6 @@ header {
         color: black;
     }
 }
-
 .arrow {
     display: inline-block;
     width: 0;
@@ -369,27 +355,22 @@ header {
     border-right: 8px solid $text-color;
     transform: rotateZ(180deg);
 }
-
 .service:hover {
     .service-menu {
         display: block;
     }
-
     .arrow {
         transform: rotateZ(-90deg);
     }
 }
-
 .connect {
     position: relative;
     cursor: default;
 }
-
 .connect-menu {
     display: none;
     position: absolute;
 }
-
 .connect-menu-inner {
     width: 250px;
     height: 90px;
@@ -404,17 +385,14 @@ header {
         color: black;
     }
 }
-
 .connect:hover {
     .connect-menu {
         display: block;
     }
-
     .arrow {
         transform: rotateZ(-90deg);
     }
 }
-
 a {
     height: 33px;
     text-decoration: none;
@@ -423,25 +401,20 @@ a {
     line-height: 33px;
     // text-transform: uppercase;
 }
-
 .n-link:hover {
     box-sizing: border-box;
     border-bottom: 3px solid $light-blue;
 }
-
 .nuxt-link-active {
     color: $dark-blue;
 }
-
 .desktop {
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 33px;
 }
-
 span {
     cursor: pointer;
 }
-
 /* Mobile style */
 @media (max-width: $mobile-max-width) {
     .top {
@@ -454,7 +427,6 @@ span {
     header {
         border-bottom: none;
     }
-
     .logo-mobile {
         height: 87px;
         display: flex;
@@ -465,19 +437,16 @@ span {
             margin-right: 110px;
         }
     }
-
     .title {
         text-align: center;
         display: inline;
     }
-
     .header-inner {
         flex-direction: column;
         padding: 0px;
         width: 100%;
         height: 100%;
     }
-
     .header-menu {
         width: 100%;
         height: 100%;
@@ -487,13 +456,11 @@ span {
     .n-link:hover {
         border-bottom: none;
     }
-
     .service-menu-mobile,
     .about-menu-mobile,
     .connect-menu-mobile {
         background: #ddf2fd;
     }
-
     .service,
     a {
         display: block;
@@ -502,7 +469,6 @@ span {
         line-height: 54px;
         height: 54px;
     }
-
     .service-menu {
         left: 50px;
     }
@@ -528,11 +494,9 @@ span {
         border-bottom: 6px solid transparent;
         border-right: 8px solid $text-color;
     }
-
     .open-arrow {
         transform: rotateZ(180deg);
     }
-
     .close-arrow {
         transform: rotateZ(-90deg);
     }
@@ -541,7 +505,6 @@ span {
         background: $light-blue;
         border-bottom: none;
     }
-
     .change-lang {
         width: 100%;
         display: flex;

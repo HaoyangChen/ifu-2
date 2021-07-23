@@ -846,7 +846,7 @@ h2 {
         }
         .standing {
             position: absolute;
-            right: 12%;
+            right: 8%;
         }
     }
 
@@ -1406,6 +1406,17 @@ p {
             .green-bubble-section {
                 left: 29%;
                 top: 187px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1558px) {
+    .blue-section {
+        .project-process-section {
+            .standing {
+                position: absolute;
+                right: 0%;
             }
         }
     }

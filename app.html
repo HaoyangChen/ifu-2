@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html {{ HTML_ATTRS }}>
+    <head {{ HEAD_ATTRS }}>
+        {{ HEAD }}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-172986551-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-<head {{ HEAD_ATTRS }}>
-    {{ HEAD }}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172986551-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-172986551-1');
+            gtag('config', 'UA-172986551-1');
+        </script>
     </script>
     <!-- Hotjar Tracking Code for ifuglobal.org -->
     <script>
@@ -46,15 +49,18 @@
         })(window, document, 'script', 'dataLayer', 'GTM-KZNQC35');</script>
     <!-- End Google Tag Manager -->
 
-</head>
+    <body {{ BODY_ATTRS }}>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-KZNQC35"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-<body {{ BODY_ATTRS }}>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZNQC35" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    {{ APP }}
-</body>
-
+        {{ APP }}
+    </body>
 </html>

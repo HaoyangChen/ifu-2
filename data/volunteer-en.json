@@ -6,7 +6,8 @@
         "description": "Besides carrying out basic duties of volunteers, campus leader is the person in charge of all volunteers of the university, manage and guide the team, recruit volunteers and attend monthly meetings of IFU and so on",
         "reward": "Certificate of Volunteer; Certificate of Appreciation",
         "people": "1 per campus",
-        "time": "6-12"
+        "time": "6-12",
+        "link": "https://forms.gle/P3vqcrGpRyr5qxaF9"
     },
     {
         "name": "Campus Volunteer",
@@ -15,37 +16,8 @@
         "description": "Carrying out basic duties of volunteers; ensures messages are sent out, contact with Campus Leader at once when emergency happens; cooperate with Campus Leader to achieve the goal of alleviating the anxiety of families of international students",
         "reward": "Certificate of Volunteer; Certificate of Appreciation",
         "people": "Open",
-        "time": "3-12"
-    },
-    {
-        "name": "Document Translator",
-        "department": "Administration & Finance",
-        "requirement": "Applicants with experience of Chinese translation would be better",
-        "description": "Translating updating documents of the organization(from Chinese/English to English/Chinese)",
-        "reward": "Certificate of Volunteer; Certificate of Appreciation",
-        "people": "1-2",
-        "time": "1-3",
-        "urgent": false
-    },
-    {
-        "name": "Legal Specialist",
-        "department": "Administration & Finance",
-        "requirement": "Major in Law; familiar laws applied to non-profit organizations; familiar with contract law",
-        "description": "Auditing contracts of cooperation and donations of IFU; auditing contracts of human resources; auditing constitutions of IFU; arrangement of other officers",
-        "reward": "Certificate of Volunteer; Certificate of Appreciation",
-        "people": "1",
-        "time": "3-6",
-        "urgent": false
-    },
-    {
-        "name": "Media Operation & Event Planning - Columnist",
-        "department": "Operation",
-        "requirement": "Social media industry experience is preferred but not mandatory, better to major in Journalism; news report writing ability is required; able to translate from English to Chinese.",
-        "description": "Understand the information needs of international families; able to deliver accurate information and reduce international families’ anxiety level in case of emergency; assist IFU campus volunteer team to polish articles; assist IFU project teams to integrate work report content.",
-        "reward": "Certificate of Volunteer; Certificate of Appreciation",
-        "people": "1-2",
-        "time": "3",
-        "urgent": false
+        "time": "3-12",
+        "link": "https://forms.gle/P3vqcrGpRyr5qxaF9"
     },
     {
         "name": "Media Operation & Event Planning - Editor",
@@ -55,16 +27,8 @@
         "reward": "Certificate of Volunteer; Certificate of Appreciation",
         "people": "1",
         "time": "6",
-        "urgent": false
-    },
-    {
-        "name": "UI/UX Designer",
-        "department": "Design & Technology",
-        "requirement": "Familiar with the usage of Figma/Sketch and so on; better to major in Graphic Design/Interactive Design or relative majors, please provide portfolios",
-        "description": "According to the need of the development and the branding of IFU website, design for UI/UX for new webpages; collect and sort out the visual materials required for the preparation of web page development",
-        "reward": "Certificate of Volunteer; Certificate of Appreciation",
-        "people": "2-3",
-        "time": "6"
+        "urgent": false,
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     },
     {
         "name": "Front-End Developer",
@@ -73,7 +37,8 @@
         "description": "Based on the draft, build reasonable and efficient web pages; regular maintenance according to feedback from users, data and other team members",
         "reward": "Certificate of Volunteer; Certificate of Appreciation",
         "people": "1-2",
-        "time": "6"
+        "time": "6",
+        "link": "https://forms.gle/fXQbJEwzkq94S1Ld7"
     },
     {
         "name": "Tutor of IFU Totoroad Academic Tutoring",
@@ -83,6 +48,126 @@
         "reward": "About 30 USD/hour (including bonus); provide Internship or working certificate; honorary volunteer certification are awarded with excellent performance",
         "people": "Open available",
         "time": "12",
-        "link": "https://www.wjx.top/jq/89696872.aspx"
+        "link": "https://forms.gle/BLVh1ojVJtJoAS8t6"
+    },
+    {
+        "name": "Totoroad HR Assistant",
+        "department": "Totoroad",
+        "requirement": "Major in Business HR/Admin is preferred; HR/Admin working/ internship experience is preferred",
+        "description": "Assist Totoroad team to manage human resources within the team; update job post, preparing; resume screening; interviewing; onboarding; informing staff (ending probation, interview notification and so on).",
+        "reward": "Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/BLVh1ojVJtJoAS8t6"
+    },
+    {
+        "name": "Head of Marketing Department",
+        "department": "Operation",
+        "requirement": "At least 1 year of experience in the marketing industry; studying abroad background; proficiency in both English and Chinese; good organization and time management skills; leadership skills",
+        "description": "Conducting plans for the marketing department based on IFU's culture and goals to achieve objectives - new user acquisition, user retention, and reacquisition. Communicate effectively with the team on marketing goals and plans; train and manage team members to meet plan goals Ensure the growth of new users on social platforms and communities as well as daily maintenance Conduct monthly marketing reports, analyze metrics and attend regular meetings Develop and maintain partners.",
+        "reward": "Base salary + bonus Reference letter, certificate of appreciation",
+        "people": "1",
+        "time": "12",
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
+    },
+    {
+        "name": "Community Operation Specialist",
+        "department": "Operation",
+        "requirement": "Previous experience in community operation. Understanding of the study abroad community. Passionate about the use of social software and online communication. Willingness to contribute to non-profit social organization",
+        "description": "Responsible for managing the study abroad community; responsible for answering questions, managing the community, publishing and disseminating information about IFU and achieving the goal of activating and increasing the activity of users.",
+        "reward": "Volunteer Certificate / Certificate of Appreciation. Those with outstanding performance can apply to become an executive officer of IFU",
+        "people": "3",
+        "time": "3",
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
+    },
+    {
+        "name": "Web Copywriter and Translator",
+        "department": "Design & Technology",
+        "requirement": "Better to have experience in translation between Chinese and English",
+        "description": "Based on having correct understanding of IFU, compose copywriting required for web pages, translate and other related work arranged by department managers",
+        "reward": "Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/fXQbJEwzkq94S1Ld7"
+    },
+    {
+        "name": "HR Recruitment Assistant (Preparing)",
+        "department": "Administration & HR",
+        "requirement": "Major in Business HR/Admin; better to have experience of internship related to HR/Admin",
+        "description": "Assist on the preparing stage of recruitment. Responsibilities include but are not limited to collecting needs of human resources from departments; updating JD for positions in need; confirming and passing the positions to authors to edit and publish recruitment posts.",
+        "reward": "Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+    },
+    {
+        "name": "HR Recruitment Assistant (Sourcing and screening)",
+        "department": "Administration & HR",
+        "requirement": "Major in Business HR/Admin; better to have experience of internship related to HR/Admin",
+        "description": "Assist on the sourcing and screening stages of recruitment. Responsibilities include but are not limited to selecting suitable applicants based on JD; organizing interviews between the applicant and department manager; responding emails and other communications.",
+        "reward": "Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+    },
+    {
+        "name": "HR Recruitment Assistant (Selecting and Hiring)",
+        "department": "Administration & HR",
+        "requirement": "Major in Business HR/Admin; better to have experience of internship related to HR/Admin",
+        "description": "Host and assist managers on interviews and related work. Responsibilities include but are not limited to interviewing; email communications after interviews; agreement signing.",
+        "reward": "Certificate of Appreciation",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+    },
+    {
+        "name": "Administrative Assistant",
+        "department": "Administration & HR",
+        "requirement": "Responsible, looks into details, great time management; better to have experience of interning in Administration Department in corporates.",
+        "description": "Sort and archive IFU related files; info updates and sending out notices (birthday and holiday notices);  plan for team building activities; updating monthly member newspaper.",
+        "reward": "Certificate of Appreciation",
+        "people": "1-2",
+        "time": "6",
+        "link": "https://forms.gle/wt3CXkwXeC8gNmvAA"
+    },
+    {
+        "name": "Writer of WeChat Official Account",
+        "department": "Operation",
+        "requirement": "Ones with experience in social media or major in journalism are preferred; expert in composing news report; able to translate from English to Chinese",
+        "description": "Understand the needs of families of international students for information, send out the correct message, alleviate the anxiety of families of international students during emergency; present real studying lives when abroad, share high-quality experience of studying abroad; propagate the image of IFU",
+        "reward": "Certificate of Appreciation。Those with outstanding performance can apply to become an executive officer of IFU",
+        "people": "2",
+        "time": "3",
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
+    },
+    {
+        "name": "Operation of Social Media Platform",
+        "department": "Operation",
+        "requirement": "Experience of studying abroad of no less than a year; better to have experience of operation of a Zhihu account",
+        "description": "Plan for the operation and contents of the account, give feedback of data analysis to officers of Operation department regularly, improve the operation plan; in order to propagate the image of IFU, design for pictures and copywriting, collect and post photos of IFU events and teams; select questions related to studying abroad, provide with high-quality answers; select high-quality contents from Wechat official account and post on Zhihu",
+        "reward": "Certificate of Appreciation。",
+        "people": "1",
+        "time": "3-6",
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
+    },
+    {
+        "name": "Editor of WeChat Official Account",
+        "department": "Operation",
+        "requirement": "Able to use XIUMI to edit articles; better to have a background of designing pictures; please provide us with portfolios of your social media/blog if there is any. Language requirement: Chinese (native/proficient), English (proficient)",
+        "description": "Based on existing materials of copywriting, edit articles of Wechat official account to appeal to users",
+        "reward": "Certificate of Appreciation。",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
+    },
+    {
+        "name": "Editor In Charge",
+        "department": "Operation",
+        "requirement": "Social media industry experience is preferred but not mandatory, better to major in Journalism; news report writing ability is required; certain writing and typesetting experience are required; experience of operating Wechat official account, news column, and blogs is prefered; able to translate from English to Chinese. Language requirement: Chinese (native/proficient), English (proficient)",
+        "description": "Understand the information needs of international families; able to deliver accurate information and reduce international families’ anxiety level in case of emergency. Ensure the accuracy, comprehensiveness, and objectivity of the information released by IFU, and review the quality of the published content.",
+        "reward": "Certificate of Appreciation. Certificate of Volunteer;",
+        "people": "1",
+        "time": "6",
+        "link": "https://forms.gle/u74SqD7v2Bj3pEPC9"
     }
 ]

@@ -10,6 +10,20 @@
         >
             <p v-html="$t('home.banner.description')" />
         </Banner>
+        <section class="work">
+            <h2>What Do We Do?</h2>
+            <img src="@/assets/newhome/work/umbrella.svg" alt="umbrella" />
+        </section>
+        <section class="services">
+            <h2>{{ $t('home.newServices.title') }}</h2>
+            <p>{{ $t('home.newServices.description') }}</p>
+            <Newcarousel :list="serviceList" />
+        </section>
+        <section class="calendar">
+            <h2>{{ $t('home.calendar.title') }}</h2>
+            <p>{{ $t('home.calendar.description') }}</p>
+            <CalendarSwiper :list="calendarList" />
+        </section>
         <section>
             <h2>{{ $t('home.eventList.title') }}</h2>
             <div class="event-left">
@@ -56,6 +70,12 @@
                         src="@/assets/newhome/chat-icon.svg"
                         class="blue-icon"
                     />
+                    <img
+                        src="@/assets/newhome/resource-arrow.svg"
+                        alt="arrow"
+                        class="resource-arrow"
+                    />
+
                     <h2>{{ $t('home.resources.card1.title') }}</h2>
 
                     <ul>
@@ -76,6 +96,11 @@
                         <li>{{ $t('home.resources.card2.li3') }}</li>
                     </ul>
                     <img
+                        src="@/assets/newhome/resource-arrow.svg"
+                        alt="arrow"
+                        class="resource-arrow"
+                    />
+                    <img
                         class="blue-icon"
                         src="@/assets/newhome/wechat-icon.svg"
                     />
@@ -89,6 +114,11 @@
                     <ul>
                         <li>{{ $t('home.resources.card3.li1') }}</li>
                     </ul>
+                    <img
+                        src="@/assets/newhome/resource-arrow.svg"
+                        alt="arrow"
+                        class="resource-arrow"
+                    />
                     <img
                         class="blue-icon"
                         src="@/assets/newhome/emerg-icon.svg"
@@ -104,6 +134,11 @@
                         <li>{{ $t('home.resources.card4.li2') }}</li>
                     </ul>
                     <img
+                        src="@/assets/newhome/resource-arrow.svg"
+                        alt="arrow"
+                        class="resource-arrow"
+                    />
+                    <img
                         class="blue-icon"
                         src="@/assets/newhome/group-icon.svg"
                     />
@@ -118,19 +153,40 @@
 
 <script>
 import Banner from '@/components/Banner.vue';
-import Event from '@/components/Event.vue';
-
 import bannerImage from '@/assets/home/home_banner.png';
+import Event from '@/components/Event.vue';
+import Newcarousel from '@/components/Newcarousel.vue';
+import CalendarSwiper from '@/components/CalendarSwiper.vue';
+
+// Services Images
+import totoroadBackground from '@/assets/newhome/toto_background.svg';
+import peermentorBackground from '@/assets/newhome/peermentor_background.svg';
+import membershipBackground from '@/assets/newhome/membership_background.svg';
+import otherBackground from '@/assets/newhome/other_service_background.svg';
+import peermentorArrow from '@/assets/newhome/arrow-peermentor.svg';
+import totoroadArrow from '@/assets/newhome/arrow-totoroad.svg';
+import membershipArrow from '@/assets/newhome/arrow-membership.svg';
+import otherArrow from '@/assets/newhome/arrow-other.svg';
+
+// Event Images
 import eventImage1 from '@/assets/home/event_1.png';
 import eventImage2 from '@/assets/home/event_2.png';
 import eventImage3 from '@/assets/home/event_3.png';
 import eventImage4 from '@/assets/home/event_4.png';
 import eventImage5 from '@/assets/home/event_5.png';
 import eventImage6 from '@/assets/home/event_6.png';
+
+// Calendar Images
+import calendarImage1 from '@/assets/newhome/05.svg';
+import calendarImage2 from '@/assets/newhome/12.svg';
+import calendarImage3 from '@/assets/newhome/19.svg';
+
 export default {
     components: {
         Banner,
         Event,
+        Newcarousel,
+        CalendarSwiper,
     },
     data() {
         return {
@@ -140,6 +196,123 @@ export default {
         };
     },
     computed: {
+        serviceList() {
+            return [
+                {
+                    // Totoroad Academy
+                    title: this.$t('home.newServices.serviceList.toto.title'),
+                    subTitle: this.$t(
+                        'home.newServices.serviceList.toto.subTitle',
+                    ),
+                    bodyTitle: this.$t(
+                        'home.newServices.serviceList.toto.bodyTitle',
+                    ),
+                    text: this.$t('home.newServices.serviceList.toto.text'),
+                    barImage: '',
+                    bottomText: this.$t(
+                        'home.newServices.serviceList.toto.bottomText',
+                    ),
+                    link: 'totoro',
+                    backgroundImage: totoroadBackground,
+                    color: '#34BBC9',
+                    arrowImage: totoroadArrow,
+                },
+                {
+                    // Peer Mentor
+                    title: this.$t(
+                        'home.newServices.serviceList.peermentor.title',
+                    ),
+                    subTitle: this.$t(
+                        'home.newServices.serviceList.peermentor.subTitle',
+                    ),
+                    bodyTitle: this.$t(
+                        'home.newServices.serviceList.peermentor.bodyTitle',
+                    ),
+                    text: this.$t(
+                        'home.newServices.serviceList.peermentor.text',
+                    ),
+                    barImage: '',
+                    bottomText: this.$t(
+                        'home.newServices.serviceList.peermentor.bottomText',
+                    ),
+                    link: 'peermentor',
+                    backgroundImage: peermentorBackground,
+                    color: '#CC8ABD',
+                    arrowImage: peermentorArrow,
+                },
+                {
+                    // Membership
+                    title: this.$t(
+                        'home.newServices.serviceList.membership.title',
+                    ),
+                    subTitle: this.$t(
+                        'home.newServices.serviceList.membership.subTitle',
+                    ),
+                    bodyTitle: this.$t(
+                        'home.newServices.serviceList.membership.bodyTitle',
+                    ),
+                    bodySubTitle: this.$t(
+                        'home.newServices.serviceList.membership.bodySubTitle',
+                    ),
+                    text: this.$t(
+                        'home.newServices.serviceList.membership.text',
+                    ),
+                    barImage: '',
+                    bottomText: this.$t(
+                        'home.newServices.serviceList.membership.bottomText',
+                    ),
+                    link: 'membership',
+                    backgroundImage: membershipBackground,
+                    color: '#C9D74A',
+                    arrowImage: membershipArrow,
+                },
+                {
+                    // Other Services
+                    title: this.$t(
+                        'home.newServices.serviceList.otherservices.title',
+                    ),
+                    subTitle: this.$t(
+                        'home.newServices.serviceList.otherservices.subTitle',
+                    ),
+                    bodyTitle: this.$t(
+                        'home.newServices.serviceList.otherservices.bodyTitle',
+                    ),
+                    bodySubTitle: this.$t(
+                        'home.newServices.serviceList.otherservices.bodySubTitle',
+                    ),
+                    text: this.$t(
+                        'home.newServices.serviceList.otherservices.text',
+                    ),
+                    barImage: '',
+                    bottomText: this.$t(
+                        'home.newServices.serviceList.otherservices.bottomText',
+                    ),
+                    link: 'more',
+                    backgroundImage: otherBackground,
+                    color: '#F96291',
+                    arrowImage: otherArrow,
+                },
+            ];
+        },
+        calendarList() {
+            return [
+                {
+                    numImage: calendarImage1,
+                    title: this.$t('home.calendar.title1'),
+                    description: this.$t('home.calendar.description1'),
+                },
+                {
+                    numImage: calendarImage2,
+                    title: this.$t('home.calendar.title2'),
+                    description: this.$t('home.calendar.description2'),
+                },
+                {
+                    numImage: calendarImage3,
+                    title: this.$t('home.calendar.title3'),
+                    description: this.$t('home.calendar.description3'),
+                },
+            ];
+        },
         eventList() {
             return [
                 {
@@ -187,6 +360,24 @@ export default {
 //     .subtitle-text {
 //         margin-bottom: 0px;
 //     }
+p {
+    line-height: 31px;
+}
+.work {
+    background-color: #f1f9ff;
+}
+.services {
+    padding-right: 0;
+    p {
+        margin-bottom: 117px;
+
+        size: 16px;
+    }
+}
+
+.calendar {
+    background-color: #f1f9ff;
+}
 .event-left {
     display: inline-block;
     vertical-align: top;
@@ -299,6 +490,12 @@ export default {
             display: flex;
             flex-direction: column;
             place-items: center;
+
+            .resource-arrow {
+                position: absolute;
+                top: 40%;
+                right: 6%;
+            }
 
             h2 {
                 font-size: 22px;
